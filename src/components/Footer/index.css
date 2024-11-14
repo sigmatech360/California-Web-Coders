@@ -1,0 +1,32 @@
+footer {
+    margin-bottom: 0%;
+    font-size: 0.9rem;
+    background-color: #031243;
+  }
+  
+  footer ul li a:hover {
+    color: #cccccc;
+  }
+  
+
+
+
+footer .emailsend {
+    background-color: #031243;
+  }
+
+
+  footer .sendbtn{
+color: white;
+  }
+
+
+
+  footer .sendmailtab{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 72%;
+    border-bottom: 1px solid;
+  }

@@ -1,0 +1,38 @@
+.hero {
+  overflow: hidden;
+}
+
+.hero .heroinner {
+  padding: 53px 43px;
+}
+
+.hero .title{
+  font-size: 71px;
+  color: #031243;
+}
+
+.hero span{
+  color: #0504a5;
+}
+
+
+.hero .para{
+    color: #031243;
+    max-width: 73%;
+    
+  font-family: "Outfit", sans-serif;
+}
+
+
+.hero .para span{ 
+color: #0504A5;
+}
+
+
+.hero .herobtn{
+    background-color: #0504A5;
+    color: white;
+    padding: 7px 24px;
+    border-radius: 50px;
+    border: none;
+}

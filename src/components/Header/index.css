@@ -1,0 +1,58 @@
+.uperheader {
+    background-color: #0504a5;
+    color: white;
+    font-size: 0.9rem;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    display: flex;
+
+}
+
+
+
+.uperheader i {
+  margin-right: 4px; /* Space between icon and text */
+}
+
+.uperheader span {
+  margin-right: 15px; /* Space between contact items */
+  font-size: 16px;
+}
+
+/* nabver */
+
+.nabver {
+  background-color: #ffffff;
+
+  color: #031243!important;
+}
+.navbar nav-link{
+    color: #031243!important;
+}
+
+.California{
+    width: 100%;
+}
+
+.contact{
+    margin-left: 1rem !important;
+    background-color: #0504A5;
+    color: #ffffff;
+    border-radius: 45px;
+    padding: 8px 21px;
+}
+
+.contact :hover{
+    margin-left: 1rem !important;
+    background-color: #0504A5;
+    color: #ffffff;
+    border-radius: 45px;
+    padding: 8px 21px;
+}
+
+
+.headericon{
+    
+}
