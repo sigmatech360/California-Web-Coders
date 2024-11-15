@@ -1,0 +1,57 @@
+.body {
+  font-family: "Outfit", sans-serif !important;
+}
+.Designsolutions .para {
+  color: #031243;
+  font-weight: 600;
+
+  /* padding: 17px 4px; */
+}
+
+.Designsolutions .title {
+  max-width: 74%;
+  font-size: 47px;
+  font-weight: 600;
+  line-height: 53px;
+}
+
+.Designsolutions .title span {
+  color: #0504a5;
+}
+
+.Designsolutions .para2 {
+  font-weight: 400;
+  color: #031243;
+  font-weight: 500;
+  max-width: 79% !important;
+}
+
+.Designsolutions .para2 span {
+  color: #0504a5;
+  color: #031243;
+}
+
+.Designsolutions .paratitle {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.Designsolutions .freecons {
+  border: none;
+  color: white;
+  background-color: #0504a5;
+  padding: 8px 25px;
+  border-radius: 30px;
+}
+
+.Designsolutions .solution {
+  padding: 10px 20px;
+  background-color: #0504a5;
+  height: 130px;
+  color: white;
+  border-radius: 20px;
+}
+.Designsolutions  .para3{
+    color: white;
+  max-width: 83% !important;
+}

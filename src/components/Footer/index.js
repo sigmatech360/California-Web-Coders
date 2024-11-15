@@ -133,7 +133,7 @@ function Footer() {
         {/* Bottom Footer Links */}
         <div className="container d-flex flex-wrap justify-content-between align-items-center">
           <div className="    ">
-            <p className="mb-1">
+            <p className="mb-1 d-flex">
               <a href="#terms" className="footer_list_item  text-white text-decoration-none me-3">
                 Terms & Conditions
               </a>

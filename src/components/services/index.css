@@ -1,0 +1,161 @@
+.body {
+  font-family: "Outfit", sans-serif !important;
+}
+
+.services .heroimg {
+  max-width: 117%; /* Make sure the image is responsive */
+  height: auto;
+  object-fit: contain; /* Ensure the image scales without distortion */
+  margin-top: 45px;
+  margin-left: -20px; /* Adjust margin to properly align image */
+}
+
+.services {
+  overflow: hidden;
+}
+
+.services .para {
+  color: #031243;
+  font-weight: 600;
+  font-size: 20px; /* Adjust for readability */
+}
+
+.services .title {
+  max-width: 74%;
+  font-size: 47px;
+  font-weight: 600;
+  line-height: 53px;
+}
+
+.services .title span {
+  color: #0504a5;
+}
+
+.para2 {
+  font-weight: 400;
+  color: #031243;
+  font-weight: 500;
+  max-width: 79%;
+}
+
+.para2 span {
+  color: #0504a5;
+  color: #031243;
+}
+
+.paratitle {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.freecons {
+  border: none;
+  color: white;
+  background-color: #0504a5;
+  padding: 8px 25px;
+  border-radius: 30px;
+}
+
+.solution {
+  padding: 10px 20px;
+  background-color: #0504a5;
+  height: 130px;
+  color: white;
+  border-radius: 20px;
+}
+
+.para3 {
+
+    
+  max-width: 83%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666; /* Lighter text color for better contrast */
+}
+
+.creativelogo {
+  width: 50%; /* Make the logo fit within the circle */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the logo doesn't stretch or distort */
+}
+
+.creativesection {
+  color: #031243;
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  gap: 10px; /* Adjust gap between the logo and text */
+}
+
+.creativelg {
+  height: 60px;
+  width: 60px;
+  background-color: #0504a5;
+  display: flex; /* Flexbox to center content inside the circle */
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden; /* Ensure the logo is clipped inside the circle */
+}
+
+.services .para4 {
+  font-weight: 700;
+  font-size: 16px; /* Optional: Adjust the size to make the title clearer */
+}
+
+.services .para3 {
+  font-size: 14px; /* Optional: Adjust the font size for the paragraph */
+  width: 100%; /* Ensure the paragraph uses the full width available */
+  color: #666; /* Optional: A lighter text color for readability */
+}
+
+.services .graphiclogo {
+  width: 47px;
+  /* padding: 15px; */
+  margin-bottom: 39px;
+}
+
+.services .graphicservices {
+  background-color: #0504a5;
+  border-radius: 16px;
+  color: white;
+  border-collapse: separate;
+  padding: 29px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+
+.services .graphicservicespara{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+.services .graphicservicespara {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.services .mobileservicesimg {
+  width: 100%;
+  /* padding: 15px; */
+  margin-bottom: 39px;
+  height: auto;
+}
+
+ 
+.services .mobileservices {
+    background: transparent linear-gradient(180deg, #0504A5 0%, #B0B0E5 100%) no-repeat 0% 0% padding-box;
+
+    border-radius: 16px;
+    color: white;
+    border-collapse: separate;
+    padding: 29px;
+  }
+  
+
+
+  .services .graphicgesigntitle  {
+    font-weight: 400;
+  }
