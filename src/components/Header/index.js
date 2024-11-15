@@ -82,7 +82,7 @@ function Header() {
                   </NavDropdown>
 
 
-                  <Nav.Link href="#about" className=" ">
+                  <Nav.Link to="/about" className=" ">
                     About Us
                   </Nav.Link>
                 </Nav>

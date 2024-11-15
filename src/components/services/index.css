@@ -31,24 +31,24 @@
   color: #0504a5;
 }
 
-.para2 {
+.services .para2 {
   font-weight: 400;
   color: #031243;
   font-weight: 500;
   max-width: 79%;
 }
 
-.para2 span {
+.services .para2 span {
   color: #0504a5;
   color: #031243;
 }
 
-.paratitle {
+.services .paratitle {
   font-size: 17px;
   font-weight: 700;
 }
 
-.freecons {
+.services .freecons {
   border: none;
   color: white;
   background-color: #0504a5;
@@ -56,7 +56,7 @@
   border-radius: 30px;
 }
 
-.solution {
+.services .solution {
   padding: 10px 20px;
   background-color: #0504a5;
   height: 130px;
@@ -64,7 +64,7 @@
   border-radius: 20px;
 }
 
-.para3 {
+.services .para3 {
 
     
   max-width: 83%;
@@ -73,20 +73,20 @@
   color: #666; /* Lighter text color for better contrast */
 }
 
-.creativelogo {
+.services .creativelogo {
   width: 50%; /* Make the logo fit within the circle */
   height: auto; /* Maintain aspect ratio */
   object-fit: contain; /* Ensure the logo doesn't stretch or distort */
 }
 
-.creativesection {
+.services .creativesection {
   color: #031243;
   display: flex;
   align-items: center; /* Vertically center the items */
   gap: 10px; /* Adjust gap between the logo and text */
 }
 
-.creativelg {
+.services .creativelg {
   height: 60px;
   width: 60px;
   background-color: #0504a5;

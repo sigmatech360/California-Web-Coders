@@ -7,6 +7,10 @@ import Digitalagency from "../../components/Digitalagency";
 import Designsolutions from "../../components/designsolutions";
 import FeatureProject from "../../components/featureproject";
 import Servies from "../../components/services";
+import LogoDesignServices from "../../components/logoDesignServices";
+import Mobileworld from "../../components/mobileworld";
+import FrequentQuestions from "../../components/FrequentQuestions";
+import BlogSection from "../../components/blogPosts";
 // import Perfection from '../../components/Perfection'
 function Home() {
   return (
@@ -38,19 +42,21 @@ function Home() {
         </div>
       </section>
 
-<Growyourbusiness/>
+      <Growyourbusiness />
 
+      <Digitalagency />
+      <Designsolutions />
 
-<Digitalagency/>
-<Designsolutions/>
+      <FeatureProject />
 
+      <Servies />
 
-<FeatureProject/>
+      <LogoDesignServices />
 
-
-
-<Servies/>
-{/* <Perfection/> */}
+      <Mobileworld />
+      <FrequentQuestions />
+      <BlogSection />
+      {/* <Perfection/> */}
     </Layout>
   );
 }
