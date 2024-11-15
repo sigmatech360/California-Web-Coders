@@ -10,7 +10,14 @@
     font-family: "Outfit", sans-serif !important;
 }
 
-
+.video-container {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px; /* Optional: Add roundedx corners */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+  }
+  
 .digitalagency .title span{
     color: #0504A5;
     

@@ -1,0 +1,82 @@
+/* Main container */
+.about-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0504A5;
+
+
+    font-size: 36px;
+    /* font-weight: bold; */
+    /* color: #0504A5; */
+    font-size: 60px;
+    /* max-width: 67%; */
+    font-weight: 400;
+  }
+  
+  .about-title span {
+    color: #000080; /* Darker blue for emphasis */
+  }
+  
+  .about-subtitle {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Image container styling */
+  .image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Main Image (Laptop) */
+  .main-image {
+    width: 100%;
+    height: auto;
+ 
+  }
+  
+  /* Overlay Images */
+  .overlay-image {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .overlay-image-1 {
+    top: -30px;
+    left: -40px;
+  }
+  
+  .overlay-image-2 {
+    top: -20px;
+    right: -40px;
+  }
+  
+  .overlay-image-3 {
+    bottom: -30px;
+    left: 60px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 28px;
+    }
+  
+    .about-subtitle {
+      font-size: 16px;
+    }
+  
+    .image-container {
+      max-width: 300px;
+    }
+  
+    .overlay-image {
+      width: 80px;
+    }
+  }
+  

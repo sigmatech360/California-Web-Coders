@@ -6,6 +6,7 @@ import logo from "../../Assets/logo.png";
 import { IoCallSharp } from "react-icons/io5";
 import { RiMailSendLine } from "react-icons/ri";
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -53,38 +54,38 @@ function Header() {
               <Navbar.Collapse id="basic-navbar-nav">
                 {/* Navigation Links */}
                 <Nav className="ms-auto">
-                  <Nav.Link href="/" className=" ">
+                  <Link href="/" className=" ">
                     Home
-                  </Nav.Link>
+                  </Link>
                  
 
                   <NavDropdown title="Services" id="navbarScrollingDropdown">
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <Link href="#action3">Action</Link>
+                    <Link href="#action4">
                       Another action
-                    </NavDropdown.Item>
+                    </Link>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
+                    <Link href="#action5">
                       Something else here
-                    </NavDropdown.Item>
+                    </Link>
                   </NavDropdown>
                  
 
                   <NavDropdown title="Our Work" id="navbarScrollingDropdown">
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <Link href="#action3">Action</Link>
+                    <Link href="#action4">
                       Another action
-                    </NavDropdown.Item>
+                    </Link>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
+                    <Link href="#action5">
                       Something else here
-                    </NavDropdown.Item>
+                    </Link>
                   </NavDropdown>
 
 
-                  <Nav.Link to="/about" className=" ">
+                  <Link to="/about" className=" ">
                     About Us
-                  </Nav.Link>
+                  </Link>
                 </Nav>
 
                 {/* Contact Us Button */}
