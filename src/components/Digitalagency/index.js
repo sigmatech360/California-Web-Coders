@@ -12,13 +12,13 @@ const Digitalagency = () => {
       <div className="digitalagency">
         <div className="container">
           <div className="row mb-4 mb-5">
-            <div className="col-md-6">
+            <div className="col-lg-6 ">
               <h2 className="title">
                 We are a creative bold digital agency based in{" "}
                 <span>Californi.</span>{" "}
               </h2>
             </div>
-            <div className="col-md-6">
+            <div className="col-lg-6 ">
               <div className="d-flex gap-4">
                 <span className="twentypls"> 20+</span>
                 <div className=" align-content-center justify-content-center">

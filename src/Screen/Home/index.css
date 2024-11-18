@@ -1,56 +1,221 @@
 .hero {
   overflow: hidden;
+  background-color: #ffffff; /* Background for the section */
 }
 
-.hero .heroinner {
-  padding: 44px 18px;
+.heroinner {
+  padding: 62px 0;
 }
 
-.hero .title{
-  font-size: 71px;
+/* Title Styling */
+.hero .title {
+  font-size: 76px;
+  line-height: 1.0;
   color: #031243;
-  
-  font-family: "Outfit", sans-serif!important;
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 400;
+  /* text-align: center;  */
 }
 
-.hero span{
+.hero .title span {
   color: #0504a5;
 }
 
-.herologo{
-  width: 24%!important;
-  margin-top: 30%!important;
+/* Paragraph Styling */
+.hero .para {
+  color: #031243;
+  max-width: 80%;
+  /* margin: 20px auto; */
+  font-family: "Outfit", sans-serif !important;
+  font-size: 18px;
+  /* text-align: center; */
+}
+
+.hero .para span {
+  color: #0504a5;
+  font-weight: 600;
+}
+
+/* Button Styling */
+.hero .herobtn {
+  background-color: #0504a5;
+  color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 10px auto;
+}
+
+.hero .herobtn:hover {
+  background-color: #031243;
+}
+
+/* Google Review Styling */
+.hero .google-review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  /* justify-content: center; */
+}
+
+.google-logo {
+  width: 120px;
+  margin: 71px 0;
+}
+
+.review-text {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 18px;
+  color: #031243;
+}
+
+/* Hero Image Styling */
+.heroimg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Responsive Adjustments */
+
+/* Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero .title {
+    font-size: 55px;
+    line-height: 1.0;
+    text-align: left;
+  }
+
+  .hero .para {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .heroinner {
+    padding: 40px 15px;
+  }
+
+  .heroimg {
+    max-width: 120%;
+    margin-left: -30px;
+  }
+
+  .google-logo {
+    width: 100px;
+    margin-top: 10px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  .hero .title {
+    font-size: 64px;
+    line-height: 1.0;
+    text-align: center;
 }
 
 
-.heroimg{
-  vertical-align: middle;
-    background-size: contain;
-    max-width: 116%; 
-       height: auto;
-    margin-top: 45px;
-    top: 70px;
  
+  .hero .title {
+      font-size: 36px; /* Scaled down for smaller screens */
+      line-height: 1.0; /* Adjusted for better spacing */
+      text-align: center;
+      width: 80%; /* Ensures proper centering */
+      max-width: 100%; /* Prevents overflow */
+      margin: 0 auto 15px; /* Centers the title with spacing below */
+  }
+
+
+
+  /* .hero .para {
+    font-size: 16px;
+    text-align: center;
+    max-width: 100%;
+  } */
+
+
+  .hero .para {
+    /* font-size: 23px; */
+    text-align: center;
+    max-width: 100%;
+    width: 65%;
+    margin: auto;
 }
 
+  .hero .herobtn {
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center!important;
+    display: block;
+  }
 
-.hero .para{
-    color: #031243;
-    max-width: 73%;
+  .heroinner {
+    padding: 20px 10px;
+  }
+
+  .heroimg {
+    max-width: 110%;
+    margin-left: 0;
+  }
+
+  .google-logo {
+    width: 90px;
+    margin-top: 10px;
+  }
+}
+
+/* Small Mobile Screens (e.g., 600px and below) */
+@media (max-width: 600px) {
+  .hero .title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .hero .para {
+    font-size: 14px;
+  }
+
+  .heroinner {
+    padding: 15px 10px;
+  }
+
+  .heroimg {
+    max-width: 100%;
+  }
+
+  .google-logo {
+    width: 80px;
+  }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1441px) {
+  .hero .title {
+    font-size: 76px;
+    line-height: 80px;
+  }
+
+  .hero .para {
+        font-size: 20px;
+        max-width: 87%;
+        text-align: left;
     
-  font-family: "Outfit", sans-serif!important;
-}
+  }
 
+  /* .heroinner {
+    padding: 80px 0;
+  } */
 
-.hero .para span{ 
-color: #0504A5;
-}
-
-
-.hero .herobtn{
-    background-color: #0504A5;
-    color: white;
-    padding: 7px 24px;
-    border-radius: 50px;
-    border: none;
+  .heroimg {
+    max-width: 134%;
+    margin-left: -50px;
+  }
 }

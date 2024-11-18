@@ -40,7 +40,7 @@ const FeatureProject = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="p-4 mt-4">
               <div className="news-card  ">
                 <img src={project1} className="img-fluid rounded mb-2" />
@@ -56,7 +56,7 @@ const FeatureProject = () => {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="p-4 mt-4">
               <div className="news-card  ">
                 <img src={project2} className="img-fluid rounded mb-2" />
@@ -72,7 +72,7 @@ const FeatureProject = () => {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="p-4 mt-4">
               <div className="news-card  ">
                 <img src={project3} className="img-fluid rounded mb-2" />
@@ -87,7 +87,7 @@ const FeatureProject = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="p-4 mt-4">
               <div className="news-card  ">
                 <img src={project4} className="img-fluid rounded mb-2" />
@@ -102,7 +102,7 @@ const FeatureProject = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="p-4 mt-4">
               <div className="news-card  ">
                 <img src={project5} className="img-fluid rounded mb-2" />
@@ -117,7 +117,7 @@ const FeatureProject = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="p-4 mt-4">
               <div className="news-card  ">
                 <img src={project6} className="img-fluid rounded mb-2" />
@@ -135,7 +135,7 @@ const FeatureProject = () => {
 
 
 
-          <div className="col-md-4">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="p-4 mt-4">
               <div className="news-card  ">
                 <img src={project7} className="img-fluid rounded mb-2" />
@@ -150,7 +150,7 @@ const FeatureProject = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="p-4 mt-4">
               <div className="news-card  ">
                 <img src={project8} className="img-fluid rounded mb-2" />
@@ -165,7 +165,7 @@ const FeatureProject = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="p-4 mt-4">
               <div className="news-card  ">
                 <img src={project9} className="img-fluid rounded mb-2" />

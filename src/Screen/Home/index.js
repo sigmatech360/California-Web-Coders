@@ -15,32 +15,42 @@ import BlogSection from "../../components/blogPosts";
 function Home() {
   return (
     <Layout>
-      <section className="hero">
-        <div className="container">
-          <div className="heroinner">
-            <div className="row justify-content-center align-content-center ">
-              <div className="col-md-6">
-                <h2 className="title align-content-center justify-content-center">
-                  Your <span> trusted</span> web design agency.
-                </h2>
-                <p className="para">
-                  <span>California Web Coders</span> creates stunning, fast and
-                  effective websites for new and established businesses.
-                </p>
-                <button className="herobtn">View Our Work</button>
-                <div>
-                  {" "}
-                  <img src={heroimg2} className="herologo" />
-                </div>
-              </div>
-
-              <div className="col-md-6">
-                <img src={heroimg} className="heroimg" />
-              </div>
-            </div>
-          </div>
+  <section className="hero">
+  <div className="container">
+    <div className="heroinner">
+      <div className="row justify-content-center align-items-cener">
+        {/* Left Column */}
+        <div className="col-lg-6 col-12 text-center text-md-start">
+          <h2 className="title">
+            Your <span>trusted</span> web design agency.
+          </h2>
+          <p className="para">
+            <span>California Web Coders</span> creates stunning, fast and
+            effective websites for new and established businesses.
+          </p>
+          <button className="herobtn">View Our Work</button>
+          <div className="google-review mt-4">
+            <img
+              src={heroimg2} /* Replace with actual Google logo path */
+              alt="Google Logo"
+              className="google-logo"
+            />
+           </div>
         </div>
-      </section>
+
+        {/* Right Column */}
+        <div className="col-lg-6 col-12 text-center">
+          <img
+            src={heroimg} /* Replace with the main hero image path */
+            alt="Responsive Design Showcase"
+            className="heroimg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <Growyourbusiness />
 
@@ -51,11 +61,11 @@ function Home() {
 
       <Servies />
 
-      <LogoDesignServices />
+     {/*   <LogoDesignServices />
 
       <Mobileworld />
-      <FrequentQuestions />
-      <BlogSection />
+      <FrequentQuestions /> */}
+      {/* <BlogSection /> */}
       {/* <Perfection/> */}
     </Layout>
   );

@@ -12,95 +12,103 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
-      <section className="uperheader">
-        <div className="container">
-          <div className="row">
-            {/* Empty column for spacing on larger screens */}
-            <div className="col-lg-8 d-none d-lg-block"></div>
+      <section className="uperheader ">
+      <div className="container text-white d-flex justify-content-between align-items-center px-3 py-2">
+      {/* Left side - Add logo or placeholder for alignment */}
+      <div></div>
 
-            {/* Contact Information */}
-            <div className="col-12 col-lg-4 text-lg-right text-center">
-              <span className="mr-3   gap-2">
-                <IoCallSharp />
-                +1 619-798-9688
-              </span>
-              <span>
-                <RiMailSendLine />
-                hello@lorem.com
-              </span>
-            </div>
-          </div>
+      {/* Right side - Contact details */}
+      <div className="d-flex align-items-center">
+        <div className="me-3 d-flex gap-2 align-items-center">
+          {/* <i className="bi bi-telephone me-1"></i>  */}
+
+          <FaPhoneAlt/>
+          <span>+1-409-798-9688</span>
         </div>
+        <div className="d-flex gap-2 align-items-center">
+          {/* <i className="bi bi-envelope me-1"></i> */}
+          <RiMailSendLine/>
+          <span>hello@lorem.com</span>
+        </div>
+      </div>
+    </div>
       </section>
-      <section className="nabver">
-        <div className="container">
-          <Navbar expand="lg" className="      ">
-            <Container>
-              {/* Logo Section */}
-              <Navbar.Brand href="/" className=" d-flex align-items-center">
-                <img
-                  src={logo}
-                  alt="California Web Coders Logo"
-                  // style={{ width: '30px', marginRight: '10px' }}
-                  className="headericon"
-                />
-              </Navbar.Brand>
+      <section className="navbar-section">
+      <div className="container">
+        <Navbar expand="lg" className="navbar-custom" variant="light">
+          <Container>
+            {/* Logo Section */}
+            <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
+              <img
+                src={logo}
+                alt="California Web Coders Logo"
+                className="header-icon"
+              />
+            </Navbar.Brand>
 
-              {/* Contact Info */}
+            {/* Responsive Toggler */}
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-              {/* Responsive Toggler */}
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              {/* Navigation Links */}
+              <Nav className="ms-auto navbar-nav-custom">
+                <Nav.Link as={Link} to="/" className="nav-link-custom">
+                  Home
+                </Nav.Link>
 
-              <Navbar.Collapse id="basic-navbar-nav">
-                {/* Navigation Links */}
-                <Nav className="ms-auto">
-                  <Link href="/" className=" ">
-                    Home
-                  </Link>
-                 
-
-                  <NavDropdown title="Services" id="navbarScrollingDropdown">
-                    <Link href="#action3">Action</Link>
-                    <Link href="#action4">
-                      Another action
-                    </Link>
-                    <NavDropdown.Divider />
-                    <Link href="#action5">
-                      Something else here
-                    </Link>
-                  </NavDropdown>
-                 
-
-                  <NavDropdown title="Our Work" id="navbarScrollingDropdown">
-                    <Link href="#action3">Action</Link>
-                    <Link href="#action4">
-                      Another action
-                    </Link>
-                    <NavDropdown.Divider />
-                    <Link href="#action5">
-                      Something else here
-                    </Link>
-                  </NavDropdown>
-
-
-                  <Link to="/about" className=" ">
-                    About Us
-                  </Link>
-                </Nav>
-
-                {/* Contact Us Button */}
-                <Button
-                  href="#contact"
-                  variant="light"
-                  className="contact ms-lg-3 mt-3 mt-lg-0"
+                <NavDropdown
+                  title="Services"
+                  id="navbarScrollingDropdown"
+                  className="nav-dropdown-custom"
                 >
-                  Contact Us
-                </Button>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
-        </div>
-      </section>
+                  <NavDropdown.Item as={Link} to="/services/action1">
+                    Action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/services/action2">
+                    Another Action
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item as={Link} to="/services/action3">
+                    Something Else Here
+                  </NavDropdown.Item>
+                </NavDropdown>
+
+                <NavDropdown
+                  title="Our Work"
+                  id="navbarScrollingDropdown"
+                  className="nav-dropdown-custom"
+                >
+                  <NavDropdown.Item as={Link} to="/our-work/action1">
+                    Action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/our-work/action2">
+                    Another Action
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item as={Link} to="/our-work/action3">
+                    Something Else Here
+                  </NavDropdown.Item>
+                </NavDropdown>
+
+                <Nav.Link as={Link} to="/about" className="nav-link-custom">
+                  About Us
+                </Nav.Link>
+              </Nav>
+
+              {/* Contact Us Button */}
+              <Button
+                as={Link}
+                to="/contact"
+                variant="light"
+                className="contact-btn ms-lg-3 mt-3 mt-lg-0"
+              >
+                Contact Us
+              </Button>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </div>
+    </section>
     </>
   );
 }

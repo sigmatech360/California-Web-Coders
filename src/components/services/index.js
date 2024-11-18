@@ -14,8 +14,8 @@ const Servies = () => {
   return (
     <section className="services">
       <div className="container">
-        <div className="row py-4">
-          <div className="col-md-7">
+        <div className="row  ">
+        <div className="col-md-7 col-sm-12">
             <p className="para">Services</p>
             <p className="title">
               We deliver the services you need, with the quality you deserve
@@ -66,8 +66,8 @@ const Servies = () => {
             </div>
           </div>
 
-          <div className="col-md-5">
-            <img className="heroimg" src={servicesimg} />
+          <div className="col-md-5 col-sm-12">
+            <img className="servicesheroimg" src={servicesimg} />
           </div>
         </div>
         <div className="row py-4">

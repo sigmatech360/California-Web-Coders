@@ -51,7 +51,7 @@ const Designsolutions = () => {
                 <MdEdit />
               </span>{" "}
               <span className=" ">
-                <p className="d-flex gap-3">
+                <p className="dflex gap3">
                   {" "}
                   Content Management Systems (CMS):
                 </p>
@@ -66,7 +66,7 @@ const Designsolutions = () => {
                 <MdEdit />
               </span>{" "}
               <span className=" ">
-                <p className="d-flex gap-3"> Responsive Web Design::</p>
+                <p className="dflex gap3"> Responsive Web Design::</p>
                 <p className="para3">
                   We ensure your website looks and functions flawlessly across
                   all devices, providing an optimal user experience for
@@ -79,7 +79,7 @@ const Designsolutions = () => {
                 <CiMobile3 />
               </span>{" "}
               <span className=" ">
-                <p className="d-flex gap-3"> eCommerce Development:</p>
+                <p className="dflex gap3"> eCommerce Development:</p>
                 <p className="para3">
                   We build robust and secure online stores that enable you to
                   sell your products or services with ease.
@@ -91,7 +91,7 @@ const Designsolutions = () => {
                 <MdEdit />
               </span>{" "}
               <span className=" ">
-                <p className="d-flex gap-3"> Website Maintenance & Support:</p>
+                <p className="dflex gap3"> Website Maintenance & Support:</p>
                 <p className="para3">
                   We provide ongoing maintenance and support to keep your
                   website running smoothly and up-to-date.
@@ -103,7 +103,7 @@ const Designsolutions = () => {
                 <MdEdit />
               </span>{" "}
               <span className=" ">
-                <p className="d-flex gap-3"> SEO Optimization:</p>
+                <p className="dflex gap3"> SEO Optimization:</p>
                 <p className="para3">
                   We implement proven SEO strategies to improve your website’s
                   visibility in search engines and attract organic traffic.

@@ -1,28 +1,86 @@
-.gorwyourbusiness{
+.gorwyourbusiness {
     background-color: #0504A5;
-    padding: 41px 35px;
+    padding: 40px 20px;
     color: white;
     font-family: "Outfit", sans-serif !important;
-    font-weight: 100 !important;
-    font-size: 10px;
+    text-align: center; /* Center align by default for responsiveness */
+  }
+  
+  .gorwyourbusiness .title {
+    font-size: 2.5rem; /* Adjust font size for scaling */
+    font-weight: 300;
+    line-height: 1.3; /* Maintain readability */
+    white-space: nowrap; /* Prevents text wrapping */
+   
+
+    margin-bottom: 20px;
+  }
+  
+  
+  .gorwyourbusiness .title span {
+    color: white;
+    font-weight: 400;
 }
-
-
-
-.gorwyourbusiness .title{
-    font-size: 35px;
-    font-weight: 200;
-}
-
-.gorwyourbusiness .clickhere{
+  .gorwyourbusiness .clickhere {
     padding: 12px 30px;
     border-radius: 45px;
     color: #0504A5;
-    font-size: 15px;
+    font-size: 1rem; /* Adjusted for readability */
     font-weight: 500;
-}
-
-
-.gorwyourbusiness .title span{
-
-}
+    background-color: #ffffff; /* Button contrast */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .gorwyourbusiness .clickhere:hover {
+    background-color: #f9c74f; /* Hover effect */
+    color: #0504A5;
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets and Smaller Laptops */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .gorwyourbusiness {
+      padding: 30px 15px;
+    }
+  
+    .gorwyourbusiness .title {
+      font-size: 2rem; /* Slightly smaller font size */
+    }
+  
+    .gorwyourbusiness .clickhere {
+      font-size: 0.9rem; /* Adjust button text size */
+    }
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 768px) {
+    .gorwyourbusiness {
+      padding: 20px 10px;
+    }
+  
+    .gorwyourbusiness .title {
+      font-size: 1.8rem; /* Further reduce font size for smaller screens */
+    }
+  
+    .gorwyourbusiness .clickhere {
+      font-size: 0.875rem; /* Adjust button font size */
+      padding: 10px 25px; /* Reduce button padding */
+    }
+  }
+  
+  /* Extra Small Devices (Phones under 600px) */
+  @media (max-width: 600px) {
+    .gorwyourbusiness .title {
+      font-size: 1.5rem; /* Compact font size */
+      line-height: 1.2;
+    }
+  
+    .gorwyourbusiness .clickhere {
+      width: 100%; /* Full-width button for better touch usability */
+      padding: 10px;
+    }
+  }
+  
