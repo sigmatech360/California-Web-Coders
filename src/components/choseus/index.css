@@ -1,0 +1,36 @@
+.icon-container {
+  width: 60px;
+  height: 60px;
+}
+
+body {
+  font-family: "Outfit" !important;
+}
+
+.whychoseus .card {
+  background-color: #0504a5 !important;
+  border-radius: 20px;
+  /* #0504A5 */
+}
+
+.whychoseus .card .card-title {
+  font-weight: 400;
+}
+
+.whychoseus .card .card-text {
+  font-weight: 200;
+}
+
+
+
+.whychoseus .head1 {
+    color: #031243 !important;
+
+}
+
+.whychoseus .cards {
+    margin-top: 67px;
+}
+.changewayspan{
+   color: #0504A5; 
+}

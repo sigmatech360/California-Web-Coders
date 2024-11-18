@@ -70,7 +70,7 @@ const Servies = () => {
             <img className="servicesheroimg" src={servicesimg} />
           </div>
         </div>
-        <div className="row py-4">
+        <div className="row  compservices">
           <div className="col-md-4">
             <div className="graphicservices  mb-4">
               <img src={graphiclogo} className="graphiclogo" />

@@ -13,7 +13,9 @@
   overflow: hidden;
   padding: 85px 20px; /* Add side padding for better layout on smaller devices */
 }
-
+.compservices{
+  padding: 131px 0px; 
+}
 .services .servicesheroimg {
   max-width: 100%; /* Ensure the image scales properly */
   height: auto;

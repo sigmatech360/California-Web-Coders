@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import "./index.css";
 import logo from "../../Assets/logo.png";
 import { IoCallSharp } from "react-icons/io5";
@@ -61,8 +61,8 @@ function Header() {
                   id="navbarScrollingDropdown"
                   className="nav-dropdown-custom"
                 >
-                  <NavDropdown.Item as={Link} to="/services/action1">
-                    Action
+                  <NavDropdown.Item as={Link} to="/services/wordpress-webdesignservices">
+                  wordpress-webdesignservices
                   </NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/services/action2">
                     Another Action

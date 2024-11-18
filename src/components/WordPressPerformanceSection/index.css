@@ -1,0 +1,36 @@
+.WordPressPerformanceSection {
+  background-color: #ffffff; /* Light background for contrast */
+}
+
+h1 span {
+  color: #1f5591; /* Customize primary color */
+}
+
+/* .workpressimges {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);  
+} */
+
+.WordPressPerformanceSection .title {
+  font-weight: 500;
+  font-size: 3rem;
+  max-width: 70%;
+}
+
+.WordPressPerformanceSection .title span {
+  color: #0504a5;
+}
+
+.WordPressPerformanceSection .intouch {
+  background-color: #0504a5;
+  color: white;
+  font-size: 15px;
+  border-radius: 50px;
+}
+
+.WordPressPerformanceSection .para {
+  color: #031243;
+  /* max-width: 66%; */
+}
+
+
+

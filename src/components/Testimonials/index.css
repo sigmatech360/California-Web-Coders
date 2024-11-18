@@ -1,0 +1,36 @@
+.testimonial .testimonialhead1 {
+  color: #031243 !important;
+}
+
+body {
+  font-family: "Outfit" !important;
+}
+
+.testimonial .title span {
+  color: #0504a5;
+}
+
+.testimonial .name {
+  margin-bottom: 0px;
+  color: #0504a5;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.business {
+  color: #707070;
+  font-weight: 300;
+  margin-top: -4px;
+}
+.testimonial .identity {
+  display: flex;
+  align-items: center;
+}
+
+
+
+@media (min-width: 1200px) {
+    .testimonial .title {
+        font-size: 2.4rem;
+    }
+}

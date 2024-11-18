@@ -1,0 +1,5 @@
+.bg-dark {
+    background: url('your-image-url.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  

@@ -2,7 +2,7 @@
 .about-title {
     font-size: 36px;
     font-weight: bold;
-    color: #0504A5;
+    color: #031243;
 
 
     font-size: 36px;
@@ -19,8 +19,10 @@
   
   .about-subtitle {
     font-size: 18px;
-    color: #333;
+    color: #031243;
     margin-top: 10px;
+    max-width: 56%;
+    font-weight: 400;
   }
   
   /* Image container styling */

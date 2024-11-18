@@ -13,22 +13,16 @@ import project7 from "../../Assets/project7.png";
 
 import project8 from "../../Assets/project8.png";
 import project9 from "../../Assets/project9.png";
-const FeatureProject = () => {
+const FeatureProject = (props) => {
   return (
-    <section className="FeatureProject mt-5">
+    <section className={`${props?.mainclass}   mt-5"`}>
       <div className="container">
         <div className=" justify-content-center text-center ">
-          <h3 className="title">
-            <span> Featured projects.</span>
+          <h3 className={props?.titleclass}>
+            {props?.title}
+            <span> {props?.title2}</span>
           </h3>
-          <p className="para">
-            At California Web Coders, we bring visions to life with innovative
-            web design, custom software development, and seamless digital
-            solutions. From sleek eCommerce platforms to powerful business apps,
-            our portfolio showcases diverse projects tailored to meet our
-            clients' unique needs. Every project reflects our commitment to
-            creativity, quality, and cutting-edge technology.
-          </p>
+          <p className={props?.paraclass}>{props?.para}</p>
 
           <div className=" d-flex flex-wrap justify-content-center align-items-center  gap-3">
             <button className="featuredbtn">Logo Design</button>
@@ -133,8 +127,6 @@ const FeatureProject = () => {
             </div>
           </div>
 
-
-
           <div className="col-sm-12 col-md-6 col-lg-4">
             <div className="p-4 mt-4">
               <div className="news-card  ">
@@ -180,12 +172,19 @@ const FeatureProject = () => {
               </div>
             </div>
           </div>
+          <div className="  justify-content-center  d-flex gap-4">
+            <button className={props?.viewbtn}>{props?.btntitle}</button>
 
-
-
-          <button className="viewdbtn">View All Projects</button>
+            {props?.FaPhoneAlt && (
+              <span className="d-flex align-items-center gap-2">
+                <props.FaPhoneAlt className={props?.callicon} />
+                <p className="para4 mb-0  align-items-center">
+                  +1 619-798-9688
+                </p>
+              </span>
+            )}
+          </div>
         </div>
-
       </div>
     </section>
   );

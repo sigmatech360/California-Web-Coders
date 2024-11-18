@@ -214,8 +214,51 @@
     padding: 80px 0;
   } */
 
-  .heroimg {
+  .hero .heroimg {
     max-width: 134%;
     margin-left: -50px;
   }
 }
+
+
+
+
+@media (min-width: 1200px) {
+  .feature .paraclass {
+      font-size: 18px;
+      line-height: 28px;
+      max-width: 59%;
+      max-width: 100%;
+      width: 59%;
+      margin: auto;
+      margin-bottom: 20px;
+  }
+}
+
+
+
+  .featuretitle span {
+    color: #0504a5;
+    font-size: 3.32rem;
+    font-weight: 600;
+    font-family: "Outfit", sans-serif !important;
+  }
+
+
+
+   .viewbtn{
+    max-width: 100%!important;
+    justify-content: center;
+    display: flex;
+ 
+    width: 14% !important;
+
+
+    color: white;
+    border: none;
+    background-color: #0504a5;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px; /* Adjusted for responsiveness */
+    margin: auto; /* Add spacing between buttons */
+  }
