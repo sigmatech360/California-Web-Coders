@@ -1,0 +1,46 @@
+.RefundPolicy{
+    background-color: #0504A5;
+}
+
+
+.RefundPolicypara{
+        /* max-width: 46%; */
+        max-width: 100%;
+        width: 50%;
+        margin: auto;
+}
+
+.paymentwayimg {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .paymentway {
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px; /* Increased height for better visibility */
+    width: 100px; /* Adjusted width for uniform scaling */
+    padding: 10px; /* Add padding for image spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .gap-3 {
+    gap: 1rem; /* Adjust spacing between items */
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  

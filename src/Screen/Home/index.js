@@ -69,10 +69,10 @@ paraclass="para"
 
       <Servies />
 
-      {/*   <LogoDesignServices />
+      <LogoDesignServices />
 
       <Mobileworld />
-      <FrequentQuestions /> */}
+        <FrequentQuestions FrequentQuestions="homeFrequentQuestions"  />
       {/* <BlogSection /> */}
       {/* <Perfection/> */}
     </Layout>

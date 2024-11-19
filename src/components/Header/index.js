@@ -64,13 +64,20 @@ function Header() {
                   <NavDropdown.Item as={Link} to="/services/wordpress-webdesignservices">
                   wordpress-webdesignservices
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/services/action2">
-                    Another Action
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item as={Link} to="/pricing-plan">
+                  Pricing-plan
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item as={Link} to="/services/action3">
-                    Something Else Here
+                  <NavDropdown.Item as={Link} to="/news-trends">
+                  News-Trends
                   </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/get-intouch">
+                  Get-intouch
+                  </NavDropdown.Item>
+
+
+
                 </NavDropdown>
 
                 <NavDropdown
@@ -78,7 +85,7 @@ function Header() {
                   id="navbarScrollingDropdown"
                   className="nav-dropdown-custom"
                 >
-                  <NavDropdown.Item as={Link} to="/our-work/action1">
+                  <NavDropdown.Item as={Link} to="/our-work">
                     Action
                   </NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/our-work/action2">

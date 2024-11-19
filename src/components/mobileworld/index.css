@@ -41,9 +41,10 @@
 
 .Mobileworld .para1 {
   max-width: 77%;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 20px;
-  font-size: 16px;
+  font-size: 20px;
+  color: #031243;
 }
 
 .Mobileworld .para2 {
@@ -165,113 +166,77 @@
   font-weight: 600;
 }
 
+.Mobileworld .mbsersicesblk {
+  flex: 1 1 33%; /* Each item takes up 33.333% of the row on large screens */
+  max-width: 30.333%; /* Prevent items from exceeding 33% width */
+  border-radius: 20px;
+  padding: 20px 30px;
+  background-color: #f3f3f6 !important;
+  border: 2px solid #0504a5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+/* Scroll container */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+@media (max-width: 1200px) {
   .Mobileworld .mbsersicesblk {
-    flex: 1 1 33%; /* Each item takes up 33.333% of the row on large screens */
-    max-width: 30.333%; /* Prevent items from exceeding 33% width */
-    border-radius: 20px;
-    padding: 20px 30px;
-    background-color: #f3f3f6 !important;
-    border: 2px solid #0504a5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex: 1 1 48%; /* 2 items per row on medium screens */
+    max-width: 48%;
   }
-  
-  /* Scroll container */
- 
-  @media (max-width: 1200px) {
-    .Mobileworld .mbsersicesblk {
-      flex: 1 1 48%; /* 2 items per row on medium screens */
-      max-width: 48%;
-    }
+}
+
+/* Media query for small screens (mobile-sized) */
+@media (max-width: 768px) {
+  .Mobileworld .mbsersicesblk {
+    flex: 1 1 100%; /* 1 item per row on small screens */
+    max-width: 100%;
+    padding: 15px 20px; /* Reduce padding for small screens */
   }
-  
-  /* Media query for small screens (mobile-sized) */
-  @media (max-width: 768px) {
-    .Mobileworld .mbsersicesblk {
-      flex: 1 1 100%; /* 1 item per row on small screens */
-      max-width: 100%;
-      padding: 15px 20px; /* Reduce padding for small screens */
-    }
-  
-    .Mobileworld .mbsersicesblk .titlewp {
-      font-size: 1rem; /* Reduce font size */
-    }
-  
-    .Mobileworld .mbsersicesblk .servicesrs {
-      font-size: 1.2rem; /* Adjust price font size */
-    }
-  
-    .Mobileworld .mbsersicesblk .orderbtn {
-      font-size: 0.9rem; /* Reduce font size for smaller buttons */
-      padding: 8px 16px; /* Adjust button padding */
-    }
-  
-    .Mobileworld .mbsersicesblk .shareidea, 
-    .Mobileworld .mbsersicesblk .numb {
-      font-size: 0.8rem; /* Smaller text for phone numbers and share idea */
-    }
+
+  .Mobileworld .mbsersicesblk .titlewp {
+    font-size: 1rem; /* Reduce font size */
   }
-  
-  /* Media query for extra small screens (very small mobile-sized screens) */
-  @media (max-width: 480px) {
-    .Mobileworld .mbsersicesblk {
-      flex: 1 1 100%; /* 1 item per row on very small screens */
-      max-width: 100%;
-      padding: 10px 15px; /* Further reduce padding */
-    }
-  
-    .Mobileworld .mbsersicesblk .titlewp {
-      font-size: 0.9rem; /* Smaller font size for titles */
-    }
-  
-    .Mobileworld .mbsersicesblk .servicesrs {
-      font-size: 1.1rem; /* Slightly smaller service price */
-    }
-  
-    .Mobileworld .mbsersicesblk .orderbtn {
-      font-size: 0.8rem; /* Even smaller button font size */
-      padding: 6px 14px; /* Adjust button padding */
-    }
-  
-    .Mobileworld .mbsersicesblk .shareidea, 
-    .Mobileworld .mbsersicesblk .numb {
-      font-size: 0.7rem; /* Smaller font for small screens */
-    }
+
+  .Mobileworld .mbsersicesblk .servicesrs {
+    font-size: 1.2rem; /* Adjust price font size */
   }
-  
+
+  .Mobileworld .mbsersicesblk .orderbtn {
+    font-size: 0.9rem; /* Reduce font size for smaller buttons */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+
+  .Mobileworld .mbsersicesblk .shareidea,
+  .Mobileworld .mbsersicesblk .numb {
+    font-size: 0.8rem; /* Smaller text for phone numbers and share idea */
+  }
+}
+
+/* Media query for extra small screens (very small mobile-sized screens) */
+@media (max-width: 480px) {
+  .Mobileworld .mbsersicesblk {
+    flex: 1 1 100%; /* 1 item per row on very small screens */
+    max-width: 100%;
+    padding: 10px 15px; /* Further reduce padding */
+  }
+
+  .Mobileworld .mbsersicesblk .titlewp {
+    font-size: 0.9rem; /* Smaller font size for titles */
+  }
+
+  .Mobileworld .mbsersicesblk .servicesrs {
+    font-size: 1.1rem; /* Slightly smaller service price */
+  }
+
+  .Mobileworld .mbsersicesblk .orderbtn {
+    font-size: 0.8rem; /* Even smaller button font size */
+    padding: 6px 14px; /* Adjust button padding */
+  }
+
+  .Mobileworld .mbsersicesblk .shareidea,
+  .Mobileworld .mbsersicesblk .numb {
+    font-size: 0.7rem; /* Smaller font for small screens */
+  }
+}

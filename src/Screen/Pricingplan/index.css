@@ -1,0 +1,21 @@
+.pricingtitle {
+  font-size: 5rem;
+  font-family: "Outfit";
+  font-weight: 400;
+}
+
+.herosecpara {
+  max-width: 55%;
+  font-family: "Outfit";
+}
+
+.herosecimg {
+  width: 78%;
+}
+
+.faqsbg {
+  background: linear-gradient(180deg, #F5F5F5 0%, #D4D4FF 100%);;
+     /* no-repeat padding-box; */
+  border-radius: 152px 152px 0px 0px;
+  opacity: 1;
+}

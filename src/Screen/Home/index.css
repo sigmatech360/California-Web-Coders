@@ -262,3 +262,11 @@
     font-size: 14px; /* Adjusted for responsiveness */
     margin: auto; /* Add spacing between buttons */
   }
+
+
+  .homeFrequentQuestions{
+    background: transparent linear-gradient(0deg, #F5F5F5 0%, #D4D4FF 100%) 0% 0% no-repeat padding-box;
+  border-radius: 0px 0px 80px 80px;
+  opacity: 1;
+  
+  }

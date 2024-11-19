@@ -1,5 +1,40 @@
-.bg-dark {
-    background: url('your-image-url.jpg') no-repeat center center;
-    background-size: cover;
-  }
-  
+.ContactForm {
+  background: url("../../Assets/chatprojectbg.png") no-repeat center center;
+  background-size: cover;
+}
+
+.ContactForm .title {
+  font-size: 39px;
+  font-family: "Outfit";
+  max-width: 100%;
+  width: 50%;
+  margin: auto;
+}
+
+.form-control-lg {
+  min-height: calc(1.5em + 1rem + calc(var(--bs-border-width) * 2));
+  padding: 0.5rem 1rem;
+  font-size: 1.0rem;
+  /* border-radius: var(--bs-border-radius-lg); */
+  border-radius: 35px !important;
+}
+
+.innercontainer {
+  padding: 30px 222px;
+}
+
+.ContactForm .sendmessage {
+  color: white;
+  border-radius: 45px;
+  background-color: #0504a5;
+  font-size: 15px;
+  font-family: "Outfit";
+}
+
+.ContactForm .lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  max-width: 100%;
+  width: 80%;
+  margin: auto;
+}

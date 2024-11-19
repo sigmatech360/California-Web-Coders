@@ -11,6 +11,8 @@ import Growyourbusiness from "../../components/growyourbusiness";
 import FeatureProject from "../../components/featureproject";
 import { FaPhoneAlt } from "react-icons/fa";
 import PricingPlans from "../../components/PricingPlans";
+import ContactForm from "../../components/readytocheat";
+import Creativitythrough from "../../components/Creativitythrough";
 const Webdesignservices = () => {
   return (
     <Layout>
@@ -68,11 +70,11 @@ const Webdesignservices = () => {
 
             {/* Image Content */}
             <div className="col-12 col-lg-6 text-center mt-4 mt-lg-0">
-              <img
+              {/* <img
                 src="https://via.placeholder.com/600x400" // Replace with your image URL
                 alt="Web Design"
                 className="img-fluid rounded"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -83,10 +85,10 @@ const Webdesignservices = () => {
       <Growyourbusiness />
 
       <FeatureProject
-FaPhoneAlt={FaPhoneAlt}
-callicon="callicon"
-viewbtn="viewbtn"
-titleclass="wpdstitle"
+        FaPhoneAlt={FaPhoneAlt}
+        callicon="callicon"
+        viewbtn="viewbtn"
+        titleclass="wpdstitle"
         mainclass="wpds"
         paraclass="para"
         title="From Pixels "
@@ -95,12 +97,16 @@ titleclass="wpdstitle"
          the specific needs of every business. We strive to
           showcase and enhance the individuality of your brand.
            Explore some of our recent projects below."
-           btntitle="Request A Quote"
+        btntitle="Request A Quote"
       />
 
+      <PricingPlans />
 
 
-      <PricingPlans/>
+      <ContactForm/>
+
+
+<Creativitythrough/>
     </Layout>
   );
 };

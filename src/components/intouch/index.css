@@ -1,0 +1,21 @@
+.intouch .para1 {
+  color: #0504a5;
+}
+
+.intouch .title {
+  max-width: 55%;
+  font-size: 37px;
+}
+
+.intouch .title span {
+  color: #0504a5;
+}
+
+.intouch .para2 {
+  max-width: 60%;
+}
+
+.intouch .para3 {
+  color: #031243;
+  font-weight: 600;
+}

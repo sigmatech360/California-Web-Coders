@@ -1,5 +1,6 @@
-.wordpress-web-design {
-  background: url("../../Assets/wordpressbg.png"); /* Replace with your background image */
+.OurWork {
+  background: #031243;
+  /* url("../../Assets/wordpressbg.png");  */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -10,7 +11,7 @@ body {
   font-family: "Outfit !important";
 }
 
-.wordpress-web-design .checkicon {
+.OurWork .checkicon {
   font-weight: bold;
   font-size: 1.1rem;
   color: white;
@@ -19,7 +20,7 @@ body {
   font-weight: 500;
 }
 
-.wordpress-web-design .contactbtn {
+.OurWork .contactbtn {
   background-color: #0504a5;
   color: white;
   font-size: 1rem;
@@ -27,7 +28,7 @@ body {
   border-radius: 45px;
 }
 
-.wordpress-web-design .title {
+.OurWork .title {
   font-size: 3.3rem;
   font-family: "Outfit";
   font-weight: 400;
@@ -48,16 +49,20 @@ body {
 }
 
 @media (min-width: 1200px) {
-  .wpds .para {
+  .OurWorkpara {
     font-size: 18px;
     line-height: 28px;
     max-width: 59%;
     max-width: 100%;
-    width: 59%;
+    width: 80%!important;
     margin: auto;
     margin-bottom: 20px;
   }
 }
+
+
+
+
 
 /* {
   font-size: 3.32rem;
@@ -65,8 +70,8 @@ body {
   font-family: "Outfit", sans-serif !important;
 } */
 
-.wordpress-web-design .lead {
-  max-width: 63%;
+.OurWork .lead {
+  max-width: 60%;
 }
 
 .callicon {
