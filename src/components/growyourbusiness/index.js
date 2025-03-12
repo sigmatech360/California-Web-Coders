@@ -2,25 +2,22 @@ import React from "react";
 import "./index.css";
 const Growyourbusiness = () => {
   return (
-    <div>
-<section className="gorwyourbusiness">
-  <div className="container">
-    <div className="row alignitems-center justify-content-center text-center">
-    
-      <div className="col-12 col-lg-6 mb-3">
-        <p className="title">
-          Want to grow your business <span>digitally?</span>
-        </p>
-      </div>
- 
-      <div className="col-12 col-lg-6">
-        <button className="clickhere">Click Here To Get Started</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-    </div>
+    <>
+      <section className="gorwyourbusiness">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="grow-business-content d-flex justify-content-md-between justify-content-center align-items-center flex-lg-row flex-column gap-3">
+                <h2 className="title m-0 text-center">
+                  Want to grow your business <span>digitally?</span>
+                </h2>
+                <button className="clickhere">Click Here To Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

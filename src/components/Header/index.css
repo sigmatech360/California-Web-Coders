@@ -28,7 +28,7 @@ a {
 }
 
 .uperheader span {
-  margin-right: 15px; /* Space between contact items */
+  /* margin-right: 15px;  */
   font-size: 16px;
 }
 
@@ -51,20 +51,23 @@ a {
   border: none;
 }
 
-.navbar-nav-custom {
+/* .navbar-nav-custom {
   gap: 26px;
-}
+} */
 
-.nav-link-custom {
+
+.navbar-section .nav-link {
+  color: #031243;
   font-size: 16px;
-  font-weight: 500;
-  color: #031243 !important; /* Same color for Home, Services, Our Work */
-  transition: color 0.3s ease;
+  padding: 8px 20px !important;
+  border-radius: 30px;
+}
+.contact-button{
+  background: #0504A5 !important;
+  color: #fff !important;
 }
 
-.nav-link-custom:hover {
-  color: #0504a5 !important;
-}
+
 
 /* Dropdown Customization */
 .nav-dropdown-custom .dropdown-item {

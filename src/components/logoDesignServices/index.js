@@ -1,11 +1,11 @@
 import React from "react";
 import "./index.css";
-import logodesignimg from '../../Assets/logodesignimg.png'
+import logodesignimg from "../../Assets/logodesignimg.png";
 const LogoDesignServices = () => {
   return (
-    <section className="LogoDesignServices mt-5">
+    <section className="LogoDesignServices mt-1">
       <div className="container">
-        <div className="row  py-5">
+        <div className="row align-items-center">
           <div className="col-md-6 ">
             <p className="para">Say No To Logo Template Scams</p>
 
@@ -36,25 +36,24 @@ const LogoDesignServices = () => {
               concept in detail. Our talented designers then create custom logos
               for your brand based on these insights.
             </p>
-            {/* <p className="paratitle">
-              Ready to transform your online presence?
-            </p>
-
-            <p className="para2  mb-4">
-              Contact us today for a free consultation and discover how our web
-              design expertise can help your business thrive.
-            </p> */}
-
-            {/* <button className="freecons">Get My Free Consulation</button> */}
           </div>
 
           <div className="col-md-6">
-
-<img  className="img-fluid  LogoDesignServicesimg" src={logodesignimg}/>
-
+            <img
+              className="img-fluid  LogoDesignServicesimg"
+              src={logodesignimg}
+            />
           </div>
 
-          <p className="para3">We deliver a logo that exceeds your expectations. Professional logo design services from us elevate your business and make it stand out in a congested market. Choose Logo Leagues for a logo that tells your brand's story. Let us create a logo that leaves an indelible imprint on your audience and distinguishes your brand.</p>
+          <div class="col-md-12">
+            <p className="para3">
+              We deliver a logo that exceeds your expectations. Professional
+              logo design services from us elevate your business and make it
+              stand out in a congested market. Choose Logo Leagues for a logo
+              that tells your brand's story. Let us create a logo that leaves an
+              indelible imprint on your audience and distinguishes your brand.
+            </p>
+          </div>
         </div>
       </div>
     </section>

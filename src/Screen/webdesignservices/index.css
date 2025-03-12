@@ -84,12 +84,4 @@ body {
   cursor: pointer; /* Makes it clear that it's clickable */
 }
 
-.viewbtn {
-  color: white;
-  border: none;
-  background-color: #0504a5;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 14px; /* Adjusted for responsiveness */
-  margin: 5px; /* Add spacing between buttons */
-}
+

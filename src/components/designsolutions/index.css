@@ -3,8 +3,7 @@
 }
 
 .Designsolutions {
-  padding: 60px 15px;
-  /* Universal padding for better responsiveness */
+  margin: 60px 0px !important;
 }
 
 .Designsolutions .para {
@@ -14,24 +13,22 @@
 }
 
 .Designsolutions .title {
-  max-width: 100%;
-  font-size: 4.0rem;
+  font-size: 65px;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1;
   margin-bottom: 20px;
 }
 
 .Designsolutions .title span {
   color: #0504a5;
+  font-weight: 500;
 }
 
 .Designsolutions .para2 {
   font-weight: 400;
   color: #031243;
-  font-size: 1.3rem;
-  /* Scalable font size */
-  line-height: 1.5;
-  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.3;
 }
 
 .Designsolutions .para2 span {
@@ -52,21 +49,18 @@
   border-radius: 30px;
   cursor: pointer;
   font-size: 1rem;
-  /* Scalable font size */
   transition: all 0.3s ease-in-out;
   margin-bottom: 2px;
 }
 
 .Designsolutions .freecons:hover {
   background-color: #031243;
-  /* Hover effect */
 }
 
 .Designsolutions .solution {
-  padding: 15px;
+  padding: 20px 16px;
   background-color: #0504a5;
   height: auto;
-  /* Remove fixed height for better scalability */
   color: white;
   border-radius: 20px;
   display: flex;
@@ -76,216 +70,67 @@
 
 .Designsolutions .solution span {
   font-size: 1.5rem;
+  line-height: 1;
 }
 
 .Designsolutions .para3 {
   color: white;
-  max-width: 100%;
-  /* Ensure full-width responsiveness */
-  font-size: 0.9rem;
-  /* Scalable font size */
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 0;
 }
 
-/* Responsive Design */
+@media (max-width: 1399px) {
+  .Designsolutions .title {
+    font-size: 58px;
+  }
+  .Designsolutions .solution-heading {
+    font-size: 24px;
+  }
+}
 
-/* Tablets (769px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 1199px) {
+  .Designsolutions .solution-heading {
+    font-size: 21px;
+  }
+  .Designsolutions .para3 {
+    font-size: 15px;
+  }
+  .Designsolutions .para2 {
+    font-size: 16px;
+  }
+  .Designsolutions .title {
+    font-size: 49px;
+  }
+}
+
+@media (max-width: 991px) {
   .Designsolutions {
-    padding: 50px 15px;
+    margin: 30px 0px !important;
   }
+}
 
+@media (max-width: 480px) {
   .Designsolutions .title {
-    font-size: 2rem;
-    line-height: 1.3;
+    font-size: 43px;
   }
-
-  .Designsolutions .para2 {
-    font-size: 0.95rem;
-  }
-
-  .Designsolutions .freecons {
-    font-size: 0.9rem;
-    padding: 8px 20px;
-  }
-
   .Designsolutions .solution {
-    padding: 12px;
-    gap: 10px;
+    padding: 16px 10px;
+    gap: 5px;
   }
-
+  .Designsolutions .solution-heading {
+    font-size: 19px;
+  }
   .Designsolutions .para3 {
-    font-size: 0.875rem;
+    font-size: 14px;
   }
 }
 
-/* Mobile Devices (max-width: 768px) */
-@media (max-width: 768px) {
-  .Designsolutions {
-    padding: 40px 15px;
-  }
-
+@media (max-width: 430px) {
   .Designsolutions .title {
-    font-size: 1.8rem;
-    line-height: 1.2;
+    font-size: 36px;
   }
-
-  .Designsolutions .para2 {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-  }
-
-  .Designsolutions .freecons {
-    font-size: 0.85rem;
-    padding: 12px 20px;
-    /* width: 100%; */
-    text-align: center;
-    margin-bottom: 18px;
-  }
-
-  .Designsolutions .solution {
-    flex-direction: column;
-    /* Stack content vertically */
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .Designsolutions .solution span {
-    font-size: 1.2rem;
-  }
-
-  .Designsolutions .para3 {
-    font-size: 0.875rem;
-    line-height: 1.3;
+  .Designsolutions .solution-heading {
+    font-size: 17px;
   }
 }
-
-/* Extra Small Screens (max-width: 600px) */
-@media (max-width: 600px) {
-  .Designsolutions .title {
-    font-size: 1.5rem;
-    line-height: 1.2;
-  }
-
-  .Designsolutions .para2 {
-    font-size: 0.85rem;
-  }
-
-  .Designsolutions .freecons {
-    font-size: 0.8rem;
-    padding: 8px 18px;
-  }
-
-  .Designsolutions .solution {
-    padding: 8px;
-    gap: 8px;
-    text-align: center;
-  }
-
-  .Designsolutions .para3 {
-    font-size: 0.8rem;
-    line-height: 1.2;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .body {
-  font-family: "Outfit", sans-serif !important;
-}
-.Designsolutions .para {
-  color: #031243;
-  font-weight: 600;
-
- 
-} */
-
-/* .Designsolutions .title {
-  max-width: 74%;
-  font-size: 47px;
-  font-weight: 600;
-  line-height: 53px;
-}
-
-.Designsolutions .title span {
-  color: #0504a5;
-}
-
-.Designsolutions .para2 {
-  font-weight: 400;
-  color: #031243;
-  font-weight: 500;
-  max-width: 79% !important;
-}
-
-.Designsolutions .para2 span {
-  color: #0504a5;
-  color: #031243;
-}
-
-.Designsolutions .paratitle {
-  font-size: 17px;
-  font-weight: 700;
-}
-
-.Designsolutions .freecons {
-  border: none;
-  color: white;
-  background-color: #0504a5;
-  padding: 8px 25px;
-  border-radius: 30px;
-}
-
-.Designsolutions .solution {
-  padding: 10px 20px;
-  background-color: #0504a5;
-  height: 130px;
-  color: white;
-  border-radius: 20px;
-}
-.Designsolutions  .para3{
-    color: white;
-  max-width: 83% !important;
-} */

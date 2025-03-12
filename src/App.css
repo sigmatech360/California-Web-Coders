@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Outfit", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.colorBleu {
+  color: #0504a5 !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-img-right img {
+  transform: scale(113%) translate(-30px, 70px);
+  transform-origin: top right;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 136px;
+  justify-content: space-between;
+}
+
+.hero {
+  overflow: hidden;
+  background-color: #ffffff; /* Background for the section */
+}
+
+.heroinner {
+  padding: 62px 0;
+}
+
+/* Title Styling */
+.hero .title {
+  font-size: 76px;
+  line-height: 1;
+  color: #031243;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  /* text-align: center;  */
+}
+
+.hero .title span {
+  color: #0504a5;
+}
+
+/* Paragraph Styling */
+.hero .para {
+  color: #031243;
+  font-family: "Outfit", sans-serif;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.hero .para span {
+  color: #0504a5;
+}
+
+/* Button Styling */
+.hero .herobtn {
+  background-color: #0504a5;
   color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+.hero .herobtn:hover {
+  background-color: #031243;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Google Review Styling */
+.hero .google-review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  /* justify-content: center; */
+}
+
+.google-logo {
+  width: 120px;
+}
+
+.review-text {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 18px;
+  color: #031243;
+}
+
+/* Hero Image Styling */
+.heroimg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Adjustments */
+
+.featuretitle span {
+  color: #0504a5;
+  font-size: 3.32rem;
+  font-weight: 600;
+  font-family: "Outfit", sans-serif !important;
+}
+
+.viewbtn {
+  color: white;
+  border: none;
+  background-color: #0504a5;
+  padding: 10px 26px;
+  border-radius: 30px;
+  font-size: 14px; /* Adjusted for responsiveness */
+}
+
+.homeFrequentQuestions {
+  background: transparent linear-gradient(0deg, #f5f5f5 0%, #d4d4ff 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 0px 0px 80px 80px;
+  opacity: 1;
+}
+
+@media (max-width: 1399px) {
+  .hero .title {
+    font-size: 70px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 1199px) {
+  .hero .title {
+    font-size: 58px;
+  }
+  .hero-content {
+    gap: 25px;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-section .navbar-nav {
+    background-color: #0504a5;
+    padding: 16px 0;
+  }
+  .navbar-section .nav-link {
+    color: #fff !important;
+  }
+  .hero-img-right img {
+    transform: scale(1) translate(0px, 00px);
+    transform-origin: center;
+  }
+  .heroinner .row {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .google-review {
+    justify-content: center;
+  }
+  .hero-content {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heroinner {
+    padding: 31px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .title {
+      font-size: 44px;
   }
 }

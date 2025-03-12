@@ -11,19 +11,19 @@ const Digitalagency = () => {
     <section>
       <div className="digitalagency">
         <div className="container">
-          <div className="row mb-4 mb-5">
+          <div className="row mb-3">
             <div className="col-lg-6 ">
               <h2 className="title">
                 We are a creative bold digital agency based in{" "}
-                <span>Californi.</span>{" "}
+                <span>California.</span>{" "}
               </h2>
             </div>
             <div className="col-lg-6 ">
-              <div className="d-flex gap-4">
+              <div className="d-flex gap-md-4 gap-2">
                 <span className="twentypls"> 20+</span>
                 <div className=" align-content-center justify-content-center">
                   {" "}
-                  <p className="para"> 20+ Years of Experience</p>
+                  <p className="para mb-1"> 20+ Years of Experience</p>
                   <p className="para1">
                     We are dedicated to providing outstanding digital and design
                     services meet the functional and aesthetic.
