@@ -1,14 +1,9 @@
 .Mobileworld {
-  padding: 74px 2px;
+  margin: 60px 0;
 }
-
 .Mobileworld .title {
-  max-width: 90%;
-  font-size: 44px;
-  font-family: "Outfit", sans-serif !important;
-  /* font-size: 24px; */
-  line-height: 45px;
-  font-family: "Outfit", sans-serif !important;
+  font-size: 50px;
+  line-height: 1;
 }
 
 .Mobileworld .title span {
@@ -40,22 +35,18 @@
 }
 
 .Mobileworld .para1 {
-  max-width: 77%;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.5;
   font-size: 20px;
   color: #031243;
 }
 
 .Mobileworld .para2 {
-  font-family: "Outfit", sans-serif !important;
   font-size: 17px;
-
   max-width: 19vw;
 }
 
 .Mobileworld .satisfiedpara {
-  font-family: "Outfit", sans-serif !important;
   font-size: 17px;
   border-top: 1px solid #0504a5;
   padding: 15px 3px;
@@ -70,89 +61,56 @@
   align-items: center;
   justify-content: center;
   padding: 8px;
-  /* background-color: #0504a5; */
   color: #0504a5;
   border-radius: 50%;
   width: 30px;
   height: 30px;
 }
 
-.Mobileworld .servicesbtn {
-  background-color: #0504a5;
-  color: white;
-  border: none;
-  padding: 5px 29px;
-  border-radius: 50%;
-  border-radius: 45px;
-}
-
-/* .Mobileworld .mbsersicesblk {
-  flex: 0 0 auto;
-  width: 33.33333333%;
-  border-radius: 20px;
-  padding: 20px 30px;
-  background-color: #f3f3f6 !important;
-  border: 2px solid #0504a5;
-  border: 2px solid #0504a5;
-  max-width: 28%;
-} */
-
-.Mobileworld .titlewp {
+.price-plane-head-title {
   color: #031243;
   font-weight: 600;
-  font-size: 20px;
-  width: 50%;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 1.1;
   margin-bottom: 11px;
+  max-width: 270px;
 }
 
-.Mobileworld .servicesrs {
+.price-plane-price {
   font-size: 43px;
   color: #0504a5;
   font-weight: 700;
 }
 
-.Mobileworld .stock {
-  font-weight: 500;
+.price-plan-list {
+  height: 230px;
+  overflow-y: auto;
   display: flex;
-  align-items: center; /* Vertically center the text and icon */
+  flex-direction: column;
+  gap: 7px;
+  margin: 25px 0;
 }
 
-.Mobileworld .stock span {
-  color: #0504a5; /* Color for the icon */
-  margin-right: 8px; /* Optional: Adds some spacing between the icon and the text */
-}
-
-.Mobileworld .scroll-container {
-  height: 200px; /* Set the height of the container to make it scrollable */
-  overflow-y: auto; /* Enable vertical scrolling */
-  /* background: #1b1b49 0% 0% no-repeat padding-box; */
-
-  /* Optional: Add some padding for better spacing */
-}
-/* For webkit browsers like Chrome, Safari */
 ::-webkit-scrollbar {
-  width: 4px; /* Set the width of the scrollbar */
+  width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0504a5; /* Set the color of the scrollbar thumb */
-  border-radius: 10px; /* Optional: round the corners */
+  background-color: #0504a5;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
   background-color: #a2a2b3;
 }
 
-.Mobileworld .orderbtn {
+.price-card-btn {
   color: white;
   background-color: #0504a5;
   border-radius: 45px;
-  padding: 6px 16px;
+  padding: 10px 30px;
   border: none;
-  margin-top: 26px;
-  font-size: 15px;
-  font-weight: 200;
+  font-size: 16px;
 }
 
 .Mobileworld .shareidea {
@@ -162,81 +120,95 @@
   margin-bottom: 0px;
 }
 
-.Mobileworld .numb {
+.price-card-num {
   font-weight: 600;
+  font-size: 22px;
 }
 
-.Mobileworld .mbsersicesblk {
-  flex: 1 1 33%; /* Each item takes up 33.333% of the row on large screens */
-  max-width: 30.333%; /* Prevent items from exceeding 33% width */
-  border-radius: 20px;
-  padding: 20px 30px;
+.price-plan-card {
+  border-radius: 16px;
+  padding: 30px 30px;
   background-color: #f3f3f6 !important;
   border: 2px solid #0504a5;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 /* Scroll container */
 
-@media (max-width: 1200px) {
-  .Mobileworld .mbsersicesblk {
-    flex: 1 1 48%; /* 2 items per row on medium screens */
-    max-width: 48%;
+.price-plan-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.price-plan-list-item * {
+  margin: 0;
+}
+.price-plan-list-icon {
+  line-height: 1;
+  color: #0504a5;
+  font-size: 20px;
+}
+.price-plan-list-item p {
+  font-size: 21px;
+  line-height: 1.3;
+}
+
+.price-card-discount {
+  text-decoration: line-through;
+  color: #707070;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+
+.price-card-footer {
+  margin: 16px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.price-card-footer * {
+  margin: 0;
+}
+
+@media (max-width: 1399px) {
+  .Mobileworld .title {
+    font-size: 43px;
+  }
+  .Mobileworld .para1 {
+    font-size: 19px;
+  }
+  .price-plan-list-item p {
+    font-size: 17px;
+  }
+  .price-card-num {
+    font-size: 19px;
   }
 }
 
-/* Media query for small screens (mobile-sized) */
-@media (max-width: 768px) {
-  .Mobileworld .mbsersicesblk {
-    flex: 1 1 100%; /* 1 item per row on small screens */
-    max-width: 100%;
-    padding: 15px 20px; /* Reduce padding for small screens */
+@media (max-width: 1199px) {
+  .price-plan-card {
+    padding: 16px;
   }
-
-  .Mobileworld .mbsersicesblk .titlewp {
-    font-size: 1rem; /* Reduce font size */
+  .price-plan-list-item p {
+    font-size: 15px;
   }
-
-  .Mobileworld .mbsersicesblk .servicesrs {
-    font-size: 1.2rem; /* Adjust price font size */
+  .Mobileworld .title {
+    font-size: 36px;
   }
-
-  .Mobileworld .mbsersicesblk .orderbtn {
-    font-size: 0.9rem; /* Reduce font size for smaller buttons */
-    padding: 8px 16px; /* Adjust button padding */
-  }
-
-  .Mobileworld .mbsersicesblk .shareidea,
-  .Mobileworld .mbsersicesblk .numb {
-    font-size: 0.8rem; /* Smaller text for phone numbers and share idea */
+  .Mobileworld .para1 {
+    font-size: 16px;
   }
 }
-
-/* Media query for extra small screens (very small mobile-sized screens) */
-@media (max-width: 480px) {
-  .Mobileworld .mbsersicesblk {
-    flex: 1 1 100%; /* 1 item per row on very small screens */
-    max-width: 100%;
-    padding: 10px 15px; /* Further reduce padding */
+@media (max-width: 767px) {
+  .Mobileworld {
+    margin: 30px 0;
   }
-
-  .Mobileworld .mbsersicesblk .titlewp {
-    font-size: 0.9rem; /* Smaller font size for titles */
+}
+@media (max-width: 430px) {
+  .Mobileworld .title {
+    font-size: 26px;
   }
-
-  .Mobileworld .mbsersicesblk .servicesrs {
-    font-size: 1.1rem; /* Slightly smaller service price */
-  }
-
-  .Mobileworld .mbsersicesblk .orderbtn {
-    font-size: 0.8rem; /* Even smaller button font size */
-    padding: 6px 14px; /* Adjust button padding */
-  }
-
-  .Mobileworld .mbsersicesblk .shareidea,
-  .Mobileworld .mbsersicesblk .numb {
-    font-size: 0.7rem; /* Smaller font for small screens */
+  .price-plane-price {
+    font-size: 35px;
   }
 }

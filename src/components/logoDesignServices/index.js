@@ -6,7 +6,7 @@ const LogoDesignServices = () => {
     <section className="LogoDesignServices mt-1">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-md-6 ">
+          <div className="col-xl-6 col-lg-7 ">
             <p className="para">Say No To Logo Template Scams</p>
 
             <p className="title">
@@ -38,7 +38,7 @@ const LogoDesignServices = () => {
             </p>
           </div>
 
-          <div className="col-md-6">
+          <div className="col-xl-6 col-lg-5 logoServiceCol-2">
             <img
               className="img-fluid  LogoDesignServicesimg"
               src={logodesignimg}

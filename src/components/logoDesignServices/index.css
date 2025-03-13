@@ -84,3 +84,33 @@
     line-height: 1.2;
   }
 }
+
+@media (max-width: 1199px) {
+  .LogoDesignServices .title {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 991px) {
+  .logoServiceCol-2 {
+    order: -1;
+  }
+  
+  .logoServiceCol-2 .LogoDesignServicesimg {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto 40px;
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .LogoDesignServices{
+    padding: 40px 0;
+  }
+  .LogoDesignServices .title {
+    font-size: 25px;
+    line-height: 1;
+  }
+}
