@@ -1,7 +1,9 @@
 .FeatureProject {
   padding: 60px 0px;
-  background: transparent linear-gradient(180deg, #f5f5f5 0%, #d4d4ff 100%) 0%
-    0% no-repeat padding-box;
+  /* background: transparent linear-gradient(180deg, #f5f5f5 0%, #d4d4ff 100%) 0%
+    0% no-repeat padding-box; */
+  background: #00000000 linear-gradient(180deg, #ebebff 0%, #d4d4ff 100%) 0% 0%
+    no-repeat padding-box;
   border-radius: 152px 152px 0px 0px;
   opacity: 1;
 }
@@ -56,6 +58,13 @@
   border-color: #0504a5 !important;
 }
 
+@media (max-width: 991px) {
+  .FeatureProject {
+    padding: 30px 0px;
+    border-radius: 50px 50px 0px 0px !important;
+  }
+}
+
 @media (max-width: 767px) {
   .FeatureProject {
     padding: 30px 0px;
@@ -69,5 +78,4 @@
   .featuretitle span {
     font-size: 41px !important;
   }
-  
 }

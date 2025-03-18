@@ -1,84 +1,66 @@
-/* Main container */
-.about-title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #031243;
+/* .about-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #031243;
+
+  font-size: 36px;
+  font-size: 60px;
+  font-weight: 400;
+} */
+
+.about-banner {
+  padding: 30px 0;
+}
+.about-banner .about-title {
+  color: #031243;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+}
+.about-banner .about-subtitle {
+  font-size: 18px;
+  color: #031243;
+  margin-top: 10px;
+  font-weight: 400;
+  max-width: 407px;
+  line-height: 1.2;
+}
+.about-title span {
+  color: #000080;
+}
 
 
-    font-size: 36px;
-    /* font-weight: bold; */
-    /* color: #0504A5; */
-    font-size: 60px;
-    /* max-width: 67%; */
-    font-weight: 400;
-  }
-  
-  .about-title span {
-    color: #000080; /* Darker blue for emphasis */
-  }
-  
-  .about-subtitle {
-    font-size: 18px;
-    color: #031243;
-    margin-top: 10px;
-    max-width: 56%;
-    font-weight: 400;
-  }
-  
-  /* Image container styling */
-  .image-container {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  /* Main Image (Laptop) */
-  .main-image {
-    width: 100%;
-    height: auto;
- 
-  }
-  
-  /* Overlay Images */
-  .overlay-image {
-    position: absolute;
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .overlay-image-1 {
-    top: -30px;
-    left: -40px;
-  }
-  
-  .overlay-image-2 {
-    top: -20px;
-    right: -40px;
-  }
-  
-  .overlay-image-3 {
-    bottom: -30px;
-    left: 60px;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .about-title {
-      font-size: 28px;
-    }
-  
-    .about-subtitle {
-      font-size: 16px;
-    }
-  
-    .image-container {
-      max-width: 300px;
-    }
-  
-    .overlay-image {
-      width: 80px;
-    }
-  }
-  
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay-image {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.overlay-image-1 {
+  top: -30px;
+  left: -40px;
+}
+
+.overlay-image-2 {
+  top: -20px;
+  right: -40px;
+}
+
+.overlay-image-3 {
+  bottom: -30px;
+  left: 60px;
+}

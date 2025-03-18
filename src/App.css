@@ -2,6 +2,17 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+button:focus {
+  box-shadow: unset;
+  outline: unset;
+}
+.accordion-button:focus {
+  /* z-index: 3;
+  outline: 0; */
+  box-shadow: unset;
+  background-color: transparent;
+}
+
 .colorBleu {
   color: #0504a5 !important;
 }
@@ -119,6 +130,70 @@ body {
   opacity: 1;
 }
 
+.faqs-sec {
+  background: linear-gradient(0deg, #f5f5f5 0%, #d4d4ff 100%);
+  padding: 60px 0;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.sec-head h2 {
+  font-size: 42px;
+  line-height: 1;
+  color: #031243;
+}
+
+.sec-head-tag {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.faqs-tabs-btn {
+  color: #031243;
+  background: transparent;
+  border: unset;
+  font-size: 16px;
+}
+.faqs-sec .accordion-button {
+  color: #031243;
+  background-color: transparent;
+  box-shadow: unset;
+  padding-left: 0;
+  font-size: 16px;
+}
+.faqs-sec .accordion-button:not(.collapsed) {
+  background: transparent;
+  border: unset;
+  box-shadow: unset;
+  color: #031243;
+}
+.faqs-sec .accordion-body {
+  color: #707070;
+  padding-left: 0;
+  padding-top: 0;
+  font-style: 15px;
+}
+.faqs-sec .accordion-item {
+  background: transparent;
+  border: unset;
+  border-bottom: 1px solid #707070;
+  border-radius: unset !important;
+}
+
+.accordion-button::after {
+  content: "";
+  background-image: url("Assets/plus-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1rem;
+  height: 1rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("Assets/minus-icon.png");
+  transform: rotate(0deg);
+}
+
 @media (max-width: 1399px) {
   .hero .title {
     font-size: 70px;
@@ -131,6 +206,9 @@ body {
   }
   .hero-content {
     gap: 25px;
+  }
+  .sec-head h2 {
+    font-size: 41px;
   }
 }
 @media (max-width: 991px) {
@@ -156,6 +234,9 @@ body {
   .hero-content {
     gap: 0px;
   }
+  .faqs-tabs-btns {
+    margin: 16px 0 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -166,6 +247,15 @@ body {
 
 @media (max-width: 480px) {
   .hero .title {
-      font-size: 44px;
+    font-size: 44px;
+  }
+  .sec-head h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 430px) {
+  .sec-head h2 {
+      font-size: 30px;
   }
 }

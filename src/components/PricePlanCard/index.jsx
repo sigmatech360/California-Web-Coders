@@ -4,7 +4,7 @@ import ListIcon from "../ListIcon";
 const PricePlanCard = (props) => {
   return (
     <div className="price-plan-card">
-      <div class="price-plane-head">
+      <div className="price-plane-head">
         <p className="price-plane-head-title">
           {props.name}
         </p>
@@ -19,7 +19,7 @@ const PricePlanCard = (props) => {
       <button type="button" className="price-card-btn">
         Order Now
       </button>
-      <div class="price-card-footer">
+      <div className="price-card-footer">
         <p className="shareidea">Share your idea?</p>
         <p className="price-card-num">{props.number}</p>
       </div>

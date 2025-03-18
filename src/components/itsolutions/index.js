@@ -4,19 +4,17 @@ import logodesignimg from "../../Assets/logodesignimg.png";
 import { CiCircleCheck } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
 import itsolution from "../../Assets/itsolutions.png";
-import itservicesimg2 from '../../Assets/itservicesimg2.png'
+import itservicesimg2 from "../../Assets/itservicesimg2.png";
 const ItSolutions = () => {
   return (
-    <section className="itSolutions mt-5">
+    <section className="itSolutions">
       <div className="container">
-        <div className="row  py-5">
+        <div className="row mb-4">
           <div className="col-md-6 ">
             <p className="para">About Company</p>
-
             <p className="title">
               We’re Awards Winning <span> IT Solutions </span> Agency
             </p>
-
             <p className="para2 mb-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -69,13 +67,12 @@ const ItSolutions = () => {
           </div>
         </div>
 
-        <div className="row mt-4">
-          <div className="col-md-5">
-
-            <img src={itservicesimg2}  className="img-fluid"/>
+        <div className="row">
+          <div className="col-md-6">
+            <img src={itservicesimg2} className="img-fluid" />
           </div>
 
-          <div className="col-md-5">
+          <div className="col-md-6">
             <h3 className="missionstatement">Mission statement.</h3>
             <p className="missionstatementpara">
               Lorem Ipsum is simply dummy text of the printing and typesetting

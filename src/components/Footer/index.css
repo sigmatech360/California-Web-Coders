@@ -1,71 +1,74 @@
+.main-footer {
+  padding: 100px 0 10px;
+  border-top-left-radius: 170px;
+  border-top-right-radius: 170px;
+}
+
 footer {
-    margin-bottom: 0%;
-    font-size: 0.9rem;
-    background-color: #031243;
-    font-family: "Outfit", sans-serif;
-  }
-  
-  footer ul li a:hover {
-    color: #cccccc;
-  }
-  
+  margin-bottom: 0%;
+  font-size: 0.9rem;
+  background-color: #031243;
+  font-family: "Outfit", sans-serif;
+}
 
+.main-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-footer .para{
-  width: 80%;
+.main-footer-link {
+  font-size: 16px;
   font-weight: 100;
-  display: block;
-  /* font-family: Hind; */
-  font-size: 17px;
-  /* font-weight: 100; */
-  /* line-height: 48.82px; */
-  /* text-align: left; */
+  text-align: left;
+  color: #fff;
   text-decoration: none;
 }
-.contectpara{
+
+footer ul li a:hover {
+  color: #cccccc;
+}
+
+footer .para {
+  /* width: 80%; */
+  max-width: 332px;
   font-weight: 100;
   display: block;
-  /* font-family: Hind; */
-  font-size: 17px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.contectpara {
   font-weight: 100;
-  /* line-height: 48.82px; */
+  display: block;
+  font-size: 16px;
+  font-weight: 100;
   text-align: left;
   text-decoration: none;
   margin-top: 20.82px;
 }
+.contectpara a {
+  margin-top: 16px;
+  color: #fff;
+  text-decoration: none;
+}
 
-
-.footer_list_item{
+.footer_list_item {
   display: block;
- 
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 100;
-  line-height: 48.82px;
   text-align: left;
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-/* Footer Background and Text Color */
 .footer-section {
   background-color: #031243;
   color: white;
 }
 
-/* Footer Logo Styling */
 .footer-logo {
-  width: 100px; /* Adjust logo width as needed */
+  width: 100px;
 }
 
-/* Footer Links Styling */
 .footer-section h5 {
   font-weight: 600;
   margin-bottom: 15px;
@@ -81,72 +84,30 @@ footer .para{
   text-decoration: underline;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 575px) {
-  .footer-section p,
-  .footer-section ul li a {
-    font-size: 0.8rem;
-  }
-  .footer-logo {
-    width: 80px; /* Smaller logo on extra small screens */
-  }
+.main-footer-logo {
+  max-width: 200px;
+  display: block;
+  margin-bottom: 16px;
+}
+.main-footer-logo img {
+  width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer .emailsend {
-    background-color: #031243;
-    border: none;
-  }
+  background-color: #031243;
+  border: none;
+}
 
+footer .emailsend:focus-visible {
+  background-color: #031243;
+  border: none !important;
+  outline: unset;
+}
 
-  footer .emailsend:focus-visible {
-    background-color: #031243;
-    border: none!important;
-  }
+footer .sendbtn {
+  color: white;
+}
 
-
-
-  footer .sendbtn{
-color: white;
-  }
-
-
-
-  /* footer .sendmailtab{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    width: 72%;
-    border-bottom: 1px solid;
-  } */
-
-
-  
-
-
-
-
-
-/* Footer Styles */
 .footer-bottom {
   background-color: #031243;
   color: white;
@@ -154,10 +115,9 @@ color: white;
 }
 
 .footer-logo {
-  width: 60px; /* Adjusted for responsiveness */
+  width: 60px;
 }
 
-/* Newsletter Signup Section */
 .newsletter-signup h5 {
   color: white;
 }
@@ -166,54 +126,49 @@ color: white;
   color: #cccccc;
 }
 
-/* Email Input Field */
 .emailsend {
   background-color: #031243;
   border: none;
   color: white;
   padding: 8px 12px;
+  padding-left: 0;
   flex: 1;
 }
 
-/* Send Button */
-/* .sendbtn {
-  background-color: #4b8fe2;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-} */
-
-/* Input Field Wrapper */
 .sendmailtab {
   display: flex;
   align-items: stretch;
   border-bottom: 1px solid white;
   width: 100%;
-  max-width: 320px; /* Set a max-width for responsiveness */
+  max-width: 320px;
 }
 
-/* Responsive Adjustments */
+.footer-dmca {
+  max-width: 130px;
+}
+
+.footer-protect-img {
+  max-width: 130px;
+}
+
+@media (max-width: 991px) {
+  .main-footer {
+    padding: 40px 0 10px;
+  }
+}
+
 @media (max-width: 767px) {
-  .footer-bottom {
-    font-size: 0.8rem;
+  .newsletter-signup {
+    width: 100%;
   }
-  .footer-logo {
-    width: 50px; /* Smaller logo size on mobile */
-  }
-  .sendmailtab {
-    max-width: 100%; /* Full width on smaller screens */
+  .main-footer {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
 }
 
-
-
-
-
-
-
-
-  
+@media (max-width: 430px) {
+  .footer_list_item {
+    font-size: 15px;
+  }
+}

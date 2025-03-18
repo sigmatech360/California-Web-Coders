@@ -1,19 +1,11 @@
 .itSolutions {
-  padding: 64px 29px;
+  padding: 60px 0;
   overflow: hidden;
   background: transparent linear-gradient(180deg, #f5f5f5 0%, #d4d4ff 100%) 0%
     0% no-repeat padding-box;
   border-radius: 152px 152px 0px 0px;
   opacity: 1;
 }
-
-/* .itSolutionsimg {
- 
-  height: auto;
-
-
-  width: 80%;
-} */
 
 .itSolutions .title {
   font-size: 51px;
@@ -28,17 +20,10 @@
 }
 .itSolutions .para {
   letter-spacing: 0px;
-  /* width: 40% !important; */
-  /* max-width: 100%; */
-  /* width: auto !important; */
-  /* color: #000; */
-  /* font-family: Hind; */
   font-size: 15px;
   font-weight: 500;
   line-height: 19px;
   color: #0504a5;
-  /* padding: 9px 326px; */
-  /* text-align: center;/ */
   font-family: "Outfit", sans-serif !important;
 }
 
@@ -82,18 +67,14 @@
   max-width: 80%;
 }
 
-/* .itSolutions .itSolutionsimg {
-  height: 97%;
-  width: 110%;
-  margin-left: 64px !important;
-} */
+
 
 .checkicon {
   font-weight: bold;
-  font-size: 1.1rem; /* Adjust size as needed */
-  color: #0504a5; /* Example color */
-  font-size: 1.2rem; /* Adjust to match text size */
-  vertical-align: baseline; /* Align with text */
+  font-size: 1.1rem; 
+  color: #0504a5; 
+  font-size: 1.2rem; 
+  vertical-align: baseline; 
 }
 
 .itSolutions .learnmore {
@@ -112,10 +93,7 @@
 }
 
 
-.itSolutions .itSolutionsimg{
-  width: 86%;
 
-}
 
 
 .missionstatementbtn{
@@ -143,12 +121,12 @@
   background-color: #0504a5;
   color: white;
   padding: 10px;
-  border-radius: 50%; /* Ensures a perfect circle */
-  display: inline-flex; /* Aligns content properly */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  width: 40px; /* Explicit width for consistency */
-  height: 40px; /* Explicit height to match width */
-  font-size: 16px; /* Adjust size for content inside */
-  cursor: pointer; /* Makes it clear that it's clickable */
+  border-radius: 50%;
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center;
+  width: 40px; 
+  height: 40px; 
+  font-size: 16px; 
+  cursor: pointer; 
 }

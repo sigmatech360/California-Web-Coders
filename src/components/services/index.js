@@ -105,16 +105,16 @@ const Servies = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 compservices-col-3">
-            <div class="mobileservices-outer h-100 d-flex flex-column">
+            <div className="mobileservices-outer h-100 d-flex flex-column">
               <div className="mobileservices flex-grow-1">
-                <div class="mobile-services-content">
+                <div className="mobile-services-content">
                   <h4>Mobile App Developments</h4>
                   <p className="graphicservicespara">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                     elit tellus, luctus nec ullamcorper.
                   </p>
                 </div>
-                <div class="mobile-services-image">
+                <div className="mobile-services-image">
                   <img src={mobileservicesimg} className="mobileservicesimg" />
                 </div>
               </div>

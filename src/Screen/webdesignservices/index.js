@@ -102,11 +102,9 @@ const Webdesignservices = () => {
 
       <PricingPlans />
 
+      <ContactForm />
 
-      <ContactForm/>
-
-
-<Creativitythrough/>
+      <Creativitythrough />
     </Layout>
   );
 };

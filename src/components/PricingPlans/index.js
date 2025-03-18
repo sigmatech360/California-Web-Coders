@@ -185,7 +185,7 @@ const PricingPlans = () => {
             </div>
           </div>
 
-          <div className="row align-items-center py-4">
+          <div className="row py-4">
             <div className="col-12 col-lg-6 text-center mt-4 mt-lg-0">
               <img
                 src={wordpresssectionimg} // Replace with actual image URL

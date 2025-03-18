@@ -91,7 +91,7 @@ const FeatureProject = (props) => {
               <Tab eventKey="logo-design" title="Logo Design">
                 <div className="row justify-content-center">
                   {featuredProjectData.map((item, index) => (
-                    <div className="col-lg-4 col-md-6 mb-4">
+                    <div className="col-lg-4 col-md-6 mb-4" key={index}>
                       <NewsCard
                         image={item.image}
                         description={item.description}

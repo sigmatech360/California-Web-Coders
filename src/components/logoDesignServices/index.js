@@ -45,7 +45,7 @@ const LogoDesignServices = () => {
             />
           </div>
 
-          <div class="col-md-12">
+          <div className="col-md-12">
             <p className="para3">
               We deliver a logo that exceeds your expectations. Professional
               logo design services from us elevate your business and make it

@@ -5,136 +5,123 @@ import footerlogo1 from "../../Assets/footerlogo2.png";
 import footerlogo2 from "../../Assets/footerlogo3.png";
 import footerlogo3 from "../../Assets/footerlofo3.png";
 import { SiMinutemailer } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="  text-white py-5">
+    <footer className="main-footer text-white">
       <div className="container">
         <div className="row">
-          {/* Logo and About */}
-          <div className="col-md-4 mb-4">
-            <img src={footerlogo} alt="Footer Logo" />
+          <div className="col-lg-4 mb-4">
+            <Link to={"/"} className="main-footer-logo">
+              <img src={footerlogo} alt="Footer Logo" />
+            </Link>
             <p className="para mt-2">
               Lorem Ipsum Dolor Sit Amet Conset Ateur Adipisicing Elit, Sed Do
               Eiusmod...
             </p>
           </div>
-
-          {/* Quick Links */}
-          <div className="col-md-2 mb-4">
-            <h5>Quick Links</h5>
-            <ul className="list-unstyled">
-              <li>
-                <a href="#home" className="footer_list_item  text-white text-decoration-none">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="footer_list_item  text-white text-decoration-none">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="footer_list_item  text-white text-decoration-none">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#packages" className="footer_list_item  text-white text-decoration-none">
-                  Packages
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Info Links */}
-          <div className="col-md-3 mb-4">
-            <h5>Info</h5>
-            <ul className="list-unstyled">
-              <li>
-                <a href="#faqs" className="footer_list_item  text-white text-decoration-none">
-                  FAQ's
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="footer_list_item  text-white text-decoration-none">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="#terms" className="footer_list_item  text-white text-decoration-none">
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a href="#privacy" className="footer_list_item  text-white text-decoration-none">
-                  Privacy Policy
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Information */}
-          <div className="col-md-3 mb-4">
-            <h5>Contact</h5>
-            <p className="contectpara">
-              225 Broadway, San Diego,
-              <br />
-              CA 92101, United States
-              <br />
-              <span className="footer_list_item">
-                <i className="fas fa-phone-alt"></i> +1 619-798-9688
-              </span>
-            </p>
+          <div className="col-lg-8">
+            <div className="row">
+              <div className="col-md-4 mb-4">
+                <h5>Quick Links</h5>
+                <div className="main-footer-links">
+                  <Link to={""} className="main-footer-link">
+                    Home
+                  </Link>
+                  <Link to={""} className="main-footer-link">
+                    About Us
+                  </Link>
+                  <Link to={""} className="main-footer-link">
+                    Services
+                  </Link>
+                  <Link to={""} className="main-footer-link">
+                    Packages
+                  </Link>
+                </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                <h5>Info</h5>
+                <div className="main-footer-links">
+                  <Link to={""} className="main-footer-link">
+                    FAQ's
+                  </Link>
+                  <Link to={""} className="main-footer-link">
+                    Contact
+                  </Link>
+                  <Link to={""} className="main-footer-link">
+                    Terms & Conditions
+                  </Link>
+                  <Link to={""} className="main-footer-link">
+                    Privacy Policy
+                  </Link>
+                </div>
+              </div>
+              <div className="col-md-4 mb-4">
+                <h5>Contact</h5>
+                <p className="contectpara">
+                  225 Broadway, San Diego,
+                  <br />
+                  CA 92101, United States
+                  <br />
+                  <a href="tel:+1 619-798-9688" className="footer_list_item">
+                    <i className="fas fa-phone-alt"></i> +1 619-798-9688
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Bottom Section */}
         <div className="footer-bottom py-4">
-      <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-        {/* Logos Section */}
-        <div className="d-flex align-items-center mb-3 mb-md-0">
-          <img
-            src={footerlogo1}
-            alt="DMCA Protected"
-            className="me-3 footer-logo"
-          />
-          <img
-            src={footerlogo2}
-            alt="DMCA Compliant"
-            className="me-3 footer-logo"
-          />
-          <img
-            src={footerlogo3}
-            alt="DMCA Verified"
-            className="footer-logo"
-          />
-        </div>
-
-        {/* Newsletter Signup */}
-        <div className="newsletter-signup text-center text-md-start">
-          <h5 className="mb-2">Subscribe to Our Newsletter</h5>
-          <form className="d-flex justify-content-center">
-            <div className="sendmailtab">
-              <input
-                type="email"
-                className="emailsend"
-                placeholder="Email Address"
+          <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            {/* Logos Section */}
+            <div className="d-flex align-items-center mb-3 mb-md-0">
+              <img
+                src={footerlogo1}
+                alt="DMCA Protected"
+                className="me-3 footer-logo"
               />
-              <button type="submit" className="sendbtn btn">
-                <SiMinutemailer />
-              </button>
+              <img
+                src={footerlogo3}
+                alt="DMCA Verified"
+                className="footer-protect-img"
+              />
+              <img
+                src={footerlogo2}
+                alt="DMCA Compliant"
+                className="me-3 footer-dmca"
+              />
             </div>
-          </form>
+
+            {/* Newsletter Signup */}
+            <div className="newsletter-signup text-center text-md-start">
+              <h5 className="mb-2">Subscribe to Our Newsletter</h5>
+              <form className="d-flex justify-content-center">
+                <div className="sendmailtab">
+                  <input
+                    type="email"
+                    className="emailsend"
+                    placeholder="Email Address"
+                  />
+                  <button type="submit" className="sendbtn btn">
+                    <SiMinutemailer />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
         {/* Bottom Footer Links */}
-        <div className="container d-flex flex-wrap justify-content-between align-items-center">
+        <div className="container d-flex flex-wrap justify-content-md-between justify-content-center align-items-center gap-1">
           <div className="    ">
             <p className="mb-1 d-flex">
-              <a href="#terms" className="footer_list_item  text-white text-decoration-none me-3">
+              <a
+                href="#terms"
+                className="footer_list_item  text-white text-decoration-none me-3"
+              >
                 Terms & Conditions
               </a>
               <a
@@ -143,12 +130,15 @@ function Footer() {
               >
                 Privacy Policy
               </a>
-              <a href="#support" className="footer_list_item  text-white text-decoration-none">
+              <a
+                href="#support"
+                className="footer_list_item  text-white text-decoration-none"
+              >
                 Support
               </a>
             </p>
           </div>
-          <div  className="  justify-content-end">
+          <div className="  justify-content-end">
             {" "}
             <p className="mb-0">Copyright © 2024. All Rights Reserved.</p>
           </div>

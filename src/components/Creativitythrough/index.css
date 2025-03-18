@@ -1,36 +1,47 @@
 .Creativitythrough {
-  background-color: #ffffff; /* Light background for contrast */
+  background-color: #ffffff;
+  padding: 60px 0;
 }
-
 h1 span {
-  color: #1f5591; /* Customize primary color */
+  color: #1f5591;
 }
-
-/* .workpressimges {
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);  
-} */
-
 .Creativitythrough .title {
   font-weight: 500;
   font-size: 3rem;
-  max-width: 70%;
+  line-height: 1;
 }
-
 .Creativitythrough .title span {
   color: #0504a5;
 }
-
 .Creativitythrough .intouch {
   background-color: #0504a5;
   color: white;
   font-size: 15px;
   border-radius: 50px;
 }
-
 .Creativitythrough .para {
-  color: #031243;
-  max-width: 66%;
+  color: #707070;
+  font-size: 17px;
 }
 
+@media (max-width: 1199px) {
+  .Creativitythrough .title {
+    font-size: 39px;
+  }
+  .Creativitythrough .para {
+    font-size: 16px;
+  }
+}
 
+@media (max-width: 991px) {
+  .Creativitythrough-row {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
 
+@media (max-width: 767px) {
+  .Creativitythrough {
+    padding: 30px 0;
+  }
+}

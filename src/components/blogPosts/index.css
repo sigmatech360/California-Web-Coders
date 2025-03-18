@@ -1,73 +1,48 @@
 /* Header Section with Background Image */
 .BlogSection {
   overflow: hidden;
+  margin-bottom: 40px;
 }
-.header-section {
-  background-image: url("../../Assets/blogbg.png"); /* Replace with your background image URL */
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  /* padding: 49px 0 150px; */
-  height: 375px;
-}
-.BlogSection .title {
-  font-size: 37px;
-  max-width: 86%;
-
-  /* font-size: 40px; */
-  margin-bottom: 5px;
-  font-weight: 400;
-  /* max-width: 100%; */
+.header-section img {
+  width: 100%;
 }
 
-.blowheader {
-  background-size: cover;
-  background-position: center;
-  background-color: #0504a5;
-  border-radius: 10px;
-  color: white;
-  max-width: 1048px;
-  padding: 13px 33px;
+.blog-blue-head-content {
   display: flex;
-  margin: auto;
-
-  margin-top: -105px;
-}
-
-.header-section h3 {
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.btnview {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  border-radius: 45px;
-  font-size: 13px;
-  font-weight: 600;
-  /* margin-right: 0px; */
-  /* margin: auto; */
-}
-
-.header-section .btn {
-  background-color: white;
-  color: #1f5591;
-  font-weight: bold;
-  padding: 8px 20px;
-  border-radius: 5px;
   align-items: end;
-  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.blog-blue-head-content * {
+  margin: 0;
+}
+.blog-blue-head {
+  background: #0504a5;
+  color: #fff;
+  padding: 50px 30px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  margin-top: -100px;
+  z-index: 1;
+  position: relative;
+}
+.blog-blue-head-content h2 {
+  font-size: 45px;
+}
+.blog-blue-head-content a {
   color: #0504a5;
-  font-weight: 500;
-  border-radius: 45px;
+  border: none;
+  background-color: #fff;
+  padding: 10px 26px;
+  border-radius: 30px;
   font-size: 14px;
+  text-decoration: none;
 }
 
 /* Blog Card Styling */
 .blog-card {
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-  border: none;
+  border: unset !important;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s;
@@ -80,8 +55,8 @@
 .blog-card img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 200px;
-  object-fit: cover;
+  /* height: 200px; */
+  /* object-fit: cover; */
 }
 
 .blog-card .card-body {
@@ -89,27 +64,64 @@
 }
 
 .blog-card .card-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #222222;
-  max-width: 77%;
+  font-size: 20px;
+  color: #031243;
   font-weight: 600;
+  max-width: 370px;
 }
 
 .blog-card .card-text {
   font-size: 14px;
   color: #555;
   margin-bottom: 15px;
-  max-width: 79%;
+  max-width: 370px;
 }
 
 .read-more {
-  /* font-weight: bold; */
   color: #0504a5;
-  text-decoration: none;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .read-more:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1399px) {
+  .blog-card .card-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .blog-blue-head-content h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-blue-head-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .blog-blue-head {
+    padding: 30px 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .blog-blue-head {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .blog-blue-head-content h2 br {
+    display: none;
+  }
+  .blog-blue-head-content h2 {
+    font-size: 33px;
+  }
 }

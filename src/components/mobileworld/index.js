@@ -114,7 +114,10 @@ const Mobileworld = () => {
                 <Tab eventKey="seo-tab" title="SEO">
                   <div className="row justify-content-center">
                     {pricingPlanData.map((item, index) => (
-                      <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
+                      <div
+                        className="col-lg-4 col-md-7 mb-4 mb-lg-0"
+                        key={index}
+                      >
                         <PricePlanCard
                           name={item.name}
                           actualPrice={item.price.actualPrice}

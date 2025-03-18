@@ -11,6 +11,7 @@ import LogoDesignServices from "../../components/logoDesignServices";
 import Mobileworld from "../../components/mobileworld";
 import FrequentQuestions from "../../components/FrequentQuestions";
 import BlogSection from "../../components/blogPosts";
+
 // import Perfection from '../../components/Perfection'
 function Home() {
   return (
@@ -58,10 +59,8 @@ function Home() {
       </section>
 
       <Growyourbusiness />
-
       <Digitalagency />
       <Designsolutions />
-
       <FeatureProject
         titleclass="featuretitle"
         paraclass="para"
@@ -71,15 +70,11 @@ function Home() {
         viewbtn="viewbtn"
         btntitle="View All Projects"
       />
-
       <Servies />
-
       <LogoDesignServices />
-
       <Mobileworld />
       <FrequentQuestions FrequentQuestions="homeFrequentQuestions" />
-      {/* <BlogSection /> */}
-      {/* <Perfection/> */}
+      <BlogSection />
     </Layout>
   );
 }
