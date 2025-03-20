@@ -154,6 +154,8 @@ footer .sendbtn {
 @media (max-width: 991px) {
   .main-footer {
     padding: 40px 0 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
 }
 
@@ -161,10 +163,10 @@ footer .sendbtn {
   .newsletter-signup {
     width: 100%;
   }
-  .main-footer {
+  /* .main-footer {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-  }
+  } */
 }
 
 @media (max-width: 430px) {

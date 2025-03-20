@@ -61,6 +61,7 @@ function Home() {
       <Growyourbusiness />
       <Digitalagency />
       <Designsolutions />
+
       <FeatureProject
         titleclass="featuretitle"
         paraclass="para"
@@ -70,6 +71,7 @@ function Home() {
         viewbtn="viewbtn"
         btntitle="View All Projects"
       />
+
       <Servies />
       <LogoDesignServices />
       <Mobileworld />

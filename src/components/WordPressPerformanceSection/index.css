@@ -1,36 +1,50 @@
 .WordPressPerformanceSection {
-  background-color: #ffffff; /* Light background for contrast */
+  margin: 60px 0;
 }
-
-h1 span {
-  color: #1f5591; /* Customize primary color */
-}
-
-/* .workpressimges {
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);  
-} */
-
 .WordPressPerformanceSection .title {
   font-weight: 500;
-  font-size: 3rem;
-  max-width: 70%;
+  font-size: 50px;
+  max-width: 560px;
+  line-height: 1.1;
+  margin-bottom: 20px;
 }
 
 .WordPressPerformanceSection .title span {
   color: #0504a5;
 }
 
-.WordPressPerformanceSection .intouch {
-  background-color: #0504a5;
-  color: white;
-  font-size: 15px;
-  border-radius: 50px;
+.WordPressPerformanceSection p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 16px;
 }
 
-.WordPressPerformanceSection .para {
-  color: #031243;
-  /* max-width: 66%; */
+@media (max-width: 1199px) {
+  .WordPressPerformanceSection p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .WordPressPerformanceSection .title {
+    font-size: 39px;
+    max-width: unset;
+  }
 }
 
+@media (max-width: 991px) {
+  .WordPressPerformanceSection {
+    text-align: center;
+  }
+}
 
+@media (max-width: 767px) {
+  .WordPressPerformanceSection {
+    margin: 30px 0;
+  }
+}
 
+@media (max-width: 480px) {
+  .WordPressPerformanceSection .title {
+      font-size: 34px;
+      max-width: unset;
+  }
+}

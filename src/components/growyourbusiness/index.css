@@ -19,16 +19,16 @@
   padding: 12px 30px;
   border-radius: 45px;
   color: #0504a5;
-  font-size: 1rem; /* Adjusted for readability */
+  font-size: 1rem;
   font-weight: 500;
-  background-color: #ffffff; /* Button contrast */
+  background-color: #ffffff;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 .gorwyourbusiness .clickhere:hover {
-  background-color: #f9c74f; /* Hover effect */
+  background-color: #f9c74f;
   color: #0504a5;
 }
 
@@ -42,7 +42,7 @@
     padding: 30px 15px;
   }
   .gorwyourbusiness .clickhere {
-    font-size: 0.9rem; /* Adjust button text size */
+    font-size: 0.9rem;
   }
 }
 
@@ -53,23 +53,19 @@
   }
 
   .gorwyourbusiness .title {
-    font-size: 1.8rem; /* Further reduce font size for smaller screens */
+    font-size: 1.8rem;
   }
 
   .gorwyourbusiness .clickhere {
-    font-size: 0.875rem; /* Adjust button font size */
-    padding: 10px 25px; /* Reduce button padding */
+    font-size: 0.875rem;
+    padding: 10px 25px;
   }
 }
 
 /* Extra Small Devices (Phones under 600px) */
 @media (max-width: 767px) {
   .gorwyourbusiness .title {
-    font-size: 1.5rem; /* Compact font size */
+    font-size: 1.5rem;
     line-height: 1.2;
-  }
-
-  .gorwyourbusiness .clickhere {
-    padding: 10px;
   }
 }

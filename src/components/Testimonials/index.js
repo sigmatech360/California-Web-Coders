@@ -8,22 +8,30 @@ import testimonialimg1 from "../../Assets/testimonialimg1.png";
 import "./index.css";
 const Testimonial = () => {
   const settings = {
-    dots: true,
+    dots: false,
+    arrows: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3,
+    centerMode: true,
+    centerPadding: "0px",
+    speed: 3000,
+    slidesToShow: 3.5,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 1024, // Medium devices
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2.5,
         },
       },
       {
-        breakpoint: 768, // Small devices
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
+          centerMode: false,
         },
       },
     ],
@@ -33,77 +41,96 @@ const Testimonial = () => {
     {
       name: "Eccila Pinto",
       title: "Businessman",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
       image: testimonialimg1, // Replace with actual image URLs
     },
     {
       name: "Holden Hoffington",
       title: "Businessman",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
       image: testimonialimg1,
     },
     {
       name: "Ricardo Mineriello",
       title: "Businessman",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
       image: testimonialimg1,
     },
     {
       name: "Helena Soretti",
       title: "Businessman",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
       image: testimonialimg1,
     },
     {
       name: "Bill Newman",
       title: "Businessman",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
       image: testimonialimg1,
     },
     {
       name: "Alline Mccoy",
       title: "Businessman",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
       image: testimonialimg1,
     },
   ];
 
   return (
     <section className="testimonial">
-      <div className="container py-5">
-        <div className=" mb-5">
-          <h6 className="testimonialhead1 text-uppercase text-muted">
-            Testimonials
-          </h6>
-          <h2 className="title">
-            Our <span className=" ">clients love working</span> with us
-          </h2>
-        </div>
-        <Slider {...settings}>
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="px-3">
-              <div className="card h-100 border-1  ">
-                <div className="card-body">
-                  <div className="identity  gap-3">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="rounded-circle mb-3"
-                      style={{ width: "60px", height: "60px" }}
-                    />
-                    <span>
-                    <p className="name">{testimonial.name}</p>
-                    <p className="business ">
-                      {testimonial.title}
-                    </p>
-                    </span>
-                  </div>
-                  <p className="card-text mt-3">{testimonial.text}</p>
-                </div>
-              </div>
+      <div className="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div className="testimonial-head">
+              <h6 className="testimonialhead1">Testimonials</h6>
+              <h2 className="title">
+                Our <span className=" ">clients love working</span> with us
+              </h2>
             </div>
-          ))}
-        </Slider>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonial-cards mb-4">
+              <Slider {...settings}>
+                {testimonials.map((testimonial, index) => (
+                  <div className="testimonial-card" key={index}>
+                    <div className="testimonial-card-head">
+                      <div className="testimonial-img">
+                        <img src={testimonial.image} alt={testimonial.name} />
+                      </div>
+                      <div className="testimonial-card-head-text">
+                        <p className="name">{testimonial.name}</p>
+                        <p className="business ">{testimonial.title}</p>
+                      </div>
+                    </div>
+                    <p className="testimonial-card-body">{testimonial.text}</p>
+                  </div>
+                ))}
+              </Slider>
+            </div>
+            <div class="testimonial-cards">
+              <Slider {...settings} rtl={true}>
+                {testimonials.map((testimonial, index) => (
+                  <div className="testimonial-card" key={index}>
+                    <div className="testimonial-card-head">
+                      <div className="testimonial-img">
+                        <img src={testimonial.image} alt={testimonial.name} />
+                      </div>
+                      <div className="testimonial-card-head-text">
+                        <p className="name">{testimonial.name}</p>
+                        <p className="business ">{testimonial.title}</p>
+                      </div>
+                    </div>
+                    <p className="testimonial-card-body">{testimonial.text}</p>
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -38,15 +38,7 @@
     padding: 64px 0px;
   }
   
-  .wpds .wpdstitle {
-    font-size: 3.32rem;
-    font-weight: 600;
-    font-family: "Outfit", sans-serif !important;
-  }
-  
-  .wpds .wpdstitle span {
-    color: #0504a5;
-  }
+
   
   @media (min-width: 1200px) {
     .HeroSectionpara {

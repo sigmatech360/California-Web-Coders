@@ -2,207 +2,131 @@ import React from "react";
 import "./index.css";
 import { CiCircleCheck } from "react-icons/ci";
 import wordpresssectionimg from "../../Assets/wordpresssectionimg.png";
+import PricePlanCard from "../PricePlanCard";
+
+const pricingPlanData = [
+  {
+    id: 1,
+    name: "Startup Wordpress Package",
+    price: {
+      actualPrice: 699,
+      disountPrice: 249,
+    },
+    servicesList: [
+      "5 Stock Photos",
+      "5 Page Website",
+      "3 Banner Design",
+      "1 jQuery Slider Banner",
+      "FREE Google Friendly Sitemap",
+      "Complete W3C Certified HTML",
+      "48 to 72 hours TAT",
+      "5 Stock Photos",
+      "5 Page Website",
+      "3 Banner Design",
+      "1 jQuery Slider Banner",
+      "FREE Google Friendly Sitemap",
+      "Complete W3C Certified HTML",
+      "48 to 72 hours TAT",
+    ],
+    number: `+1 619-798-9688`,
+  },
+  {
+    id: 2,
+    name: "Startup Wordpress Package",
+    price: {
+      actualPrice: 699,
+      disountPrice: 249,
+    },
+    servicesList: [
+      "5 Stock Photos",
+      "5 Page Website",
+      "3 Banner Design",
+      "1 jQuery Slider Banner",
+      "FREE Google Friendly Sitemap",
+      "Complete W3C Certified HTML",
+      "48 to 72 hours TAT",
+      "5 Stock Photos",
+      "5 Page Website",
+      "3 Banner Design",
+      "1 jQuery Slider Banner",
+      "FREE Google Friendly Sitemap",
+      "Complete W3C Certified HTML",
+      "48 to 72 hours TAT",
+    ],
+    number: `+1 619-798-9688`,
+  },
+  {
+    id: 3,
+    name: "Startup Wordpress Package",
+    price: {
+      actualPrice: 699,
+      disountPrice: 249,
+    },
+    servicesList: [
+      "5 Stock Photos",
+      "5 Page Website",
+      "3 Banner Design",
+      "1 jQuery Slider Banner",
+      "FREE Google Friendly Sitemap",
+      "Complete W3C Certified HTML",
+      "48 to 72 hours TAT",
+      "5 Stock Photos",
+      "5 Page Website",
+      "3 Banner Design",
+      "1 jQuery Slider Banner",
+      "FREE Google Friendly Sitemap",
+      "Complete W3C Certified HTML",
+      "48 to 72 hours TAT",
+    ],
+    number: `+1 619-798-9688`,
+  },
+];
 const PricingPlans = () => {
   return (
-    <section>
-      <div className="PricingPlans">
-        <div className="container">
-          <div className="    text-center">
-            <p className="para0">Pricing Plans</p>
-            <h2 className="title">That Fit All Budget Types</h2>
+    <section className="PricingPlans">
+      <div className="container">
+        <div className="row justify-content-center mb-md-5 mb-3">
+          <div className="pricing-plan-head">
+            <p className="head-tag">Pricing Plans</p>
+            <h2>That Fit All Budget Types</h2>
             <p>
               No more budget issues, get your hands on the most Affordable
               Website Design Services online.
             </p>
           </div>
 
-          <div className="py-4 mb-4 ">
-            <div className="d-flex flex-wrap gap-4 ">
-              <div className="mbsersicesblk">
-                <div>
-                  <p className="titlewp">Startup Wordpress Package</p>
-                  <p>$699 ONLY</p>
-                  <h3 className="servicesrs">$249</h3>
-                  <div className="mt-4 scroll-container">
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      5 Stock Photos
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      5 Page Website
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      3 Banner Design
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      1 jQuery Slider Banner
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      FREE Google Friendly Sitemap
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      Complete W3C Certified HTML
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      48 to 72 hours TAT
-                    </p>
-                  </div>
-                  <button className="orderbtn">Order Now</button>
-                  <p className="shareidea mt-4">Share your idea?</p>
-                  <p className="numb">+1 619-798-9688</p>
-                </div>
-              </div>
-
-              {/* Repeat the .mbsersicesblk for other items */}
-              <div className="mbsersicesblk">
-                <div>
-                  <p className="titlewp">Startup Wordpress Package</p>
-                  <p>$699 ONLY</p>
-                  <h3 className="servicesrs">$249</h3>
-                  <div className="mt-4 scroll-container">
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      5 Stock Photos
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      5 Page Website
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      3 Banner Design
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      1 jQuery Slider Banner
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      FREE Google Friendly Sitemap
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      Complete W3C Certified HTML
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      48 to 72 hours TAT
-                    </p>
-                  </div>
-                  <button className="orderbtn">Order Now</button>
-                  <p className="shareidea mt-4">Share your idea?</p>
-                  <p className="numb">+1 619-798-9688</p>
-                </div>
-              </div>
-              <div className="mbsersicesblk">
-                <div>
-                  <p className="titlewp">Startup Wordpress Package</p>
-                  <p>$699 ONLY</p>
-                  <h3 className="servicesrs">$249</h3>
-                  <div className="mt-4 scroll-container">
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      5 Stock Photos
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      5 Page Website
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      3 Banner Design
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      1 jQuery Slider Banner
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      FREE Google Friendly Sitemap
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      Complete W3C Certified HTML
-                    </p>
-                    <p className="stock align-item-center">
-                      <span className="icon">
-                        <CiCircleCheck />{" "}
-                      </span>
-                      48 to 72 hours TAT
-                    </p>
-                  </div>
-                  <button className="orderbtn">Order Now</button>
-                  <p className="shareidea mt-4">Share your idea?</p>
-                  <p className="numb">+1 619-798-9688</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row py-4">
-            <div className="col-12 col-lg-6 text-center mt-4 mt-lg-0">
-              <img
-                src={wordpresssectionimg} // Replace with actual image URL
-                alt="Laptop Display"
-                className="img-fluid workpressimges"
-              
+          {pricingPlanData.map((item, index) => (
+            <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
+              <PricePlanCard
+                name={item.name}
+                actualPrice={item.price.actualPrice}
+                discountPrice={item.price.disountPrice}
+                servicesList={item.servicesList}
+                number={item.number}
               />
             </div>
-            {/* Left Content */}
-            <div className="col-12 col-lg-6">
-              <h1 className="title">Why WordPress?</h1>
-              <p className="para mt-3">
+          ))}
+        </div>
+
+        <div className="row">
+          <div className="col-lg-6">
+            <div class="why-wordpress-img">
+              <img
+                src={wordpresssectionimg}
+                alt="Laptop Display"
+                className="img-fluid workpressimges"
+              />
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div class="why-wordpress-content">
+              <h1>Why WordPress?</h1>
+              <p>
                 One of the strengths of WordPress is that it is fully
                 customisable. This means we can build bespoke websites tailored
                 specifically to our client’s goals
               </p>
-              <p className="para">
+              <p>
                 Our WordPress developers ensure that your design and website
                 functionality works across all devices, allowing you to stand
                 out from the competition.
@@ -214,12 +138,8 @@ const PricingPlans = () => {
                 tools for displaying information, engaging users, and building a
                 WordPress eCommerce online store.
               </p>
-              <button className="morebenifit btn   btn-lg mt-3">
-                See More Benefits
-              </button>
+              <button className="morebenifit">See More Benefits</button>
             </div>
-
-            {/* Right Content */}
           </div>
         </div>
       </div>

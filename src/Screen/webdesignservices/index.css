@@ -4,10 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   color: white;
-}
-
-body {
-  font-family: "Outfit !important";
+  padding: 60px 0;
 }
 
 .wordpress-web-design .checkicon {
@@ -19,54 +16,23 @@ body {
   font-weight: 500;
 }
 
-.wordpress-web-design .contactbtn {
-  background-color: #0504a5;
-  color: white;
-  font-size: 1rem;
-  font-weight: 300;
-  border-radius: 45px;
+.wordpress-web-design h1 {
+  font-size: 55px;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.wordpress-web-design p {
+  font-size: 16px;
+  margin-bottom: 16px;
 }
 
-.wordpress-web-design .title {
-  font-size: 3.3rem;
-  font-family: "Outfit";
-  font-weight: 400;
+.wordpress-web-design-list {
+  margin: 20px 0;
 }
 
 .wpds {
   padding: 64px 0px;
-}
-
-.wpds .wpdstitle {
-  font-size: 3.32rem;
-  font-weight: 600;
-  font-family: "Outfit", sans-serif !important;
-}
-
-.wpds .wpdstitle span {
-  color: #0504a5;
-}
-
-@media (min-width: 1200px) {
-  .wpds .para {
-    font-size: 18px;
-    line-height: 28px;
-    max-width: 59%;
-    max-width: 100%;
-    width: 59%;
-    margin: auto;
-    margin-bottom: 20px;
-  }
-}
-
-/* {
-  font-size: 3.32rem;
-  font-weight: 600;
-  font-family: "Outfit", sans-serif !important;
-} */
-
-.wordpress-web-design .lead {
-  max-width: 63%;
 }
 
 .callicon {
@@ -74,14 +40,55 @@ body {
   background-color: #0504a5;
   color: white;
   padding: 10px;
-  border-radius: 50%; /* Ensures a perfect circle */
-  display: inline-flex; /* Aligns content properly */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  width: 40px; /* Explicit width for consistency */
-  height: 40px; /* Explicit height to match width */
-  font-size: 16px; /* Adjust size for content inside */
-  cursor: pointer; /* Makes it clear that it's clickable */
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
+.pixel-perfect-sec {
+  margin: 60px 0;
+}
 
+.pixel-perfect-head {
+  margin-bottom: 40px;
+}
+
+.pixel-perfect-head h3 {
+  font-size: 46px;
+  font-weight: 600;
+}
+.pixel-perfect-head h3 span {
+  color: #0504a5;
+}
+.pixel-perfect-head p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+  font-family: "Outfit", sans-serif !important;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 767px) {
+  .pixel-perfect-sec{
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .pixel-perfect-head h3 {
+    line-height: 1;
+  }
+}
+@media (max-width: 430px) {
+  .wordpress-web-design h1 {
+    font-size: 43px;
+  }
+}

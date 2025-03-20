@@ -10,8 +10,8 @@ const About = () => {
     <Layout>
       <section className="about-banner">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-6">
+          <div className="row align-items-center flex-lg-row flex-column-reverse">
+            <div className="col-lg-6">
               <h1 className="about-title">
                 About <br /> <span>California Web Coders</span>
               </h1>
@@ -20,7 +20,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <div className="">
                 <img
                   src={aboutheroimg}

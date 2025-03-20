@@ -69,15 +69,15 @@ const featuredProjectData = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
-];
+]; 
 
 const FeatureProject = (props) => {
   return (
-    <section className={`${props?.mainclass}   mt-5"`}>
+    <section className={`${props?.mainclass}`}>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className=" justify-content-center text-center ">
+            <div className="justify-content-center text-center ">
               <h3 className={props?.titleclass}>
                 {props?.title}
                 <span> {props?.title2}</span>
