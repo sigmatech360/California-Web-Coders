@@ -69,7 +69,7 @@ const featuredProjectData = [
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
-]; 
+];
 
 const FeatureProject = (props) => {
   return (
@@ -85,10 +85,13 @@ const FeatureProject = (props) => {
               <p className={props?.paraclass}>{props?.para}</p>
             </div>
             <Tabs
-              defaultActiveKey="logo-design"
+              defaultActiveKey="web-design"
               className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
             >
               <Tab eventKey="logo-design" title="Logo Design">
+                Logo Design
+              </Tab>
+              <Tab eventKey="web-design" title="Web Design">
                 <div className="row justify-content-center">
                   {featuredProjectData.map((item, index) => (
                     <div className="col-lg-4 col-md-6 mb-4" key={index}>
@@ -98,25 +101,7 @@ const FeatureProject = (props) => {
                       />
                     </div>
                   ))}
-
-                  <div className="  justify-content-center  d-flex gap-4">
-                    <button className={props?.viewbtn}>
-                      {props?.btntitle}
-                    </button>
-
-                    {props?.FaPhoneAlt && (
-                      <span className="d-flex align-items-center gap-2">
-                        <props.FaPhoneAlt className={props?.callicon} />
-                        <p className="para4 mb-0  align-items-center">
-                          +1 619-798-9688
-                        </p>
-                      </span>
-                    )}
-                  </div>
                 </div>
-              </Tab>
-              <Tab eventKey="web-design" title="Web Design">
-                Web Design
               </Tab>
               <Tab eventKey="nft-design" title="NFT Design">
                 NFT Design

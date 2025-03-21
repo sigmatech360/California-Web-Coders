@@ -63,25 +63,27 @@ const Trends = () => {
 
   return (
     <section className="Trends">
-      <div className="container py-5">
+      <div className="container">
         <div className="row">
           {blogData.map((blog, index) => (
-            <div className="col-md-4 mb-4" key={index}>
-              <div className="  h-100  ">
-                <img
-                  src={blog.image}
-                  className="card-img-top img-fluid"
-                  alt={blog.title}
-                />
-                <div className=" cardbody">
-                  <h5 className="bodytitle  ">{blog.title}</h5>
-                  <p className="bodypara text-muted">{blog.description}</p>
-                  <a href="#" className="readmore">
-                    Read More
-                  </a>
+            <>
+              <div className="col-lg-4 col-md-6 mb-4" key={index}>
+                <div className="card blog-card">
+                  <img
+                    src={blog.image}
+                    className="card-img-top"
+                    alt="Blog Post"
+                  />
+                  <div className="mt-2">
+                    <h5 className="card-title">{blog.title}</h5>
+                    <p className="card-text">{blog.description}</p>
+                    <a href="#" className="read-more">
+                      Read More
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </>
           ))}
         </div>
       </div>

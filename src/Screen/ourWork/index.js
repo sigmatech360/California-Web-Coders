@@ -1,27 +1,8 @@
 import React from "react";
 import "./index.css";
 import Layout from "../../components/layout";
-import aboutheroimg from "../../Assets/aboutheroimg.png";
-import ItSolutions from "../../components/itsolutions";
-import WhychoseUs from "../../components/choseus";
-import { CiCircleCheck } from "react-icons/ci";
-import Testimonial from "../../components/Testimonials";
-import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
-import Growyourbusiness from "../../components/growyourbusiness";
-import FeatureProject from "../../components/featureproject";
-import { FaPhoneAlt } from "react-icons/fa";
-import PricingPlans from "../../components/PricingPlans";
-import ContactForm from "../../components/readytocheat";
-import Creativitythrough from "../../components/Creativitythrough";
 import ourworkheroimg from "../../Assets/ourworkheroimg.png";
 
-
-import project1 from "../../Assets/project1.png";
-import project2 from "../../Assets/project2.png";
-import project3 from "../../Assets/project3.png";
-import project4 from "../../Assets/project4.png";
-import project5 from "../../Assets/project5.png";
-import project6 from "../../Assets/project6.png";
 import pixleperfectimg1 from "../../Assets/pixle-perfect-img1.png";
 import pixleperfectimg2 from "../../Assets/pixle-perfect-img2.png";
 import pixleperfectimg3 from "../../Assets/pixle-perfect-img3.png";
@@ -32,6 +13,9 @@ import project7 from "../../Assets/project7.png";
 import project8 from "../../Assets/project8.png";
 import project9 from "../../Assets/project9.png";
 import NewsCard from "../../components/NewsCard";
+
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 
 const featuredProjectData = [
   {
@@ -93,43 +77,33 @@ const featuredProjectData = [
 const OurWork = () => {
   return (
     <Layout>
-      <section className="OurWork text-white py-5">
+      <section className="OurWork">
         <div className="container">
-          <div className="row align-items-center">
-            {/* Text Content */}
-            <div className="col-12 col-lg-6">
-              <h1 className="title ">
-                Our work. <br />
-              </h1>
-
-              <p className="lead mt-3">
-                Explore our impactful digital creations, where every experience
-                leaves a lasting impression.
-              </p>
+          <div className="row align-items-center flex-lg-row flex-column-reverse gap-lg-0 gap-4">
+            <div className="col-xl-4 col-lg-5">
+              <div class="OurWork-content">
+                <h1 className="title ">
+                  Our work.
+                </h1>
+                <p className="">
+                  Explore our impactful digital creations, where every
+                  experience leaves a lasting impression.
+                </p>
+              </div>
             </div>
 
-            {/* Image Content */}
-            <div className="col-12 col-lg-6 text-center mt-4 mt-lg-0">
-              <img
-                src={ourworkheroimg} // Replace with your image URL
-                alt="Web Design"
-                className="img-fluid rounded"
-              />
+            <div className="col-xl-8 col-lg-7">
+              <div class="OurWork-image">
+                <img
+                  src={ourworkheroimg}
+                  alt="Web Design"
+                  className="img-fluid rounded"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* <FeatureProject
-        viewbtn="viewbtn"
-        titleclass="wpdstitle"
-        mainclass="wpds"
-        paraclass="OurWorkpara"
-        title="View our latest  "
-        title2="creations."
-        para="At California Web Coders, we bring visions to life with innovative web design, custom software development, and seamless digital solutions. From sleek eCommerce platforms to powerful business apps, our portfolio showcases diverse projects tailored to meet our clients' unique needs. Every project reflects our commitment to creativity, quality, and cutting-edge technology."
-        btntitle="View All Projects"
-      /> */}
 
       <section className="pixel-perfect-sec">
         <div className="container">
@@ -150,12 +124,39 @@ const OurWork = () => {
                 </p>
               </div>
             </div>
-            {featuredProjectData.map((item, index) => (
-              <div className="col-lg-4 col-md-6 mb-4" key={index}>
-                <NewsCard image={item.image} description={item.description} />
-              </div>
-            ))}
             <div className="col-md-12">
+              <Tabs
+                defaultActiveKey="web-design"
+                className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
+              >
+                <Tab eventKey="logo-design" title="Logo Design">
+                  Logo Design
+                </Tab>
+                <Tab eventKey="web-design" title="Web Design">
+                  <div className="row">
+                    {featuredProjectData.map((item, index) => (
+                      <div className="col-lg-4 col-md-6 mb-4" key={index}>
+                        <NewsCard
+                          image={item.image}
+                          description={item.description}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </Tab>
+                <Tab eventKey="nft-design" title="NFT Design">
+                  NFT Design
+                </Tab>
+                <Tab eventKey="eCommerce-website" title="E Commerce Website">
+                  E Commerce Website
+                </Tab>
+                <Tab eventKey="video-animation" title="Video Animation">
+                  Video Animation
+                </Tab>
+              </Tabs>
+            </div>
+
+            <div className="col-md-12 mt-3">
               <div class="justify-content-center d-flex flex-wrap gap-4">
                 <button className="viewbtn">View All Projects</button>
               </div>
@@ -163,8 +164,6 @@ const OurWork = () => {
           </div>
         </div>
       </section>
-
-
     </Layout>
   );
 };

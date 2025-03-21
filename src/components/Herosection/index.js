@@ -1,26 +1,25 @@
 import React from "react";
 import "./index.css";
+
 const HeroSection = (props) => {
   return (
-    <section className="HeroSection text-white py-5">
+    <section className="HeroSection">
       <div className="container">
-        <div className="row align-items-center">
-          {/* Text Content */}
-          <div className="col-12 col-lg-6">
-            <h1 className={props?.titleclass}>
-              {props?.title} <br />
-            </h1>
-
-            <p className={`${props?.paraclass} mt-3`}>{props?.para}</p>
+        <div className="row align-items-center justify-content-center flex-lg-row flex-column-reverse gap-lg-0 gap-4">
+          <div className="col-lg-8">
+            <div class="HeroSection-content">
+              <h1>{props?.title}</h1>
+              <p>{props?.para}</p>
+            </div>
           </div>
-
-          {/* Image Content */}
-          <div className="col-12 col-lg-6 text-center mt-4 mt-lg-0">
-            <img
-              src={props?.heroimg} // Replace with your image URL
-              alt="Web Design"
-              className={`img-fluid ${props?.imgclass}  `}
-            />
+          <div className="col-lg-4">
+            <div class="HeroSection-img">
+              <img
+                src={props?.heroimg}
+                alt="Web Design"
+                className={`img-fluid`}
+              />
+            </div>
           </div>
         </div>
       </div>
