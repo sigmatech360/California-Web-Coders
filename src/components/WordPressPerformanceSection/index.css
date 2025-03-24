@@ -1,5 +1,6 @@
 .WordPressPerformanceSection {
   margin: 60px 0;
+  overflow: hidden;
 }
 .WordPressPerformanceSection .title {
   font-weight: 500;

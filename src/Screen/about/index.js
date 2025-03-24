@@ -12,16 +12,31 @@ const About = () => {
         <div className="container">
           <div className="row align-items-center flex-lg-row flex-column-reverse">
             <div className="col-lg-6">
-              <h1 className="about-title">
+              <h1
+                className="about-title"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
                 About <br /> <span>California Web Coders</span>
               </h1>
-              <p className="about-subtitle">
+              <p
+                className="about-subtitle"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
                 Our mission is to make your business better through technology
               </p>
             </div>
 
             <div className="col-lg-6">
-              <div className="">
+              <div
+                className=""
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
                 <img
                   src={aboutheroimg}
                   alt="Laptop"

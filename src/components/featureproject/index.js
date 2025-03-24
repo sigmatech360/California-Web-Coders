@@ -78,21 +78,38 @@ const FeatureProject = (props) => {
         <div className="row">
           <div className="col-md-12">
             <div className="justify-content-center text-center ">
-              <h3 className={props?.titleclass}>
+              <h3
+                className={props?.titleclass}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
                 {props?.title}
                 <span> {props?.title2}</span>
               </h3>
-              <p className={props?.paraclass}>{props?.para}</p>
+              <p
+                className={props?.paraclass}
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
+                {props?.para}
+              </p>
             </div>
             <Tabs
               defaultActiveKey="web-design"
               className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-offset="0"
             >
               <Tab eventKey="logo-design" title="Logo Design">
                 Logo Design
               </Tab>
               <Tab eventKey="web-design" title="Web Design">
-                <div className="row justify-content-center">
+                <div className="row justify-content-center" data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-offset="0">
                   {featuredProjectData.map((item, index) => (
                     <div className="col-lg-4 col-md-6 mb-4" key={index}>
                       <NewsCard

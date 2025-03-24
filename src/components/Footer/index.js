@@ -26,16 +26,16 @@ function Footer() {
               <div className="col-md-4 mb-4">
                 <h5>Quick Links</h5>
                 <div className="main-footer-links">
-                  <Link to={""} className="main-footer-link">
+                  <Link to={"/"} className="main-footer-link">
                     Home
                   </Link>
-                  <Link to={""} className="main-footer-link">
+                  <Link to={"/about"} className="main-footer-link">
                     About Us
                   </Link>
-                  <Link to={""} className="main-footer-link">
+                  <Link to={"/services"} className="main-footer-link">
                     Services
                   </Link>
-                  <Link to={""} className="main-footer-link">
+                  <Link to={"/pricing-plan"} className="main-footer-link">
                     Packages
                   </Link>
                 </div>
@@ -49,10 +49,10 @@ function Footer() {
                   <Link to={""} className="main-footer-link">
                     Contact
                   </Link>
-                  <Link to={""} className="main-footer-link">
+                  <Link to={"/terms-and-conditions"} className="main-footer-link">
                     Terms & Conditions
                   </Link>
-                  <Link to={""} className="main-footer-link">
+                  <Link to={"/privacy-policy"} className="main-footer-link">
                     Privacy Policy
                   </Link>
                 </div>
@@ -118,18 +118,18 @@ function Footer() {
         <div className="container d-flex flex-wrap justify-content-md-between justify-content-center align-items-center gap-1">
           <div className="    ">
             <p className="mb-1 d-flex">
-              <a
-                href="#terms"
+              <Link
+                to="/terms-and-conditions"
                 className="footer_list_item  text-white text-decoration-none me-3"
               >
                 Terms & Conditions
-              </a>
-              <a
-                href="#privacy"
+              </Link>
+              <Link
+                to="/privacy-policy"
                 className="footer_list_item  text-white text-decoration-none me-3"
               >
                 Privacy Policy
-              </a>
+              </Link>
               <a
                 href="#support"
                 className="footer_list_item  text-white text-decoration-none"

@@ -24,7 +24,7 @@ button:focus {
   background-color: transparent;
 }
 
-.colorBleu {
+.colorBlue {
   color: #0504a5 !important;
 }
 .hero-img-right img {
@@ -205,6 +205,38 @@ button:focus {
   transform: rotate(0deg);
 }
 
+/* Terms And Condition */
+.privacy-policy-sec {
+  margin: 60px 0;
+}
+
+.privacy-policy-content {
+  margin-bottom: 30px;
+}
+.privacy-policy-content h2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #031243;
+}
+
+.privacy-policy-content p a {
+  color: #031243;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.privacy-policy-content ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.privacy-policy-content ul li,
+.privacy-policy-content p {
+  color: #707070;
+  font-weight: 400;
+  font-size: 18px;
+}
+/* Terms And Condition */
+
 @media (max-width: 1399px) {
   .hero .title {
     font-size: 70px;
@@ -248,11 +280,25 @@ button:focus {
   .faqs-tabs-btns {
     margin: 16px 0 0;
   }
+
+  .privacy-policy-content ul li,
+  .privacy-policy-content p {
+    font-size: 16px;
+  }
+  .privacy-policy-content h2 {
+    font-size: 31px;
+  }
 }
 
 @media (max-width: 767px) {
   .heroinner {
     padding: 31px 0;
+  }
+  .privacy-policy-sec {
+    margin: 30px 0;
+  }
+  .privacy-policy-content {
+    margin-bottom: 16px;
   }
 }
 
@@ -262,6 +308,9 @@ button:focus {
   }
   .sec-head h2 {
     font-size: 35px;
+  }
+  .privacy-policy-content h2 {
+    font-size: 26px;
   }
 }
 

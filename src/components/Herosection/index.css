@@ -2,6 +2,7 @@
   background: #031243;
   color: white;
   padding: 60px 0;
+  overflow: hidden;
 }
 .HeroSection-content h1 {
   font-size: 80px;

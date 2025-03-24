@@ -9,9 +9,13 @@ import { LiaPinterestP } from "react-icons/lia";
 import Pricingplanheroimg from "../../Assets/Pricingplanheroimg.png";
 import { TiSocialLinkedin } from "react-icons/ti";
 
-import { FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
-
-import { FaFacebookF } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+  FaFacebookF,
+} from "react-icons/fa";
 
 import Trends from "../../components/trends";
 const NewsandTrends = () => {
@@ -31,9 +35,26 @@ const NewsandTrends = () => {
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-8">
               <div className="connectbg">
-                <h4>Connect on Social Media</h4>
-                <p>Follow Octave Agency on Social Media for regular updates.</p>
-                <div className="connect-sm-icons">
+                <h4
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-offset="0"
+                >
+                  Connect on Social Media
+                </h4>
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-offset="0"
+                >
+                  Follow Octave Agency on Social Media for regular updates.
+                </p>
+                <div
+                  className="connect-sm-icons"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                  data-aos-offset="0"
+                >
                   <a href="#" className="facebook-icon">
                     <FaFacebookF />
                   </a>
@@ -50,7 +71,7 @@ const NewsandTrends = () => {
                   </a>
                   <a href="#" className="twitter-icon">
                     {/* <i className="bi bi-twitter"></i> */}
-                    <FaTwitter/>
+                    <FaTwitter />
                   </a>
                   <a href="#" className="pinterest-icon">
                     <LiaPinterestP />

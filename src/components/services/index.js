@@ -39,15 +39,23 @@ const Servies = () => {
     <section className="services">
       <div className="container">
         <div className="row  services-row-1">
-
-
           <div className="col-lg-8">
             <div className="services-heading">
               <p className="para">Services</p>
-              <p className="title">
+              <p
+                className="title"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
                 We deliver the services you need, with the quality you deserve
               </p>
-              <p className="para2 mb-0">
+              <p
+                className="para2 mb-0"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
                 Whether you're looking for a cutting-edge cloud solution, want
                 to harness AI's potential, or need to reinvent the user
                 experience, we're your all-in-one innovation partner.
@@ -55,7 +63,13 @@ const Servies = () => {
             </div>
 
             {creativeSectionData.map((item, index) => (
-              <div className="creativesection d-flex" key={index}>
+              <div
+                className="creativesection d-flex"
+                key={index}
+                data-aos="fade-right"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
                 <span className="creativelg">
                   <img src={item.image} className="creativelogo" />
                 </span>
@@ -68,16 +82,24 @@ const Servies = () => {
           </div>
 
           <div className="col-lg-4">
-            <div className="services-right-img">
+            <div
+              className="services-right-img"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
               <img className="servicesheroimg img-fluid" src={servicesimg} />
             </div>
           </div>
-
-
         </div>
         <div className="row justify-content-center  compservices">
           <div className="col-lg-4 mb-4 ">
-            <div className="graphic-services-outer">
+            <div
+              className="graphic-services-outer"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
               <div className="graphicservices graphic-bg">
                 <div className="graphicservices-icon">
                   <img src={graphiclogo} className="graphiclogo" />
@@ -105,7 +127,12 @@ const Servies = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6 mb-4 compservices-col-3">
-            <div className="mobileservices-outer h-100 d-flex flex-column">
+            <div
+              className="mobileservices-outer h-100 d-flex flex-column"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
               <div className="mobileservices flex-grow-1">
                 <div className="mobile-services-content">
                   <h4>Mobile App Developments</h4>
@@ -122,7 +149,12 @@ const Servies = () => {
           </div>
 
           <div className="col-lg-4 mb-4 ">
-            <div className="graphic-services-outer">
+            <div
+              className="graphic-services-outer"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
               <div className="graphicservices">
                 <div className="graphicservices-icon">
                   <img src={websitelogo} className="graphiclogo" />

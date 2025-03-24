@@ -15,10 +15,20 @@ const ItSolutions = () => {
         <div className="row mb-5 pb-lg-0 pb-2 flex-lg-row flex-column-reverse">
           <div className="col-lg-6 ">
             <p className="para">About Company</p>
-            <p className="title">
+            <p
+              className="title"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-offset="0"
+            >
               We’re Awards Winning <span> IT Solutions </span> Agency
             </p>
-            <p className="para2 mb-2">
+            <p
+              className="para2 mb-2"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -30,7 +40,12 @@ const ItSolutions = () => {
               publishing software like Aldus PageMaker including versions of
               Lorem Ipsum.
             </p>
-            <div className="itSolutions-list">
+            <div
+              className="itSolutions-list"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              data-aos-offset="0"
+            >
               <span className="d-flex align-items-center gap-2">
                 <CiCircleCheck className="checkicon" />
                 <p className="para4 mb-0 align-self-baseline">
@@ -51,7 +66,12 @@ const ItSolutions = () => {
                 </p>
               </span>
             </div>
-            <div className=" mt-5 gap-3 d-flex flex-wrap">
+            <div
+              className=" mt-5 gap-3 d-flex flex-wrap"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              data-aos-offset="0"
+            >
               <button className="learnmore">Learn More About Us</button>
 
               <span className="d-flex align-items-center gap-2">
@@ -64,7 +84,13 @@ const ItSolutions = () => {
           </div>
 
           <div className="col-lg-6 mb-lg-0 mb-4">
-            <img className="img-fluid  itSolutionsimg" src={itsolution} />
+            <img
+              className="img-fluid  itSolutionsimg"
+              src={itsolution}
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-offset="0"
+            />
           </div>
         </div>
 
@@ -75,14 +101,29 @@ const ItSolutions = () => {
               <img
                 src={itservicesimg2}
                 className="img-fluid mission-img-front"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="0"
               />
             </div>
           </div>
 
           <div className="col-lg-6">
             <div class="mission-statment-content">
-              <h3 className="missionstatement">Mission statement.</h3>
-              <p className="missionstatementpara">
+              <h3
+                className="missionstatement"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
+                Mission statement.
+              </h3>
+              <p
+                className="missionstatementpara"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -94,11 +135,17 @@ const ItSolutions = () => {
                 publishing software like Aldus PageMaker including versions of
                 Lorem Ipsum.
               </p>
-              <button className="missionstatementbtn">Get In Touch</button>
+              <button
+                className="missionstatementbtn"
+                data-aos="fade-left"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
+                Get In Touch
+              </button>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

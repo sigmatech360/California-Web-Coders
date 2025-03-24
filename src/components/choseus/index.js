@@ -11,8 +11,20 @@ const WhychoseUs = () => {
         <div className="row">
           <div class="col-md-12 mb-4">
             <div className="whychoseus-head text-center">
-              <h6 className="head1">Why Choose Us</h6>
-              <h2 className="">
+              <h6
+                className="head1"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
+                Why Choose Us
+              </h6>
+              <h2
+                className=""
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
                 Let us change the way you think <br />
                 <span className="changewayspan">about technology.</span>
               </h2>
@@ -20,7 +32,12 @@ const WhychoseUs = () => {
           </div>
 
           <div className=" col-md-6 col-lg-3 mb-3">
-            <div className="card text-center border-0    text-white ">
+            <div
+              className="card text-center border-0 text-white"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="0"
+            >
               <div className="card-body">
                 <div
                   className="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center mx-auto mb-3"
@@ -38,7 +55,12 @@ const WhychoseUs = () => {
           </div>
 
           <div className=" col-md-6 col-lg-3 mb-3 pt-lg-5">
-            <div className="card cards text-center border-0    text-white ">
+            <div
+              className="card cards text-center border-0 text-white "
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
               <div className="card-body">
                 <div
                   className="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center mx-auto mb-3"
@@ -56,7 +78,12 @@ const WhychoseUs = () => {
           </div>
 
           <div className=" col-md-6 col-lg-3 mb-3">
-            <div className="card text-center border-0    text-white ">
+            <div
+              className="card text-center border-0 text-white "
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="0"
+            >
               <div className="card-body">
                 <div
                   className="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center mx-auto mb-3"
@@ -74,7 +101,12 @@ const WhychoseUs = () => {
           </div>
 
           <div className=" col-md-6 col-lg-3 mb-3 pt-lg-5">
-            <div className="card cards text-center border-0    text-white ">
+            <div
+              className="card cards text-center border-0 text-white"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
               <div className="card-body">
                 <div
                   className="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center mx-auto mb-3"

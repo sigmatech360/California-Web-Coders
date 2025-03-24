@@ -38,14 +38,34 @@ const BlogSection = () => {
         <div className="blog-blue-head">
           <div className="row">
             <div className="blog-blue-head-content">
-              <h2>Let's See Our Latest <br/>Blog & Articles</h2>
-              <Link>View All Blogs</Link>
+              <h2
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
+                Let's See Our Latest <br />
+                Blog & Articles
+              </h2>
+              <Link
+                to={""}
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
+                View All Blogs
+              </Link>
             </div>
           </div>
         </div>
         <div className="row justify-content-center">
           {blogPosts.map((post, index) => (
-            <div className="col-lg-4 col-md-6 mb-4" key={index}>
+            <div
+              className="col-lg-4 col-md-6 mb-4"
+              key={index}
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
               <div className="card blog-card">
                 <img
                   src={post.imageUrl}

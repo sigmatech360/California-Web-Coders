@@ -4,6 +4,7 @@
     no-repeat padding-box;
   border-radius: 50px 50px 0px 0px;
   opacity: 1;
+  overflow: hidden;
 }
 .pricing-plan-head {
   text-align: center;

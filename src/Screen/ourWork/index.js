@@ -82,10 +82,20 @@ const OurWork = () => {
           <div className="row align-items-center flex-lg-row flex-column-reverse gap-lg-0 gap-4">
             <div className="col-xl-4 col-lg-5">
               <div class="OurWork-content">
-                <h1 className="title ">
+                <h1
+                  className="title "
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-offset="0"
+                >
                   Our work.
                 </h1>
-                <p className="">
+                <p
+                  className=""
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  data-aos-offset="0"
+                >
                   Explore our impactful digital creations, where every
                   experience leaves a lasting impression.
                 </p>
@@ -93,7 +103,12 @@ const OurWork = () => {
             </div>
 
             <div className="col-xl-8 col-lg-7">
-              <div class="OurWork-image">
+              <div
+                class="OurWork-image"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
                 <img
                   src={ourworkheroimg}
                   alt="Web Design"
@@ -109,11 +124,19 @@ const OurWork = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pixel-perfect-head text-center ">
-                <h3>
+              <div className="pixel-perfect-head text-center">
+                <h3
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-offset="0"
+                >
                   View our latest <span>creations</span>
                 </h3>
-                <p>
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-offset="0"
+                >
                   At California Web Coders, we bring visions to life with
                   innovative web design, custom software development, and
                   seamless digital solutions. From sleek eCommerce platforms to
@@ -128,12 +151,20 @@ const OurWork = () => {
               <Tabs
                 defaultActiveKey="web-design"
                 className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-offset="0"
               >
                 <Tab eventKey="logo-design" title="Logo Design">
                   Logo Design
                 </Tab>
                 <Tab eventKey="web-design" title="Web Design">
-                  <div className="row">
+                  <div
+                    className="row"
+                    data-aos="fade-up"
+                    data-aos-duration="3000"
+                    data-aos-offset="0"
+                  >
                     {featuredProjectData.map((item, index) => (
                       <div className="col-lg-4 col-md-6 mb-4" key={index}>
                         <NewsCard

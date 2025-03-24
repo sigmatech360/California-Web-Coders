@@ -82,8 +82,20 @@ const Testimonial = () => {
         <div class="row">
           <div class="col-md-12">
             <div className="testimonial-head">
-              <h6 className="testimonialhead1">Testimonials</h6>
-              <h2 className="title">
+              <h6
+                className="testimonialhead1"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
+                Testimonials
+              </h6>
+              <h2
+                className="title"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
                 Our <span className=" ">clients love working</span> with us
               </h2>
             </div>

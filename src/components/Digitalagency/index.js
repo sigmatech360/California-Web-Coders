@@ -13,13 +13,23 @@ const Digitalagency = () => {
         <div className="container">
           <div className="row mb-3">
             <div className="col-lg-6 ">
-              <h2 className="title">
+              <h2
+                className="title"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
                 We are a creative bold digital agency based in{" "}
                 <span>California.</span>{" "}
               </h2>
             </div>
             <div className="col-lg-6 ">
-              <div className="d-flex gap-md-4 gap-2">
+              <div
+                className="d-flex gap-md-4 gap-2"
+                data-aos="fade-left"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
                 <span className="twentypls"> 20+</span>
                 <div className=" align-content-center justify-content-center">
                   {" "}
@@ -33,7 +43,12 @@ const Digitalagency = () => {
             </div>
           </div>
 
-          <div className="row">
+          <div
+            className="row"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-offset="0"
+          >
             <div className="col-md-4">
               <div className="satisfiedpara  d-flex justify-content-between  align-content-center">
                 <p className="para2 ">

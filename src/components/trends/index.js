@@ -68,7 +68,12 @@ const Trends = () => {
           {blogData.map((blog, index) => (
             <>
               <div className="col-lg-4 col-md-6 mb-4" key={index}>
-                <div className="card blog-card">
+                <div
+                  className="card blog-card"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-offset="0"
+                >
                   <img
                     src={blog.image}
                     className="card-img-top"

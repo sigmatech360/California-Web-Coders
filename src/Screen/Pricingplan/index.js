@@ -218,9 +218,17 @@ const PricingPlan = () => {
           <Tabs
             defaultActiveKey="seo-tab"
             className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-offset="0"
           >
             <Tab eventKey="seo-tab" title="SEO">
-              <div className="row justify-content-center">
+              <div
+                className="row justify-content-center"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
                 {pricingPlanData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4" key={index}>
                     <PricePlanCard
@@ -263,7 +271,12 @@ const PricingPlan = () => {
           <div className="container">
             <div className="row flex-lg-row flex-column-reverse gap-lg-0 gap-4">
               <div className="col-lg-6">
-                <div className="express-content">
+                <div
+                  className="express-content"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  data-aos-offset="0"
+                >
                   <div class="express-content-head">
                     <h2>Express everything and feel everything.</h2>
                     <p>
@@ -288,7 +301,12 @@ const PricingPlan = () => {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div class="express-cards h-100">
+                <div
+                  class="express-cards h-100"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                  data-aos-offset="0"
+                >
                   <div className="row h-100 gap-md-0 gap-4">
                     <div className="col-md-6 h-100">
                       <div class="express-cards-items">
@@ -304,8 +322,8 @@ const PricingPlan = () => {
                               Smart & Secure System
                             </h5>
                             <p className="card-text">
-                              Lorem Ipsum is simply dummy text of the printing and
-                              typesetting industry. Lorem Ipsum has been the
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
                               industry.
                             </p>
                           </div>
@@ -320,8 +338,8 @@ const PricingPlan = () => {
                             </div>
                             <h5 className="card-title  ">Professional Team</h5>
                             <p className="card-text">
-                              Lorem Ipsum is simply dummy text of the printing and
-                              typesetting industry. Lorem Ipsum has been the
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
                               industry.
                             </p>
                           </div>
@@ -340,8 +358,8 @@ const PricingPlan = () => {
                             </div>
                             <h5 className="card-title  ">Certified Expert</h5>
                             <p className="card-text">
-                              Lorem Ipsum is simply dummy text of the printing and
-                              typesetting industry. Lorem Ipsum has been the
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
                               industry.
                             </p>
                           </div>
@@ -354,10 +372,12 @@ const PricingPlan = () => {
                             >
                               <img src={Premium} className="img-fluid" />
                             </div>
-                            <h5 className="card-title  ">24/7 Premium Support</h5>
+                            <h5 className="card-title  ">
+                              24/7 Premium Support
+                            </h5>
                             <p className="card-text">
-                              Lorem Ipsum is simply dummy text of the printing and
-                              typesetting industry. Lorem Ipsum has been the
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
                               industry.
                             </p>
                           </div>

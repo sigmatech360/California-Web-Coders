@@ -1,21 +1,93 @@
-.intouch .para1 {
-  color: #0504a5;
+.inTouch-sec {
+  overflow: hidden;
 }
 
-.intouch .title {
-  max-width: 55%;
-  font-size: 37px;
+.inTouch-content h2 {
+  font-size: 59px;
+  line-height: 1;
+}
+.inTouch-content h4 {
+  font-size: 35px;
+  line-height: 1;
+  border-top: 1px solid #0504a5;
+  margin: 20px 0;
+  padding-top: 20px;
+}
+.inTouch-content p {
+  color: #707070;
+  font-size: 18px;
 }
 
-.intouch .title span {
-  color: #0504a5;
+.inTouch-icon-box {
+  background-color: #0504a5;
+  color: #fff;
+  text-align: center;
+  padding: 30px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 16px;
+}
+.inTouch-icon-box * {
+  margin: 0;
+}
+.inTouch-icon-box .icon-container {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.inTouch-icon-box .icon-container svg {
+  font-size: 25px;
+}
+.inTouch-icon-box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.inTouch-icon-box-content h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+}
+.inTouch-icon-box-content p {
+  font-weight: 200;
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.3;
 }
 
-.intouch .para2 {
-  max-width: 60%;
+@media (max-width: 1199px) {
+  .inTouch-content h2 {
+    font-size: 45px;
+  }
+  .inTouch-content p {
+    font-size: 16px;
+  }
+  .inTouch-icon-box-content h5 {
+    font-size: 18px;
+  }
 }
 
-.intouch .para3 {
-  color: #031243;
-  font-weight: 600;
+@media (max-width: 480px) {
+  .inTouch-content h4 {
+    margin: 16px 0;
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  .inTouch-content h2 {
+    font-size: 34px;
+  }
+  .inTouch-content h4 {
+    font-size: 29px;
+  }
 }

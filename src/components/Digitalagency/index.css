@@ -1,6 +1,7 @@
 .digitalagency {
   margin: 60px 0px; /* Universal padding */
   padding: unset !important; /* Universal padding */
+  overflow: hidden;
 }
 
 .digitalagency .title {

@@ -8,10 +8,22 @@ const Mobileworld = (props) => {
         <div className="row">
           <div className="col-lg-6">
             <p className="para0">Pricing Plans</p>
-            <h2 className="title">{props.title}</h2>
+            <h2
+              className="title"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="0"
+            >
+              {props.title}
+            </h2>
           </div>
           <div className="col-lg-6">
-            <p className="para1 mobileworld-head-p ps-xxl-5">
+            <p
+              className="para1 mobileworld-head-p ps-xxl-5"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
               {props.description}
             </p>
           </div>

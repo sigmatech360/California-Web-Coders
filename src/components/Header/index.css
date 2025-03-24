@@ -22,9 +22,11 @@ a {
   margin-right: 4px; /* Space between icon and text */
 }
 
-.uperheader span {
+.uperheader a {
   /* margin-right: 15px;  */
   font-size: 16px;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* nabver */

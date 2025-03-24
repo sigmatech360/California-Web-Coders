@@ -3,6 +3,7 @@
   padding: 40px 20px;
   color: white;
   font-family: "Outfit", sans-serif !important;
+  overflow: hidden;
 }
 
 .gorwyourbusiness .title {

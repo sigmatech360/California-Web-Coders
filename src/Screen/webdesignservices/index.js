@@ -85,14 +85,29 @@ const Webdesignservices = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <h1 className="">
+              <h1
+                className=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
                 WordPress Web <br /> Design Services
               </h1>
-              <p className="">
+              <p
+                className=""
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
                 Launch a professional, revenue-driving WordPress website with
                 our WordPress Web Design Services.
               </p>
-              <ul className="list-unstyled wordpress-web-design-list">
+              <ul
+                className="list-unstyled wordpress-web-design-list"
+                data-aos="fade-right"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
                 {[
                   "Modern web design techniques",
                   "Optimised for SEO",
@@ -107,7 +122,14 @@ const Webdesignservices = () => {
                   </li>
                 ))}
               </ul>
-              <button className="btn-theme">Contact Us</button>
+              <button
+                className="btn-theme"
+                data-aos="fade-right"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
+                Contact Us
+              </button>
             </div>
           </div>
         </div>
@@ -122,10 +144,18 @@ const Webdesignservices = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="pixel-perfect-head text-center ">
-                <h3>
+                <h3
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-offset="0"
+                >
                   From Pixels to <span>Perfection.</span>
                 </h3>
-                <p>
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  data-aos-offset="0"
+                >
                   Each design is uniquely crafted to suit the specific needs of
                   every business. We strive to showcase and enhance the
                   individuality of your brand. Explore some of our recent
@@ -134,7 +164,13 @@ const Webdesignservices = () => {
               </div>
             </div>
             {featuredProjectData.map((item, index) => (
-              <div className="col-lg-4 col-md-6 mb-4" key={index}>
+              <div
+                className="col-lg-4 col-md-6 mb-4"
+                key={index}
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
                 <NewsCard image={item.image} description={item.description} />
               </div>
             ))}

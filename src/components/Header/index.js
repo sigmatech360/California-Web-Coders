@@ -20,11 +20,11 @@ function Header() {
               <div className="d-flex align-items-center justify-content-end gap-3">
                 <div className="d-flex gap-2 align-items-center">
                   <FaPhoneAlt />
-                  <span>+1-409-798-9688</span>
+                  <a href="tel:+1-409-798-9688">+1-409-798-9688</a>
                 </div>
                 <div className="d-flex gap-2 align-items-center">
                   <RiMailSendLine />
-                  <span>hello@lorem.com</span>
+                  <a href="mailto:hello@lorem.com">hello@lorem.com</a>
                 </div>
               </div>
             </div>
@@ -32,89 +32,72 @@ function Header() {
         </div>
       </section>
       <section className="navbar-section">
-          <Navbar expand="lg" className="navbar-custom" variant="light">
-            <Container>
-              <Navbar.Brand
-                as={Link}
-                to="/"
-                className="justify-content-start"
-              >
-                <img
-                  src={logo}
-                  alt="California Web Coders Logo"
-                  className="header-icon"
-                />
-              </Navbar.Brand>
+        <Navbar expand="lg" className="navbar-custom" variant="light">
+          <Container>
+            <Navbar.Brand as={Link} to="/" className="justify-content-start">
+              <img
+                src={logo}
+                alt="California Web Coders Logo"
+                className="header-icon"
+              />
+            </Navbar.Brand>
 
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ms-auto navbar-nav-custom">
-                  <Nav.Link as={Link} to="/" className="nav-link-custom">
-                    Home
-                  </Nav.Link>
-                  <NavDropdown
-                    title="Services"
-                    id="navbarScrollingDropdown"
-                    className="nav-dropdown-custom"
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ms-auto navbar-nav-custom">
+                <Nav.Link as={Link} to="/" className="nav-link-custom">
+                  Home
+                </Nav.Link>
+                <NavDropdown
+                  title="Services"
+                  id="navbarScrollingDropdown"
+                  className="nav-dropdown-custom"
+                >
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/services"
                   >
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/services/wordpress-webdesignservices"
-                    >
-                      wordpress-webdesignservices
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} to="/pricing-plan">
-                      Pricing-plan
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} to="/news-trends">
-                      News-Trends
-                    </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/get-intouch">
-                      Get-intouch
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                    Services
+                  </NavDropdown.Item>
+                  {/* <NavDropdown.Divider /> */}
+                  <NavDropdown.Item as={Link} to="/pricing-plan">
+                    Pricing Plan
+                  </NavDropdown.Item>
+                  {/* <NavDropdown.Divider /> */}
+                  <NavDropdown.Item as={Link} to="/news-trends">
+                    News Trends
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/get-intouch">
+                    Get In Touch
+                  </NavDropdown.Item>
+                </NavDropdown>
 
-                  <NavDropdown
-                    title="Our Work"
-                    id="navbarScrollingDropdown"
-                    className="nav-dropdown-custom"
-                  >
-                    <NavDropdown.Item as={Link} to="/our-work">
-                      Action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/our-work/action2">
-                      Another Action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} to="/our-work/action3">
-                      Something Else Here
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                <NavDropdown
+                  title="Our Work"
+                  id="navbarScrollingDropdown"
+                  className="nav-dropdown-custom"
+                >
+                  <NavDropdown.Item as={Link} to="/our-work">
+                    Action
+                  </NavDropdown.Item>
+                </NavDropdown>
 
-                  <Nav.Link as={Link} to="/about" className="nav-link-custom">
-                    About Us
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/contact" className="nav-link-custom contact-button">
-                  Contact Us
-                  </Nav.Link>
-                </Nav>
-
-                {/* Contact Us Button */}
-                {/* <Button
+                <Nav.Link as={Link} to="/about" className="nav-link-custom">
+                  About Us
+                </Nav.Link>
+                <Nav.Link
                   as={Link}
-                  to="/contact"
-                  variant="light"
-                  className="contact-btn ms-lg-3 mt-3 mt-lg-0"
+                  to=""
+                  className="nav-link-custom contact-button"
                 >
                   Contact Us
-                </Button> */}
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
+                </Nav.Link>
+              </Nav>
 
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
       </section>
     </>
   );

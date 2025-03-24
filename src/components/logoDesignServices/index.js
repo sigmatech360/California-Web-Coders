@@ -9,11 +9,21 @@ const LogoDesignServices = () => {
           <div className="col-xl-6 col-lg-7 ">
             <p className="para">Say No To Logo Template Scams</p>
 
-            <p className="title">
+            <p
+              className="title"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-offset="0"
+            >
               We Provide What You Can Call Professional Logo Design Services
             </p>
 
-            <p className="para2 mb-2">
+            <p
+              className="para2 mb-2"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
               Finding true, professional logo design services might be difficult
               in a world of pre-made templates and quick fixes. We know the
               design industry's template frauds and cookie-cutter techniques at
@@ -25,7 +35,12 @@ const LogoDesignServices = () => {
               identity.
             </p>
 
-            <p className="para2">
+            <p
+              className="para2"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
               Our ecommerce logo designer team takes pride in creating custom
               logos from scratch, unlike these template-driven companies. The
               low price logo design services we offer focus on your brand's
@@ -42,11 +57,19 @@ const LogoDesignServices = () => {
             <img
               className="img-fluid  LogoDesignServicesimg"
               src={logodesignimg}
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              data-aos-offset="0"
             />
           </div>
 
           <div className="col-md-12">
-            <p className="para3">
+            <p
+              className="para3"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              data-aos-offset="0"
+            >
               We deliver a logo that exceeds your expectations. Professional
               logo design services from us elevate your business and make it
               stand out in a congested market. Choose Logo Leagues for a logo
