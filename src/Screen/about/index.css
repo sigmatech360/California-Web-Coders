@@ -1,5 +1,6 @@
 .about-banner {
   padding: 30px 0;
+  overflow: hidden;
 }
 .about-banner .about-title {
   color: #031243;

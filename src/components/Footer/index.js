@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css"; // Add any additional styling here
 import footerlogo from "../../Assets/footerlogo.png";
 import footerlogo1 from "../../Assets/footerlogo2.png";
@@ -8,6 +8,31 @@ import { SiMinutemailer } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const [email, setEmail] = useState("");
+  const apiUrl = process.env.REACT_APP_API_BASE_URL;
+  console.log("apiUrl", apiUrl)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(`${apiUrl}/newsletter-subscription`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const result = await response.json();
+      console.log(result);
+      alert("Email Submitted Successfully");
+    } catch (error) {
+      console.log(`Error submitting email:`, error);
+      alert("Submission failed. Please try again.");
+    }
+  };
+
   return (
     <footer className="main-footer text-white">
       <div className="container">
@@ -49,7 +74,10 @@ function Footer() {
                   <Link to={""} className="main-footer-link">
                     Contact
                   </Link>
-                  <Link to={"/terms-and-conditions"} className="main-footer-link">
+                  <Link
+                    to={"/terms-and-conditions"}
+                    className="main-footer-link"
+                  >
                     Terms & Conditions
                   </Link>
                   <Link to={"/privacy-policy"} className="main-footer-link">
@@ -98,12 +126,15 @@ function Footer() {
             {/* Newsletter Signup */}
             <div className="newsletter-signup text-center text-md-start">
               <h5 className="mb-2">Subscribe to Our Newsletter</h5>
-              <form className="d-flex justify-content-center">
+              <form className="d-flex justify-content-center" onSubmit={handleSubmit}>
                 <div className="sendmailtab">
                   <input
                     type="email"
                     className="emailsend"
                     placeholder="Email Address"
+                    name="email"
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
                   />
                   <button type="submit" className="sendbtn btn">
                     <SiMinutemailer />
