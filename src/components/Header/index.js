@@ -54,13 +54,40 @@ function Header() {
                   id="navbarScrollingDropdown"
                   className="nav-dropdown-custom"
                 >
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/services"
-                  >
-                    Services
+                  {[
+                    { name: "Web Design", link: "web-design" },
+                    { name: "CMS Development", link: "cms-development" },
+                    { name: "Digital Marketing", link: "digital-marketing" },
+                    { name: "SMM", link: "social-media-marketing" },
+                    {
+                      name: "Custom Web Development",
+                      link: "custom-web-development",
+                    },
+                    { name: "SEO", link: "seo" },
+                    { name: "Logo Design", link: "logo-design" },
+                    {
+                      name: "Mobile App Development",
+                      link: "mobile-app-development",
+                    },
+                  ].map((item, index) => (
+                    <NavDropdown.Item
+                      as={Link}
+                      to={`/services/${item.link}`}
+                      key={index}
+                    >
+                      {item.name}
+                    </NavDropdown.Item>
+                  ))}
+                </NavDropdown>
+
+                <NavDropdown
+                  title="Our Work"
+                  id="navbarScrollingDropdown"
+                  className="nav-dropdown-custom"
+                >
+                  <NavDropdown.Item as={Link} to="/our-work">
+                    Our Work
                   </NavDropdown.Item>
-                  {/* <NavDropdown.Divider /> */}
                   <NavDropdown.Item as={Link} to="/pricing-plan">
                     Pricing Plan
                   </NavDropdown.Item>
@@ -73,28 +100,17 @@ function Header() {
                   </NavDropdown.Item>
                 </NavDropdown>
 
-                <NavDropdown
-                  title="Our Work"
-                  id="navbarScrollingDropdown"
-                  className="nav-dropdown-custom"
-                >
-                  <NavDropdown.Item as={Link} to="/our-work">
-                    Action
-                  </NavDropdown.Item>
-                </NavDropdown>
-
                 <Nav.Link as={Link} to="/about" className="nav-link-custom">
                   About Us
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
-                  to=""
+                  to="/get-intouch"
                   className="nav-link-custom contact-button"
                 >
                   Contact Us
                 </Nav.Link>
               </Nav>
-
             </Navbar.Collapse>
           </Container>
         </Navbar>

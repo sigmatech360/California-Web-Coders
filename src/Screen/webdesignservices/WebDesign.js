@@ -2,25 +2,26 @@ import React from "react";
 import "./index.css";
 import Layout from "../../components/layout";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
+
 import Growyourbusiness from "../../components/growyourbusiness";
 import PricingPlans from "../../components/PricingPlans";
 import ContactForm from "../../components/readytocheat";
 import Creativitythrough from "../../components/Creativitythrough";
 
-import pixleperfectimg1 from "../../Assets/pixle-perfect-img1.png";
-import pixleperfectimg2 from "../../Assets/pixle-perfect-img2.png";
-import pixleperfectimg3 from "../../Assets/pixle-perfect-img3.png";
-import pixleperfectimg4 from "../../Assets/pixle-perfect-img4.png";
-import pixleperfectimg5 from "../../Assets/pixle-perfect-img5.png";
-import pixleperfectimg6 from "../../Assets/pixle-perfect-img6.png";
+import pixleperfectimg1 from "../../Assets/service-webDesign-pixle-perfect-img1.png";
+import pixleperfectimg2 from "../../Assets/service-webDesign-pixle-perfect-img2.png";
+import pixleperfectimg3 from "../../Assets/service-webDesign-pixle-perfect-img3.png";
+import pixleperfectimg4 from "../../Assets/service-webDesign-pixle-perfect-img4.png";
+import pixleperfectimg5 from "../../Assets/service-webDesign-pixle-perfect-img5.png";
+import pixleperfectimg6 from "../../Assets/service-webDesign-pixle-perfect-img6.png";
 
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
 
-import wordpressbg from "../../Assets/wordpressbg.png";
-import performence from "../../Assets/performence.png"; 
-import wordpresssectionimg from "../../Assets/wordpresssectionimg.png";
-import creativethoughsec from "../../Assets/creativethoughsec.png";
+import wordpressbg from "../../Assets/services-webDesign-banner-bg.png";
+import performence from "../../Assets/service-webDesign-about-img.png";
+import wordpresssectionimg from "../../Assets/services-webDesign-about2-img.png";
+import creativethoughsec from "../../Assets/services-webDesign-creativeThrough-img.png";
 
 
 const featuredProjectData = [
@@ -62,7 +63,7 @@ const featuredProjectData = [
   }
 ];
 
-const Webdesignservices = () => {
+const WebDesign = () => {
   return (
     <Layout>
       <ServiceBanner
@@ -136,4 +137,4 @@ const Webdesignservices = () => {
   );
 };
 
-export default Webdesignservices;
+export default WebDesign;

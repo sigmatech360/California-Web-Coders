@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import { CiCircleCheck } from "react-icons/ci";
+// import { CiCircleCheck } from "react-icons/ci";
 import wordpresssectionimg from "../../Assets/wordpresssectionimg.png";
 import PricePlanCard from "../PricePlanCard";
 
@@ -81,7 +81,7 @@ const pricingPlanData = [
     number: `+1 619-798-9688`,
   },
 ];
-const PricingPlans = () => {
+const PricingPlans = (props) => {
   return (
     <section className="PricingPlans">
       <div className="container">
@@ -131,11 +131,14 @@ const PricingPlans = () => {
               data-aos-duration="1000"
               data-aos-offset="0"
             >
-              <img
-                src={wordpresssectionimg}
-                alt="Laptop Display"
-                className="img-fluid workpressimges"
-              />
+              {props.image && (
+                <img
+                  // src={wordpresssectionimg}
+                  src={props.image}
+                  alt="Laptop Display"
+                  className="img-fluid workpressimges"
+                />
+              )}
             </div>
           </div>
           <div className="col-lg-6">
@@ -145,37 +148,45 @@ const PricingPlans = () => {
                 data-aos-duration="1000"
                 data-aos-offset="0"
               >
-                Why WordPress?
+                {/* Why WordPress */}
+                {props.whyWordressTitle} <span className="colorBlue">?</span>
               </h1>
               <p
                 data-aos="fade-left"
                 data-aos-duration="2000"
                 data-aos-offset="0"
               >
-                One of the strengths of WordPress is that it is fully
+                {props.whyWordressDescription1}
+                {/* One of the strengths of WordPress is that it is fully
                 customisable. This means we can build bespoke websites tailored
-                specifically to our client’s goals
+                specifically to our client’s goals */}
               </p>
-              <p
-                data-aos="fade-left"
-                data-aos-duration="2000"
-                data-aos-offset="0"
-              >
-                Our WordPress developers ensure that your design and website
+              {props.whyWordressDescription2 && (
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                  data-aos-offset="0"
+                >
+                  {props.whyWordressDescription2}
+                  {/* Our WordPress developers ensure that your design and website
                 functionality works across all devices, allowing you to stand
-                out from the competition.
-              </p>
-              <p
-                data-aos="fade-left"
-                data-aos-duration="2000"
-                data-aos-offset="0"
-              >
-                Another added benefit of using such a popular platform is that
+                out from the competition. */}
+                </p>
+              )}
+              {props.whyWordressDescription3 && (
+                <p
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                  data-aos-offset="0"
+                >
+                  {props.whyWordressDescription3}
+                  {/* Another added benefit of using such a popular platform is that
                 there are thousands of great WordPress plugins available. These
                 plugins add complex functionality to your site and can be great
                 tools for displaying information, engaging users, and building a
-                WordPress eCommerce online store.
-              </p>
+                WordPress eCommerce online store. */}
+                </p>
+              )}
               <button
                 className="morebenifit"
                 data-aos="fade-left"

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import performence from "../../Assets/performence.png";
 import "./index.css";
 
-const WordPressPerformanceSection = () => {
+const WordPressPerformanceSection = (props) => {
   return (
     <section className="WordPressPerformanceSection">
       <div className="container">
@@ -15,28 +15,23 @@ const WordPressPerformanceSection = () => {
               data-aos-duration="1000"
               data-aos-offset="0"
             >
-              Beautiful <span className=" ">WordPress</span> <br />
-              websites built to perform.
+              {props.secTitle1}{" "}
+              {props.secTitle2 && <span>{props.secTitle2}</span>}{" "}
+              {props.secTitle3 && props.secTitle3}
             </h1>
             <p
               data-aos="fade-right"
               data-aos-duration="2000"
               data-aos-offset="0"
             >
-              With more than 10 years in the web design industry, building
-              hundreds of WordPress websites across numerous industries, Octave
-              Agency have a tried and tested process to achieve maximum results
-              which is why our clients love our WordPress web design services.
+              {props.description}
             </p>
             <p
               data-aos="fade-right"
               data-aos-duration="2000"
               data-aos-offset="0"
             >
-              We understand that your website is your most effective marketing
-              tool and that it is quite often your customer’s first point of
-              contact with you. With this in mind, all our websites are built
-              with strategic techniques for maximum lead conversion.
+              {props.description2 && props.description2}
             </p>
             <button
               className="btn-theme"
@@ -49,14 +44,16 @@ const WordPressPerformanceSection = () => {
           </div>
 
           <div className="col-lg-6">
-            <img
-              src={performence}
-              alt="Laptop Display"
-              className="img-fluid workpressimges"
-              data-aos="fade-left"
-              data-aos-duration="2000"
-              data-aos-offset="0"
-            />
+            <div className="services__about-img">
+              <img
+                src={props.image}
+                alt="Service About Image"
+                className="img-fluid"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              />
+            </div>
           </div>
         </div>
       </div>

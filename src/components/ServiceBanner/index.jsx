@@ -1,0 +1,75 @@
+import React from "react";
+import { CiCircleCheck } from "react-icons/ci";
+
+const ServiceBanner = (props) => {
+  return (
+    <section
+      className="wordpress-web-design"
+      style={{
+        backgroundImage: `url(${props.bgImage})`,
+      }}
+    >
+      <div className="container">
+        <div className="row align-items-center">
+          <div className={`${props.leftCol || "col-lg-6"}`}>
+            <h1
+              className=""
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-offset="0"
+            >
+              {props.title}
+            </h1>
+            <p
+              className=""
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
+              {props.description}
+            </p>
+            <ul
+              className="list-unstyled wordpress-web-design-list"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              data-aos-offset="0"
+            >
+              {props.bannerList.map((item, index) => (
+                <li className="d-flex align-items-center mb-2" key={index}>
+                  <span className="d-flex align-items-center gap-2">
+                    <CiCircleCheck className="checkicon" />
+                    <p className="para4 mb-0 align-self-baseline">{item}</p>
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <button
+              className="btn-theme"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              data-aos-offset="0"
+            >
+              Contact Us
+            </button>
+          </div>
+          {props.image && (
+            <div className={`${props.rightCol || "col-lg-6"}`}>
+              <div className="services__banner-img">
+                <img
+                  src={props.image}
+                  alt="Services Banner Image"
+                  className="img-fluid"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                  data-aos-offset="0"
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServiceBanner;

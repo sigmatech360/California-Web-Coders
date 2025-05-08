@@ -56,7 +56,7 @@ function Footer() {
                   </Link>
                   <Link to={"/about"} className="main-footer-link">
                     About Us
-                  </Link>
+                  </Link> 
                   <Link to={"/services"} className="main-footer-link">
                     Services
                   </Link>
@@ -71,7 +71,7 @@ function Footer() {
                   <Link to={""} className="main-footer-link">
                     FAQ's
                   </Link>
-                  <Link to={""} className="main-footer-link">
+                  <Link to={"/get-intouch"} className="main-footer-link">
                     Contact
                   </Link>
                   <Link
