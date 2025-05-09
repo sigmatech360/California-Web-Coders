@@ -17,11 +17,11 @@ import pixleperfectimg6 from "../../Assets/service-customDev-pixle-perfect-img6.
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
 
-import wordpressbg from "../../Assets/services-customDev-banner-bg.png";
+import wordpressbg from "../../Assets/services-cmsDev-banner-bg.png";
+import serviceBannerImg from "../../Assets/services-customDev-banner-img.png";
 import performence from "../../Assets/service-customDev-about-img.png";
 import wordpresssectionimg from "../../Assets/services-customDev-about2-img.png";
 import creativethoughsec from "../../Assets/services-customDev-creativeThrough-img.png";
-
 
 const featuredProjectData = [
   {
@@ -59,7 +59,7 @@ const featuredProjectData = [
     image: pixleperfectimg6,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  }
+  },
 ];
 
 const CustomWebDevelopment = () => {
@@ -67,70 +67,64 @@ const CustomWebDevelopment = () => {
     <Layout>
       <ServiceBanner
         bgImage={wordpressbg}
-        title="WordPress Web Design Services"
-        description="Launch a professional, revenue-driving WordPress website with our WordPress Web Design Services."
+        title="Custom Web Development For Unique Businesses"
+        description="Gone are the days when you need to browse and brainstorm hundreds of web templates to find the one that connects with your brand voice. At California Web Coders, we provide custom web development services tailored to your target audience."
+        description2="Whether you're looking for a sleek design, easy updates, or a powerful back-end structure, we specialize in building CMS platforms that work for you with no tech skills required!"
         bannerList={[
-          "Modern web design techniques",
-          "Optimised for SEO",
-          "Lightning fast load times",
-          "Designed to convert",
+          "Fully customized websites that align with your goals.",
+          "Smooth back-end development for seamless management.",
+          "Beautiful, responsive front-end development for a polished user experience.",
         ]}
+        image={serviceBannerImg}
       />
 
       <WordPressPerformanceSection
-        secTitle1="Beautiful"
-        secTitle2="WordPress"
-        secTitle3="websites built to perform."
-        description="With more than 10 years in the web design industry, building
-              hundreds of WordPress websites across numerous industries, Octave
-              Agency have a tried and tested process to achieve maximum results
-              which is why our clients love our WordPress web design services."
-        description2="We understand that your website is your most effective marketing
-              tool and that it is quite often your customer’s first point of
-              contact with you. With this in mind, all our websites are built
-              with strategic techniques for maximum lead conversion."
+        secTitle1="Your"
+        secTitle2="Custom Website,"
+        secTitle3="Built With Expertise"
+        description="With custom web design and development California expertise, we ensure your site is built to grow with you. Our websites not only look great but are easy for you to manage, with no complicated back-end systems, just simple, user-friendly functionality. From a seamless front-end development experience to a reliable and secure back-end development setup, we focus on simplicity, performance, and long-term results."
+        description2=""
         image={performence}
+        btnText="Boost Your Business"
       />
 
-      <Growyourbusiness />
+      <Growyourbusiness
+        title1="Need A Website Fully Customized To Your Brand"
+        title2="Voice?"
+        btnText="Sign Up Now!"
+      />
 
       <PixelPerfectSec
-        secTitle="From Pixels to"
-        secTitleBlue="Perfection."
-        secDescription="Each design is uniquely crafted to suit the specific needs of every business. We strive to showcase and enhance the individuality of your brand. Explore some of our recent projects below."
+        secTitle="Explore Our Diversity In"
+        secTitleBlue="Custom Website Development"
+        secDescription="Our custom web development services have helped clients succeed by creating beautiful, functional websites that drive results. Take a look at some of our work to see what we can do for you."
         projectsData={featuredProjectData}
+        btnText="View Our Portfolio"
       />
 
       <PricingPlans
+        secTitle="Flexible Pricing to Match Your Needs"
+        secDescription="From simple landing pages to full-scale websites, we offer flexible pricing options to suit every business. Our transparent pricing ensures you get the best value for your investment."
         image={wordpresssectionimg}
-        whyWordressTitle="Why WordPress"
-        whyWordressDescription1="One of the strengths of WordPress is that it is fully
-                customisable. This means we can build bespoke websites tailored
-                specifically to our client’s goals"
-        whyWordressDescription2="Our WordPress developers ensure that your design and website
-                functionality works across all devices, allowing you to stand
-                out from the competition."
-        whyWordressDescription3="Another added benefit of using such a popular platform is that
-                there are thousands of great WordPress plugins available. These
-                plugins add complex functionality to your site and can be great
-                tools for displaying information, engaging users, and building a
-                WordPress eCommerce online store."
+        whyWordressTitle="Why Custom Web Development Is The Right Choice:"
+        whyWordressDescription1="At California Web Coders, we build online experiences that make a real impact. We offer custom web development services that are efficient, cost-effective, and tailored to your business needs."
+        whyWordressDescription2="Our expert team delivers front-end development that grabs attention, paired with back-end development that’s fast, secure, and easy to manage. We make sure your website works for you, not the other way around."
+        // whyWordressDescription3=""
+        btnText="Start Now"
       />
 
-      <ContactForm />
+      <ContactForm
+        secTitle="Discuss How You Want Your Website With Our Experts"
+        secDescription="Sign up to chat with our custom web development now, get a free consultation, and take your step toward business growth, entirely at your choice!"
+      />
 
       <Creativitythrough
-        title1="Creativity through"
-        title2="web and graphics."
-        description1="we put a lot of work into being on trend with design as well as
-                ensuring the websites we produce are performance led for SEO
-                purposes. This means that whilst focusing on making you look
-                good, we can make sure you stand the best chance of getting in
-                front of your audience and ultimately convert leads into paying
-                customers."
-        description2="View our latest work to see how we’ve helped businesses
-                transform their digital presence."
+        title1="Be Unique With Your"
+        title2="Website Experience"
+        description1="Websites should be easy to manage, perform excellently, and align with your goals. With California Web Coders, you get custom web development services that prioritize convenience, performance, and flexibility. We design sites that are as simple to maintain as they are to navigate."
+        // description2=""
         image={creativethoughsec}
+        btnText="Build Your Custom Website Now!"
       />
     </Layout>
   );

@@ -25,8 +25,8 @@ const WhychoseUs = () => {
                 data-aos-duration="2000"
                 data-aos-offset="0"
               >
-                Let us change the way you think <br />
-                <span className="changewayspan">about technology.</span>
+                Unique Digital Solutions, Experienced Crew, <br />
+                <span className="changewayspan">Long-Term Results</span>
               </h2>
             </div>
           </div>
@@ -45,10 +45,11 @@ const WhychoseUs = () => {
                 >
                   <img src={smart} className="img-fluid" />
                 </div>
-                <h5 className="card-title  ">Smart & Secure System</h5>
+                <h5 className="card-title  ">Creative Solutions</h5>
                 <p className="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry.
+                  We blend creativity with clean code to build digital
+                  experiences that are beautiful, brand-aligned, and function
+                  perfectly across all devices.
                 </p>
               </div>
             </div>
@@ -68,10 +69,11 @@ const WhychoseUs = () => {
                 >
                   <img src={Professiona} className="img-fluid" />
                 </div>
-                <h5 className="card-title  ">Professional Team</h5>
+                <h5 className="card-title  ">User-friendly Experience</h5>
                 <p className="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry.
+                  Our websites are built for easy updates, simple navigation,
+                  and intuitive use, so you stay in control without the tech
+                  stress.
                 </p>
               </div>
             </div>
@@ -91,10 +93,10 @@ const WhychoseUs = () => {
                 >
                   <img src={Certified} className="img-fluid" />
                 </div>
-                <h5 className="card-title  ">Certified Expert</h5>
+                <h5 className="card-title  ">CPerformance Driven</h5>
                 <p className="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry.
+                  From fast load times to SEO-ready frameworks, every site we
+                  create is optimized to perform and scale with your growth.
                 </p>
               </div>
             </div>
@@ -114,10 +116,11 @@ const WhychoseUs = () => {
                 >
                   <img src={Premium} className="img-fluid" />
                 </div>
-                <h5 className="card-title  ">24/7 Premium Support</h5>
+                <h5 className="card-title  ">24/7 Customer Service</h5>
                 <p className="card-text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry.
+                  Our clients are our top priority; we offer 24/7 customer
+                  support to maintain constant communication and ensure
+                  transparency in all our projects.
                 </p>
               </div>
             </div>

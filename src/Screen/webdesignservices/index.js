@@ -18,10 +18,9 @@ import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
 
 import wordpressbg from "../../Assets/wordpressbg.png";
-import performence from "../../Assets/performence.png"; 
+import performence from "../../Assets/performence.png";
 import wordpresssectionimg from "../../Assets/wordpresssectionimg.png";
 import creativethoughsec from "../../Assets/creativethoughsec.png";
-
 
 const featuredProjectData = [
   {
@@ -59,7 +58,7 @@ const featuredProjectData = [
     image: pixleperfectimg6,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  }
+  },
 ];
 
 const Webdesignservices = () => {
@@ -67,70 +66,62 @@ const Webdesignservices = () => {
     <Layout>
       <ServiceBanner
         bgImage={wordpressbg}
-        title="WordPress Web Design Services"
-        description="Launch a professional, revenue-driving WordPress website with our WordPress Web Design Services."
+        title="Build A Fully Customizable WordPress Web Design!"
+        description="Launch your professionally made WordPress website, which keeps your visitors hooked to your web pages and guarantees revenue and results! If you’re looking for a site that’s fast, flexible, and built to grow, California Web Coders will do it all!"
         bannerList={[
-          "Modern web design techniques",
-          "Optimised for SEO",
-          "Lightning fast load times",
-          "Designed to convert",
+          "100+ WordPress websites launched.",
+          "Custom themes, no cookie-cutters.",
+          "Built for speed and SEO.",
         ]}
+        btnText="Connect Now"
       />
 
       <WordPressPerformanceSection
-        secTitle1="Beautiful"
+        secTitle1="Your Unique"
         secTitle2="WordPress"
-        secTitle3="websites built to perform."
-        description="With more than 10 years in the web design industry, building
-              hundreds of WordPress websites across numerous industries, Octave
-              Agency have a tried and tested process to achieve maximum results
-              which is why our clients love our WordPress web design services."
-        description2="We understand that your website is your most effective marketing
-              tool and that it is quite often your customer’s first point of
-              contact with you. With this in mind, all our websites are built
-              with strategic techniques for maximum lead conversion."
+        secTitle3="Web Design"
+        description="Your website isn’t just a page; it’s your brand’s digital home. That’s why we take WordPress development seriously. Our creativity isn’t limited to any template or repeated designs; we make custom WordPress website designs that are perfect for launching a fresh website or revamping an existing website with new ideas and exquisite details."
+        description2="The websites we make are more than just sparkle; we ensure functionality and user experience. With our team, you’ll get a WordPress site that reflects your brand, supports your growth, and makes managing content effortless."
         image={performence}
+        btnText="Make My Website"
       />
 
-      <Growyourbusiness />
+      <Growyourbusiness
+        title1="Reflect your brand personality with a"
+        title2="custom web design!"
+        btnText="Click Here"
+      />
 
       <PixelPerfectSec
-        secTitle="From Pixels to"
-        secTitleBlue="Perfection."
-        secDescription="Each design is uniquely crafted to suit the specific needs of every business. We strive to showcase and enhance the individuality of your brand. Explore some of our recent projects below."
+        secTitle="Your Ideas,"
+        secTitleBlue="Our Execution."
+        secDescription="No templates. Just thoughtful and strategic designs. Each of our projects is designed for responsiveness, usability, and results."
         projectsData={featuredProjectData}
+        btnText="View Our Designs"
       />
 
       <PricingPlans
+        secTitle="Custom WordPress Design, Transparent Pricing"
+        secDescription="Whatever your business needs are, our pricing remains transparent. We believe in growing together with flexible financing options for everyone."
         image={wordpresssectionimg}
-        whyWordressTitle="Why WordPress"
-        whyWordressDescription1="One of the strengths of WordPress is that it is fully
-                customisable. This means we can build bespoke websites tailored
-                specifically to our client’s goals"
-        whyWordressDescription2="Our WordPress developers ensure that your design and website
-                functionality works across all devices, allowing you to stand
-                out from the competition."
-        whyWordressDescription3="Another added benefit of using such a popular platform is that
-                there are thousands of great WordPress plugins available. These
-                plugins add complex functionality to your site and can be great
-                tools for displaying information, engaging users, and building a
-                WordPress eCommerce online store."
+        whyWordressTitle="WordPress For Exceptional Web Solutions"
+        whyWordressDescription1="We’re more than developers, we’re problem solvers, designers, and strategists. As a leading WordPress design team, we go beyond basic templates to create custom solutions built specifically for your goals. From plugin development to advanced back-end functionality, we’ve done it all."
+        whyWordressDescription2="Our WordPress websites are built to perform, from lightning-fast load times to mobile-optimized layouts. We bring deep technical expertise and a love for design to every project, making us a WordPress web design partner you can truly rely on."
+        // whyWordressDescription3=""
       />
 
-      <ContactForm />
+      <ContactForm
+        secTitle="Ready To Grow Your Business? Chat With Us!"
+        secDescription="You dream it and we’ll build it. Book a free consultation and let’s talk WordPress."
+      />
 
       <Creativitythrough
-        title1="Creativity through"
-        title2="web and graphics."
-        description1="we put a lot of work into being on trend with design as well as
-                ensuring the websites we produce are performance led for SEO
-                purposes. This means that whilst focusing on making you look
-                good, we can make sure you stand the best chance of getting in
-                front of your audience and ultimately convert leads into paying
-                customers."
-        description2="View our latest work to see how we’ve helped businesses
-                transform their digital presence."
+        title1="WordPress Design"
+        title2="That Stands Out."
+        description1="Your website deserves more than a basic theme. We bring design expertise, custom development, and SEO-friendly structure to every WordPress project. Our goal? A website that reflects your brand and helps it grow."
+        description2="It’s not just WordPress. It’s WordPress done right."
         image={creativethoughsec}
+        btnText="Get Started"
       />
     </Layout>
   );

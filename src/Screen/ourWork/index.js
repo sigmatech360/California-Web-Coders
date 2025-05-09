@@ -96,8 +96,9 @@ const OurWork = () => {
                   data-aos-duration="2000"
                   data-aos-offset="0"
                 >
-                  Explore our impactful digital creations, where every
-                  experience leaves a lasting impression.
+                  From startups to enterprises, our work showcases powerful
+                  websites built with purpose, precision, and performance at
+                  every digital touchpoint.
                 </p>
               </div>
             </div>
@@ -130,7 +131,7 @@ const OurWork = () => {
                   data-aos-duration="1000"
                   data-aos-offset="0"
                 >
-                  View our latest <span>creations</span>
+                  A Glimpse Into Our <span>Expertise</span>
                 </h3>
                 <p
                   data-aos="fade-up"

@@ -17,12 +17,10 @@ import pixleperfectimg6 from "../../Assets/service-webDesign-pixle-perfect-img6.
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
 
-
 import wordpressbg from "../../Assets/services-smm-banner-bg.png";
 import performence from "../../Assets/service-smm-about-img.png";
 import wordpresssectionimg from "../../Assets/services-smm-about2-img.png";
 import creativethoughsec from "../../Assets/services-smm-creativeThrough-img.png";
-
 
 const featuredProjectData = [
   {
@@ -60,7 +58,7 @@ const featuredProjectData = [
     image: pixleperfectimg6,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  }
+  },
 ];
 
 const SocialMediaMarketing = () => {
@@ -68,70 +66,63 @@ const SocialMediaMarketing = () => {
     <Layout>
       <ServiceBanner
         bgImage={wordpressbg}
-        title="WordPress Web Design Services"
-        description="Launch a professional, revenue-driving WordPress website with our WordPress Web Design Services."
+        title="Social Media Marketing To Boost Your Brand"
+        description="At California Web Coders, we help you shine and stand out on social media. As a leading social media marketing agency, we craft content that makes people stop scrolling, we create ad strategies that build your brand uniquely, and engage your audience in ways that spark conversions and build lasting relationships."
         bannerList={[
-          "Modern web design techniques",
-          "Optimised for SEO",
-          "Lightning fast load times",
-          "Designed to convert",
+          "Platform-specific content and campaigns.",
+          "Strategic content blended with immense creativity.",
+          "Daily engagement and content creation.",
+          "Trusted by California businesses. ",
         ]}
       />
 
       <WordPressPerformanceSection
-        secTitle1="Beautiful"
-        secTitle2="WordPress"
-        secTitle3="websites built to perform."
-        description="With more than 10 years in the web design industry, building
-              hundreds of WordPress websites across numerous industries, Octave
-              Agency have a tried and tested process to achieve maximum results
-              which is why our clients love our WordPress web design services."
-        description2="We understand that your website is your most effective marketing
-              tool and that it is quite often your customer’s first point of
-              contact with you. With this in mind, all our websites are built
-              with strategic techniques for maximum lead conversion."
+        secTitle1="Content That"
+        secTitle2="Engages, Grows,"
+        secTitle3="And Converts"
+        description="Being a known and loved social media marketing company in California, we partner with you to develop social media strategies that enhance your digital presence and grow trust among your customers. From trendy Instagram reels to compelling Facebook ads, we blend storytelling with strategy to turn your audience into loyal customers."
+        // description2=""
         image={performence}
+        btnText="Boost Your Business"
       />
 
-      <Growyourbusiness />
+      <Growyourbusiness
+        title1="Elevate Your Social Media"
+        title2="Game!"
+        btnText="The First Step To Growth"
+      />
 
       <PixelPerfectSec
-        secTitle="From Pixels to"
-        secTitleBlue="Perfection."
-        secDescription="Each design is uniquely crafted to suit the specific needs of every business. We strive to showcase and enhance the individuality of your brand. Explore some of our recent projects below."
+        secTitle="Real Brands. Real Engagement."
+        // secTitleBlue=""
+        secDescription="We’ve helped brands grow faster, look better, and connect deeper with standout social media campaigns. From polished visuals to high-performing ads, we make every post count."
         projectsData={featuredProjectData}
+        btnText="Browse Case Studies"
       />
 
       <PricingPlans
+        secTitle="Social Strategy That Fits Your Budget"
+        secDescription="From startups looking to build awareness to brands ready for paid growth, we’ve got a package for every stage."
         image={wordpresssectionimg}
-        whyWordressTitle="Why WordPress"
-        whyWordressDescription1="One of the strengths of WordPress is that it is fully
-                customisable. This means we can build bespoke websites tailored
-                specifically to our client’s goals"
-        whyWordressDescription2="Our WordPress developers ensure that your design and website
-                functionality works across all devices, allowing you to stand
-                out from the competition."
-        whyWordressDescription3="Another added benefit of using such a popular platform is that
-                there are thousands of great WordPress plugins available. These
-                plugins add complex functionality to your site and can be great
-                tools for displaying information, engaging users, and building a
-                WordPress eCommerce online store."
+        whyWordressTitle="Why Choose California Web Coders?"
+        whyWordressDescription1="Because your brand deserves more than generic posts and inconsistent messaging, we’re a social media marketing agency that takes time to understand your audience, create content that aligns with your goals and audience, and turn insights into impact."
+        whyWordressDescription2="Whether it’s organic growth or paid campaigns, we offer comprehensive, consistent, and customised services that amplify your brand voice and help you achieve your goals."
+        whyWordressDescription3="We're not here to fill your calendar, we’re here to build your community."
+        btnText="Start Now"
       />
 
-      <ContactForm />
+      <ContactForm
+        secTitle="Craft Your Social Media Marketing Campaign With Us!"
+        secDescription="Sign up to chat with our social media experts now, get a free consultation, and take your step toward business growth, entirely at your choice!"
+      />
 
       <Creativitythrough
-        title1="Creativity through"
-        title2="web and graphics."
-        description1="we put a lot of work into being on trend with design as well as
-                ensuring the websites we produce are performance led for SEO
-                purposes. This means that whilst focusing on making you look
-                good, we can make sure you stand the best chance of getting in
-                front of your audience and ultimately convert leads into paying
-                customers."
-        description2="View our latest work to see how we’ve helped businesses
-                transform their digital presence."
+        title1="Social Media Marketing Beyond"
+        title2="Hashtags"
+        description1="Our approach to social media marketing services is all about authenticity and results. From organic content to ad management, we keep things consistent, creative, and completely aligned with your brand’s voice."
+        description2="Our campaigns are made to connect directly with the audience you desire for your brand; we make personalized posts, reels, engagement campaigns, and even paid ad campaigns, all to bring you the results your brand craves!"
         image={creativethoughsec}
+        btnText="Get Your Strategy Now!"
       />
     </Layout>
   );

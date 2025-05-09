@@ -10,44 +10,44 @@ import { RiSeoFill } from "react-icons/ri";
 const webSolutionsData = [
   {
     id: 1,
-    name: "Custom Web Design:",
+    name: "Website Design And Development:",
     description:
-      "We create bespoke websites tailored to your specific needs and goals, ensuring a unique and memorable online presence.",
+      "We create fast, responsive websites that look amazing and perform flawlessly. Clean code, smart design, and smooth functionality ensure your site runs like a pro.",
     icon: <MdEdit />,
   },
   {
     id: 2,
-    name: "Responsive Web Design:",
+    name: "Digital Marketing:",
     description:
-      "We ensure your website looks and functions flawlessly across all devices, providing an optimal user experience for everyone.",
+      "Our digital marketing services help you attract, engage, and convert your ideal audience. Strategy meets creativity to drive growth, leads, and measurable business results.",
     icon: <CiMobile3 />,
   },
   {
     id: 3,
-    name: "eCommerce Development:",
+    name: "Social Media Marketing:",
     description:
-      "We build robust and secure online stores that enable you to sell your products or services with ease.",
+      "We manage social media marketing for California brands that rely on it. From strategy to content and ads, we help grow your presence and build real customer relationships online.",
     icon: <MdOutlineComputer />,
   },
   {
     id: 4,
-    name: "Website Maintenance & Support:",
+    name: "Logo Design:",
     description:
-      "We provide ongoing maintenance and support to keep your website running smoothly and up-to-date.",
+      "We design impactful, scalable logos for your brand. A strong logo design for website and beyond builds recognition, trust, and visual identity from day one.",
     icon: <RiToolsLine />,
   },
   {
     id: 5,
-    name: "SEO Optimization:",
+    name: "Search Engine Optimization:",
     description:
-      "We implement proven SEO strategies to improve your website’s visibility in search engines and attract organic traffic.",
+      "As a top SEO company in California, we help businesses rank higher with smart keyword strategies, technical optimization, and powerful, relevant content that drives traffic.",
     icon: <RiSeoFill />,
   },
   {
     id: 6,
-    name: "Content Management Systems (CMS):",
+    name: "Mobile App Development:",
     description:
-      "We empower you to easily manage your website content with user-friendly CMS solutions.",
+      "We build smart mobile apps with sleek design, smooth performance, and strong backend support, offering mobile app development services that match your vision and business goals.",
     icon: <MdEdit />,
   },
 ];
@@ -66,7 +66,7 @@ const Designsolutions = () => {
               data-aos-duration="1000"
               data-aos-offset="0"
             >
-              <span> Web design solutions </span>for your business growth.
+              <span> Optimized Website Designs </span>For Peak Performance.
             </p>
 
             <p
@@ -75,13 +75,11 @@ const Designsolutions = () => {
               data-aos-duration="2000"
               data-aos-offset="0"
             >
-              At <span>California Web Coders,</span> we’re passionate about
-              crafting exceptional digital experiences that drive results. As a
-              leading web design agency, we specialize in creating visually
-              stunning, user-friendly, and high-performing websites that elevate
-              your brand and engage your audience. We believe that a
-              well-designed website is more than just an online presence – it’s
-              a powerful tool for achieving your business goals.
+              The team at <span>California Web Coders,</span> does more than
+              just crafting beautiful websites; we ensure that your web
+              performance boosts your business! With collaborative efforts, we
+              smartly design every element, every line of code, so that your
+              business growth is never compromised.
             </p>
 
             <p
@@ -90,11 +88,30 @@ const Designsolutions = () => {
               data-aos-duration="2000"
               data-aos-offset="0"
             >
-              Our team of talented designers, developers, and strategists
-              collaborate closely with you to understand your unique vision and
-              objectives. We then translate those insights into a custom web
-              design solution that reflects your brand identity, resonates with
-              your target audience, and delivers measurable results.
+              And guess what? Our expertise doesn’t end at web design. We offer
+              digital marketing services, including SEO, Social Media Marketing,
+              CMS development, and more personalized growth strategies tailored
+              to your business.
+            </p>
+            <p
+              className="para2"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
+              Our primary goal is to combine a sleek, responsive website design
+              with a marketing strategy that converts every visitor into a loyal
+              customer.
+            </p>
+            <p
+              className="para2"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
+              From startups to established brands, we work closely with you to
+              build a digital presence that reflects your voice and drives real
+              results.
             </p>
             <p
               className="paratitle"
@@ -102,7 +119,7 @@ const Designsolutions = () => {
               data-aos-duration="2000"
               data-aos-offset="0"
             >
-              Ready to transform your online presence?
+              Your website should work as hard as you do.
             </p>
 
             <p
@@ -112,7 +129,8 @@ const Designsolutions = () => {
               data-aos-offset="0"
             >
               Contact us today for a free consultation and discover how our web
-              design expertise can help your business thrive.
+              design and digital marketing expertise can help your business grow
+              to another level of success.
             </p>
 
             <button
@@ -121,15 +139,19 @@ const Designsolutions = () => {
               data-aos-duration="3000"
               data-aos-offset="0"
             >
-              Get My Free Consulation
+              Book Your FREE Consultation
             </button>
           </div>
 
           <div className="col-lg-6">
             {webSolutionsData.map((item, index) => (
-              <div className="solution d-flex mb-2" key={index} data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-offset="0">
+              <div
+                className="solution d-flex mb-2"
+                key={index}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+              >
                 <span>{item.icon}</span>{" "}
                 <span className=" ">
                   <h4 className="solution-heading">{item.name}</h4>

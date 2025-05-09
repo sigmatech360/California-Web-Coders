@@ -17,7 +17,7 @@ const MainBanner = () => {
                     data-aos-duration="1000"
                     data-aos-offset="0"
                   >
-                    Your <span>trusted</span> web design agency.
+                    Your Growth Starts <span>With</span> A Great Web Design
                   </h2>
                   <p
                     className="para me-lg-5 me-0 pe-lg-5 pe-0"
@@ -25,8 +25,7 @@ const MainBanner = () => {
                     data-aos-duration="2000"
                     data-aos-offset="0"
                   >
-                    <span>California Web Coders</span> creates stunning, fast
-                    and effective websites for new and established businesses.
+                    <span>California Web Coders</span> excel at creating websites that build connections, fuel growth, and ensure long-term success.
                   </p>
                   <button
                     className="herobtn"

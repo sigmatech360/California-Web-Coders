@@ -105,7 +105,7 @@ const PrivacyPolicy = () => {
     <Layout>
       <HeroSection
         title="Privacy Policy"
-        para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+        para="We are committed to protecting your personal information. All data is securely stored and used solely to enhance service quality, communication, and project experience."
         heroimg={Pricingplanheroimg}
       />
 

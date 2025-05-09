@@ -8,10 +8,78 @@ import primium from "../../Assets/Premium.svg";
 
 import Accordion from "react-bootstrap/Accordion";
 
+const faqData = [
+  {
+    id: 1,
+    question: "1. What industries does California Web Coders specialize in?",
+    answer:
+      "We specialize in eCommerce, tech startups, real estate, and service-based businesses seeking high-performance digital solutions.",
+  },
+  {
+    id: 2,
+    question:
+      "2. Can you redesign my existing website without losing SEO rankings?",
+    answer:
+      "Yes, we use SEO-friendly web design techniques to ensure smooth transitions and preserve your existing rankings.",
+  },
+  {
+    id: 3,
+    question: "3. Do you offer custom features for mobile apps?",
+    answer:
+      "Absolutely. Our mobile app developers in California build fully customized features tailored to your business goals and user needs.",
+  },
+  {
+    id: 4,
+    question: "4. How long does a typical web project take?",
+    answer:
+      "Most websites are completed in 3–6 weeks, depending on scope and complexity. We prioritize quality with fast turnaround.",
+  },
+  {
+    id: 5,
+    question: "5. Do your logo designs include source files and revisions?",
+    answer:
+      "Yes, all logo packages include flexible files, full ownership rights, and multiple rounds of revisions.",
+  },
+  {
+    id: 6,
+    question:
+      "6. What makes your SEO services different from others in California?",
+    answer:
+      "We focus on long-term results through data-driven strategy, content optimization, and tailored keyword targeting, not just temporary ranking boosts.",
+  },
+  {
+    id: 7,
+    question: "7. Do you provide support after launch?",
+    answer:
+      "Yes, we offer post-launch support plans including updates, troubleshooting, and ongoing optimization for your site or app.",
+  },
+  {
+    id: 8,
+    question: "8. Is your CMS development beginner-friendly?",
+    answer:
+      "Yes, definitely, we build CMS interfaces that are intuitive and easy to manage, with no coding skills required.",
+  },
+  {
+    id: 9,
+    question: "9. Can you match the design with my existing branding?",
+    answer:
+      "Yes, we ensure consistency by aligning every design element with your current branding, tone, and visual identity.",
+  },
+  {
+    id: 10,
+    question:
+      "10. Do you offer scalable pricing for startups or small businesses?",
+    answer:
+      "Yes, we do. Our pricing plans are flexible and scalable to fit early-stage budgets while still delivering expert results.",
+  },
+];
+
 const FrequentQuestions = (props) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const [activeTab, setActiveTab] = useState("Basic");
+
+  const [faqState, setFaqState] = useState(props.faqData);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -21,63 +89,6 @@ const FrequentQuestions = (props) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const faqData = [
-    {
-      id: 1,
-      question: "How Much Does Data Analytics Cost?",
-      answer:
-        "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S.",
-    },
-    {
-      id: 2,
-      question: "What Kind Of Data Is Needed For Analysis?",
-      answer:
-        "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S.",
-    },
-    {
-      id: 3,
-      question: "Dedicated IT Solution?",
-      answer:
-        "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S.",
-    },
-    {
-      id: 4,
-      question: "IT Industry Expertise?",
-      answer:
-        "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S.",
-    },
-    {
-      id: 5,
-      question: "What Kind Of Data Is Needed For Analysis?",
-      answer:
-        "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S.",
-    },
-    {
-      id: 6,
-      question: "Will I Need A Credit Check?",
-      answer:
-        "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S.",
-    },
-    {
-      id: 7,
-      question: "Digital Performance And Skills?",
-      answer:
-        "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S.",
-    },
-    {
-      id: 8,
-      question: "What Kind Of Data Is Needed For Analysis?",
-      answer:
-        "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S.",
-    },
-    {
-      id: 9,
-      question: "IT Industry Expertise?",
-      answer:
-        "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S.",
-    },
-  ];
-
   return (
     <>
       <section className="faqs-sec">
@@ -86,9 +97,14 @@ const FrequentQuestions = (props) => {
             <div className="col-lg-6">
               <div className="sec-head">
                 <p className="sec-head-tag colorBlue">FAQS</p>
-                <h2 data-aos="fade-right"
+                <h2
+                  data-aos="fade-right"
                   data-aos-duration="1000"
-                  data-aos-offset="0">You Will Find Our Client's Frequent Questions</h2>
+                  data-aos-offset="0"
+                >
+                  {props.secTitle ||
+                    `Curious About Our Services? We Are Here To Answer!`}
+                </h2>
               </div>
             </div>
             <div className="col-lg-6">
@@ -103,8 +119,8 @@ const FrequentQuestions = (props) => {
           <div className="row">
             <div className="col-lg-6">
               <Accordion defaultActiveKey="0">
-                {faqData
-                  .slice(0, Math.ceil(faqData.length / 2))
+                {faqState
+                  .slice(0, Math.ceil(faqState.length / 2))
                   .map((item, index) => (
                     <Accordion.Item eventKey={index.toString()} key={item.id}>
                       <Accordion.Header>{item.question}</Accordion.Header>
@@ -116,11 +132,11 @@ const FrequentQuestions = (props) => {
 
             <div className="col-lg-6">
               <Accordion>
-                {faqData
-                  .slice(Math.ceil(faqData.length / 2))
+                {faqState
+                  .slice(Math.ceil(faqState.length / 2))
                   .map((item, index) => (
                     <Accordion.Item
-                      eventKey={(index + faqData.length / 2).toString()}
+                      eventKey={(index + faqState.length / 2).toString()}
                       key={item.id}
                     >
                       <Accordion.Header>{item.question}</Accordion.Header>

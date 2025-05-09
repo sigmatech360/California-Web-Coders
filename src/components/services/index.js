@@ -16,21 +16,21 @@ const creativeSectionData = [
     image: creativelogo,
     name: "Creative Solutions",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper.",
+      "We bring fresh, creative solutions that help your brand stand out and connect with your audience.",
   },
   {
     id: 2,
     image: digitaltogo,
     name: "Digital Marketing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper.",
+      "From strategy to results, our digital marketing helps you get noticed and stay top of mind.",
   },
   {
     id: 3,
     image: softwarelogo,
     name: "Software Integration",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper.",
+      "We streamline your systems with smart software integration that improves workflow and boosts efficiency instantly.",
   },
 ];
 
@@ -48,7 +48,8 @@ const Servies = () => {
                 data-aos-duration="1000"
                 data-aos-offset="0"
               >
-                We deliver the services you need, with the quality you deserve
+                Smart Digital Services and Premium Web Design. Always Delivered
+                on Time.
               </p>
               <p
                 className="para2 mb-0"
@@ -56,9 +57,8 @@ const Servies = () => {
                 data-aos-duration="2000"
                 data-aos-offset="0"
               >
-                Whether you're looking for a cutting-edge cloud solution, want
-                to harness AI's potential, or need to reinvent the user
-                experience, we're your all-in-one innovation partner.
+                We can revamp your existing website or build a new one from
+                scratch, and the one thing that stays uncompromised is Quality!
               </p>
             </div>
 
@@ -92,6 +92,9 @@ const Servies = () => {
             </div>
           </div>
         </div>
+
+
+
         <div className="row justify-content-center  compservices">
           <div className="col-lg-4 mb-4 ">
             <div
@@ -107,8 +110,7 @@ const Servies = () => {
                 <div className="graphicservices-content">
                   <h4 className="graphicgesigntitle">Graphic Design</h4>
                   <p className="graphicservicespara">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper.
+                    We deliver striking graphic design that enhances your brand’s identity and supports your digital presence.
                   </p>
                 </div>
               </div>
@@ -119,8 +121,7 @@ const Servies = () => {
                 <div className="graphicservices-content">
                   <h4 className="graphicgesigntitle">Online Marketing</h4>
                   <p className="graphicservicespara">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper.
+                  Our online marketing strategies drive engagement, increase visibility, and convert visitors into loyal customers.
                   </p>
                 </div>
               </div>
@@ -137,8 +138,7 @@ const Servies = () => {
                 <div className="mobile-services-content">
                   <h4>Mobile App Developments</h4>
                   <p className="graphicservicespara">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper.
+                  Our mobile app developers in California create intuitive, scalable apps that deliver seamless user experiences.
                   </p>
                 </div>
                 <div className="mobile-services-image">
@@ -162,8 +162,7 @@ const Servies = () => {
                 <div className="graphicservices-content">
                   <p className="graphicgesigntitle">Website Developments</p>
                   <p className="graphicservicespara">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper.
+                  As a custom web development company, we build responsive, high-performing websites tailored to your needs.
                   </p>
                 </div>
               </div>
@@ -172,10 +171,9 @@ const Servies = () => {
                   <img src={websitelogo} className="graphiclogo" />
                 </div>
                 <div className="graphicservices-content">
-                  <p className="graphicgesigntitle">Website Developments</p>
+                  <p className="graphicgesigntitle">CMS Developments</p>
                   <p className="graphicservicespara">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper.
+                  We offer CMS development services to help you manage content easily, boosting efficiency and user experience.
                   </p>
                 </div>
               </div>

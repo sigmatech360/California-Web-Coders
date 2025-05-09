@@ -19,16 +19,17 @@ const RefundPolicy = () => {
                 data-aos-duration="1000"
                 data-aos-offset="0"
               >
-                7-Day refund policy across all our paid plans.
+                7-Day refund policy for all paid plans and packages
               </h3>
               <p
                 data-aos="fade-up"
                 data-aos-duration="2000"
                 data-aos-offset="0"
               >
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since.
+                If you're not fully satisfied within the first 7 days of project
+                initiation, we’ll issue a full refund. No hard feelings, no
+                hassle. Your trust matters to us, and we believe in starting
+                every partnership with fairness, transparency, and confidence.
               </p>
             </div>
           </div>

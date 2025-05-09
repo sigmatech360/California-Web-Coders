@@ -17,12 +17,11 @@ import pixleperfectimg6 from "../../Assets/service-webDesign-pixle-perfect-img6.
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
 
-
-import wordpressbg from "../../Assets/services-digitalMarketing-banner-bg.png";
+import wordpressbg from "../../Assets/services-cmsDev-banner-bg.png";
+import serviceBannerImg from "../../Assets/services-digitalMarketing-banner-img.png";
 import performence from "../../Assets/service-digitalMarketing-about-img.png";
 import wordpresssectionimg from "../../Assets/services-digitalMarketing-about2-img.png";
 import creativethoughsec from "../../Assets/services-digitalMarketing-creativeThrough-img.png";
-
 
 const featuredProjectData = [
   {
@@ -60,7 +59,7 @@ const featuredProjectData = [
     image: pixleperfectimg6,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  }
+  },
 ];
 
 const DigitalMarketing = () => {
@@ -68,70 +67,64 @@ const DigitalMarketing = () => {
     <Layout>
       <ServiceBanner
         bgImage={wordpressbg}
-        title="WordPress Web Design Services"
-        description="Launch a professional, revenue-driving WordPress website with our WordPress Web Design Services."
+        title="Digital Marketing For Brand Perfection"
+        description="California Web Coders is more than just a digital marketing company in California; we strive to be your partners in growth. Our custom digital marketing strategies help you connect with your ideal audience, build trust, and boost conversions across every platform that matters."
         bannerList={[
-          "Modern web design techniques",
-          "Optimised for SEO",
-          "Lightning fast load times",
-          "Designed to convert",
+          "Award-winning digital marketing agency in California.",
+          "Experts in ensuring user experience.",
+          "Online marketing that gets real results.",
+          "Trusted by California businesses.",
         ]}
+        image={serviceBannerImg}
       />
 
       <WordPressPerformanceSection
-        secTitle1="Beautiful"
-        secTitle2="WordPress"
-        secTitle3="websites built to perform."
-        description="With more than 10 years in the web design industry, building
-              hundreds of WordPress websites across numerous industries, Octave
-              Agency have a tried and tested process to achieve maximum results
-              which is why our clients love our WordPress web design services."
-        description2="We understand that your website is your most effective marketing
-              tool and that it is quite often your customer’s first point of
-              contact with you. With this in mind, all our websites are built
-              with strategic techniques for maximum lead conversion."
+        secTitle1="Strategic."
+        secTitle2="Creative."
+        secTitle3="Conversion-Focused."
+        description="We take the time to understand your goals, then build a digital marketing strategy that aligns with your business, budget, and audience. From targeted SEO and paid ads to email campaigns and social media, we help you get found, followed, and chosen."
+        // description2=""
         image={performence}
+        btnText="Boost Your Business"
       />
 
-      <Growyourbusiness />
+      <Growyourbusiness
+        title1="Let’s Get Your Brand"
+        title2="Growing!"
+        btnText="Book A Free Discovery Call"
+      />
 
       <PixelPerfectSec
-        secTitle="From Pixels to"
-        secTitleBlue="Perfection."
-        secDescription="Each design is uniquely crafted to suit the specific needs of every business. We strive to showcase and enhance the individuality of your brand. Explore some of our recent projects below."
+        secTitle="From Clicks to Conversions - See What We’ve Done"
+        // secTitleBlue=""
+        secDescription="Check out how we’ve helped brands grow through intentional marketing. From startups to established businesses, every campaign showcases how smoothly brand growth strategies, combined with creativity, are implemented at California Web Coders."
         projectsData={featuredProjectData}
+        btnText="Browse Case Studies"
       />
 
       <PricingPlans
+        secTitle="Flexible Packages, Big Results"
+        secDescription="No hidden fees. No generic packages. Just transparent pricing tailored to your business stage and marketing goals."
         image={wordpresssectionimg}
-        whyWordressTitle="Why WordPress"
-        whyWordressDescription1="One of the strengths of WordPress is that it is fully
-                customisable. This means we can build bespoke websites tailored
-                specifically to our client’s goals"
-        whyWordressDescription2="Our WordPress developers ensure that your design and website
-                functionality works across all devices, allowing you to stand
-                out from the competition."
-        whyWordressDescription3="Another added benefit of using such a popular platform is that
-                there are thousands of great WordPress plugins available. These
-                plugins add complex functionality to your site and can be great
-                tools for displaying information, engaging users, and building a
-                WordPress eCommerce online store."
+        whyWordressTitle="Digital Marketing At California Web Coders"
+        whyWordressDescription1="Your expectations, our results. Our team crafts custom campaigns that are thoughtful, well-researched, and focused on results. As a top-rated digital marketing company in California, we treat your business like it’s our own."
+        whyWordressDescription2="Whether you're focused on traffic, engagement, or leads, our digital marketing strategy always puts performance first. You’ll never be left in the dark, we keep things transparent, collaborative, and full of fresh ideas."
+        whyWordressDescription3="Let’s turn browsers into buyers and clicks into customers together!"
+        btnText="Start Now"
       />
 
-      <ContactForm />
+      <ContactForm
+        secTitle="Let’s Discuss Your Strategy!"
+        secDescription="Book a free consultation with our digital marketing experts and discover how easy it can be to grow your business in the digital world."
+      />
 
       <Creativitythrough
-        title1="Creativity through"
-        title2="web and graphics."
-        description1="we put a lot of work into being on trend with design as well as
-                ensuring the websites we produce are performance led for SEO
-                purposes. This means that whilst focusing on making you look
-                good, we can make sure you stand the best chance of getting in
-                front of your audience and ultimately convert leads into paying
-                customers."
-        description2="View our latest work to see how we’ve helped businesses
-                transform their digital presence."
+        title1="Made-To-Perform"
+        title2="Marketing"
+        description1="We believe in crafting personalized campaigns tailored to each business's specific goals and audience. Our online marketing team at California Web Coders builds strategies that reflect your brand’s voice, market trends, and customers’ needs."
+        description2="From in-depth research to real-time optimization, we polish every campaign to ensure your marketing spend works harder and smarter. No guesswork, just growth."
         image={creativethoughsec}
+        btnText="Get Your Strategy Now!"
       />
     </Layout>
   );

@@ -176,24 +176,82 @@ const pricingPlanData = [
 const progressBarData = [
   {
     id: 1,
-    title: "Design Graphics & 3D Design",
+    title: "UI/UX Design",
     percent: 87,
   },
   {
     id: 2,
-    title: "Marketing",
+    title: "Online Marketing",
     percent: 72,
   },
   {
     id: 3,
-    title: "Animations",
+    title: "Web and App Development",
     percent: 81,
   },
   {
     id: 4,
-    title: "Programing",
+    title: "Backend Support",
     percent: 92,
   },
+];
+
+const faqData = [
+  {
+    id: 1,
+    question: "1. What’s included in your pricing plans?",
+    answer:
+      "Each plan covers design, development, revisions, and dedicated support based on the scope you choose.",
+  },
+  {
+    id: 2,
+    question:
+      "2. Do I have to pay everything upfront?",
+    answer:
+      "Not at all! We offer flexible milestone-based payments depending on the size of your project.",
+  },
+  {
+    id: 3,
+    question: "3. How do I know which package is right for me?",
+    answer: "Book a free consultation and we’ll recommend a plan that suits your business goals and budget."
+  },
+  {
+    id: 4,
+    question: "4. Are there any hidden or extra charges?",
+    answer: "Nope. We believe in 100% transparent pricing with no surprise fees along the way."
+  },
+  {
+    id: 5,
+    question: "5. Can I customize a pricing package?",
+    answer: "Absolutely! We’re happy to tailor any plan to fit your specific requirements."
+  },
+  {
+    id: 6,
+    question:
+      "6. What if I need changes after project completion?",
+    answer: "We offer affordable maintenance and update plans after launch. Just let us know what you need."
+  },
+  {
+    id: 7,
+    question: "7. How long will my project take?",
+    answer: "Timelines vary by project, but we’ll give you a clear estimate before starting."
+  },
+  {
+    id: 8,
+    question: "8. Do you offer a refund if I cancel?",
+    answer: "Yes! We have a 7-day refund policy if you're unsatisfied with the initial progress."
+  },
+  {
+    id: 9,
+    question: "9. Can I upgrade my plan later?",
+    answer: "Of course! You can scale up at any time as your business grows or your needs evolve."
+  },
+  // {
+  //   id: 10,
+  //   question:
+  //     "",
+  //   answer: ""
+  // },
 ];
 
 const PricingPlan = () => {
@@ -201,18 +259,13 @@ const PricingPlan = () => {
     <Layout>
       <HeroSection
         title="Pricing plan"
-        para="Our mission is to make your business better through technology"
+        para="At California Web Coders, we offer flexible financing options to keep your convenience at the top!"
         heroimg={Pricingplanheroimg}
       />
 
       <Mobileworld
-        title="Delivering business solutions for the web and mobile world."
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting,"
+        title="Transparent Pricing Plans Backed by Real Value"
+        description="Every dollar should count. Our transparent and comprehensive pricing plans are designed to help you quickly see the value, with expert service, clear deliverables, and zero confusion. Let’s achieve results without wasting time or money."
       >
         <div className="col-lg-12">
           <Tabs
@@ -278,13 +331,13 @@ const PricingPlan = () => {
                   data-aos-offset="0"
                 >
                   <div class="express-content-head">
-                    <h2>Express everything and feel everything.</h2>
+                    <h2>It’s Not The Money, It’s The Experience.</h2>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type.
+                      Every penny spent at California Web Coders is an
+                      investment set up for high returns. We value your time and
+                      money, and ensure that every dollar you invest brings the
+                      best results for your future. Together, we can achieve
+                      high profits and greater success.
                     </p>
                   </div>
                   <div className="progress-bar-list">
@@ -318,13 +371,12 @@ const PricingPlan = () => {
                             >
                               <img src={smart} className="img-fluid" />
                             </div>
-                            <h5 className="card-title  ">
-                              Smart & Secure System
-                            </h5>
+                            <h5 className="card-title  ">Creative Solutions</h5>
                             <p className="card-text">
-                              Lorem Ipsum is simply dummy text of the printing
-                              and typesetting industry. Lorem Ipsum has been the
-                              industry.
+                              We blend creativity with clean code to build
+                              digital experiences that are beautiful,
+                              brand-aligned, and function perfectly across all
+                              devices.
                             </p>
                           </div>
                         </div>
@@ -336,11 +388,13 @@ const PricingPlan = () => {
                             >
                               <img src={Professiona} className="img-fluid" />
                             </div>
-                            <h5 className="card-title  ">Professional Team</h5>
+                            <h5 className="card-title  ">
+                              User-friendly Experience
+                            </h5>
                             <p className="card-text">
-                              Lorem Ipsum is simply dummy text of the printing
-                              and typesetting industry. Lorem Ipsum has been the
-                              industry.
+                              Our websites are built for easy updates, simple
+                              navigation, and intuitive use, so you stay in
+                              control without the tech stress.
                             </p>
                           </div>
                         </div>
@@ -356,11 +410,11 @@ const PricingPlan = () => {
                             >
                               <img src={Certified} className="img-fluid" />
                             </div>
-                            <h5 className="card-title  ">Certified Expert</h5>
+                            <h5 className="card-title  ">Performance Driven</h5>
                             <p className="card-text">
-                              Lorem Ipsum is simply dummy text of the printing
-                              and typesetting industry. Lorem Ipsum has been the
-                              industry.
+                              From fast load times to SEO-ready frameworks,
+                              every site we create is optimized to perform and
+                              scale with your growth.
                             </p>
                           </div>
                         </div>
@@ -373,12 +427,13 @@ const PricingPlan = () => {
                               <img src={Premium} className="img-fluid" />
                             </div>
                             <h5 className="card-title  ">
-                              24/7 Premium Support
+                              24/7 Customer Service
                             </h5>
                             <p className="card-text">
-                              Lorem Ipsum is simply dummy text of the printing
-                              and typesetting industry. Lorem Ipsum has been the
-                              industry.
+                              Our clients are our top priority; we offer 24/7
+                              customer support to maintain constant
+                              communication and ensure transparency in all our
+                              projects.
                             </p>
                           </div>
                         </div>
@@ -392,7 +447,8 @@ const PricingPlan = () => {
         </section>
         <FrequentQuestions
           FrequentQuestions="faqsbg"
-          title="Express everything and feel everything"
+          secTitle="Got Questions? We Are Happy To Answer!"
+          faqData={faqData}
         />
       </section>
 

@@ -26,20 +26,22 @@ const WordPressPerformanceSection = (props) => {
             >
               {props.description}
             </p>
-            <p
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              data-aos-offset="0"
-            >
-              {props.description2 && props.description2}
-            </p>
+            {props.description2 && (
+              <p
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
+                {props.description2}
+              </p>
+            )}
             <button
               className="btn-theme"
               data-aos="fade-right"
               data-aos-duration="3000"
               data-aos-offset="0"
             >
-              Get In Touch
+              {props.btnText || `Get In Touch`}
             </button>
           </div>
 

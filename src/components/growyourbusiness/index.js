@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-const Growyourbusiness = () => {
+const Growyourbusiness = (props) => {
   return (
     <>
       <section className="gorwyourbusiness">
@@ -9,12 +9,12 @@ const Growyourbusiness = () => {
             <div className="col-lg-12">
               <div className="grow-business-content d-flex justify-content-md-between justify-content-center align-items-center flex-lg-row flex-column gap-3">
                 <h2
-                  className="title m-0 text-center"
+                  className="title m-0"
                   data-aos="fade-right"
                   data-aos-duration="1000"
                   data-aos-offset="0"
                 >
-                  Want to grow your business <span>digitally?</span>
+                  {props.title1} {props.title2 && <span>{props.title2}</span>} {props.title3} 
                 </h2>
                 <button
                   className="clickhere"
@@ -22,7 +22,7 @@ const Growyourbusiness = () => {
                   data-aos-duration="1000"
                   data-aos-offset="0"
                 >
-                  Click Here To Get Started
+                  {props.btnText || `Click Here To Get Started`}
                 </button>
               </div>
             </div>

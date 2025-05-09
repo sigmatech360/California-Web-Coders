@@ -17,11 +17,11 @@ import pixleperfectimg6 from "../../Assets/service-logoDesign-pixle-perfect-img6
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
 
-import wordpressbg from "../../Assets/services-logoDesign-banner-bg.png";
+import wordpressbg from "../../Assets/services-cmsDev-banner-bg.png";
+import serviceBannerImg from "../../Assets/services-logoDesign-banner-img.png";
 import performence from "../../Assets/service-logoDesign-about-img.png";
 import wordpresssectionimg from "../../Assets/services-logoDesign-about2-img.png";
 import creativethoughsec from "../../Assets/services-logoDesign-creativeThrough-img.png";
-
 
 const featuredProjectData = [
   {
@@ -59,7 +59,7 @@ const featuredProjectData = [
     image: pixleperfectimg6,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  }
+  },
 ];
 
 const LogoDesign = () => {
@@ -67,70 +67,63 @@ const LogoDesign = () => {
     <Layout>
       <ServiceBanner
         bgImage={wordpressbg}
-        title="WordPress Web Design Services"
-        description="Launch a professional, revenue-driving WordPress website with our WordPress Web Design Services."
+        title="Build Your Brand Identity With Custom Logo Design"
+        description="At California Web Coders, we design logos that make a lasting impression. As a leading logo design company California brands rely on, we deliver professional logo design that captures your brand’s identity with purpose and style."
         bannerList={[
-          "Modern web design techniques",
-          "Optimised for SEO",
-          "Lightning fast load times",
-          "Designed to convert",
+          "No templates, just custom creativity.",
+          "Perfect for print, web, and mobile.",
+          "Fast delivery with unlimited revisions.",
         ]}
+        image={serviceBannerImg}
       />
 
       <WordPressPerformanceSection
-        secTitle1="Beautiful"
-        secTitle2="WordPress"
-        secTitle3="websites built to perform."
-        description="With more than 10 years in the web design industry, building
-              hundreds of WordPress websites across numerous industries, Octave
-              Agency have a tried and tested process to achieve maximum results
-              which is why our clients love our WordPress web design services."
-        description2="We understand that your website is your most effective marketing
-              tool and that it is quite often your customer’s first point of
-              contact with you. With this in mind, all our websites are built
-              with strategic techniques for maximum lead conversion."
+        secTitle1="Your Logo,"
+        secTitle2="Your Brand’s"
+        secTitle3="Voice"
+        description="A great logo isn’t just one that looks good; it should also convey your brand voice to the audience. It tells your audience who you are before you say a word. Our logo design services are focused on making that message unforgettable."
+        description2="We work closely with you to understand your brand, industry, and goals. Whether you're a startup looking for your first business logo design or a growing brand in need of a refresh, we create logos that look sharp and feel uniquely yours."
         image={performence}
+        btnText="Get Your Logo"
       />
 
-      <Growyourbusiness />
+      <Growyourbusiness
+        title1="Want A Logo That Sets You"
+        title2="Apart?"
+        btnText="Sign Up With Our Logo Design Masters"
+      />
 
       <PixelPerfectSec
-        secTitle="From Pixels to"
-        secTitleBlue="Perfection."
-        secDescription="Each design is uniquely crafted to suit the specific needs of every business. We strive to showcase and enhance the individuality of your brand. Explore some of our recent projects below."
+        secTitle="Check Out The Best Of Our"
+        secTitleBlue="Logos"
+        secDescription="From minimalist icons to bold typography, every design in our collection tells a unique story. Explore how our clients use their logos across packaging, websites, and social platforms, and why they trust us again and again."
         projectsData={featuredProjectData}
+        btnText="Witness Our Wins"
       />
 
       <PricingPlans
+        secTitle="Smart Branding Starts Here"
+        secDescription="We’ve made professional logo design affordable for all, from new businesses to evolving brands. Our pricing reflects real creativity, not shortcuts."
         image={wordpresssectionimg}
-        whyWordressTitle="Why WordPress"
-        whyWordressDescription1="One of the strengths of WordPress is that it is fully
-                customisable. This means we can build bespoke websites tailored
-                specifically to our client’s goals"
-        whyWordressDescription2="Our WordPress developers ensure that your design and website
-                functionality works across all devices, allowing you to stand
-                out from the competition."
-        whyWordressDescription3="Another added benefit of using such a popular platform is that
-                there are thousands of great WordPress plugins available. These
-                plugins add complex functionality to your site and can be great
-                tools for displaying information, engaging users, and building a
-                WordPress eCommerce online store."
+        whyWordressTitle="Choose California Web Coders For Your Logo!"
+        whyWordressDescription1="We’re more than just another design business. As a full-service logo design company California entrepreneurs trust, we take your ideas and turn them into iconic brand marks."
+        whyWordressDescription2="Our logo design for website, packaging, merchandise, and social platforms ensures brand consistency at every touchpoint. From concept to final files, we keep you in the loop, ensuring your logo represents your identity and stands the test of time."
+        whyWordressDescription3="No clip art. No templates. Just authentic, high-impact design from people who get your vision."
+        btnText="Connect With Us"
       />
 
-      <ContactForm />
+      <ContactForm
+        secTitle="Ready To Design Your Brand’s Signature?"
+        secDescription="Say goodbye to generic designs and hello to a custom brand logo that instantly connects with your audience."
+      />
 
       <Creativitythrough
-        title1="Creativity through"
-        title2="web and graphics."
-        description1="we put a lot of work into being on trend with design as well as
-                ensuring the websites we produce are performance led for SEO
-                purposes. This means that whilst focusing on making you look
-                good, we can make sure you stand the best chance of getting in
-                front of your audience and ultimately convert leads into paying
-                customers."
-        description2="View our latest work to see how we’ve helped businesses
-                transform their digital presence."
+        title1="Your Logo Is A"
+        title2="Legacy!"
+        description1="We believe your logo should be simple, strong, and unforgettable. Whether used on a website, storefront, or business card, it should turn heads and build trust. That’s why our logo designers focus on clarity, originality, and alignment with your brand’s core values."
+        description2="Let's build a visual identity you’ll be proud to show off, because your business deserves a logo that works as hard as you do."
         image={creativethoughsec}
+        btnText="Create Your Custom Logo!"
       />
     </Layout>
   );

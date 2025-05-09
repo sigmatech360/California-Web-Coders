@@ -5,6 +5,7 @@
   background-position: center;
   color: white;
   padding: 60px 0;
+  overflow: hidden;
 }
 
 .wordpress-web-design .checkicon {

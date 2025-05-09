@@ -26,7 +26,9 @@ const About = () => {
                 data-aos-duration="2000"
                 data-aos-offset="0"
               >
-                Our mission is to make your business better through technology
+                Providing innovative and high-performing web design and
+                marketing services that give businesses a strong digital
+                presence.
               </p>
             </div>
 

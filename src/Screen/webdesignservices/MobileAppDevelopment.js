@@ -17,11 +17,11 @@ import pixleperfectimg6 from "../../Assets/service-mobileAppDev-pixle-perfect-im
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
 
-import wordpressbg from "../../Assets/services-mobileAppDev-banner-bg.png";
+import wordpressbg from "../../Assets/services-cmsDev-banner-bg.png";
+import serviceBannerImg from "../../Assets/services-mobileApp-banner-img.png";
 import performence from "../../Assets/service-mobileAppDev-about-img.png";
 import wordpresssectionimg from "../../Assets/services-mobileAppDev-about2-img.png";
 import creativethoughsec from "../../Assets/services-mobileAppDev-creativeThrough-img.png";
-
 
 const featuredProjectData = [
   {
@@ -59,7 +59,7 @@ const featuredProjectData = [
     image: pixleperfectimg6,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  }
+  },
 ];
 
 const MobileAppDevelopment = () => {
@@ -67,70 +67,63 @@ const MobileAppDevelopment = () => {
     <Layout>
       <ServiceBanner
         bgImage={wordpressbg}
-        title="WordPress Web Design Services"
-        description="Launch a professional, revenue-driving WordPress website with our WordPress Web Design Services."
+        title="Innovative Mobile App Development For Business Growth"
+        description="The world has shifted to mobile devices, and if you are still dependent on desktop screens, you might be setting yourself up for failure! California Web Coders offer exceptional mobile app development services that businesses count on. We build apps that are intuitive, scalable, and ready to grow with your audience."
         bannerList={[
-          "Modern web design techniques",
-          "Optimised for SEO",
-          "Lightning fast load times",
-          "Designed to convert",
+          "Custom iOS and Android solutions.",
+          "Expert mobile app developers on board.",
+          "Streamlined UX for better engagement.",
         ]}
+        image={serviceBannerImg}
       />
 
       <WordPressPerformanceSection
-        secTitle1="Beautiful"
-        secTitle2="WordPress"
-        secTitle3="websites built to perform."
-        description="With more than 10 years in the web design industry, building
-              hundreds of WordPress websites across numerous industries, Octave
-              Agency have a tried and tested process to achieve maximum results
-              which is why our clients love our WordPress web design services."
-        description2="We understand that your website is your most effective marketing
-              tool and that it is quite often your customer’s first point of
-              contact with you. With this in mind, all our websites are built
-              with strategic techniques for maximum lead conversion."
+        secTitle1="We Make"
+        secTitle2="App Experience"
+        secTitle3="Worth Remembering"
+        description="Bringing your mobile app to life doesn’t have to be complicated. Whether it’s your first build or a major upgrade, we simplify the entire process. Our mobile app development services cover everything from planning to launch."
+        description2="From slick ios mobile app development to strong Android app development, we’ve got your tech covered."
         image={performence}
+        btnText="Get Your Mobile App"
       />
 
-      <Growyourbusiness />
+      <Growyourbusiness
+        title1="Planning Your Next Big Idea? Let’s Execute It With A"
+        title2="Mobile App!"
+        btnText="Start Now"
+      />
 
       <PixelPerfectSec
-        secTitle="From Pixels to"
-        secTitleBlue="Perfection."
-        secDescription="Each design is uniquely crafted to suit the specific needs of every business. We strive to showcase and enhance the individuality of your brand. Explore some of our recent projects below."
+        secTitle="Explore Our"
+        secTitleBlue="Mobile Applications"
+        secDescription="Want an e-commerce app, a business solution, or just an app to connect better with your audience? We have you covered! Our mobile app development services California cover every idea you dream of!"
         projectsData={featuredProjectData}
+        btnText="A glimpse of our expertise!"
       />
 
       <PricingPlans
+        secTitle="Flexible Plans For Growing Ideas"
+        secDescription="We offer straightforward pricing for apps of all sizes. Scalable, customizable, and built to match your vision."
         image={wordpresssectionimg}
-        whyWordressTitle="Why WordPress"
-        whyWordressDescription1="One of the strengths of WordPress is that it is fully
-                customisable. This means we can build bespoke websites tailored
-                specifically to our client’s goals"
-        whyWordressDescription2="Our WordPress developers ensure that your design and website
-                functionality works across all devices, allowing you to stand
-                out from the competition."
-        whyWordressDescription3="Another added benefit of using such a popular platform is that
-                there are thousands of great WordPress plugins available. These
-                plugins add complex functionality to your site and can be great
-                tools for displaying information, engaging users, and building a
-                WordPress eCommerce online store."
+        whyWordressTitle="Why Code Your App With Us?"
+        whyWordressDescription1="We’re more than just coders, we’re your app partner. Whether you're launching a fresh concept or optimizing an existing app, we make the journey smooth, transparent, and efficient."
+        whyWordressDescription2="With a team of skilled mobile app developers, we focus on delivering apps that work beautifully and deliver measurable impact. From strategy to store submission, we handle the heavy lifting so you can focus on growth."
+        whyWordressDescription3="Get a custom-built solution with proven tech and real support."
+        btnText="Witness Digital Success"
       />
 
-      <ContactForm />
+      <ContactForm
+        secTitle="Chat With Our Professional Mobile App Developers!"
+        secDescription="Schedule a free consultation with our team of mobile app developers California! Let’s lay out the plan for your next success story. "
+      />
 
       <Creativitythrough
-        title1="Creativity through"
-        title2="web and graphics."
-        description1="we put a lot of work into being on trend with design as well as
-                ensuring the websites we produce are performance led for SEO
-                purposes. This means that whilst focusing on making you look
-                good, we can make sure you stand the best chance of getting in
-                front of your audience and ultimately convert leads into paying
-                customers."
-        description2="View our latest work to see how we’ve helped businesses
-                transform their digital presence."
+        title1="Apps That Your"
+        title2="Users Enjoy!"
+        description1="Great apps aren’t just built, they’re engineered with purpose. At California Web Coders, we combine design, development, and user psychology to create seamless mobile experiences. Whether you need speed, security, or sleek design, we’re here to turn your ideas into high-performance apps."
+        description2="Let’s make something users can’t stop tapping."
         image={creativethoughsec}
+        btnText="Sign Up For Your App"
       />
     </Layout>
   );

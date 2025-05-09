@@ -96,11 +96,11 @@ const PricingPlans = (props) => {
               Pricing Plans
             </p>
             <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
-              That Fit All Budget Types
+              {props.secTitle || `That Fit All Budget Types`}
             </h2>
             <p data-aos="fade-up" data-aos-duration="3000" data-aos-offset="0">
-              No more budget issues, get your hands on the most Affordable
-              Website Design Services online.
+              {props.secDescription ||
+                `No more budget issues, get your hands on the most Affordable Website Design Services online.`}
             </p>
           </div>
 
@@ -149,7 +149,7 @@ const PricingPlans = (props) => {
                 data-aos-offset="0"
               >
                 {/* Why WordPress */}
-                {props.whyWordressTitle} <span className="colorBlue">?</span>
+                {props.whyWordressTitle} {props.question && <span className="colorBlue">?</span>} 
               </h1>
               <p
                 data-aos="fade-left"
@@ -157,9 +157,6 @@ const PricingPlans = (props) => {
                 data-aos-offset="0"
               >
                 {props.whyWordressDescription1}
-                {/* One of the strengths of WordPress is that it is fully
-                customisable. This means we can build bespoke websites tailored
-                specifically to our client’s goals */}
               </p>
               {props.whyWordressDescription2 && (
                 <p
@@ -168,9 +165,6 @@ const PricingPlans = (props) => {
                   data-aos-offset="0"
                 >
                   {props.whyWordressDescription2}
-                  {/* Our WordPress developers ensure that your design and website
-                functionality works across all devices, allowing you to stand
-                out from the competition. */}
                 </p>
               )}
               {props.whyWordressDescription3 && (
@@ -180,11 +174,6 @@ const PricingPlans = (props) => {
                   data-aos-offset="0"
                 >
                   {props.whyWordressDescription3}
-                  {/* Another added benefit of using such a popular platform is that
-                there are thousands of great WordPress plugins available. These
-                plugins add complex functionality to your site and can be great
-                tools for displaying information, engaging users, and building a
-                WordPress eCommerce online store. */}
                 </p>
               )}
               <button
@@ -193,7 +182,7 @@ const PricingPlans = (props) => {
                 data-aos-duration="3000"
                 data-aos-offset="0"
               >
-                See More Benefits
+                {props.btnText || `See More Benefits`}
               </button>
             </div>
           </div>

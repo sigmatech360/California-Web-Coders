@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
-
-const ContactForm = () => {
+const ContactForm = (props) => {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -53,10 +52,13 @@ const ContactForm = () => {
       <div className="container">
         <div className="innercontainer">
           <div className="text-center mb-4">
-            <h2 className="title">Ready to chat about your project?</h2>
+            <h2 className="title">
+              {props.secTitle || `Ready to chat about your project?`}
+            </h2>
             <p className="lead">
-              Get in touch today to see how we can help your business achieve
-              its full potential online.
+              {props.secDescription ||
+                `Get in touch today to see how we can help your business achieve
+              its full potential online.`}
             </p>
           </div>
           <form onSubmit={handleSubmit}>

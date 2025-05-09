@@ -28,6 +28,16 @@ const ServiceBanner = (props) => {
             >
               {props.description}
             </p>
+            {props.description2 && (
+              <p
+                className=""
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
+                {props.description2}
+              </p>
+            )}
             <ul
               className="list-unstyled wordpress-web-design-list"
               data-aos="fade-right"
@@ -49,7 +59,7 @@ const ServiceBanner = (props) => {
               data-aos-duration="3000"
               data-aos-offset="0"
             >
-              Contact Us
+              {props.btnText || `Contact Us`}
             </button>
           </div>
           {props.image && (

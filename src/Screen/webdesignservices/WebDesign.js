@@ -23,7 +23,6 @@ import performence from "../../Assets/service-webDesign-about-img.png";
 import wordpresssectionimg from "../../Assets/services-webDesign-about2-img.png";
 import creativethoughsec from "../../Assets/services-webDesign-creativeThrough-img.png";
 
-
 const featuredProjectData = [
   {
     id: 1,
@@ -60,7 +59,7 @@ const featuredProjectData = [
     image: pixleperfectimg6,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  }
+  },
 ];
 
 const WebDesign = () => {
@@ -68,69 +67,59 @@ const WebDesign = () => {
     <Layout>
       <ServiceBanner
         bgImage={wordpressbg}
-        title="WordPress Web Design Services"
-        description="Launch a professional, revenue-driving WordPress website with our WordPress Web Design Services."
+        title="Creative Website Designs That Work Right"
+        description="California Web Coders is the top web design agency in California, creating fast, visually stunning, and high-performing websites that help businesses grow, engage their audience, and stand out online."
         bannerList={[
-          "Modern web design techniques",
-          "Optimised for SEO",
-          "Lightning fast load times",
-          "Designed to convert",
+          "10+ years of design excellence.",
+          "Hundreds of successful website launches.",
+          "Experts in responsive web design.",
+          "Proven results across multiple industries.",
         ]}
       />
 
       <WordPressPerformanceSection
-        secTitle1="Beautiful"
-        secTitle2="WordPress"
-        secTitle3="websites built to perform."
-        description="With more than 10 years in the web design industry, building
-              hundreds of WordPress websites across numerous industries, Octave
-              Agency have a tried and tested process to achieve maximum results
-              which is why our clients love our WordPress web design services."
-        description2="We understand that your website is your most effective marketing
-              tool and that it is quite often your customer’s first point of
-              contact with you. With this in mind, all our websites are built
-              with strategic techniques for maximum lead conversion."
+        secTitle1="Web Designs That Build"
+        secTitle2="Trust"
+        secTitle3="With Results"
+        description="Our reputation as a results-driven website design company is built on experience, creativity, and innovation. We craft responsive web designs that not only look flawless across all devices but also boost engagement, improve user experience, and drive meaningful conversions."
+        // description2=""
         image={performence}
       />
 
-      <Growyourbusiness />
+      <Growyourbusiness
+        title1="Want To Create an Exceptional"
+        title2="Digital Identity?"
+        btnText="Connect With Us Now"
+      />
 
       <PixelPerfectSec
-        secTitle="From Pixels to"
-        secTitleBlue="Perfection."
-        secDescription="Each design is uniquely crafted to suit the specific needs of every business. We strive to showcase and enhance the individuality of your brand. Explore some of our recent projects below."
+        secTitle="Get Inspired By Our Beautiful"
+        secTitleBlue="Website Designs"
+        secDescription="Explore our hand-picked portfolio featuring sleek and high-performing websites built for our esteemed clients. Each project highlights our commitment to design excellence, responsive layouts, and results that drive growth."
         projectsData={featuredProjectData}
       />
 
       <PricingPlans
+        secTitle="Smart Pricing for Growing Brands"
+        secDescription="From startups to scaling businesses, our pricing transparently aligns with your digital goals and project demands."
         image={wordpresssectionimg}
-        whyWordressTitle="Why WordPress"
-        whyWordressDescription1="One of the strengths of WordPress is that it is fully
-                customisable. This means we can build bespoke websites tailored
-                specifically to our client’s goals"
-        whyWordressDescription2="Our WordPress developers ensure that your design and website
-                functionality works across all devices, allowing you to stand
-                out from the competition."
-        whyWordressDescription3="Another added benefit of using such a popular platform is that
-                there are thousands of great WordPress plugins available. These
-                plugins add complex functionality to your site and can be great
-                tools for displaying information, engaging users, and building a
-                WordPress eCommerce online store."
+        whyWordressTitle="Our Winning Formula"
+        whyWordressDescription1="Your brand deserves more than a basic template. That’s why at California Web Coders, we specialize in custom WordPress design, crafted to fit your vision and business goals. Our website design services in California are rooted in strategy, creativity, and performance."
+        whyWordressDescription2="We bring your brand to life with visually striking, mobile-friendly, and conversion-optimized websites. Whether you're launching a startup, scaling your business, or refreshing your online presence, we design with purpose and build with precision to deliver results that go beyond the screen."
+        // whyWordressDescription3=""
       />
 
-      <ContactForm />
+      <ContactForm
+        secTitle="Ready To Discuss Your Project?"
+        secDescription="Book a free consultation with our professionals in California Web Coders now to see how we can help your business maximize its growth"
+      />
 
       <Creativitythrough
         title1="Creativity through"
         title2="web and graphics."
-        description1="we put a lot of work into being on trend with design as well as
-                ensuring the websites we produce are performance led for SEO
-                purposes. This means that whilst focusing on making you look
-                good, we can make sure you stand the best chance of getting in
-                front of your audience and ultimately convert leads into paying
-                customers."
-        description2="View our latest work to see how we’ve helped businesses
-                transform their digital presence."
+        description1="Your brand is one of a kind, and your website should be too. At California Web Coders, we focus on custom website design that captures your personality, purpose, and promise. Whether you’re launching something new or seeking a modern website redesign, our team brings fresh ideas and a personal touch to every project."
+        description2={`We listen first, design second. That’s how we turn your ideas into smart, stylish solutions. Our website design and development services are built around creativity, communication, and collaboration, ensuring your website isn’t just beautiful, but also meaningful and effective. Let’s create something that feels like you and works like a dream.`}
+        btnText="Visit Our Portfolio"
         image={creativethoughsec}
       />
     </Layout>

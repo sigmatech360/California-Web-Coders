@@ -39,7 +39,9 @@ const PixelPerfectSec = (props) => {
           ))}
           <div className="col-md-12">
             <div class="justify-content-center d-flex flex-wrap gap-4">
-              <button className="viewbtn">Request A Quote</button>
+              <button className="viewbtn">
+                {props.btnText || "Request A Quote"}
+              </button>
               <div className="d-flex align-items-center gap-2">
                 <FaPhoneSquareAlt className="callicon " />
                 <p className="para4 mb-0  align-items-center">

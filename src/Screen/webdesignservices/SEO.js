@@ -17,11 +17,11 @@ import pixleperfectimg6 from "../../Assets/service-webDesign-pixle-perfect-img6.
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
 
-import wordpressbg from "../../Assets/services-seo-banner-bg.png";
+import wordpressbg from "../../Assets/services-cmsDev-banner-bg.png";
+import serviceBannerImg from "../../Assets/services-seo-banner-img.png";
 import performence from "../../Assets/service-seo-about-img.png";
 import wordpresssectionimg from "../../Assets/services-seo-about2-img.png";
 import creativethoughsec from "../../Assets/services-seo-creativeThrough-img.png";
-
 
 const featuredProjectData = [
   {
@@ -59,7 +59,7 @@ const featuredProjectData = [
     image: pixleperfectimg6,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  }
+  },
 ];
 
 const SEO = () => {
@@ -67,70 +67,65 @@ const SEO = () => {
     <Layout>
       <ServiceBanner
         bgImage={wordpressbg}
-        title="WordPress Web Design Services"
-        description="Launch a professional, revenue-driving WordPress website with our WordPress Web Design Services."
+        title="Grow, Convert & Rank With Search Engine Optimization"
+        description="What’s the point of decorating your website with beautiful designs and copy if it won’t rank on the search engines? With California Web Coders, your website not only works well, but also ranks high on the search engines and LLMS!"
+        description2="Our team of Search Engine Optimization (SEO) integrates the best ranking strategies to your website, from keyword integration and content optimization, to technical SEO and backend optimization, we let no detail slip!"
         bannerList={[
-          "Modern web design techniques",
-          "Optimised for SEO",
-          "Lightning fast load times",
-          "Designed to convert",
+          "Google-approved techniques, no shortcuts. ",
+          "Implementation of the best strategies for lasting results.",
+          "Regular audits, timely reporting, and real progress.",
         ]}
+        image={serviceBannerImg}
       />
 
       <WordPressPerformanceSection
-        secTitle1="Beautiful"
-        secTitle2="WordPress"
-        secTitle3="websites built to perform."
-        description="With more than 10 years in the web design industry, building
-              hundreds of WordPress websites across numerous industries, Octave
-              Agency have a tried and tested process to achieve maximum results
-              which is why our clients love our WordPress web design services."
-        description2="We understand that your website is your most effective marketing
-              tool and that it is quite often your customer’s first point of
-              contact with you. With this in mind, all our websites are built
-              with strategic techniques for maximum lead conversion."
+        secTitle1="SEO That Makes Your "
+        secTitle2="Business Stand Out"
+        // secTitle3=""
+        description="With millions of search results for every query, if you are not ranking on the first page, you’re practically invisible. And that is where we come in. As a trusted SEO company in California, we provide targeted search engine optimization marketing that helps your business climb search engine rankings and maintain its position."
+        description2="From optimizing your on-page content to building high-quality backlinks and analyzing technical SEO, we focus on every factor that impacts your visibility."
         image={performence}
+        btnText="Boost Your Business"
       />
 
-      <Growyourbusiness />
+      <Growyourbusiness
+        title1="Want To Rank High Among"
+        title2="Millions?"
+        btnText="Sign Up With Our SEO Masters"
+      />
 
       <PixelPerfectSec
-        secTitle="From Pixels to"
-        secTitleBlue="Perfection."
-        secDescription="Each design is uniquely crafted to suit the specific needs of every business. We strive to showcase and enhance the individuality of your brand. Explore some of our recent projects below."
+        secTitle="Get Found Fast By The"
+        secTitleBlue="Digital Audience!"
+        secDescription="Explore case studies of our clients who went from page 5 to page 1. From local businesses to e-commerce stores, our SEO services have helped brands improve their rankings, attract more qualified leads, and grow their online presence."
         projectsData={featuredProjectData}
+        btnText="Witness Our Wins"
       />
 
       <PricingPlans
+        secTitle="Flexible Pricing for Fixed Ranking At The Top"
+        secDescription="Whether you’re a startup trying to get noticed or an established brand looking to grow, we’ve got flexible plans that match your needs."
         image={wordpresssectionimg}
-        whyWordressTitle="Why WordPress"
-        whyWordressDescription1="One of the strengths of WordPress is that it is fully
-                customisable. This means we can build bespoke websites tailored
-                specifically to our client’s goals"
-        whyWordressDescription2="Our WordPress developers ensure that your design and website
-                functionality works across all devices, allowing you to stand
-                out from the competition."
-        whyWordressDescription3="Another added benefit of using such a popular platform is that
-                there are thousands of great WordPress plugins available. These
-                plugins add complex functionality to your site and can be great
-                tools for displaying information, engaging users, and building a
-                WordPress eCommerce online store."
+        whyWordressTitle="Choose SEO For The Win"
+        question
+        whyWordressDescription1="The one growth strategy that will never die? SEO! Regardless of the trends, ranking first on Google’s search results page will always benefit you in hundreds of ways! Our search engine optimization agency California ensures you are visible in your specific area, or even in a broader area!"
+        whyWordressDescription2="We combine data, creativity, and experience to get your brand where it needs to be. Our team understands the ever-changing search algorithms and uses white-hat, effective practices to ensure your rankings improve steadily and safely."
+        // whyWordressDescription3=""
+        btnText="Start Now"
       />
 
-      <ContactForm />
+      <ContactForm
+        secTitle="Ready To Discuss Your Search Engine Optimization Goals? Let’s Chat!"
+        secDescription="Book a free consultation with our professionals in California Web Coders now to see how we can help your business maximize its growth."
+      />
 
       <Creativitythrough
-        title1="Creativity through"
-        title2="web and graphics."
-        description1="we put a lot of work into being on trend with design as well as
-                ensuring the websites we produce are performance led for SEO
-                purposes. This means that whilst focusing on making you look
-                good, we can make sure you stand the best chance of getting in
-                front of your audience and ultimately convert leads into paying
-                customers."
-        description2="View our latest work to see how we’ve helped businesses
-                transform their digital presence."
+        title1="SEO Can Revamp Your Life on The"
+        title2="Web"
+        description1="Our team of SEO pros keeps things simple, strategic, and measurable. With us, you’re not just paying for traffic, you’re investing in long-term growth. From site structure to keyword targeting and content optimization, we make your site work smarter, not harder."
+        description2="Let’s make your brand more visible, credible, and click-worthy. Your audience is searching. Let’s make sure they find you."
         image={creativethoughsec}
+        btnText="Rank Your Website Now!"
       />
     </Layout>
   );

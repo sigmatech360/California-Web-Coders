@@ -19,8 +19,7 @@ const Digitalagency = () => {
                 data-aos-duration="1000"
                 data-aos-offset="0"
               >
-                We are a creative bold digital agency based in{" "}
-                <span>California.</span>{" "}
+                Web Designs That are Loved By All Of <span>California.</span>{" "}
               </h2>
             </div>
             <div className="col-lg-6 ">
@@ -35,8 +34,9 @@ const Digitalagency = () => {
                   {" "}
                   <p className="para mb-1"> 20+ Years of Experience</p>
                   <p className="para1">
-                    We are dedicated to providing outstanding digital and design
-                    services meet the functional and aesthetic.
+                    Don’t believe our words, believe the experience and
+                    expertise. Combining functionality and aesthetics, we get
+                    what you want!
                   </p>
                 </div>
               </div>
@@ -53,7 +53,7 @@ const Digitalagency = () => {
               <div className="satisfiedpara  d-flex justify-content-between  align-content-center">
                 <p className="para2 ">
                   {" "}
-                  <span>350+ </span>very satisfied clients around the worldwide.
+                  <span>350+ </span>satisfied clients who love our services.
                 </p>
                 <span className="facespan    ">
                   <FaFaceSmile />
@@ -65,7 +65,7 @@ const Digitalagency = () => {
               <div className="satisfiedpara  d-flex justify-content-between  align-content-center">
                 <p className="para2 ">
                   {" "}
-                  <span>200+ </span>good award winning digital media agency.
+                  <span>750+ </span>completed projects that showcase our expertise.
                 </p>
                 <span className="facespan    ">
                   <TbSpeakerphone />
@@ -77,7 +77,7 @@ const Digitalagency = () => {
               <div className="satisfiedpara  d-flex justify-content-between  align-content-center">
                 <p className="para2 ">
                   {" "}
-                  <span>750+ </span> successfully project completed in one year.
+                  <span>100+ </span> awards and certificates in Web Design.
                 </p>
                 <span className="facespan    ">
                   <IoBagRemoveSharp />

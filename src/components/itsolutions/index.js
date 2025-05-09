@@ -29,17 +29,23 @@ const ItSolutions = () => {
               data-aos-duration="2000"
               data-aos-offset="0"
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              California Web Coders started with a vision to simplify digital
+              for businesses of all sizes. Over the years, we've grown into a
+              full-service digital powerhouse offering web design, development,
+              and online marketing services. With a team of expert designers,
+              developers, and strategists, we turn your ideas into stunning
+              digital experiences.
             </p>
+            <p
+              className="para2 mb-2"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+            >
+              Whether it’s building custom websites or launching high-performing
+              campaigns, we deliver solutions that work hard for your brand.
+            </p>
+
             <div
               className="itSolutions-list"
               data-aos="fade-right"
@@ -49,20 +55,20 @@ const ItSolutions = () => {
               <span className="d-flex align-items-center gap-2">
                 <CiCircleCheck className="checkicon" />
                 <p className="para4 mb-0 align-self-baseline">
-                  Professional IT Solutions
+                  Strategy-led digital experiences.
                 </p>
               </span>
 
               <span className="d-flex align-items-center gap-2">
                 <CiCircleCheck className="checkicon" />
                 <p className="para4 mb-0 align-self-baseline">
-                  Experience Team Members
+                  Full-service creative + tech team.
                 </p>
               </span>
               <span className="d-flex align-items-center gap-2">
                 <CiCircleCheck className="checkicon" />
                 <p className="para4 mb-0 align-self-baseline">
-                  Awards Winning Solutions Company
+                  Scalable solutions, fast delivery.
                 </p>
               </span>
             </div>
@@ -72,7 +78,7 @@ const ItSolutions = () => {
               data-aos-duration="3000"
               data-aos-offset="0"
             >
-              <button className="learnmore">Learn More About Us</button>
+              <button className="learnmore">View Our Portfolio</button>
 
               <span className="d-flex align-items-center gap-2">
                 <FaPhoneAlt className="learnmorecall" />
@@ -116,7 +122,7 @@ const ItSolutions = () => {
                 data-aos-duration="1000"
                 data-aos-offset="0"
               >
-                Mission statement.
+                Our Goals
               </h3>
               <p
                 className="missionstatementpara"
@@ -124,16 +130,11 @@ const ItSolutions = () => {
                 data-aos-duration="2000"
                 data-aos-offset="0"
               >
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                We live and strive for one goal: to empower businesses with
+                smart and creative digital solutions backed by
+                performance-driven strategies that continually grow their online
+                presence and drive real, measurable growth, all while keeping
+                things simple, efficient, and beautifully designed.
               </p>
               <button
                 className="missionstatementbtn"
@@ -141,7 +142,7 @@ const ItSolutions = () => {
                 data-aos-duration="3000"
                 data-aos-offset="0"
               >
-                Get In Touch
+                Connect Now
               </button>
             </div>
           </div>

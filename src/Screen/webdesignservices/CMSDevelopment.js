@@ -18,10 +18,10 @@ import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
 
 import wordpressbg from "../../Assets/services-cmsDev-banner-bg.png";
+import serviceBannerImg from "../../Assets/services-cmsDev-banner-img.png";
 import performence from "../../Assets/service-cmsDev-about-img.png";
 import wordpresssectionimg from "../../Assets/services-cmsDev-about2-img.png";
 import creativethoughsec from "../../Assets/services-cmsDev-creativeThrough-img.png";
-
 
 const featuredProjectData = [
   {
@@ -59,7 +59,7 @@ const featuredProjectData = [
     image: pixleperfectimg6,
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  }
+  },
 ];
 
 const CMSDevelopment = () => {
@@ -67,70 +67,63 @@ const CMSDevelopment = () => {
     <Layout>
       <ServiceBanner
         bgImage={wordpressbg}
-        title="WordPress Web Design Services"
-        description="Launch a professional, revenue-driving WordPress website with our WordPress Web Design Services."
+        title="CMS Development That Puts You In Control"
+        description="California Web Coders offers intuitive and innovative CMS solutions that make website management easy. From content edits to full-scale updates, our platforms are designed to keep you in control. We specialize in user-friendly systems built for performance and growth."
         bannerList={[
-          "Modern web design techniques",
-          "Optimised for SEO",
-          "Lightning fast load times",
-          "Designed to convert",
+          "Expert in custom CMS solutions.",
+          "Seamless Shopify and WordPress development setup.",
+          "Simple content control, no tech skills needed.",
+          "Ongoing support and upgrades included.",
         ]}
+        image={serviceBannerImg}
       />
 
       <WordPressPerformanceSection
-        secTitle1="Beautiful"
-        secTitle2="WordPress"
-        secTitle3="websites built to perform."
-        description="With more than 10 years in the web design industry, building
-              hundreds of WordPress websites across numerous industries, Octave
-              Agency have a tried and tested process to achieve maximum results
-              which is why our clients love our WordPress web design services."
-        description2="We understand that your website is your most effective marketing
-              tool and that it is quite often your customer’s first point of
-              contact with you. With this in mind, all our websites are built
-              with strategic techniques for maximum lead conversion."
+        secTitle1="Custom"
+        secTitle2="CMS Development"
+        secTitle3="With Real Flexibility"
+        description="We specialize in CMS platforms that let you run your site without running to your developer for every update. Our custom website development California services are perfect for businesses that want beautiful websites backed by powerful, user-friendly content management systems."
+        // description2=""
         image={performence}
+        btnText="Get Your CMS"
       />
 
-      <Growyourbusiness />
+      <Growyourbusiness
+        title1="Want To Simplify Your Website"
+        title2="Management?"
+        btnText="Book A Free Consultation"
+      />
 
       <PixelPerfectSec
-        secTitle="From Pixels to"
-        secTitleBlue="Perfection."
-        secDescription="Each design is uniquely crafted to suit the specific needs of every business. We strive to showcase and enhance the individuality of your brand. Explore some of our recent projects below."
+        secTitle="Smart, Custom Websites Made to Perform"
+        // secTitleBlue="Perfection."
+        secDescription="Explore our CMS-powered websites, ranging from sleek blogs to full-scale e-commerce website development projects. Whether it's custom Shopify stores or advanced WordPress platforms, every project reflects our design quality, smart structure, and easy-to-manage content flow."
         projectsData={featuredProjectData}
+        btnText="View Our Portfolio"
       />
 
       <PricingPlans
+        secTitle="Smart Pricing for Smarter Control"
+        secDescription="We offer flexible CMS packages tailored to match your business stage, whether you're a startup, a growing store, or an enterprise platform, we got a plan suitable just for you"
         image={wordpresssectionimg}
-        whyWordressTitle="Why WordPress"
-        whyWordressDescription1="One of the strengths of WordPress is that it is fully
-                customisable. This means we can build bespoke websites tailored
-                specifically to our client’s goals"
-        whyWordressDescription2="Our WordPress developers ensure that your design and website
-                functionality works across all devices, allowing you to stand
-                out from the competition."
-        whyWordressDescription3="Another added benefit of using such a popular platform is that
-                there are thousands of great WordPress plugins available. These
-                plugins add complex functionality to your site and can be great
-                tools for displaying information, engaging users, and building a
-                WordPress eCommerce online store."
+        whyWordressTitle="Why Choose California Web Coders"
+        whyWordressDescription1="You want a site that works hard behind the scenes, and we get that. Our CMS development services are built on real-world experience, creative problem-solving, and a passion for clean, intuitive design. Whether you need Shopify development, WordPress development, or a fully custom website development solution in California, we tailor every project to your goals."
+        whyWordressDescription2="We focus on systems you’ll love using, websites that grow with you, and solutions that look as good as they perform. At California Web Coders, we keep it simple, smart, and designed with you in mind."
+        // whyWordressDescription3=""
       />
 
-      <ContactForm />
+      <ContactForm
+        secTitle="Ready to Take Control of Your Website?"
+        secDescription="Book a free consultation with our CMS pros and discover how easy managing your site can be."
+      />
 
       <Creativitythrough
-        title1="Creativity through"
-        title2="web and graphics."
-        description1="we put a lot of work into being on trend with design as well as
-                ensuring the websites we produce are performance led for SEO
-                purposes. This means that whilst focusing on making you look
-                good, we can make sure you stand the best chance of getting in
-                front of your audience and ultimately convert leads into paying
-                customers."
-        description2="View our latest work to see how we’ve helped businesses
-                transform their digital presence."
+        title1="Website Management"
+        title2="Made Simpler"
+        description1="Managing your website shouldn’t feel like a full-time job. At California Web Coders, we’re a website development agency that believes in giving you control, without the chaos. Whether you're running a blog, online store, or business platform, our systems are built to be intuitive, flexible, and stress-free."
+        description2="Our expert website developers in California create smart CMS solutions that allow you to update content, launch new pages, and manage media with just a few clicks. No coding. No confusion. Just powerful tools tailored to your needs."
         image={creativethoughsec}
+        btnText="Start Your Journey With Us"
       />
     </Layout>
   );

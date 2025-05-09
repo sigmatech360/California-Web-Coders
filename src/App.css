@@ -49,7 +49,7 @@ button:focus {
 
 /* Title Styling */
 .hero .title {
-  font-size: 76px;
+  font-size: 65px;
   line-height: 1;
   color: #031243;
   font-family: "Outfit", sans-serif;
@@ -255,6 +255,16 @@ button:focus {
   }
 }
 @media (max-width: 991px) {
+  .wordpress-web-design .row {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .services__banner-img img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: table;
+  }
   .navbar-section .navbar-nav {
     background-color: #0504a5;
     padding: 16px 0;

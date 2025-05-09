@@ -241,7 +241,7 @@ const TermsAndConditions = () => {
     <Layout>
       <HeroSection
         title="Terms & Conditions"
-        para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+        para="By using our services, you agree to our project timelines, payment policies, usage guidelines, and limitations. Please review all terms before proceeding."
         heroimg={Pricingplanheroimg}
       />
 

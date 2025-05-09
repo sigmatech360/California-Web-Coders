@@ -22,13 +22,16 @@ const NewsandTrends = () => {
   return (
     <Layout>
       <HeroSection
-        title="Insights on tech news and trends"
-        para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+        title="Discover What’s Trending In The Tech And Marketing World."
+        para="Browse our latest posts covering online trends, digital tools, and expert opinions that shape modern websites and marketing success."
         heroimg={Pricingplanheroimg}
       />
 
       <Trends />
-      <ContactForm />
+      <ContactForm
+        secTitle="Want To Grow Your Business? Let’s Talk!"
+        secDescription="We’re always open to feedback, ideas and growth hacks. Let’s discuss your business goals!s"
+      />
 
       <section className="connectsocialmedia">
         <div className="container">
@@ -40,14 +43,15 @@ const NewsandTrends = () => {
                   data-aos-duration="1000"
                   data-aos-offset="0"
                 >
-                  Connect on Social Media
+                  Let’s Connect On Social Media!
                 </h4>
                 <p
                   data-aos="fade-up"
                   data-aos-duration="2000"
                   data-aos-offset="0"
                 >
-                  Follow Octave Agency on Social Media for regular updates.
+                  Follow California Web Coders on social media for regular
+                  updates.
                 </p>
                 <div
                   className="connect-sm-icons"

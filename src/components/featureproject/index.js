@@ -103,13 +103,13 @@ const FeatureProject = (props) => {
               data-aos-duration="3000"
               data-aos-offset="0"
             >
-              <Tab eventKey="logo-design" title="Logo Design">
-                Logo Design
-              </Tab>
               <Tab eventKey="web-design" title="Web Design">
-                <div className="row justify-content-center" data-aos="fade-up"
+                <div
+                  className="row justify-content-center"
+                  data-aos="fade-up"
                   data-aos-duration="2000"
-                  data-aos-offset="0">
+                  data-aos-offset="0"
+                >
                   {featuredProjectData.map((item, index) => (
                     <div className="col-lg-4 col-md-6 mb-4" key={index}>
                       <NewsCard
@@ -120,14 +120,23 @@ const FeatureProject = (props) => {
                   ))}
                 </div>
               </Tab>
-              <Tab eventKey="nft-design" title="NFT Design">
-                NFT Design
+              <Tab eventKey="logo-design" title="Logo Design">
+                Logo Design
               </Tab>
-              <Tab eventKey="eCommerce-website" title="E Commerce Website">
-                E Commerce Website
+              <Tab eventKey="eCommerce-website" title="E-commerce Websites">
+                E-commerce Websites
               </Tab>
-              <Tab eventKey="video-animation" title="Video Animation">
-                Video Animation
+              <Tab
+                eventKey="socialMediaMarketing"
+                title="Social Media Marketing"
+              >
+                Social Media Marketing
+              </Tab>
+              <Tab
+                eventKey="searchEngineOptimization"
+                title="Search Engine Optimization"
+              >
+                Search Engine Optimization
               </Tab>
             </Tabs>
           </div>
