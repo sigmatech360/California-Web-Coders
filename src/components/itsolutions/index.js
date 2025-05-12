@@ -80,9 +80,9 @@ const ItSolutions = () => {
             >
               <button className="learnmore">View Our Portfolio</button>
 
-              <span className="d-flex align-items-center gap-2">
+              <span className="d-flex align-items-center gap-2 packages-number">
                 <FaPhoneAlt className="learnmorecall" />
-                <p className="para4 mb-0 align-self-baseline">
+                <p href="tel:+16197989688" className="para4 mb-0 align-self-baseline">
                   +1 619-798-9688
                 </p>
               </span>

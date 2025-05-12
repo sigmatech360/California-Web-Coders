@@ -17,14 +17,14 @@ function Header() {
         <div className="container px-3 py-2">
           <div className="row">
             <div className="col-md-12">
-              <div className="d-flex align-items-center justify-content-end gap-3">
+              <div className="uperheader__links d-flex align-items-center justify-content-end flex-wrap">
                 <div className="d-flex gap-2 align-items-center">
                   <FaPhoneAlt />
-                  <a href="tel:+1-409-798-9688">+1-409-798-9688</a>
+                  <a href="tel:+16197989688">+1 619-798-9688</a>
                 </div>
                 <div className="d-flex gap-2 align-items-center">
                   <RiMailSendLine />
-                  <a href="mailto:hello@lorem.com">hello@lorem.com</a>
+                  <a href="mailto:support@californiawebcoders.com">support@californiawebcoders.com</a>
                 </div>
               </div>
             </div>

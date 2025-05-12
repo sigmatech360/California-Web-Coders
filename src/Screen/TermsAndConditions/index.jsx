@@ -105,7 +105,7 @@ export const termsAndCondition = [
     title: "To proceed with your refund request, kindly follow these steps:",
     subTite: "You can claim your refund by:",
     list: [
-      "Contacting our Toll-Free Number: (844) 599-0404",
+      "Contacting our Toll-Free Number: +1 619-798-9688",
       "Engaging in a Live Chat session. Click here to initiate the chat or send us an email.",
       "We will promptly respond and begin the necessary analysis upon receiving your refund request. Once completed, the refund process will be initiated.",
       "Please be aware that after the refund is issued, you will no longer retain any rights to the designs or materials submitted by nywebexperts.com. The relevant information will be submitted to the Government Copyright Agencies to ensure compliance with legal requirements.",
@@ -203,7 +203,7 @@ export const termsAndCondition = [
     list: [
       "Chat – Engage in real-time conversation with our support team. ",
       "support@californiawebcoders.com – Contact us via email for prompt assistance.",
-      "(844) 599-0404 – Call our Toll-Free number to speak directly with our representatives.",
+      "+1 619-798-9688 – Call our Toll-Free number to speak directly with our representatives.",
     ],
     paragraphsAfterList: [
       "Please note that any other means of communication outside these specified methods are not considered valid for contacting California Web Coders. We appreciate your cooperation and understanding in utilizing the designated channels for effective and secure communication.",

@@ -92,7 +92,7 @@ function Footer() {
                   <br />
                   CA 92101, United States
                   <br />
-                  <a href="tel:+1 619-798-9688" className="footer_list_item">
+                  <a href="tel:+16197989688" className="footer_list_item">
                     <i className="fas fa-phone-alt"></i> +1 619-798-9688
                   </a>
                 </p>

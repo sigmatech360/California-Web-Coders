@@ -32,7 +32,7 @@ export const privacyPolicySections = [
     id: 4,
     title: "Newsletter Opt-out",
     paragraphs: [
-      "If you no longer wish to receive our newsletters and promotional communications, you can opt out by following the instructions provided in each communication. Alternatively, you can contact us via email at support@californiawebcoders.com or call us at (844) 599-0404.",
+      "If you no longer wish to receive our newsletters and promotional communications, you can opt out by following the instructions provided in each communication. Alternatively, you can contact us via email at support@californiawebcoders.com or call us at +1 619-798-9688",
     ],
   },
   {
@@ -152,7 +152,7 @@ const PrivacyPolicy = () => {
                   data-aos-offset="0"
                 >
                   For privacy policy inquiries, contact us at{" "}
-                  <a href="tel:(844) 599-0404">(844) 599-0404</a> or{" "}
+                  <a href="tel:+16197989688">+1 619-798-9688</a> or{" "}
                   <a href="mailto:support@californiawebcoders.com">
                     support@californiawebcoders.com
                   </a>

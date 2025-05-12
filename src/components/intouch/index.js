@@ -61,22 +61,34 @@ const Intouch = () => {
                 data-aos-duration="3000"
                 data-aos-offset="0"
               >
-                <a href="#" className="facebook-icon">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/people/California-Web-Coders/61560871757077/"
+                  className="facebook-icon"
+                >
                   <FaFacebookF />
                 </a>
-                <a href="#" className="instagram-icon">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/californiawebcoders1"
+                  className="instagram-icon"
+                >
                   <FaInstagram />
                 </a>
-                <a href="#" className="linkedin-icon">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/california-web-coders/"
+                  className="linkedin-icon"
+                >
                   <FaLinkedinIn />
                 </a>
-                <a href="#" className="youtube-icon">
+                <a target="_blank" href="#" className="youtube-icon">
                   <FaYoutube />
                 </a>
-                <a href="#" className="twitter-icon">
+                <a target="_blank" href="#" className="twitter-icon">
                   <FaTwitter />
                 </a>
-                <a href="#" className="pinterest-icon">
+                <a target="_blank" href="#" className="pinterest-icon">
                   <LiaPinterestP />
                 </a>
               </div>
@@ -113,9 +125,13 @@ const Intouch = () => {
                   <div class="inTouch-icon-box-content">
                     <h5>Email Us</h5>
                     <p>
-                      support@yourdomain.tld
+                      <a href="mailto:support@californiawebcoders.com">
+                        support@californiawebcoders.com
+                      </a>
                       <br />
-                      hello@yourdomain.tld
+                      <a href="mailto:support@californiawebcoders.com">
+                        support@californiawebcoders.com
+                      </a>
                     </p>
                   </div>
                 </div>

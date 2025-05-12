@@ -2,12 +2,15 @@
   background-color: #0504a5;
   color: white;
   font-size: 0.9rem;
-  height: 40px;
+  /* height: 40px; */
   /* justify-content: center; */
   align-items: center;
   display: flex;
 }
-
+.uperheader__links{
+  flex-wrap: wrap;
+  gap: 10px;
+}
 a {
   text-decoration: none;
   /* justify-content: center;
@@ -97,9 +100,16 @@ a {
     gap: 15px;
     text-align: center;
   }
-
+  
   .contact-btn {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .uperheader__links{
+    flex-direction: column;
+    gap: 0;
   }
 }

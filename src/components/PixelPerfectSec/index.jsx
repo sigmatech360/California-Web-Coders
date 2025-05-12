@@ -42,11 +42,11 @@ const PixelPerfectSec = (props) => {
               <button className="viewbtn">
                 {props.btnText || "Request A Quote"}
               </button>
-              <div className="d-flex align-items-center gap-2">
+              <div className="d-flex align-items-center gap-2 packages-number">
                 <FaPhoneSquareAlt className="callicon " />
-                <p className="para4 mb-0  align-items-center">
+                <a href="tel:+16197989688" className="para4 mb-0  align-items-center">
                   +1 619-798-9688
-                </p>
+                </a>
               </div>
             </div>
           </div>

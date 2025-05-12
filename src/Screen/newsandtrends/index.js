@@ -59,25 +59,37 @@ const NewsandTrends = () => {
                   data-aos-duration="3000"
                   data-aos-offset="0"
                 >
-                  <a href="#" className="facebook-icon">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/people/California-Web-Coders/61560871757077/"
+                    className="facebook-icon"
+                  >
                     <FaFacebookF />
                   </a>
-                  <a href="#" className="instagram-icon">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/californiawebcoders1"
+                    className="instagram-icon"
+                  >
                     {/* <i className="bi bi-instagram"></i> */}
                     <FaInstagram />
                   </a>
-                  <a href="#" className="linkedin-icon">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/company/california-web-coders/"
+                    className="linkedin-icon"
+                  >
                     <FaLinkedinIn />
                   </a>
-                  <a href="#" className="youtube-icon">
+                  <a target="_blank" href="#" className="youtube-icon">
                     {/* <i className="bi bi-youtube"></i> */}
                     <FaYoutube />
                   </a>
-                  <a href="#" className="twitter-icon">
+                  <a target="_blank" href="#" className="twitter-icon">
                     {/* <i className="bi bi-twitter"></i> */}
                     <FaTwitter />
                   </a>
-                  <a href="#" className="pinterest-icon">
+                  <a target="_blank" href="#" className="pinterest-icon">
                     <LiaPinterestP />
                   </a>
                 </div>

@@ -90,6 +90,12 @@ button:focus {
   background-color: #031243;
 }
 
+
+.packages-number a {
+  text-decoration: none;
+  color: #031243;
+  font-size: 16px;
+}
 /* Google Review Styling */
 .hero .google-review {
   display: flex;
