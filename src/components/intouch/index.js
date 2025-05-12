@@ -128,10 +128,10 @@ const Intouch = () => {
                       <a href="mailto:support@californiawebcoders.com">
                         support@californiawebcoders.com
                       </a>
-                      <br />
+                      {/* <br />
                       <a href="mailto:support@californiawebcoders.com">
                         support@californiawebcoders.com
-                      </a>
+                      </a> */}
                     </p>
                   </div>
                 </div>
@@ -150,8 +150,8 @@ const Intouch = () => {
                     <h5>Call Us</h5>
                     <p>
                       +1 609-798-9688
-                      <br />
-                      +1 609-798-9688
+                      {/* <br />
+                      +1 609-798-9688 */}
                     </p>
                   </div>
                 </div>

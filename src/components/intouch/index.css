@@ -27,6 +27,7 @@
   flex-direction: column;
   gap: 16px;
   border-radius: 16px;
+  height: 100%;
 }
 .inTouch-icon-box * {
   margin: 0;
