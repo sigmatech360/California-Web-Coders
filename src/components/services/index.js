@@ -93,8 +93,6 @@ const Servies = () => {
           </div>
         </div>
 
-
-
         <div className="row justify-content-center  compservices">
           <div className="col-lg-4 mb-4 ">
             <div
@@ -110,7 +108,8 @@ const Servies = () => {
                 <div className="graphicservices-content">
                   <h4 className="graphicgesigntitle">Graphic Design</h4>
                   <p className="graphicservicespara">
-                    We deliver striking graphic design that enhances your brand’s identity and supports your digital presence.
+                    We deliver striking graphic design that enhances your
+                    brand’s identity and supports your digital presence.
                   </p>
                 </div>
               </div>
@@ -121,7 +120,8 @@ const Servies = () => {
                 <div className="graphicservices-content">
                   <h4 className="graphicgesigntitle">Online Marketing</h4>
                   <p className="graphicservicespara">
-                  Our online marketing strategies drive engagement, increase visibility, and convert visitors into loyal customers.
+                    Our online marketing strategies drive engagement, increase
+                    visibility, and convert visitors into loyal customers.
                   </p>
                 </div>
               </div>
@@ -138,7 +138,8 @@ const Servies = () => {
                 <div className="mobile-services-content">
                   <h4>Mobile App Developments</h4>
                   <p className="graphicservicespara">
-                  Our mobile app developers in California create intuitive, scalable apps that deliver seamless user experiences.
+                    Our mobile app developers in California create intuitive,
+                    scalable apps that deliver seamless user experiences.
                   </p>
                 </div>
                 <div className="mobile-services-image">
@@ -162,18 +163,26 @@ const Servies = () => {
                 <div className="graphicservices-content">
                   <p className="graphicgesigntitle">Website Developments</p>
                   <p className="graphicservicespara">
-                  As a custom web development company, we build responsive, high-performing websites tailored to your needs.
+                    As a custom web development company, we build responsive,
+                    high-performing websites tailored to your needs.
                   </p>
                 </div>
               </div>
-              <div className="graphicservices web-dev-bg">
+              {/* This Div bg image class */}
+              {/* web-dev-bg */}
+              <div
+                className={`
+                graphicservices 
+              `}
+              >
                 <div className="graphicservices-icon">
                   <img src={websitelogo} className="graphiclogo" />
                 </div>
                 <div className="graphicservices-content">
                   <p className="graphicgesigntitle">CMS Developments</p>
                   <p className="graphicservicespara">
-                  We offer CMS development services to help you manage content easily, boosting efficiency and user experience.
+                    We offer CMS development services to help you manage content
+                    easily, boosting efficiency and user experience.
                   </p>
                 </div>
               </div>

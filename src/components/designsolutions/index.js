@@ -6,6 +6,7 @@ import { CiMobile3 } from "react-icons/ci";
 import { MdOutlineComputer } from "react-icons/md";
 import { RiToolsLine } from "react-icons/ri";
 import { RiSeoFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const webSolutionsData = [
   {
@@ -133,14 +134,15 @@ const Designsolutions = () => {
               to another level of success.
             </p>
 
-            <button
+            <Link
+              to={"/get-intouch"}
               className="freecons"
               data-aos="fade-right"
               data-aos-duration="3000"
               data-aos-offset="0"
             >
               Book Your FREE Consultation
-            </button>
+            </Link>
           </div>
 
           <div className="col-lg-6">

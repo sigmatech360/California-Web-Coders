@@ -29,7 +29,7 @@ const Intouch = () => {
                 data-aos-duration="1000"
                 data-aos-offset="0"
               >
-                Don't hesitate to contact us for{" "}
+                Don’t hesitate to contact us for{" "}
                 <span className="colorBlue"> more information. </span>
               </h2>
               <p
@@ -37,8 +37,8 @@ const Intouch = () => {
                 data-aos-duration="2000"
                 data-aos-offset="0"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                We’re here to answer your questions and explore how we can help
+                your business grow digitally and strategically.
               </p>
               <h4
                 data-aos="fade-right"
@@ -52,8 +52,9 @@ const Intouch = () => {
                 data-aos-duration="2000"
                 data-aos-offset="0"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                Stay connected with California Web Coders across all platforms
+                for the latest updates, insights, and digital marketing tips
+                tailored for your brand’s success.
               </p>
               <div
                 className="connect-sm-icons justify-content-start"
@@ -167,10 +168,10 @@ const Intouch = () => {
                     <MdOutlineSupportAgent color={"#0504a5"} />
                   </div>
                   <div class="inTouch-icon-box-content">
-                    <h5>24/7 Premium Support</h5>
+                    <h5>Follow Us</h5>
                     <p>
-                      Lorem ipsum is simply dummy text of the printing and
-                      typesetting industry.
+                      Follow California Web Coders on Instagram to stay
+                      connected with us!
                     </p>
                   </div>
                 </div>

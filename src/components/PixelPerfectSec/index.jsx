@@ -34,7 +34,10 @@ const PixelPerfectSec = (props) => {
               data-aos-duration="3000"
               data-aos-offset="0"
             >
-              <NewsCard image={item.image} description={item.description} />
+              <NewsCard 
+                image={item.image} 
+                // description={item.description} 
+              />
             </div>
           ))}
           <div className="col-md-12">
@@ -44,7 +47,10 @@ const PixelPerfectSec = (props) => {
               </button>
               <div className="d-flex align-items-center gap-2 packages-number">
                 <FaPhoneSquareAlt className="callicon " />
-                <a href="tel:+16197989688" className="para4 mb-0  align-items-center">
+                <a
+                  href="tel:+16197989688"
+                  className="para4 mb-0  align-items-center"
+                >
                   +1 619-798-9688
                 </a>
               </div>

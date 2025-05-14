@@ -12,8 +12,8 @@ const Getintouch = () => {
   return (
     <Layout>
       <HeroSection
-        title="Insights on tech news and trends"
-        para="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+        title="Let’s Talk About Your Next Big Move"
+        para="Whether you have a project in mind, a question to ask, or just want to connect, we’re here to help. Reach out and explore how we can turn your vision into results."
         heroimg={Pricingplanheroimg}
       />
       <Intouch />

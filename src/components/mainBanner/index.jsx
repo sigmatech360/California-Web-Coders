@@ -1,6 +1,7 @@
 import React from "react";
 import heroimg from "../../Assets/heroimg.jpg";
 import heroimg2 from "../../Assets/heroimg2.jpg";
+import { Link } from "react-router-dom";
 
 const MainBanner = () => {
   return (
@@ -25,16 +26,19 @@ const MainBanner = () => {
                     data-aos-duration="2000"
                     data-aos-offset="0"
                   >
-                    <span>California Web Coders</span> excel at creating websites that build connections, fuel growth, and ensure long-term success.
+                    <span>California Web Coders</span> excel at creating
+                    websites that build connections, fuel growth, and ensure
+                    long-term success.
                   </p>
-                  <button
+                  <Link
+                    to={"/our-work"}
                     className="herobtn"
                     data-aos="fade-up"
                     data-aos-duration="3000"
                     data-aos-offset="0"
                   >
                     View Our Work
-                  </button>
+                  </Link>
                 </div>
                 <div className="google-review mt-4">
                   <img

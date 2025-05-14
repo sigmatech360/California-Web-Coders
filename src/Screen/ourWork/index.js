@@ -170,7 +170,7 @@ const OurWork = () => {
                       <div className="col-lg-4 col-md-6 mb-4" key={index}>
                         <NewsCard
                           image={item.image}
-                          description={item.description}
+                          // description={item.description}
                         />
                       </div>
                     ))}

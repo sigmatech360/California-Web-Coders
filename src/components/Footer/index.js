@@ -41,10 +41,10 @@ function Footer() {
             <Link to={"/"} className="main-footer-logo">
               <img src={footerlogo} alt="Footer Logo" />
             </Link>
-            <p className="para mt-2">
+            {/* <p className="para mt-2">
               Lorem Ipsum Dolor Sit Amet Conset Ateur Adipisicing Elit, Sed Do
               Eiusmod...
-            </p>
+            </p> */}
           </div>
           <div className="col-lg-8">
             <div className="row">
