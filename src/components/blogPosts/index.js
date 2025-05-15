@@ -44,10 +44,10 @@ const BlogSection = () => {
                 data-aos-offset="0"
               >
                 Let's See Our Latest <br />
-                Blog & Articles
+                Blogs & Articles
               </h2>
               <Link
-                to={""}
+                to={"/news-trends"}
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-offset="0"

@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import creativethoughsec from "../../Assets/creativethoughsec.png";
+import { Link } from "react-router-dom";
 
 const Creativitythrough = (props) => {
   return (
@@ -38,14 +39,14 @@ const Creativitythrough = (props) => {
                 </p>
               )}
 
-              <button
+              <Link to={"/our-work"}
                 className="intouch btn   btn-lg mt-3"
                 data-aos="fade-right"
                 data-aos-duration="3000"
                 data-aos-offset="0"
               >
                 {props.btnText || `View Our Latest Work`}
-              </button>
+              </Link>
             </div>
           </div>
 

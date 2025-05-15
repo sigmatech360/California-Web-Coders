@@ -1,5 +1,6 @@
 import React from "react";
 import { CiCircleCheck } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const ServiceBanner = (props) => {
   return (
@@ -53,14 +54,14 @@ const ServiceBanner = (props) => {
                 </li>
               ))}
             </ul>
-            <button
+            <Link to={"/our-work"}
               className="btn-theme"
               data-aos="fade-right"
               data-aos-duration="3000"
               data-aos-offset="0"
             >
               {props.btnText || `Contact Us`}
-            </button>
+            </Link>
           </div>
           {props.image && (
             <div className={`${props.rightCol || "col-lg-6"}`}>

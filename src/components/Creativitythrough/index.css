@@ -19,6 +19,8 @@ h1 span {
   color: white;
   font-size: 15px;
   border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
 }
 .Creativitythrough .para {
   color: #707070;

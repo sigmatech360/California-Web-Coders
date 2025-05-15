@@ -23,7 +23,7 @@ import performence from "../../Assets/service-cmsDev-about-img.png";
 import wordpresssectionimg from "../../Assets/services-cmsDev-about2-img.png";
 import creativethoughsec from "../../Assets/services-cmsDev-creativeThrough-img.png";
 
-const featuredProjectData = [
+export const cmsDevelopmentPortfolioData = [
   {
     id: 1,
     image: pixleperfectimg1,
@@ -98,7 +98,7 @@ const CMSDevelopment = () => {
         secTitle="Smart, Custom Websites Made to Perform"
         // secTitleBlue="Perfection."
         secDescription="Explore our CMS-powered websites, ranging from sleek blogs to full-scale e-commerce website development projects. Whether it's custom Shopify stores or advanced WordPress platforms, every project reflects our design quality, smart structure, and easy-to-manage content flow."
-        projectsData={featuredProjectData}
+        projectsData={cmsDevelopmentPortfolioData}
         btnText="View Our Portfolio"
       />
 

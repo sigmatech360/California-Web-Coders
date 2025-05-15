@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import performence from "../../Assets/performence.png";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const WordPressPerformanceSection = (props) => {
   return (
@@ -35,14 +36,14 @@ const WordPressPerformanceSection = (props) => {
                 {props.description2}
               </p>
             )}
-            <button
+            <Link to={"/our-work"}
               className="btn-theme"
               data-aos="fade-right"
               data-aos-duration="3000"
               data-aos-offset="0"
             >
               {props.btnText || `Get In Touch`}
-            </button>
+            </Link>
           </div>
 
           <div className="col-lg-6">

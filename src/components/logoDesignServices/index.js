@@ -47,6 +47,15 @@ const LogoDesignServices = () => {
               brand’s story. Expect a logo that stands out, one that is
               memorable and meaningful.
             </p>
+            <p
+              className="para3"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              data-aos-offset="0"
+            >
+              Choose California Web Coders for a creative solution that leaves
+              an unforgettable impression.
+            </p>
           </div>
 
           <div className="col-xl-6 col-lg-5 logoServiceCol-2">
@@ -59,7 +68,7 @@ const LogoDesignServices = () => {
             />
           </div>
 
-          <div className="col-md-12">
+          {/* <div className="col-md-12">
             <p
               className="para3"
               data-aos="fade-right"
@@ -69,7 +78,7 @@ const LogoDesignServices = () => {
               Choose California Web Coders for a creative solution that leaves
               an unforgettable impression.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

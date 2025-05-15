@@ -23,7 +23,7 @@ import performence from "../../Assets/service-logoDesign-about-img.png";
 import wordpresssectionimg from "../../Assets/services-logoDesign-about2-img.png";
 import creativethoughsec from "../../Assets/services-logoDesign-creativeThrough-img.png";
 
-const featuredProjectData = [
+export const logoDesignPortfolioData = [
   {
     id: 1,
     image: pixleperfectimg1,
@@ -97,7 +97,7 @@ const LogoDesign = () => {
         secTitle="Check Out The Best Of Our"
         secTitleBlue="Logos"
         secDescription="From minimalist icons to bold typography, every design in our collection tells a unique story. Explore how our clients use their logos across packaging, websites, and social platforms, and why they trust us again and again."
-        projectsData={featuredProjectData}
+        projectsData={logoDesignPortfolioData}
         btnText="Witness Our Wins"
       />
 

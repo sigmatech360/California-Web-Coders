@@ -7,6 +7,7 @@ import itsolution from "../../Assets/itsolutions.png";
 import itservicesimg2 from "../../Assets/itservicesimg2.png";
 
 import missionbeforeimg from "../../Assets/mission-before-img.png";
+import { Link } from "react-router-dom";
 
 const ItSolutions = () => {
   return (
@@ -19,7 +20,7 @@ const ItSolutions = () => {
               className="title"
               data-aos="fade-right"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              
             >
               We’re Awards Winning <span> IT Solutions </span> Agency
             </p>
@@ -27,7 +28,7 @@ const ItSolutions = () => {
               className="para2 mb-2"
               data-aos="fade-right"
               data-aos-duration="2000"
-              data-aos-offset="0"
+              
             >
               California Web Coders started with a vision to simplify digital
               for businesses of all sizes. Over the years, we've grown into a
@@ -40,7 +41,7 @@ const ItSolutions = () => {
               className="para2 mb-2"
               data-aos="fade-right"
               data-aos-duration="2000"
-              data-aos-offset="0"
+              
             >
               Whether it’s building custom websites or launching high-performing
               campaigns, we deliver solutions that work hard for your brand.
@@ -50,7 +51,7 @@ const ItSolutions = () => {
               className="itSolutions-list"
               data-aos="fade-right"
               data-aos-duration="3000"
-              data-aos-offset="0"
+              
             >
               <span className="d-flex align-items-center gap-2">
                 <CiCircleCheck className="checkicon" />
@@ -76,9 +77,9 @@ const ItSolutions = () => {
               className=" mt-5 gap-3 d-flex flex-wrap"
               data-aos="fade-right"
               data-aos-duration="3000"
-              data-aos-offset="0"
+              
             >
-              <button className="learnmore">View Our Portfolio</button>
+              <Link to={"/our-work"} className="learnmore">View Our Portfolio</Link>
 
               <span className="d-flex align-items-center gap-2 packages-number">
                 <FaPhoneAlt className="learnmorecall" />
@@ -95,7 +96,7 @@ const ItSolutions = () => {
               src={itsolution}
               data-aos="fade-left"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              
             />
           </div>
         </div>
@@ -109,7 +110,7 @@ const ItSolutions = () => {
                 className="img-fluid mission-img-front"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                
               />
             </div>
           </div>
@@ -120,7 +121,7 @@ const ItSolutions = () => {
                 className="missionstatement"
                 data-aos="fade-left"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                
               >
                 Our Goals
               </h3>
@@ -128,7 +129,7 @@ const ItSolutions = () => {
                 className="missionstatementpara"
                 data-aos="fade-left"
                 data-aos-duration="2000"
-                data-aos-offset="0"
+                
               >
                 We live and strive for one goal: to empower businesses with
                 smart and creative digital solutions backed by
@@ -136,14 +137,14 @@ const ItSolutions = () => {
                 presence and drive real, measurable growth, all while keeping
                 things simple, efficient, and beautifully designed.
               </p>
-              <button
+              <Link to={"/get-intouch"}
                 className="missionstatementbtn"
                 data-aos="fade-left"
                 data-aos-duration="3000"
-                data-aos-offset="0"
+                
               >
                 Connect Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>

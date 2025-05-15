@@ -16,6 +16,7 @@ import NewsCard from "../../components/NewsCard";
 
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
+import { Link } from "react-router-dom";
 
 const featuredProjectData = [
   {
@@ -190,7 +191,7 @@ const OurWork = () => {
 
             <div className="col-md-12 mt-3">
               <div class="justify-content-center d-flex flex-wrap gap-4">
-                <button className="viewbtn">View All Projects</button>
+                <Link to={"/services/web-design"} className="viewbtn">View All Projects</Link>
               </div>
             </div>
           </div>

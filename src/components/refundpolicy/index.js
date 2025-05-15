@@ -24,7 +24,6 @@ const RefundPolicy = () => {
               <p
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                data-aos-offset="0"
               >
                 If you're not fully satisfied within the first 7 days of project
                 initiation, we’ll issue a full refund. No hard feelings, no
@@ -39,7 +38,6 @@ const RefundPolicy = () => {
             className="rf-pay-logos"
             data-aos="fade-up"
             data-aos-duration="3000"
-            data-aos-offset="0"
           >
             <div className="paymentway">
               <img src={visaLogo} alt="Visa" />

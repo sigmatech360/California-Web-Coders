@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from 'react-toastify';
 import "./index.css"; // Add any additional styling here
 import footerlogo from "../../Assets/footerlogo.png";
 import footerlogo1 from "../../Assets/footerlogo2.png";
@@ -26,10 +27,12 @@ function Footer() {
 
       const result = await response.json();
       console.log(result);
-      alert("Email Submitted Successfully");
+      // alert("Email Submitted Successfully"); 
+      toast.success("Email submitted successfully!");
     } catch (error) {
       console.log(`Error submitting email:`, error);
-      alert("Submission failed. Please try again.");
+      // alert("Submission failed. Please try again.");
+      toast.error("Submission failed. Please try again.");
     }
   };
 

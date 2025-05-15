@@ -23,7 +23,7 @@ import performence from "../../Assets/service-mobileAppDev-about-img.png";
 import wordpresssectionimg from "../../Assets/services-mobileAppDev-about2-img.png";
 import creativethoughsec from "../../Assets/services-mobileAppDev-creativeThrough-img.png";
 
-const featuredProjectData = [
+export const mobileAppDevelopmentPortfolioData = [
   {
     id: 1,
     image: pixleperfectimg1,
@@ -97,7 +97,7 @@ const MobileAppDevelopment = () => {
         secTitle="Explore Our"
         secTitleBlue="Mobile Applications"
         secDescription="Want an e-commerce app, a business solution, or just an app to connect better with your audience? We have you covered! Our mobile app development services California cover every idea you dream of!"
-        projectsData={featuredProjectData}
+        projectsData={mobileAppDevelopmentPortfolioData}
         btnText="A glimpse of our expertise!"
       />
 

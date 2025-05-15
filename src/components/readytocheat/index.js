@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from 'react-toastify';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
@@ -19,7 +20,7 @@ const ContactForm = (props) => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); 
 
     try {
       const response = await fetch(`${apiUrl}/submit-query`, {
@@ -32,7 +33,8 @@ const ContactForm = (props) => {
 
       const result = await response.json();
       console.log(result);
-      alert("Form Submitted Successfully");
+      // alert("Form Submitted Successfully");
+      toast.success("Form submitted successfully!");
 
       setFormData({
         username: "",
@@ -43,7 +45,8 @@ const ContactForm = (props) => {
       });
     } catch (error) {
       console.log(`Error submitting form:`, error);
-      alert("Submission failed. Please try again.");
+      // alert("Submission failed. Please try again.");
+      toast.error("Submission failed. Please try again.");
     }
   };
 

@@ -23,7 +23,7 @@ import performence from "../../Assets/service-customDev-about-img.png";
 import wordpresssectionimg from "../../Assets/services-customDev-about2-img.png";
 import creativethoughsec from "../../Assets/services-customDev-creativeThrough-img.png";
 
-const featuredProjectData = [
+export const customWebDesignPortfolioData = [
   {
     id: 1,
     image: pixleperfectimg1,
@@ -98,7 +98,7 @@ const CustomWebDevelopment = () => {
         secTitle="Explore Our Diversity In"
         secTitleBlue="Custom Website Development"
         secDescription="Our custom web development services have helped clients succeed by creating beautiful, functional websites that drive results. Take a look at some of our work to see what we can do for you."
-        projectsData={featuredProjectData}
+        projectsData={customWebDesignPortfolioData}
         btnText="View Our Portfolio"
       />
 

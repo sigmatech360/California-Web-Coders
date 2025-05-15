@@ -11,6 +11,8 @@ body {
   font-size: 16px;
   line-height: 1;
   text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 button:focus {
@@ -139,6 +141,8 @@ button:focus {
   padding: 10px 26px;
   border-radius: 30px;
   font-size: 14px; /* Adjusted for responsiveness */
+  display: inline-block;
+  text-decoration: none;
 }
 
 .homeFrequentQuestions {

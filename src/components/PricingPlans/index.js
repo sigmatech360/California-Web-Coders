@@ -3,6 +3,7 @@ import "./index.css";
 // import { CiCircleCheck } from "react-icons/ci";
 import wordpresssectionimg from "../../Assets/wordpresssectionimg.png";
 import PricePlanCard from "../PricePlanCard";
+import { Link } from "react-router-dom";
 
 const pricingPlanData = [
   {
@@ -176,14 +177,14 @@ const PricingPlans = (props) => {
                   {props.whyWordressDescription3}
                 </p>
               )}
-              <button
+              <Link to={"/our-work"}
                 className="morebenifit"
                 data-aos="fade-left"
                 data-aos-duration="3000"
                 data-aos-offset="0"
               >
                 {props.btnText || `See More Benefits`}
-              </button>
+              </Link>
             </div>
           </div>
         </div>

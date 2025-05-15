@@ -23,7 +23,7 @@ import performence from "../../Assets/service-webDesign-about-img.png";
 import wordpresssectionimg from "../../Assets/services-webDesign-about2-img.png";
 import creativethoughsec from "../../Assets/services-webDesign-creativeThrough-img.png";
 
-const featuredProjectData = [
+export const webDesignPortfolioData = [
   {
     id: 1,
     image: pixleperfectimg1,
@@ -96,7 +96,7 @@ const WebDesign = () => {
         secTitle="Get Inspired By Our Beautiful"
         secTitleBlue="Website Designs"
         secDescription="Explore our hand-picked portfolio featuring sleek and high-performing websites built for our esteemed clients. Each project highlights our commitment to design excellence, responsive layouts, and results that drive growth."
-        projectsData={featuredProjectData}
+        projectsData={webDesignPortfolioData}
       />
 
       <PricingPlans

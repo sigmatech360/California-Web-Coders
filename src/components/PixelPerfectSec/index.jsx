@@ -1,6 +1,7 @@
 import React from "react";
 import NewsCard from "../NewsCard";
 import { FaPhoneSquareAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const PixelPerfectSec = (props) => {
   return (
@@ -42,9 +43,9 @@ const PixelPerfectSec = (props) => {
           ))}
           <div className="col-md-12">
             <div class="justify-content-center d-flex flex-wrap gap-4">
-              <button className="viewbtn">
+              <Link to={"/get-intouch"} className="viewbtn">
                 {props.btnText || "Request A Quote"}
-              </button>
+              </Link>
               <div className="d-flex align-items-center gap-2 packages-number">
                 <FaPhoneSquareAlt className="callicon " />
                 <a
