@@ -22,6 +22,7 @@ import serviceBannerImg from "../../Assets/services-seo-banner-img.png";
 import performence from "../../Assets/service-seo-about-img.png";
 import wordpresssectionimg from "../../Assets/services-seo-about2-img.png";
 import creativethoughsec from "../../Assets/services-seo-creativeThrough-img.png";
+import BlogSection from "../../components/blogPosts";
 
 const featuredProjectData = [
   {
@@ -94,13 +95,13 @@ const SEO = () => {
         btnText="Sign Up With Our SEO Masters"
       />
 
-      <PixelPerfectSec
+      {/* <PixelPerfectSec
         secTitle="Get Found Fast By The"
         secTitleBlue="Digital Audience!"
         secDescription="Explore case studies of our clients who went from page 5 to page 1. From local businesses to e-commerce stores, our SEO services have helped brands improve their rankings, attract more qualified leads, and grow their online presence."
         projectsData={featuredProjectData}
         btnText="Witness Our Wins"
-      />
+      /> */}
 
       <PricingPlans
         secTitle="Flexible Pricing for Fixed Ranking At The Top"
@@ -114,11 +115,6 @@ const SEO = () => {
         btnText="Start Now"
       />
 
-      <ContactForm
-        secTitle="Ready To Discuss Your Search Engine Optimization Goals? Let’s Chat!"
-        secDescription="Book a free consultation with our professionals in California Web Coders now to see how we can help your business maximize its growth."
-      />
-
       <Creativitythrough
         title1="SEO Can Revamp Your Life on The"
         title2="Web"
@@ -127,6 +123,13 @@ const SEO = () => {
         image={creativethoughsec}
         btnText="Rank Your Website Now!"
       />
+
+      <ContactForm
+        secTitle="Ready To Discuss Your Search Engine Optimization Goals? Let’s Chat!"
+        secDescription="Book a free consultation with our professionals in California Web Coders now to see how we can help your business maximize its growth."
+      />
+
+      <BlogSection />
     </Layout>
   );
 };

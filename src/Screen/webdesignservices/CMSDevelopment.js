@@ -7,12 +7,12 @@ import PricingPlans from "../../components/PricingPlans";
 import ContactForm from "../../components/readytocheat";
 import Creativitythrough from "../../components/Creativitythrough";
 
-import pixleperfectimg1 from "../../Assets/service-webDesign-pixle-perfect-img1.png";
-import pixleperfectimg2 from "../../Assets/service-webDesign-pixle-perfect-img2.png";
-import pixleperfectimg3 from "../../Assets/service-webDesign-pixle-perfect-img3.png";
-import pixleperfectimg4 from "../../Assets/service-webDesign-pixle-perfect-img4.png";
-import pixleperfectimg5 from "../../Assets/service-webDesign-pixle-perfect-img5.png";
-import pixleperfectimg6 from "../../Assets/service-webDesign-pixle-perfect-img6.png";
+import pixleperfectimg1 from "../../Assets/service-cmsDev-pixle-perfect-img1.png";
+import pixleperfectimg2 from "../../Assets/service-cmsDev-pixle-perfect-img2.png";
+import pixleperfectimg3 from "../../Assets/service-cmsDev-pixle-perfect-img3.png";
+import pixleperfectimg4 from "../../Assets/service-cmsDev-pixle-perfect-img4.png";
+import pixleperfectimg5 from "../../Assets/service-cmsDev-pixle-perfect-img5.png";
+import pixleperfectimg6 from "../../Assets/service-cmsDev-pixle-perfect-img6.png";
 
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";

@@ -22,6 +22,7 @@ import serviceBannerImg from "../../Assets/services-digitalMarketing-banner-img.
 import performence from "../../Assets/service-digitalMarketing-about-img.png";
 import wordpresssectionimg from "../../Assets/services-digitalMarketing-about2-img.png";
 import creativethoughsec from "../../Assets/services-digitalMarketing-creativeThrough-img.png";
+import BlogSection from "../../components/blogPosts";
 
 const featuredProjectData = [
   {
@@ -94,13 +95,13 @@ const DigitalMarketing = () => {
         btnText="Book A Free Discovery Call"
       />
 
-      <PixelPerfectSec
+      {/* <PixelPerfectSec
         secTitle="From Clicks to Conversions - See What We’ve Done"
-        // secTitleBlue=""
+        secTitleBlue=""
         secDescription="Check out how we’ve helped brands grow through intentional marketing. From startups to established businesses, every campaign showcases how smoothly brand growth strategies, combined with creativity, are implemented at California Web Coders."
         projectsData={featuredProjectData}
         btnText="Browse Case Studies"
-      />
+      /> */}
 
       <PricingPlans
         secTitle="Flexible Packages, Big Results"
@@ -113,11 +114,6 @@ const DigitalMarketing = () => {
         btnText="Start Now"
       />
 
-      <ContactForm
-        secTitle="Let’s Discuss Your Strategy!"
-        secDescription="Book a free consultation with our digital marketing experts and discover how easy it can be to grow your business in the digital world."
-      />
-
       <Creativitythrough
         title1="Made-To-Perform"
         title2="Marketing"
@@ -126,6 +122,15 @@ const DigitalMarketing = () => {
         image={creativethoughsec}
         btnText="Get Your Strategy Now!"
       />
+
+      <ContactForm
+        secTitle="Let’s Discuss Your Strategy!"
+        secDescription="Book a free consultation with our digital marketing experts and discover how easy it can be to grow your business in the digital world."
+      />
+
+      <BlogSection />
+
+      
     </Layout>
   );
 };

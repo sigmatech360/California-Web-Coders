@@ -3,15 +3,24 @@ import "./index.css";
 import Layout from "../../components/layout";
 import ourworkheroimg from "../../Assets/ourworkheroimg.png";
 
-import pixleperfectimg1 from "../../Assets/pixle-perfect-img1.png";
-import pixleperfectimg2 from "../../Assets/pixle-perfect-img2.png";
-import pixleperfectimg3 from "../../Assets/pixle-perfect-img3.png";
-import pixleperfectimg4 from "../../Assets/pixle-perfect-img4.png";
-import pixleperfectimg5 from "../../Assets/pixle-perfect-img5.png";
-import pixleperfectimg6 from "../../Assets/pixle-perfect-img6.png";
-import project7 from "../../Assets/project7.png";
-import project8 from "../../Assets/project8.png";
-import project9 from "../../Assets/project9.png";
+import pixleperfectimg1 from "../../Assets/ourWork-pixle-perfect-img1.png";
+import pixleperfectimg2 from "../../Assets/ourWork-pixle-perfect-img2.png";
+import pixleperfectimg3 from "../../Assets/ourWork-pixle-perfect-img3.png";
+import pixleperfectimg4 from "../../Assets/ourWork-pixle-perfect-img4.png";
+import pixleperfectimg5 from "../../Assets/ourWork-pixle-perfect-img5.png";
+import pixleperfectimg6 from "../../Assets/ourWork-pixle-perfect-img6.png";
+import pixleperfectimg7 from "../../Assets/ourWork-pixle-perfect-img7.png";
+import pixleperfectimg8 from "../../Assets/ourWork-pixle-perfect-img8.png";
+import pixleperfectimg9 from "../../Assets/ourWork-pixle-perfect-img9.png";
+import pixleperfectimg10 from "../../Assets/ourWork-pixle-perfect-img10.png";
+import pixleperfectimg11 from "../../Assets/ourWork-pixle-perfect-img11.png";
+import pixleperfectimg12 from "../../Assets/ourWork-pixle-perfect-img12.png";
+import pixleperfectimg13 from "../../Assets/ourWork-pixle-perfect-img13.png";
+import pixleperfectimg14 from "../../Assets/ourWork-pixle-perfect-img14.png";
+import pixleperfectimg15 from "../../Assets/ourWork-pixle-perfect-img15.png";
+
+
+
 import NewsCard from "../../components/NewsCard";
 
 import Tab from "react-bootstrap/Tab";
@@ -22,56 +31,62 @@ const featuredProjectData = [
   {
     id: 1,
     image: pixleperfectimg1,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 2,
     image: pixleperfectimg2,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 3,
     image: pixleperfectimg3,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 4,
     image: pixleperfectimg4,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 5,
     image: pixleperfectimg5,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 6,
     image: pixleperfectimg6,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 7,
-    image: project7,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    image: pixleperfectimg7,
   },
   {
     id: 8,
-    image: project8,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    image: pixleperfectimg8,
   },
   {
     id: 9,
-    image: project9,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    image: pixleperfectimg9,
+  },
+  {
+    id: 10,
+    image: pixleperfectimg10,
+  },
+  {
+    id: 11,
+    image: pixleperfectimg11,
+  },
+  {
+    id: 12,
+    image: pixleperfectimg12,
+  },
+  {
+    id: 13,
+    image: pixleperfectimg13,
+  },
+  {
+    id: 14,
+    image: pixleperfectimg14,
+  },
+  {
+    id: 15,
+    image: pixleperfectimg15,
   },
 ];
 

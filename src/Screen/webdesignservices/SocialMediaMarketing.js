@@ -21,6 +21,7 @@ import wordpressbg from "../../Assets/services-smm-banner-bg.png";
 import performence from "../../Assets/service-smm-about-img.png";
 import wordpresssectionimg from "../../Assets/services-smm-about2-img.png";
 import creativethoughsec from "../../Assets/services-smm-creativeThrough-img.png";
+import BlogSection from "../../components/blogPosts";
 
 const featuredProjectData = [
   {
@@ -92,13 +93,13 @@ const SocialMediaMarketing = () => {
         btnText="The First Step To Growth"
       />
 
-      <PixelPerfectSec
+      {/* <PixelPerfectSec
         secTitle="Real Brands. Real Engagement."
-        // secTitleBlue=""
+        secTitleBlue=""
         secDescription="We’ve helped brands grow faster, look better, and connect deeper with standout social media campaigns. From polished visuals to high-performing ads, we make every post count."
         projectsData={featuredProjectData}
         btnText="Browse Case Studies"
-      />
+      /> */}
 
       <PricingPlans
         secTitle="Social Strategy That Fits Your Budget"
@@ -111,11 +112,6 @@ const SocialMediaMarketing = () => {
         btnText="Start Now"
       />
 
-      <ContactForm
-        secTitle="Craft Your Social Media Marketing Campaign With Us!"
-        secDescription="Sign up to chat with our social media experts now, get a free consultation, and take your step toward business growth, entirely at your choice!"
-      />
-
       <Creativitythrough
         title1="Social Media Marketing Beyond"
         title2="Hashtags"
@@ -124,6 +120,13 @@ const SocialMediaMarketing = () => {
         image={creativethoughsec}
         btnText="Get Your Strategy Now!"
       />
+
+      <ContactForm
+        secTitle="Craft Your Social Media Marketing Campaign With Us!"
+        secDescription="Sign up to chat with our social media experts now, get a free consultation, and take your step toward business growth, entirely at your choice!"
+      />
+
+      <BlogSection />
     </Layout>
   );
 };

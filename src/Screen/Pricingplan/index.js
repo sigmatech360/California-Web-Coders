@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import Layout from "../../components/layout";
 import HeroSection from "../../components/Herosection";
+import bannerBgImage from "../../Assets/services-cmsDev-banner-bg.png";
 import Testimonial from "../../components/Testimonials";
 
 import Pricingplanheroimg from "../../Assets/Pricingplanheroimg.png";
@@ -263,6 +264,9 @@ const PricingPlan = () => {
   return (
     <Layout>
       <HeroSection
+        leftCol="col-lg-6"
+        rightCol="col-lg-6"
+        bgImage={bannerBgImage}
         title="Pricing plan"
         para="At California Web Coders, we offer flexible financing options to keep your convenience at the top!"
         heroimg={Pricingplanheroimg}

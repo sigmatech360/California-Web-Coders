@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 
 import ContactForm from "../../components/readytocheat";
 import HeroSection from "../../components/Herosection";
+import bannerBgImage from "../../Assets/newsTrend-banner-bg.png";
 import { LiaPinterestP } from "react-icons/lia";
 
 import Pricingplanheroimg from "../../Assets/Pricingplanheroimg.png";
@@ -22,9 +23,12 @@ const NewsandTrends = () => {
   return (
     <Layout>
       <HeroSection
+      // leftCol="col-lg-6"
+      //   rightCol="col-lg-6"
+        bgImage={bannerBgImage}
         title="Discover What’s Trending In The Tech And Marketing World."
         para="Browse our latest posts covering online trends, digital tools, and expert opinions that shape modern websites and marketing success."
-        heroimg={Pricingplanheroimg}
+        // heroimg={Pricingplanheroimg}
       />
 
       <Trends />

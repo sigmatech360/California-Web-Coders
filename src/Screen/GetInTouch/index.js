@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 
 import ContactForm from "../../components/readytocheat";
 import HeroSection from "../../components/Herosection";
+import bannerBgImage from "../../Assets/contactUS-banner-bg.png";
 
 import Pricingplanheroimg from "../../Assets/Pricingplanheroimg.png";
 
@@ -12,9 +13,10 @@ const Getintouch = () => {
   return (
     <Layout>
       <HeroSection
+        bgImage={bannerBgImage}
         title="Let’s Talk About Your Next Big Move"
         para="Whether you have a project in mind, a question to ask, or just want to connect, we’re here to help. Reach out and explore how we can turn your vision into results."
-        heroimg={Pricingplanheroimg}
+        // heroimg={Pricingplanheroimg}
       />
       <Intouch />
       <ContactForm />
