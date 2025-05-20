@@ -93,7 +93,6 @@ button:focus {
   background-color: #031243;
 }
 
-
 .packages-number a {
   text-decoration: none;
   color: #031243;
@@ -339,4 +338,41 @@ button:focus {
   .sec-head h2 {
     font-size: 30px;
   }
+}
+
+.blog-detail-content .post-content p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.blog-detail-content .post-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.loader-div {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-div img {
+  width: 100px;
+  max-width: 100px;
+}
+
+.wordpressBlogCard img {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-detail-banner{
+  position: relative;
+}
+.blog-detail-banner .innerBgLayer {
+    background: #0504a559;
+    width: 100%;
+    position: absolute;
+    height: 100%;
 }

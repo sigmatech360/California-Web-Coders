@@ -17,6 +17,7 @@ import CustomWebDevelopment from "../Screen/webdesignservices/CustomWebDevelopme
 import SEO from "../Screen/webdesignservices/SEO";
 import LogoDesign from "../Screen/webdesignservices/LogoDesign";
 import MobileAppDevelopment from "../Screen/webdesignservices/MobileAppDevelopment";
+import BlogDetail from "../Screen/BlogDetail";
 
 
 export default function UserRouter() {
@@ -41,7 +42,8 @@ export default function UserRouter() {
 
         <Route path="/our-work" element={<OurWork />} />
         <Route path="/pricing-plan" element={<PricingPlan />} />
-        <Route path="/news-trends" element={<NewsandTrends />} />
+        <Route path="/blogs" element={<NewsandTrends />} />
+        <Route path="/blog/:slug" element={<BlogDetail />} />
         <Route path="/get-intouch" element={<Getintouch />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

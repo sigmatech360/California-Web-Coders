@@ -92,8 +92,8 @@ function Header() {
                     Pricing Plan
                   </NavDropdown.Item>
                   {/* <NavDropdown.Divider /> */}
-                  <NavDropdown.Item as={Link} to="/news-trends">
-                    News Trends
+                  <NavDropdown.Item as={Link} to="/blogs">
+                    Blogs
                   </NavDropdown.Item>
                   <NavDropdown.Item as={Link} to="/get-intouch">
                     Get In Touch

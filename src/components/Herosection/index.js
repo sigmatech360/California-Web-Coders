@@ -4,9 +4,10 @@ import "./index.css";
 const HeroSection = (props) => {
   return (
     <section
-      className="HeroSection"
+      className={`HeroSection ${props.className}`}
       style={{ backgroundImage: `url(${props.bgImage})` }}
     >
+      {props.innerBgLayer && <div className="innerBgLayer"></div>}
       <div className="container">
         <div className="row align-items-center justify-content-center flex-lg-row flex-column-reverse gap-lg-0 gap-4">
           <div className={`${props.leftCol || `col-lg-8`}`}>

@@ -47,7 +47,7 @@ const BlogSection = () => {
                 Blogs & Articles
               </h2>
               <Link
-                to={"/news-trends"}
+                to={"/blogs"}
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-offset="0"

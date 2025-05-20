@@ -9,9 +9,21 @@
   align-items: center;
   min-height: 500px;
 }
+.blog-detail-banner {
+  position: relative;
+}
+.blog-detail-banner .innerBgLayer {
+  background: #0404a580;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
 .HeroSection-content h1 {
   font-size: 70px;
   line-height: 1;
+}
+.blog-detail-banner h1 {
+  font-size: 60px;
 }
 
 .HeroSection-content p {
@@ -20,6 +32,9 @@
 @media (max-width: 1199px) {
   .HeroSection {
     min-height: 400px;
+  }
+  .blog-detail-banner h1 {
+    font-size: 50px;
   }
 }
 @media (max-width: 991px) {
