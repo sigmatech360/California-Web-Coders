@@ -21,6 +21,7 @@
 .HeroSection-content h1 {
   font-size: 70px;
   line-height: 1;
+  text-transform: capitalize;
 }
 .blog-detail-banner h1 {
   font-size: 60px;

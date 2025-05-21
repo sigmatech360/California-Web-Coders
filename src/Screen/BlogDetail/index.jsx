@@ -7,7 +7,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 
 const BlogDetail = () => {
-  const { id, slug } = useParams();
+  const { id, slug, categorySlug } = useParams();
   const [post, setPost] = useState(null);
 
   useEffect(() => {
@@ -41,19 +41,30 @@ const BlogDetail = () => {
 
   return (
     <Layout>
-      <HeroSection
+      {/* <HeroSection
         innerBgLayer
         className="blog-detail-banner"
         bgImage={featuredImage}
-        // title="Discover What’s Trending In The Tech And Marketing World."
         title={post.title.rendered}
         // para=""
-      />
+      /> */}
+
+      <section className="blog-detail-banner mt-4 ">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-9">
+              <div className="blog-detail-banner-img">
+                <img src={featuredImage} alt="" className="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="blog-detail-content">
         <div className="container py-5">
           <div className="row justify-content-center">
-            <div className="col-lg-10">
+            <div className="col-lg-9">
               <h2
                 className="mb-4"
                 dangerouslySetInnerHTML={{ __html: post.title.rendered }}

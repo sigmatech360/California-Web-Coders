@@ -362,17 +362,56 @@ button:focus {
 }
 
 .wordpressBlogCard img {
-    height: 250px;
-    object-fit: cover;
-    object-position: center;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+.blog-with-sidebar .wordpressBlogCard img {
+  height: 200px;
 }
 
-.blog-detail-banner{
-  position: relative;
+.category-sidebar {
+  position: sticky;
+  top: 0;
+  margin-bottom: 30px;
 }
-.blog-detail-banner .innerBgLayer {
-    background: #0504a559;
-    width: 100%;
-    position: absolute;
-    height: 100%;
+
+.category-sidebar .list-group-item.active {
+  background-color: #0504a5;
+}
+
+.category-sidebar .list-group-item a {
+  color: #0504a5;
+  text-decoration: none;
+  font-size: 16px;
+}
+.blog-detail-banner-img img{
+  width: 100%;
+}
+
+@media (max-width: 1399px) {
+  .blog-with-sidebar .wordpressBlogCard img {
+    height: 160px;
+  }
+}
+@media (max-width: 1199px) {
+  .blog-with-sidebar .wordpressBlogCard img {
+    height: 210px;
+  }
+}
+
+@media (max-width: 991px) {
+  .blog-with-sidebar .wordpressBlogCard img {
+    height: 160px;
+  }
+}
+@media (max-width: 767px) {
+  .wordpressBlogCard img,
+  .blog-with-sidebar .wordpressBlogCard img {
+    height: unset;
+  }
+  .blog-card .card-title,
+  .blog-card .card-text {
+    max-width: unset;
+  }
 }

@@ -18,7 +18,7 @@ import SEO from "../Screen/webdesignservices/SEO";
 import LogoDesign from "../Screen/webdesignservices/LogoDesign";
 import MobileAppDevelopment from "../Screen/webdesignservices/MobileAppDevelopment";
 import BlogDetail from "../Screen/BlogDetail";
-
+import CategoryPage from "../Screen/CategoryPage";
 
 export default function UserRouter() {
   return (
@@ -26,24 +26,40 @@ export default function UserRouter() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        
-        
+
         <Route path="/services" element={<Webdesignservices />} />
         <Route path="/services/web-design" element={<WebDesign />} />
         <Route path="/services/cms-development" element={<CMSDevelopment />} />
-        <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
-        <Route path="/services/social-media-marketing" element={<SocialMediaMarketing />} />
-        <Route path="/services/custom-web-development" element={<CustomWebDevelopment />} />
+        <Route
+          path="/services/digital-marketing"
+          element={<DigitalMarketing />}
+        />
+        <Route
+          path="/services/social-media-marketing"
+          element={<SocialMediaMarketing />}
+        />
+        <Route
+          path="/services/custom-web-development"
+          element={<CustomWebDevelopment />}
+        />
         <Route path="/services/seo" element={<SEO />} />
         <Route path="/services/logo-design" element={<LogoDesign />} />
-        <Route path="/services/mobile-app-development" element={<MobileAppDevelopment />} />
-        
-
+        <Route
+          path="/services/mobile-app-development"
+          element={<MobileAppDevelopment />}
+        />
 
         <Route path="/our-work" element={<OurWork />} />
         <Route path="/pricing-plan" element={<PricingPlan />} />
-        <Route path="/blogs" element={<NewsandTrends />} />
+
+        {/* Blogs Routes */}
+        <Route path="/blog" element={<NewsandTrends />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
+        <Route path="/blog/category/:categorySlug" element={<CategoryPage />} />
+        {/* <Route path="/blogs/:categorySlug/:slug" element={<BlogDetail />} /> */}
+        {/* <Route path="/posts/:categorySlug/:slug" element={<BlogDetail />} /> */}
+        {/* Blogs Routes */}
+
         <Route path="/get-intouch" element={<Getintouch />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
