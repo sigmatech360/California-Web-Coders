@@ -22,8 +22,9 @@ import serviceBannerImg from "../../Assets/services-cmsDev-banner-img.png";
 import performence from "../../Assets/service-cmsDev-about-img.png";
 import wordpresssectionimg from "../../Assets/services-cmsDev-about2-img.png";
 import creativethoughsec from "../../Assets/services-cmsDev-creativeThrough-img.png";
+import BlogSection from "../../components/blogPosts";
 
-export const cmsDevelopmentPortfolioData = [
+export const cmsDevelopmentPortfolioData = [ 
   {
     id: 1,
     image: pixleperfectimg1,
@@ -125,6 +126,7 @@ const CMSDevelopment = () => {
         image={creativethoughsec}
         btnText="Start Your Journey With Us"
       />
+      <BlogSection categorySlug="cms-development" />
     </Layout>
   );
 };

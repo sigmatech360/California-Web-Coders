@@ -22,6 +22,7 @@ import wordpressbg from "../../Assets/services-webDesign-banner-bg.png";
 import performence from "../../Assets/service-webDesign-about-img.png";
 import wordpresssectionimg from "../../Assets/services-webDesign-about2-img.png";
 import creativethoughsec from "../../Assets/services-webDesign-creativeThrough-img.png";
+import BlogSection from "../../components/blogPosts";
 
 export const webDesignPortfolioData = [
   {
@@ -122,6 +123,8 @@ const WebDesign = () => {
         btnText="Visit Our Portfolio"
         image={creativethoughsec}
       />
+
+      <BlogSection categorySlug="web-design" />
     </Layout>
   );
 };

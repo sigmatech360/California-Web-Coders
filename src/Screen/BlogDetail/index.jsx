@@ -5,17 +5,18 @@ import loaderGif from "../../Assets/loader.gif";
 import HeroSection from "../../components/Herosection";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import Loader from "../../components/Loader";
 
 const BlogDetail = () => {
   const { id, slug, categorySlug } = useParams();
   const [post, setPost] = useState(null);
 
+  const baseURL = process.env.REACT_APP_BASE_URL;
+
   useEffect(() => {
     axios
-      //   .get(`https://californiawebcoders.com/wp-json/wp/v2/posts/${slug}?_embed`)
-      .get(
-        `https://californiawebcoders.com/wp-json/wp/v2/posts?slug=${slug}&_embed`
-      )
+      //   .get(`${baseURL}/posts/${slug}?_embed`)
+      .get(`${baseURL}/posts?slug=${slug}&_embed`)
       //   .then((res) => setPost(res.data))
       .then((res) => {
         if (res.data.length > 0) {
@@ -25,13 +26,14 @@ const BlogDetail = () => {
         }
       })
       .catch((err) => console.error("Error fetching post:", err));
-  }, []);
+  }, [slug]);
 
   if (!post)
     return (
-      <div className="loader-div">
-        <img src={loaderGif} alt="" />
-      </div>
+      // <div className="loader-div">
+      //   <img src={loaderGif} alt="" />
+      // </div>
+      <Loader />
     );
 
   // Get featured image

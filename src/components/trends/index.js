@@ -11,9 +11,11 @@ const Trends = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const baseURL = process.env.REACT_APP_BASE_URL;
+
   useEffect(() => {
     axios
-      .get("https://californiawebcoders.com/wp-json/wp/v2/categories")
+      .get(`${baseURL}/categories`)
       .then((res) => {
         setCategories(res.data);
         console.log("categories", res.data);
@@ -24,8 +26,8 @@ const Trends = () => {
   useEffect(() => {
     setLoading(true);
     const url = activeCategory
-      ? `https://californiawebcoders.com/wp-json/wp/v2/posts?categories=${activeCategory}&_embed`
-      : `https://californiawebcoders.com/wp-json/wp/v2/posts?_embed`;
+      ? `${baseURL}/posts?categories=${activeCategory}&_embed`
+      : `${baseURL}/posts?_embed`;
 
     axios
       .get(url)

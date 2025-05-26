@@ -126,7 +126,7 @@ const SocialMediaMarketing = () => {
         secDescription="Sign up to chat with our social media experts now, get a free consultation, and take your step toward business growth, entirely at your choice!"
       />
 
-      <BlogSection />
+      <BlogSection categorySlug="social-media-marketing" />
     </Layout>
   );
 };

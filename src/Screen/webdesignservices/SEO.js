@@ -129,7 +129,7 @@ const SEO = () => {
         secDescription="Book a free consultation with our professionals in California Web Coders now to see how we can help your business maximize its growth."
       />
 
-      <BlogSection />
+      <BlogSection categorySlug="seo" />
     </Layout>
   );
 };

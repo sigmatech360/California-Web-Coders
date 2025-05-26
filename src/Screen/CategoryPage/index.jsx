@@ -12,10 +12,12 @@ const CategoryPage = () => {
   const [loading, setLoading] = useState(true);
   const [categoryId, setCategoryId] = useState(null);
 
+  const baseURL = process.env.REACT_APP_BASE_URL;
+
   useEffect(() => {
     // Fetch categories to find matching slug
     axios
-      .get("https://californiawebcoders.com/wp-json/wp/v2/categories")
+      .get(`${baseURL}/categories`)
       .then((res) => {
         const matched = res.data.find((cat) => cat.slug === categorySlug);
         if (matched) {
@@ -36,7 +38,7 @@ const CategoryPage = () => {
     setLoading(true);
     axios
       .get(
-        `https://californiawebcoders.com/wp-json/wp/v2/posts?categories=${categoryId}&_embed`
+        `${baseURL}/posts?categories=${categoryId}&_embed`
       )
       .then((res) => {
         setPosts(res.data);

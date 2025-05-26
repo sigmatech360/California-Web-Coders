@@ -22,6 +22,7 @@ import serviceBannerImg from "../../Assets/services-customDev-banner-img.png";
 import performence from "../../Assets/service-customDev-about-img.png";
 import wordpresssectionimg from "../../Assets/services-customDev-about2-img.png";
 import creativethoughsec from "../../Assets/services-customDev-creativeThrough-img.png";
+import BlogSection from "../../components/blogPosts";
 
 export const customWebDesignPortfolioData = [
   {
@@ -126,7 +127,9 @@ const CustomWebDevelopment = () => {
         image={creativethoughsec}
         btnText="Build Your Custom Website Now!"
       />
-    </Layout>
+
+      <BlogSection categorySlug="custom-web-development" />
+    </Layout> 
   );
 };
 

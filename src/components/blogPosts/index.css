@@ -55,8 +55,8 @@
 .blog-card img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  /* height: 200px; */
-  /* object-fit: cover; */
+  height: 200px;
+  object-fit: cover;
 }
 
 .blog-card .card-body {
@@ -107,6 +107,9 @@
   }
   .blog-blue-head {
     padding: 30px 16px;
+  }
+  .blog-card img{
+    height: unset;
   }
 }
 

@@ -22,6 +22,7 @@ import serviceBannerImg from "../../Assets/services-mobileApp-banner-img.png";
 import performence from "../../Assets/service-mobileAppDev-about-img.png";
 import wordpresssectionimg from "../../Assets/services-mobileAppDev-about2-img.png";
 import creativethoughsec from "../../Assets/services-mobileAppDev-creativeThrough-img.png";
+import BlogSection from "../../components/blogPosts";
 
 export const mobileAppDevelopmentPortfolioData = [
   {
@@ -125,6 +126,8 @@ const MobileAppDevelopment = () => {
         image={creativethoughsec}
         btnText="Sign Up For Your App"
       />
+
+      <BlogSection categorySlug="mobile-app-development" />
     </Layout>
   );
 };
