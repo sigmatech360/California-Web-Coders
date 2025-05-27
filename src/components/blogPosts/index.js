@@ -85,9 +85,9 @@ const BlogSection = ({ categorySlug = null, limit = 3 }) => {
               </h2>
               <Link
                 to={"/blog"}
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-offset="0"
+                // data-aos="fade-left"
+                // data-aos-duration="1000"
+                // data-aos-offset="0"
               >
                 View All Blogs
               </Link>

@@ -49,6 +49,12 @@
   font-size: 16px;
   display: inline-block;
   text-decoration: none;
+  transition: all .25s ease;
+}
+.why-wordpress-content .morebenifit:hover{
+  background-color: #f9c74f;
+  color: #0504a5;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media (max-width: 1399px) {

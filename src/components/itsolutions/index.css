@@ -91,6 +91,10 @@
   display: inline-block;
   font-size: 16px;
 }
+.itSolutions .learnmore:hover{
+  background-color: #f9c74f;
+  color: #0504a5;
+}
 
 .itSolutions .para4 {
   font-weight: 400 !important;
@@ -110,6 +114,10 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+.missionstatementbtn:hover{
+  background-color: #f9c74f;
+  color: #0504a5;
 }
 
 .itSolutions-list {

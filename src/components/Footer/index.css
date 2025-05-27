@@ -23,7 +23,33 @@ footer {
   text-align: left;
   color: #fff;
   text-decoration: none;
+  transition: all 0.3s ease;
+  width: fit-content;
+  position: relative;
 }
+.main-footer-link:hover {
+    color: #fff;
+    font-weight: 500;
+}
+.main-footer-link:hover:before {
+    width: 100%;
+}
+.main-footer-link:before
+ {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width .3s ease;
+}
+
+
+
+
 
 footer ul li a:hover {
   color: #cccccc;

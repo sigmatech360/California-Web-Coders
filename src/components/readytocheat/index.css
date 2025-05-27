@@ -28,6 +28,11 @@
   background-color: #0504a5;
   font-size: 15px;
   font-family: "Outfit";
+  transition: all .25s ease;
+}
+.ContactForm .sendmessage:hover{
+  background-color: #f9c74f;
+  color: #0504a5;
 }
 
 .ContactForm .lead {

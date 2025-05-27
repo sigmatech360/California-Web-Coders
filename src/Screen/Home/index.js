@@ -345,7 +345,7 @@ function Home() {
         FrequentQuestions="homeFrequentQuestions"
         faqData={faqData}
       />
-      <BlogSection />
+      <BlogSection categorySlug="blogs" />
     </Layout>
   );
 }

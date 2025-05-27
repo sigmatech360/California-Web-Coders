@@ -25,6 +25,8 @@
 }
 .blog-detail-banner h1 {
   font-size: 60px;
+  background: #0404a580;
+  padding: 10px 16px;
 }
 
 .HeroSection-content p {

@@ -63,7 +63,7 @@ const CategoryPage = () => {
       <Layout>
         <HeroSection
         //   innerBgLayer
-          className="blog-detail-banner"
+          // className="blog-detail-banner"
           //   bgImage={featuredImage}
           title={categorySlug.replace("-", " ")}
           para={`Blogs / Category / ${categorySlug.replace("-", " ")}`}

@@ -33,9 +33,9 @@ const MainBanner = () => {
                   <Link
                     to={"/our-work"}
                     className="herobtn"
-                    data-aos="fade-up"
-                    data-aos-duration="3000"
-                    data-aos-offset="0"
+                    // data-aos="fade-up"
+                    // data-aos-duration="3000"
+                    // data-aos-offset="0"
                   >
                     View Our Work
                   </Link>

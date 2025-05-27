@@ -111,6 +111,12 @@
   padding: 10px 30px;
   border: none;
   font-size: 16px;
+  transition: all .25s ease;
+}
+.price-card-btn:hover{
+  background-color: #f9c74f;
+  color: #0504a5;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .Mobileworld .shareidea {

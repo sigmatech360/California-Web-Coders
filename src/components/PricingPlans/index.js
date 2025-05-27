@@ -179,9 +179,9 @@ const PricingPlans = (props) => {
               )}
               <Link to={"/our-work"}
                 className="morebenifit"
-                data-aos="fade-left"
-                data-aos-duration="3000"
-                data-aos-offset="0"
+                // data-aos="fade-left"
+                // data-aos-duration="3000"
+                // data-aos-offset="0"
               >
                 {props.btnText || `See More Benefits`}
               </Link>
