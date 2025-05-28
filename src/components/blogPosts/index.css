@@ -54,6 +54,9 @@
   overflow: hidden;
   transition: transform 0.3s;
 }
+.blog-card h5{
+      color: #031243;
+}
 
 .blog-card:hover {
   transform: translateY(-5px);
@@ -75,6 +78,9 @@
   color: #031243;
   font-weight: 600;
   max-width: 370px;
+}
+.blog-card a{
+  text-decoration: none;
 }
 
 .blog-card .card-text {

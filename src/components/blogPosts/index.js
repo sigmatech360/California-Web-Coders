@@ -161,11 +161,19 @@ const BlogSection = ({ categorySlug = null, limit = 3 }) => {
               return (
                 <div className="col-lg-4 col-md-6 mb-4" key={index}>
                   <div className="card blog-card">
-                    <img src={image} className="card-img-top" alt="Blog Post" />
+                    <Link to={`/blog/${post.slug}`}>
+                      <img
+                        src={image}
+                        className="card-img-top"
+                        alt="Blog Post"
+                      />
+                    </Link>
                     <div className="mt-2">
-                      <h5 className="card-title">
-                        {post.title.rendered || post.title}
-                      </h5>
+                      <Link to={`/blog/${post.slug}`}>
+                        <h5 className="card-title">
+                          {post.title.rendered || post.title}
+                        </h5>
+                      </Link>
                       {post.excerpt ? (
                         <p
                           className="card-text"

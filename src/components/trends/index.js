@@ -70,13 +70,17 @@ const Trends = () => {
                         // data-aos-duration="2000"
                         data-aos-delay={index * 200}
                       >
-                        <img
-                          src={image}
-                          className="card-img-top"
-                          alt="Blog Post"
-                        />
+                        <Link to={`/blog/${post.slug}`}>
+                          <img
+                            src={image}
+                            className="card-img-top"
+                            alt="Blog Post"
+                          />
+                        </Link>
                         <div className="mt-2">
-                          <h5 className="card-title">{title}</h5>
+                          <Link to={`/blog/${post.slug}`}>
+                            <h5 className="card-title">{title}</h5>
+                          </Link>
                           <p
                             className="card-text"
                             dangerouslySetInnerHTML={{ __html: excerpt }}

@@ -37,9 +37,7 @@ const CategoryPage = () => {
 
     setLoading(true);
     axios
-      .get(
-        `${baseURL}/posts?categories=${categoryId}&_embed`
-      )
+      .get(`${baseURL}/posts?categories=${categoryId}&_embed`)
       .then((res) => {
         setPosts(res.data);
         setLoading(false);
@@ -62,7 +60,7 @@ const CategoryPage = () => {
     <>
       <Layout>
         <HeroSection
-        //   innerBgLayer
+          //   innerBgLayer
           // className="blog-detail-banner"
           //   bgImage={featuredImage}
           title={categorySlug.replace("-", " ")}
@@ -82,19 +80,24 @@ const CategoryPage = () => {
                   return (
                     <div className="col-lg-4 col-md-6 mb-4" key={index}>
                       <div className="card blog-card wordpressBlogCard">
-                        <img src={image} className="card-img-top" alt="Post" />
+                        <Link to={`/blog/${post.slug}`}>
+                          <img
+                            src={image}
+                            className="card-img-top"
+                            alt="Post"
+                          />
+                        </Link>
                         <div className="mt-2">
-                          <h5>{post.title.rendered}</h5>
+                          <Link to={`/blog/${post.slug}`}>
+                            <h5>{post.title.rendered}</h5>
+                          </Link>
                           <p
                             dangerouslySetInnerHTML={{
                               __html: post.excerpt.rendered,
                             }}
                           />
                           {/* <Link to={`/blog/${post.slug}`} className="read-more"> */}
-                          <Link
-                            to={`/blog/${post.slug}`}
-                            className="read-more"
-                          >
+                          <Link to={`/blog/${post.slug}`} className="read-more">
                             Read More
                           </Link>
                         </div>
