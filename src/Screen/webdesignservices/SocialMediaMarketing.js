@@ -124,6 +124,7 @@ const SocialMediaMarketing = () => {
       <ContactForm
         secTitle="Craft Your Social Media Marketing Campaign With Us!"
         secDescription="Sign up to chat with our social media experts now, get a free consultation, and take your step toward business growth, entirely at your choice!"
+        btnText="Let’s Chat"
       />
 
       <BlogSection categorySlug="social-media-marketing" />

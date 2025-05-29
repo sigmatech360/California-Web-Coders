@@ -116,6 +116,7 @@ const CMSDevelopment = () => {
       <ContactForm
         secTitle="Ready to Take Control of Your Website?"
         secDescription="Book a free consultation with our CMS pros and discover how easy managing your site can be."
+        btnText="Let’s Chat"
       />
 
       <Creativitythrough

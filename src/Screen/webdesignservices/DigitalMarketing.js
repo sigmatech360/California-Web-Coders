@@ -126,6 +126,7 @@ const DigitalMarketing = () => {
       <ContactForm
         secTitle="Let’s Discuss Your Strategy!"
         secDescription="Book a free consultation with our digital marketing experts and discover how easy it can be to grow your business in the digital world."
+        btnText="Let’s Chat"
       />
 
       <BlogSection categorySlug="digital-marketing" />

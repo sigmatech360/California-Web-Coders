@@ -127,6 +127,7 @@ const SEO = () => {
       <ContactForm
         secTitle="Ready To Discuss Your Search Engine Optimization Goals? Let’s Chat!"
         secDescription="Book a free consultation with our professionals in California Web Coders now to see how we can help your business maximize its growth."
+        btnText="Let’s Chat"
       />
 
       <BlogSection categorySlug="seo" />

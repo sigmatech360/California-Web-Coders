@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import "./index.css"; // Add any additional styling here
 import footerlogo from "../../Assets/footerlogo.png";
 import footerlogo1 from "../../Assets/footerlogo2.png";
@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   const [email, setEmail] = useState("");
   const apiUrl = process.env.REACT_APP_API_BASE_URL;
-  console.log("apiUrl", apiUrl)
+  console.log("apiUrl", apiUrl);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,7 +27,7 @@ function Footer() {
 
       const result = await response.json();
       console.log(result);
-      // alert("Email Submitted Successfully"); 
+      // alert("Email Submitted Successfully");
       toast.success("Email submitted successfully!");
     } catch (error) {
       console.log(`Error submitting email:`, error);
@@ -44,10 +44,10 @@ function Footer() {
             <Link to={"/"} className="main-footer-logo">
               <img src={footerlogo} alt="Footer Logo" />
             </Link>
-            {/* <p className="para mt-2">
-              Lorem Ipsum Dolor Sit Amet Conset Ateur Adipisicing Elit, Sed Do
-              Eiusmod...
-            </p> */}
+            <p className="para mt-2">
+              Delivering custom digital solutions with creativity, precision,
+              and passion. Your success is our mission.
+            </p>
           </div>
           <div className="col-lg-8">
             <div className="row">
@@ -59,7 +59,7 @@ function Footer() {
                   </Link>
                   <Link to={"/about"} className="main-footer-link">
                     About Us
-                  </Link> 
+                  </Link>
                   <Link to={"/services"} className="main-footer-link">
                     Services
                   </Link>
@@ -129,7 +129,10 @@ function Footer() {
             {/* Newsletter Signup */}
             <div className="newsletter-signup text-center text-md-start">
               <h5 className="mb-2">Subscribe to Our Newsletter</h5>
-              <form className="d-flex justify-content-center" onSubmit={handleSubmit}>
+              <form
+                className="d-flex justify-content-center"
+                onSubmit={handleSubmit}
+              >
                 <div className="sendmailtab">
                   <input
                     type="email"
@@ -137,7 +140,7 @@ function Footer() {
                     placeholder="Email Address"
                     name="email"
                     value={email}
-                    onChange={e => setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   <button type="submit" className="sendbtn btn">
                     <SiMinutemailer />

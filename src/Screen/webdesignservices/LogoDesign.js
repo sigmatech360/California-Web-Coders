@@ -115,6 +115,7 @@ const LogoDesign = () => {
       <ContactForm
         secTitle="Ready To Design Your Brand’s Signature?"
         secDescription="Say goodbye to generic designs and hello to a custom brand logo that instantly connects with your audience."
+        btnText="Let’s Chat"
       />
 
       <Creativitythrough

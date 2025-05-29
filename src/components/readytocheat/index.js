@@ -126,7 +126,7 @@ const ContactForm = (props) => {
                 </div>
                 <div className="text-center mt-4">
                   <button type="submit" className="sendmessage btn   btn-lg">
-                    Send Message
+                    {props.btnText || `Send Message`}
                   </button>
                 </div>
               </div>
