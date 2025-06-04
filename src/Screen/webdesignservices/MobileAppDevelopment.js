@@ -102,7 +102,7 @@ const MobileAppDevelopment = () => {
         btnText="A glimpse of our expertise!"
       />
 
-      <PricingPlans
+      {/* <PricingPlans
         secTitle="Flexible Plans For Growing Ideas"
         secDescription="We offer straightforward pricing for apps of all sizes. Scalable, customizable, and built to match your vision."
         image={wordpresssectionimg}
@@ -111,7 +111,7 @@ const MobileAppDevelopment = () => {
         whyWordressDescription2="With a team of skilled mobile app developers, we focus on delivering apps that work beautifully and deliver measurable impact. From strategy to store submission, we handle the heavy lifting so you can focus on growth."
         whyWordressDescription3="Get a custom-built solution with proven tech and real support."
         btnText="Witness Digital Success"
-      />
+      /> */}
 
       <ContactForm
         secTitle="Chat With Our Professional Mobile App Developers!"

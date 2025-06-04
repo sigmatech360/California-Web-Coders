@@ -14,6 +14,13 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import PricePlanCard from "../../components/PricePlanCard";
 import MainBanner from "../../components/mainBanner";
+import {
+  eCommerseWebsitePricingPlansData,
+  logoDesignPricingPlansData,
+  seoPricingPlansData,
+  smmPricingPlansData,
+  webDesignPricingPlansData,
+} from "../../data";
 
 const pricingPlanData = [
   {
@@ -204,7 +211,7 @@ function Home() {
                 data-aos-duration="3000"
                 data-aos-offset="0"
               >
-                {pricingPlanData.map((item, index) => (
+                {seoPricingPlansData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
                     <PricePlanCard
                       name={item.name}
@@ -224,7 +231,7 @@ function Home() {
                 data-aos-duration="3000"
                 data-aos-offset="0"
               >
-                {pricingPlanData.map((item, index) => (
+                {logoDesignPricingPlansData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
                     <PricePlanCard
                       name={item.name}
@@ -244,7 +251,7 @@ function Home() {
                 data-aos-duration="3000"
                 data-aos-offset="0"
               >
-                {pricingPlanData.map((item, index) => (
+                {webDesignPricingPlansData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
                     <PricePlanCard
                       name={item.name}
@@ -257,26 +264,16 @@ function Home() {
                 ))}
               </div>
             </Tab>
-            <Tab eventKey="nft-design" title="NFT Design">
+            {/* <Tab eventKey="nft-design" title="NFT Design">
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
                 data-aos-duration="3000"
                 data-aos-offset="0"
               >
-                {pricingPlanData.map((item, index) => (
-                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
-                    <PricePlanCard
-                      name={item.name}
-                      actualPrice={item.price.actualPrice}
-                      discountPrice={item.price.disountPrice}
-                      servicesList={item.servicesList}
-                      number={item.number}
-                    />
-                  </div>
-                ))}
+                <h1>NFT Design</h1>
               </div>
-            </Tab>
+            </Tab> */}
             <Tab eventKey="eCommerce-website" title="E Commerce Website">
               <div
                 className="row justify-content-center"
@@ -284,7 +281,7 @@ function Home() {
                 data-aos-duration="3000"
                 data-aos-offset="0"
               >
-                {pricingPlanData.map((item, index) => (
+                {eCommerseWebsitePricingPlansData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
                     <PricePlanCard
                       name={item.name}
@@ -297,26 +294,17 @@ function Home() {
                 ))}
               </div>
             </Tab>
-            <Tab eventKey="video-animation" title="Video Animation">
+            {/* <Tab eventKey="video-animation" title="Video Animation">
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
                 data-aos-duration="3000"
                 data-aos-offset="0"
               >
-                {pricingPlanData.map((item, index) => (
-                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
-                    <PricePlanCard
-                      name={item.name}
-                      actualPrice={item.price.actualPrice}
-                      discountPrice={item.price.disountPrice}
-                      servicesList={item.servicesList}
-                      number={item.number}
-                    />
-                  </div>
-                ))}
+                
+                <h1>Video Animation</h1>
               </div>
-            </Tab>
+            </Tab> */}
             <Tab eventKey="smm-tab" title="SMM">
               <div
                 className="row justify-content-center"
@@ -324,7 +312,7 @@ function Home() {
                 data-aos-duration="3000"
                 data-aos-offset="0"
               >
-                {pricingPlanData.map((item, index) => (
+                {smmPricingPlansData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
                     <PricePlanCard
                       name={item.name}

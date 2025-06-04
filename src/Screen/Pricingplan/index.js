@@ -20,6 +20,7 @@ import Tabs from "react-bootstrap/Tabs";
 import PricePlanCard from "../../components/PricePlanCard";
 
 import ProgressBar from "react-bootstrap/ProgressBar";
+import { eCommerseWebsitePricingPlansData, logoDesignPricingPlansData, seoPricingPlansData, smmPricingPlansData, webDesignPricingPlansData } from "../../data";
 
 const pricingPlanData = [
   {
@@ -272,7 +273,7 @@ const PricingPlan = () => {
         heroimg={Pricingplanheroimg}
       />
 
-      <Mobileworld
+      {/* <Mobileworld
         title="Transparent Pricing Plans Backed by Real Value"
         description="Every dollar should count. Our transparent and comprehensive pricing plans are designed to help you quickly see the value, with expert service, clear deliverables, and zero confusion. Let’s achieve results without wasting time or money."
       >
@@ -303,7 +304,6 @@ const PricingPlan = () => {
               </div>
             </Tab>
             <Tab eventKey="logo-design" title="Logo Design">
-              {/* Logo Design */}
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
@@ -323,7 +323,6 @@ const PricingPlan = () => {
               </div>
             </Tab>
             <Tab eventKey="web-design" title="Web Design">
-              {/* Web Design */}
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
@@ -343,7 +342,6 @@ const PricingPlan = () => {
               </div>
             </Tab>
             <Tab eventKey="nft-design" title="NFT Design">
-              {/* NFT Design */}
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
@@ -363,7 +361,6 @@ const PricingPlan = () => {
               </div>
             </Tab>
             <Tab eventKey="eCommerce-website" title="E Commerce Website">
-              {/* E Commerce Website */}
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
@@ -383,7 +380,6 @@ const PricingPlan = () => {
               </div>
             </Tab>
             <Tab eventKey="video-animation" title="Video Animation">
-              {/* Video Animation */}
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
@@ -403,7 +399,6 @@ const PricingPlan = () => {
               </div>
             </Tab>
             <Tab eventKey="smm-tab" title="SMM">
-              {/* SMM */}
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
@@ -411,6 +406,142 @@ const PricingPlan = () => {
               >
                 {pricingPlanData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4" key={index}>
+                    <PricePlanCard
+                      name={item.name}
+                      actualPrice={item.price.actualPrice}
+                      discountPrice={item.price.disountPrice}
+                      servicesList={item.servicesList}
+                      number={item.number}
+                    />
+                  </div>
+                ))}
+              </div>
+            </Tab>
+          </Tabs>
+        </div>
+      </Mobileworld> */}
+
+      <Mobileworld
+        title="Affordable Solutions For Your Next Web Design Or Mobile App Development"
+        description="Affordable doesn’t mean average. Our pricing plans are built for ambitious businesses ready to grow. From standout websites to powerful mobile apps, we deliver high-quality work with honest pricing. No hidden fees. No nonsense. Just digital solutions that look good, work fast, and help your business win online without blowing your budget."
+      >
+        <div className="col-lg-12">
+          <Tabs
+            defaultActiveKey="seo-tab"
+            className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-offset="0"
+          >
+            <Tab eventKey="seo-tab" title="SEO">
+              <div
+                className="row justify-content-center"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
+                {seoPricingPlansData.map((item, index) => (
+                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
+                    <PricePlanCard
+                      name={item.name}
+                      actualPrice={item.price.actualPrice}
+                      discountPrice={item.price.disountPrice}
+                      servicesList={item.servicesList}
+                      number={item.number}
+                    />
+                  </div>
+                ))}
+              </div>
+            </Tab>
+            <Tab eventKey="logo-design" title="Logo Design">
+              <div
+                className="row justify-content-center"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
+                {logoDesignPricingPlansData.map((item, index) => (
+                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
+                    <PricePlanCard
+                      name={item.name}
+                      actualPrice={item.price.actualPrice}
+                      discountPrice={item.price.disountPrice}
+                      servicesList={item.servicesList}
+                      number={item.number}
+                    />
+                  </div>
+                ))}
+              </div>
+            </Tab>
+            <Tab eventKey="web-design" title="Web Design">
+              <div
+                className="row justify-content-center"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
+                {webDesignPricingPlansData.map((item, index) => (
+                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
+                    <PricePlanCard
+                      name={item.name}
+                      actualPrice={item.price.actualPrice}
+                      discountPrice={item.price.disountPrice}
+                      servicesList={item.servicesList}
+                      number={item.number}
+                    />
+                  </div>
+                ))}
+              </div>
+            </Tab>
+            {/* <Tab eventKey="nft-design" title="NFT Design">
+              <div
+                className="row justify-content-center"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
+                <h1>NFT Design</h1>
+              </div>
+            </Tab> */}
+            <Tab eventKey="eCommerce-website" title="E Commerce Website">
+              <div
+                className="row justify-content-center"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
+                {eCommerseWebsitePricingPlansData.map((item, index) => (
+                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
+                    <PricePlanCard
+                      name={item.name}
+                      actualPrice={item.price.actualPrice}
+                      discountPrice={item.price.disountPrice}
+                      servicesList={item.servicesList}
+                      number={item.number}
+                    />
+                  </div>
+                ))}
+              </div>
+            </Tab>
+            {/* <Tab eventKey="video-animation" title="Video Animation">
+              <div
+                className="row justify-content-center"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
+                <h1>Video Animation</h1>
+              </div>
+            </Tab> */}
+            <Tab eventKey="smm-tab" title="SMM">
+              <div
+                className="row justify-content-center"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
+                {smmPricingPlansData.map((item, index) => (
+                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
                     <PricePlanCard
                       name={item.name}
                       actualPrice={item.price.actualPrice}

@@ -24,6 +24,13 @@ body {
   color: #0504a5;
 }
 
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+
 button:focus {
   box-shadow: unset;
   outline: unset;
@@ -268,7 +275,7 @@ button:focus {
   align-items: flex-start;
   gap: 10px;
 }
-.sideBarBlogCard a{
+.sideBarBlogCard a {
   text-decoration: none;
 }
 .sideBarBlogCard img {
@@ -412,14 +419,13 @@ button:focus {
   gap: 6px;
   font-size: 16px;
 }
-.blogDetail-about-infoItem svg{
+.blogDetail-about-infoItem svg {
   color: #0504a5;
-  
 }
 .blogDetail-about-infoItem span {
   white-space: nowrap;
 }
-.blogDetail-about-infoItem a{
+.blogDetail-about-infoItem a {
   text-decoration: none;
   color: unset;
 }
@@ -470,7 +476,7 @@ button:focus {
 .blog-detail-banner-img img {
   width: 100%;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 @media (max-width: 1399px) {

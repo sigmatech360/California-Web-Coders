@@ -22,6 +22,7 @@ import performence from "../../Assets/service-smm-about-img.png";
 import wordpresssectionimg from "../../Assets/services-smm-about2-img.png";
 import creativethoughsec from "../../Assets/services-smm-creativeThrough-img.png";
 import BlogSection from "../../components/blogPosts";
+import { smmPricingPlansData } from "../../data";
 
 const featuredProjectData = [
   {
@@ -110,6 +111,7 @@ const SocialMediaMarketing = () => {
         whyWordressDescription2="Whether it’s organic growth or paid campaigns, we offer comprehensive, consistent, and customised services that amplify your brand voice and help you achieve your goals."
         whyWordressDescription3="We're not here to fill your calendar, we’re here to build your community."
         btnText="Start Now"
+        pricingPlan={smmPricingPlansData}
       />
 
       <Creativitythrough

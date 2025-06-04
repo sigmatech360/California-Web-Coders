@@ -4,6 +4,7 @@ import "./index.css";
 import wordpresssectionimg from "../../Assets/wordpresssectionimg.png";
 import PricePlanCard from "../PricePlanCard";
 import { Link } from "react-router-dom";
+import { smmPricingPlansData } from "../../data";
 
 const pricingPlanData = [
   {
@@ -105,14 +106,9 @@ const PricingPlans = (props) => {
             </p>
           </div>
 
-          {pricingPlanData.map((item, index) => (
-            <div
-              className="col-lg-4 col-md-7 mb-4 mb-lg-0"
-              key={index}
-              data-aos="fade-up"
-              data-aos-duration="3000"
-              data-aos-offset="0"
-            >
+          
+          {props.pricingPlan.map((item, index) => (
+            <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
               <PricePlanCard
                 name={item.name}
                 actualPrice={item.price.actualPrice}
@@ -150,7 +146,8 @@ const PricingPlans = (props) => {
                 data-aos-offset="0"
               >
                 {/* Why WordPress */}
-                {props.whyWordressTitle} {props.question && <span className="colorBlue">?</span>} 
+                {props.whyWordressTitle}{" "}
+                {props.question && <span className="colorBlue">?</span>}
               </h1>
               <p
                 data-aos="fade-left"
@@ -177,7 +174,8 @@ const PricingPlans = (props) => {
                   {props.whyWordressDescription3}
                 </p>
               )}
-              <Link to={"/our-work"}
+              <Link
+                to={"/our-work"}
                 className="morebenifit"
                 // data-aos="fade-left"
                 // data-aos-duration="3000"

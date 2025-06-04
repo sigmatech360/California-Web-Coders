@@ -238,24 +238,21 @@ import Pricingplanheroimg from "../../Assets/Pricingplanheroimg.png";
 // ];
 
 export const termsAndCondition = [
-  {
-    paragraphs: [
-      "Welcome to the official website of California Web Coders (“Company,” “we,” “our,” or “us”). By accessing or using www.californiawebcoders.com (the “Website”), you agree to comply with and be bound by the following Terms and Conditions. If you do not agree with any part of these terms, you must not use our Website or services.",
-    ],
-  },
+  // {
+  //   paragraphs: [
+  //     "Welcome to the official website of California Web Coders (“Company,” “we,” “our,” or “us”). By accessing or using www.californiawebcoders.com (the “Website”), you agree to comply with and be bound by the following Terms and Conditions. If you do not agree with any part of these terms, you must not use our Website or services.",
+  //   ],
+  // },
   {
     title: "1. Acceptance of Terms",
     paragraphs: [
       "By using this Website, you confirm that you are at least 18 years of age and legally capable of entering into binding contracts. Your use of the Website signifies your full agreement to these Terms and Conditions and our Privacy Policy.",
     ],
-    // list: [
-    //   ""
-    // ],
   },
   {
     title: "2. Use of Website",
     paragraphs: [
-      "You agree to use this Website solely for lawful purposes and in a manner that does not infringe upon the rights of others or restrict the use of others. Prohibited behavior includes, but is not limited to:",
+      "You agree to use this Website solely for lawful purposes and in a manner that does not infringe upon the rights of others or restrict the use of others. Prohibited behavior includes, but is not limited to:    ",
     ],
     list: [
       "Engaging in fraudulent activity",
@@ -359,46 +356,33 @@ const TermsAndConditions = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
+              <div className="privacy-policy-content mb-0">
+                <p>
+                  Welcome to the official website of California Web Coders
+                  (“Company,” “we,” “our,” or “us”). By accessing or using
+                  {" "}<a
+                    href="https://www.californiawebcoders.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    www.californiawebcoders.com
+                  </a>{" "}
+                  (the “Website”), you agree to comply with and be bound by the
+                  following Terms and Conditions. If you do not agree with any
+                  part of these terms, you must not use our Website or services.
+                </p>
+              </div>
               {termsAndCondition?.map((item, index) => (
                 <div className="privacy-policy-content" key={index}>
-                  {item.title && (
-                    <h2
-                      data-aos="fade-right"
-                      data-aos-duration="2000"
-                      data-aos-offset="0"
-                    >
-                      {item.title}
-                    </h2>
-                  )}
+                  {item.title && <h2>{item.title}</h2>}
 
-                  {item.subTite && (
-                    <h3
-                      data-aos="fade-right"
-                      data-aos-duration="2000"
-                      data-aos-offset="0"
-                    >
-                      {item.subTite}
-                    </h3>
-                  )}
+                  {item.subTite && <h3>{item.subTite}</h3>}
 
                   {item.paragraphs &&
-                    item.paragraphs.map((para, i) => (
-                      <p
-                        key={i}
-                        data-aos="fade-right"
-                        data-aos-duration="2000"
-                        data-aos-offset="0"
-                      >
-                        {para}
-                      </p>
-                    ))}
+                    item.paragraphs.map((para, i) => <p key={i}>{para}</p>)}
 
                   {item.list && (
-                    <ul
-                      data-aos="fade-right"
-                      data-aos-duration="2000"
-                      data-aos-offset="0"
-                    >
+                    <ul>
                       {item.list.map((item, i) => (
                         <li key={i}>{item}</li>
                       ))}
@@ -407,14 +391,7 @@ const TermsAndConditions = () => {
 
                   {item.paragraphsAfterList &&
                     item.paragraphsAfterList.map((para, i) => (
-                      <p
-                        key={i}
-                        data-aos="fade-right"
-                        data-aos-duration="2000"
-                        data-aos-offset="0"
-                      >
-                        {para}
-                      </p>
+                      <p key={i}>{para}</p>
                     ))}
                 </div>
               ))}
@@ -422,41 +399,24 @@ const TermsAndConditions = () => {
 
             <div className="col-md-12">
               <div className="privacy-policy-content mb-0">
-                <h3
-                  data-aos="fade-right"
-                  data-aos-duration="2000"
-                  data-aos-offset="0"
-                >
-                  California Web Coders
-                </h3>
-                <p
-                  className="mb-0"
-                  data-aos="fade-right"
-                  data-aos-duration="2000"
-                  data-aos-offset="0"
-                >
+                <h3>California Web Coders</h3>
+                <p className="mb-0">
                   <span className="fw-bold">Phone: </span>{" "}
                   <a href="tel:+16197989688">+1 619-798-9688</a>
                 </p>
-                <p
-                  className="mb-0"
-                  data-aos="fade-right"
-                  data-aos-duration="2000"
-                  data-aos-offset="0"
-                >
+                <p className="mb-0">
                   <span className="fw-bold">Email: </span>{" "}
                   <a href="mailto:info@californiabookpublishers.com">
                     info@californiabookpublishers.com
                   </a>
                 </p>
-                <p
-                  className="mb-0"
-                  data-aos="fade-right"
-                  data-aos-duration="2000"
-                  data-aos-offset="0"
-                >
+                <p className="mb-0">
                   <span className="fw-bold">Website: </span>{" "}
-                  <a href="mailto:www.californiawebcoders.com">
+                  <a
+                    href="https://www.californiawebcoders.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     www.californiawebcoders.com
                   </a>
                 </p>

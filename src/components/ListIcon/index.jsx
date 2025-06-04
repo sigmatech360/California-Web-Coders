@@ -1,11 +1,11 @@
 import React from "react";
-import { CiCircleCheck } from "react-icons/ci";
+import { CiCircleCheck, CiCircleRemove } from "react-icons/ci";
 
-const ListIcon = ({text}) => {
+const ListIcon = ({ text, included }) => {
   return (
-    <div className="price-plan-list-item">
+    <div className={`price-plan-list-item ${included === false ? "disabled" : ""}`}>
       <div className="price-plan-list-icon">
-        <CiCircleCheck />{" "}
+        {included ? <CiCircleCheck /> : <CiCircleRemove />}
       </div>
       <p>{text}</p>
     </div>

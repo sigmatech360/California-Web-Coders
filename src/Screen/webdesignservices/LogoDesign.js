@@ -22,6 +22,7 @@ import serviceBannerImg from "../../Assets/services-logoDesign-banner-img.png";
 import performence from "../../Assets/service-logoDesign-about-img.png";
 import wordpresssectionimg from "../../Assets/services-logoDesign-about2-img.png";
 import creativethoughsec from "../../Assets/services-logoDesign-creativeThrough-img.png";
+import { logoDesignPricingPlansData } from "../../data";
 
 export const logoDesignPortfolioData = [
   {
@@ -110,6 +111,7 @@ const LogoDesign = () => {
         whyWordressDescription2="Our logo design for website, packaging, merchandise, and social platforms ensures brand consistency at every touchpoint. From concept to final files, we keep you in the loop, ensuring your logo represents your identity and stands the test of time."
         whyWordressDescription3="No clip art. No templates. Just authentic, high-impact design from people who get your vision."
         btnText="Connect With Us"
+        pricingPlan={logoDesignPricingPlansData}
       />
 
       <ContactForm

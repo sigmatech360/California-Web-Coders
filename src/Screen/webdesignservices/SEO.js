@@ -23,6 +23,7 @@ import performence from "../../Assets/service-seo-about-img.png";
 import wordpresssectionimg from "../../Assets/services-seo-about2-img.png";
 import creativethoughsec from "../../Assets/services-seo-creativeThrough-img.png";
 import BlogSection from "../../components/blogPosts";
+import { logoDesignPricingPlansData } from "../../data";
 
 const featuredProjectData = [
   {
@@ -113,6 +114,7 @@ const SEO = () => {
         whyWordressDescription2="We combine data, creativity, and experience to get your brand where it needs to be. Our team understands the ever-changing search algorithms and uses white-hat, effective practices to ensure your rankings improve steadily and safely."
         // whyWordressDescription3=""
         btnText="Start Now"
+        pricingPlan={logoDesignPricingPlansData}
       />
 
       <Creativitythrough

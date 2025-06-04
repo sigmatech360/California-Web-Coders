@@ -23,6 +23,7 @@ import performence from "../../Assets/service-digitalMarketing-about-img.png";
 import wordpresssectionimg from "../../Assets/services-digitalMarketing-about2-img.png";
 import creativethoughsec from "../../Assets/services-digitalMarketing-creativeThrough-img.png";
 import BlogSection from "../../components/blogPosts";
+import { smmPricingPlansData } from "../../data";
 
 const featuredProjectData = [
   {
@@ -103,7 +104,7 @@ const DigitalMarketing = () => {
         btnText="Browse Case Studies"
       /> */}
 
-      <PricingPlans
+      {/* <PricingPlans
         secTitle="Flexible Packages, Big Results"
         secDescription="No hidden fees. No generic packages. Just transparent pricing tailored to your business stage and marketing goals."
         image={wordpresssectionimg}
@@ -112,7 +113,8 @@ const DigitalMarketing = () => {
         whyWordressDescription2="Whether you're focused on traffic, engagement, or leads, our digital marketing strategy always puts performance first. You’ll never be left in the dark, we keep things transparent, collaborative, and full of fresh ideas."
         whyWordressDescription3="Let’s turn browsers into buyers and clicks into customers together!"
         btnText="Start Now"
-      />
+        pricingPlan={smmPricingPlansData}
+      /> */}
 
       <Creativitythrough
         title1="Made-To-Perform"

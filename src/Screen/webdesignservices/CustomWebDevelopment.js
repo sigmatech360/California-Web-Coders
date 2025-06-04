@@ -23,6 +23,7 @@ import performence from "../../Assets/service-customDev-about-img.png";
 import wordpresssectionimg from "../../Assets/services-customDev-about2-img.png";
 import creativethoughsec from "../../Assets/services-customDev-creativeThrough-img.png";
 import BlogSection from "../../components/blogPosts";
+import { webDesignPricingPlansData } from "../../data";
 
 export const customWebDesignPortfolioData = [
   {
@@ -112,6 +113,7 @@ const CustomWebDevelopment = () => {
         whyWordressDescription2="Our expert team delivers front-end development that grabs attention, paired with back-end development that’s fast, secure, and easy to manage. We make sure your website works for you, not the other way around."
         // whyWordressDescription3=""
         btnText="Start Now"
+        pricingPlan={webDesignPricingPlansData}
       />
 
       <ContactForm

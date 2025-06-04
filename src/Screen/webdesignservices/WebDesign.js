@@ -23,6 +23,7 @@ import performence from "../../Assets/service-webDesign-about-img.png";
 import wordpresssectionimg from "../../Assets/services-webDesign-about2-img.png";
 import creativethoughsec from "../../Assets/services-webDesign-creativeThrough-img.png";
 import BlogSection from "../../components/blogPosts";
+import { webDesignPricingPlansData } from "../../data";
 
 export const webDesignPortfolioData = [
   {
@@ -108,6 +109,7 @@ const WebDesign = () => {
         whyWordressDescription1="Your brand deserves more than a basic template. That’s why at California Web Coders, we specialize in custom WordPress design, crafted to fit your vision and business goals. Our website design services in California are rooted in strategy, creativity, and performance."
         whyWordressDescription2="We bring your brand to life with visually striking, mobile-friendly, and conversion-optimized websites. Whether you're launching a startup, scaling your business, or refreshing your online presence, we design with purpose and build with precision to deliver results that go beyond the screen."
         // whyWordressDescription3=""
+        pricingPlan={webDesignPricingPlansData}
       />
 
       <ContactForm

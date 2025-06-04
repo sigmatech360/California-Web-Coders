@@ -23,6 +23,7 @@ import performence from "../../Assets/service-cmsDev-about-img.png";
 import wordpresssectionimg from "../../Assets/services-cmsDev-about2-img.png";
 import creativethoughsec from "../../Assets/services-cmsDev-creativeThrough-img.png";
 import BlogSection from "../../components/blogPosts";
+import { eCommerseWebsitePricingPlansData } from "../../data";
 
 export const cmsDevelopmentPortfolioData = [ 
   {
@@ -111,6 +112,7 @@ const CMSDevelopment = () => {
         whyWordressDescription1="You want a site that works hard behind the scenes, and we get that. Our CMS development services are built on real-world experience, creative problem-solving, and a passion for clean, intuitive design. Whether you need Shopify development, WordPress development, or a fully custom website development solution in California, we tailor every project to your goals."
         whyWordressDescription2="We focus on systems you’ll love using, websites that grow with you, and solutions that look as good as they perform. At California Web Coders, we keep it simple, smart, and designed with you in mind."
         // whyWordressDescription3=""
+        pricingPlan={eCommerseWebsitePricingPlansData}
       />
 
       <ContactForm
