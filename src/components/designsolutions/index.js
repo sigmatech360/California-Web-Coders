@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 
 import { MdEdit } from "react-icons/md";
@@ -7,6 +7,7 @@ import { MdOutlineComputer } from "react-icons/md";
 import { RiToolsLine } from "react-icons/ri";
 import { RiSeoFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import FormModal from "../FormModal";
 
 const webSolutionsData = [
   {
@@ -54,118 +55,123 @@ const webSolutionsData = [
 ];
 
 const Designsolutions = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <section className="Designsolutions">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6 mb-lg-0 mb-4">
-            <p className="para">What we do</p>
+    <>
+      <section className="Designsolutions">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 mb-lg-0 mb-4">
+              <p className="para">What we do</p>
 
-            <p
-              className="title"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-offset="0"
-            >
-              <span> Optimized Website Designs </span>For Peak Performance.
-            </p>
-
-            <p
-              className="para2 mb-2"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              data-aos-offset="0"
-            >
-              The team at <span>California Web Coders,</span> does more than
-              just crafting beautiful websites; we ensure that your web
-              performance boosts your business! With collaborative efforts, we
-              smartly design every element, every line of code, so that your
-              business growth is never compromised.
-            </p>
-
-            <p
-              className="para2"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              data-aos-offset="0"
-            >
-              And guess what? Our expertise doesn’t end at web design. We offer
-              digital marketing services, including SEO, Social Media Marketing,
-              CMS development, and more personalized growth strategies tailored
-              to your business.
-            </p>
-            <p
-              className="para2"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              data-aos-offset="0"
-            >
-              Our primary goal is to combine a sleek, responsive website design
-              with a marketing strategy that converts every visitor into a loyal
-              customer.
-            </p>
-            <p
-              className="para2"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              data-aos-offset="0"
-            >
-              From startups to established brands, we work closely with you to
-              build a digital presence that reflects your voice and drives real
-              results.
-            </p>
-            <p
-              className="paratitle"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              data-aos-offset="0"
-            >
-              Your website should work as hard as you do.
-            </p>
-
-            <p
-              className="para2  mb-3"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              data-aos-offset="0"
-            >
-              Contact us today for a free consultation and discover how our web
-              design and digital marketing expertise can help your business grow
-              to another level of success.
-            </p>
-
-            <Link
-              to={"/get-intouch"}
-              className="freecons"
-              data-aos="fade-right"
-              data-aos-duration="3000"
-              data-aos-offset="0"
-            >
-              Book Your FREE Consultation
-            </Link>
-          </div>
-
-          <div className="col-lg-6">
-            {webSolutionsData.map((item, index) => (
-              <div
-                className="solution d-flex mb-2"
-                key={index}
-                data-aos="fade-up"
+              <p
+                className="title"
+                data-aos="fade-right"
                 data-aos-duration="1000"
                 data-aos-offset="0"
               >
-                <span>{item.icon}</span>{" "}
-                <span className=" ">
-                  <h4 className="solution-heading">{item.name}</h4>
-                  <p className="para3">{item.description}</p>
-                </span>
-              </div>
-            ))}
+                <span> Optimized Website Designs </span>For Peak Performance.
+              </p>
+
+              <p
+                className="para2 mb-2"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
+                The team at <span>California Web Coders,</span> does more than
+                just crafting beautiful websites; we ensure that your web
+                performance boosts your business! With collaborative efforts, we
+                smartly design every element, every line of code, so that your
+                business growth is never compromised.
+              </p>
+
+              <p
+                className="para2"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
+                And guess what? Our expertise doesn’t end at web design. We
+                offer digital marketing services, including SEO, Social Media
+                Marketing, CMS development, and more personalized growth
+                strategies tailored to your business.
+              </p>
+              <p
+                className="para2"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
+                Our primary goal is to combine a sleek, responsive website
+                design with a marketing strategy that converts every visitor
+                into a loyal customer.
+              </p>
+              <p
+                className="para2"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
+                From startups to established brands, we work closely with you to
+                build a digital presence that reflects your voice and drives
+                real results.
+              </p>
+              <p
+                className="paratitle"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
+                Your website should work as hard as you do.
+              </p>
+
+              <p
+                className="para2  mb-3"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+              >
+                Contact us today for a free consultation and discover how our
+                web design and digital marketing expertise can help your
+                business grow to another level of success.
+              </p>
+
+              <button
+                // to={"/get-intouch"}
+                onClick={() => setShowModal(true)}
+                className="freecons"
+                data-aos="fade-right"
+                data-aos-duration="3000"
+                data-aos-offset="0"
+              >
+                Book Your FREE Consultation
+              </button>
+            </div>
+
+            <div className="col-lg-6">
+              {webSolutionsData.map((item, index) => (
+                <div
+                  className="solution d-flex mb-2"
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-offset="0"
+                >
+                  <span>{item.icon}</span>{" "}
+                  <span className=" ">
+                    <h4 className="solution-heading">{item.name}</h4>
+                    <p className="para3">{item.description}</p>
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <FormModal show={showModal} handleClose={() => setShowModal(false)} />
+    </>
   );
-};
+}; 
 
 export default Designsolutions;

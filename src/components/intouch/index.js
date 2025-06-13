@@ -21,7 +21,7 @@ const Intouch = () => {
       <div className="container my-5">
         <div className="row">
           <div className="col-lg-6 mb-lg-0 mb-4">
-            <div class="inTouch-content">
+            <div className="inTouch-content">
               <h6 className="sec-head-tag colorBlue">Get In Touch</h6>
               <h2
                 className="title"
@@ -120,10 +120,10 @@ const Intouch = () => {
                   data-aos-duration="2000"
                   data-aos-offset="0"
                 >
-                  <div class="icon-container">
+                  <div className="icon-container">
                     <RiMailSendLine color={"#0504a5"} />
                   </div>
-                  <div class="inTouch-icon-box-content">
+                  <div className="inTouch-icon-box-content">
                     <h5>Email Us</h5>
                     <p>
                       <a href="mailto:support@californiawebcoders.com">
@@ -144,13 +144,13 @@ const Intouch = () => {
                   data-aos-duration="2000"
                   data-aos-offset="0"
                 >
-                  <div class="icon-container">
+                  <div className="icon-container">
                     <FaPhoneAlt color={"#0504a5"} />
                   </div>
-                  <div class="inTouch-icon-box-content">
+                  <div className="inTouch-icon-box-content">
                     <h5>Call Us</h5>
                     <p>
-                      +1 609-798-9688
+                      +1 (281) 845-8498
                       {/* <br />
                       +1 609-798-9688 */}
                     </p>
@@ -164,10 +164,10 @@ const Intouch = () => {
                   data-aos-duration="2000"
                   data-aos-offset="0"
                 >
-                  <div class="icon-container">
+                  <div className="icon-container">
                     <MdOutlineSupportAgent color={"#0504a5"} />
                   </div>
-                  <div class="inTouch-icon-box-content">
+                  <div className="inTouch-icon-box-content">
                     <h5>Follow Us</h5>
                     <p>
                       Follow California Web Coders on Instagram to stay

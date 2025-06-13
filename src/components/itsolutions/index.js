@@ -83,8 +83,8 @@ const ItSolutions = () => {
 
               <span className="d-flex align-items-center gap-2 packages-number">
                 <FaPhoneAlt className="learnmorecall" />
-                <p href="tel:+16197989688" className="para4 mb-0 align-self-baseline">
-                  +1 619-798-9688
+                <p href="tel:+12818458498" className="para4 mb-0 align-self-baseline">
+                  +1 (281) 845-8498
                 </p>
               </span>
             </div>
@@ -116,7 +116,7 @@ const ItSolutions = () => {
           </div>
 
           <div className="col-lg-6">
-            <div class="mission-statment-content">
+            <div className="mission-statment-content">
               <h3
                 className="missionstatement"
                 data-aos="fade-left"

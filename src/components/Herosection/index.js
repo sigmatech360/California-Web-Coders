@@ -11,7 +11,7 @@ const HeroSection = (props) => {
       <div className="container">
         <div className="row align-items-center justify-content-center flex-lg-row flex-column-reverse gap-lg-0 gap-4">
           <div className={`${props.leftCol || `col-lg-8`}`}>
-            <div class="HeroSection-content">
+            <div className="HeroSection-content">
               <h1
                 data-aos="fade-right"
                 data-aos-duration="1000"
@@ -32,7 +32,7 @@ const HeroSection = (props) => {
           <div className={`${props.rightCol || `col-lg-4`}`}>
             {props?.heroimg && (
               <div
-                class="HeroSection-img"
+                className="HeroSection-img"
                 data-aos="fade-left"
                 data-aos-duration="2000"
                 data-aos-offset="0"

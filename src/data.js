@@ -31,7 +31,7 @@ export const seoPricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const seoPricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
   {
     id: 3,
@@ -130,7 +130,7 @@ export const seoPricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
 ];
 
@@ -173,7 +173,7 @@ export const logoDesignPricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
   {
     id: 2,
@@ -213,7 +213,7 @@ export const logoDesignPricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
   {
     id: 3,
@@ -253,11 +253,11 @@ export const logoDesignPricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
 ];
 
-export const webDesignPricingPlansData = [
+export const customWebDevPricingPlansData = [
   {
     id: 1,
     name: "Basic Web Portal",
@@ -318,7 +318,7 @@ export const webDesignPricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
   {
     id: 2,
@@ -384,7 +384,7 @@ export const webDesignPricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
   {
     id: 3,
@@ -513,13 +513,14 @@ export const webDesignPricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
 ];
 
 export const eCommerseWebsitePricingPlansData = [
   {
     id: 1,
+    packageInfo: "Ecommerce",
     name: "Silver",
     price: {
       actualPrice: "619.00",
@@ -558,10 +559,11 @@ export const eCommerseWebsitePricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
   {
     id: 2,
+    packageInfo: "Ecommerce",
     name: "Gold",
     price: {
       actualPrice: "1239.00",
@@ -600,10 +602,11 @@ export const eCommerseWebsitePricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
   {
     id: 3,
+    packageInfo: "Ecommerce",
     name: "Platinum",
     price: {
       actualPrice: "2,169.00",
@@ -642,7 +645,118 @@ export const eCommerseWebsitePricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
+  },
+];
+
+export const informativeWebsitePricingPlansData = [
+  {
+    id: 1,
+    packageInfo: "Informative",
+    name: "Silver",
+    price: {
+      actualPrice: "619.00",
+      disountPrice: "399.00",
+    },
+    servicesList: [
+      {
+        title: "Features",
+        items: [
+          { name: "Custom Home Page", included: true },
+          { name: "Home Page Banner Design", included: true },
+          { name: "Contact Forms", included: true },
+          { name: "Responsive Design", included: true },
+          { name: "WordPress Platform", included: true },
+          { name: "05 Content Pages", included: true },
+          { name: "Mobile Optimized", included: true },
+          { name: "Content Management System", included: true },
+          { name: "Social Media Integration", included: true },
+          { name: "Google Map Integration", included: true },
+          { name: "Photo Gallery", included: false },
+          { name: "Speed Optimization", included: false },
+          { name: "Chatbot/live Chat Setup", included: false },
+          { name: "Newsletter Integration", included: false },
+          { name: "Initial Seo Setup", included: false },
+          { name: "Submission To Search Engines", included: false },
+          { name: "Google Search Console Setup", included: false },
+          { name: "Google Analytics", included: false },
+          { name: "Optimized Meta Tags", included: false },
+        ],
+      },
+    ],
+    number: `+1 (281) 845-8498`,
+  },
+  {
+    id: 2,
+    packageInfo: "Informative",
+    name: "Business",
+    price: {
+      actualPrice: "1239.00",
+      disountPrice: "799.00",
+    },
+    servicesList: [
+      {
+        title: "Features",
+        items: [
+          { name: "Custom Home Page", included: true },
+          { name: "Home Page Banner Design", included: true },
+          { name: "Contact Forms", included: true },
+          { name: "Responsive Design", included: true },
+          { name: "WordPress Platform", included: true },
+          { name: "10 Content Pages", included: true },
+          { name: "Mobile Optimized", included: true },
+          { name: "Content Management System", included: true },
+          { name: "Social Media Integration", included: true },
+          { name: "Google Map Integration", included: true },
+          { name: "Photo Gallery", included: true },
+          { name: "Speed Optimization", included: true },
+          { name: "Chatbot/live Chat Setup", included: true },
+          { name: "Newsletter Integration", included: true },
+          { name: "Initial Seo Setup", included: false },
+          { name: "Submission To Search Engines", included: false },
+          { name: "Google Search Console Setup", included: false },
+          { name: "Google Analytics", included: false },
+          { name: "Optimized Meta Tags", included: false },
+        ],
+      },
+    ],
+    number: `+1 (281) 845-8498`,
+  },
+  {
+    id: 3,
+    packageInfo: "Informative",
+    name: "Corporate",
+    price: {
+      actualPrice: "2,169.00",
+      disountPrice: "1,399.00",
+    },
+    servicesList: [
+      {
+        title: "Features",
+        items: [
+          { name: "Custom Home Page", included: true },
+          { name: "Home Page Banner Design", included: true },
+          { name: "Contact Forms", included: true },
+          { name: "Responsive Design", included: true },
+          { name: "WordPress Platform", included: true },
+          { name: "20 Content Pages", included: true },
+          { name: "Mobile Optimized", included: true },
+          { name: "Content Management System", included: true },
+          { name: "Social Media Integration", included: true },
+          { name: "Google Map Integration", included: true },
+          { name: "Photo Gallery", included: true },
+          { name: "Speed Optimization", included: true },
+          { name: "Chatbot/live Chat Setup", included: true },
+          { name: "Newsletter Integration", included: true },
+          { name: "Initial Seo Setup", included: true },
+          { name: "Submission To Search Engines", included: true },
+          { name: "Google Search Console Setup", included: true },
+          { name: "Google Analytics", included: true },
+          { name: "Optimized Meta Tags", included: true },
+        ],
+      },
+    ],
+    number: `+1 (281) 845-8498`,
   },
 ];
 
@@ -670,7 +784,7 @@ export const smmPricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
   {
     id: 2,
@@ -702,7 +816,7 @@ export const smmPricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
   {
     id: 3,
@@ -733,6 +847,144 @@ export const smmPricingPlansData = [
         ],
       },
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
+  },
+];
+
+export const comboPricingPlansData = [
+  {
+    id: 1,
+    name: "Basic Combo",
+    price: {
+      actualPrice: "908.70",
+      disountPrice: "699.00",
+    },
+    servicesList: [
+      {
+        title: null,
+        items: [
+          {
+            name: "2 postings per week (per network) Facebook + Instagram",
+            included: true,
+          },
+          { name: "Content Creation", included: true },
+          { name: "Business Page Optimization", included: true },
+          { name: "Social Media Strategy (Overview)", included: true },
+          { name: "Facebook Likes Campaign", included: true },
+          { name: "Monthly Progress report", included: true },
+          { name: "Up to 5-Page Customized Website", included: true },
+          { name: "Complete Designing & Deployment", included: true },
+          { name: "4 Logo Design Concepts", included: true },
+          { name: "Unlimited Revisions", included: true },
+          { name: "Complete Stationery Design", included: true },
+          { name: "Social Media Banner Design", included: true },
+          { name: "All File Formats including (AI & EPS)", included: true },
+          { name: "Free Favicon Design", included: true },
+          { name: "Value Added Services", included: true },
+          { name: "Dedicated Account Manager", included: true },
+          { name: "Fastest Turnaround Time", included: true },
+          { name: "100% Ownership", included: true },
+          { name: "100% Unique Design Guarantee", included: true },
+          { name: "100% Satisfaction Guarantee", included: true },
+        ],
+      },
+    ],
+    number: `+1 (281) 845-8498`,
+  },
+  {
+    id: 2,
+    name: "Standard Combo",
+    price: {
+      actualPrice: "1,072.50",
+      disountPrice: "825.00",
+    },
+    servicesList: [
+      {
+        title: null,
+        items: [
+          { name: "4 Logo Concepts", included: true },
+          { name: "2 Dedicated Logo Designers", included: true },
+          { name: "Unlimited Revisions", included: true },
+          { name: "File Formats: Png, Pdf, Jpeg, Tiff", included: true },
+          { name: "Value-Added Services", included: true },
+          {
+            name: "FREE Stationery Designs (Business Card, Letterhead, Envelope Design)",
+            included: true,
+          },
+          { name: "24 – 48 Hours Turn Around Time", included: true },
+          { name: "Informative Website", included: true },
+          { name: "8-10 Unique Pages Website", included: true },
+          { name: "CMS / Admin Panel Support", included: true },
+          { name: "8 Stock images", included: true },
+          { name: "Search Engine Submission", included: true },
+          { name: "5 Banner Designs", included: true },
+          { name: "1 jQuery Slider Banner", included: true },
+          { name: "FREE Google Friendly Sitemap", included: true },
+          { name: "Mobile Responsive", included: true },
+          { name: "Facebook + Instagram Page Creations", included: true },
+          { name: "Complete W3C Certified HTML", included: true },
+          { name: "48 to 72 hours TAT", included: true },
+          { name: "Complete Deployment", included: true },
+          { name: "100% Satisfaction Guarantee", included: true },
+          { name: "100% Unique Design Guarantee", included: true },
+          { name: "100% Ownership", included: true },
+        ],
+      },
+    ],
+    number: `+1 (281) 845-8498`,
+  },
+  {
+    id: 3,
+    name: "Enterprise Combo",
+    price: {
+      actualPrice: "1,948.70",
+      disountPrice: "1,499.00",
+    },
+    servicesList: [
+      {
+        title: null,
+        items: [
+          { name: "UNLIMITED Logo Design Concepts", included: true },
+          { name: "6 Creative Designers", included: true },
+          { name: "UNLIMITED Revisions", included: true },
+          { name: "FREE Business Card Design", included: true },
+          { name: "FREE Letterhead Design", included: true },
+          { name: "FREE Envelope Design", included: true },
+          { name: "FREE Icon Design", included: true },
+          { name: "FREE Banner Design", included: true },
+          { name: "FREE Email Signature", included: true },
+          {
+            name: "Vector Formats (AI, PSD, EPS, PNG, GIF, JPG, PDF)",
+            included: true,
+          },
+          { name: "Up to 10-15 Unique Pages Website", included: true },
+          { name: "Conceptual and Dynamic Website", included: true },
+          { name: "Mobile Responsive", included: true },
+          {
+            name: "Online Reservation/Appointment Tool (Optional)",
+            included: true,
+          },
+          { name: "Online Payment Integration (Optional)", included: true },
+          { name: "Custom Forms", included: true },
+          { name: "Search Engine Submission", included: true },
+          { name: "Lead Capturing Forms (Optional)", included: true },
+          { name: "Striking Hover Effects", included: true },
+          { name: "Newsletter Subscription (Optional)", included: true },
+          { name: "Newsfeed Integration", included: true },
+          { name: "Social Media Integration", included: true },
+          { name: "5 Stock Photos", included: true },
+          { name: "3 Unique Banner Design", included: true },
+          { name: "1 jQuery Slider Banner", included: true },
+          { name: "Complete W3C Certified HTML", included: true },
+          { name: "48 to 72 hours TAT", included: true },
+          { name: "Facebook Page Design", included: true },
+          { name: "Twitter Page Design", included: true },
+          { name: "Complete Deployment", included: true },
+          { name: "100% Satisfaction Guarantee", included: true },
+          { name: "100% Unique Design Guarantee", included: true },
+        ],
+      },
+    ],
+    number: `+1 (281) 845-8498`,
   },
 ];

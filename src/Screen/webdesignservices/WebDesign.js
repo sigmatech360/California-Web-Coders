@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import Layout from "../../components/layout";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
@@ -23,48 +23,55 @@ import performence from "../../Assets/service-webDesign-about-img.png";
 import wordpresssectionimg from "../../Assets/services-webDesign-about2-img.png";
 import creativethoughsec from "../../Assets/services-webDesign-creativeThrough-img.png";
 import BlogSection from "../../components/blogPosts";
-import { webDesignPricingPlansData } from "../../data";
+import {
+  customWebDevPricingPlansData,
+  eCommerseWebsitePricingPlansData,
+  informativeWebsitePricingPlansData,
+} from "../../data";
+
+import Lightbox from "react-image-lightbox";
 
 export const webDesignPortfolioData = [
   {
     id: 1,
     image: pixleperfectimg1,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 2,
     image: pixleperfectimg2,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 3,
     image: pixleperfectimg3,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 4,
     image: pixleperfectimg4,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 5,
     image: pixleperfectimg5,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 6,
     image: pixleperfectimg6,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
 ];
 
 const WebDesign = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [images, setImages] = useState([]);
+
+  const handleImageClick = (index, imageArray) => {
+    const imageList = imageArray.map((item) => item.image);
+    setImages(imageList);
+    setPhotoIndex(index);
+    setTimeout(() => {
+      setIsOpen(true);
+    }, 50);
+  };
+
   return (
     <Layout>
       <ServiceBanner
@@ -99,6 +106,7 @@ const WebDesign = () => {
         secTitleBlue="Website Designs"
         secDescription="Explore our hand-picked portfolio featuring sleek and high-performing websites built for our esteemed clients. Each project highlights our commitment to design excellence, responsive layouts, and results that drive growth."
         projectsData={webDesignPortfolioData}
+        onImageClick={handleImageClick}
       />
 
       <PricingPlans
@@ -109,7 +117,8 @@ const WebDesign = () => {
         whyWordressDescription1="Your brand deserves more than a basic template. That’s why at California Web Coders, we specialize in custom WordPress design, crafted to fit your vision and business goals. Our website design services in California are rooted in strategy, creativity, and performance."
         whyWordressDescription2="We bring your brand to life with visually striking, mobile-friendly, and conversion-optimized websites. Whether you're launching a startup, scaling your business, or refreshing your online presence, we design with purpose and build with precision to deliver results that go beyond the screen."
         // whyWordressDescription3=""
-        pricingPlan={webDesignPricingPlansData}
+        pricingPlan={informativeWebsitePricingPlansData}
+        pricingPlan2={eCommerseWebsitePricingPlansData}
       />
 
       <ContactForm
@@ -128,6 +137,21 @@ const WebDesign = () => {
       />
 
       <BlogSection categorySlug="web-design" />
+
+      {isOpen && images.length > 0 && images[photoIndex] && (
+        <Lightbox
+          mainSrc={images[photoIndex]}
+          nextSrc={images[(photoIndex + 1) % images.length]}
+          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+          onCloseRequest={() => setIsOpen(false)}
+          onMovePrevRequest={() =>
+            setPhotoIndex((photoIndex + images.length - 1) % images.length)
+          }
+          onMoveNextRequest={() =>
+            setPhotoIndex((photoIndex + 1) % images.length)
+          }
+        />
+      )}
     </Layout>
   );
 };

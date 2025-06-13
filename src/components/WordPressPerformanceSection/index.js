@@ -36,7 +36,7 @@ const WordPressPerformanceSection = (props) => {
                 {props.description2}
               </p>
             )}
-            <Link to={"/our-work"}
+            <Link to={"/pricing-plan"}
               className="btn-theme"
               data-aos="fade-right"
               data-aos-duration="3000"

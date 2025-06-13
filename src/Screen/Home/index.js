@@ -10,95 +10,10 @@ import Mobileworld from "../../components/mobileworld";
 import FrequentQuestions from "../../components/FrequentQuestions";
 import BlogSection from "../../components/blogPosts";
 
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
-import PricePlanCard from "../../components/PricePlanCard";
 import MainBanner from "../../components/mainBanner";
-import {
-  eCommerseWebsitePricingPlansData,
-  logoDesignPricingPlansData,
-  seoPricingPlansData,
-  smmPricingPlansData,
-  webDesignPricingPlansData,
-} from "../../data";
 
-const pricingPlanData = [
-  {
-    id: 1,
-    name: "Startup Wordpress Package",
-    price: {
-      actualPrice: 699,
-      disountPrice: 249,
-    },
-    servicesList: [
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-    ],
-    number: `+1 619-798-9688`,
-  },
-  {
-    id: 2,
-    name: "Startup Wordpress Package",
-    price: {
-      actualPrice: 699,
-      disountPrice: 249,
-    },
-    servicesList: [
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-    ],
-    number: `+1 619-798-9688`,
-  },
-  {
-    id: 3,
-    name: "Startup Wordpress Package",
-    price: {
-      actualPrice: 699,
-      disountPrice: 249,
-    },
-    servicesList: [
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-    ],
-    number: `+1 619-798-9688`,
-  },
-];
+import PackagesTabs from "../../components/PackagesTabs";
+
 
 const faqData = [
   {
@@ -179,7 +94,7 @@ function Home() {
       <Digitalagency />
       <Designsolutions />
 
-      <FeatureProject
+      <FeatureProject 
         titleclass="featuretitle"
         paraclass="para"
         mainclass="FeatureProject"
@@ -196,137 +111,7 @@ function Home() {
         title="Affordable Solutions For Your Next Web Design Or Mobile App Development"
         description="Affordable doesn’t mean average. Our pricing plans are built for ambitious businesses ready to grow. From standout websites to powerful mobile apps, we deliver high-quality work with honest pricing. No hidden fees. No nonsense. Just digital solutions that look good, work fast, and help your business win online without blowing your budget."
       >
-        <div className="col-lg-12">
-          <Tabs
-            defaultActiveKey="seo-tab"
-            className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            data-aos-offset="0"
-          >
-            <Tab eventKey="seo-tab" title="SEO">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                {seoPricingPlansData.map((item, index) => (
-                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
-                    <PricePlanCard
-                      name={item.name}
-                      actualPrice={item.price.actualPrice}
-                      discountPrice={item.price.disountPrice}
-                      servicesList={item.servicesList}
-                      number={item.number}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Tab>
-            <Tab eventKey="logo-design" title="Logo Design">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                {logoDesignPricingPlansData.map((item, index) => (
-                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
-                    <PricePlanCard
-                      name={item.name}
-                      actualPrice={item.price.actualPrice}
-                      discountPrice={item.price.disountPrice}
-                      servicesList={item.servicesList}
-                      number={item.number}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Tab>
-            <Tab eventKey="web-design" title="Web Design">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                {webDesignPricingPlansData.map((item, index) => (
-                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
-                    <PricePlanCard
-                      name={item.name}
-                      actualPrice={item.price.actualPrice}
-                      discountPrice={item.price.disountPrice}
-                      servicesList={item.servicesList}
-                      number={item.number}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Tab>
-            {/* <Tab eventKey="nft-design" title="NFT Design">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                <h1>NFT Design</h1>
-              </div>
-            </Tab> */}
-            <Tab eventKey="eCommerce-website" title="E Commerce Website">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                {eCommerseWebsitePricingPlansData.map((item, index) => (
-                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
-                    <PricePlanCard
-                      name={item.name}
-                      actualPrice={item.price.actualPrice}
-                      discountPrice={item.price.disountPrice}
-                      servicesList={item.servicesList}
-                      number={item.number}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Tab>
-            {/* <Tab eventKey="video-animation" title="Video Animation">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                
-                <h1>Video Animation</h1>
-              </div>
-            </Tab> */}
-            <Tab eventKey="smm-tab" title="SMM">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                {smmPricingPlansData.map((item, index) => (
-                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
-                    <PricePlanCard
-                      name={item.name}
-                      actualPrice={item.price.actualPrice}
-                      discountPrice={item.price.disountPrice}
-                      servicesList={item.servicesList}
-                      number={item.number}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Tab>
-          </Tabs>
-        </div>
+        <PackagesTabs />
       </Mobileworld>
 
       <FrequentQuestions

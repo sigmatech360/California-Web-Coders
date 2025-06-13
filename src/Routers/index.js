@@ -22,13 +22,13 @@ import CategoryPage from "../Screen/CategoryPage";
 
 export default function UserRouter() {
   return (
-    <BrowserRouter basename="/california-web-coders">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
 
         <Route path="/services" element={<Webdesignservices />} />
-        <Route path="/services/web-design" element={<WebDesign />} />
+        <Route path="/services/web-design" element={<WebDesign />} /> 
         <Route path="/services/cms-development" element={<CMSDevelopment />} />
         <Route
           path="/services/digital-marketing"

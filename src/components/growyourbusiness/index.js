@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
+import FormModal from "../FormModal";
 const Growyourbusiness = (props) => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <section className="gorwyourbusiness">
@@ -18,20 +20,23 @@ const Growyourbusiness = (props) => {
                   {props.title1} {props.title2 && <span>{props.title2}</span>}{" "}
                   {props.title3}
                 </h2>
-                <Link
-                  to={"/get-intouch"}
+                <button
+                  // to={"/get-intouch"}
+                  onClick={() => setShowModal(true)}
                   className="clickhere"
                   data-aos="fade-left"
                   data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   {props.btnText || `Click Here To Get Started`}
-                </Link>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <FormModal show={showModal} handleClose={() => setShowModal(false)} />
     </>
   );
 };

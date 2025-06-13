@@ -13,7 +13,7 @@
 .twentypls {
   background-color: #0504a5;
   color: white;
-  padding: 35px;
+  /* padding: 35px; */
   border-radius: 100%;
   font-size: 51px;
   align-items: center;
@@ -66,6 +66,12 @@
   width: 30px;
   height: 30px;
 }
+
+.price-plane-head-info {
+    margin-bottom: 5px;
+    color: #0504a5;
+}
+
 
 .price-plane-head-title {
   color: #031243;

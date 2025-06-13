@@ -28,40 +28,34 @@ const featuredProjectData = [
   {
     id: 1,
     image: pixleperfectimg1,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 2,
     image: pixleperfectimg2,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 3,
     image: pixleperfectimg3,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 4,
     image: pixleperfectimg4,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 5,
     image: pixleperfectimg5,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 6,
     image: pixleperfectimg6,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
-];
+]; 
 
 const SocialMediaMarketing = () => {
   return (
@@ -111,6 +105,7 @@ const SocialMediaMarketing = () => {
         whyWordressDescription2="Whether it’s organic growth or paid campaigns, we offer comprehensive, consistent, and customised services that amplify your brand voice and help you achieve your goals."
         whyWordressDescription3="We're not here to fill your calendar, we’re here to build your community."
         btnText="Start Now"
+        btnLink="/get-intouch"
         pricingPlan={smmPricingPlansData}
       />
 
@@ -121,6 +116,7 @@ const SocialMediaMarketing = () => {
         description2="Our campaigns are made to connect directly with the audience you desire for your brand; we make personalized posts, reels, engagement campaigns, and even paid ad campaigns, all to bring you the results your brand craves!"
         image={creativethoughsec}
         btnText="Get Your Strategy Now!"
+        btnLink="/get-intouch"
       />
 
       <ContactForm

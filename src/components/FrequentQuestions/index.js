@@ -107,14 +107,14 @@ const FrequentQuestions = (props) => {
                 </h2>
               </div>
             </div>
-            <div className="col-lg-6">
+            {/* <div className="col-lg-6">
               <div className="faqs-tabs-btns d-flex justify-content-evenly">
                 <button className="faqs-tabs-btn">Basic</button>
                 <button className="faqs-tabs-btn">Service</button>
                 <button className="faqs-tabs-btn">Price</button>
                 <button className="faqs-tabs-btn">Benefits</button>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="row">
             <div className="col-lg-6">

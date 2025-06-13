@@ -13,7 +13,7 @@ const RefundPolicy = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div class="RefundPolicy-content">
+            <div className="RefundPolicy-content">
               <h3
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -33,7 +33,7 @@ const RefundPolicy = () => {
             </div>
           </div>
         </div>
-        <div class="col-md-12">
+        <div className="col-md-12">
           <div
             className="rf-pay-logos"
             data-aos="fade-up"

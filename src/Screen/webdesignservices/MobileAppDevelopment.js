@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import Layout from "../../components/layout";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
@@ -7,12 +7,19 @@ import PricingPlans from "../../components/PricingPlans";
 import ContactForm from "../../components/readytocheat";
 import Creativitythrough from "../../components/Creativitythrough";
 
-import pixleperfectimg1 from "../../Assets/service-mobileAppDev-pixle-perfect-img1.png";
-import pixleperfectimg2 from "../../Assets/service-mobileAppDev-pixle-perfect-img2.png";
-import pixleperfectimg3 from "../../Assets/service-mobileAppDev-pixle-perfect-img3.png";
-import pixleperfectimg4 from "../../Assets/service-mobileAppDev-pixle-perfect-img4.png";
-import pixleperfectimg5 from "../../Assets/service-mobileAppDev-pixle-perfect-img5.png";
-import pixleperfectimg6 from "../../Assets/service-mobileAppDev-pixle-perfect-img6.png";
+// import pixleperfectimg1 from "../../Assets/service-mobileAppDev-pixle-perfect-img1.png";
+// import pixleperfectimg2 from "../../Assets/service-mobileAppDev-pixle-perfect-img2.png";
+// import pixleperfectimg3 from "../../Assets/service-mobileAppDev-pixle-perfect-img3.png";
+// import pixleperfectimg4 from "../../Assets/service-mobileAppDev-pixle-perfect-img4.png";
+// import pixleperfectimg5 from "../../Assets/service-mobileAppDev-pixle-perfect-img5.png";
+// import pixleperfectimg6 from "../../Assets/service-mobileAppDev-pixle-perfect-img6.png";
+
+import pixleperfectimg1 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img1.jpg";
+import pixleperfectimg2 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img2.jpg";
+import pixleperfectimg3 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img3.jpg";
+import pixleperfectimg4 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img4.jpg";
+import pixleperfectimg5 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img5.jpg";
+import pixleperfectimg6 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img6.jpg";
 
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
@@ -24,46 +31,48 @@ import wordpresssectionimg from "../../Assets/services-mobileAppDev-about2-img.p
 import creativethoughsec from "../../Assets/services-mobileAppDev-creativeThrough-img.png";
 import BlogSection from "../../components/blogPosts";
 
+import Lightbox from "react-image-lightbox";
+
 export const mobileAppDevelopmentPortfolioData = [
   {
     id: 1,
     image: pixleperfectimg1,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 2,
     image: pixleperfectimg2,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 3,
     image: pixleperfectimg3,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 4,
     image: pixleperfectimg4,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 5,
     image: pixleperfectimg5,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 6,
     image: pixleperfectimg6,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
 ];
 
 const MobileAppDevelopment = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [images, setImages] = useState([]);
+
+  const handleImageClick = (index, imageArray) => {
+    const imageList = imageArray.map((item) => item.image);
+    setImages(imageList);
+    setPhotoIndex(index);
+    setTimeout(() => {
+      setIsOpen(true);
+    }, 50);
+  };
   return (
     <Layout>
       <ServiceBanner
@@ -99,7 +108,8 @@ const MobileAppDevelopment = () => {
         secTitleBlue="Mobile Applications"
         secDescription="Want an e-commerce app, a business solution, or just an app to connect better with your audience? We have you covered! Our mobile app development services California cover every idea you dream of!"
         projectsData={mobileAppDevelopmentPortfolioData}
-        btnText="A glimpse of our expertise!"
+        onImageClick={handleImageClick}
+        // btnText="A glimpse of our expertise!"
       />
 
       {/* <PricingPlans
@@ -125,10 +135,25 @@ const MobileAppDevelopment = () => {
         description1="Great apps aren’t just built, they’re engineered with purpose. At California Web Coders, we combine design, development, and user psychology to create seamless mobile experiences. Whether you need speed, security, or sleek design, we’re here to turn your ideas into high-performance apps."
         description2="Let’s make something users can’t stop tapping."
         image={creativethoughsec}
-        btnText="Sign Up For Your App"
+        // btnText="Sign Up For Your App"
       />
 
       <BlogSection categorySlug="mobile-app-development" />
+
+      {isOpen && images.length > 0 && images[photoIndex] && (
+        <Lightbox
+          mainSrc={images[photoIndex]}
+          nextSrc={images[(photoIndex + 1) % images.length]}
+          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+          onCloseRequest={() => setIsOpen(false)}
+          onMovePrevRequest={() =>
+            setPhotoIndex((photoIndex + images.length - 1) % images.length)
+          }
+          onMoveNextRequest={() =>
+            setPhotoIndex((photoIndex + 1) % images.length)
+          }
+        />
+      )}
     </Layout>
   );
 };

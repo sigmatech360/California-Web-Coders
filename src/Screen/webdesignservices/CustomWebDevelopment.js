@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import Layout from "../../components/layout";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
@@ -7,12 +7,26 @@ import PricingPlans from "../../components/PricingPlans";
 import ContactForm from "../../components/readytocheat";
 import Creativitythrough from "../../components/Creativitythrough";
 
-import pixleperfectimg1 from "../../Assets/service-customDev-pixle-perfect-img1.png";
-import pixleperfectimg2 from "../../Assets/service-customDev-pixle-perfect-img2.png";
-import pixleperfectimg3 from "../../Assets/service-customDev-pixle-perfect-img3.png";
-import pixleperfectimg4 from "../../Assets/service-customDev-pixle-perfect-img4.png";
-import pixleperfectimg5 from "../../Assets/service-customDev-pixle-perfect-img5.png";
-import pixleperfectimg6 from "../../Assets/service-customDev-pixle-perfect-img6.png";
+// import pixleperfectimg1 from "../../Assets/service-customDev-pixle-perfect-img1.png";
+// import pixleperfectimg2 from "../../Assets/service-customDev-pixle-perfect-img2.png";
+// import pixleperfectimg3 from "../../Assets/service-customDev-pixle-perfect-img3.png";
+// import pixleperfectimg4 from "../../Assets/service-customDev-pixle-perfect-img4.png";
+// import pixleperfectimg5 from "../../Assets/service-customDev-pixle-perfect-img5.png";
+// import pixleperfectimg6 from "../../Assets/service-customDev-pixle-perfect-img6.png";
+
+import pixleperfectimg1 from "../../Assets/CustomWebPortfolio/service-customDev-pixle-perfect-img1.png";
+import pixleperfectimg2 from "../../Assets/CustomWebPortfolio/service-customDev-pixle-perfect-img2.png";
+import pixleperfectimg3 from "../../Assets/CustomWebPortfolio/service-customDev-pixle-perfect-img3.png";
+import pixleperfectimg4 from "../../Assets/CustomWebPortfolio/service-customDev-pixle-perfect-img4.png";
+import pixleperfectimg5 from "../../Assets/CustomWebPortfolio/service-customDev-pixle-perfect-img5.jpg";
+import pixleperfectimg6 from "../../Assets/CustomWebPortfolio/service-customDev-pixle-perfect-img6.jpg";
+
+import customwebcrop1 from "../../Assets/CustomWebPortfolio/custom-web-crop-1.jpg";
+import customwebcrop2 from "../../Assets/CustomWebPortfolio/custom-web-crop-2.jpg";
+import customwebcrop3 from "../../Assets/CustomWebPortfolio/custom-web-crop-3.jpg";
+import customwebcrop4 from "../../Assets/CustomWebPortfolio/custom-web-crop-4.jpg";
+import customwebcrop5 from "../../Assets/CustomWebPortfolio/custom-web-crop-5.jpg";
+import customwebcrop6 from "../../Assets/CustomWebPortfolio/custom-web-crop-6.jpg";
 
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
@@ -23,48 +37,57 @@ import performence from "../../Assets/service-customDev-about-img.png";
 import wordpresssectionimg from "../../Assets/services-customDev-about2-img.png";
 import creativethoughsec from "../../Assets/services-customDev-creativeThrough-img.png";
 import BlogSection from "../../components/blogPosts";
-import { webDesignPricingPlansData } from "../../data";
+import { customWebDevPricingPlansData } from "../../data";
+
+import Lightbox from "react-image-lightbox";
 
 export const customWebDesignPortfolioData = [
   {
     id: 1,
     image: pixleperfectimg1,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    cropImg: customwebcrop1,
   },
   {
     id: 2,
     image: pixleperfectimg2,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    cropImg: customwebcrop2,
   },
   {
     id: 3,
     image: pixleperfectimg3,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    cropImg: customwebcrop3,
   },
   {
     id: 4,
     image: pixleperfectimg4,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    cropImg: customwebcrop4,
   },
   {
     id: 5,
     image: pixleperfectimg5,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    cropImg: customwebcrop5,
   },
   {
     id: 6,
     image: pixleperfectimg6,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    cropImg: customwebcrop6,
   },
 ];
 
 const CustomWebDevelopment = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [images, setImages] = useState([]);
+
+  const handleImageClick = (index, imageArray) => {
+    const imageList = imageArray.map((item) => item.image);
+    setImages(imageList);
+    setPhotoIndex(index);
+    setTimeout(() => {
+      setIsOpen(true);
+    }, 50);
+  };
+
   return (
     <Layout>
       <ServiceBanner
@@ -93,7 +116,7 @@ const CustomWebDevelopment = () => {
       <Growyourbusiness
         title1="Need A Website Fully Customized To Your Brand"
         title2="Voice?"
-        btnText="Sign Up Now!"
+        // btnText="Sign Up Now!"
       />
 
       <PixelPerfectSec
@@ -101,7 +124,9 @@ const CustomWebDevelopment = () => {
         secTitleBlue="Custom Website Development"
         secDescription="Our custom web development services have helped clients succeed by creating beautiful, functional websites that drive results. Take a look at some of our work to see what we can do for you."
         projectsData={customWebDesignPortfolioData}
-        btnText="View Our Portfolio"
+        // btnText="View Our Portfolio"
+        imgClass="landingWebImg-div"
+        onImageClick={handleImageClick}
       />
 
       <PricingPlans
@@ -113,7 +138,8 @@ const CustomWebDevelopment = () => {
         whyWordressDescription2="Our expert team delivers front-end development that grabs attention, paired with back-end development that’s fast, secure, and easy to manage. We make sure your website works for you, not the other way around."
         // whyWordressDescription3=""
         btnText="Start Now"
-        pricingPlan={webDesignPricingPlansData}
+        btnLink="/get-intouch"
+        pricingPlan={customWebDevPricingPlansData}
       />
 
       <ContactForm
@@ -129,10 +155,26 @@ const CustomWebDevelopment = () => {
         // description2=""
         image={creativethoughsec}
         btnText="Build Your Custom Website Now!"
+        btnLink="/get-intouch"
       />
 
       <BlogSection categorySlug="custom-web-development" />
-    </Layout> 
+
+      {isOpen && images.length > 0 && images[photoIndex] && (
+        <Lightbox
+          mainSrc={images[photoIndex]}
+          nextSrc={images[(photoIndex + 1) % images.length]}
+          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+          onCloseRequest={() => setIsOpen(false)}
+          onMovePrevRequest={() =>
+            setPhotoIndex((photoIndex + images.length - 1) % images.length)
+          }
+          onMoveNextRequest={() =>
+            setPhotoIndex((photoIndex + 1) % images.length)
+          }
+        />
+      )}
+    </Layout>
   );
 };
 

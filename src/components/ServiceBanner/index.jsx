@@ -54,7 +54,7 @@ const ServiceBanner = (props) => {
                 </li>
               ))}
             </ul>
-            <Link to={"/our-work"}
+            <Link to={"/get-intouch"}
               className="btn-theme"
               data-aos="fade-right"
               data-aos-duration="3000"

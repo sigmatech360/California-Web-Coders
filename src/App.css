@@ -333,6 +333,8 @@ button:focus {
   }
   .navbar-section .nav-link {
     color: #fff !important;
+    padding: 7px 10px !important;
+    width: unset;
   }
   .hero-img-right img {
     transform: scale(1) translate(0px, 00px);

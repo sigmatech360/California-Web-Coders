@@ -248,7 +248,7 @@ const PrivacyPolicy = () => {
                 <h3>California Web Coders</h3>
                 <p className="mb-0">
                   <span className="fw-bold">Phone: </span>{" "}
-                  <a href="tel:+16193499571">+1 (619) 349-9571</a>
+                  <a href="tel:+12818458498">+1 (281) 845-8498</a>
                 </p>
                 <p className="mb-0">
                   <span className="fw-bold">Email: </span>{" "}

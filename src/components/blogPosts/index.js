@@ -11,20 +11,17 @@ import Loader from "../Loader";
 const defaultPosts = [
   {
     title: "How To Optimize The Content To Be Published To The Website",
-    description:
-      "Lorem Ipsum Dolor Sit Amet Conset Atetur Adipiscing Elit, Sed Do Eiusmod…...",
+    
     imageUrl: blog1,
   },
   {
     title: "Skills Every Copywriter Should Learn To Become A Professional",
-    description:
-      "Lorem Ipsum Dolor Sit Amet Conset Atetur Adipiscing Elit, Sed Do Eiusmod…...",
+    
     imageUrl: blog2,
   },
   {
     title: "Creating An Effective Social Media Marketing Campaign 2024",
-    description:
-      "Lorem Ipsum Dolor Sit Amet Conset Atetur Adipiscing Elit, Sed Do Eiusmod…...",
+    
     imageUrl: blog3,
   },
 ];

@@ -23,44 +23,38 @@ import performence from "../../Assets/service-seo-about-img.png";
 import wordpresssectionimg from "../../Assets/services-seo-about2-img.png";
 import creativethoughsec from "../../Assets/services-seo-creativeThrough-img.png";
 import BlogSection from "../../components/blogPosts";
-import { logoDesignPricingPlansData } from "../../data";
+import { logoDesignPricingPlansData, seoPricingPlansData } from "../../data";
 
 const featuredProjectData = [
   {
     id: 1,
     image: pixleperfectimg1,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 2,
     image: pixleperfectimg2,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 3,
     image: pixleperfectimg3,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 4,
     image: pixleperfectimg4,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 5,
     image: pixleperfectimg5,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 6,
     image: pixleperfectimg6,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
 ];
 
@@ -93,7 +87,7 @@ const SEO = () => {
       <Growyourbusiness
         title1="Want To Rank High Among"
         title2="Millions?"
-        btnText="Sign Up With Our SEO Masters"
+        // btnText="Sign Up With Our SEO Masters"
       />
 
       {/* <PixelPerfectSec
@@ -102,7 +96,7 @@ const SEO = () => {
         secDescription="Explore case studies of our clients who went from page 5 to page 1. From local businesses to e-commerce stores, our SEO services have helped brands improve their rankings, attract more qualified leads, and grow their online presence."
         projectsData={featuredProjectData}
         btnText="Witness Our Wins"
-      /> */}
+      /> */} 
 
       <PricingPlans
         secTitle="Flexible Pricing for Fixed Ranking At The Top"
@@ -114,7 +108,8 @@ const SEO = () => {
         whyWordressDescription2="We combine data, creativity, and experience to get your brand where it needs to be. Our team understands the ever-changing search algorithms and uses white-hat, effective practices to ensure your rankings improve steadily and safely."
         // whyWordressDescription3=""
         btnText="Start Now"
-        pricingPlan={logoDesignPricingPlansData}
+        btnLink="/get-intouch"
+        pricingPlan={seoPricingPlansData}
       />
 
       <Creativitythrough
@@ -124,6 +119,7 @@ const SEO = () => {
         description2="Let’s make your brand more visible, credible, and click-worthy. Your audience is searching. Let’s make sure they find you."
         image={creativethoughsec}
         btnText="Rank Your Website Now!"
+        btnLink="/get-intouch"
       />
 
       <ContactForm

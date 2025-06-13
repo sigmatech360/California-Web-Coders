@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import Layout from "../../components/layout";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
@@ -9,10 +9,15 @@ import Creativitythrough from "../../components/Creativitythrough";
 
 import pixleperfectimg1 from "../../Assets/service-cmsDev-pixle-perfect-img1.png";
 import pixleperfectimg2 from "../../Assets/service-cmsDev-pixle-perfect-img2.png";
-import pixleperfectimg3 from "../../Assets/service-cmsDev-pixle-perfect-img3.png";
-import pixleperfectimg4 from "../../Assets/service-cmsDev-pixle-perfect-img4.png";
-import pixleperfectimg5 from "../../Assets/service-cmsDev-pixle-perfect-img5.png";
-import pixleperfectimg6 from "../../Assets/service-cmsDev-pixle-perfect-img6.png";
+// import pixleperfectimg3 from "../../Assets/service-cmsDev-pixle-perfect-img3.png";
+// import pixleperfectimg4 from "../../Assets/service-cmsDev-pixle-perfect-img4.png";
+// import pixleperfectimg5 from "../../Assets/service-cmsDev-pixle-perfect-img5.png";
+// import pixleperfectimg6 from "../../Assets/service-cmsDev-pixle-perfect-img6.png";
+
+import pixleperfectimg3 from "../../Assets/CMSPortfolio/service-cmsDev-pixle-perfect-img3.webp";
+import pixleperfectimg4 from "../../Assets/CMSPortfolio/service-cmsDev-pixle-perfect-img4.webp";
+import pixleperfectimg5 from "../../Assets/CMSPortfolio/service-cmsDev-pixle-perfect-img5.webp";
+import pixleperfectimg6 from "../../Assets/CMSPortfolio/service-cmsDev-pixle-perfect-img6.webp";
 
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
@@ -25,46 +30,53 @@ import creativethoughsec from "../../Assets/services-cmsDev-creativeThrough-img.
 import BlogSection from "../../components/blogPosts";
 import { eCommerseWebsitePricingPlansData } from "../../data";
 
+
+import Lightbox from "react-image-lightbox";
+
 export const cmsDevelopmentPortfolioData = [ 
   {
     id: 1,
     image: pixleperfectimg1,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 2,
     image: pixleperfectimg2,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 3,
     image: pixleperfectimg3,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 4,
     image: pixleperfectimg4,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 5,
     image: pixleperfectimg5,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 6,
     image: pixleperfectimg6,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
 ];
 
 const CMSDevelopment = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [images, setImages] = useState([]);
+
+  const handleImageClick = (index, imageArray) => {
+    const imageList = imageArray.map((item) => item.image);
+    setImages(imageList);
+    setPhotoIndex(index);
+    setTimeout(() => {
+      setIsOpen(true);
+    }, 50);
+  };
+
   return (
     <Layout>
       <ServiceBanner
@@ -101,7 +113,9 @@ const CMSDevelopment = () => {
         // secTitleBlue="Perfection."
         secDescription="Explore our CMS-powered websites, ranging from sleek blogs to full-scale e-commerce website development projects. Whether it's custom Shopify stores or advanced WordPress platforms, every project reflects our design quality, smart structure, and easy-to-manage content flow."
         projectsData={cmsDevelopmentPortfolioData}
-        btnText="View Our Portfolio"
+        // btnText="View Our Portfolio"
+        imgClass="landingWebImg-div"
+        onImageClick={handleImageClick}
       />
 
       <PricingPlans
@@ -128,8 +142,25 @@ const CMSDevelopment = () => {
         description2="Our expert website developers in California create smart CMS solutions that allow you to update content, launch new pages, and manage media with just a few clicks. No coding. No confusion. Just powerful tools tailored to your needs."
         image={creativethoughsec}
         btnText="Start Your Journey With Us"
+        btnLink="/get-intouch"
       />
       <BlogSection categorySlug="cms-development" />
+
+
+      {isOpen && images.length > 0 && images[photoIndex] && (
+        <Lightbox
+          mainSrc={images[photoIndex]}
+          nextSrc={images[(photoIndex + 1) % images.length]}
+          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+          onCloseRequest={() => setIsOpen(false)}
+          onMovePrevRequest={() =>
+            setPhotoIndex((photoIndex + images.length - 1) % images.length)
+          }
+          onMoveNextRequest={() =>
+            setPhotoIndex((photoIndex + 1) % images.length)
+          }
+        />
+      )}
     </Layout>
   );
 };

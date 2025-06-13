@@ -18,6 +18,16 @@
   border-radius: 16px !important;
 }
 
+.form-control {
+  border-radius: 12px;
+}
+
+.form-control:focus {
+  border-color: unset;
+  outline: 0;
+  box-shadow: unset;
+}
+
 .innercontainer {
   padding: 30px 0;
 }
@@ -28,9 +38,9 @@
   background-color: #0504a5;
   font-size: 15px;
   font-family: "Outfit";
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
-.ContactForm .sendmessage:hover{
+.ContactForm .sendmessage:hover {
   background-color: #f9c74f;
   color: #0504a5;
 }

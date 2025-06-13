@@ -9,7 +9,7 @@ const WhychoseUs = () => {
     <section className="whychoseus">
       <div className="container">
         <div className="row">
-          <div class="col-md-12 mb-4">
+          <div className="col-md-12 mb-4">
             <div className="whychoseus-head text-center">
               <h6
                 className="head1"

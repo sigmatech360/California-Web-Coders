@@ -29,40 +29,34 @@ const featuredProjectData = [
   {
     id: 1,
     image: pixleperfectimg1,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 2,
     image: pixleperfectimg2,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 3,
     image: pixleperfectimg3,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 4,
     image: pixleperfectimg4,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 5,
     image: pixleperfectimg5,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
   {
     id: 6,
     image: pixleperfectimg6,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+     
   },
-];
+]; 
 
 const DigitalMarketing = () => {
   return (
@@ -123,6 +117,7 @@ const DigitalMarketing = () => {
         description2="From in-depth research to real-time optimization, we polish every campaign to ensure your marketing spend works harder and smarter. No guesswork, just growth."
         image={creativethoughsec}
         btnText="Get Your Strategy Now!"
+        btnLink="/get-intouch"
       />
 
       <ContactForm

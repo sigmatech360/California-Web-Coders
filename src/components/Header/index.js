@@ -1,12 +1,12 @@
 import React from "react";
 
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaCaretDown, FaCaretRight, FaPhoneAlt } from "react-icons/fa";
 import "./index.css";
 
 import { RiMailSendLine } from "react-icons/ri";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import logo from "../../Assets/logo.png";
 
@@ -20,11 +20,13 @@ function Header() {
               <div className="uperheader__links d-flex align-items-center justify-content-end flex-wrap">
                 <div className="d-flex gap-2 align-items-center">
                   <FaPhoneAlt />
-                  <a href="tel:+16197989688">+1 619-798-9688</a>
+                  <a href="tel:+12818458498">+1 (281) 845-8498</a>
                 </div>
                 <div className="d-flex gap-2 align-items-center">
                   <RiMailSendLine />
-                  <a href="mailto:support@californiawebcoders.com">support@californiawebcoders.com</a>
+                  <a href="mailto:support@californiawebcoders.com">
+                    support@californiawebcoders.com
+                  </a>
                 </div>
               </div>
             </div>
@@ -41,30 +43,28 @@ function Header() {
                 className="header-icon"
               />
             </Navbar.Brand>
-
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto navbar-nav-custom">
-                <Nav.Link as={Link} to="/" className="nav-link-custom">
+                <NavLink to="/" className="nav-link-custom nav-link">
                   Home
-                </Nav.Link>
-                <NavDropdown
+                </NavLink>
+                {/* <NavDropdown
                   title="Services"
                   id="navbarScrollingDropdown"
                   className="nav-dropdown-custom"
                 >
                   {[
+                    { name: "Logo Design", link: "logo-design" },
                     { name: "Web Design", link: "web-design" },
                     { name: "CMS Development", link: "cms-development" },
                     { name: "Digital Marketing", link: "digital-marketing" },
                     { name: "SMM", link: "social-media-marketing" },
+                    { name: "SEO", link: "seo" },
                     {
                       name: "Custom Web Development",
                       link: "custom-web-development",
                     },
-                    { name: "SEO", link: "seo" },
-                    { name: "Logo Design", link: "logo-design" },
                     {
                       name: "Mobile App Development",
                       link: "mobile-app-development",
@@ -74,35 +74,117 @@ function Header() {
                       as={Link}
                       to={`/services/${item.link}`}
                       key={index}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
                     >
                       {item.name}
                     </NavDropdown.Item>
                   ))}
-                </NavDropdown>
+                </NavDropdown> */}
 
                 <NavDropdown
-                  title="Our Work"
+                  title="Services"
                   id="navbarScrollingDropdown"
                   className="nav-dropdown-custom"
                 >
-                  <NavDropdown.Item as={Link} to="/our-work">
-                    Our Work
+                  {/* Regular items */}
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/services/logo-design"
+                    target="_blank"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Logo Design
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/pricing-plan">
-                    Pricing Plan
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/services/web-design"
+                    target="_blank"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Web Design
                   </NavDropdown.Item>
-                  {/* <NavDropdown.Divider /> */}
-                  <NavDropdown.Item as={Link} to="/blog">
-                    Blogs
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/services/cms-development"
+                    target="_blank"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    CMS Development
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/get-intouch">
-                    Get In Touch
+
+                  {/* Digital Marketing with Submenu */}
+                  <div className="nav-subdropdown-wrapper">
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/services/digital-marketing"
+                      target="_blank"
+                      className="nav-subdropdown-parent"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Digital Marketing{" "}
+                      <span className="submenu-icon d-none d-lg-inline">
+                        <FaCaretRight />
+                      </span>
+                      <span className="submenu-icon d-inline d-lg-none">
+                        <FaCaretDown />
+                      </span>
+                    </NavDropdown.Item>
+
+                    <div className="nav-subdropdown">
+                      <NavDropdown.Item
+                        as={Link}
+                        to="/services/social-media-marketing"
+                        target="_blank"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        SMM
+                      </NavDropdown.Item>
+                      <NavDropdown.Item
+                        as={Link}
+                        to="/services/seo"
+                        target="_blank"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        SEO
+                      </NavDropdown.Item>
+                    </div>
+                  </div>
+
+                  {/* Continue with other items */}
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/services/custom-web-development"
+                    target="_blank"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Custom Web Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/services/mobile-app-development"
+                    target="_blank"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Mobile App Development
                   </NavDropdown.Item>
                 </NavDropdown>
 
-                <Nav.Link as={Link} to="/about" className="nav-link-custom">
+                <NavLink to="/our-work" className="nav-link-custom nav-link">
+                  Our Work
+                </NavLink>
+                <NavLink
+                  to="/pricing-plan"
+                  className="nav-link-custom nav-link"
+                >
+                  Pricing Plan
+                </NavLink>
+                <NavLink to="/blog" className="nav-link-custom nav-link">
+                  Blogs
+                </NavLink>
+                <NavLink to="/about" className="nav-link-custom nav-link">
                   About Us
-                </Nav.Link>
+                </NavLink>
                 <Nav.Link
                   as={Link}
                   to="/get-intouch"

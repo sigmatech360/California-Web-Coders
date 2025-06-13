@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 import Layout from "../../components/layout";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
@@ -7,12 +7,19 @@ import PricingPlans from "../../components/PricingPlans";
 import ContactForm from "../../components/readytocheat";
 import Creativitythrough from "../../components/Creativitythrough";
 
-import pixleperfectimg1 from "../../Assets/service-logoDesign-pixle-perfect-img1.png";
-import pixleperfectimg2 from "../../Assets/service-logoDesign-pixle-perfect-img2.png";
-import pixleperfectimg3 from "../../Assets/service-logoDesign-pixle-perfect-img3.png";
-import pixleperfectimg4 from "../../Assets/service-logoDesign-pixle-perfect-img4.png";
-import pixleperfectimg5 from "../../Assets/service-logoDesign-pixle-perfect-img5.png";
-import pixleperfectimg6 from "../../Assets/service-logoDesign-pixle-perfect-img6.png";
+// import pixleperfectimg1 from "../../Assets/service-logoDesign-pixle-perfect-img1.png";
+// import pixleperfectimg2 from "../../Assets/service-logoDesign-pixle-perfect-img2.png";
+// import pixleperfectimg3 from "../../Assets/service-logoDesign-pixle-perfect-img3.png";
+// import pixleperfectimg4 from "../../Assets/service-logoDesign-pixle-perfect-img4.png";
+// import pixleperfectimg5 from "../../Assets/service-logoDesign-pixle-perfect-img5.png";
+// import pixleperfectimg6 from "../../Assets/service-logoDesign-pixle-perfect-img6.png";
+
+import pixleperfectimg1 from "../../Assets/LogoPortfolio/service-logoDesign-pixle-perfect-img1.jpg";
+import pixleperfectimg2 from "../../Assets/LogoPortfolio/service-logoDesign-pixle-perfect-img2.jpg";
+import pixleperfectimg3 from "../../Assets/LogoPortfolio/service-logoDesign-pixle-perfect-img3.jpg";
+import pixleperfectimg4 from "../../Assets/LogoPortfolio/service-logoDesign-pixle-perfect-img4.jpg";
+import pixleperfectimg5 from "../../Assets/LogoPortfolio/service-logoDesign-pixle-perfect-img5.jpg";
+import pixleperfectimg6 from "../../Assets/LogoPortfolio/service-logoDesign-pixle-perfect-img6.jpg";
 
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
@@ -24,46 +31,48 @@ import wordpresssectionimg from "../../Assets/services-logoDesign-about2-img.png
 import creativethoughsec from "../../Assets/services-logoDesign-creativeThrough-img.png";
 import { logoDesignPricingPlansData } from "../../data";
 
+import Lightbox from "react-image-lightbox";
+
 export const logoDesignPortfolioData = [
   {
     id: 1,
     image: pixleperfectimg1,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 2,
     image: pixleperfectimg2,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 3,
     image: pixleperfectimg3,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 4,
     image: pixleperfectimg4,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 5,
     image: pixleperfectimg5,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
     id: 6,
     image: pixleperfectimg6,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
 ];
 
 const LogoDesign = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [images, setImages] = useState([]);
+
+  const handleImageClick = (index, imageArray) => {
+    const imageList = imageArray.map((item) => item.image);
+    setImages(imageList);
+    setPhotoIndex(index);
+    setTimeout(() => {
+      setIsOpen(true);
+    }, 50);
+  };
   return (
     <Layout>
       <ServiceBanner
@@ -91,7 +100,7 @@ const LogoDesign = () => {
       <Growyourbusiness
         title1="Want A Logo That Sets You"
         title2="Apart?"
-        btnText="Sign Up With Our Logo Design Masters"
+        // btnText="Sign Up With Our Logo Design Masters"
       />
 
       <PixelPerfectSec
@@ -99,7 +108,8 @@ const LogoDesign = () => {
         secTitleBlue="Logos"
         secDescription="From minimalist icons to bold typography, every design in our collection tells a unique story. Explore how our clients use their logos across packaging, websites, and social platforms, and why they trust us again and again."
         projectsData={logoDesignPortfolioData}
-        btnText="Witness Our Wins"
+        // btnText="Witness Our Wins"
+        onImageClick={handleImageClick}
       />
 
       <PricingPlans
@@ -111,6 +121,7 @@ const LogoDesign = () => {
         whyWordressDescription2="Our logo design for website, packaging, merchandise, and social platforms ensures brand consistency at every touchpoint. From concept to final files, we keep you in the loop, ensuring your logo represents your identity and stands the test of time."
         whyWordressDescription3="No clip art. No templates. Just authentic, high-impact design from people who get your vision."
         btnText="Connect With Us"
+        btnLink="/get-intouch"
         pricingPlan={logoDesignPricingPlansData}
       />
 
@@ -118,6 +129,7 @@ const LogoDesign = () => {
         secTitle="Ready To Design Your Brand’s Signature?"
         secDescription="Say goodbye to generic designs and hello to a custom brand logo that instantly connects with your audience."
         btnText="Let’s Chat"
+        btnLink="/get-intouch"
       />
 
       <Creativitythrough
@@ -128,6 +140,21 @@ const LogoDesign = () => {
         image={creativethoughsec}
         btnText="Create Your Custom Logo!"
       />
+
+      {isOpen && images.length > 0 && images[photoIndex] && (
+        <Lightbox
+          mainSrc={images[photoIndex]}
+          nextSrc={images[(photoIndex + 1) % images.length]}
+          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+          onCloseRequest={() => setIsOpen(false)}
+          onMovePrevRequest={() =>
+            setPhotoIndex((photoIndex + images.length - 1) % images.length)
+          }
+          onMoveNextRequest={() =>
+            setPhotoIndex((photoIndex + 1) % images.length)
+          }
+        />
+      )}
     </Layout>
   );
 };

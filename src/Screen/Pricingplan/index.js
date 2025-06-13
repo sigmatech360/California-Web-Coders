@@ -15,165 +15,9 @@ import Professiona from "../../Assets/Professiona.svg";
 import Certified from "../../Assets/Certified.svg";
 import Premium from "../../Assets/Premium.svg";
 
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
-import PricePlanCard from "../../components/PricePlanCard";
-
 import ProgressBar from "react-bootstrap/ProgressBar";
-import { eCommerseWebsitePricingPlansData, logoDesignPricingPlansData, seoPricingPlansData, smmPricingPlansData, webDesignPricingPlansData } from "../../data";
 
-const pricingPlanData = [
-  {
-    id: 1,
-    name: "Startup Wordpress Package",
-    price: {
-      actualPrice: 699,
-      disountPrice: 249,
-    },
-    servicesList: [
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-    ],
-    number: `+1 619-798-9688`,
-  },
-  {
-    id: 2,
-    name: "Startup Wordpress Package",
-    price: {
-      actualPrice: 699,
-      disountPrice: 249,
-    },
-    servicesList: [
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-    ],
-    number: `+1 619-798-9688`,
-  },
-  {
-    id: 3,
-    name: "Startup Wordpress Package",
-    price: {
-      actualPrice: 699,
-      disountPrice: 249,
-    },
-    servicesList: [
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-    ],
-    number: `+1 619-798-9688`,
-  },
-  {
-    id: 4,
-    name: "Startup Wordpress Package",
-    price: {
-      actualPrice: 699,
-      disountPrice: 249,
-    },
-    servicesList: [
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-    ],
-    number: `+1 619-798-9688`,
-  },
-  {
-    id: 5,
-    name: "Startup Wordpress Package",
-    price: {
-      actualPrice: 699,
-      disountPrice: 249,
-    },
-    servicesList: [
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-    ],
-    number: `+1 619-798-9688`,
-  },
-  {
-    id: 6,
-    name: "Startup Wordpress Package",
-    price: {
-      actualPrice: 699,
-      disountPrice: 249,
-    },
-    servicesList: [
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-      "5 Stock Photos",
-      "5 Page Website",
-      "3 Banner Design",
-      "1 jQuery Slider Banner",
-      "FREE Google Friendly Sitemap",
-      "Complete W3C Certified HTML",
-      "48 to 72 hours TAT",
-    ],
-    number: `+1 619-798-9688`,
-  },
-];
+import PackagesTabs from "../../components/PackagesTabs";
 
 const progressBarData = [
   {
@@ -425,141 +269,12 @@ const PricingPlan = () => {
         title="Affordable Solutions For Your Next Web Design Or Mobile App Development"
         description="Affordable doesn’t mean average. Our pricing plans are built for ambitious businesses ready to grow. From standout websites to powerful mobile apps, we deliver high-quality work with honest pricing. No hidden fees. No nonsense. Just digital solutions that look good, work fast, and help your business win online without blowing your budget."
       >
-        <div className="col-lg-12">
-          <Tabs
-            defaultActiveKey="seo-tab"
-            className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            data-aos-offset="0"
-          >
-            <Tab eventKey="seo-tab" title="SEO">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                {seoPricingPlansData.map((item, index) => (
-                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
-                    <PricePlanCard
-                      name={item.name}
-                      actualPrice={item.price.actualPrice}
-                      discountPrice={item.price.disountPrice}
-                      servicesList={item.servicesList}
-                      number={item.number}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Tab>
-            <Tab eventKey="logo-design" title="Logo Design">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                {logoDesignPricingPlansData.map((item, index) => (
-                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
-                    <PricePlanCard
-                      name={item.name}
-                      actualPrice={item.price.actualPrice}
-                      discountPrice={item.price.disountPrice}
-                      servicesList={item.servicesList}
-                      number={item.number}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Tab>
-            <Tab eventKey="web-design" title="Web Design">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                {webDesignPricingPlansData.map((item, index) => (
-                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
-                    <PricePlanCard
-                      name={item.name}
-                      actualPrice={item.price.actualPrice}
-                      discountPrice={item.price.disountPrice}
-                      servicesList={item.servicesList}
-                      number={item.number}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Tab>
-            {/* <Tab eventKey="nft-design" title="NFT Design">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                <h1>NFT Design</h1>
-              </div>
-            </Tab> */}
-            <Tab eventKey="eCommerce-website" title="E Commerce Website">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                {eCommerseWebsitePricingPlansData.map((item, index) => (
-                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
-                    <PricePlanCard
-                      name={item.name}
-                      actualPrice={item.price.actualPrice}
-                      discountPrice={item.price.disountPrice}
-                      servicesList={item.servicesList}
-                      number={item.number}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Tab>
-            {/* <Tab eventKey="video-animation" title="Video Animation">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                <h1>Video Animation</h1>
-              </div>
-            </Tab> */}
-            <Tab eventKey="smm-tab" title="SMM">
-              <div
-                className="row justify-content-center"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                {smmPricingPlansData.map((item, index) => (
-                  <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
-                    <PricePlanCard
-                      name={item.name}
-                      actualPrice={item.price.actualPrice}
-                      discountPrice={item.price.disountPrice}
-                      servicesList={item.servicesList}
-                      number={item.number}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Tab>
-          </Tabs>
-        </div>
+        <PackagesTabs />
       </Mobileworld>
 
-      <RefundPolicy />
+      {/* <RefundPolicy /> */}
 
-      <section class="express-and-faq-sec">
+      <section className="express-and-faq-sec">
         <section className="express-sec">
           <div className="container">
             <div className="row flex-lg-row flex-column-reverse gap-lg-0 gap-4">
@@ -569,7 +284,7 @@ const PricingPlan = () => {
                   data-aos="fade-right"
                   data-aos-duration="2000"
                 >
-                  <div class="express-content-head">
+                  <div className="express-content-head">
                     <h2>It’s Not The Money, It’s The Experience.</h2>
                     <p>
                       Every penny spent at California Web Coders is an
@@ -581,7 +296,7 @@ const PricingPlan = () => {
                   </div>
                   <div className="progress-bar-list">
                     {progressBarData.map((item, index) => (
-                      <div className="progress-bar-list-item">
+                      <div className="progress-bar-list-item" key={index}>
                         <p>{item.title}</p>
                         <ProgressBar
                           now={item.percent}
@@ -594,90 +309,10 @@ const PricingPlan = () => {
               </div>
               <div className="col-lg-6">
                 <div
-                  class="express-cards h-100"
+                  className="express-cards h-100"
                   data-aos="fade-left"
                   data-aos-duration="2000"
                 >
-                  {/* <div className="row h-100 gap-md-0 gap-4">
-                    <div className="col-md-6 h-100">
-                        <div class="express-cards-items">
-                          <div className="card text-center border-0    text-white ">
-                            <div className="card-body">
-                              <div
-                                className="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center mx-auto mb-3"
-                                style={{ width: "60px", height: "60px" }}
-                              >
-                                <img src={smart} className="img-fluid" />
-                              </div>
-                              <h5 className="card-title  ">Creative Solutions</h5>
-                              <p className="card-text">
-                                We blend creativity with clean code to build
-                                digital experiences that are beautiful,
-                                brand-aligned, and function perfectly across all
-                                devices.
-                              </p>
-                            </div>
-                          </div>
-                          <div className="card cards text-center border-0    text-white ">
-                            <div className="card-body">
-                              <div
-                                className="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center mx-auto mb-3"
-                                style={{ width: "60px", height: "60px" }}
-                              >
-                                <img src={Professiona} className="img-fluid" />
-                              </div>
-                              <h5 className="card-title  ">
-                                User-friendly Experience
-                              </h5>
-                              <p className="card-text">
-                                Our websites are built for easy updates, simple
-                                navigation, and intuitive use, so you stay in
-                                control without the tech stress.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    <div className="col-md-6">
-                        <div class="express-cards-items">
-                          <div className="card text-center border-0    text-white ">
-                            <div className="card-body">
-                              <div
-                                className="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center mx-auto mb-3"
-                                style={{ width: "60px", height: "60px" }}
-                              >
-                                <img src={Certified} className="img-fluid" />
-                              </div>
-                              <h5 className="card-title  ">Performance Driven</h5>
-                              <p className="card-text">
-                                From fast load times to SEO-ready frameworks,
-                                every site we create is optimized to perform and
-                                scale with your growth.
-                              </p>
-                            </div>
-                          </div>
-                          <div className="card cards text-center border-0    text-white ">
-                            <div className="card-body">
-                              <div
-                                className="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center mx-auto mb-3"
-                                style={{ width: "60px", height: "60px" }}
-                              >
-                                <img src={Premium} className="img-fluid" />
-                              </div>
-                              <h5 className="card-title  ">
-                                24/7 Customer Service
-                              </h5>
-                              <p className="card-text">
-                                Our clients are our top priority; we offer 24/7
-                                customer support to maintain constant
-                                communication and ensure transparency in all our
-                                projects.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div> */}
                   <div className="express-cards-items-updated">
                     <div className="card text-center border-0    text-white ">
                       <div className="card-body">

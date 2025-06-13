@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 function Footer() {
   const [email, setEmail] = useState("");
   const apiUrl = process.env.REACT_APP_API_BASE_URL;
-  console.log("apiUrl", apiUrl);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,7 +27,17 @@ function Footer() {
       const result = await response.json();
       console.log(result);
       // alert("Email Submitted Successfully");
-      toast.success("Email submitted successfully!");
+      if (result.status) {
+        toast.success("Thank you for subscribing to our newsletter!");
+        setEmail("");
+      } else {
+        const messages = result.message;
+        Object.keys(messages).forEach((field) => {
+          messages[field].forEach((msg) => {
+            toast.error(msg);
+          });
+        });
+      }
     } catch (error) {
       console.log(`Error submitting email:`, error);
       // alert("Submission failed. Please try again.");
@@ -60,9 +69,12 @@ function Footer() {
                   <Link to={"/about"} className="main-footer-link">
                     About Us
                   </Link>
-                  <Link to={"/services"} className="main-footer-link">
-                    Services
+                  <Link to={"/blog"} className="main-footer-link">
+                    Blogs
                   </Link>
+                  {/* <Link to={"/services"} className="main-footer-link">
+                    Services
+                  </Link> */}
                   <Link to={"/pricing-plan"} className="main-footer-link">
                     Packages
                   </Link>
@@ -95,8 +107,14 @@ function Footer() {
                   <br />
                   CA 92101, United States
                   <br />
-                  <a href="tel:+16197989688" className="footer_list_item">
-                    <i className="fas fa-phone-alt"></i> +1 619-798-9688
+                  <a href="tel:+12818458498" className="footer_list_item">
+                    <i className="fas fa-phone-alt"></i> +1 (281) 845-8498
+                  </a>
+                  <a
+                    href="mailto:support@californiawebcoders.com"
+                    className="footer_list_item"
+                  >
+                    support@californiawebcoders.com
                   </a>
                 </p>
               </div>
@@ -167,17 +185,19 @@ function Footer() {
               >
                 Privacy Policy
               </Link>
-              <a
+              {/* <a
                 href="#support"
                 className="footer_list_item  text-white text-decoration-none"
               >
                 Support
-              </a>
+              </a> */}
             </p>
           </div>
           <div className="  justify-content-end">
             {" "}
-            <p className="mb-0">Copyright © 2024. All Rights Reserved.</p>
+            <p className="mb-0">
+              Copyright © {new Date().getFullYear()}. All Rights Reserved.
+            </p>
           </div>
         </div>
       </div>

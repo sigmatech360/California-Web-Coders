@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
+
+// import Lightbox from "react-image-lightbox";
+// import "react-image-lightbox/style.css";
+
 import Layout from "../../components/layout";
 import ourworkheroimg from "../../Assets/ourworkheroimg.png";
 
@@ -19,13 +23,7 @@ import pixleperfectimg13 from "../../Assets/ourWork-pixle-perfect-img13.png";
 import pixleperfectimg14 from "../../Assets/ourWork-pixle-perfect-img14.png";
 import pixleperfectimg15 from "../../Assets/ourWork-pixle-perfect-img15.png";
 
-
-
-import NewsCard from "../../components/NewsCard";
-
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
-import { Link } from "react-router-dom";
+import PortfolioTabs from "../../components/PortfolioTabs";
 
 const featuredProjectData = [
   {
@@ -88,16 +86,17 @@ const featuredProjectData = [
     id: 15,
     image: pixleperfectimg15,
   },
-];
+]; 
 
 const OurWork = () => {
+  
   return (
     <Layout>
       <section className="OurWork">
         <div className="container">
           <div className="row align-items-center flex-lg-row flex-column-reverse gap-lg-0 gap-4">
             <div className="col-xl-4 col-lg-5">
-              <div class="OurWork-content">
+              <div className="OurWork-content">
                 <h1
                   className="title "
                   data-aos="fade-right"
@@ -121,7 +120,7 @@ const OurWork = () => {
 
             <div className="col-xl-8 col-lg-7">
               <div
-                class="OurWork-image"
+                className="OurWork-image"
                 data-aos="fade-left"
                 data-aos-duration="2000"
                 data-aos-offset="0"
@@ -165,53 +164,20 @@ const OurWork = () => {
               </div>
             </div>
             <div className="col-md-12">
-              <Tabs
-                defaultActiveKey="web-design"
-                className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
-                data-aos="fade-up"
-                data-aos-duration="3000"
-                data-aos-offset="0"
-              >
-                <Tab eventKey="logo-design" title="Logo Design">
-                  Logo Design
-                </Tab>
-                <Tab eventKey="web-design" title="Web Design">
-                  <div
-                    className="row"
-                    data-aos="fade-up"
-                    data-aos-duration="3000"
-                    data-aos-offset="0"
-                  >
-                    {featuredProjectData.map((item, index) => (
-                      <div className="col-lg-4 col-md-6 mb-4" key={index}>
-                        <NewsCard
-                          image={item.image}
-                          // description={item.description}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </Tab>
-                <Tab eventKey="nft-design" title="NFT Design">
-                  NFT Design
-                </Tab>
-                <Tab eventKey="eCommerce-website" title="E Commerce Website">
-                  E Commerce Website
-                </Tab>
-                <Tab eventKey="video-animation" title="Video Animation">
-                  Video Animation
-                </Tab>
-              </Tabs>
+
+              <PortfolioTabs />
             </div>
 
-            <div className="col-md-12 mt-3">
-              <div class="justify-content-center d-flex flex-wrap gap-4">
+            {/* <div className="col-md-12 mt-3">
+              <div className="justify-content-center d-flex flex-wrap gap-4">
                 <Link to={"/services/web-design"} className="viewbtn">View All Projects</Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
+
+      
     </Layout>
   );
 };

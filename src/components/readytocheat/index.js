@@ -12,7 +12,7 @@ const ContactForm = (props) => {
     data_message: "",
   });
   const apiUrl = process.env.REACT_APP_API_BASE_URL;
-  console.log("apiUrl", apiUrl);
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,35 +20,45 @@ const ContactForm = (props) => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); 
-
-    try {
-      const response = await fetch(`${apiUrl}/submit-query`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-      console.log(result);
-      // alert("Form Submitted Successfully");
-      toast.success("Form submitted successfully!");
-
-      setFormData({
-        username: "",
-        email: "",
-        phone: "",
-        company_name: "",
-        data_message: "",
-      });
-    } catch (error) {
-      console.log(`Error submitting form:`, error);
-      // alert("Submission failed. Please try again.");
-      toast.error("Submission failed. Please try again.");
-    }
-  };
+      e.preventDefault();
+  
+      try {
+        const response = await fetch(`${apiUrl}/submit-query`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+  
+        const result = await response.json();
+        console.log(result);
+        // alert("Form Submitted Successfully");
+  
+        if (result.status) {
+          toast.success(result.message);
+          setFormData({
+            username: "",
+            email: "",
+            phone: "",
+            company_name: "",
+            data_message: "",
+          });
+        } else {
+          const messages = result.message;
+          Object.keys(messages).forEach((field) => {
+            messages[field].forEach((msg) => {
+              toast.error(msg);
+            });
+          });
+        }
+      } catch (error) {
+        console.log(`Error submitting form:`, error);
+        // alert("Submission failed. Please try again.");
+        //   toast.error("Submission failed. Please try again.");
+        toast.error(error.message);
+      }
+    };
 
   return (
     <section className="ContactForm text-white py-5">
@@ -65,8 +75,8 @@ const ContactForm = (props) => {
             </p>
           </div>
           <form onSubmit={handleSubmit}>
-            <div class="row justify-content-center">
-              <div class="col-xl-8">
+            <div className="row justify-content-center">
+              <div className="col-xl-8">
                 <div className="row g-3">
                   <div className="col-12 col-md-6">
                     <input
@@ -76,7 +86,7 @@ const ContactForm = (props) => {
                       name="username"
                       value={formData.username}
                       onChange={handleChange}
-                      required
+                      // required
                     />
                   </div>
                   <div className="col-12 col-md-6">
@@ -87,7 +97,7 @@ const ContactForm = (props) => {
                       name="company_name"
                       value={formData.company_name}
                       onChange={handleChange}
-                      required
+                      // required
                     />
                   </div>
                   <div className="col-12 col-md-6">
@@ -98,7 +108,7 @@ const ContactForm = (props) => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      required
+                      // required
                     />
                   </div>
                   <div className="col-12 col-md-6">
@@ -109,7 +119,7 @@ const ContactForm = (props) => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      required
+                      // required
                     />
                   </div>
                   <div className="col-12">
@@ -120,7 +130,7 @@ const ContactForm = (props) => {
                       name="data_message"
                       value={formData.data_message}
                       onChange={handleChange}
-                      required
+                      // required
                     ></textarea>
                   </div>
                 </div>

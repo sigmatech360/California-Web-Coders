@@ -39,14 +39,11 @@ const Creativitythrough = (props) => {
                 </p>
               )}
 
-              <Link to={"/our-work"}
+              {/* <Link to={props.btnLink || "/our-work"}
                 className="intouch btn   btn-lg mt-3"
-                // data-aos="fade-right"
-                // data-aos-duration="3000"
-                // data-aos-offset="0"
               >
                 {props.btnText || `View Our Latest Work`}
-              </Link>
+              </Link> */}
             </div>
           </div>
 

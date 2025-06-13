@@ -30,7 +30,7 @@ const pricingPlanData = [
       "Complete W3C Certified HTML",
       "48 to 72 hours TAT",
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ const pricingPlanData = [
       "Complete W3C Certified HTML",
       "48 to 72 hours TAT",
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
   {
     id: 3,
@@ -80,7 +80,7 @@ const pricingPlanData = [
       "Complete W3C Certified HTML",
       "48 to 72 hours TAT",
     ],
-    number: `+1 619-798-9688`,
+    number: `+1 (281) 845-8498`,
   },
 ];
 const PricingPlans = (props) => {
@@ -110,6 +110,7 @@ const PricingPlans = (props) => {
           {props.pricingPlan.map((item, index) => (
             <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
               <PricePlanCard
+                packageInfo={item.packageInfo}
                 name={item.name}
                 actualPrice={item.price.actualPrice}
                 discountPrice={item.price.disountPrice}
@@ -120,10 +121,27 @@ const PricingPlans = (props) => {
           ))}
         </div>
 
+        {props.pricingPlan2 && (
+          <div className="row mb-md-5 mb-3">
+            {props.pricingPlan2.map((item, index) => (
+            <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
+              <PricePlanCard
+              packageInfo={item.packageInfo}
+                name={item.name}
+                actualPrice={item.price.actualPrice}
+                discountPrice={item.price.disountPrice}
+                servicesList={item.servicesList}
+                number={item.number}
+              />
+            </div>
+          ))}
+          </div>
+        )}
+
         <div className="row">
           <div className="col-lg-6">
             <div
-              class="why-wordpress-img"
+              className="why-wordpress-img"
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-offset="0"
@@ -139,7 +157,7 @@ const PricingPlans = (props) => {
             </div>
           </div>
           <div className="col-lg-6">
-            <div class="why-wordpress-content">
+            <div className="why-wordpress-content">
               <h1
                 data-aos="fade-left"
                 data-aos-duration="1000"
@@ -174,15 +192,12 @@ const PricingPlans = (props) => {
                   {props.whyWordressDescription3}
                 </p>
               )}
-              <Link
-                to={"/our-work"}
+              {/* <Link
+                to={props.btnLink || "/our-work"}
                 className="morebenifit"
-                // data-aos="fade-left"
-                // data-aos-duration="3000"
-                // data-aos-offset="0"
               >
                 {props.btnText || `See More Benefits`}
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

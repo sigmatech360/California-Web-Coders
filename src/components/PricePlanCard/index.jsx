@@ -31,16 +31,15 @@
 
 import React, { useState } from "react";
 import ListIcon from "../ListIcon";
-import { Modal, Button } from "react-bootstrap";
+import FormModal from "../FormModal";
 
 const PricePlanCard = (props) => {
-  const [orderModal, setOrderModal] = useState(false);
-  const handleShow = () => setOrderModal(true);
-  const handleClose = () => setOrderModal(false);
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <div className="price-plan-card">
         <div className="price-plane-head">
+          {props.packageInfo && (<p className="price-plane-head-info">{props.packageInfo}</p>)}
           <p className="price-plane-head-title">{props.name}</p>
           <p className="price-card-discount">
             <span>${props.actualPrice}</span> ONLY
@@ -71,10 +70,10 @@ const PricePlanCard = (props) => {
           ))}
         </div>
 
-        <button 
-        type="button" 
-        className="price-card-btn" 
-        // onClick={handleShow}
+        <button
+          type="button"
+          className="price-card-btn"
+          onClick={() => setShowModal(true)}
         >
           Order Now
         </button>
@@ -85,23 +84,7 @@ const PricePlanCard = (props) => {
         </div>
       </div>
 
-      <Modal show={orderModal} onHide={handleClose} centered size="lg">
-        <Modal.Header closeButton>
-          <Modal.Title>Place Your Order</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {/* You can place your form or content here */}
-          <p>Order form or details go here...</p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Submit Order
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <FormModal show={showModal} handleClose={() => setShowModal(false)} />
     </>
   );
 };
