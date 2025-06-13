@@ -4,6 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import testimonialimg1 from "../../Assets/testimonialimg1.png";
+import beauCooper from "../../Assets/beauCooper.png";
+import Carlo from "../../Assets/Carlo.png";
+import joe from "../../Assets/joe.png";
 
 
 import HoldenHoffington from "../../Assets/HoldenHoffington.png";
@@ -20,7 +23,7 @@ import "./index.css";
 const testimonials = [
   {
     name: "Nelson Ventura",
-    title: "Businessman",
+    title: "E-commerce owner",
     text: "Troy and Jay from California Web Coders were quick, professional, and truly understood my logo vision. The final design was high-quality and spot-on. Highly efficient and collaborative team.",
     image: HoldenHoffington,
   },
@@ -32,13 +35,13 @@ const testimonials = [
   },
   {
     name: "Eduardo Domingo",
-    title: "Businessman",
+    title: "Marketing director",
     text: "Troy and Matthew guided me through logo design with helpful advice and fair pricing. The final result exceeded my expectations. I truly appreciated their attention and professionalism.",
     image: BillNewman,
   },
   {
     name: "LJC Homes",
-    title: "Businessman",
+    title: "Data analyst",
     text: "The team went beyond expectations to perfect my logo design. Their dedication and flexibility impressed me. I’ll definitely work with them again for future logo projects and design needs.",
     image: AllineMccoy,
   },
@@ -46,7 +49,7 @@ const testimonials = [
 const testimonials2 = [
   {
     name: "Rodney Winston",
-    title: "Businessman",
+    title: "Digital strategist",
     text: "Working with John Byers and California Web Coders was seamless. They answered all my questions promptly and delivered exactly what I needed. Looking forward to collaborating with them again soon.",
     image: HelenaSoretti,
   },
@@ -54,19 +57,19 @@ const testimonials2 = [
     name: "Beau Cooper",
     title: "Businessman",
     text: "California Web Coders built my website fast and made it look great. The price was fair, and the team was easy to work with. I’m very satisfied with the outcome.",
-    image: HoldenHoffington,
+    image: beauCooper,
   },
   {
     name: "Joe Joe",
-    title: "Businessman",
+    title: "Creative director",
     text: "Web Coders delivered excellent work for the ABA Caribbean League. Special thanks to Troy Maxwell and Jay Scott. We’ll definitely be coming back to them for future projects.",
-    image: testimonialimg1,
+    image: joe,
   },
   {
     name: "Carlo Grassetti",
-    title: "Businessman",
+    title: "Content creator",
     text: "Alex was patient, knowledgeable, and supportive throughout the process. He went above and beyond to meet my needs. Great experience working with him and California Web Coders overall.",
-    image: testimonialimg1,
+    image: Carlo,
   },
 ];
 
@@ -76,9 +79,9 @@ const Testimonial = () => {
     arrows: false,
     infinite: true,
     centerMode: true,
-    centerPadding: "0px",
+    centerPadding: "10px",
     speed: 3000,
-    slidesToShow: 3.5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
