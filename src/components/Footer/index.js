@@ -1,17 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import "./index.css"; // Add any additional styling here
-import footerlogo from "../../Assets/footerlogo.png";
-import footerlogo1 from "../../Assets/footerlogo2.png";
-import footerlogo2 from "../../Assets/footerlogo3.png";
-import footerlogo3 from "../../Assets/footerlofo3.png";
+import footerlogo from "../../Assets/footerlogo.webp";
+import footerlogo1 from "../../Assets/footerlogo2.webp";
+import footerlogo2 from "../../Assets/footerlogo3.webp";
+import footerlogo3 from "../../Assets/footerlofo3.webp";
 import { SiMinutemailer } from "react-icons/si";
 import { Link } from "react-router-dom";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+import { LiaPinterestP } from "react-icons/lia";
+import { CiAt } from "react-icons/ci";
 
 function Footer() {
   const [email, setEmail] = useState("");
   const apiUrl = process.env.REACT_APP_API_BASE_URL;
 
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -25,7 +35,6 @@ function Footer() {
       });
 
       const result = await response.json();
-      console.log(result);
       // alert("Email Submitted Successfully");
       if (result.status) {
         toast.success("Thank you for subscribing to our newsletter!");
@@ -39,11 +48,17 @@ function Footer() {
         });
       }
     } catch (error) {
-      console.log(`Error submitting email:`, error);
       // alert("Submission failed. Please try again.");
       toast.error("Submission failed. Please try again.");
     }
   };
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://images.dmca.com/Badges/DMCABadgeHelper.min.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
 
   return (
     <footer className="main-footer text-white">
@@ -57,6 +72,63 @@ function Footer() {
               Delivering custom digital solutions with creativity, precision,
               and passion. Your success is our mission.
             </p>
+
+            <div className="connect-sm-icons justify-content-start">
+              <a
+                href="https://www.facebook.com/people/California-Web-Coders/61560871757077/"
+                className="facebook-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://www.instagram.com/californiawebcoders1"
+                className="instagram-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/california-web-coders/"
+                className="linkedin-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="https://www.youtube.com/@CaliforniaWebCoders-e8v"
+                className="youtube-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Youtube"
+              >
+                <FaYoutube />
+              </a>
+              <a
+                href="https://x.com/californiawebco"
+                className="twitter-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="https://www.pinterest.com/californiawebcoders/"
+                className="pinterest-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Pinterest"
+              >
+                <LiaPinterestP />
+              </a>
+            </div>
           </div>
           <div className="col-lg-8">
             <div className="row">
@@ -69,9 +141,12 @@ function Footer() {
                   <Link to={"/about"} className="main-footer-link">
                     About Us
                   </Link>
-                  <Link to={"/blog"} className="main-footer-link">
-                    Blogs
+                  <Link to={"/our-work"} className="main-footer-link">
+                    Our Work
                   </Link>
+                  {/* <Link to={"/blog"} className="main-footer-link">
+                    Blogs
+                  </Link> */}
                   {/* <Link to={"/services"} className="main-footer-link">
                     Services
                   </Link> */}
@@ -83,8 +158,11 @@ function Footer() {
               <div className="col-md-4 mb-4">
                 <h5>Info</h5>
                 <div className="main-footer-links">
-                  <Link to={""} className="main-footer-link">
+                  {/* <Link to="/?scrollTo=cwc-faq" className="main-footer-link">
                     FAQ's
+                  </Link> */}
+                  <Link to={"/blog"} className="main-footer-link">
+                    Blog
                   </Link>
                   <Link to={"/get-intouch"} className="main-footer-link">
                     Contact
@@ -114,7 +192,7 @@ function Footer() {
                     href="mailto:support@californiawebcoders.com"
                     className="footer_list_item"
                   >
-                    support@californiawebcoders.com
+                    support<span class="at"></span>californiawebcoders<span class="dot"></span>com
                   </a>
                 </p>
               </div>
@@ -126,22 +204,37 @@ function Footer() {
         <div className="footer-bottom py-4">
           <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
             {/* Logos Section */}
-            <div className="d-flex align-items-center mb-3 mb-md-0">
-              <img
-                src={footerlogo1}
-                alt="DMCA Protected"
-                className="me-3 footer-logo"
-              />
-              <img
-                src={footerlogo3}
-                alt="DMCA Verified"
-                className="footer-protect-img"
-              />
-              <img
+            <div className="d-flex align-items-center mb-3 mb-md-0 footer-dmca-images">
+              <a
+                href="https://upcity.com/profiles/california-web-coders"
+                target="_blank"
+                // rel='noopener'
+                rel="noreferrer"
+              >
+                <img
+                  src={footerlogo1}
+                  alt="WEBSITE DEVELOPMENT"
+                  className="me-3 footer-logo"
+                />
+              </a>
+              <a
+                href="https://www.dmca.com/r/8mj38w0"
+                title="DMCA.com Protection Status"
+                target="_blank"
+                className="dmca-badge"
+                rel="noreferrer"
+              >
+                <img
+                  src={footerlogo3}
+                  alt="DMCA Verified"
+                  className="footer-protect-img"
+                />
+              </a>
+              {/* <img
                 src={footerlogo2}
                 alt="DMCA Compliant"
                 className="me-3 footer-dmca"
-              />
+              /> */}
             </div>
 
             {/* Newsletter Signup */}
@@ -159,6 +252,7 @@ function Footer() {
                     name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    required
                   />
                   <button type="submit" className="sendbtn btn">
                     <SiMinutemailer />

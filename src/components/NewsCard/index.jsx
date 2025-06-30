@@ -5,7 +5,7 @@ const NewsCard = (props) => {
   return (
     <div className="news-card">
       <div className={`news-card-img ${props.imgClass}`}>
-        <img src={props.image} className="img-fluid rounded" />
+        <img src={props.image} alt="img" className="img-fluid rounded" />
       </div>
       {/* <img src={props.image} className="img-fluid rounded" /> */}
       {props.description && (

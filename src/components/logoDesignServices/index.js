@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import logodesignimg from "../../Assets/logodesignimg.png";
+import logodesignimg from "../../Assets/logodesignimg.webp";
 
 const LogoDesignServices = () => {
   return (
@@ -10,14 +10,14 @@ const LogoDesignServices = () => {
           <div className="col-xl-6 col-lg-7 ">
             <p className="para">Say No To Logo Template Scams</p>
 
-            <p
+            <h2
               className="title"
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-offset="0"
             >
               A Logo Design That Reflects Your Brand Personality
-            </p>
+            </h2>
 
             <p
               className="para2 mb-2"
@@ -61,6 +61,7 @@ const LogoDesignServices = () => {
           <div className="col-xl-6 col-lg-5 logoServiceCol-2">
             <img
               className="img-fluid  LogoDesignServicesimg"
+              alt={"img"}
               src={logodesignimg}
               data-aos="fade-left"
               data-aos-duration="2000"

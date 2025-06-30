@@ -1,6 +1,6 @@
 import React from "react";
-import heroimg from "../../Assets/heroimg.jpg";
-import heroimg2 from "../../Assets/heroimg2.jpg";
+import heroimg from "../../Assets/heroimg.webp";
+import heroimg2 from "../../Assets/heroimg2.webp";
 import { Link } from "react-router-dom";
 
 const MainBanner = () => {
@@ -12,14 +12,14 @@ const MainBanner = () => {
             <div className="col-lg-6 text-center text-lg-start">
               <div className="hero-content">
                 <div>
-                  <h2
+                  <h1
                     className="title"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-offset="0"
                   >
                     Your Growth Starts <span>With</span> A Great Web Design
-                  </h2>
+                  </h1>
                   <p
                     className="para me-lg-5 me-0 pe-lg-5 pe-0"
                     data-aos="fade-up"

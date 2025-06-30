@@ -176,13 +176,13 @@
   font-weight: 400;
 }
 .graphic-bg {
-  background-image: url(../../Assets/grafphic-bg.png);
+  background-image: url(../../Assets/grafphic-bg.webp);
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: top right;
 }
 .web-dev-bg {
-  background-image: url(../../Assets/web-dev-img.png);
+  background-image: url(../../Assets/web-dev-img.webp);
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: bottom right;

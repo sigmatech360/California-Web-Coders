@@ -2,10 +2,10 @@ import React from "react";
 
 import "./index.css";
 
-import visaLogo from "../../Assets/visa-logo.png";
-import paypalLogo from "../../Assets/paypal-logo.png";
-import mastercardLogo from "../../Assets/mastercard-logo.png";
-import maestroLogo from "../../Assets/maestro-logo.png";
+import visaLogo from "../../Assets/visa-logo.webp";
+import paypalLogo from "../../Assets/paypal-logo.webp";
+import mastercardLogo from "../../Assets/mastercard-logo.webp";
+import maestroLogo from "../../Assets/maestro-logo.webp";
 
 const RefundPolicy = () => {
   return (

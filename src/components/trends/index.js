@@ -18,7 +18,6 @@ const Trends = () => {
       .get(`${baseURL}/categories`)
       .then((res) => {
         setCategories(res.data);
-        console.log("categories", res.data);
       })
       .catch((err) => console.error("Category Error:", err));
   }, []);
@@ -41,8 +40,6 @@ const Trends = () => {
       });
   }, [activeCategory]);
 
-  console.log("posts", posts);
-  console.log("activeCategory", activeCategory);
 
   return (
     <section className="Trends blog-with-sidebar">
@@ -65,7 +62,7 @@ const Trends = () => {
                   return (
                     <div className="col-xl-4 col-md-6 mb-4" key={index}>
                       <div
-                        className="card blog-card wordpressBlogCard"
+                        className="card blog-card wordpressBlogCard blogCard"
                         data-aos="fade-up"
                         // data-aos-duration="2000"
                         data-aos-delay={index * 200}
@@ -73,22 +70,22 @@ const Trends = () => {
                         <Link to={`/blog/${post.slug}`}>
                           <img
                             src={image}
-                            className="card-img-top"
+                            className="card-img-top blogCardImg"
                             alt="Blog Post"
                           />
                         </Link>
                         <div className="mt-2">
-                          <Link to={`/blog/${post.slug}`}>
-                            <h5 className="card-title">{title}</h5>
+                          <Link to={`/blog/${post.slug}`} className="blogCardTitleA">
+                            <h5 className="card-title blogCardTitle">{title}</h5>
                           </Link>
                           <p
-                            className="card-text"
+                            className="card-text blogCardP"
                             dangerouslySetInnerHTML={{ __html: excerpt }}
                           />
                           <Link
                             // href={post.link}
                             to={`/blog/${post.slug}`}
-                            className="read-more"
+                            className="read-more blogCardA"
                             // target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -105,7 +102,7 @@ const Trends = () => {
 
           <div className="col-md-3">
             <div className="category-sidebar">
-              <h5>Categories</h5>
+              <h2>Categories</h2>
               <ul className="list-group">
                 <li
                   className={`list-group-item ${

@@ -26,7 +26,7 @@
   z-index: 1;
   position: relative;
 }
-.blog-blue-head-content h2 {
+.blog-blue-head-content h3 {
   font-size: 45px;
 }
 .blog-blue-head-content a {
@@ -107,7 +107,7 @@
 }
 
 @media (max-width: 991px) {
-  .blog-blue-head-content h2 {
+  .blog-blue-head-content h3 {
     font-size: 35px;
   }
 }
@@ -134,10 +134,10 @@
 }
 
 @media (max-width: 430px) {
-  .blog-blue-head-content h2 br {
+  .blog-blue-head-content h3 br {
     display: none;
   }
-  .blog-blue-head-content h2 {
+  .blog-blue-head-content h3 {
     font-size: 33px;
   }
 }

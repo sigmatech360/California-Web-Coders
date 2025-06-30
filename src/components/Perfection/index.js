@@ -18,7 +18,7 @@ const Perfection = () => {
 <div className="col-md-4">
         {/* <div key={news.id} className="p-4 mt-4">
                         <div className="news-card bg-white shadow-sm rounded">
-                          <img src={news.image}   className="img-fluid rounded mb-2" />
+                          <img src={news.image} alt=""   className="img-fluid rounded mb-2" />
                           <div className="p-3">
                             <p className="text-muted small mb-1">{news.date}</p>
                             <h5 className="fw-bold mb-2">{news.title}</h5>

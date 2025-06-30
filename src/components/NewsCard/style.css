@@ -7,6 +7,10 @@
 .news-card-img {
   border-radius: 12px;
   overflow: hidden;
+  cursor: pointer;
+}
+.news-card-img img{
+  width: 100%;
 }
 .landingWebImg-div img {
   height: 265.594px;

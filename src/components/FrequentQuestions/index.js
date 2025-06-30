@@ -91,7 +91,7 @@ const FrequentQuestions = (props) => {
 
   return (
     <>
-      <section className="faqs-sec">
+      <section className="faqs-sec" id="cwc-faq">
         <div className="container">
           <div className="row align-items-end mb-4">
             <div className="col-lg-6">
@@ -123,7 +123,12 @@ const FrequentQuestions = (props) => {
                   .slice(0, Math.ceil(faqState.length / 2))
                   .map((item, index) => (
                     <Accordion.Item eventKey={index.toString()} key={item.id}>
-                      <Accordion.Header>{item.question}</Accordion.Header>
+                      {/* <Accordion.Header>{item.question}</Accordion.Header> */}
+                      <h4 className="accordion-header">
+                        <Accordion.Button as="div" className="w-100 text-start">
+                          {item.question}
+                        </Accordion.Button>
+                      </h4>
                       <Accordion.Body>{item.answer}</Accordion.Body>
                     </Accordion.Item>
                   ))}
@@ -139,7 +144,12 @@ const FrequentQuestions = (props) => {
                       eventKey={(index + faqState.length / 2).toString()}
                       key={item.id}
                     >
-                      <Accordion.Header>{item.question}</Accordion.Header>
+                      {/* <Accordion.Header>{item.question}</Accordion.Header> */}
+                      <h4 className="accordion-header">
+                        <Accordion.Button as="div" className="w-100 text-start">
+                          {item.question}
+                        </Accordion.Button>
+                      </h4>
                       <Accordion.Body>{item.answer}</Accordion.Body>
                     </Accordion.Item>
                   ))}

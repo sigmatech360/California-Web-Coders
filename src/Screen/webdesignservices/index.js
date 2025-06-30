@@ -7,20 +7,20 @@ import PricingPlans from "../../components/PricingPlans";
 import ContactForm from "../../components/readytocheat";
 import Creativitythrough from "../../components/Creativitythrough";
 
-import pixleperfectimg1 from "../../Assets/service-mainServices-pixle-perfect-img1.png";
-import pixleperfectimg2 from "../../Assets/service-mainServices-pixle-perfect-img2.png";
-import pixleperfectimg3 from "../../Assets/service-mainServices-pixle-perfect-img3.png";
-import pixleperfectimg4 from "../../Assets/service-mainServices-pixle-perfect-img4.png";
-import pixleperfectimg5 from "../../Assets/service-mainServices-pixle-perfect-img5.png";
-import pixleperfectimg6 from "../../Assets/service-mainServices-pixle-perfect-img6.png";
+import pixleperfectimg1 from "../../Assets/service-mainServices-pixle-perfect-img1.webp";
+import pixleperfectimg2 from "../../Assets/service-mainServices-pixle-perfect-img2.webp";
+import pixleperfectimg3 from "../../Assets/service-mainServices-pixle-perfect-img3.webp";
+import pixleperfectimg4 from "../../Assets/service-mainServices-pixle-perfect-img4.webp";
+import pixleperfectimg5 from "../../Assets/service-mainServices-pixle-perfect-img5.webp";
+import pixleperfectimg6 from "../../Assets/service-mainServices-pixle-perfect-img6.webp";
 
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
 
-import wordpressbg from "../../Assets/wordpressbg.png";
-import performence from "../../Assets/performence.png";
-import wordpresssectionimg from "../../Assets/wordpresssectionimg.png";
-import creativethoughsec from "../../Assets/services-mianServices-creativeThrough-img.png";
+import wordpressbg from "../../Assets/wordpressbg.webp";
+import performence from "../../Assets/performence.webp";
+import wordpresssectionimg from "../../Assets/wordpresssectionimg.webp";
+import creativethoughsec from "../../Assets/services-mianServices-creativeThrough-img.webp";
 
 const featuredProjectData = [
   {

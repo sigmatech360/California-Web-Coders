@@ -3,7 +3,7 @@ import { Modal, Button, Form } from "react-bootstrap";
 
 import "./style.css";
 
-import modalMobileImg from "../../Assets/modal-mobile-img.png";
+import modalMobileImg from "../../Assets/modal-mobile-img.webp";
 import { toast } from "react-toastify";
 
 const FormModal = ({ show, handleClose }) => {
@@ -15,7 +15,6 @@ const FormModal = ({ show, handleClose }) => {
     data_message: "",
   });
   const apiUrl = process.env.REACT_APP_API_BASE_URL;
-  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,7 +34,6 @@ const FormModal = ({ show, handleClose }) => {
       });
 
       const result = await response.json();
-      console.log(result);
       // alert("Form Submitted Successfully");
 
       if (result.status) {
@@ -57,7 +55,6 @@ const FormModal = ({ show, handleClose }) => {
         });
       }
     } catch (error) {
-      console.log(`Error submitting form:`, error);
       // alert("Submission failed. Please try again.");
       //   toast.error("Submission failed. Please try again.");
       toast.error(error.message);
@@ -82,7 +79,11 @@ const FormModal = ({ show, handleClose }) => {
         <div className="formModal-content">
           <div className="formModal-imgDiv">
             <div className="formModalImg">
-              <img src={modalMobileImg} className="img-fluid" alt="" />
+              <img
+                src={modalMobileImg}
+                className="img-fluid"
+                alt="Mobile Image"
+              />
             </div>
           </div>
           <div className="formModal-formContent">
@@ -98,6 +99,7 @@ const FormModal = ({ show, handleClose }) => {
                   name="username"
                   value={formData.username}
                   onChange={handleChange}
+                  required
                 />
               </Form.Group>
 
@@ -109,6 +111,7 @@ const FormModal = ({ show, handleClose }) => {
                   name="company_name"
                   value={formData.company_name}
                   onChange={handleChange}
+                  required
                 />
               </Form.Group>
 
@@ -120,6 +123,7 @@ const FormModal = ({ show, handleClose }) => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
+                  required
                 />
               </Form.Group>
 
@@ -130,6 +134,7 @@ const FormModal = ({ show, handleClose }) => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
+                  required
                 />
               </Form.Group>
 
@@ -141,6 +146,7 @@ const FormModal = ({ show, handleClose }) => {
                   name="data_message"
                   value={formData.data_message}
                   onChange={handleChange}
+                  required
                 ></textarea>
               </Form.Group>
 

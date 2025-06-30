@@ -1,6 +1,6 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import performence from "../../Assets/performence.png";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import performence from "../../Assets/performence.webp";
 import "./index.css";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const WordPressPerformanceSection = (props) => {
       <div className="container">
         <div className="row align-items-center flex-lg-row flex-column-reverse">
           <div className="col-lg-6">
-            <h1
+            <h2
               className="title"
               data-aos="fade-right"
               data-aos-duration="1000"
@@ -19,7 +19,7 @@ const WordPressPerformanceSection = (props) => {
               {props.secTitle1}{" "}
               {props.secTitle2 && <span>{props.secTitle2}</span>}{" "}
               {props.secTitle3 && props.secTitle3}
-            </h1>
+            </h2>
             <p
               data-aos="fade-right"
               data-aos-duration="2000"
@@ -50,7 +50,7 @@ const WordPressPerformanceSection = (props) => {
             <div className="services__about-img">
               <img
                 src={props.image}
-                alt="Service About Image"
+                alt="Service About"
                 className="img-fluid"
                 data-aos="fade-left"
                 data-aos-duration="2000"

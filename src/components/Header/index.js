@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container, Button, Dropdown } from "react-bootstrap";
 import { FaCaretDown, FaCaretRight, FaPhoneAlt } from "react-icons/fa";
 import "./index.css";
 
@@ -8,9 +8,10 @@ import { RiMailSendLine } from "react-icons/ri";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, NavLink } from "react-router-dom";
 
-import logo from "../../Assets/logo.png";
+import logo from "../../Assets/logo.webp";
 
 function Header() {
+  
   return (
     <>
       <section className="uperheader ">
@@ -24,8 +25,10 @@ function Header() {
                 </div>
                 <div className="d-flex gap-2 align-items-center">
                   <RiMailSendLine />
-                  <a href="mailto:support@californiawebcoders.com">
-                    support@californiawebcoders.com
+                  <a
+                    href="mailto:support@californiawebcoders.com"
+                  >
+                    support<span class="at"></span>californiawebcoders<span class="dot"></span>com
                   </a>
                 </div>
               </div>
@@ -49,48 +52,104 @@ function Header() {
                 <NavLink to="/" className="nav-link-custom nav-link">
                   Home
                 </NavLink>
+                <Dropdown className="nav-dropdown-custom">
+                  <Dropdown.Toggle as="div" className="custom-toggle nav-link">
+                    Services
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    {/* Regular items  */}
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/logo-design"
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Logo Design
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/web-design"
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Web Design
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/cms-development"
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      CMS Development
+                    </NavDropdown.Item>
+
+                    {/* Digital Marketing with Submenu */}
+                    <div className="nav-subdropdown-wrapper">
+                      <NavDropdown.Item
+                        as={Link}
+                        to="/digital-marketing"
+                        target="_blank"
+                        className="nav-subdropdown-parent"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Digital Marketing{" "}
+                        <span className="submenu-icon d-none d-lg-inline">
+                          <FaCaretRight />
+                        </span>
+                        <span className="submenu-icon d-inline d-lg-none">
+                          <FaCaretDown />
+                        </span>
+                      </NavDropdown.Item>
+
+                      <div className="nav-subdropdown">
+                        <NavDropdown.Item
+                          as={Link}
+                          to="/social-media-marketing"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          SMM
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          as={Link}
+                          to="/search-engine-optimization"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          SEO
+                        </NavDropdown.Item>
+                      </div>
+                    </div>
+
+                    {/* Continue with other items */}
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/custom-web-development"
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Custom Web Development
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/mobile-app-development"
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Mobile App Development
+                    </NavDropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+
                 {/* <NavDropdown
                   title="Services"
                   id="navbarScrollingDropdown"
                   className="nav-dropdown-custom"
                 >
-                  {[
-                    { name: "Logo Design", link: "logo-design" },
-                    { name: "Web Design", link: "web-design" },
-                    { name: "CMS Development", link: "cms-development" },
-                    { name: "Digital Marketing", link: "digital-marketing" },
-                    { name: "SMM", link: "social-media-marketing" },
-                    { name: "SEO", link: "seo" },
-                    {
-                      name: "Custom Web Development",
-                      link: "custom-web-development",
-                    },
-                    {
-                      name: "Mobile App Development",
-                      link: "mobile-app-development",
-                    },
-                  ].map((item, index) => (
-                    <NavDropdown.Item
-                      as={Link}
-                      to={`/services/${item.link}`}
-                      key={index}
-                      target="_blank"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      {item.name}
-                    </NavDropdown.Item>
-                  ))}
-                </NavDropdown> */}
-
-                <NavDropdown
-                  title="Services"
-                  id="navbarScrollingDropdown"
-                  className="nav-dropdown-custom"
-                >
-                  {/* Regular items */}
                   <NavDropdown.Item
                     as={Link}
-                    to="/services/logo-design"
+                    to="/logo-design"
                     target="_blank"
                     onClick={(e) => e.stopPropagation()}
                   >
@@ -98,7 +157,7 @@ function Header() {
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     as={Link}
-                    to="/services/web-design"
+                    to="/web-design"
                     target="_blank"
                     onClick={(e) => e.stopPropagation()}
                   >
@@ -106,18 +165,17 @@ function Header() {
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     as={Link}
-                    to="/services/cms-development"
+                    to="/cms-development"
                     target="_blank"
                     onClick={(e) => e.stopPropagation()}
                   >
                     CMS Development
                   </NavDropdown.Item>
 
-                  {/* Digital Marketing with Submenu */}
                   <div className="nav-subdropdown-wrapper">
                     <NavDropdown.Item
                       as={Link}
-                      to="/services/digital-marketing"
+                      to="/digital-marketing"
                       target="_blank"
                       className="nav-subdropdown-parent"
                       onClick={(e) => e.stopPropagation()}
@@ -134,7 +192,7 @@ function Header() {
                     <div className="nav-subdropdown">
                       <NavDropdown.Item
                         as={Link}
-                        to="/services/social-media-marketing"
+                        to="/social-media-marketing"
                         target="_blank"
                         onClick={(e) => e.stopPropagation()}
                       >
@@ -142,7 +200,7 @@ function Header() {
                       </NavDropdown.Item>
                       <NavDropdown.Item
                         as={Link}
-                        to="/services/seo"
+                        to="/search-engine-optimization"
                         target="_blank"
                         onClick={(e) => e.stopPropagation()}
                       >
@@ -151,10 +209,9 @@ function Header() {
                     </div>
                   </div>
 
-                  {/* Continue with other items */}
                   <NavDropdown.Item
                     as={Link}
-                    to="/services/custom-web-development"
+                    to="/custom-web-development"
                     target="_blank"
                     onClick={(e) => e.stopPropagation()}
                   >
@@ -162,13 +219,13 @@ function Header() {
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     as={Link}
-                    to="/services/mobile-app-development"
+                    to="/mobile-app-development"
                     target="_blank"
                     onClick={(e) => e.stopPropagation()}
                   >
                     Mobile App Development
                   </NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
 
                 <NavLink to="/our-work" className="nav-link-custom nav-link">
                   Our Work

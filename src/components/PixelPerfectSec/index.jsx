@@ -11,14 +11,14 @@ const PixelPerfectSec = (props) => {
           <div className="row">
             <div className="col-md-12">
               <div className="pixel-perfect-head text-center ">
-                <h3
+                <h2
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   {props.secTitle}{" "}
                   {props.secTitleBlue && <span>{props.secTitleBlue}</span>}
-                </h3>
+                </h2>
                 <p
                   data-aos="fade-up"
                   data-aos-duration="2000"

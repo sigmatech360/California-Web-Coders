@@ -1,5 +1,5 @@
 .wordpress-web-design {
-  background: url("../../Assets/wordpressbg.png");
+  background: url("../../Assets/wordpressbg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,11 +56,11 @@
 }
 
 
-.pixel-perfect-head h3 {
+.pixel-perfect-head h2 {
   font-size: 46px;
   font-weight: 600;
 }
-.pixel-perfect-head h3 span {
+.pixel-perfect-head h2 span {
   color: #0504a5;
 }
 .pixel-perfect-head p {
@@ -81,7 +81,7 @@
 }
 
 @media (max-width: 480px) {
-  .pixel-perfect-head h3 {
+  .pixel-perfect-head h2 {
     line-height: 1;
   }
 }

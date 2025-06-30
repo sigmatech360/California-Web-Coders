@@ -107,6 +107,10 @@ a {
 }
 
 /* Dropdown Customization */
+.nav-dropdown-custom{
+  cursor: pointer;
+  user-select: none;
+}
 .nav-dropdown-custom .dropdown-item {
   color: #031243 !important; /* Dropdown items matching the primary link color */
   font-size: 14px;

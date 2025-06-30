@@ -1,7 +1,7 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import creativethoughsec from "../../Assets/creativethoughsec.png";
+import creativethoughsec from "../../Assets/creativethoughsec.webp";
 import { Link } from "react-router-dom";
 
 const Creativitythrough = (props) => {
@@ -11,14 +11,14 @@ const Creativitythrough = (props) => {
         <div className="row Creativitythrough-row">
           <div className="col-xxl-4 col-lg-5">
             <div className="creativitythrough-content pt-lg-3 pt-0">
-              <h1
+              <h2
                 className="title"
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 {props.title1} {props.title2 && <span>{props.title2}</span>}
-              </h1>
+              </h2>
               <p
                 className="para mt-3"
                 data-aos="fade-right"

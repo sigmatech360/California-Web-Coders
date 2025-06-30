@@ -82,14 +82,15 @@
   line-height: 1.3;
   margin: 0;
 }
+.Designsolutions .solution-heading {
+    font-size: 24px;
+  }
 
 @media (max-width: 1399px) {
   .Designsolutions .title {
     font-size: 58px;
   }
-  .Designsolutions .solution-heading {
-    font-size: 24px;
-  }
+  
 }
 
 @media (max-width: 1199px) {

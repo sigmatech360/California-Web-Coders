@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { toast } from 'react-toastify';
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
 const ContactForm = (props) => {
@@ -32,7 +32,6 @@ const ContactForm = (props) => {
         });
   
         const result = await response.json();
-        console.log(result);
         // alert("Form Submitted Successfully");
   
         if (result.status) {
@@ -53,7 +52,6 @@ const ContactForm = (props) => {
           });
         }
       } catch (error) {
-        console.log(`Error submitting form:`, error);
         // alert("Submission failed. Please try again.");
         //   toast.error("Submission failed. Please try again.");
         toast.error(error.message);
@@ -65,9 +63,9 @@ const ContactForm = (props) => {
       <div className="container">
         <div className="innercontainer">
           <div className="text-center mb-4">
-            <h2 className="title">
+            <h3 className="title">
               {props.secTitle || `Ready to chat about your project?`}
-            </h2>
+            </h3>
             <p className="lead">
               {props.secDescription ||
                 `Get in touch today to see how we can help your business achieve
@@ -86,7 +84,7 @@ const ContactForm = (props) => {
                       name="username"
                       value={formData.username}
                       onChange={handleChange}
-                      // required
+                      required
                     />
                   </div>
                   <div className="col-12 col-md-6">
@@ -97,7 +95,7 @@ const ContactForm = (props) => {
                       name="company_name"
                       value={formData.company_name}
                       onChange={handleChange}
-                      // required
+                      required
                     />
                   </div>
                   <div className="col-12 col-md-6">
@@ -108,7 +106,7 @@ const ContactForm = (props) => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      // required
+                      required
                     />
                   </div>
                   <div className="col-12 col-md-6">
@@ -119,7 +117,7 @@ const ContactForm = (props) => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      // required
+                      required
                     />
                   </div>
                   <div className="col-12">
@@ -130,7 +128,7 @@ const ContactForm = (props) => {
                       name="data_message"
                       value={formData.data_message}
                       onChange={handleChange}
-                      // required
+                      required
                     ></textarea>
                   </div>
                 </div>

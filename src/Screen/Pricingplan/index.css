@@ -77,7 +77,7 @@
   height: 100%;
 }
 
-.express-cards .card h5 {
+.express-cards .card h4 {
   font-weight: 400;
   font-size: 20px;
 }
@@ -95,9 +95,22 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
+.custom-icon-wrapper {
+  border-radius: 50%; /* same as rounded-circle */
+  background-color: #fff; /* same as bg-white */
+  color: #0d6efd; /* Bootstrap primary text color */
+  display: flex; /* same as d-flex */
+  justify-content: center;
+  align-items: center;
+  margin-left: auto; /* same as mx-auto */
+  margin-right: auto;
+  margin-bottom: 1rem; /* same as mb-3 */
+  width: 60px;
+  height: 60px;
+}
 
 @media (max-width: 1199px) {
-  .express-cards .card h5 {
+  .express-cards .card h4 {
     font-size: 18px;
   }
   .express-cards .card p {

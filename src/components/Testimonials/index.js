@@ -2,21 +2,19 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import testimonialimg1 from "../../Assets/testimonialimg1.png";
-import beauCooper from "../../Assets/beauCooper.png";
-import Carlo from "../../Assets/Carlo.png";
-import joe from "../../Assets/joe.png";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import testimonialimg1 from "../../Assets/testimonialimg1.webp";
+import beauCooper from "../../Assets/beauCooper.webp";
+import Carlo from "../../Assets/Carlo.webp";
+import joe from "../../Assets/joe.webp";
 
+import HoldenHoffington from "../../Assets/HoldenHoffington.webp";
+import RicardoMineriello from "../../Assets/RicardoMineriello.webp";
+import JessyMatayer from "../../Assets/JessyMatayer.webp";
 
-import HoldenHoffington from "../../Assets/HoldenHoffington.png";
-import RicardoMineriello from "../../Assets/RicardoMineriello.png";
-import JessyMatayer from "../../Assets/JessyMatayer.png";
-
-
-import HelenaSoretti from "../../Assets/HelenaSoretti.png";
-import BillNewman from "../../Assets/BillNewman.png";
-import AllineMccoy from "../../Assets/AllineMccoy.png";
+import HelenaSoretti from "../../Assets/HelenaSoretti.webp";
+import BillNewman from "../../Assets/BillNewman.webp";
+import AllineMccoy from "../../Assets/AllineMccoy.webp";
 
 import "./index.css";
 
@@ -80,18 +78,18 @@ const Testimonial = () => {
     infinite: true,
     centerMode: true,
     centerPadding: "10px",
-    speed: 3000,
+    speed: 8000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    pauseOnHover: true,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 2,
         },
       },
       {
@@ -110,22 +108,22 @@ const Testimonial = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="testimonial-head">
-              <h6
+              <h2
                 className="testimonialhead1"
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 Testimonials
-              </h6>
-              <h2
+              </h2>
+              <h3
                 className="title"
                 data-aos="fade-right"
                 data-aos-duration="2000"
                 data-aos-offset="0"
               >
                 Our <span className=" ">clients love working</span> with us
-              </h2>
+              </h3>
             </div>
           </div>
         </div>
@@ -157,7 +155,11 @@ const Testimonial = () => {
                   <div className="testimonial-card" key={index}>
                     <div className="testimonial-card-head">
                       <div className="testimonial-img">
-                        <img src={testimonial.image} alt={testimonial.name} />
+                        <img
+                          src={testimonial.image}
+                          loading="lazy"
+                          alt={testimonial.name}
+                        />
                       </div>
                       <div className="testimonial-card-head-text">
                         <p className="name">{testimonial.name}</p>

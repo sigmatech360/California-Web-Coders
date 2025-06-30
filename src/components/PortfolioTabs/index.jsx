@@ -3,30 +3,32 @@ import React, { useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+// import Lightbox from "react-image-lightbox";
+// import "react-image-lightbox/style.css";
+
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
+
+
 import { logoDesignPortfolioData } from "../../Screen/webdesignservices/LogoDesign";
 import NewsCard from "../NewsCard";
 import { webDesignPortfolioData } from "../../Screen/webdesignservices/WebDesign";
 import { customWebDesignPortfolioData } from "../../Screen/webdesignservices/CustomWebDevelopment";
 import { cmsDevelopmentPortfolioData } from "../../Screen/webdesignservices/CMSDevelopment";
 import { mobileAppDevelopmentPortfolioData } from "../../Screen/webdesignservices/MobileAppDevelopment";
-
+ 
 const PortfolioTabs = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
   const [images, setImages] = useState([]);
 
   const handleImageClick = (index, imageArray) => {
-    const imageList = imageArray.map((item) => item.image);
-    setImages(imageList);
-    setPhotoIndex(index);
-
-    // Delay opening the Lightbox until state is updated
-    setTimeout(() => {
-      setIsOpen(true);
-    }, 50);
-  };
+  const imageList = imageArray.map((item) => item.image);
+  setImages(imageList);
+  setPhotoIndex(index);
+  setIsOpen(true); // no delay needed for this lightbox
+};
   return (
     <>
       <div className="col-md-12">
@@ -161,22 +163,17 @@ const PortfolioTabs = () => {
         </Tabs>
       </div>
 
-      {isOpen && images.length > 0 && images[photoIndex] && (
-        <Lightbox
-          mainSrc={images[photoIndex]}
-          nextSrc={images[(photoIndex + 1) % images.length]}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % images.length)
-          }
-          // loader={<div className="my-custom-loader">Loading...</div>}
-        />
-      )}
-      {/* loader={<Loader />} */}
+      {isOpen && (
+  <Lightbox
+    open={isOpen}
+    close={() => setIsOpen(false)}
+    slides={images.map((src) => ({ src }))}
+    index={photoIndex}
+    on={{
+      view: ({ index }) => setPhotoIndex(index),
+    }}
+  />
+)}
     </>
   );
 };

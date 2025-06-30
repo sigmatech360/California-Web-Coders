@@ -4,13 +4,21 @@ import Layout from "../../components/layout";
 
 import ContactForm from "../../components/readytocheat";
 import HeroSection from "../../components/Herosection";
-import bannerBgImage from "../../Assets/contactUS-banner-bg.png";
+import bannerBgImage from "../../Assets/contactUS-banner-bg.webp";
 
-import Pricingplanheroimg from "../../Assets/Pricingplanheroimg.png";
+import Pricingplanheroimg from "../../Assets/Pricingplanheroimg.webp";
 
 import Intouch from "../../components/intouch";
+import ReactHelmet from "../../components/ReactHelmet";
 const Getintouch = () => {
   return (
+    <>
+    <ReactHelmet
+        title="Get in Touch | Contact California Web Coders Today"
+        description="Have a project in mind? Contact California Web Coders for expert web and app development solutions. Let’s build something great together. Reach out now!"
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        // url="https://californiawebcoders.com/get-intouch"
+      />
     <Layout>
       <HeroSection
         bgImage={bannerBgImage}
@@ -19,12 +27,13 @@ const Getintouch = () => {
         // heroimg={Pricingplanheroimg}
       />
       <Intouch />
-      <ContactForm />
+      <ContactForm /> 
 
       <section className="getTouchMap mb-4">
         <div className="container">
           <div className="col-md-12">
-            <div style={{ width: "100%", height: "400px" }}>
+            {/* <div style={{ width: "100%", height: "400px" }}> */}
+            <div className="map-height">
               <iframe
                 title="California Map"
                 width="100%"
@@ -39,6 +48,7 @@ const Getintouch = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

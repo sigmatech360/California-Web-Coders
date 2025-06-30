@@ -2,10 +2,10 @@ import React from "react";
 import "./index.css";
 import Layout from "../../components/layout";
 import HeroSection from "../../components/Herosection";
-import bannerBgImage from "../../Assets/services-cmsDev-banner-bg.png";
+import bannerBgImage from "../../Assets/services-cmsDev-banner-bg.webp";
 import Testimonial from "../../components/Testimonials";
 
-import Pricingplanheroimg from "../../Assets/Pricingplanheroimg.png";
+import Pricingplanheroimg from "../../Assets/Pricingplanheroimg.webp";
 import Mobileworld from "../../components/mobileworld";
 import RefundPolicy from "../../components/refundpolicy";
 import FrequentQuestions from "../../components/FrequentQuestions";
@@ -18,6 +18,7 @@ import Premium from "../../Assets/Premium.svg";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 import PackagesTabs from "../../components/PackagesTabs";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const progressBarData = [
   {
@@ -107,17 +108,24 @@ const faqData = [
 
 const PricingPlan = () => {
   return (
-    <Layout>
-      <HeroSection
-        leftCol="col-lg-6"
-        rightCol="col-lg-6"
-        bgImage={bannerBgImage}
-        title="Pricing plan"
-        para="At California Web Coders, we offer flexible financing options to keep your convenience at the top!"
-        heroimg={Pricingplanheroimg}
+    <>
+      <ReactHelmet
+        title="Pricing Plans | Affordable Packages | California Web Coders"
+        description="Choose from flexible, affordable pricing plans tailored to your needs. California Web Coders offers high-quality digital solutions to fit every business budget."
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        // url="https://californiawebcoders.com/pricing-plan"
       />
+      <Layout>
+        <HeroSection
+          leftCol="col-lg-6"
+          rightCol="col-lg-6"
+          bgImage={bannerBgImage}
+          title="Pricing plan"
+          para="At California Web Coders, we offer flexible financing options to keep your convenience at the top!"
+          heroimg={Pricingplanheroimg}
+        />
 
-      {/* <Mobileworld
+        {/* <Mobileworld
         title="Transparent Pricing Plans Backed by Real Value"
         description="Every dollar should count. Our transparent and comprehensive pricing plans are designed to help you quickly see the value, with expert service, clear deliverables, and zero confusion. Let’s achieve results without wasting time or money."
       >
@@ -265,136 +273,154 @@ const PricingPlan = () => {
         </div>
       </Mobileworld> */}
 
-      <Mobileworld
-        title="Affordable Solutions For Your Next Web Design Or Mobile App Development"
-        description="Affordable doesn’t mean average. Our pricing plans are built for ambitious businesses ready to grow. From standout websites to powerful mobile apps, we deliver high-quality work with honest pricing. No hidden fees. No nonsense. Just digital solutions that look good, work fast, and help your business win online without blowing your budget."
-      >
-        <PackagesTabs />
-      </Mobileworld>
+        <Mobileworld
+          title="Affordable Solutions For Your Next Web Design Or Mobile App Development"
+          description="Affordable doesn’t mean average. Our pricing plans are built for ambitious businesses ready to grow. From standout websites to powerful mobile apps, we deliver high-quality work with honest pricing. No hidden fees. No nonsense. Just digital solutions that look good, work fast, and help your business win online without blowing your budget."
+        >
+          <PackagesTabs />
+        </Mobileworld>
 
-      {/* <RefundPolicy /> */}
+        {/* <RefundPolicy /> */}
 
-      <section className="express-and-faq-sec">
-        <section className="express-sec">
-          <div className="container">
-            <div className="row flex-lg-row flex-column-reverse gap-lg-0 gap-4">
-              <div className="col-lg-6">
-                <div
-                  className="express-content"
-                  data-aos="fade-right"
-                  data-aos-duration="2000"
-                >
-                  <div className="express-content-head">
-                    <h2>It’s Not The Money, It’s The Experience.</h2>
-                    <p>
-                      Every penny spent at California Web Coders is an
-                      investment set up for high returns. We value your time and
-                      money, and ensure that every dollar you invest brings the
-                      best results for your future. Together, we can achieve
-                      high profits and greater success.
-                    </p>
-                  </div>
-                  <div className="progress-bar-list">
-                    {progressBarData.map((item, index) => (
-                      <div className="progress-bar-list-item" key={index}>
-                        <p>{item.title}</p>
-                        <ProgressBar
-                          now={item.percent}
-                          label={`${item.percent}%`}
-                        />
-                      </div>
-                    ))}
+        <section className="express-and-faq-sec">
+          <section className="express-sec">
+            <div className="container">
+              <div className="row flex-lg-row flex-column-reverse gap-lg-0 gap-4">
+                <div className="col-lg-6">
+                  <div
+                    className="express-content"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                  >
+                    <div className="express-content-head">
+                      <h2>It’s Not The Money, It’s The Experience.</h2>
+                      <p>
+                        Every penny spent at California Web Coders is an
+                        investment set up for high returns. We value your time
+                        and money, and ensure that every dollar you invest
+                        brings the best results for your future. Together, we
+                        can achieve high profits and greater success.
+                      </p>
+                    </div>
+                    <div className="progress-bar-list">
+                      {progressBarData.map((item, index) => (
+                        <div className="progress-bar-list-item" key={index}>
+                          <p>{item.title}</p>
+                          <ProgressBar
+                            now={item.percent}
+                            label={`${item.percent}%`}
+                          />
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-6">
-                <div
-                  className="express-cards h-100"
-                  data-aos="fade-left"
-                  data-aos-duration="2000"
-                >
-                  <div className="express-cards-items-updated">
-                    <div className="card text-center border-0    text-white ">
-                      <div className="card-body">
-                        <div
-                          className="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center mx-auto mb-3"
-                          style={{ width: "60px", height: "60px" }}
-                        >
-                          <img src={smart} className="img-fluid" />
+                <div className="col-lg-6">
+                  <div
+                    className="express-cards h-100"
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
+                  >
+                    <div className="express-cards-items-updated">
+                      <div className="card text-center border-0    text-white ">
+                        <div className="card-body">
+                          <div
+                            className=" custom-icon-wrapper"
+                          >
+                            <img
+                              src={smart}
+                              alt="Creative Solutions"
+                              className="img-fluid"
+                            />
+                          </div>
+                          <h4 className="card-title  ">Creative Solutions</h4>
+                          <p className="card-text">
+                            We blend creativity with clean code to build digital
+                            experiences that are beautiful, brand-aligned, and
+                            function perfectly across all devices.
+                          </p>
                         </div>
-                        <h5 className="card-title  ">Creative Solutions</h5>
-                        <p className="card-text">
-                          We blend creativity with clean code to build digital
-                          experiences that are beautiful, brand-aligned, and
-                          function perfectly across all devices.
-                        </p>
                       </div>
-                    </div>
-                    <div className="card cards text-center border-0    text-white ">
-                      <div className="card-body">
-                        <div
-                          className="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center mx-auto mb-3"
-                          style={{ width: "60px", height: "60px" }}
-                        >
-                          <img src={Professiona} className="img-fluid" />
+                      <div className="card cards text-center border-0    text-white ">
+                        <div className="card-body">
+                          <div
+                            className="custom-icon-wrapper"
+                            // style={{ width: "60px", height: "60px" }}
+                          >
+                            <img
+                              src={Professiona}
+                              alt="User-friendly Experience"
+                              className="img-fluid"
+                            />
+                          </div>
+                          <h4 className="card-title  ">
+                            User-friendly Experience
+                          </h4>
+                          <p className="card-text">
+                            Our websites are built for easy updates, simple
+                            navigation, and intuitive use, so you stay in
+                            control without the tech stress.
+                          </p>
                         </div>
-                        <h5 className="card-title  ">
-                          User-friendly Experience
-                        </h5>
-                        <p className="card-text">
-                          Our websites are built for easy updates, simple
-                          navigation, and intuitive use, so you stay in control
-                          without the tech stress.
-                        </p>
                       </div>
-                    </div>
-                    <div className="card text-center border-0    text-white ">
-                      <div className="card-body">
-                        <div
-                          className="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center mx-auto mb-3"
-                          style={{ width: "60px", height: "60px" }}
-                        >
-                          <img src={Certified} className="img-fluid" />
+                      <div className="card text-center border-0    text-white ">
+                        <div className="card-body">
+                          <div
+                            className="custom-icon-wrapper"
+                            // style={{ width: "60px", height: "60px" }}
+                          >
+                            <img
+                              src={Certified}
+                              alt="Performance Driven"
+                              className="img-fluid"
+                            />
+                          </div>
+                          <h4 className="card-title  ">Performance Driven</h4>
+                          <p className="card-text">
+                            From fast load times to SEO-ready frameworks, every
+                            site we create is optimized to perform and scale
+                            with your growth.
+                          </p>
                         </div>
-                        <h5 className="card-title  ">Performance Driven</h5>
-                        <p className="card-text">
-                          From fast load times to SEO-ready frameworks, every
-                          site we create is optimized to perform and scale with
-                          your growth.
-                        </p>
                       </div>
-                    </div>
-                    <div className="card cards text-center border-0    text-white ">
-                      <div className="card-body">
-                        <div
-                          className="rounded-circle bg-white text-primary d-flex justify-content-center align-items-center mx-auto mb-3"
-                          style={{ width: "60px", height: "60px" }}
-                        >
-                          <img src={Premium} className="img-fluid" />
+                      <div className="card cards text-center border-0    text-white ">
+                        <div className="card-body">
+                          <div
+                            className="custom-icon-wrapper"
+                            // style={{ width: "60px", height: "60px" }}
+                          >
+                            <img
+                              src={Premium}
+                              alt="24/7 Customer Service"
+                              className="img-fluid"
+                            />
+                          </div>
+                          <h4 className="card-title  ">
+                            24/7 Customer Service
+                          </h4>
+                          <p className="card-text">
+                            Our clients are our top priority; we offer 24/7
+                            customer support to maintain constant communication
+                            and ensure transparency in all our projects.
+                          </p>
                         </div>
-                        <h5 className="card-title  ">24/7 Customer Service</h5>
-                        <p className="card-text">
-                          Our clients are our top priority; we offer 24/7
-                          customer support to maintain constant communication
-                          and ensure transparency in all our projects.
-                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
+          <FrequentQuestions
+            FrequentQuestions="faqsbg"
+            secTitle="Got Questions? We Are Happy To Answer!"
+            faqData={faqData}
+          />
         </section>
-        <FrequentQuestions
-          FrequentQuestions="faqsbg"
-          secTitle="Got Questions? We Are Happy To Answer!"
-          faqData={faqData}
-        />
-      </section>
 
-      <Testimonial />
-    </Layout>
+        <Testimonial />
+      </Layout>
+    </>
   );
 };
 

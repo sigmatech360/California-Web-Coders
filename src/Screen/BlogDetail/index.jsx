@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../../components/layout";
-import bannerBgImage from "../../Assets/newsTrend-banner-bg.png";
+import bannerBgImage from "../../Assets/newsTrend-banner-bg.webp";
 import loaderGif from "../../Assets/loader.gif";
 import HeroSection from "../../components/Herosection";
 import axios from "axios";
@@ -135,7 +135,7 @@ const BlogDetail = () => {
             <div className="col-xl-9 col-lg-8 mb-lg-0 mb-4">
               <section className="blog-detail-banner ">
                 <div className="blog-detail-banner-img">
-                  <img src={featuredImage} alt="" className="img-fluid" />
+                  <img src={featuredImage} alt="Feature" className="img-fluid" />
                 </div>
                 {/* <div className="container">
                   <div className="row justify-content-center">

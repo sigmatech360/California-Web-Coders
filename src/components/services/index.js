@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import servicesimg from "../../Assets/servicesimg.png";
+import servicesimg from "../../Assets/servicesimg.webp";
 import creativelogo from "../../Assets/creativelogo.svg";
 
 import websitelogo from "../../Assets/websitelogo.svg";
@@ -8,7 +8,7 @@ import graphiclogo from "../../Assets/graphiclogo.svg";
 import digitaltogo from "../../Assets/digitaltogo.svg";
 import softwarelogo from "../../Assets/softwarelogo.svg";
 import mrketinglogo from "../../Assets/mrketinglogo.svg";
-import mobileservicesimg from "../../Assets/mobileservicesimg.png";
+import mobileservicesimg from "../../Assets/mobileservicesimg.webp";
 
 const creativeSectionData = [
   {
@@ -42,7 +42,7 @@ const Servies = () => {
           <div className="col-lg-8">
             <div className="services-heading">
               <p className="para">Services</p>
-              <p
+              <h2
                 className="title"
                 data-aos="fade-right"
                 data-aos-duration="1000"
@@ -50,7 +50,7 @@ const Servies = () => {
               >
                 Smart Digital Services and Premium Web Design. Always Delivered
                 on Time.
-              </p>
+              </h2>
               <p
                 className="para2 mb-0"
                 data-aos="fade-right"
@@ -71,7 +71,7 @@ const Servies = () => {
                 data-aos-offset="0"
               >
                 <span className="creativelg">
-                  <img src={item.image} className="creativelogo" />
+                  <img src={item.image} alt="Digital Services" className="creativelogo" />
                 </span>
                 <span>
                   <p className="para4 d-flex gap-3 mb-0">{item.name}</p>
@@ -88,7 +88,7 @@ const Servies = () => {
               data-aos-duration="2000"
               data-aos-offset="0"
             >
-              <img className="servicesheroimg img-fluid" src={servicesimg} />
+              <img className="servicesheroimg img-fluid" alt="Digital Services" src={servicesimg} />
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@ const Servies = () => {
             >
               <div className="graphicservices graphic-bg">
                 <div className="graphicservices-icon">
-                  <img src={graphiclogo} className="graphiclogo" />
+                  <img src={graphiclogo} alt="Graphic Design" className="graphiclogo" />
                 </div>
                 <div className="graphicservices-content">
                   <h4 className="graphicgesigntitle">Graphic Design</h4>
@@ -115,7 +115,7 @@ const Servies = () => {
               </div>
               <div className="graphicservices">
                 <div className="graphicservices-icon">
-                  <img src={mrketinglogo} className="graphiclogo" />
+                  <img src={mrketinglogo} alt="Online Marketing" className="graphiclogo" />
                 </div>
                 <div className="graphicservices-content">
                   <h4 className="graphicgesigntitle">Online Marketing</h4>
@@ -143,7 +143,7 @@ const Servies = () => {
                   </p>
                 </div>
                 <div className="mobile-services-image">
-                  <img src={mobileservicesimg} className="mobileservicesimg" />
+                  <img src={mobileservicesimg} alt="Mobile App Developments" className="mobileservicesimg" />
                 </div>
               </div>
             </div>
@@ -158,10 +158,10 @@ const Servies = () => {
             >
               <div className="graphicservices">
                 <div className="graphicservices-icon">
-                  <img src={websitelogo} className="graphiclogo" />
+                  <img src={websitelogo} alt="Website Developments" className="graphiclogo" />
                 </div>
                 <div className="graphicservices-content">
-                  <p className="graphicgesigntitle">Website Developments</p>
+                  <h4 className="graphicgesigntitle">Website Developments</h4>
                   <p className="graphicservicespara">
                     As a custom web development company, we build responsive,
                     high-performing websites tailored to your needs.
@@ -176,10 +176,10 @@ const Servies = () => {
               `}
               >
                 <div className="graphicservices-icon">
-                  <img src={websitelogo} className="graphiclogo" />
+                  <img src={websitelogo} alt="CMS Developments" className="graphiclogo" />
                 </div>
                 <div className="graphicservices-content">
-                  <p className="graphicgesigntitle">CMS Developments</p>
+                  <h4 className="graphicgesigntitle">CMS Developments</h4>
                   <p className="graphicservicespara">
                     We offer CMS development services to help you manage content
                     easily, boosting efficiency and user experience.

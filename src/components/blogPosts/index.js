@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-import blog1 from "../../Assets/blog1.png";
-import blog2 from "../../Assets/blog2.png";
-import blog3 from "../../Assets/blog3.png";
-import blogbg from "../../Assets/blogbg.png";
+import blog1 from "../../Assets/blog1.webp";
+import blog2 from "../../Assets/blog2.webp";
+import blog3 from "../../Assets/blog3.webp";
+import blogbg from "../../Assets/blogbg.webp";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Loader from "../Loader";
@@ -72,14 +72,14 @@ const BlogSection = ({ categorySlug = null, limit = 3 }) => {
         <div className="blog-blue-head">
           <div className="row">
             <div className="blog-blue-head-content">
-              <h2
-                data-aos="fade-right"
+              <h3
+                data-aos="fade-right "
                 data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 Let's See Our Latest <br />
                 Blogs & Articles
-              </h2>
+              </h3>
               <Link
                 to={"/blog"}
                 // data-aos="fade-left"

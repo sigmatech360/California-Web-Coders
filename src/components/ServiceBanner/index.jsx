@@ -68,7 +68,7 @@ const ServiceBanner = (props) => {
               <div className="services__banner-img">
                 <img
                   src={props.image}
-                  alt="Services Banner Image"
+                  alt="Services Banner Img"
                   className="img-fluid"
                   data-aos="fade-left"
                   data-aos-duration="2000"

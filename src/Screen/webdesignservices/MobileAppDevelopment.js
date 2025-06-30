@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { lazy, Suspense, useState } from "react";
 import "./index.css";
 import Layout from "../../components/layout";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
@@ -7,31 +7,37 @@ import PricingPlans from "../../components/PricingPlans";
 import ContactForm from "../../components/readytocheat";
 import Creativitythrough from "../../components/Creativitythrough";
 
-// import pixleperfectimg1 from "../../Assets/service-mobileAppDev-pixle-perfect-img1.png";
-// import pixleperfectimg2 from "../../Assets/service-mobileAppDev-pixle-perfect-img2.png";
-// import pixleperfectimg3 from "../../Assets/service-mobileAppDev-pixle-perfect-img3.png";
-// import pixleperfectimg4 from "../../Assets/service-mobileAppDev-pixle-perfect-img4.png";
-// import pixleperfectimg5 from "../../Assets/service-mobileAppDev-pixle-perfect-img5.png";
-// import pixleperfectimg6 from "../../Assets/service-mobileAppDev-pixle-perfect-img6.png";
+// import pixleperfectimg1 from "../../Assets/service-mobileAppDev-pixle-perfect-img1.webp";
+// import pixleperfectimg2 from "../../Assets/service-mobileAppDev-pixle-perfect-img2.webp";
+// import pixleperfectimg3 from "../../Assets/service-mobileAppDev-pixle-perfect-img3.webp";
+// import pixleperfectimg4 from "../../Assets/service-mobileAppDev-pixle-perfect-img4.webp";
+// import pixleperfectimg5 from "../../Assets/service-mobileAppDev-pixle-perfect-img5.webp";
+// import pixleperfectimg6 from "../../Assets/service-mobileAppDev-pixle-perfect-img6.webp";
 
-import pixleperfectimg1 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img1.jpg";
-import pixleperfectimg2 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img2.jpg";
-import pixleperfectimg3 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img3.jpg";
-import pixleperfectimg4 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img4.jpg";
-import pixleperfectimg5 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img5.jpg";
-import pixleperfectimg6 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img6.jpg";
+import pixleperfectimg1 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img1.webp";
+import pixleperfectimg2 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img2.webp";
+import pixleperfectimg3 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img3.webp";
+import pixleperfectimg4 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img4.webp";
+import pixleperfectimg5 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img5.webp";
+import pixleperfectimg6 from "../../Assets/MobilePortfolio/service-mobileAppDev-pixle-perfect-img6.webp";
 
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import ServiceBanner from "../../components/ServiceBanner";
 
-import wordpressbg from "../../Assets/services-cmsDev-banner-bg.png";
-import serviceBannerImg from "../../Assets/services-mobileApp-banner-img.png";
-import performence from "../../Assets/service-mobileAppDev-about-img.png";
-import wordpresssectionimg from "../../Assets/services-mobileAppDev-about2-img.png";
-import creativethoughsec from "../../Assets/services-mobileAppDev-creativeThrough-img.png";
-import BlogSection from "../../components/blogPosts";
+import wordpressbg from "../../Assets/services-cmsDev-banner-bg.webp";
+import serviceBannerImg from "../../Assets/services-mobileApp-banner-img.webp";
+import performence from "../../Assets/service-mobileAppDev-about-img.webp";
+import wordpresssectionimg from "../../Assets/services-mobileAppDev-about2-img.webp";
+import creativethoughsec from "../../Assets/services-mobileAppDev-creativeThrough-img.webp";
 
-import Lightbox from "react-image-lightbox";
+// import Lightbox from "react-image-lightbox";
+
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import ReactHelmet from "../../components/ReactHelmet";
+import Loader from "../../components/Loader";
+// import BlogSection from "../../components/blogPosts";
+const BlogSection = lazy(() => import("../../components/blogPosts"));
 
 export const mobileAppDevelopmentPortfolioData = [
   {
@@ -62,57 +68,64 @@ export const mobileAppDevelopmentPortfolioData = [
 
 const MobileAppDevelopment = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState(0);
   const [images, setImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleImageClick = (index, imageArray) => {
-    const imageList = imageArray.map((item) => item.image);
+    const imageList = imageArray.map((item) => ({
+      src: item.image,
+    }));
     setImages(imageList);
-    setPhotoIndex(index);
-    setTimeout(() => {
-      setIsOpen(true);
-    }, 50);
+    setCurrentIndex(index);
+    setIsOpen(true);
   };
   return (
-    <Layout>
-      <ServiceBanner
-        bgImage={wordpressbg}
-        title="Innovative Mobile App Development For Business Growth"
-        description="The world has shifted to mobile devices, and if you are still dependent on desktop screens, you might be setting yourself up for failure! California Web Coders offer exceptional mobile app development services that businesses count on. We build apps that are intuitive, scalable, and ready to grow with your audience."
-        bannerList={[
-          "Custom iOS and Android solutions.",
-          "Expert mobile app developers on board.",
-          "Streamlined UX for better engagement.",
-        ]}
-        image={serviceBannerImg}
+    <>
+      <ReactHelmet
+        title="Mobile App Development Services | iOS & Android Experts"
+        description="Get powerful, user-focused mobile apps for iOS and Android. Our expert mobile app development services drive engagement, scalability, and business success."
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        // url="https://californiawebcoders.com/mobile-app-development"
       />
+      <Layout>
+        <ServiceBanner
+          bgImage={wordpressbg}
+          title="Innovative Mobile App Development For Business Growth"
+          description="The world has shifted to mobile devices, and if you are still dependent on desktop screens, you might be setting yourself up for failure! California Web Coders offer exceptional mobile app development services that businesses count on. We build apps that are intuitive, scalable, and ready to grow with your audience."
+          bannerList={[
+            "Custom iOS and Android solutions.",
+            "Expert mobile app developers on board.",
+            "Streamlined UX for better engagement.",
+          ]}
+          image={serviceBannerImg}
+        />
 
-      <WordPressPerformanceSection
-        secTitle1="We Make"
-        secTitle2="App Experience"
-        secTitle3="Worth Remembering"
-        description="Bringing your mobile app to life doesn’t have to be complicated. Whether it’s your first build or a major upgrade, we simplify the entire process. Our mobile app development services cover everything from planning to launch."
-        description2="From slick ios mobile app development to strong Android app development, we’ve got your tech covered."
-        image={performence}
-        btnText="Get Your Mobile App"
-      />
+        <WordPressPerformanceSection
+          secTitle1="We Make"
+          secTitle2="App Experience"
+          secTitle3="Worth Remembering"
+          description="Bringing your mobile app to life doesn’t have to be complicated. Whether it’s your first build or a major upgrade, we simplify the entire process. Our mobile app development services cover everything from planning to launch."
+          description2="From slick ios mobile app development to strong Android app development, we’ve got your tech covered."
+          image={performence}
+          btnText="Get Your Mobile App"
+        />
 
-      <Growyourbusiness
-        title1="Planning Your Next Big Idea? Let’s Execute It With A"
-        title2="Mobile App!"
-        btnText="Start Now"
-      />
+        <Growyourbusiness
+          title1="Planning Your Next Big Idea? Let’s Execute It With A"
+          title2="Mobile App!"
+          btnText="Start Now"
+        />
 
-      <PixelPerfectSec
-        secTitle="Explore Our"
-        secTitleBlue="Mobile Applications"
-        secDescription="Want an e-commerce app, a business solution, or just an app to connect better with your audience? We have you covered! Our mobile app development services California cover every idea you dream of!"
-        projectsData={mobileAppDevelopmentPortfolioData}
-        onImageClick={handleImageClick}
-        // btnText="A glimpse of our expertise!"
-      />
+        <PixelPerfectSec
+          secTitle="Explore Our"
+          secTitleBlue="Mobile Applications"
+          secDescription="Want an e-commerce app, a business solution, or just an app to connect better with your audience? We have you covered! Our mobile app development services California cover every idea you dream of!"
+          projectsData={mobileAppDevelopmentPortfolioData}
+          onImageClick={handleImageClick}
+          // btnText="A glimpse of our expertise!"
+        />
 
-      {/* <PricingPlans
+        {/* <PricingPlans
         secTitle="Flexible Plans For Growing Ideas"
         secDescription="We offer straightforward pricing for apps of all sizes. Scalable, customizable, and built to match your vision."
         image={wordpresssectionimg}
@@ -123,38 +136,35 @@ const MobileAppDevelopment = () => {
         btnText="Witness Digital Success"
       /> */}
 
-      <ContactForm
-        secTitle="Chat With Our Professional Mobile App Developers!"
-        secDescription="Schedule a free consultation with our team of mobile app developers California! Let’s lay out the plan for your next success story. "
-        btnText="Let’s Chat"
-      />
-
-      <Creativitythrough
-        title1="Apps That Your"
-        title2="Users Enjoy!"
-        description1="Great apps aren’t just built, they’re engineered with purpose. At California Web Coders, we combine design, development, and user psychology to create seamless mobile experiences. Whether you need speed, security, or sleek design, we’re here to turn your ideas into high-performance apps."
-        description2="Let’s make something users can’t stop tapping."
-        image={creativethoughsec}
-        // btnText="Sign Up For Your App"
-      />
-
-      <BlogSection categorySlug="mobile-app-development" />
-
-      {isOpen && images.length > 0 && images[photoIndex] && (
-        <Lightbox
-          mainSrc={images[photoIndex]}
-          nextSrc={images[(photoIndex + 1) % images.length]}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % images.length)
-          }
+        <ContactForm
+          secTitle="Chat With Our Professional Mobile App Developers!"
+          secDescription="Schedule a free consultation with our team of mobile app developers California! Let’s lay out the plan for your next success story. "
+          btnText="Let’s Chat"
         />
-      )}
-    </Layout>
+
+        <Creativitythrough
+          title1="Apps That Your"
+          title2="Users Enjoy!"
+          description1="Great apps aren’t just built, they’re engineered with purpose. At California Web Coders, we combine design, development, and user psychology to create seamless mobile experiences. Whether you need speed, security, or sleek design, we’re here to turn your ideas into high-performance apps."
+          description2="Let’s make something users can’t stop tapping."
+          image={creativethoughsec}
+          // btnText="Sign Up For Your App"
+        />
+
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="mobile-app-development" />
+        </Suspense>
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

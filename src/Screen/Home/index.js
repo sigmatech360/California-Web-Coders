@@ -1,3 +1,4 @@
+import { lazy, Suspense, useEffect } from "react";
 import Layout from "../../components/layout";
 import "./index.css";
 import Growyourbusiness from "../../components/growyourbusiness";
@@ -8,12 +9,16 @@ import Servies from "../../components/services";
 import LogoDesignServices from "../../components/logoDesignServices";
 import Mobileworld from "../../components/mobileworld";
 import FrequentQuestions from "../../components/FrequentQuestions";
-import BlogSection from "../../components/blogPosts";
 
 import MainBanner from "../../components/mainBanner";
 
 import PackagesTabs from "../../components/PackagesTabs";
+import ReactHelmet from "../../components/ReactHelmet";
+import Loader from "../../components/Loader";
+// import { useLocation } from "react-router-dom";
 
+// import BlogSection from "../../components/blogPosts";
+const BlogSection = lazy(() => import("../../components/blogPosts"));
 
 const faqData = [
   {
@@ -82,44 +87,70 @@ const faqData = [
 ];
 
 function Home() {
+  // const location = useLocation();
+
+  // useEffect(() => {
+  //   const params = new URLSearchParams(location.search);
+  //   const scrollTo = params.get("scrollTo");
+
+  //   if (scrollTo) {
+  //     const section = document.getElementById(scrollTo);
+  //     if (section) {
+  //       setTimeout(() => {
+  //         section.scrollIntoView({ behavior: "smooth" });
+  //       }, 100); // wait for DOM to render
+  //     }
+  //   }
+  // }, [location]);
   return (
-    <Layout>
-      <MainBanner />
-
-      <Growyourbusiness
-        title1="Grow Your Business Online, Beyond Ordinary"
-        title2="Expectations"
+    <>
+      <ReactHelmet
+        title="California Web Coders | Custom Web & App Solutions"
+        description={`California Web Coders offers expert web design, development, and mobile app solutions to grow your business online. Get reliable, tailored digital services today.`}
+        keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
+        // url="https://californiawebcoders.com/"
       />
 
-      <Digitalagency />
-      <Designsolutions />
+      <Layout>
+        <MainBanner />
 
-      <FeatureProject 
-        titleclass="featuretitle"
-        paraclass="para"
-        mainclass="FeatureProject"
-        title2="Featured projects"
-        para="Sleek, smart, and fast. Our digital projects are designed for impact. At California Web Coders, we turn concepts into clean, high-performance websites and applications that speak your brand’s language. Every project we take is a chance to create something meaningful, modern, and made to last."
-        viewbtn="viewbtn"
-        btntitle="View All Projects"
-      />
+        <Growyourbusiness
+          title1="Grow Your Business Online, Beyond Ordinary"
+          title2="Expectations"
+        />
 
-      <Servies />
-      <LogoDesignServices />
+        <Digitalagency />
+        <Designsolutions />
 
-      <Mobileworld
-        title="Affordable Solutions For Your Next Web Design Or Mobile App Development"
-        description="Affordable doesn’t mean average. Our pricing plans are built for ambitious businesses ready to grow. From standout websites to powerful mobile apps, we deliver high-quality work with honest pricing. No hidden fees. No nonsense. Just digital solutions that look good, work fast, and help your business win online without blowing your budget."
-      >
-        <PackagesTabs />
-      </Mobileworld>
+        <FeatureProject
+          titleclass="featuretitle"
+          paraclass="para"
+          mainclass="FeatureProject"
+          title2="Featured projects"
+          para="Sleek, smart, and fast. Our digital projects are designed for impact. At California Web Coders, we turn concepts into clean, high-performance websites and applications that speak your brand’s language. Every project we take is a chance to create something meaningful, modern, and made to last."
+          viewbtn="viewbtn"
+          btntitle="View All Projects"
+        />
 
-      <FrequentQuestions
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqData}
-      />
-      <BlogSection categorySlug="blogs" />
-    </Layout>
+        <Servies />
+        <LogoDesignServices />
+
+        <Mobileworld
+          title="Affordable Solutions For Your Next Web Design Or Mobile App Development"
+          description="Affordable doesn’t mean average. Our pricing plans are built for ambitious businesses ready to grow. From standout websites to powerful mobile apps, we deliver high-quality work with honest pricing. No hidden fees. No nonsense. Just digital solutions that look good, work fast, and help your business win online without blowing your budget."
+        >
+          <PackagesTabs />
+        </Mobileworld>
+
+        <FrequentQuestions
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqData}
+        />
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="blogs" />
+        </Suspense>
+      </Layout>
+    </>
   );
 }
 

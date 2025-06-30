@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 // import { CiCircleCheck } from "react-icons/ci";
-import wordpresssectionimg from "../../Assets/wordpresssectionimg.png";
+import wordpresssectionimg from "../../Assets/wordpresssectionimg.webp";
 import PricePlanCard from "../PricePlanCard";
 import { Link } from "react-router-dom";
 import { smmPricingPlansData } from "../../data";
@@ -97,9 +97,9 @@ const PricingPlans = (props) => {
             >
               Pricing Plans
             </p>
-            <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
+            <h3 data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
               {props.secTitle || `That Fit All Budget Types`}
-            </h2>
+            </h3>
             <p data-aos="fade-up" data-aos-duration="3000" data-aos-offset="0">
               {props.secDescription ||
                 `No more budget issues, get your hands on the most Affordable Website Design Services online.`}
@@ -158,7 +158,7 @@ const PricingPlans = (props) => {
           </div>
           <div className="col-lg-6">
             <div className="why-wordpress-content">
-              <h1
+              <h2
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-offset="0"
@@ -166,7 +166,7 @@ const PricingPlans = (props) => {
                 {/* Why WordPress */}
                 {props.whyWordressTitle}{" "}
                 {props.question && <span className="colorBlue">?</span>}
-              </h1>
+              </h2>
               <p
                 data-aos="fade-left"
                 data-aos-duration="2000"

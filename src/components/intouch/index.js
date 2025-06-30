@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 
 import {
@@ -16,6 +16,7 @@ import { RiMailSendLine } from "react-icons/ri";
 import { MdOutlineSupportAgent } from "react-icons/md";
 
 const Intouch = () => {
+  
   return (
     <section className="intouch inTouch-sec">
       <div className="container my-5">
@@ -40,13 +41,13 @@ const Intouch = () => {
                 We’re here to answer your questions and explore how we can help
                 your business grow digitally and strategically.
               </p>
-              <h4
+              <h3
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 Follow our social network
-              </h4>
+              </h3>
               <p
                 data-aos="fade-right"
                 data-aos-duration="2000"
@@ -63,33 +64,57 @@ const Intouch = () => {
                 data-aos-offset="0"
               >
                 <a
-                  target="_blank"
                   href="https://www.facebook.com/people/California-Web-Coders/61560871757077/"
                   className="facebook-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
                 >
                   <FaFacebookF />
                 </a>
                 <a
-                  target="_blank"
                   href="https://www.instagram.com/californiawebcoders1"
                   className="instagram-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
                 >
                   <FaInstagram />
                 </a>
                 <a
-                  target="_blank"
                   href="https://www.linkedin.com/company/california-web-coders/"
                   className="linkedin-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
                 >
                   <FaLinkedinIn />
                 </a>
-                <a target="_blank" href="#" className="youtube-icon">
+                <a
+                  href="https://www.youtube.com/@CaliforniaWebCoders-e8v"
+                  className="youtube-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Youtube"
+                >
                   <FaYoutube />
                 </a>
-                <a target="_blank" href="#" className="twitter-icon">
+                <a
+                  href="https://x.com/californiawebco"
+                  className="twitter-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                >
                   <FaTwitter />
                 </a>
-                <a target="_blank" href="#" className="pinterest-icon">
+                <a
+                  href="https://www.pinterest.com/californiawebcoders/"
+                  className="pinterest-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Pinterest"
+                >
                   <LiaPinterestP />
                 </a>
               </div>
@@ -108,7 +133,7 @@ const Intouch = () => {
                     <FaMapMarkerAlt color={"#0504a5"} />
                   </div>
                   <div className="inTouch-icon-box-content">
-                    <h5>Head Office</h5>
+                    <h4>Head Office</h4>
                     <p>225 Broadway, San Diego, CA 92101, United States</p>
                   </div>
                 </div>
@@ -124,15 +149,11 @@ const Intouch = () => {
                     <RiMailSendLine color={"#0504a5"} />
                   </div>
                   <div className="inTouch-icon-box-content">
-                    <h5>Email Us</h5>
+                    <h4>Email Us</h4>
                     <p>
                       <a href="mailto:support@californiawebcoders.com">
-                        support@californiawebcoders.com
+                        support<span class="at"></span>californiawebcoders<span class="dot"></span>com
                       </a>
-                      {/* <br />
-                      <a href="mailto:support@californiawebcoders.com">
-                        support@californiawebcoders.com
-                      </a> */}
                     </p>
                   </div>
                 </div>
@@ -148,7 +169,7 @@ const Intouch = () => {
                     <FaPhoneAlt color={"#0504a5"} />
                   </div>
                   <div className="inTouch-icon-box-content">
-                    <h5>Call Us</h5>
+                    <h4>Call Us</h4>
                     <p>
                       +1 (281) 845-8498
                       {/* <br />
@@ -168,7 +189,7 @@ const Intouch = () => {
                     <MdOutlineSupportAgent color={"#0504a5"} />
                   </div>
                   <div className="inTouch-icon-box-content">
-                    <h5>Follow Us</h5>
+                    <h4>Follow Us</h4>
                     <p>
                       Follow California Web Coders on Instagram to stay
                       connected with us!

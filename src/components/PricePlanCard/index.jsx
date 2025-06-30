@@ -32,6 +32,7 @@
 import React, { useState } from "react";
 import ListIcon from "../ListIcon";
 import FormModal from "../FormModal";
+import "./style.css"
 
 const PricePlanCard = (props) => {
   const [showModal, setShowModal] = useState(false);
@@ -46,7 +47,7 @@ const PricePlanCard = (props) => {
           </p>
         </div>
 
-        <h3 className="price-plane-price">${props.discountPrice}</h3>
+        <h4 className="price-plane-price">${props.discountPrice}</h4>
 
         <div className="price-plan-list-section">
           {props.servicesList.map((section, sectionIndex) => (

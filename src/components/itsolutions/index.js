@@ -1,12 +1,12 @@
 import React from "react";
 import "./index.css";
-import logodesignimg from "../../Assets/logodesignimg.png";
+import logodesignimg from "../../Assets/logodesignimg.webp";
 import { CiCircleCheck } from "react-icons/ci";
 import { FaPhoneAlt } from "react-icons/fa";
-import itsolution from "../../Assets/itsolutions.png";
-import itservicesimg2 from "../../Assets/itservicesimg2.png";
+import itsolution from "../../Assets/itsolutions.webp";
+import itservicesimg2 from "../../Assets/itservicesimg2.webp";
 
-import missionbeforeimg from "../../Assets/mission-before-img.png";
+import missionbeforeimg from "../../Assets/mission-before-img.webp";
 import { Link } from "react-router-dom";
 
 const ItSolutions = () => {
@@ -16,14 +16,14 @@ const ItSolutions = () => {
         <div className="row mb-5 pb-lg-0 pb-2 flex-lg-row flex-column-reverse">
           <div className="col-lg-6 ">
             <p className="para">About Company</p>
-            <p
+            <h2
               className="title"
               data-aos="fade-right"
               data-aos-duration="1000"
               
             >
               We’re Awards Winning <span> IT Solutions </span> Agency
-            </p>
+            </h2>
             <p
               className="para2 mb-2"
               data-aos="fade-right"
@@ -93,6 +93,7 @@ const ItSolutions = () => {
           <div className="col-lg-6 mb-lg-0 mb-4">
             <img
               className="img-fluid  itSolutionsimg"
+              alt="Portfolio"
               src={itsolution}
               data-aos="fade-left"
               data-aos-duration="1000"
@@ -104,27 +105,27 @@ const ItSolutions = () => {
         <div className="row align-items-center mt-5 pt-lg-0 pt-sm-5 pt-3">
           <div className="col-lg-6">
             <div className="mission-statement-imgs">
-              <img src={missionbeforeimg} className="mission-before-img" />
+              <img src={missionbeforeimg} alt="Img" className="mission-before-img" />
               <img
                 src={itservicesimg2}
                 className="img-fluid mission-img-front"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                
+                alt="Mission"
               />
             </div>
           </div>
 
           <div className="col-lg-6">
             <div className="mission-statment-content">
-              <h3
+              <h2
                 className="missionstatement"
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 
               >
                 Our Goals
-              </h3>
+              </h2>
               <p
                 className="missionstatementpara"
                 data-aos="fade-left"

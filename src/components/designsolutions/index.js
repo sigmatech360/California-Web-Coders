@@ -64,14 +64,14 @@ const Designsolutions = () => {
             <div className="col-lg-6 mb-lg-0 mb-4">
               <p className="para">What we do</p>
 
-              <p
+              <h2
                 className="title"
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 <span> Optimized Website Designs </span>For Peak Performance.
-              </p>
+              </h2>
 
               <p
                 className="para2 mb-2"
@@ -160,7 +160,7 @@ const Designsolutions = () => {
                 >
                   <span>{item.icon}</span>{" "}
                   <span className=" ">
-                    <h4 className="solution-heading">{item.name}</h4>
+                    <h3 className="solution-heading">{item.name}</h3>
                     <p className="para3">{item.description}</p>
                   </span>
                 </div>
