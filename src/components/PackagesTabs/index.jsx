@@ -19,16 +19,16 @@ const PackagesTabs = () => {
       <Tabs
         defaultActiveKey="logo-design"
         className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
-        // data-aos="fade-up"
-        // data-aos-duration="3000"
-        // data-aos-offset="0"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        data-aos-offset="0"
       >
         <Tab eventKey="logo-design" title="Logo Design">
           <div
             className="row justify-content-center"
-            // data-aos="fade-up"
-            // data-aos-duration="3000"
-            // data-aos-offset="0"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-offset="0"
           >
             {logoDesignPricingPlansData.map((item, index) => (
               <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
