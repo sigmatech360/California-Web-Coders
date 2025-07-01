@@ -85,7 +85,7 @@ const WebDesign = () => {
         title="Website Designs That Convert | California Web Coders"
         description="Find stunning, responsive website designs crafted to engage users and drive results. Partner with California Web Coders for high-impact digital presence."
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://californiawebcoders.com/web-design"
+        baseUrl="https://californiawebcoders.com/web-design"
       />
       <Layout>
         <ServiceBanner

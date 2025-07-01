@@ -84,7 +84,7 @@ const ItSolutions = () => {
               <span className="d-flex align-items-center gap-2 packages-number">
                 <FaPhoneAlt className="learnmorecall" />
                 <p href="tel:+12818458498" className="para4 mb-0 align-self-baseline">
-                  +1 (281) 845-8498
+                  619 837 2111
                 </p>
               </span>
             </div>

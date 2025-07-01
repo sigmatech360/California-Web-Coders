@@ -31,7 +31,7 @@ export const seoPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 2,
@@ -70,7 +70,7 @@ export const seoPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 3,
@@ -130,7 +130,7 @@ export const seoPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
 ];
 
@@ -173,7 +173,7 @@ export const logoDesignPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 2,
@@ -213,7 +213,7 @@ export const logoDesignPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 3,
@@ -253,7 +253,7 @@ export const logoDesignPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
 ];
 
@@ -318,7 +318,7 @@ export const customWebDevPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 2,
@@ -384,7 +384,7 @@ export const customWebDevPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 3,
@@ -513,7 +513,7 @@ export const customWebDevPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
 ];
 
@@ -559,7 +559,7 @@ export const eCommerseWebsitePricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 2,
@@ -602,7 +602,7 @@ export const eCommerseWebsitePricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 3,
@@ -645,7 +645,7 @@ export const eCommerseWebsitePricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
 ];
 
@@ -684,7 +684,7 @@ export const informativeWebsitePricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 2,
@@ -720,7 +720,7 @@ export const informativeWebsitePricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 3,
@@ -756,7 +756,7 @@ export const informativeWebsitePricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
 ];
 
@@ -784,7 +784,7 @@ export const smmPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 2,
@@ -816,7 +816,7 @@ export const smmPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 3,
@@ -847,7 +847,7 @@ export const smmPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
 ];
 
@@ -889,7 +889,7 @@ export const comboPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 2,
@@ -931,7 +931,7 @@ export const comboPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
   {
     id: 3,
@@ -985,6 +985,6 @@ export const comboPricingPlansData = [
         ],
       },
     ],
-    number: `+1 (281) 845-8498`,
+    number: `619 837 2111`,
   },
 ];

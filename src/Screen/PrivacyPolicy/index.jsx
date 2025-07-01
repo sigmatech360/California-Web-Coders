@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
         title="Privacy Policy"
         description="We are committed to protecting your personal information."
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://californiawebcoders.com/privacy-policy"
+        baseUrl="https://californiawebcoders.com/privacy-policy"
       />
       <Layout>
         <HeroSection
@@ -313,7 +313,7 @@ const PrivacyPolicy = () => {
                       support<span class="at"></span>californiawebcoders<span class="dot"></span>com
                     </a>
                     or call us at{" "}
-                    <a href="tel:+12818458498">+1 (281) 845-8498</a>
+                    <a href="tel:+12818458498">619 837 2111</a>
                   </p>
                   <h3>Social Media and Widgets</h3>
                   <p>
@@ -384,7 +384,7 @@ const PrivacyPolicy = () => {
                   <h3>California Web Coders</h3>
                   <p className="mb-0">
                     <span className="fw-bold">Phone: </span>{" "}
-                    <a href="tel:+12818458498">+1 (281) 845-8498</a>
+                    <a href="tel:+12818458498">619 837 2111</a>
                   </p>
                   <p className="mb-0">
                     <span className="fw-bold">Email: </span>{" "}
@@ -395,7 +395,7 @@ const PrivacyPolicy = () => {
                   <p className="mb-0">
                     <span className="fw-bold">Website: </span>{" "}
                     <a
-                      href="https://www.californiawebcoders.com"
+                      href="https://californiawebcoders.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

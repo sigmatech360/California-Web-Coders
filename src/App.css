@@ -97,6 +97,7 @@ button:focus {
 .hero {
   overflow: hidden;
   background-color: #ffffff; /* Background for the section */
+  min-height: 100vh;
 }
 
 .heroinner {

@@ -104,7 +104,7 @@ const faqData = [
   //     "",
   //   answer: ""
   // },
-];
+]; 
 
 const PricingPlan = () => {
   return (
@@ -113,7 +113,7 @@ const PricingPlan = () => {
         title="Pricing Plans | Affordable Packages | California Web Coders"
         description="Choose from flexible, affordable pricing plans tailored to your needs. California Web Coders offers high-quality digital solutions to fit every business budget."
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://californiawebcoders.com/pricing-plan"
+        baseUrl="https://californiawebcoders.com/pricing-plan"
       />
       <Layout>
         <HeroSection

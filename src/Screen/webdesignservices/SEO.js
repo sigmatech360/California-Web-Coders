@@ -62,7 +62,7 @@ const SEO = () => {
         title="Search Engine Optimization Services That Drive Results"
         description="Improve your search rankings, drive organic traffic, and grow your business with expert SEO services customized to your goals. Get measurable results faster."
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://californiawebcoders.com/search-engine-optimization"
+        baseUrl="https://californiawebcoders.com/search-engine-optimization"
       />
       <Layout>
         <ServiceBanner

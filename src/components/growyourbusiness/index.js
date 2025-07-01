@@ -13,9 +13,9 @@ const Growyourbusiness = (props) => {
               <div className="grow-business-content d-flex justify-content-md-between justify-content-center align-items-center flex-lg-row flex-column gap-3">
                 <h2
                   className="title m-0"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                  data-aos-offset="0"
+                  // data-aos="fade-right"
+                  // data-aos-duration="1000"
+                  // data-aos-offset="0"
                 >
                   {props.title1} {props.title2 && <span>{props.title2}</span>}{" "}
                   {props.title3}
@@ -24,9 +24,9 @@ const Growyourbusiness = (props) => {
                   // to={"/get-intouch"}
                   onClick={() => setShowModal(true)}
                   className="clickhere"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
-                  data-aos-offset="0"
+                  // data-aos="fade-left"
+                  // data-aos-duration="1000"
+                  // data-aos-offset="0"
                 >
                   {props.btnText || `Click Here To Get Started`}
                 </button>

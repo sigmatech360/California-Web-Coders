@@ -171,7 +171,7 @@ const Intouch = () => {
                   <div className="inTouch-icon-box-content">
                     <h4>Call Us</h4>
                     <p>
-                      +1 (281) 845-8498
+                      619 837 2111
                       {/* <br />
                       +1 609-798-9688 */}
                     </p>

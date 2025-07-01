@@ -13,11 +13,15 @@ import "./App.css";
 
 function App() {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      delay: 300,
-    });
-  }, []);
+  AOS.init({
+    duration: 1000,
+    delay: 300,
+    // once: true,
+  });
+
+  // Refresh after init
+  AOS.refresh();
+}, []);
   return (
     <>
       <UserRouter />

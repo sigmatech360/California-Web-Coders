@@ -96,7 +96,7 @@ const OurWork = () => {
         title="Our Work | Web & App Projects by California Web Coders"
         description="Explore our custom web and mobile app projects. See how California Web Coders delivers results through innovative design, development, and digital strategy."
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://californiawebcoders.com/our-work"
+        baseUrl="https://californiawebcoders.com/our-work"
       />
       <Layout>
         <section className="OurWork">

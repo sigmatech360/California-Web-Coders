@@ -17,7 +17,7 @@ const Getintouch = () => {
         title="Get in Touch | Contact California Web Coders Today"
         description="Have a project in mind? Contact California Web Coders for expert web and app development solutions. Let’s build something great together. Reach out now!"
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://californiawebcoders.com/get-intouch"
+        baseUrl="https://californiawebcoders.com/get-intouch"
       />
     <Layout>
       <HeroSection

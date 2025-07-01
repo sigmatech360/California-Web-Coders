@@ -62,7 +62,7 @@ const DigitalMarketing = () => {
         title="Digital Marketing Services | California Web Coders"
         description="Boost your brand with expert digital marketing from California Web Coders. Drive traffic, increase conversions, and grow your business with proven strategies."
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://californiawebcoders.com/digital-marketing"
+        baseUrl="https://californiawebcoders.com/digital-marketing"
       />
       <Layout>
         <ServiceBanner

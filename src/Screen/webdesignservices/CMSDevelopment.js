@@ -109,7 +109,7 @@ const CMSDevelopment = () => {
         title="CMS Development Services | California Web Coders"
         description="Streamline content management with custom CMS development. California Web Coders builds scalable, secure solutions tailored to your business needs."
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://californiawebcoders.com/cms-development"
+        baseUrl="https://californiawebcoders.com/cms-development"
       />
       <Layout>
         <ServiceBanner

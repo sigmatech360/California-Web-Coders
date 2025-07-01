@@ -7,23 +7,29 @@ const ReactHelmet = ({
   description = "This is the default description of the website.",
   keywords = "web, development, seo, react",
   baseUrl = "https://californiawebcoders.com",
+  // baseUrl = "https://www.californiawebcoders.com",
 }) => {
+  // const location = useLocation();
+  // const fullUrl = `${baseUrl}${location.pathname}`;
+  // console.log("fullUrl", fullUrl)
 
-  
-  const location = useLocation();
-  const fullUrl = `${baseUrl}${location.pathname}`;
+  // another solution remove base url from default parameter and use it
+  // const location = useLocation();
+  // const fullUrl = `${window.location.origin}${location.pathname}`;
+
+  console.log("baseUrl", baseUrl);
 
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <link rel="canonical" href={fullUrl} />
+      <link rel="canonical" href={baseUrl} />
 
       {/* Open Graph Meta */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content={fullUrl} />
+      <meta property="og:url" content={baseUrl} />
       <meta property="og:type" content="website" />
 
       {/* Twitter Meta */}

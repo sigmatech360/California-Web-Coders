@@ -1,7 +1,15 @@
 import React from "react";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+// import "swiper/css/autoplay";
+// import "swiper/css/free-mode";
+// import { Autoplay } from "swiper/modules";
+
 // import "bootstrap/dist/css/bootstrap.min.css";
 import testimonialimg1 from "../../Assets/testimonialimg1.webp";
 import beauCooper from "../../Assets/beauCooper.webp";
@@ -148,6 +156,53 @@ const Testimonial = () => {
                   </div>
                 ))}
               </Slider>
+              {/* <Swiper
+                modules={[Autoplay]}
+                loop={true}
+                speed={8000}
+                autoplay={{
+                  delay: 0,
+                  disableOnInteraction: false,
+                }}
+                slidesPerView={4}
+                spaceBetween={20}
+                centeredSlides={false}
+                freeMode={true}
+                freeModeMomentum={false}
+                allowTouchMove={false}
+                grabCursor={true}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                  },
+                  1200: {
+                    slidesPerView: 4,
+                  },
+                }}
+                className="mySwiper"
+              >
+                {testimonials.map((testimonial, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="testimonial-card">
+                      <div className="testimonial-card-head">
+                        <div className="testimonial-img">
+                          <img src={testimonial.image} alt={testimonial.name} />
+                        </div>
+                        <div className="testimonial-card-head-text">
+                          <p className="name">{testimonial.name}</p>
+                          <p className="business">{testimonial.title}</p>
+                        </div>
+                      </div>
+                      <p className="testimonial-card-body">
+                        {testimonial.text}
+                      </p>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper> */}
             </div>
             <div className="testimonial-cards">
               <Slider {...settings} rtl={true}>

@@ -115,7 +115,7 @@ const TermsAndConditions = () => {
         title="Terms & Conditions"
         description="By using our services, you agree to our project timelines, payment policies, usage guidelines, and limitations. Please review all terms before proceeding."
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://californiawebcoders.com/terms-and-conditions"
+        baseUrl="https://californiawebcoders.com/terms-and-conditions"
       />
       <Layout>
         <HeroSection
@@ -136,7 +136,7 @@ const TermsAndConditions = () => {
                   Welcome to the official website of California Web Coders
                   (“Company,” “we,” “our,” or “us”). By accessing or using
                   {" "}<a
-                    href="https://www.californiawebcoders.com"
+                    href="https://californiawebcoders.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -418,7 +418,7 @@ const TermsAndConditions = () => {
                 <ul>
                   <li>
                     Contacting our Toll-Free Number:{" "}
-                    <a href="tel:+12818458498">+1 (281) 845-8498</a>
+                    <a href="tel:+12818458498">619 837 2111</a>
                   </li>
                   <li>
                     Engaging in a Live Chat session. Click here to initiate the
@@ -634,7 +634,7 @@ const TermsAndConditions = () => {
                     – Contact us via email for prompt assistance.
                   </li>
                   <li>
-                    <a href="tel:+12818458498">+1 (281) 845-8498</a> – Call our
+                    <a href="tel:+12818458498">619 837 2111</a> – Call our
                     Toll-Free number to speak directly with our representatives.
                   </li>
                 </ul>
@@ -684,7 +684,7 @@ const TermsAndConditions = () => {
                   <h3>California Web Coders</h3>
                   <p className="mb-0">
                     <span className="fw-bold">Phone: </span>{" "}
-                    <a href="tel:+12818458498">+1 (281) 845-8498</a>
+                    <a href="tel:+12818458498">619 837 2111</a>
                   </p>
                   <p className="mb-0">
                     <span className="fw-bold">Email: </span>{" "}
@@ -695,7 +695,7 @@ const TermsAndConditions = () => {
                   <p className="mb-0">
                     <span className="fw-bold">Website: </span>{" "}
                     <a
-                      href="https://www.californiawebcoders.com"
+                      href="https://californiawebcoders.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

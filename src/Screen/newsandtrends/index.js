@@ -31,7 +31,7 @@ const NewsandTrends = () => {
         title="Blogs | Web & App Insights by California Web Coders"
         description="Stay updated with expert tips and insights on web design, development, and digital marketing from the pros at California Web Coders. Read our latest posts."
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
-        // url="https://californiawebcoders.com/blog"
+        baseUrl="https://californiawebcoders.com/blog"
       />
       <Layout>
         <HeroSection
