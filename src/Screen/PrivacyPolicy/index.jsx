@@ -313,7 +313,7 @@ const PrivacyPolicy = () => {
                       support<span class="at"></span>californiawebcoders<span class="dot"></span>com
                     </a>
                     or call us at{" "}
-                    <a href="tel:+12818458498">619 837 2111</a>
+                    <a href="tel:+16198372111">619 837 2111</a>
                   </p>
                   <h3>Social Media and Widgets</h3>
                   <p>
@@ -384,7 +384,7 @@ const PrivacyPolicy = () => {
                   <h3>California Web Coders</h3>
                   <p className="mb-0">
                     <span className="fw-bold">Phone: </span>{" "}
-                    <a href="tel:+12818458498">619 837 2111</a>
+                    <a href="tel:+16198372111">619 837 2111</a>
                   </p>
                   <p className="mb-0">
                     <span className="fw-bold">Email: </span>{" "}

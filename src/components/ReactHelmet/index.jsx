@@ -17,7 +17,7 @@ const ReactHelmet = ({
   // const location = useLocation();
   // const fullUrl = `${window.location.origin}${location.pathname}`;
 
-  console.log("baseUrl", baseUrl);
+  // console.log("baseUrl", baseUrl);
 
   return (
     <Helmet>

@@ -43,7 +43,9 @@ a {
 
 /* Logo Styling */
 .header-icon {
-  width: 80% !important;
+  /* width: 80% !important; */
+  width: 160px;
+  height: 51px;
 }
 
 /* Navbar Custom */

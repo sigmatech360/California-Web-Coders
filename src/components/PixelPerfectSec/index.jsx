@@ -52,7 +52,7 @@ const PixelPerfectSec = (props) => {
                 <div className="d-flex align-items-center gap-2 packages-number">
                   <FaPhoneSquareAlt className="callicon " />
                   <a
-                    href="tel:+12818458498"
+                    href="tel:+16198372111"
                     className="para4 mb-0  align-items-center"
                   >
                     619 837 2111
@@ -63,8 +63,6 @@ const PixelPerfectSec = (props) => {
           </div>
         </div>
       </section>
-
-      
     </>
   );
 };

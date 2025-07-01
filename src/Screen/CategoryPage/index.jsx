@@ -79,7 +79,7 @@ const CategoryPage = () => {
                     "https://via.placeholder.com";
                   return (
                     <div className="col-lg-4 col-md-6 mb-4" key={index}>
-                      <div className="card blog-card wordpressBlogCard">
+                      <div className="card blog-card wordpressBlogCard blogCard ">
                         <Link to={`/blog/${post.slug}`}>
                           <img
                             src={image}
@@ -89,7 +89,7 @@ const CategoryPage = () => {
                         </Link>
                         <div className="mt-2">
                           <Link to={`/blog/${post.slug}`}>
-                            <h5>{post.title.rendered}</h5>
+                            <h5 className="blogCardTitle">{post.title.rendered}</h5>
                           </Link>
                           <p
                             dangerouslySetInnerHTML={{
@@ -97,7 +97,7 @@ const CategoryPage = () => {
                             }}
                           />
                           {/* <Link to={`/blog/${post.slug}`} className="read-more"> */}
-                          <Link to={`/blog/${post.slug}`} className="read-more">
+                          <Link to={`/blog/${post.slug}`} className="read-more blogCardA">
                             Read More
                           </Link>
                         </div>

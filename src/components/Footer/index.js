@@ -21,7 +21,6 @@ function Footer() {
   const [email, setEmail] = useState("");
   const apiUrl = process.env.REACT_APP_API_BASE_URL;
 
-  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -185,14 +184,15 @@ function Footer() {
                   <br />
                   CA 92101, United States
                   <br />
-                  <a href="tel:+12818458498" className="footer_list_item">
+                  <a href="tel:+16198372111" className="footer_list_item">
                     <i className="fas fa-phone-alt"></i> 619 837 2111
                   </a>
                   <a
                     href="mailto:support@californiawebcoders.com"
                     className="footer_list_item"
                   >
-                    support<span class="at"></span>californiawebcoders<span class="dot"></span>com
+                    support<span class="at"></span>californiawebcoders
+                    <span class="dot"></span>com
                   </a>
                 </p>
               </div>

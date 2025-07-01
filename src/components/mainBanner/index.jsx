@@ -45,6 +45,8 @@ const MainBanner = () => {
                     src={heroimg2}
                     alt="Google Logo"
                     className="google-logo"
+                    loading="eager"
+  decoding="async"
                   />
                 </div>
               </div>
@@ -61,6 +63,8 @@ const MainBanner = () => {
                   src={heroimg}
                   alt="Responsive Design Showcase"
                   className="heroimg"
+                  width={360}
+                  height={196}
                 />
               </div>
             </div>
