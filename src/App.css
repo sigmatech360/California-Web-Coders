@@ -1,30 +1,58 @@
-@font-face {
+/* @font-face {
   font-family: "Outfit";
   src: url("Assets/fonts/OutfitRegular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+} */
+@font-face {
+  font-family: "Outfit";
+  src: url("Assets/fonts/OutfitRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Outfit";
   src: url("Assets/fonts/OutfitMedium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+} */
+@font-face {
+  font-family: "Outfit";
+  src: url("Assets/fonts/OutfitMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Outfit";
   src: url("Assets/fonts/OutfitSemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
+} */
+ @font-face {
+  font-family: "Outfit";
+  src: url("Assets/fonts/OutfitSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Outfit";
   src: url("Assets/fonts/OutfitBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+} */
+ @font-face {
+  font-family: "Outfit";
+  src: url("Assets/fonts/OutfitBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -83,13 +111,17 @@ button:focus {
 .colorBlue {
   color: #0504a5 !important;
 }
-  .hero-img-right img {
-    transform: scale(113%) translate(-30px, 70px);
-    transform-origin: top right;
-    /* width: 100%; */
-    min-height: 371px;
-    min-width: 636px;
-  }
+.hero-img-right{
+  min-height: 371px;
+  min-width: 636px;
+}
+.hero-img-right img {
+  transform: scale(113%) translate(-30px, 70px);
+  transform-origin: top right;
+  /* width: 100%; */
+  min-height: 371px;
+  min-width: 636px;
+}
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -298,7 +330,8 @@ button:focus {
   color: #031243;
 }
 
-.privacy-policy-content p a {
+.privacy-policy-content p a,
+.privacy-policy-content p  span {
   color: #031243;
   text-decoration: none;
   font-size: 18px;
@@ -432,8 +465,13 @@ button:focus {
 }
 
 @media (max-width: 480px) {
+  
+  .hero-content{
+    min-height: 253.188px;
+  }
   .hero .title {
-    font-size: 44px;
+    /* font-size: 44px; */
+    font-size: 31px;
   }
   .sec-head h2 {
     font-size: 35px;
@@ -567,37 +605,43 @@ button:focus {
 }
 
 @media (max-width: 1399px) {
-  .hero-img-right img {
+  .hero-img-right img,
+  .hero-img-right {
     min-width: 546px;
     min-height: 318.5px;
   }
 }
 @media (max-width: 1199px) {
-  .hero-img-right img {
+  .hero-img-right img,
+  .hero-img-right {
     min-width: 456px;
     min-height: 266px;
   }
 }
 @media (max-width: 991px) {
-  .hero-img-right img {
+  .hero-img-right img,
+  .hero-img-right {
     min-width: 696px;
     min-height: 406px;
   }
 }
 @media (max-width: 767px) {
-  .hero-img-right img {
+  .hero-img-right img,
+  .hero-img-right {
     min-width: 516px;
     min-height: 301px;
   }
 }
 @media (max-width: 575px) {
-  .hero-img-right img {
+  .hero-img-right img,
+  .hero-img-right {
     min-width: 551px;
     min-height: 321.406px;
   }
 }
 @media (max-width: 480px) {
-  .hero-img-right img {
+  .hero-img-right img,
+  .hero-img-right {
     min-width: 336px;
     min-height: 196px;
     margin: 0 auto;

@@ -16,6 +16,7 @@ import {
 } from "react-icons/fa";
 import { LiaPinterestP } from "react-icons/lia";
 import { CiAt } from "react-icons/ci";
+import ObfuscatedEmail from "../ObfuscatedEmail";
 
 function Footer() {
   const [email, setEmail] = useState("");
@@ -185,15 +186,16 @@ function Footer() {
                   CA 92101, United States
                   <br />
                   <a href="tel:+16198372111" className="footer_list_item">
-                    <i className="fas fa-phone-alt"></i> 619 837 2111
+                    <i className="fas fa-phone-alt"></i> +1 (619) 837-2111
                   </a>
-                  <a
+                  {/* <a
                     href="mailto:support@californiawebcoders.com"
                     className="footer_list_item"
                   >
                     support<span class="at"></span>californiawebcoders
                     <span class="dot"></span>com
-                  </a>
+                  </a> */}
+                  <ObfuscatedEmail className="footer_list_item" />
                 </p>
               </div>
             </div>
@@ -254,7 +256,11 @@ function Footer() {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                   />
-                  <button type="submit" className="sendbtn btn">
+                  <button
+                    type="submit"
+                    className="sendbtn btn"
+                    aria-label="Subscribe to newsletter"
+                  >
                     <SiMinutemailer />
                   </button>
                 </div>

@@ -1,5 +1,4 @@
 import React from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import performence from "../../Assets/performence.webp";
 import "./index.css";
 import { Link } from "react-router-dom";

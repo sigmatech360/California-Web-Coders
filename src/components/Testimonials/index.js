@@ -10,7 +10,6 @@ import "slick-carousel/slick/slick-theme.css";
 // import "swiper/css/free-mode";
 // import { Autoplay } from "swiper/modules";
 
-// import "bootstrap/dist/css/bootstrap.min.css";
 import testimonialimg1 from "../../Assets/testimonialimg1.webp";
 import beauCooper from "../../Assets/beauCooper.webp";
 import Carlo from "../../Assets/Carlo.webp";

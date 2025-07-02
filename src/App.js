@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { ToastContainer } from 'react-toastify';
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css"; 
 import UserRouter from "./Routers/index";
 
 

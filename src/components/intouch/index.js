@@ -14,6 +14,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { RiMailSendLine } from "react-icons/ri";
 import { MdOutlineSupportAgent } from "react-icons/md";
+import ObfuscatedEmail from "../ObfuscatedEmail";
 
 const Intouch = () => {
   
@@ -151,9 +152,10 @@ const Intouch = () => {
                   <div className="inTouch-icon-box-content">
                     <h4>Email Us</h4>
                     <p>
-                      <a href="mailto:support@californiawebcoders.com">
+                      {/* <a href="mailto:support@californiawebcoders.com">
                         support<span class="at"></span>californiawebcoders<span class="dot"></span>com
-                      </a>
+                      </a> */}
+                      <ObfuscatedEmail />
                     </p>
                   </div>
                 </div>
@@ -171,7 +173,7 @@ const Intouch = () => {
                   <div className="inTouch-icon-box-content">
                     <h4>Call Us</h4>
                     <p>
-                      619 837 2111
+                      +1 (619) 837-2111
                       {/* <br />
                       +1 609-798-9688 */}
                     </p>

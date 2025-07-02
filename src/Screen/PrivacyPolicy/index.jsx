@@ -4,6 +4,7 @@ import HeroSection from "../../components/Herosection";
 import bannerBgImage from "../../Assets/privacyPolicy-banner-bg.webp";
 import Pricingplanheroimg from "../../Assets/Pricingplanheroimg.webp";
 import ReactHelmet from "../../components/ReactHelmet";
+import ObfuscatedEmail from "../../components/ObfuscatedEmail";
 
 const PrivacyPolicy = () => {
   return (
@@ -309,11 +310,12 @@ const PrivacyPolicy = () => {
                     promotional communications, you can opt out by following the
                     instructions provided in each communication. Alternatively,
                     you can contact us via email at{" "}
-                    <a href="mailto:support@californiawebcoders.com">
+                    {/* <a href="mailto:support@californiawebcoders.com">
                       support<span class="at"></span>californiawebcoders<span class="dot"></span>com
-                    </a>
+                    </a> */}
+                    <ObfuscatedEmail />
                     or call us at{" "}
-                    <a href="tel:+16198372111">619 837 2111</a>
+                    <a href="tel:+16198372111">+1 (619) 837-2111</a>
                   </p>
                   <h3>Social Media and Widgets</h3>
                   <p>
@@ -384,13 +386,14 @@ const PrivacyPolicy = () => {
                   <h3>California Web Coders</h3>
                   <p className="mb-0">
                     <span className="fw-bold">Phone: </span>{" "}
-                    <a href="tel:+16198372111">619 837 2111</a>
+                    <a href="tel:+16198372111">+1 (619) 837-2111</a>
                   </p>
                   <p className="mb-0">
                     <span className="fw-bold">Email: </span>{" "}
-                    <a href="mailto:info@californiabookpublishers.com">
-                      info<span class="at"></span>californiabookpublishers<span class="dot"></span>com
-                    </a>
+                    {/* <a href="mailto:support@californiawebcoders.com">
+                      support<span class="at"></span>californiawebcoders<span class="dot"></span>com
+                    </a> */}
+                    <ObfuscatedEmail />
                   </p>
                   <p className="mb-0">
                     <span className="fw-bold">Website: </span>{" "}

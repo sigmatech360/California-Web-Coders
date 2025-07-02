@@ -4,6 +4,7 @@ import HeroSection from "../../components/Herosection";
 import bannerBgImage from "../../Assets/termsAndCondition-banner-bg.webp";
 import Pricingplanheroimg from "../../Assets/Pricingplanheroimg.webp";
 import ReactHelmet from "../../components/ReactHelmet";
+import ObfuscatedEmail from "../../components/ObfuscatedEmail";
 
 export const termsAndCondition = [
   // {
@@ -418,7 +419,7 @@ const TermsAndConditions = () => {
                 <ul>
                   <li>
                     Contacting our Toll-Free Number:{" "}
-                    <a href="tel:+16198372111">619 837 2111</a>
+                    <a href="tel:+16198372111">+1 (619) 837-2111</a>
                   </li>
                   <li>
                     Engaging in a Live Chat session. Click here to initiate the
@@ -517,9 +518,10 @@ const TermsAndConditions = () => {
                 <p>
                   For effective communication, we urge you to exclusively use
                   the following contact details:{" "}
-                  <a href="mailto:support@californiawebcoders.com">
+                  {/* <a href="mailto:support@californiawebcoders.com">
                     support<span class="at"></span>californiawebcoders<span class="dot"></span>com
-                  </a>
+                  </a> */}
+                  <ObfuscatedEmail />
                   and the official numbers provided on our website. We take no
                   responsibility for any communication via other platforms or
                   unauthorized contact details not provided. We highly recommend
@@ -628,13 +630,14 @@ const TermsAndConditions = () => {
                     team.
                   </li>
                   <li>
-                    <a href="mailto:support@californiawebcoders.com">
+                    {/* <a href="mailto:support@californiawebcoders.com">
                       support<span class="at"></span>californiawebcoders<span class="dot"></span>com
-                    </a>
-                    – Contact us via email for prompt assistance.
+                    </a> */}
+                    <ObfuscatedEmail />– Contact us via email for prompt
+                    assistance.
                   </li>
                   <li>
-                    <a href="tel:+16198372111">619 837 2111</a> – Call our
+                    <a href="tel:+16198372111">+1 (619) 837-2111</a> – Call our
                     Toll-Free number to speak directly with our representatives.
                   </li>
                 </ul>
@@ -684,13 +687,15 @@ const TermsAndConditions = () => {
                   <h3>California Web Coders</h3>
                   <p className="mb-0">
                     <span className="fw-bold">Phone: </span>{" "}
-                    <a href="tel:+16198372111">619 837 2111</a>
+                    <a href="tel:+16198372111">+1 (619) 837-2111</a>
                   </p>
                   <p className="mb-0">
                     <span className="fw-bold">Email: </span>{" "}
-                    <a href="mailto:info@californiabookpublishers.com">
-                      info<span class="at"></span>californiabookpublishers<span class="dot"></span>com
-                    </a>
+                    {/* <a href="mailto:support@californiawebcoders.com">
+                      support<span class="at"></span>californiawebcoders<span class="dot"></span>com
+                    </a> */}
+                    <ObfuscatedEmail />
+                    
                   </p>
                   <p className="mb-0">
                     <span className="fw-bold">Website: </span>{" "}

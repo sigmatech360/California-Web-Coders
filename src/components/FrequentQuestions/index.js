@@ -123,12 +123,14 @@ const FrequentQuestions = (props) => {
                   .slice(0, Math.ceil(faqState.length / 2))
                   .map((item, index) => (
                     <Accordion.Item eventKey={index.toString()} key={item.id}>
-                      {/* <Accordion.Header>{item.question}</Accordion.Header> */}
-                      <h4 className="accordion-header">
+                      <Accordion.Header as="h4">
+                        {item.question}
+                      </Accordion.Header>
+                      {/* <h4 className="accordion-header">
                         <Accordion.Button as="div" className="w-100 text-start">
                           {item.question}
                         </Accordion.Button>
-                      </h4>
+                      </h4> */}
                       <Accordion.Body>{item.answer}</Accordion.Body>
                     </Accordion.Item>
                   ))}
@@ -144,12 +146,14 @@ const FrequentQuestions = (props) => {
                       eventKey={(index + faqState.length / 2).toString()}
                       key={item.id}
                     >
-                      {/* <Accordion.Header>{item.question}</Accordion.Header> */}
-                      <h4 className="accordion-header">
+                      <Accordion.Header as="h4">
+                        {item.question}
+                      </Accordion.Header>
+                      {/* <h4 className="accordion-header">
                         <Accordion.Button as="div" className="w-100 text-start">
                           {item.question}
                         </Accordion.Button>
-                      </h4>
+                      </h4> */}
                       <Accordion.Body>{item.answer}</Accordion.Body>
                     </Accordion.Item>
                   ))}

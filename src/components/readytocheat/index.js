@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { toast } from 'react-toastify';
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
 const ContactForm = (props) => {

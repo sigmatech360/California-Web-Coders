@@ -30,7 +30,7 @@ const pricingPlanData = [
       "Complete W3C Certified HTML",
       "48 to 72 hours TAT",
     ],
-    number: `619 837 2111`,
+    number: `+1 (619) 837-2111`,
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ const pricingPlanData = [
       "Complete W3C Certified HTML",
       "48 to 72 hours TAT",
     ],
-    number: `619 837 2111`,
+    number: `+1 (619) 837-2111`,
   },
   {
     id: 3,
@@ -80,7 +80,7 @@ const pricingPlanData = [
       "Complete W3C Certified HTML",
       "48 to 72 hours TAT",
     ],
-    number: `619 837 2111`,
+    number: `+1 (619) 837-2111`,
   },
 ];
 const PricingPlans = (props) => {

@@ -9,9 +9,9 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, NavLink } from "react-router-dom";
 
 import logo from "../../Assets/logo.webp";
+import ObfuscatedEmail from "../ObfuscatedEmail";
 
 function Header() {
-  
   return (
     <>
       <section className="uperheader ">
@@ -21,15 +21,15 @@ function Header() {
               <div className="uperheader__links d-flex align-items-center justify-content-end flex-wrap">
                 <div className="d-flex gap-2 align-items-center">
                   <FaPhoneAlt />
-                  <a href="tel:+16198372111">619 837 2111</a>
+                  <a href="tel:+16198372111">+1 (619) 837-2111</a>
                 </div>
                 <div className="d-flex gap-2 align-items-center">
                   <RiMailSendLine />
-                  <a
-                    href="mailto:support@californiawebcoders.com"
-                  >
-                    support<span class="at"></span>californiawebcoders<span class="dot"></span>com
-                  </a>
+                  {/* <a href="mailto:support@californiawebcoders.com">
+                    support<span class="at"></span>californiawebcoders
+                    <span class="dot"></span>com
+                  </a> */}
+                  <ObfuscatedEmail />
                 </div>
               </div>
             </div>
@@ -52,8 +52,14 @@ function Header() {
                 <NavLink to="/" className="nav-link-custom nav-link">
                   Home
                 </NavLink>
+
                 <Dropdown className="nav-dropdown-custom">
-                  <Dropdown.Toggle as="div" className="custom-toggle nav-link">
+                  <Dropdown.Toggle
+                    as="button"
+                    className="custom-toggle nav-link"
+                    // role="button"
+                    aria-expanded="false"
+                  >
                     Services
                   </Dropdown.Toggle>
 

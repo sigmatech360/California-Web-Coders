@@ -1,5 +1,4 @@
 import React from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import creativethoughsec from "../../Assets/creativethoughsec.webp";
 import { Link } from "react-router-dom";

@@ -55,7 +55,7 @@ const PixelPerfectSec = (props) => {
                     href="tel:+16198372111"
                     className="para4 mb-0  align-items-center"
                   >
-                    619 837 2111
+                    +1 (619) 837-2111
                   </a>
                 </div>
               </div>

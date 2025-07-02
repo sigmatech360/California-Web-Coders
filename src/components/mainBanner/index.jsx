@@ -1,9 +1,44 @@
-import React from "react";
-import heroimg from "../../Assets/heroimg.webp";
+import React, { useEffect, useState } from "react";
+
+// import heroimgDesktop from "../../Assets/heroimg-desktop.webp";
+// import heroimgTablet from "../../Assets/heroimg-tablet.webp";
+// import heroimgMobile from "../../Assets/heroimg-mobile.webp";
+
 import heroimg2 from "../../Assets/heroimg2.webp";
 import { Link } from "react-router-dom";
 
+import heroimgMobile from "../../Assets/heroimg-320.webp";
+import heroimgTablet from "../../Assets/heroimg-480.webp";
+import heroimgDesktop from "../../Assets/heroimg-636.webp";
+
 const MainBanner = () => {
+  const [imageSrc, setImageSrc] = useState(heroimgDesktop);
+
+  const updateImage = () => {
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth <= 480) {
+      setImageSrc(heroimgMobile);
+      console.log("mobile screen");
+    } else if (screenWidth <= 768) {
+      console.log("tablet screen");
+      setImageSrc(heroimgTablet);
+    } else {
+      console.log("desktop screen");
+      setImageSrc(heroimgDesktop);
+    }
+  };
+
+  useEffect(() => {
+    // Run on mount
+    updateImage();
+
+    // Listen to window resize
+    window.addEventListener("resize", updateImage);
+
+    // Clean up listener on unmount
+    return () => window.removeEventListener("resize", updateImage);
+  }, []);
   return (
     <section className="hero">
       <div className="container">
@@ -46,7 +81,8 @@ const MainBanner = () => {
                     alt="Google Logo"
                     className="google-logo"
                     loading="eager"
-  decoding="async"
+                    fetchpriority="high"
+                    decoding="async"
                   />
                 </div>
               </div>
@@ -59,12 +95,49 @@ const MainBanner = () => {
                 // data-aos-duration="3000"
                 // data-aos-offset="0"
               >
-                <img
-                  src={heroimg}
+                {/* <img
+                  src={heroimgDesktop}
                   alt="Responsive Design Showcase"
                   className="heroimg"
                   width={360}
                   height={196}
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                /> */}
+                {/* <img
+                  src={heroimgMobile} // Default image for smaller screens
+                  srcSet={`${heroimgDesktop} 1024w, ${heroimgTablet} 768w, ${heroimg2} 480w`} // Dynamic srcset for responsive images
+                  sizes="(max-width: 480px) 100vw,
+                  (max-width: 768px) 50vw,
+                  33vw"
+                  alt="Responsive Design Showcase"
+                  className="heroimg"
+                  width={360}
+                  height={196}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                /> */}
+                {/* <img
+                  src={heroimgMobile} // Fallback image for small screens
+                  srcSet={`${heroimgMobile} 336w, ${heroimgDesktop} 696w`}
+                  sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  alt="Responsive Design Showcase"
+                  className="heroimg"
+                  width={360}
+                  height={196}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                /> */}
+                <img
+                  src={imageSrc}
+                  alt="Responsive Design Showcase"
+                  className="heroimg"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
                 />
               </div>
             </div>
