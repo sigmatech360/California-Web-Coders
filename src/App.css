@@ -133,7 +133,7 @@ button:focus {
 .hero {
   overflow: hidden;
   background-color: #ffffff; /* Background for the section */
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -452,7 +452,14 @@ button:focus {
   }
 }
 
+@media (min-width: 767px) {
+  .hero {
+    min-height: 100vh;
+  }
+
+}
 @media (max-width: 767px) {
+  
   .heroinner {
     padding: 31px 0;
   }

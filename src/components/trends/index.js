@@ -64,7 +64,7 @@ const Trends = () => {
                       <div
                         className="card blog-card wordpressBlogCard blogCard"
                         data-aos="fade-up"
-                        // data-aos-duration="2000"
+                        // data-aos-duration="1000"
                         data-aos-delay={index * 200}
                       >
                         <Link to={`/blog/${post.slug}`}>
@@ -82,7 +82,7 @@ const Trends = () => {
                             className="card-text blogCardP"
                             dangerouslySetInnerHTML={{ __html: excerpt }}
                           />
-                          <Link
+                          {/* <Link
                             // href={post.link}
                             to={`/blog/${post.slug}`}
                             className="read-more blogCardA"
@@ -90,7 +90,7 @@ const Trends = () => {
                             rel="noopener noreferrer"
                           >
                             Read More
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </div>

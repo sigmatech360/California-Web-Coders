@@ -45,7 +45,7 @@ const Servies = () => {
               <h2
                 className="title"
                 data-aos="fade-right"
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 data-aos-offset="0"
               >
                 Smart Digital Services and Premium Web Design. Always Delivered
@@ -54,7 +54,7 @@ const Servies = () => {
               <p
                 className="para2 mb-0"
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 We can revamp your existing website or build a new one from
@@ -67,7 +67,7 @@ const Servies = () => {
                 className="creativesection d-flex"
                 key={index}
                 data-aos="fade-right"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 <span className="creativelg">
@@ -85,7 +85,7 @@ const Servies = () => {
             <div
               className="services-right-img"
               data-aos="fade-left"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               <img className="servicesheroimg img-fluid" alt="Digital Services" src={servicesimg} />
@@ -98,7 +98,7 @@ const Servies = () => {
             <div
               className="graphic-services-outer"
               data-aos="fade-right"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               <div className="graphicservices graphic-bg">
@@ -131,7 +131,7 @@ const Servies = () => {
             <div
               className="mobileservices-outer h-100 d-flex flex-column"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               <div className="mobileservices flex-grow-1">
@@ -153,7 +153,7 @@ const Servies = () => {
             <div
               className="graphic-services-outer"
               data-aos="fade-left"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               <div className="graphicservices">

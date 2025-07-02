@@ -13,7 +13,7 @@ const LogoDesignServices = () => {
             <h2
               className="title"
               data-aos="fade-right"
-              data-aos-duration="1000"
+              // data-aos-duration="500"
               data-aos-offset="0"
             >
               A Logo Design That Reflects Your Brand Personality
@@ -22,7 +22,7 @@ const LogoDesignServices = () => {
             <p
               className="para2 mb-2"
               data-aos="fade-right"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               It’s easy to fall for the allure of cheap, pre-made logos, but
@@ -37,7 +37,7 @@ const LogoDesignServices = () => {
             <p
               className="para2"
               data-aos="fade-right"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               Our business logo design team approaches each project with a fresh
@@ -50,7 +50,7 @@ const LogoDesignServices = () => {
             <p
               className="para3"
               data-aos="fade-right"
-              data-aos-duration="3000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               Choose California Web Coders for a creative solution that leaves
@@ -64,7 +64,7 @@ const LogoDesignServices = () => {
               alt={"img"}
               src={logodesignimg}
               data-aos="fade-left"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             />
           </div>
@@ -73,7 +73,7 @@ const LogoDesignServices = () => {
             <p
               className="para3"
               data-aos="fade-right"
-              data-aos-duration="3000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               Choose California Web Coders for a creative solution that leaves

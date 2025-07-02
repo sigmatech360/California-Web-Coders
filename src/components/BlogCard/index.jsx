@@ -7,7 +7,7 @@ const BlogCard = (props) => {
     // <div
     //   className="card blog-card wordpressBlogCard"
     //   data-aos="fade-up"
-    //   // data-aos-duration="2000"
+    //   // data-aos-duration="1000"
     //   data-aos-delay={index * 200}
     // >
     //   <Link to={`/blog/${post.slug}`}>

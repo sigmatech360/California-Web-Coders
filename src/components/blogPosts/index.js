@@ -74,7 +74,7 @@ const BlogSection = ({ categorySlug = null, limit = 3 }) => {
             <div className="blog-blue-head-content">
               <h3
                 data-aos="fade-right "
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 data-aos-offset="0"
               >
                 Let's See Our Latest <br />
@@ -83,7 +83,7 @@ const BlogSection = ({ categorySlug = null, limit = 3 }) => {
               <Link
                 to={"/blog"}
                 // data-aos="fade-left"
-                // data-aos-duration="1000"
+                // // data-aos-duration="500"
                 // data-aos-offset="0"
               >
                 View All Blogs
@@ -105,7 +105,7 @@ const BlogSection = ({ categorySlug = null, limit = 3 }) => {
                   className="col-lg-4 col-md-6 mb-4"
                   key={index}
                   data-aos="fade-up"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   <div className="card blog-card">
@@ -181,9 +181,8 @@ const BlogSection = ({ categorySlug = null, limit = 3 }) => {
                       ) : (
                         <p className="card-text">{post.description}</p>
                       )}
-                      {post.slug ? (
+                      {/* {post.slug ? (
                         <Link
-                          // to={`/blog/${categorySlug}/${post.slug}`}
                           to={`/blog/${post.slug}`}
                           className="read-more"
                         >
@@ -193,7 +192,7 @@ const BlogSection = ({ categorySlug = null, limit = 3 }) => {
                         <a href="#" className="read-more">
                           Read More
                         </a>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </div>

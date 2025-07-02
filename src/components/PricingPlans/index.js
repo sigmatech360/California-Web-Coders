@@ -92,15 +92,15 @@ const PricingPlans = (props) => {
             <p
               className="head-tag"
               data-aos="fade-up"
-              data-aos-duration="1000"
+              // data-aos-duration="500"
               data-aos-offset="0"
             >
               Pricing Plans
             </p>
-            <h3 data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
+            <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
               {props.secTitle || `That Fit All Budget Types`}
             </h3>
-            <p data-aos="fade-up" data-aos-duration="3000" data-aos-offset="0">
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
               {props.secDescription ||
                 `No more budget issues, get your hands on the most Affordable Website Design Services online.`}
             </p>
@@ -143,7 +143,7 @@ const PricingPlans = (props) => {
             <div
               className="why-wordpress-img"
               data-aos="fade-right"
-              data-aos-duration="1000"
+              // data-aos-duration="500"
               data-aos-offset="0"
             >
               {props.image && (
@@ -160,7 +160,7 @@ const PricingPlans = (props) => {
             <div className="why-wordpress-content">
               <h2
                 data-aos="fade-left"
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 data-aos-offset="0"
               >
                 {/* Why WordPress */}
@@ -169,7 +169,7 @@ const PricingPlans = (props) => {
               </h2>
               <p
                 data-aos="fade-left"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 {props.whyWordressDescription1}
@@ -177,7 +177,7 @@ const PricingPlans = (props) => {
               {props.whyWordressDescription2 && (
                 <p
                   data-aos="fade-left"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   {props.whyWordressDescription2}
@@ -186,7 +186,7 @@ const PricingPlans = (props) => {
               {props.whyWordressDescription3 && (
                 <p
                   data-aos="fade-left"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   {props.whyWordressDescription3}

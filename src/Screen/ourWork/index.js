@@ -107,7 +107,7 @@ const OurWork = () => {
                   <h1
                     className="title "
                     data-aos="fade-right"
-                    data-aos-duration="1000"
+                    // data-aos-duration="500"
                     data-aos-offset="0"
                   >
                     Our work.
@@ -115,7 +115,7 @@ const OurWork = () => {
                   <p
                     className=""
                     data-aos="fade-right"
-                    data-aos-duration="2000"
+                    data-aos-duration="1000"
                     data-aos-offset="0"
                   >
                     From startups to enterprises, our work showcases powerful
@@ -129,7 +129,7 @@ const OurWork = () => {
                 <div
                   className="OurWork-image"
                   data-aos="fade-left"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   <img
@@ -150,14 +150,14 @@ const OurWork = () => {
                 <div className="pixel-perfect-head text-center">
                   <h2
                     data-aos="fade-up"
-                    data-aos-duration="1000"
+                    // data-aos-duration="500"
                     data-aos-offset="0"
                   > 
                     A Glimpse Into Our <span>Expertise</span>
                   </h2>
                   <p
                     data-aos="fade-up"
-                    data-aos-duration="2000"
+                    data-aos-duration="1000"
                     data-aos-offset="0"
                   >
                     At California Web Coders, we bring visions to life with

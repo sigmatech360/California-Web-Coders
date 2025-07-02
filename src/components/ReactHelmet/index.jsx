@@ -2,6 +2,10 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 
+import heroimgMobile from "../../Assets/heroimg-320.webp";
+import heroimgTablet from "../../Assets/heroimg-480.webp";
+import heroimgDesktop from "../../Assets/heroimg-636.webp";
+
 const ReactHelmet = ({
   title = "California Web Coders",
   description = "This is the default description of the website.",
@@ -21,6 +25,24 @@ const ReactHelmet = ({
 
   return (
     <Helmet>
+      <link
+        rel="preload"
+        as="image"
+        href={heroimgMobile} // Yahan Webpack hashed path automatically lagayega
+        fetchpriority="high"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href={heroimgTablet} // Yahan Webpack hashed path automatically lagayega
+        fetchpriority="high"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href={heroimgDesktop} // Yahan Webpack hashed path automatically lagayega
+        fetchpriority="high"
+      />
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />

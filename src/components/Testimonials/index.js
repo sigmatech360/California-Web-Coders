@@ -118,7 +118,7 @@ const Testimonial = () => {
               <h2
                 className="testimonialhead1"
                 data-aos="fade-right"
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 data-aos-offset="0"
               >
                 Testimonials
@@ -126,7 +126,7 @@ const Testimonial = () => {
               <h3
                 className="title"
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 Our <span className=" ">clients love working</span> with us

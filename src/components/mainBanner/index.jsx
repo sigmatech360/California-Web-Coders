@@ -50,7 +50,7 @@ const MainBanner = () => {
                   <h1
                     className="title"
                     // data-aos="fade-up"
-                    // data-aos-duration="1000"
+                    // // data-aos-duration="500"
                     // data-aos-offset="0"
                   >
                     Your Growth Starts <span>With</span> A Great Web Design
@@ -58,7 +58,7 @@ const MainBanner = () => {
                   <p
                     className="para me-lg-5 me-0 pe-lg-5 pe-0"
                     // data-aos="fade-up"
-                    // data-aos-duration="2000"
+                    // data-aos-duration="1000"
                     // data-aos-offset="0"
                   >
                     <span>California Web Coders</span> excel at creating
@@ -69,7 +69,7 @@ const MainBanner = () => {
                     to={"/our-work"}
                     className="herobtn"
                     // data-aos="fade-up"
-                    // data-aos-duration="3000"
+                    // data-aos-duration="1000"
                     // data-aos-offset="0"
                   >
                     View Our Work
@@ -92,7 +92,7 @@ const MainBanner = () => {
               <div
                 className="hero-img-right"
                 // data-aos="fade-left"
-                // data-aos-duration="3000"
+                // data-aos-duration="1000"
                 // data-aos-offset="0"
               >
                 {/* <img

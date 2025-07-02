@@ -36,14 +36,14 @@ const PortfolioTabs = () => {
           defaultActiveKey="web-design"
           className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="1000"
           data-aos-offset="0"
         >
           <Tab eventKey="logo-design" title="Logo Design">
             <div
               className="row justify-content-center"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               {logoDesignPortfolioData.map((item, index) => (
@@ -67,7 +67,7 @@ const PortfolioTabs = () => {
             <div
               className="row justify-content-center"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               {webDesignPortfolioData.map((item, index) => (
@@ -91,7 +91,7 @@ const PortfolioTabs = () => {
             <div
               className="row justify-content-center"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               {customWebDesignPortfolioData.map((item, index) => (
@@ -116,7 +116,7 @@ const PortfolioTabs = () => {
             <div
               className="row justify-content-center"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               {cmsDevelopmentPortfolioData.map((item, index) => (
@@ -141,7 +141,7 @@ const PortfolioTabs = () => {
             <div
               className="row justify-content-center"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               {mobileAppDevelopmentPortfolioData.map((item, index) => (

@@ -11,7 +11,7 @@ const Mobileworld = (props) => {
             <h3
               className="title"
               data-aos="fade-up"
-              data-aos-duration="1000"
+              // data-aos-duration="500"
               data-aos-offset="0"
             >
               {props.title}
@@ -21,7 +21,7 @@ const Mobileworld = (props) => {
             <p
               className="para1 mobileworld-head-p ps-xxl-5"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               {props.description}

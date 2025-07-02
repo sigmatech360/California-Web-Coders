@@ -30,6 +30,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild":"npx critical build/index.html --inline --width 480 --height 680 --target build/index.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -50,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "critical": "^7.2.1"
   }
 }

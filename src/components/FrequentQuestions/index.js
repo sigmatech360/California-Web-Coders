@@ -99,7 +99,7 @@ const FrequentQuestions = (props) => {
                 <p className="sec-head-tag colorBlue">FAQS</p>
                 <h2
                   data-aos="fade-right"
-                  data-aos-duration="1000"
+                  // data-aos-duration="500"
                   data-aos-offset="0"
                 >
                   {props.secTitle ||

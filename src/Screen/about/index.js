@@ -23,7 +23,7 @@ const About = () => {
                 <h1
                   className="about-title"
                   data-aos="fade-right"
-                  data-aos-duration="1000"
+                  // data-aos-duration="500"
                   data-aos-offset="0"
                 >
                   About <br /> <span>California Web Coders</span>
@@ -31,7 +31,7 @@ const About = () => {
                 <p
                   className="about-subtitle"
                   data-aos="fade-right"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   Providing innovative and high-performing web design and
@@ -44,7 +44,7 @@ const About = () => {
                 <div
                   className=""
                   data-aos="fade-left"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   <img

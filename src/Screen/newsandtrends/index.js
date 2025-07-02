@@ -58,14 +58,14 @@ const NewsandTrends = () => {
                 <div className="connectbg">
                   <h4
                     data-aos="fade-up"
-                    data-aos-duration="1000"
+                    // data-aos-duration="500"
                     data-aos-offset="0"
                   >
                     Let’s Connect On Social Media!
                   </h4>
                   <p
                     data-aos="fade-up"
-                    data-aos-duration="2000"
+                    data-aos-duration="1000"
                     data-aos-offset="0"
                   >
                     Follow California Web Coders on social media for regular
@@ -74,7 +74,7 @@ const NewsandTrends = () => {
                   <div
                     className="connect-sm-icons"
                     data-aos="fade-up"
-                    data-aos-duration="3000"
+                    data-aos-duration="1000"
                     data-aos-offset="0"
                   >
                     <a

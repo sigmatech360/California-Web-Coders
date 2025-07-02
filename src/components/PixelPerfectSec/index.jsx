@@ -13,7 +13,7 @@ const PixelPerfectSec = (props) => {
               <div className="pixel-perfect-head text-center ">
                 <h2
                   data-aos="fade-up"
-                  data-aos-duration="1000"
+                  // data-aos-duration="500"
                   data-aos-offset="0"
                 >
                   {props.secTitle}{" "}
@@ -21,7 +21,7 @@ const PixelPerfectSec = (props) => {
                 </h2>
                 <p
                   data-aos="fade-up"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   {props.secDescription}
@@ -33,7 +33,7 @@ const PixelPerfectSec = (props) => {
                 className="col-lg-4 col-md-6 mb-4"
                 key={index}
                 data-aos="fade-up"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
                 onClick={() => props.onImageClick(index, props.projectsData)}
               >

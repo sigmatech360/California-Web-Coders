@@ -16,7 +16,7 @@ const Digitalagency = () => {
               <h2
                 className="title"
                 data-aos="fade-right"
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 data-aos-offset="0"
               >
                 Web Designs That are Loved By All Of <span>California.</span>{" "}
@@ -26,7 +26,7 @@ const Digitalagency = () => {
               <div
                 className="d-flex gap-md-4 gap-2"
                 data-aos="fade-left"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 <span className="twentypls"> 20+</span>
@@ -46,7 +46,7 @@ const Digitalagency = () => {
           <div
             className="row"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-offset="0"
           >
             <div className="col-md-4">

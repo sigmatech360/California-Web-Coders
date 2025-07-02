@@ -16,14 +16,14 @@ const RefundPolicy = () => {
             <div className="RefundPolicy-content">
               <h3
                 data-aos="fade-up"
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 data-aos-offset="0"
               >
                 7-Day refund policy for all paid plans and packages
               </h3>
               <p
                 data-aos="fade-up"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
               >
                 If you're not fully satisfied within the first 7 days of project
                 initiation, we’ll issue a full refund. No hard feelings, no
@@ -37,7 +37,7 @@ const RefundPolicy = () => {
           <div
             className="rf-pay-logos"
             data-aos="fade-up"
-            data-aos-duration="3000"
+            data-aos-duration="1000"
           >
             <div className="paymentway">
               <img src={visaLogo} alt="Visa" />

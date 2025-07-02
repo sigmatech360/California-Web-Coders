@@ -19,7 +19,7 @@ const ServiceBanner = (props) => {
             <h1
               className=""
               // data-aos="fade-right"
-              // data-aos-duration="1000"
+              // // data-aos-duration="500"
               // data-aos-offset="0"
             >
               {props.title}
@@ -27,7 +27,7 @@ const ServiceBanner = (props) => {
             <p
               className=""
               // data-aos="fade-right"
-              // data-aos-duration="2000"
+              // data-aos-duration="1000"
               // data-aos-offset="0"
             >
               {props.description}
@@ -36,7 +36,7 @@ const ServiceBanner = (props) => {
               <p
                 className=""
                 // data-aos="fade-right"
-                // data-aos-duration="2000"
+                // data-aos-duration="1000"
                 // data-aos-offset="0"
               >
                 {props.description2}
@@ -45,7 +45,7 @@ const ServiceBanner = (props) => {
             <ul
               className="list-unstyled wordpress-web-design-list"
               // data-aos="fade-right"
-              // data-aos-duration="3000"
+              // data-aos-duration="1000"
               // data-aos-offset="0"
             >
               {props.bannerList.map((item, index) => (
@@ -61,7 +61,7 @@ const ServiceBanner = (props) => {
             <Link to={"/get-intouch"}
               className="btn-theme"
               // data-aos="fade-right"
-              // data-aos-duration="3000"
+              // data-aos-duration="1000"
               // data-aos-offset="0"
             >
               {props.btnText || `Contact Us`}
@@ -75,7 +75,7 @@ const ServiceBanner = (props) => {
                   alt="Services Banner Img"
                   className="img-fluid"
                   // data-aos="fade-left"
-                  // data-aos-duration="2000"
+                  // data-aos-duration="1000"
                   // data-aos-offset="0"
                 />
               </div>

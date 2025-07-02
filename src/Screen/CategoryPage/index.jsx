@@ -97,9 +97,9 @@ const CategoryPage = () => {
                             }}
                           />
                           {/* <Link to={`/blog/${post.slug}`} className="read-more"> */}
-                          <Link to={`/blog/${post.slug}`} className="read-more blogCardA">
+                          {/* <Link to={`/blog/${post.slug}`} className="read-more blogCardA">
                             Read More
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </div>

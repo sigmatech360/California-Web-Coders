@@ -19,7 +19,7 @@ const ItSolutions = () => {
             <h2
               className="title"
               data-aos="fade-right"
-              data-aos-duration="1000"
+              // data-aos-duration="500"
               
             >
               We’re Awards Winning <span> IT Solutions </span> Agency
@@ -27,7 +27,7 @@ const ItSolutions = () => {
             <p
               className="para2 mb-2"
               data-aos="fade-right"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               
             >
               California Web Coders started with a vision to simplify digital
@@ -40,7 +40,7 @@ const ItSolutions = () => {
             <p
               className="para2 mb-2"
               data-aos="fade-right"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               
             >
               Whether it’s building custom websites or launching high-performing
@@ -50,7 +50,7 @@ const ItSolutions = () => {
             <div
               className="itSolutions-list"
               data-aos="fade-right"
-              data-aos-duration="3000"
+              data-aos-duration="1000"
               
             >
               <span className="d-flex align-items-center gap-2">
@@ -76,7 +76,7 @@ const ItSolutions = () => {
             <div
               className=" mt-5 gap-3 d-flex flex-wrap"
               data-aos="fade-right"
-              data-aos-duration="3000"
+              data-aos-duration="1000"
               
             >
               <Link to={"/our-work"} className="learnmore">View Our Portfolio</Link>
@@ -96,7 +96,7 @@ const ItSolutions = () => {
               alt="Portfolio"
               src={itsolution}
               data-aos="fade-left"
-              data-aos-duration="1000"
+              // data-aos-duration="500"
               
             />
           </div>
@@ -110,7 +110,7 @@ const ItSolutions = () => {
                 src={itservicesimg2}
                 className="img-fluid mission-img-front"
                 data-aos="fade-right"
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 alt="Mission"
               />
             </div>
@@ -121,7 +121,7 @@ const ItSolutions = () => {
               <h2
                 className="missionstatement"
                 data-aos="fade-left"
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 
               >
                 Our Goals
@@ -129,7 +129,7 @@ const ItSolutions = () => {
               <p
                 className="missionstatementpara"
                 data-aos="fade-left"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 
               >
                 We live and strive for one goal: to empower businesses with
@@ -141,7 +141,7 @@ const ItSolutions = () => {
               <Link to={"/get-intouch"}
                 className="missionstatementbtn"
                 data-aos="fade-left"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
                 
               >
                 Connect Now

@@ -255,7 +255,7 @@ const PrivacyPolicy = () => {
                     At California Web Coders, we hold the privacy of our clients
                     in the highest regard on{" "}
                     <a
-                      href="https://californiawebcoders.com/blogs/"
+                      href="https://californiawebcoders.com/"
                       target="_new"
                       rel="noopener"
                     >

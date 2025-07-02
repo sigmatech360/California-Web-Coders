@@ -13,7 +13,7 @@ const Creativitythrough = (props) => {
               <h2
                 className="title"
                 data-aos="fade-right"
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 data-aos-offset="0"
               >
                 {props.title1} {props.title2 && <span>{props.title2}</span>}
@@ -21,7 +21,7 @@ const Creativitythrough = (props) => {
               <p
                 className="para mt-3"
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 {props.description1}
@@ -31,7 +31,7 @@ const Creativitythrough = (props) => {
                 <p
                   className="para"
                   data-aos="fade-right"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   {props.description2}
@@ -51,7 +51,7 @@ const Creativitythrough = (props) => {
               <div
                 className="creativitythrough-content"
                 data-aos="fade-left"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 <img

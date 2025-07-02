@@ -134,13 +134,13 @@ const PricingPlan = () => {
             defaultActiveKey="seo-tab"
             className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
             data-aos="fade-up"
-            data-aos-duration="3000"
+            data-aos-duration="1000"
           >
             <Tab eventKey="seo-tab" title="SEO">
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
               >
                 {pricingPlanData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4" key={index}>
@@ -159,7 +159,7 @@ const PricingPlan = () => {
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
               >
                 {pricingPlanData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4" key={index}>
@@ -178,7 +178,7 @@ const PricingPlan = () => {
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
               >
                 {pricingPlanData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4" key={index}>
@@ -197,7 +197,7 @@ const PricingPlan = () => {
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
               >
                 {pricingPlanData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4" key={index}>
@@ -216,7 +216,7 @@ const PricingPlan = () => {
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
               >
                 {pricingPlanData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4" key={index}>
@@ -235,7 +235,7 @@ const PricingPlan = () => {
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
               >
                 {pricingPlanData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4" key={index}>
@@ -254,7 +254,7 @@ const PricingPlan = () => {
               <div
                 className="row justify-content-center"
                 data-aos="fade-up"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
               >
                 {pricingPlanData.map((item, index) => (
                   <div className="col-lg-4 col-md-7 mb-4" key={index}>
@@ -290,7 +290,7 @@ const PricingPlan = () => {
                   <div
                     className="express-content"
                     data-aos="fade-right"
-                    data-aos-duration="2000"
+                    data-aos-duration="1000"
                   >
                     <div className="express-content-head">
                       <h2>It’s Not The Money, It’s The Experience.</h2>
@@ -319,7 +319,7 @@ const PricingPlan = () => {
                   <div
                     className="express-cards h-100"
                     data-aos="fade-left"
-                    data-aos-duration="2000"
+                    data-aos-duration="1000"
                   >
                     <div className="express-cards-items-updated">
                       <div className="card text-center border-0    text-white ">

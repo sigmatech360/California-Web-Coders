@@ -67,7 +67,7 @@ const Designsolutions = () => {
               <h2
                 className="title"
                 data-aos="fade-right"
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 data-aos-offset="0"
               >
                 <span> Optimized Website Designs </span>For Peak Performance.
@@ -76,7 +76,7 @@ const Designsolutions = () => {
               <p
                 className="para2 mb-2"
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 The team at <span>California Web Coders,</span> does more than
@@ -89,7 +89,7 @@ const Designsolutions = () => {
               <p
                 className="para2"
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 And guess what? Our expertise doesn’t end at web design. We
@@ -100,7 +100,7 @@ const Designsolutions = () => {
               <p
                 className="para2"
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 Our primary goal is to combine a sleek, responsive website
@@ -110,7 +110,7 @@ const Designsolutions = () => {
               <p
                 className="para2"
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 From startups to established brands, we work closely with you to
@@ -120,7 +120,7 @@ const Designsolutions = () => {
               <p
                 className="paratitle"
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 Your website should work as hard as you do.
@@ -129,7 +129,7 @@ const Designsolutions = () => {
               <p
                 className="para2  mb-3"
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 Contact us today for a free consultation and discover how our
@@ -142,7 +142,7 @@ const Designsolutions = () => {
                 onClick={() => setShowModal(true)}
                 className="freecons"
                 data-aos="fade-right"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 Book Your FREE Consultation
@@ -155,7 +155,7 @@ const Designsolutions = () => {
                   className="solution d-flex mb-2"
                   key={index}
                   data-aos="fade-up"
-                  data-aos-duration="1000"
+                  // data-aos-duration="500"
                   data-aos-offset="0"
                 >
                   <span>{item.icon}</span>{" "}

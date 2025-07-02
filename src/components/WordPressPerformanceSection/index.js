@@ -12,7 +12,7 @@ const WordPressPerformanceSection = (props) => {
             <h2
               className="title"
               data-aos="fade-right"
-              data-aos-duration="1000"
+              // data-aos-duration="500"
               data-aos-offset="0"
             >
               {props.secTitle1}{" "}
@@ -21,7 +21,7 @@ const WordPressPerformanceSection = (props) => {
             </h2>
             <p
               data-aos="fade-right"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               {props.description}
@@ -29,7 +29,7 @@ const WordPressPerformanceSection = (props) => {
             {props.description2 && (
               <p
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 {props.description2}
@@ -38,7 +38,7 @@ const WordPressPerformanceSection = (props) => {
             <Link to={"/pricing-plan"}
               className="btn-theme"
               data-aos="fade-right"
-              data-aos-duration="3000"
+              data-aos-duration="1000"
               data-aos-offset="0"
             >
               {props.btnText || `Get In Touch`}
@@ -52,7 +52,7 @@ const WordPressPerformanceSection = (props) => {
                 alt="Service About"
                 className="img-fluid"
                 data-aos="fade-left"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               />
             </div>

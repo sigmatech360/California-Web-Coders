@@ -28,7 +28,7 @@ const Intouch = () => {
               <h2
                 className="title"
                 data-aos="fade-right"
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 data-aos-offset="0"
               >
                 Don’t hesitate to contact us for{" "}
@@ -36,7 +36,7 @@ const Intouch = () => {
               </h2>
               <p
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 We’re here to answer your questions and explore how we can help
@@ -44,14 +44,14 @@ const Intouch = () => {
               </p>
               <h3
                 data-aos="fade-right"
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 data-aos-offset="0"
               >
                 Follow our social network
               </h3>
               <p
                 data-aos="fade-right"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 Stay connected with California Web Coders across all platforms
@@ -61,7 +61,7 @@ const Intouch = () => {
               <div
                 className="connect-sm-icons justify-content-start"
                 data-aos="fade-right"
-                data-aos-duration="3000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 <a
@@ -127,7 +127,7 @@ const Intouch = () => {
                 <div
                   className="inTouch-icon-box"
                   data-aos="fade-right"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   <div className="icon-container">
@@ -143,7 +143,7 @@ const Intouch = () => {
                 <div
                   className="inTouch-icon-box"
                   data-aos="fade-down"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   <div className="icon-container">
@@ -164,7 +164,7 @@ const Intouch = () => {
                 <div
                   className="inTouch-icon-box"
                   data-aos="fade-up"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   <div className="icon-container">
@@ -184,7 +184,7 @@ const Intouch = () => {
                 <div
                   className="inTouch-icon-box"
                   data-aos="fade-left"
-                  data-aos-duration="2000"
+                  data-aos-duration="1000"
                   data-aos-offset="0"
                 >
                   <div className="icon-container">

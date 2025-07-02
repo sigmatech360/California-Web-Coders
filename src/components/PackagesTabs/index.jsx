@@ -20,14 +20,14 @@ const PackagesTabs = () => {
         defaultActiveKey="logo-design"
         className="brand-tabs justify-content-center my-4 mb-xl-5 border-0"
         data-aos="fade-up"
-        data-aos-duration="3000"
+        data-aos-duration="1000"
         data-aos-offset="0"
       >
         <Tab eventKey="logo-design" title="Logo Design">
           <div
             className="row justify-content-center"
             data-aos="fade-up"
-            data-aos-duration="3000"
+            data-aos-duration="1000"
             data-aos-offset="0"
           >
             {logoDesignPricingPlansData.map((item, index) => (
@@ -48,7 +48,7 @@ const PackagesTabs = () => {
           <div
             className="row justify-content-center"
             // data-aos="fade-up"
-            // data-aos-duration="3000"
+            // data-aos-duration="1000"
             // data-aos-offset="0"
           >
             {informativeWebsitePricingPlansData.map((item, index) => (
@@ -68,7 +68,7 @@ const PackagesTabs = () => {
           <div
             className="row justify-content-center"
             // data-aos="fade-up"
-            // data-aos-duration="3000"
+            // data-aos-duration="1000"
             // data-aos-offset="0"
           >
             {eCommerseWebsitePricingPlansData.map((item, index) => (
@@ -88,7 +88,7 @@ const PackagesTabs = () => {
           <div
             className="row justify-content-center"
             // data-aos="fade-up"
-            // data-aos-duration="3000"
+            // data-aos-duration="1000"
             // data-aos-offset="0"
           >
             {customWebDevPricingPlansData.map((item, index) => (
@@ -108,7 +108,7 @@ const PackagesTabs = () => {
           <div
             className="row justify-content-center"
             // data-aos="fade-up"
-            // data-aos-duration="3000"
+            // data-aos-duration="1000"
             // data-aos-offset="0"
           >
             {seoPricingPlansData.map((item, index) => (
@@ -128,7 +128,7 @@ const PackagesTabs = () => {
           <div
             className="row justify-content-center"
             // data-aos="fade-up"
-            // data-aos-duration="3000"
+            // data-aos-duration="1000"
             // data-aos-offset="0"
           >
             {smmPricingPlansData.map((item, index) => (
@@ -148,7 +148,7 @@ const PackagesTabs = () => {
           <div
             className="row justify-content-center"
             // data-aos="fade-up"
-            // data-aos-duration="3000"
+            // data-aos-duration="1000"
             // data-aos-offset="0"
           >
             {comboPricingPlansData.map((item, index) => (

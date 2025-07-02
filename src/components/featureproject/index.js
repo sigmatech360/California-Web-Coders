@@ -30,7 +30,7 @@ const FeatureProject = (props) => {
               <h2
                 className={props?.titleclass}
                 data-aos="fade-up"
-                data-aos-duration="1000"
+                // data-aos-duration="500"
                 data-aos-offset="0"
               >
                 {props?.title}
@@ -39,7 +39,7 @@ const FeatureProject = (props) => {
               <p
                 className={props?.paraclass}
                 data-aos="fade-up"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-offset="0"
               >
                 {props?.para}
