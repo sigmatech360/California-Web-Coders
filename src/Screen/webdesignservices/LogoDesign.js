@@ -67,7 +67,7 @@ export const logoDesignPortfolioData = [
 const LogoDesign = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [images, setImages] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0); 
 
   const handleImageClick = (index, imageArray) => {
     const imageList = imageArray.map((item) => ({

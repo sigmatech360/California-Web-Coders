@@ -2,70 +2,80 @@ import React from "react";
 import { CiCircleCheck } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
-import whiteCheck from "../../Assets/white-check.webp"
+import whiteCheck from "../../Assets/white-check.webp";
 
 const ServiceBanner = (props) => {
-  
   return (
     <section
       className="wordpress-web-design"
-      style={{
-        backgroundImage: `url(${props.bgImage})`,
-      }}
+      // style={{
+      //   backgroundImage: `url(${props.bgImage})`,
+      // }}
     >
+      <img
+        src={props.bgImage}
+        className="servicesBanner-bgImage"
+        alt="Services Background Img"
+        fetchpriority="high"
+        width="1920"
+        height="1080"
+      />
       <div className="container">
         <div className="row align-items-center">
           <div className={`${props.leftCol || "col-lg-6"}`}>
-            <h1
-              className=""
-              // data-aos="fade-right"
-              // // data-aos-duration="500"
-              // data-aos-offset="0"
-            >
-              {props.title}
-            </h1>
-            <p
-              className=""
-              // data-aos="fade-right"
-              // data-aos-duration="1000"
-              // data-aos-offset="0"
-            >
-              {props.description}
-            </p>
-            {props.description2 && (
+            <div className="inner-services-banner-content">
+              <h1
+                className=""
+                // data-aos="fade-right"
+                // // data-aos-duration="500"
+                // data-aos-offset="0"
+              >
+                {props.title}
+              </h1>
               <p
                 className=""
                 // data-aos="fade-right"
                 // data-aos-duration="1000"
                 // data-aos-offset="0"
               >
-                {props.description2}
+                {props.description}
               </p>
-            )}
-            <ul
-              className="list-unstyled wordpress-web-design-list"
-              // data-aos="fade-right"
-              // data-aos-duration="1000"
-              // data-aos-offset="0"
-            >
-              {props.bannerList.map((item, index) => (
-                <li className="d-flex align-items-center mb-2" key={index}>
-                  <span className="d-flex align-items-center gap-2">
-                    {/* <CiCircleCheck className="checkicon" /> */}
-                    <img src={whiteCheck} alt="" />
-                    <p className="para4 mb-0 align-self-baseline">{item}</p>
-                  </span>
-                </li>
-              ))}
-            </ul>
-            <Link to={"/get-intouch"}
-              className="btn-theme"
-              // data-aos="fade-right"
-              // data-aos-duration="1000"
-              // data-aos-offset="0"
-            >
-              {props.btnText || `Contact Us`}
-            </Link>
+              {props.description2 && (
+                <p
+                  className=""
+                  // data-aos="fade-right"
+                  // data-aos-duration="1000"
+                  // data-aos-offset="0"
+                >
+                  {props.description2}
+                </p>
+              )}
+              <ul
+                className="list-unstyled wordpress-web-design-list"
+                // data-aos="fade-right"
+                // data-aos-duration="1000"
+                // data-aos-offset="0"
+              >
+                {props.bannerList.map((item, index) => (
+                  <li className="d-flex align-items-center mb-2" key={index}>
+                    <span className="d-flex align-items-center gap-2">
+                      {/* <CiCircleCheck className="checkicon" /> */}
+                      <img src={whiteCheck} alt="" />
+                      <p className="para4 mb-0 align-self-baseline">{item}</p>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                to={"/get-intouch"}
+                className="btn-theme"
+                // data-aos="fade-right"
+                // data-aos-duration="1000"
+                // data-aos-offset="0"
+              >
+                {props.btnText || `Contact Us`}
+              </Link>
+            </div>
           </div>
           {props.image && (
             <div className={`${props.rightCol || "col-lg-6"}`}>
@@ -74,6 +84,9 @@ const ServiceBanner = (props) => {
                   src={props.image}
                   alt="Services Banner Img"
                   className="img-fluid"
+                  fetchpriority="high"
+                  width="336"
+                  height="252"
                   // data-aos="fade-left"
                   // data-aos-duration="1000"
                   // data-aos-offset="0"
