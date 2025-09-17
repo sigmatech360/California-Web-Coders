@@ -21,7 +21,7 @@ function Header() {
               <div className="uperheader__links d-flex align-items-center justify-content-end flex-wrap">
                 <div className="d-flex gap-2 align-items-center">
                   <FaPhoneAlt />
-                  <a href="tel:+16198372111">+1 (619) 837-2111</a>
+                  <a href="tel:+16193352364">+1 (619) 335-2364</a>
                 </div>
                 <div className="d-flex gap-2 align-items-center">
                   <RiMailSendLine />

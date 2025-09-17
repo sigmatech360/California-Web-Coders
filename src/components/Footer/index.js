@@ -185,8 +185,8 @@ function Footer() {
                   <br />
                   CA 92101, United States
                   <br />
-                  <a href="tel:+16198372111" className="footer_list_item">
-                    <i className="fas fa-phone-alt"></i> +1 (619) 837-2111
+                  <a href="tel:+16193352364" className="footer_list_item">
+                    <i className="fas fa-phone-alt"></i> +1 (619) 335-2364
                   </a>
                   {/* <a
                     href="mailto:support@californiawebcoders.com"

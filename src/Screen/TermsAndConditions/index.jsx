@@ -419,7 +419,7 @@ const TermsAndConditions = () => {
                 <ul>
                   <li>
                     Contacting our Toll-Free Number:{" "}
-                    <a href="tel:+16198372111">+1 (619) 837-2111</a>
+                    <a href="tel:+16193352364">+1 (619) 335-2364</a>
                   </li>
                   <li>
                     Engaging in a Live Chat session. Click here to initiate the
@@ -637,7 +637,7 @@ const TermsAndConditions = () => {
                     assistance.
                   </li>
                   <li>
-                    <a href="tel:+16198372111">+1 (619) 837-2111</a> – Call our
+                    <a href="tel:+16193352364">+1 (619) 335-2364</a> – Call our
                     Toll-Free number to speak directly with our representatives.
                   </li>
                 </ul>
@@ -687,7 +687,7 @@ const TermsAndConditions = () => {
                   <h3>California Web Coders</h3>
                   <p className="mb-0">
                     <span className="fw-bold">Phone: </span>{" "}
-                    <a href="tel:+16198372111">+1 (619) 837-2111</a>
+                    <a href="tel:+16193352364">+1 (619) 335-2364</a>
                   </p>
                   <p className="mb-0">
                     <span className="fw-bold">Email: </span>{" "}

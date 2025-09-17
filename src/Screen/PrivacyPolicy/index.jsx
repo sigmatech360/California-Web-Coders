@@ -315,7 +315,7 @@ const PrivacyPolicy = () => {
                     </a> */}
                     <ObfuscatedEmail />
                     or call us at{" "}
-                    <a href="tel:+16198372111">+1 (619) 837-2111</a>
+                    <a href="tel:+16193352364">+1 (619) 335-2364</a>
                   </p>
                   <h3>Social Media and Widgets</h3>
                   <p>
@@ -386,7 +386,7 @@ const PrivacyPolicy = () => {
                   <h3>California Web Coders</h3>
                   <p className="mb-0">
                     <span className="fw-bold">Phone: </span>{" "}
-                    <a href="tel:+16198372111">+1 (619) 837-2111</a>
+                    <a href="tel:+16193352364">+1 (619) 335-2364</a>
                   </p>
                   <p className="mb-0">
                     <span className="fw-bold">Email: </span>{" "}
