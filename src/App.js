@@ -5,20 +5,22 @@ import UserRouter from "./Routers/index";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 import "react-toastify/dist/ReactToastify.css";
 
 import "./App.css";
 
 function App() {
-    useEffect(() => {
+  useEffect(() => {
     AOS.init({
-      duration: 500,
-      delay: 50,
+      duration: 1500,
+      // delay: 50,
+      // offset: 0,
       // once: true,
     });
 
-    // Refresh after init
-    AOS.refresh();
+    // AOS.refresh();
+    window.addEventListener("load", () => AOS.refresh());
   }, []);
 
   return (

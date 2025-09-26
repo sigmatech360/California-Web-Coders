@@ -20,7 +20,7 @@ import Loader from "../../components/Loader";
 // import BlogSection from "../../components/blogPosts";
 const BlogSection = lazy(() => import("../../components/blogPosts"));
 
-const faqData = [
+export const faqHomeData = [
   {
     id: 1,
     question: "1. What industries does California Web Coders specialize in?",
@@ -144,7 +144,7 @@ function Home() {
 
         <FrequentQuestions
           FrequentQuestions="homeFrequentQuestions"
-          faqData={faqData}
+          faqData={faqHomeData}
         />
         <Suspense fallback={<Loader />}>
           <BlogSection categorySlug="blogs" />

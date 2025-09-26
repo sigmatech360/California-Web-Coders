@@ -988,3 +988,425 @@ export const comboPricingPlansData = [
     number: `+1 (619) 335-2364`,
   },
 ];
+
+// ====================================================================================================
+
+export const shopifyWebsitePricingPlansData = [
+  {
+    id: 1,
+    packageInfo: "Shopify",
+    name: "Economy Shopify Web",
+    price: {
+      actualPrice: "619.00",
+      disountPrice: "399.00",
+    },
+    servicesList: [
+      {
+        title: "Core Features:",
+        items: [
+          { name: "Full Shopify Store Setup & Configuration", included: true },
+          {
+            name: "Custom Responsive Website Design (Mobile & Desktop Friendly)",
+            included: true,
+          },
+          { name: "Custom Theme: Up to 2 design iterations", included: true },
+          {
+            name: "Product & Category Setup: Up to 5 categories / 50 products",
+            included: true,
+          },
+          { name: "Payment Gateway Integration (if needed)", included: true },
+          {
+            name: "Content Management: Add/update products and categories",
+            included: true,
+          },
+          { name: "Navigation & Site Links Setup", included: true },
+          {
+            name: "Standard Pages: About Us, Contact Us, Terms & Conditions, Privacy Policy",
+            included: true,
+          },
+          { name: "Stock Images Included", included: true },
+          {
+            name: "Social Media Integration: Facebook, Instagram, etc.",
+            included: true,
+          },
+          { name: "1 Week Post-Launch Support", included: true },
+        ],
+      },
+      {
+        title: "Optional Add-Ons:",
+        items: [
+          { name: "Additional Customization: $40/hour", included: true },
+          { name: "Content Creation Assistance: $150", included: true },
+          { name: "Shopify Economy License: $50/month", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+  {
+    id: 2,
+    packageInfo: "Shopify",
+    name: "Standard Shopify Web",
+    price: {
+      actualPrice: "1239.00",
+      disountPrice: "799.00",
+    },
+    servicesList: [
+      {
+        title: "All Features in Economy, Plus:",
+        items: [
+          { name: "Custom Theme: Up to 3 design iterations", included: true },
+          {
+            name: "Categories & Products: Up to 10 categories / 75 products",
+            included: true,
+          },
+          {
+            name: "Content Management: Add/update products and categories",
+            included: true,
+          },
+          { name: "Blog Integration & Newsletter Signup", included: true },
+          { name: "Contact Form", included: true },
+          { name: "Shipping Setup & Integration", included: true },
+          { name: "1 Week Post-Launch Support", included: true },
+        ],
+      },
+      {
+        title: "Optional Add-Ons:",
+        items: [
+          { name: "Additional Customization: $40/hour", included: true },
+          { name: "Content Creation Assistance: $150", included: true },
+          { name: "Shopify Standard License: $99/month", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+  {
+    id: 3,
+    packageInfo: "Shopify",
+    name: "Premium Shopify Web",
+    price: {
+      actualPrice: "2,169.00",
+      disountPrice: "1,399.00",
+    },
+    servicesList: [
+      {
+        title: "All Features in Standard, Plus:",
+        items: [
+          {
+            name: "Categories & Products: Up to 10 categories / 100 products",
+            included: true,
+          },
+          { name: "Stock Images from Shutterstock", included: true },
+          { name: "Instagram Feed Integration", included: true },
+          {
+            name: "Tracking Code Deployment (Google Analytics, Facebook Pixel)",
+            included: true,
+          },
+          { name: "Advanced App Integration & Custom Scripts", included: true },
+          { name: "Custom Email & Notification Setup", included: true },
+          { name: "Currency Conversion Feature", included: true },
+          { name: "1 Week Post-Launch Support", included: true },
+        ],
+      },
+      {
+        title: "Optional Add-Ons:",
+        items: [
+          { name: "Additional Customization: $40/hour", included: true },
+          { name: "Content Creation Assistance: $150", included: true },
+          { name: "Shopify Premium License: $299/month", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+];
+
+export const wixWebsitePricingPlansData = [
+  {
+    id: 1,
+    packageInfo: "Wix",
+    name: "Basic Wix Website",
+    price: {
+      actualPrice: "619.00",
+      disountPrice: "399.00",
+    },
+    servicesList: [
+      {
+        title: "Features:",
+        items: [
+          { name: "Up to 3 Pages", included: true },
+          { name: "Client Design Brief Implementation", included: true },
+          {
+            name: "Add Written Content & Photos (Personal or Stock)",
+            included: true,
+          },
+          { name: "Color Palette & Font Customization", included: true },
+          { name: "Domain Linking & Activation", included: true },
+          {
+            name: "Basic SEO Setup (Keywords, Titles, Tags, Descriptions)",
+            included: true,
+          },
+          { name: "Mobile Version Editing", included: true },
+          { name: "1 Free Small-Budget Logo ($30 value)", included: true },
+          { name: "Unlimited Revisions", included: true },
+        ],
+      },
+      {
+        title: "Optional Add-Ons:",
+        items: [
+          { name: "Extra 3-section page: $125/page", included: true },
+          { name: "Extra Section: $25/section", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+  {
+    id: 2,
+    packageInfo: "Wix",
+    name: "Wix Website Tidy-Up",
+    price: {
+      actualPrice: "1239.00",
+      disountPrice: "799.00",
+    },
+    servicesList: [
+      {
+        title: "Features:",
+        items: [
+          { name: "Up to 5 Pages", included: true },
+          { name: "Client Design Brief Implementation", included: true },
+          { name: "Alignment & Design Element Clean-up", included: true },
+          { name: "Optional Color & Font Adjustments", included: true },
+          { name: "Domain Linking & Activation", included: true },
+          { name: "Basic SEO Setup", included: true },
+          { name: "Mobile Version Editing", included: true },
+          { name: "Unlimited Revisions", included: true },
+        ],
+      },
+      {
+        title: "Optional Add-Ons:",
+        items: [
+          { name: "Extra 3-section page: $125/page", included: true },
+          { name: "Extra Section: $25/section", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+  {
+    id: 3,
+    packageInfo: "Wix",
+    name: "Wix Complete Makeover",
+    price: {
+      actualPrice: "2,169.00",
+      disountPrice: "1,399.00",
+    },
+    servicesList: [
+      {
+        title: "Features:",
+        items: [
+          { name: "Up to 10 Pages", included: true },
+          { name: "Full Website Redesign", included: true },
+          { name: "Menu & Layout Redesign", included: true },
+          { name: "Color Palette & Font Customization", included: true },
+          {
+            name: "New Wix Design Elements (Stock Photos, Graphics, etc.)",
+            included: true,
+          },
+          { name: "Domain Linking & Activation", included: true },
+          { name: "Basic SEO Setup", included: true },
+          { name: "Mobile Version Editing", included: true },
+          { name: "Unlimited Revisions", included: true },
+        ],
+      },
+      {
+        title: "Optional Add-Ons:",
+        items: [
+          { name: "Extra 3-section page: $200/page", included: true },
+          { name: "Extra Section: $50/section", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+];
+
+export const squareWebsitePricingPlansData = [
+  {
+    id: 1,
+    packageInfo: "squarespace",
+    name: "Basic Website Package",
+    price: {
+      actualPrice: "619.00",
+      disountPrice: "399.00",
+    },
+    servicesList: [
+      {
+        title: "Features:",
+        items: [
+          { name: "Up to 5 Pages", included: true },
+          { name: "1:1 Brief & Consultation", included: true },
+          { name: "Squarespace Account Setup", included: true },
+          {
+            name: "Responsive Design (Desktop, Mobile & Tablet)",
+            included: true,
+          },
+          { name: "Contact / Enquiry Form", included: true },
+          { name: "Stock Photos: 3 (if needed)", included: true },
+          { name: "Newsletter Integration (if required)", included: true },
+          { name: "CMS Training & Handover", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+  {
+    id: 2,
+    packageInfo: "squarespace",
+    name: "Business Website Package",
+    price: {
+      actualPrice: "1239.00",
+      disountPrice: "799.00",
+    },
+    servicesList: [
+      {
+        title: "All Features in Basic, Plus:",
+        items: [
+          { name: "Up to 12 Pages", included: true },
+          { name: "Additional Menu Options", included: true },
+          { name: "Social Media Integration", included: true },
+          { name: "Stock Images: Up to 8 total", included: true },
+          { name: "Forms: Up to 6 total", included: true },
+          { name: "Photo Galleries: Up to 5 total", included: true },
+          {
+            name: "Blog Page Setup (Content Provided by Client)",
+            included: true,
+          },
+          { name: "SEO Optimization", included: true },
+          { name: "Google Analytics Setup", included: true },
+          { name: "Google My Business Page Setup", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+  {
+    id: 3,
+    packageInfo: "squarespace",
+    name: "E-Commerce Website Package",
+    price: {
+      actualPrice: "2,169.00",
+      disountPrice: "1,399.00",
+    },
+    servicesList: [
+      {
+        title: "All Features in Business, Plus:",
+        items: [
+          {
+            name: "Up to 5 Main Pages + 3 Shop Pages / Categories",
+            included: true,
+          },
+          { name: "Online Store Setup & Configuration", included: true },
+          {
+            name: "Upload up to 10 Initial Products (Training Provided)",
+            included: true,
+          },
+          { name: "Shop Page / Category Setup (up to 3)", included: true },
+          { name: "Shipping Configuration", included: true },
+          {
+            name: "Checkout Page Setup with PayPal / Stripe Integration",
+            included: true,
+          },
+          { name: "Discount Codes & Marketing Options", included: true },
+          { name: "Terms & Conditions / Returns Page Setup", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+];
+
+export const maintenanceWebsitePricingPlansData = [
+  {
+    id: 1,
+    packageInfo: "maintenance",
+    name: "Essential Maintenance",
+    price: {
+      actualPrice: "619.00",
+      disountPrice: "399.00",
+    },
+    servicesList: [
+      {
+        title: null,
+        items: [
+          { name: "Security Monitoring", included: true },
+          { name: "Performance Scans", included: true },
+          { name: "Weekly Backups", included: true },
+          { name: "Software, Certificates & Plugin Updates", included: true },
+          { name: "Basic Monthly Analytics Report", included: true },
+          { name: "1–3 Hours Support", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+  {
+    id: 2,
+    packageInfo: "maintenance",
+    name: "Professional Maintenance",
+    price: {
+      actualPrice: "1239.00",
+      disountPrice: "799.00",
+    },
+    servicesList: [
+      {
+        title: null,
+        items: [
+          { name: "All Essential Features", included: true },
+          {
+            name: "User Experience & Optimization Suggestions",
+            included: true,
+          },
+          { name: "eCommerce Testing & Optimization", included: true },
+          { name: "Server Maintenance", included: true },
+          { name: "3–5 Hours Support", included: true },
+          {
+            name: "Monthly Analytics Report with Recommendations",
+            included: true,
+          },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+  {
+    id: 3,
+    packageInfo: "maintenance",
+    name: "Industry-Leading Maintenance",
+    price: {
+      actualPrice: "2,169.00",
+      disountPrice: "1,399.00",
+    },
+    servicesList: [
+      {
+        title: null,
+        items: [
+          { name: "Security Monitoring & Fixes", included: true },
+          { name: "Performance Scans & Optimization Fixes", included: true },
+          { name: "User Experience & eCommerce Fixes", included: true },
+          { name: "Server Maintenance", included: true },
+          { name: "Weekly Backups", included: true },
+          { name: "Web Content Updates", included: true },
+          { name: "Browser & Device Testing", included: true },
+          { name: "Robust Analytics with A/B Testing", included: true },
+          {
+            name: "Up to 10 Hours Support + 1–2 Hours Emergency Support",
+            included: true,
+          },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+];

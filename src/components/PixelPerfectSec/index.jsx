@@ -10,19 +10,20 @@ const PixelPerfectSec = (props) => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pixel-perfect-head text-center ">
+              <div className="pixel-perfect-head text-center mb-4">
                 <h2
                   data-aos="fade-up"
                   // data-aos-duration="500"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   {props.secTitle}{" "}
-                  {props.secTitleBlue && <span>{props.secTitleBlue}</span>}
+                  {props.secTitleBlue && <span>{props.secTitleBlue}</span>}{" "}
+                  {props.secTitle2 && props.secTitle2}
                 </h2>
                 <p
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   {props.secDescription}
                 </p>
@@ -34,7 +35,7 @@ const PixelPerfectSec = (props) => {
                 key={index}
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
                 onClick={() => props.onImageClick(index, props.projectsData)}
               >
                 <NewsCard

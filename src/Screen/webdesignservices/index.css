@@ -8,6 +8,8 @@
   overflow: hidden;
   position: relative;
   min-height: 490px;
+  display: flex;
+  align-items: center;
 }
 .servicesBanner-bgImage {
   position: absolute;
@@ -20,9 +22,16 @@
   z-index: 1;
 }
 
+.inner-services-banner-content {
+  position: relative;
+  z-index: 2;
+}
+
 .services__banner-img img {
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .wordpress-web-design .container {
@@ -99,6 +108,46 @@
   margin-bottom: 12px;
 }
 
+.overlayBannerContent .inner-services-banner-content {
+  background-color: rgba(5, 4, 165, 0.5);
+  padding: 16px;
+}
+.bannerOverlay:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+/* Inner Child Page CSS */
+.cmsSolutionBanner .services__banner-img img {
+  transform: scale(1.2) translate(-70px, 20px);
+}
+/* Inner Child Page css End */
+
+@media (max-width: 1399px) {
+  /* Inner Child Page CSS */
+  .cmsSolutionBanner .services__banner-img img {
+    transform: scale(1.3) translate(-80px, 32px);
+  }
+  /* Inner Child Page CSS End */
+}
+@media (max-width: 1199px) {
+  /* Inner Child Page CSS */
+  .cmsSolutionBanner .services__banner-img img {
+    transform: scale(1.5) translate(-80px, 33px);
+  }
+  /* Inner Child Page CSS End */
+}
+@media (max-width: 991px) {
+  /* Inner Child Page CSS */
+  .cmsSolutionBanner .services__banner-img img {
+    transform: unset;
+  }
+  /* Inner Child Page CSS End */
+}
 @media (max-width: 768px) {
   .navbar-section .nav-link {
     text-align: left;
@@ -112,16 +161,17 @@
 
 @media (max-width: 480px) {
   .pixel-perfect-head h2 {
-    line-height: 1;
+    line-height: 1.2;
+    font-size: 35px;
   }
-  .wordpress-web-design h1{
+  .wordpress-web-design h1 {
     font-size: 35px;
   }
   .wordpress-web-design p {
     font-size: 15px;
   }
-  .inner-services-banner-content{
-    min-height: 300px;
+  .inner-services-banner-content {
+    /* min-height: 300px; */
   }
 }
 @media (max-width: 430px) {

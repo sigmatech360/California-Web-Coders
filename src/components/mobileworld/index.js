@@ -12,7 +12,7 @@ const Mobileworld = (props) => {
               className="title"
               data-aos="fade-up"
               // data-aos-duration="500"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               {props.title}
             </h3>
@@ -22,7 +22,7 @@ const Mobileworld = (props) => {
               className="para1 mobileworld-head-p ps-xxl-5"
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               {props.description}
             </p>

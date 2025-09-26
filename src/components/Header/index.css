@@ -159,6 +159,7 @@ a {
 
 /* Desktop hover submenu */
 @media (min-width: 992px) {
+  
   .nav-subdropdown {
     display: none;
     position: absolute;

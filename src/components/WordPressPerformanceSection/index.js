@@ -13,7 +13,7 @@ const WordPressPerformanceSection = (props) => {
               className="title"
               data-aos="fade-right"
               // data-aos-duration="500"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               {props.secTitle1}{" "}
               {props.secTitle2 && <span>{props.secTitle2}</span>}{" "}
@@ -22,7 +22,7 @@ const WordPressPerformanceSection = (props) => {
             <p
               data-aos="fade-right"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               {props.description}
             </p>
@@ -30,7 +30,7 @@ const WordPressPerformanceSection = (props) => {
               <p
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 {props.description2}
               </p>
@@ -39,7 +39,7 @@ const WordPressPerformanceSection = (props) => {
               className="btn-theme"
               data-aos="fade-right"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               {props.btnText || `Get In Touch`}
             </Link>
@@ -53,10 +53,12 @@ const WordPressPerformanceSection = (props) => {
                 className="img-fluid"
                 data-aos="fade-left"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               />
             </div>
           </div>
+
+          
         </div>
       </div>
     </section>

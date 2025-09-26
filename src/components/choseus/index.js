@@ -15,7 +15,7 @@ const WhychoseUs = () => {
                 className="head1"
                 data-aos="fade-up"
                 // data-aos-duration="500"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Why Choose Us
               </h2> 
@@ -23,7 +23,7 @@ const WhychoseUs = () => {
                 className=""
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Unique Digital Solutions, Experienced Crew, <br />
                 <span className="changewayspan">Long-Term Results</span>
@@ -36,7 +36,7 @@ const WhychoseUs = () => {
               className="card text-center border-0 text-white"
               data-aos="fade-up"
               // data-aos-duration="500"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               <div className="card-body">
                 <div
@@ -60,7 +60,7 @@ const WhychoseUs = () => {
               className="card cards text-center border-0 text-white "
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               <div className="card-body">
                 <div
@@ -84,7 +84,7 @@ const WhychoseUs = () => {
               className="card text-center border-0 text-white "
               data-aos="fade-up"
               // data-aos-duration="500"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               <div className="card-body">
                 <div
@@ -107,7 +107,7 @@ const WhychoseUs = () => {
               className="card cards text-center border-0 text-white"
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               <div className="card-body">
                 <div

@@ -75,7 +75,7 @@ const BlogSection = ({ categorySlug = null, limit = 3 }) => {
               <h3
                 data-aos="fade-right "
                 // data-aos-duration="500"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Let's See Our Latest <br />
                 Blogs & Articles
@@ -84,7 +84,7 @@ const BlogSection = ({ categorySlug = null, limit = 3 }) => {
                 to={"/blog"}
                 // data-aos="fade-left"
                 // // data-aos-duration="500"
-                // data-aos-offset="0"
+                // data-aos-offset="50"
               >
                 View All Blogs
               </Link>
@@ -106,7 +106,7 @@ const BlogSection = ({ categorySlug = null, limit = 3 }) => {
                   key={index}
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   <div className="card blog-card">
                     <img src={image} className="card-img-top" alt="Blog Post" />

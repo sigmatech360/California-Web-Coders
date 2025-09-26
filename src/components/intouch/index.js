@@ -29,7 +29,7 @@ const Intouch = () => {
                 className="title"
                 data-aos="fade-right"
                 // data-aos-duration="500"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Don’t hesitate to contact us for{" "}
                 <span className="colorBlue"> more information. </span>
@@ -37,7 +37,7 @@ const Intouch = () => {
               <p
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 We’re here to answer your questions and explore how we can help
                 your business grow digitally and strategically.
@@ -45,14 +45,14 @@ const Intouch = () => {
               <h3
                 data-aos="fade-right"
                 // data-aos-duration="500"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Follow our social network
               </h3>
               <p
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Stay connected with California Web Coders across all platforms
                 for the latest updates, insights, and digital marketing tips
@@ -62,7 +62,7 @@ const Intouch = () => {
                 className="connect-sm-icons justify-content-start"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 <a
                   href="https://www.facebook.com/people/California-Web-Coders/61560871757077/"
@@ -128,7 +128,7 @@ const Intouch = () => {
                   className="inTouch-icon-box"
                   data-aos="fade-right"
                   data-aos-duration="1000"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   <div className="icon-container">
                     <FaMapMarkerAlt color={"#0504a5"} />
@@ -144,7 +144,7 @@ const Intouch = () => {
                   className="inTouch-icon-box"
                   data-aos="fade-down"
                   data-aos-duration="1000"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   <div className="icon-container">
                     <RiMailSendLine color={"#0504a5"} />
@@ -165,7 +165,7 @@ const Intouch = () => {
                   className="inTouch-icon-box"
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   <div className="icon-container">
                     <FaPhoneAlt color={"#0504a5"} />
@@ -185,7 +185,7 @@ const Intouch = () => {
                   className="inTouch-icon-box"
                   data-aos="fade-left"
                   data-aos-duration="1000"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   <div className="icon-container">
                     <MdOutlineSupportAgent color={"#0504a5"} />

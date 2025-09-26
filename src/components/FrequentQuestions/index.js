@@ -100,7 +100,7 @@ const FrequentQuestions = (props) => {
                 <h2
                   data-aos="fade-right"
                   // data-aos-duration="500"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   {props.secTitle ||
                     `Curious About Our Services? We Are Here To Answer!`}

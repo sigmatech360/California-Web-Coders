@@ -59,14 +59,14 @@ const NewsandTrends = () => {
                   <h4
                     data-aos="fade-up"
                     // data-aos-duration="500"
-                    data-aos-offset="0"
+                    data-aos-offset="50"
                   >
                     Let’s Connect On Social Media!
                   </h4>
                   <p
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-offset="0"
+                    data-aos-offset="50"
                   >
                     Follow California Web Coders on social media for regular
                     updates.
@@ -75,7 +75,7 @@ const NewsandTrends = () => {
                     className="connect-sm-icons"
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-offset="0"
+                    data-aos-offset="50"
                   >
                     <a
                       href="https://www.facebook.com/people/California-Web-Coders/61560871757077/"

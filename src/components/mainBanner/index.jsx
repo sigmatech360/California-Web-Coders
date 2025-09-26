@@ -51,7 +51,7 @@ const MainBanner = () => {
                     className="title"
                     // data-aos="fade-up"
                     // // data-aos-duration="500"
-                    // data-aos-offset="0"
+                    // data-aos-offset="50"
                   >
                     Your Growth Starts <span>With</span> A Great Web Design
                   </h1>
@@ -59,7 +59,7 @@ const MainBanner = () => {
                     className="para me-lg-5 me-0 pe-lg-5 pe-0"
                     // data-aos="fade-up"
                     // data-aos-duration="1000"
-                    // data-aos-offset="0"
+                    // data-aos-offset="50"
                   >
                     <span>California Web Coders</span> excel at creating
                     websites that build connections, fuel growth, and ensure
@@ -70,7 +70,7 @@ const MainBanner = () => {
                     className="herobtn"
                     // data-aos="fade-up"
                     // data-aos-duration="1000"
-                    // data-aos-offset="0"
+                    // data-aos-offset="50"
                   >
                     View Our Work
                   </Link>
@@ -93,7 +93,7 @@ const MainBanner = () => {
                 className="hero-img-right"
                 // data-aos="fade-left"
                 // data-aos-duration="1000"
-                // data-aos-offset="0"
+                // data-aos-offset="50"
               >
                 {/* <img
                   src={heroimgDesktop}

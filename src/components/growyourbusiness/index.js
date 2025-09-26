@@ -15,7 +15,7 @@ const Growyourbusiness = (props) => {
                   className="title m-0"
                   // data-aos="fade-right"
                   // // data-aos-duration="500"
-                  // data-aos-offset="0"
+                  // data-aos-offset="50"
                 >
                   {props.title1} {props.title2 && <span>{props.title2}</span>}{" "}
                   {props.title3}
@@ -26,7 +26,7 @@ const Growyourbusiness = (props) => {
                   className="clickhere"
                   // data-aos="fade-left"
                   // // data-aos-duration="500"
-                  // data-aos-offset="0"
+                  // data-aos-offset="50"
                 >
                   {props.btnText || `Click Here To Get Started`}
                 </button>

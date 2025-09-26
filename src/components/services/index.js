@@ -1,12 +1,13 @@
 import React from "react";
 import "./index.css";
 import servicesimg from "../../Assets/servicesimg.webp";
+
 import creativelogo from "../../Assets/creativelogo.svg";
+import digitaltogo from "../../Assets/digitaltogo.svg";
+import softwarelogo from "../../Assets/softwarelogo.svg";
 
 import websitelogo from "../../Assets/websitelogo.svg";
 import graphiclogo from "../../Assets/graphiclogo.svg";
-import digitaltogo from "../../Assets/digitaltogo.svg";
-import softwarelogo from "../../Assets/softwarelogo.svg";
 import mrketinglogo from "../../Assets/mrketinglogo.svg";
 import mobileservicesimg from "../../Assets/mobileservicesimg.webp";
 
@@ -46,7 +47,7 @@ const Servies = () => {
                 className="title"
                 data-aos="fade-right"
                 // data-aos-duration="500"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Smart Digital Services and Premium Web Design. Always Delivered
                 on Time.
@@ -55,7 +56,7 @@ const Servies = () => {
                 className="para2 mb-0"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 We can revamp your existing website or build a new one from
                 scratch, and the one thing that stays uncompromised is Quality!
@@ -68,7 +69,7 @@ const Servies = () => {
                 key={index}
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 <span className="creativelg">
                   <img src={item.image} alt="Digital Services" className="creativelogo" />
@@ -86,7 +87,7 @@ const Servies = () => {
               className="services-right-img"
               data-aos="fade-left"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               <img className="servicesheroimg img-fluid" alt="Digital Services" src={servicesimg} />
             </div>
@@ -99,7 +100,7 @@ const Servies = () => {
               className="graphic-services-outer"
               data-aos="fade-right"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               <div className="graphicservices graphic-bg">
                 <div className="graphicservices-icon">
@@ -132,7 +133,7 @@ const Servies = () => {
               className="mobileservices-outer h-100 d-flex flex-column"
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               <div className="mobileservices flex-grow-1">
                 <div className="mobile-services-content">
@@ -154,7 +155,7 @@ const Servies = () => {
               className="graphic-services-outer"
               data-aos="fade-left"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               <div className="graphicservices">
                 <div className="graphicservices-icon">

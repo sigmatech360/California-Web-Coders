@@ -108,7 +108,7 @@ const OurWork = () => {
                     className="title "
                     data-aos="fade-right"
                     // data-aos-duration="500"
-                    data-aos-offset="0"
+                    data-aos-offset="50"
                   >
                     Our work.
                   </h1>
@@ -116,7 +116,7 @@ const OurWork = () => {
                     className=""
                     data-aos="fade-right"
                     data-aos-duration="1000"
-                    data-aos-offset="0"
+                    data-aos-offset="50"
                   >
                     From startups to enterprises, our work showcases powerful
                     websites built with purpose, precision, and performance at
@@ -130,7 +130,7 @@ const OurWork = () => {
                   className="OurWork-image"
                   data-aos="fade-left"
                   data-aos-duration="1000"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   <img
                     src={ourworkheroimg}
@@ -151,14 +151,14 @@ const OurWork = () => {
                   <h2
                     data-aos="fade-up"
                     // data-aos-duration="500"
-                    data-aos-offset="0"
+                    data-aos-offset="50"
                   > 
                     A Glimpse Into Our <span>Expertise</span>
                   </h2>
                   <p
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-offset="0"
+                    data-aos-offset="50"
                   >
                     At California Web Coders, we bring visions to life with
                     innovative web design, custom software development, and

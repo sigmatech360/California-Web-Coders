@@ -17,7 +17,7 @@ const RefundPolicy = () => {
               <h3
                 data-aos="fade-up"
                 // data-aos-duration="500"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 7-Day refund policy for all paid plans and packages
               </h3>

@@ -15,14 +15,14 @@ const HeroSection = (props) => {
               <h1
                 data-aos="fade-right"
                 // data-aos-duration="500"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 {props?.title}
               </h1>
               <p
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 {props?.para}
               </p>
@@ -35,7 +35,7 @@ const HeroSection = (props) => {
                 className="HeroSection-img"
                 data-aos="fade-left"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 <img
                   src={props?.heroimg}

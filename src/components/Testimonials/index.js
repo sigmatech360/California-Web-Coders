@@ -119,7 +119,7 @@ const Testimonial = () => {
                 className="testimonialhead1"
                 data-aos="fade-right"
                 // data-aos-duration="500"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Testimonials
               </h2>
@@ -127,7 +127,7 @@ const Testimonial = () => {
                 className="title"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Our <span className=" ">clients love working</span> with us
               </h3>

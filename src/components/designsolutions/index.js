@@ -68,7 +68,7 @@ const Designsolutions = () => {
                 className="title"
                 data-aos="fade-right"
                 // data-aos-duration="500"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 <span> Optimized Website Designs </span>For Peak Performance.
               </h2>
@@ -77,7 +77,7 @@ const Designsolutions = () => {
                 className="para2 mb-2"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 The team at <span>California Web Coders,</span> does more than
                 just crafting beautiful websites; we ensure that your web
@@ -90,7 +90,7 @@ const Designsolutions = () => {
                 className="para2"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 And guess what? Our expertise doesn’t end at web design. We
                 offer digital marketing services, including SEO, Social Media
@@ -101,7 +101,7 @@ const Designsolutions = () => {
                 className="para2"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Our primary goal is to combine a sleek, responsive website
                 design with a marketing strategy that converts every visitor
@@ -111,7 +111,7 @@ const Designsolutions = () => {
                 className="para2"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 From startups to established brands, we work closely with you to
                 build a digital presence that reflects your voice and drives
@@ -121,7 +121,7 @@ const Designsolutions = () => {
                 className="paratitle"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Your website should work as hard as you do.
               </p>
@@ -130,7 +130,7 @@ const Designsolutions = () => {
                 className="para2  mb-3"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Contact us today for a free consultation and discover how our
                 web design and digital marketing expertise can help your
@@ -143,7 +143,7 @@ const Designsolutions = () => {
                 className="freecons"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 Book Your FREE Consultation
               </button>
@@ -156,7 +156,7 @@ const Designsolutions = () => {
                   key={index}
                   data-aos="fade-up"
                   // data-aos-duration="500"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   <span>{item.icon}</span>{" "}
                   <span className=" ">

@@ -24,7 +24,7 @@ const About = () => {
                   className="about-title"
                   data-aos="fade-right"
                   // data-aos-duration="500"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   About <br /> <span>California Web Coders</span>
                 </h1>
@@ -32,7 +32,7 @@ const About = () => {
                   className="about-subtitle"
                   data-aos="fade-right"
                   data-aos-duration="1000"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   Providing innovative and high-performing web design and
                   marketing services that give businesses a strong digital
@@ -45,7 +45,7 @@ const About = () => {
                   className=""
                   data-aos="fade-left"
                   data-aos-duration="1000"
-                  data-aos-offset="0"
+                  data-aos-offset="50"
                 >
                   <img
                     src={aboutheroimg}

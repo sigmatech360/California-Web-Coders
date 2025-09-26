@@ -14,7 +14,7 @@ const LogoDesignServices = () => {
               className="title"
               data-aos="fade-right"
               // data-aos-duration="500"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               A Logo Design That Reflects Your Brand Personality
             </h2>
@@ -23,7 +23,7 @@ const LogoDesignServices = () => {
               className="para2 mb-2"
               data-aos="fade-right"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               It’s easy to fall for the allure of cheap, pre-made logos, but
               those designs come at a cost. In a world flooded with
@@ -38,7 +38,7 @@ const LogoDesignServices = () => {
               className="para2"
               data-aos="fade-right"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               Our business logo design team approaches each project with a fresh
               perspective, tailoring every design to reflect your brand’s
@@ -51,7 +51,7 @@ const LogoDesignServices = () => {
               className="para3"
               data-aos="fade-right"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               Choose California Web Coders for a creative solution that leaves
               an unforgettable impression.
@@ -65,7 +65,7 @@ const LogoDesignServices = () => {
               src={logodesignimg}
               data-aos="fade-left"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             />
           </div>
 
@@ -74,7 +74,7 @@ const LogoDesignServices = () => {
               className="para3"
               data-aos="fade-right"
               data-aos-duration="1000"
-              data-aos-offset="0"
+              data-aos-offset="50"
             >
               Choose California Web Coders for a creative solution that leaves
               an unforgettable impression.

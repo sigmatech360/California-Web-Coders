@@ -31,7 +31,7 @@ const FeatureProject = (props) => {
                 className={props?.titleclass}
                 data-aos="fade-up"
                 // data-aos-duration="500"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 {props?.title}
                 <span> {props?.title2}</span>
@@ -40,7 +40,7 @@ const FeatureProject = (props) => {
                 className={props?.paraclass}
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                data-aos-offset="0"
+                data-aos-offset="50"
               >
                 {props?.para}
               </p>
