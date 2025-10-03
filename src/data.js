@@ -998,7 +998,7 @@ export const shopifyWebsitePricingPlansData = [
     name: "Economy Shopify Web",
     price: {
       actualPrice: "619.00",
-      disountPrice: "399.00",
+      disountPrice: "375.00",
     },
     servicesList: [
       {
@@ -1049,7 +1049,7 @@ export const shopifyWebsitePricingPlansData = [
     name: "Standard Shopify Web",
     price: {
       actualPrice: "1239.00",
-      disountPrice: "799.00",
+      disountPrice: "699.00",
     },
     servicesList: [
       {
@@ -1086,8 +1086,8 @@ export const shopifyWebsitePricingPlansData = [
     packageInfo: "Shopify",
     name: "Premium Shopify Web",
     price: {
-      actualPrice: "2,169.00",
-      disountPrice: "1,399.00",
+      actualPrice: "1999.00",
+      disountPrice: "999.00",
     },
     servicesList: [
       {
@@ -1129,7 +1129,7 @@ export const wixWebsitePricingPlansData = [
     name: "Basic Wix Website",
     price: {
       actualPrice: "619.00",
-      disountPrice: "399.00",
+      disountPrice: "375.00",
     },
     servicesList: [
       {
@@ -1168,7 +1168,7 @@ export const wixWebsitePricingPlansData = [
     name: "Wix Website Tidy-Up",
     price: {
       actualPrice: "1239.00",
-      disountPrice: "799.00",
+      disountPrice: "699.00",
     },
     servicesList: [
       {
@@ -1199,8 +1199,8 @@ export const wixWebsitePricingPlansData = [
     packageInfo: "Wix",
     name: "Wix Complete Makeover",
     price: {
-      actualPrice: "2,169.00",
-      disountPrice: "1,399.00",
+      actualPrice: "1999.00",
+      disountPrice: "999.00",
     },
     servicesList: [
       {
@@ -1239,7 +1239,7 @@ export const squareWebsitePricingPlansData = [
     name: "Basic Website Package",
     price: {
       actualPrice: "619.00",
-      disountPrice: "399.00",
+      disountPrice: "375.00",
     },
     servicesList: [
       {
@@ -1267,7 +1267,7 @@ export const squareWebsitePricingPlansData = [
     name: "Business Website Package",
     price: {
       actualPrice: "1239.00",
-      disountPrice: "799.00",
+      disountPrice: "699.00",
     },
     servicesList: [
       {
@@ -1296,8 +1296,8 @@ export const squareWebsitePricingPlansData = [
     packageInfo: "squarespace",
     name: "E-Commerce Website Package",
     price: {
-      actualPrice: "2,169.00",
-      disountPrice: "1,399.00",
+      actualPrice: "1999.00",
+      disountPrice: "999.00",
     },
     servicesList: [
       {
@@ -1334,7 +1334,7 @@ export const maintenanceWebsitePricingPlansData = [
     name: "Essential Maintenance",
     price: {
       actualPrice: "619.00",
-      disountPrice: "399.00",
+      disountPrice: "499.00",
     },
     servicesList: [
       {
@@ -1357,7 +1357,7 @@ export const maintenanceWebsitePricingPlansData = [
     name: "Professional Maintenance",
     price: {
       actualPrice: "1239.00",
-      disountPrice: "799.00",
+      disountPrice: "749.00",
     },
     servicesList: [
       {
@@ -1385,8 +1385,8 @@ export const maintenanceWebsitePricingPlansData = [
     packageInfo: "maintenance",
     name: "Industry-Leading Maintenance",
     price: {
-      actualPrice: "2,169.00",
-      disountPrice: "1,399.00",
+      actualPrice: "2500.00",
+      disountPrice: "2,000 .00",
     },
     servicesList: [
       {

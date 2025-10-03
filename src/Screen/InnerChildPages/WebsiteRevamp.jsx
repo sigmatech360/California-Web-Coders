@@ -39,7 +39,7 @@ import InnerChildWhyMatterIcon1 from "../../Assets/newChildPagesAssets/webMainte
 import InnerChildWhyMatterIcon2 from "../../Assets/newChildPagesAssets/webMaintenance/InnerChildWhyMatterIcon2.webp";
 import InnerChildWhyMatterIcon3 from "../../Assets/newChildPagesAssets/webMaintenance/InnerChildWhyMatterIcon3.webp";
 
-import { eCommerseWebsitePricingPlansData } from "../../data";
+import { eCommerseWebsitePricingPlansData, informativeWebsitePricingPlansData } from "../../data";
 import ReactHelmet from "../../components/ReactHelmet";
 import InnerServicesSec from "../../components/InnerServicesSec";
 import WorkflowSec from "../../components/WorkflowSec";
@@ -296,6 +296,14 @@ const WebsiteRevamp = () => {
           data={wrokflowData}
         />
 
+        
+
+        <InnerServicesSec
+          title="Complete Digital Solutions Tailored to Your Business"
+          description="California Web Coders provides end-to-end digital solutions that help businesses stand out and grow online. From concept to launch, our team blends creativity and technology to deliver custom websites that are fast, secure and search-engine friendly."
+          serviceData={servicesSecData}
+        />
+
         <PixelPerfectSec
           secTitle="Recent"
           secTitleBlue="Website Redesigns"
@@ -305,17 +313,11 @@ const WebsiteRevamp = () => {
           onImageClick={handleImageClick}
         />
 
-        <InnerServicesSec
-          title="Complete Digital Solutions Tailored to Your Business"
-          description="California Web Coders provides end-to-end digital solutions that help businesses stand out and grow online. From concept to launch, our team blends creativity and technology to deliver custom websites that are fast, secure and search-engine friendly."
-          serviceData={servicesSecData}
-        />
-
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Website Redesign Cost Made Clear"
           secDescription="Our website redesign cost California is customized to match your business needs and goals. Our packages include:"
-          pricingPlanData={eCommerseWebsitePricingPlansData}
-        />
+          pricingPlanData={informativeWebsitePricingPlansData}
+        /> */}
 
         <ContactForm
           secTitle="Begin Your Website Revamp With Us"

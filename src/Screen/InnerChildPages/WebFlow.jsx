@@ -44,7 +44,7 @@ import smart from "../../Assets//smart.svg";
 import InnerChildWhyMatterIcon1 from "../../Assets/newChildPagesAssets/webMaintenance/InnerChildWhyMatterIcon1.webp";
 import InnerChildWhyMatterIcon2 from "../../Assets/newChildPagesAssets/webMaintenance/InnerChildWhyMatterIcon2.webp";
 import InnerChildWhyMatterIcon3 from "../../Assets/newChildPagesAssets/webMaintenance/InnerChildWhyMatterIcon3.webp";
-import { eCommerseWebsitePricingPlansData } from "../../data";
+import { eCommerseWebsitePricingPlansData, informativeWebsitePricingPlansData } from "../../data";
 import InnerServicesSec from "../../components/InnerServicesSec";
 import WorkflowSec from "../../components/WorkflowSec";
 
@@ -288,12 +288,7 @@ const WebFlow = () => {
         cardData={whyMatterData}
       />
 
-      <WorkflowSec
-        title1="The Process Behind Every"
-        title2="Successful Redesign"
-        description="With our three-step approach, we transform outdated websites into modern, growth-ready platforms that balance usability, design, and long-term performance."
-        data={wrokflowData}
-      />
+      
 
       {/* <PixelPerfectSec
         secTitle="Explore Our California"
@@ -310,11 +305,18 @@ const WebFlow = () => {
         serviceData={servicesSecData}
       />
 
-      <SinglePricingPlan
+      <WorkflowSec
+        title1="The Process Behind Every"
+        title2="Successful Redesign"
+        description="With our three-step approach, we transform outdated websites into modern, growth-ready platforms that balance usability, design, and long-term performance."
+        data={wrokflowData}
+      />
+
+      {/* <SinglePricingPlan
         secTitle="Pricing that Fits Your Goals"
         secDescription="Our Webflow development packages in California are designed to match your project scope. Some clients need a one-page showcase, while others require a dynamic business website. In every case, our pricing is simple, transparent, and built to deliver value."
-        pricingPlanData={eCommerseWebsitePricingPlansData}
-      />
+        pricingPlanData={informativeWebsitePricingPlansData}
+      /> */}
 
       <ContactForm
         secTitle="Your Webflow Website Begins Here"

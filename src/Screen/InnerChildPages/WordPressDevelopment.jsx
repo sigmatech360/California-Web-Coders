@@ -42,7 +42,7 @@ import InnerChildWhyMatterIcon1 from "../../Assets/newChildPagesAssets/wordpress
 import InnerChildWhyMatterIcon2 from "../../Assets/newChildPagesAssets/wordpressImages/InnerChildWhyMatterIcon2.webp";
 import InnerChildWhyMatterIcon3 from "../../Assets/newChildPagesAssets/wordpressImages/InnerChildWhyMatterIcon3.webp";
 
-import { eCommerseWebsitePricingPlansData } from "../../data";
+import { eCommerseWebsitePricingPlansData, informativeWebsitePricingPlansData } from "../../data";
 import ReactHelmet from "../../components/ReactHelmet";
 
 const aboutSectionData = [
@@ -235,7 +235,7 @@ const WordPressDevelopment = () => {
         <SinglePricingPlan
           secTitle="Choose the Package of Your Choice!"
           secDescription="Our custom WordPress Development services in California include a range of features, designs, and functionalities. Explore the packages below to find the one that fits your requirements!"
-          pricingPlanData={eCommerseWebsitePricingPlansData}
+          pricingPlanData={informativeWebsitePricingPlansData}
         />
 
         <FrequentQuestions

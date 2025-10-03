@@ -74,7 +74,7 @@ const faqData = [
   },
 ];
 
-const FrequentQuestions = (props) => {
+const   FrequentQuestions = (props) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const [activeTab, setActiveTab] = useState("Basic");
