@@ -70,7 +70,7 @@ const ServiceBanner = (props) => {
               )}
               <Link
                 to={"/get-intouch"}
-                className="btn-theme"
+                className={props.btnClass || "btn-theme"}
                 data-aos="fade-right"
                 data-aos-duration="1000"
                 // data-aos-offset="50"

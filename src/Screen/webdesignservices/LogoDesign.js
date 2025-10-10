@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import "./index.css";
 import Layout from "../../components/layout";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
@@ -36,6 +36,10 @@ import { logoDesignPricingPlansData } from "../../data";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import ReactHelmet from "../../components/ReactHelmet";
+import Loader from "../../components/Loader";
+import FrequentQuestions from "../../components/FrequentQuestions";
+import BlogSection from "../../components/blogPosts";
+import { faqHomeData } from "../Designing";
 
 export const logoDesignPortfolioData = [
   {
@@ -67,7 +71,7 @@ export const logoDesignPortfolioData = [
 const LogoDesign = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [images, setImages] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0); 
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleImageClick = (index, imageArray) => {
     const imageList = imageArray.map((item) => ({
@@ -151,6 +155,16 @@ const LogoDesign = () => {
           image={creativethoughsec}
           btnText="Create Your Custom Logo!"
         />
+
+        <FrequentQuestions
+          secTitle="You Will Find Our Client's Frequent Questions"
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
+        />
+
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" />
+        </Suspense>
 
         {isOpen && images.length > 0 && (
           <Lightbox

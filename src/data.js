@@ -1410,3 +1410,107 @@ export const maintenanceWebsitePricingPlansData = [
     number: `+1 (619) 335-2364`,
   },
 ];
+
+export const wordpressWebsitePricingPlansData = [
+  {
+    id: 1,
+    packageInfo: "WordPress",
+    name: "Basic WordPress Website",
+    price: {
+      actualPrice: "799.00",
+      disountPrice: "449.00",
+    },
+    servicesList: [
+      {
+        title: "Features:",
+        items: [
+          { name: "Up to 3 Pages", included: true },
+          { name: "Client Design Brief Implementation", included: true },
+          { name: "Add Written Content & Photos (Personal or Stock)", included: true },
+          { name: "Color Palette & Font Customization", included: true },
+          { name: "Domain Linking & Activation", included: true },
+          { name: "Basic SEO Setup (Keywords, Titles, Tags, Descriptions)", included: true },
+          { name: "Mobile Responsive Design", included: true },
+          { name: "1 Free Small-Budget Logo ($30 value)", included: true },
+          { name: "Unlimited Revisions", included: true },
+        ],
+      },
+      {
+        title: "Optional Add-Ons:",
+        items: [
+          { name: "Extra 3-section page: $150/page", included: true },
+          { name: "Extra Section: $30/section", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+  {
+    id: 2,
+    packageInfo: "WordPress",
+    name: "WordPress Website Tidy-Up",
+    price: {
+      actualPrice: "1499.00",
+      disountPrice: "799.00",
+    },
+    servicesList: [
+      {
+        title: "Features:",
+        items: [
+          { name: "Up to 5 Pages", included: true },
+          { name: "Client Design Brief Implementation", included: true },
+          { name: "Theme Customization & Cleanup", included: true },
+          { name: "Plugin Optimization & Updates", included: true },
+          { name: "Optional Color & Font Adjustments", included: true },
+          { name: "Domain Linking & Activation", included: true },
+          { name: "Basic SEO Setup", included: true },
+          { name: "Mobile Responsive Design", included: true },
+          { name: "Unlimited Revisions", included: true },
+        ],
+      },
+      {
+        title: "Optional Add-Ons:",
+        items: [
+          { name: "Extra 3-section page: $150/page", included: true },
+          { name: "Extra Section: $30/section", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+  {
+    id: 3,
+    packageInfo: "WordPress",
+    name: "WordPress Complete Makeover",
+    price: {
+      actualPrice: "2399.00",
+      disountPrice: "1199.00",
+    },
+    servicesList: [
+      {
+        title: "Features:",
+        items: [
+          { name: "Up to 10 Pages", included: true },
+          { name: "Full Website Redesign", included: true },
+          { name: "Theme & Layout Revamp", included: true },
+          { name: "Color Palette & Font Customization", included: true },
+          { name: "Advanced Plugins Integration", included: true },
+          { name: "New Design Elements (Stock Photos, Graphics, etc.)", included: true },
+          { name: "Domain Linking & Activation", included: true },
+          { name: "Basic SEO Setup", included: true },
+          { name: "Mobile Responsive Design", included: true },
+          { name: "Unlimited Revisions", included: true },
+        ],
+      },
+      {
+        title: "Optional Add-Ons:",
+        items: [
+          { name: "Extra 3-section page: $200/page", included: true },
+          { name: "Extra Section: $50/section", included: true },
+        ],
+      },
+    ],
+    number: `+1 (619) 335-2364`,
+  },
+];
+

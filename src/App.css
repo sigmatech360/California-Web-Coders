@@ -86,6 +86,23 @@ body {
   color: #0504a5;
 }
 
+.theme-light {
+  background-color: #fefefe;
+  color: #0504a5;
+  padding: 12px 30px;
+  border-radius: 45px;
+  font-size: 18px;
+  border: 1px solid #fefefe;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.theme-light:hover {
+  background-color: transparent;
+  color: #fefefe;
+  transition: all 0.2s ease;
+}
+
 .blog-detail-content a {
   font-size: 16px;
   color: #0504a5;
@@ -577,7 +594,7 @@ button:focus {
   font-size: 45px;
   line-height: 1.2;
 }
-.workflowSecBoxes{
+.workflowSecBoxes {
   background-image: url(Assets/workflowBg.webp);
   background-size: cover;
   background-position: center;
@@ -849,6 +866,207 @@ button:focus {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   border-radius: 20px;
 }
+
+/********** Designing Page CSS Start **********/
+
+.abouttxt-data .aboutCompanylist {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0px;
+  padding: 0px 0px 30px 0px;
+}
+
+.abouttxt-data .aboutCompanylist li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.abouttxt-data .aboutCompanylist svg {
+  color: #0504a5;
+  margin: 0px 10px 0px 0px;
+}
+
+.aboutus-call {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-number p {
+  margin: 0px;
+}
+
+.about-number span {
+  background: #0504a5;
+  color: #fff;
+  padding: 8px 13px 12px 13px;
+  border-radius: 40px;
+  line-height: normal;
+}
+
+.aboutus-call a {
+  background: #0504a5;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  line-height: normal;
+  transition: all 0.6s ease;
+  border: 1px solid #0504a5;
+}
+
+.aboutus-call a:hover {
+  background: transparent;
+  color: #0504a5;
+}
+
+.shorttop-head {
+  margin: 0px 0px 20px 0px;
+}
+
+section.our-services {
+  background: transparent linear-gradient(180deg, #f5f5f5 0%, #d4d4ff 100%) 0%
+    0% no-repeat padding-box;
+  padding: 100px 0px;
+}
+
+.our-service-allhead h6 {
+  color: #0504a5;
+  margin: 0px;
+}
+
+.our-service-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0px;
+  border-bottom: 1px solid #707070;
+}
+
+.our-service-flex h3 {
+  font-size: 47px;
+  font-weight: 600;
+  color: #031243;
+}
+
+.our-service-flex h3 span {
+  color: #0504a5;
+}
+
+.our-service-flex h3 span {
+  color: #0504a5;
+}
+
+.our-service-flex a {
+  background: #0504a5;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  line-height: normal;
+  transition: all 0.6s ease;
+  border: 1px solid #0504a5;
+}
+
+.our-service-flex a:hover {
+  background: transparent;
+  color: #0504a5;
+}
+
+.service-para-detail {
+  padding: 40px 0px;
+}
+
+.service-para-detail p {
+  color: #031243;
+  margin: 0px;
+  padding: 0px 100px 0px 0px;
+}
+
+.service-para-detail p {
+  color: #031243;
+  margin: 0px;
+}
+
+.service-name-flex h6 {
+  color: #0504a5;
+}
+
+.service-name-flex h3 {
+  color: #031243;
+  font-size: 56px;
+  margin: 0px;
+  transition: all 0.6s ease;
+}
+
+.service-name-flex {
+  padding: 40px 0px;
+}
+
+.our-services .container .row:nth-child(2) {
+  border-bottom: 1px solid #707070;
+}
+
+.our-services .container .row:nth-child(3) {
+  border-bottom: 1px solid #707070;
+}
+
+.our-services .container .row:nth-child(2) {
+  border-bottom: 1px solid #707070;
+}
+
+.abouttxt-data h2 {
+  font-weight: 500;
+  font-size: 50px;
+  max-width: 560px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #031243;
+}
+
+.abouttxt-data p {
+  color: #031243;
+}
+
+section.letstogether-sec {
+  padding: 100px 0px;
+  background: transparent linear-gradient(180deg, #f5f5f5 0%, #d4d4ff 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.landing-design-points {
+  padding: 0;
+  margin: 0px 0px 30px 0px;
+}
+
+.landing-design-points li {
+  list-style: none;
+  margin: 0px 0px 10px 0px;
+  color: #031243;
+}
+
+.landing-design-points li svg {
+  color: #0504a5;
+  margin: -3px 7px 0px 0px;
+}
+
+.abouttxt-data h6 {
+  color: #0504a5;
+}
+
+.our-services .container .row:hover h3 {
+  color: #0504a5;
+  transition: all 0.6s ease;
+}
+
+/********** Designing Page CSS End **********/
 
 @media (max-width: 1399px) {
   .blog-with-sidebar .wordpressBlogCard img {

@@ -41,7 +41,7 @@ const PixelPerfectSec = (props) => {
                 <NewsCard
                   image={item.image}
                   imgClass={props.imgClass}
-                  // description={item.description}
+                  description={item.description}
                 />
               </div>
             ))}

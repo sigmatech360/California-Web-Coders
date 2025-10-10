@@ -65,31 +65,84 @@ function Header() {
 
                   <Dropdown.Menu>
                     {/* Regular items  */}
-                    <NavDropdown.Item
-                      as={"a"}
-                      href="/logo-design"
-                      target="_blank"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Logo Design
-                    </NavDropdown.Item>
-                    <NavDropdown.Item
-                      as={"a"}
-                      href="/web-design"
-                      target="_blank"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Web Design
-                    </NavDropdown.Item>
-                    {/* <NavDropdown.Item
-                      as={"a"}
-                      href="/cms-development"
-                      target="_blank"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      CMS Development
-                    </NavDropdown.Item> */}
 
+                    {/* Designing with Submenu */}
+                    <div className="nav-subdropdown-wrapper">
+                      <NavDropdown.Item as={"a"} href="/designing" target="_blank" className="nav-subdropdown-parent" onClick={(e) => e.stopPropagation()}>
+                        Designing{" "}
+                        <span className="submenu-icon d-none d-lg-inline"><FaCaretRight /></span>
+                        <span className="submenu-icon d-inline d-lg-none"><FaCaretDown /></span>
+                      </NavDropdown.Item>
+
+                      <div className="nav-subdropdown">
+                        <NavDropdown.Item
+                          as={"a"}
+                          href="/logo-design"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Logo Design
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          as={"a"}
+                          href="/web-design"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Website Design
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          as={"a"}
+                          href="/landing-page-design"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Landing Page Design
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          as={"a"}
+                          href="/video-animation"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Video Animation 
+                        </NavDropdown.Item>
+                         <NavDropdown.Item
+                          as={"a"}
+                          href="/video-editing"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Video Editing
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          as={"a"}
+                          href="/product-packaging-design"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Product Packaging Design
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          as={"a"}
+                          href="/newsletter-design"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          News Letter Design
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          as={"a"}
+                          href="/creative-ads"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Creative Ads
+                        </NavDropdown.Item>
+                      </div>
+                    </div>
+
+                    {/* CMS Development with Submenu */}
                     <div className="nav-subdropdown-wrapper">
                       <NavDropdown.Item
                         as={"a"}
@@ -108,14 +161,6 @@ function Header() {
                       </NavDropdown.Item>
 
                       <div className="nav-subdropdown">
-                        {/* <NavDropdown.Item
-                          as={"a"}
-                          href="/cms-solution"
-                          target="_blank"
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          CMS Solution
-                        </NavDropdown.Item> */}
                         <NavDropdown.Item
                           as={"a"}
                           href="/shopify-development"
@@ -221,23 +266,148 @@ function Header() {
                       </div>
                     </div>
 
-                    {/* Continue with other items */}
-                    <NavDropdown.Item
-                      as={"a"}
-                      href="/custom-web-development"
-                      target="_blank"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Custom Web Development
-                    </NavDropdown.Item>
-                    <NavDropdown.Item
-                      as={"a"}
-                      href="/mobile-app-development"
-                      target="_blank"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Mobile App Development
-                    </NavDropdown.Item>
+                    {/* Custom Web Development with Submenu */}
+                    <div className="nav-subdropdown-wrapper">
+                      <NavDropdown.Item
+                        as={"a"}
+                        href="/custom-web-development"
+                        target="_blank"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Custom Web Development{" "}
+                          <span className="submenu-icon d-none d-lg-inline">
+                          <FaCaretRight />
+                        </span>
+                        <span className="submenu-icon d-inline d-lg-none">
+                          <FaCaretDown />
+                        </span>
+                      </NavDropdown.Item>
+                      <div className="nav-subdropdown">
+                         <NavDropdown.Item as={"a"} href="/frontend-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Frontend Development
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/react-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          React Development
+                        </NavDropdown.Item>
+                         <NavDropdown.Item as={"a"} href="/angular-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Angular Development
+                        </NavDropdown.Item>
+                         <NavDropdown.Item as={"a"} href="/backend-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Backend Development
+                        </NavDropdown.Item>
+                         <NavDropdown.Item as={"a"} href="/laravel-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Laravel Development
+                        </NavDropdown.Item>
+                           <NavDropdown.Item as={"a"} href="/nodejs-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Nodejs Development
+                        </NavDropdown.Item>
+                           <NavDropdown.Item as={"a"} href="/ai-integration" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          AI Integration
+                        </NavDropdown.Item>
+                           <NavDropdown.Item as={"a"} href="/python-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Python Development
+                        </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/web3-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Web 3.O Development
+                        </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/blockchain-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Blockchain Development
+                        </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/mern-stack-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          MERN Stack Development
+                        </NavDropdown.Item>
+                      </div>
+                    </div>
+
+                    {/* App Development with Submenu*/}
+                      <div className="nav-subdropdown-wrapper">
+                      <NavDropdown.Item as={"a"} href="/app-development" target="_blank" className="nav-subdropdown-parent" onClick={(e) => e.stopPropagation()}>
+                        App Development{" "}
+                        <span className="submenu-icon d-none d-lg-inline"><FaCaretRight /></span>
+                        <span className="submenu-icon d-inline d-lg-none"><FaCaretDown /></span>
+                      </NavDropdown.Item>
+
+                      <div className="nav-subdropdown">
+                        <NavDropdown.Item as={"a"} href="/webapp-development" target="_blank"onClick={(e) => e.stopPropagation()}>
+                          Web App Development 
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/mobile-app-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Mobile App Development
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/ios-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          IOS Development
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/android-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Android Development
+                        </NavDropdown.Item>
+                      </div>
+                    </div>
+
+                      {/* Branding with Submenu*/}
+                    <div className="nav-subdropdown-wrapper">
+                      <NavDropdown.Item as={"a"} href="#" target="_blank" className="nav-subdropdown-parent" onClick={(e) => e.stopPropagation()}>
+                        Branding Identity{" "}
+                        <span className="submenu-icon d-none d-lg-inline"><FaCaretRight /></span>
+                        <span className="submenu-icon d-inline d-lg-none"><FaCaretDown /></span>
+                      </NavDropdown.Item>
+
+                      <div className="nav-subdropdown">
+                       <NavDropdown.Item as={"a"} href="/brand-strategy" target="_blank" onClick={(e) => e.stopPropagation()}>
+                           Brand Strategy 
+                          </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/mobile-app-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                           Brand Voice 
+                          </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/ios-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                           Brand Identity Design 
+                          </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/android-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                           Merchandising 
+                          </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/android-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                           Brand Positioning 
+                          </NavDropdown.Item>
+                      </div>
+                    </div>
+
+                    {/* Hosting & Domain Services with Submenu*/}
+                     <div className="nav-subdropdown-wrapper">
+                      <NavDropdown.Item as={"a"} href="#" target="_blank" onClick={(e) => e.stopPropagation()}>
+                        Hosting & Domain Services {" "}
+                          <span className="submenu-icon d-none d-lg-inline"><FaCaretRight /></span>
+                          <span className="submenu-icon d-inline d-lg-none"><FaCaretDown /></span>
+                      </NavDropdown.Item>
+                         <div className="nav-subdropdown">
+                          <NavDropdown.Item as={"a"} href="/domain-registration" target="_blank" onClick={(e) => e.stopPropagation()}>
+                           Domain Registration  
+                          </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/domain-transfer" target="_blank" onClick={(e) => e.stopPropagation()}>
+                           Domain Transfer 
+                          </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/manage-web-hosting" target="_blank" onClick={(e) => e.stopPropagation()}>
+                           Managed Web Hosting 
+                          </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/website-migration" target="_blank" onClick={(e) => e.stopPropagation()}>
+                           Website Migration  
+                          </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/vps-dedicated-servers" target="_blank" onClick={(e) => e.stopPropagation()}>
+                           VPS & Dedicated Servers  
+                          </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/email-hosting" target="_blank" onClick={(e) => e.stopPropagation()}>
+                            Email Hosting   
+                          </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/ssl-certiicates" target="_blank" onClick={(e) => e.stopPropagation()}>
+                            SSL Certificates  
+                          </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/server-management" target="_blank" onClick={(e) => e.stopPropagation()}>
+                            Server Management  
+                          </NavDropdown.Item>
+                          <NavDropdown.Item as={"a"} href="/devop-services" target="_blank" onClick={(e) => e.stopPropagation()}>
+                           DevOps Services  
+                          </NavDropdown.Item>
+                         </div>
+                    </div>
+
                   </Dropdown.Menu>
                 </Dropdown>
 

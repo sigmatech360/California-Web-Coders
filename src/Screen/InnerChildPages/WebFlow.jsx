@@ -44,9 +44,13 @@ import smart from "../../Assets//smart.svg";
 import InnerChildWhyMatterIcon1 from "../../Assets/newChildPagesAssets/webMaintenance/InnerChildWhyMatterIcon1.webp";
 import InnerChildWhyMatterIcon2 from "../../Assets/newChildPagesAssets/webMaintenance/InnerChildWhyMatterIcon2.webp";
 import InnerChildWhyMatterIcon3 from "../../Assets/newChildPagesAssets/webMaintenance/InnerChildWhyMatterIcon3.webp";
-import { eCommerseWebsitePricingPlansData, informativeWebsitePricingPlansData } from "../../data";
+import {
+  eCommerseWebsitePricingPlansData,
+  informativeWebsitePricingPlansData,
+} from "../../data";
 import InnerServicesSec from "../../components/InnerServicesSec";
 import WorkflowSec from "../../components/WorkflowSec";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const aboutSectionData = [
   {
@@ -227,21 +231,24 @@ const wrokflowData = [
   {
     id: 1,
     title: "Identifying Gaps",
-    description: "We analyze your current site for weak design, slow performance, and missing features.",
-    image: workflowImg1
+    description:
+      "We analyze your current site for weak design, slow performance, and missing features.",
+    image: workflowImg1,
   },
   {
     id: 2,
     title: "Aligning Brand Values",
-    description: "Your website is restructured to reflect your vision, identity, and customer expectations.",
+    description:
+      "Your website is restructured to reflect your vision, identity, and customer expectations.",
     inverted: true,
-    image: workflowImg2
+    image: workflowImg2,
   },
   {
     id: 3,
     title: "Redesigning with Improvements",
-    description: "From visuals to functionality, we deliver a website that enhances experience and drives results.",
-    image: workflowImg3
+    description:
+      "From visuals to functionality, we deliver a website that enhances experience and drives results.",
+    image: workflowImg3,
   },
 ];
 
@@ -260,6 +267,13 @@ const WebFlow = () => {
   };
   return (
     <Layout>
+      <ReactHelmet
+        title="Webflow Website Development | California Web Coders"
+        description="Custom Webflow websites designed for businesses, startups, and eCommerce. Build a modern, responsive, and high-performing website with our Webflow experts."
+        keywords="Webflow development, Webflow design, custom Webflow website"
+        baseUrl="https://californiawebcoders.com/webflow"
+      />
+
       <ServiceBanner
         bgImage={innerChildBannerBg}
         title="Stand Out Online with Webflow in California"
@@ -287,8 +301,6 @@ const WebFlow = () => {
         secDescription="Across California, brands rely on us as a trusted Webflow development company that blends design freedom with real business strategy."
         cardData={whyMatterData}
       />
-
-      
 
       {/* <PixelPerfectSec
         secTitle="Explore Our California"

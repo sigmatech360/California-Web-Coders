@@ -37,7 +37,7 @@ const WorkflowSec = (props) => {
                       <img
                         // src={item.inverted ? workflowImgInverted : workflowImg}
                         src={item.image}
-                        alt=""
+                        alt={item.title}
                       />
                     </div>
                   </div>
