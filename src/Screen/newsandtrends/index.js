@@ -38,7 +38,7 @@ const NewsandTrends = () => {
           // leftCol="col-lg-6"
           //   rightCol="col-lg-6"
           bgImage={bannerBgImage}
-          title="Discover What’s Trending In The Tech And Marketing World."
+          title="Discover What’s Trending In The Tech And Marketing World"
           para="Browse our latest posts covering online trends, digital tools, and expert opinions that shape modern websites and marketing success."
           // heroimg={Pricingplanheroimg}
         />

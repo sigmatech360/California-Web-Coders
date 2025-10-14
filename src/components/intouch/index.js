@@ -32,7 +32,7 @@ const Intouch = () => {
                 data-aos-offset="50"
               >
                 Don’t hesitate to contact us for{" "}
-                <span className="colorBlue"> more information. </span>
+                <span className="colorBlue"> more information </span>
               </h2>
               <p
                 data-aos="fade-right"

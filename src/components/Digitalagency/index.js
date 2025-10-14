@@ -19,7 +19,7 @@ const Digitalagency = () => {
                 // data-aos-duration="500"
                 data-aos-offset="50"
               >
-                Web Designs That are Loved By All Of <span>California.</span>{" "}
+                Web Designs That are Loved By All Of <span>California</span>{" "}
               </h2>
             </div>
             <div className="col-lg-6 ">

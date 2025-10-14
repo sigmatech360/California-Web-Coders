@@ -70,7 +70,7 @@ const Designsolutions = () => {
                 // data-aos-duration="500"
                 data-aos-offset="50"
               >
-                <span> Optimized Website Designs </span>For Peak Performance.
+                <span> Optimized Website Designs </span>For Peak Performance
               </h2>
 
               <p

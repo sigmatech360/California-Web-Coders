@@ -40,6 +40,7 @@ import Loader from "../../components/Loader";
 import FrequentQuestions from "../../components/FrequentQuestions";
 import BlogSection from "../../components/blogPosts";
 import { faqHomeData } from "../Designing";
+import Ourservices from "../../components/ourservices/Index";
 
 export const logoDesignPortfolioData = [
   {
@@ -116,6 +117,22 @@ const LogoDesign = () => {
           title1="Want A Logo That Sets You"
           title2="Apart?"
           // btnText="Sign Up With Our Logo Design Masters"
+        />
+
+        <Ourservices
+          serviceminihead="Our Services"
+          serviceMainHead="Our"
+          serviceEndName="Logo Design Services"
+          allservicelink="View All Services"
+          serviceCountOne="01"
+          firstServiceName="Minimalist Logo"
+          firstServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          serviceCountTwo="02"
+          secondServiceName="Abstract Logo"
+          secondServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          serviceCountThird="03"
+          thirdServiceName="Mascot Logo"
+          thirdServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         />
 
         <PixelPerfectSec

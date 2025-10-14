@@ -79,9 +79,9 @@ const DigitalMarketing = () => {
         />
 
         <WordPressPerformanceSection
-          secTitle1="Strategic."
-          secTitle2="Creative."
-          secTitle3="Conversion-Focused."
+          secTitle1="Strategic,"
+          secTitle2="Creative,"
+          secTitle3="Conversion-Focused"
           description="We take the time to understand your goals, then build a digital marketing strategy that aligns with your business, budget, and audience. From targeted SEO and paid ads to email campaigns and social media, we help you get found, followed, and chosen."
           // description2=""
           image={performence}

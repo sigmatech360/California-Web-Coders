@@ -1137,4 +1137,69 @@ section.letstogether-sec {
     min-height: 196px;
     margin: 0 auto;
   }
+
+  .service-name-flex h3 {
+    font-size: 35px;
+  }
+
+  .service-para-detail {
+    padding: 20px 0px 20px 0px;
+  }
+
+  .service-name-flex {
+    padding: 20px 0px;
+  }
+
+  .service-para-detail p {
+    padding: 0px;
+  }
+
+  .our-service-flex {
+    padding: 20px 0px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .our-service-flex h3 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #031243;
+  }
+
+  .abouttxt-data {
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .aboutus-call {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .aboutus-call a {
+    padding: 12px 20px;
+  }
+
+  .about-number {
+    gap: 5px;
+  }
+
+  section.our-services {
+    text-align: center;
+    padding: 50px 0px;
+  }
+ 
+  .news-card-content p {
+    text-align: center;
+  }
+
+  .abouttxt-data .aboutCompanylist {
+    gap: 10px;
+    padding: 0px 0px 20px 0px;
+    flex-direction: column;
+  }
+
+  .abouttxt-data h2 {
+    font-size: 35px;
+  }
 }

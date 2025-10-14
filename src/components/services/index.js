@@ -49,8 +49,8 @@ const Servies = () => {
                 // data-aos-duration="500"
                 data-aos-offset="50"
               >
-                Smart Digital Services and Premium Web Design. Always Delivered
-                on Time.
+                Smart Digital Services and Premium Web Design Always Delivered
+                on Time
               </h2>
               <p
                 className="para2 mb-0"

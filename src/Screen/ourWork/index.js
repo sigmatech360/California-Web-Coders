@@ -110,7 +110,7 @@ const OurWork = () => {
                     // data-aos-duration="500"
                     data-aos-offset="50"
                   >
-                    Our work.
+                    Our work
                   </h1>
                   <p
                     className=""
