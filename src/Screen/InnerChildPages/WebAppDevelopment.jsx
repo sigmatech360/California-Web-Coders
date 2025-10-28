@@ -8,6 +8,8 @@ import pixleperfectimg3 from "../../Assets/newChildPagesAssets/webapp/Group 3709
 import pixleperfectimg4 from "../../Assets/newChildPagesAssets/webapp/LoneRockLandscaping.webp";
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/webapp/EricCorwinSOLAR.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/webapp/Betzy.webp";
+import bannervideo from "../../Assets/newChildPagesAssets/webapp/hero-banner-video.mp4";
+import {ReactComponent as NativeApps} from "../../Assets/newChildPagesAssets/webapp/nativeappsvg.svg";
 import WebAppAbout from "../../components/WebAppAbout";
 import OurAppServices from "../../components/OurAppServices";
 import { FaApple } from "react-icons/fa";
@@ -133,7 +135,7 @@ const WebAppDevelopment = () => {
         "Our Android solutions are engineered for flexibility, supporting diverse devices and business needs. We ensure every app functions smoothly, runs securely, and scales efficiently.",
     },
     {
-      icon: <MdAppSettingsAlt size={30} />,
+      icon: <NativeApps size={30} />,
       appServiceHead: "Mobile App Development",
       appServicePara:
         "As a web and mobile app development company California, we create unified digital ecosystems that deliver seamless, high-performing applications built for modern users, meaningful engagement, and measurable growth.",
@@ -164,10 +166,11 @@ const WebAppDevelopment = () => {
   return (
     <Layout>
       <ServiceBanner
+        secClass="webapp-herobanner"
         leftCol="col-lg-6"
-        bgImage={landingPageBanner}
         btnClass="d-none"
-        title="Innovative and Performative Web App Development Services in California"
+        herobannervideo={bannervideo}
+        title="Powerful & Scalable Web Applications"
       />
 
       <WebAppAbout />

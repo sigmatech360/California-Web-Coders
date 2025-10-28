@@ -322,7 +322,7 @@ function Header() {
                    
                     {/* App Development with Submenu*/}
                       <div className="nav-subdropdown-wrapper">
-                      <NavDropdown.Item as={"a"} href="/app-development" target="_blank" className="nav-subdropdown-parent" onClick={(e) => e.stopPropagation()}>
+                      <NavDropdown.Item as={"a"} className="nav-subdropdown-parent" onClick={(e) => e.stopPropagation()}>
                         App Development{" "}
                         <span className="submenu-icon d-none d-lg-inline"><FaCaretRight /></span>
                         <span className="submenu-icon d-inline d-lg-none"><FaCaretDown /></span>

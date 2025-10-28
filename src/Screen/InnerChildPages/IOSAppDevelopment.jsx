@@ -8,8 +8,13 @@ import pixleperfectimg3 from "../../Assets/newChildPagesAssets/IOSDevelopment/Ci
 import pixleperfectimg4 from "../../Assets/newChildPagesAssets/IOSDevelopment/LoneRockLandscaping.webp";
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/IOSDevelopment/EricCorwinSOLAR.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/IOSDevelopment/Betzy.webp";
+import {ReactComponent as Ecommerce} from "../../Assets/newChildPagesAssets/webapp/ecommerce.svg";
+import {ReactComponent as Transportation} from "../../Assets/newChildPagesAssets/webapp/transportation.svg";
+import {ReactComponent as Healthcare} from "../../Assets/newChildPagesAssets/webapp/healthcare.svg";
+import {ReactComponent as Education} from "../../Assets/newChildPagesAssets/webapp/education.svg";
 import iosappimg from "../../Assets/newChildPagesAssets/IOSDevelopment/industriesiosapp.png"
 import iosNexthero from "../../Assets/newChildPagesAssets/IOSDevelopment/ios-next-hero.webp"
+import {ReactComponent as NativeApps} from "../../Assets/newChildPagesAssets/webapp/nativeappsvg.svg";
 import IOSAboutCompany from "../../components/IOSAboutCompany";
 import Growyourbusiness from "../../components/growyourbusiness";
 import OurAppServices from "../../components/OurAppServices";
@@ -125,19 +130,19 @@ const IOSAppDevelopment = () => {
 
   const serviceList = [
     {
-      icon: <DiAndroid size={30} />,
-      appServiceHead: "Android Development",
+      icon: <FaApple size={30} />,
+      appServiceHead: "IOS Development",
       appServicePara:
-        "Our Android solutions focus on versatility and reach. We create responsive, feature-rich apps that perform across devices and provide consistent user experiences for growing brands.",
+        "We design and develop iOS apps with speed, aesthetics, and advanced functionality, ensuring seamless performance and a consistent experience across all Apple devices.",
     },
     {
-      icon: <MdAppSettingsAlt size={30} />,
+      icon: <DiAndroid size={30} />,
       appServiceHead: "Mobile App Development",
       appServicePara:
         "As an established iOS mobile app development company in California, we deliver high-performing cross-platform applications that unify your business presence across iOS, Android, and web platforms.",
     },
     {
-      icon: <FaApple size={30} />,
+      icon: <NativeApps size={30} />,
       appServiceHead: "UI/UX Designing",
       appServicePara:
         "Our iOS UI/UX design services in California focus on storytelling through visuals — delivering sleek, functional interfaces that improve retention, interaction, and brand recall.",
@@ -166,10 +171,10 @@ const IOSAppDevelopment = () => {
 
 
   const iosFeatures = [
-    { icon: <SlBasket />, text: "Performance Tracking" },
-    { icon: <FaBus />, text: "Interactive UI" },
-    { icon: <FaHandHoldingHeart />, text: "Payment and Security Systems" },
-    { icon: <MdCastForEducation />, text: "Data Analytics and User Insights" },
+    { icon: <Ecommerce />, text: "Performance Tracking" },
+    { icon: <Transportation />, text: "Interactive UI" },
+    { icon: <Healthcare />, text: "Payment and Security Systems" },
+    { icon: <Education />, text: "Data Analytics and User Insights" },
   ];
 
 

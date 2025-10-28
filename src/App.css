@@ -1141,6 +1141,7 @@ section.our-app-services {
   overflow: hidden;
   z-index: 1;
   transform: translate(0px, 0px);
+  height: 350px;
 }
 
 .our-appservice-box::before {
@@ -1198,10 +1199,6 @@ section.our-app-services {
   color: #fff;
 }
 
-.our-appservice-box:hover span {
-  background: #fff;
-  color: #0504a5;
-}
 
 /**********  App Service Component CSS End **********/
 
@@ -1307,6 +1304,38 @@ section.our-app-services {
 }
 
 /**********  App Service Point Component CSS End **********/
+
+
+/**********  Web App Hero banner Component CSS Start **********/
+
+.webapp-herobanner {
+  background-color: #000000;
+}
+
+.webapp-herobanner img.servicesBanner-bgImage {
+    display: none;
+}
+
+.hero-banner-video {
+  display: none;
+}
+
+.webapp-herobanner .hero-banner-video{
+  display: block;
+}
+
+.hero-banner-video .hero-video {
+  width: 100%;
+  height: 100%;
+}
+
+.webapp-herobanner .services__banner-img img {
+    display: none;
+}
+
+
+/**********  Web App Hero banner Component CSS End **********/
+
 
 /**********  Web App About Component CSS Start **********/
 
@@ -1434,6 +1463,16 @@ section.our-app-services {
 
 .webapp-abouttxt h6 {
   color: #0504a5;
+}
+
+
+.our-app-services .row:nth-of-type(2) .col-lg-4:nth-child(3) .our-appservice-box span {
+    background: transparent;
+    padding: 0px;
+}
+
+.our-app-services .row:nth-of-type(2) .col-lg-4:nth-child(3) .our-appservice-box span svg {
+    width: 60px;
 }
 
 /**********  Web App About Component CSS End **********/
@@ -1601,15 +1640,11 @@ section.iundustries-ios-apps {
   transform-origin: left center;
 }
 
-.industries-iosapp-txt ul li .ios-service-icon {
-  background: #0504a5;
-  color: #fff;
-  font-size: 18px;
-  padding: 8px 10px;
-  display: inline-block;
-  border-radius: 100%;
-  line-height: normal;
+.industries-iosapp-txt ul li .ios-service-icon svg {
+    width: 50px;
+    height: 50px;
 }
+
 
 .industries-iosapp-txt ul li .ios-arrow-icon {
   margin: 0px 10px;

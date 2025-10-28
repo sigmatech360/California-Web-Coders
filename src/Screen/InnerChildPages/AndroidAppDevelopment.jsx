@@ -12,6 +12,11 @@ import pixleperfectimg4 from "../../Assets/newChildPagesAssets/androiddevelopmen
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/androiddevelopment/pixel-5.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/androiddevelopment/pixel-6.webp";
 import androidiosimg from "../../Assets/newChildPagesAssets/androiddevelopment/android-ios-img.webp";
+import {ReactComponent as NativeApps} from "../../Assets/newChildPagesAssets/webapp/nativeappsvg.svg";
+import {ReactComponent as Ecommerce} from "../../Assets/newChildPagesAssets/webapp/ecommerce.svg";
+import {ReactComponent as Transportation} from "../../Assets/newChildPagesAssets/webapp/transportation.svg";
+import {ReactComponent as Healthcare} from "../../Assets/newChildPagesAssets/webapp/healthcare.svg";
+import {ReactComponent as Education} from "../../Assets/newChildPagesAssets/webapp/education.svg";
 import CustomAboutCompany from "../../components/CustomAboutCompany";
 import OurAppServices from "../../components/OurAppServices";
 import { FaApple, FaBus, FaHandHoldingHeart } from "react-icons/fa";
@@ -142,19 +147,19 @@ const AndroidAppDevelopment = () => {
 
     const serviceList = [
       {
-        icon: <FaApple size={30} />,
-        appServiceHead: "iOS Devlopment",
+        icon: <DiAndroid size={30} />,
+        appServiceHead: "Android Development",
         appServicePara:
-          "We design and develop iOS apps with speed, aesthetics, and advanced functionality, ensuring seamless performance and a consistent experience across all Apple devices.",
+          "Our Android solutions focus on versatility and reach. We create responsive, feature-rich apps that perform across devices and provide consistent user experiences for growing brands.",
       },
       {
-        icon: <DiAndroid size={30} />,
+        icon: <FaApple size={30} />,
         appServiceHead: "Mobile App Development",
         appServicePara:
           "Our hybrid mobile app development California team builds unified, multi-platform apps that merge performance, adaptability, and modern design for the best user experience.",
       },
       {
-        icon: <MdAppSettingsAlt size={30} />,
+        icon: <NativeApps size={30} />,
         appServiceHead: "Web App Development",
         appServicePara:
           "Our full-stack developers build web applications that integrate seamlessly with Android apps, combining back-end strength and front-end excellence for superior digital performance.",
@@ -163,10 +168,10 @@ const AndroidAppDevelopment = () => {
 
 
     const iosFeatures = [
-        { icon: <SlBasket />, text: "Custom UI & Material Design" },
-        { icon: <FaBus />, text: "Fast, Stable App Architecture" },
-        { icon: <FaHandHoldingHeart />, text: "Integrated Push Notifications" },
-        { icon: <MdCastForEducation />, text: "Data-Driven Insights & Analytics" },
+        { icon: <Ecommerce />, text: "Custom UI & Material Design" },
+        { icon: <Transportation />, text: "Fast, Stable App Architecture" },
+        { icon: <Healthcare />, text: "Integrated Push Notifications" },
+        { icon: <Education />, text: "Data-Driven Insights & Analytics" },
       ];
 
   return (
