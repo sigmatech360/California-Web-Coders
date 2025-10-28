@@ -21,9 +21,9 @@ const ServiceBanner = (props) => {
         height="1080"
       />
       <div className="container">
-        <div className="row align-items-center">
+        <div className={props.rowClass || "row align-items-center"}>
           <div className={`${props.leftCol || "col-lg-6"}`}>
-            <div className="inner-services-banner-content">
+            <div className={props.innerServicetxt || "inner-services-banner-content"}>
               <h1
                 className=""
                 data-aos="fade-right"
@@ -77,6 +77,7 @@ const ServiceBanner = (props) => {
               >
                 {props.btnText || `Contact Us`}
               </Link>
+              <img src={props.innerheroimg} className="next-inner-hero" alt="img" />
             </div>
           </div>
           {props.image && (
@@ -93,6 +94,7 @@ const ServiceBanner = (props) => {
                   data-aos-duration="1000"
                   // data-aos-offset="50"
                 />
+               
               </div>
             </div>
           )}

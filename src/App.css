@@ -89,9 +89,9 @@ body {
 .theme-light {
   background-color: #fefefe;
   color: #0504a5;
-  padding: 12px 30px;
+  padding: 10px 30px;
   border-radius: 45px;
-  font-size: 18px;
+  font-size: 16px;
   border: 1px solid #fefefe;
   transition: all 0.2s ease;
   display: inline-block;
@@ -1066,7 +1066,2112 @@ section.letstogether-sec {
   transition: all 0.6s ease;
 }
 
+.pixel-perfect-head h6 {
+  color: #0504a5;
+}
+
 /********** Designing Page CSS End **********/
+
+/**********  App Service Component CSS Start **********/
+
+section.our-app-services {
+  padding: 70px 0px;
+  background: transparent linear-gradient(180deg, #f5f5f5 0%, #d4d4ff 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.our-appservice-txt h6 {
+  color: #0504a5;
+  margin: 0px 0px 20px 0px;
+}
+
+.our-appservice-txt h4 {
+  font-size: 45px;
+  color: #031243;
+  margin: 0px 0px 60px 0px;
+}
+
+.our-appservice-txt h4 span {
+  color: #0504a5;
+}
+
+.our-appservice-txt p {
+  color: #031243;
+  font-size: 16px;
+  margin: 0px 0px 30px 0px;
+}
+
+.our-appservice-txt p {
+  color: #031243;
+  font-size: 16px;
+}
+
+.our-appservice-txt button {
+  background: #0504a5;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  line-height: normal;
+  transition: all 0.6s ease;
+  border: 1px solid #0504a5;
+}
+
+.our-appservice-txt button:hover {
+  background: transparent;
+  color: #0504a5;
+}
+
+.our-appservice-txt button:focus {
+  outline: none;
+}
+
+.our-appservice-txt {
+  margin: 0px 0px 60px 0px;
+}
+
+.our-appservice-box {
+  padding: 30px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  transition: all 0.6s ease;
+  position: relative;
+  border-bottom: 10px solid #0504a5;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transform: translate(0px, 0px);
+}
+
+.our-appservice-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: #0504a5;
+  transition: height 0.6s ease;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+.our-appservice-box:hover::before {
+  height: 100%;
+}
+
+.our-appservice-box span,
+.our-appservice-box h5,
+.our-appservice-box p {
+  position: relative;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+
+.our-appservice-box span {
+  padding: 15px;
+  background: #0504a5;
+  color: #fff;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0px 0px 30px 0px;
+  transition: all 0.6s ease;
+}
+
+.our-appservice-box h5 {
+  color: #0504a5;
+  margin: 0px 0px 20px 0px;
+  transition: all 0.6s ease;
+}
+
+.our-appservice-box p {
+  color: #000000;
+}
+
+.our-appservice-box:hover {
+  background: #0504a5;
+  transform: translate(0px, -10px);
+}
+
+.our-appservice-box:hover h5,
+.our-appservice-box:hover p {
+  color: #fff;
+}
+
+.our-appservice-box:hover span {
+  background: #fff;
+  color: #0504a5;
+}
+
+/**********  App Service Component CSS End **********/
+
+/**********  App Service Point Component CSS Start **********/
+
+.app-serivcepoint-sec {
+  padding: 60px 0px;
+}
+
+.appservice-pointtxt h4 {
+  font-weight: 500;
+  font-size: 50px;
+  max-width: 560px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #031243;
+}
+
+.appservice-pointtxt h4 span {
+  color: #0504a5;
+}
+
+.appservice-pointtxt ul li {
+  color: #031243;
+  list-style: none;
+  padding: 10px 0px 10px 0px;
+  font-size: 18px;
+}
+
+.appservice-pointtxt ul {
+  padding: 0px;
+}
+
+.appservice-pointtxt ul li svg {
+  color: #0504a5;
+  margin: 0px 10px 0px 0px;
+}
+
+.apppoint-servicebg {
+  background: url(./Assets/newChildPagesAssets/app-development/servicepoint-bg.webp)
+    no-repeat top center;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px;
+}
+
+.servicepoint-applight h4,
+.servicepoint-applight p,
+.servicepoint-applight ul li,
+.servicepoint-applight ul li svg {
+  color: #fff;
+}
+
+.servicepoint-applight {
+  padding: 0px 0px 0px 0px;
+}
+
+.webchoose-txt {
+  padding: 30px 0px 20px 100px;
+}
+
+.webchoose-txt h6 {
+    color: #fff;
+    font-weight: normal;
+}
+.app-service-pointimg .service-point-img {
+  height: 400px;
+  position: relative;
+}
+
+.service-box-mobile {
+  position: relative;
+  text-align: center;
+}
+
+.service-box-mobile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    #4241ffa6 0%,
+    #0200ffa3 35%,
+    #05044000 65%,
+    transparent 100%
+  );
+  z-index: 1;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+.service-point-img {
+  height: 500px;
+  position: relative;
+  z-index: 999;
+}
+
+.app-service-pointimg {
+  text-align: center;
+}
+
+/**********  App Service Point Component CSS End **********/
+
+/**********  Web App About Component CSS Start **********/
+
+.webapp-centermob img {
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.webapp-centermob {
+  position: relative;
+}
+
+.web-app-about {
+  padding: 50px 0px;
+}
+
+.webapp-abouttxt h2 {
+  font-weight: 500;
+  font-size: 45px;
+  max-width: 560px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #031243;
+}
+
+.webapp-abouttxt {
+  position: relative;
+  z-index: 999;
+  padding: 0px 30px 0px 0px;
+}
+
+.webapp-abouttxt h2 span {
+  color: #0504a5;
+}
+
+.webap-list-flex {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0px;
+  padding: 0px 0px 30px 0px;
+}
+
+.webap-list-flex li {
+  list-style: none;
+  font-size: 17px;
+}
+
+.webap-list-flex li svg {
+  color: #0504a5;
+  margin: 0px 10px 0px 0px;
+}
+
+.webapp-btnflex button {
+  background: #0504a5;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  line-height: normal;
+  transition: all 0.6s ease;
+  border: 1px solid #0504a5;
+}
+
+.webapp-btnflex button:focus {
+    outline: none;
+}
+
+.webapp-btnflex button:hover {
+    color: #0504a5;
+    background: transparent;
+}
+
+
+.webapp-btnflex a {
+    background: #0504a5;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    line-height: normal;
+    transition: all 0.6s ease;
+    border: 1px solid #0504a5;
+}
+
+.webapp-btnflex a:hover {
+    background: transparent;
+    color: #0504a5;
+}
+
+.webapp-btnflex {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.webapp-aboutend p {
+  color: #031243;
+}
+
+.webapp-aboutend {
+  position: relative;
+  z-index: 999;
+  padding: 0px 0px 0px 50px;
+}
+
+.webapp-aboutend ul li {
+  color: #031243;
+  list-style: none;
+  padding: 8px 0px 8px 0px;
+  font-size: 18px;
+}
+
+.webapp-aboutend ul {
+  padding: 0px;
+}
+
+.webapp-aboutend ul li svg {
+  color: #0504a5;
+  margin: 0px 10px 0px 0px;
+}
+
+.webapp-abouttxt h6 {
+  color: #0504a5;
+}
+
+/**********  Web App About Component CSS End **********/
+
+/**********  Why Choose Web App Component CSS Start **********/
+
+section.whychoose-webapp {
+  padding: 70px 0px;
+}
+
+.choose-web-container {
+    background: #25282E;
+}
+
+.choose-web-video img {
+  display: none;
+}
+
+.choose-web-video video {
+  width: 100%;
+}
+
+.webchoose-txt h4 {
+    font-size: 36px;
+    margin: 0px 0px 8px 0px;
+}
+
+.webchoose-txt p {
+    font-size: 14px;
+    margin: 0px 0px 5px 0px;
+}
+
+.webchoose-txt ul li {
+    font-size: 14px;
+    padding: 5px 0px 5px 0px;
+}
+
+.webchoosevideo {
+  display: none;
+}
+
+.choose-web-video .webchoosevideo {
+  display: block;
+}
+
+
+/**********  Why Choose Web App Component CSS End **********/
+
+/**********  IOS About Component CSS Start **********/
+
+.ios-next-herobanner {
+  padding: 60px 0px 0px 0px;
+}
+
+
+.next-inner-hero {
+  display: none;
+}
+
+.inner-next-txt .next-inner-hero {
+  display: block;
+}
+
+.ios-about-bannerimg img {
+    width: 100%;
+}
+
+section.iundustries-ios-apps {
+  padding: 90px 0px;
+}
+
+.iosaboutcompany-sec {
+  padding: 70px 0px 50px 0px;
+}
+
+.ios-about-txt h6 {
+  color: #0504a5;
+}
+
+.ios-about-txt h2 {
+  font-weight: 500;
+  font-size: 45px;
+  max-width: 560px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #031243;
+}
+
+.ios-about-txt h2 span {
+  color: #0504a5;
+}
+
+.ios-about-pointflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ios-about-points {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.iosabout-point-txt h4 {
+  color: #0504a5;
+  font-size: 18px;
+  margin: 0px 0px 5px 0px;
+}
+
+.ios-about-points span {
+  background: #0504a5;
+  border-radius: 100%;
+  color: #fff;
+  padding: 4px 7px;
+}
+
+.iosabout-point-txt p {
+  font-size: 14px;
+}
+
+.ios-app-img img {
+  width: 100%;
+}
+
+.industries-iosapp-txt h4 {
+  font-weight: 500;
+  font-size: 45px;
+  max-width: 560px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #031243;
+}
+
+.industries-iosapp-txt h4 span {
+  color: #0504a5;
+}
+
+.industries-iosapp-txt h4 {
+  font-weight: 500;
+  font-size: 45px;
+  max-width: 560px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #031243;
+}
+
+.industries-iosapp-txt h4 span {
+  color: #0504a5;
+}
+
+.industries-iosapp-txt ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.industries-iosapp-txt ul li {
+  margin: 0px 0px 20px 0px;
+  color: #9696a7;
+  list-style: none;
+  cursor: pointer;
+  transition: transform 0.6s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  transform-origin: left center;
+}
+
+.industries-iosapp-txt ul li .ios-service-icon {
+  background: #0504a5;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px 10px;
+  display: inline-block;
+  border-radius: 100%;
+  line-height: normal;
+}
+
+.industries-iosapp-txt ul li .ios-arrow-icon {
+  margin: 0px 10px;
+  font-size: 25px;
+  line-height: normal;
+}
+
+.industries-iosapp-txt ul li:hover {
+  transform: scale(1.2);
+  color: #0504a5;
+  font-weight: 600;
+}
+
+.industries-iosapp-txt p {
+  margin: 0px 0px 30px 0px;
+}
+
+.industries-iosapp-txt p {
+  margin: 0px 0px 30px 0px;
+}
+
+.ios-app-img {
+  position: relative;
+}
+
+.ios-app-img img {
+  position: relative;
+  z-index: 99;
+  height: 580px;
+  object-fit: contain;
+}
+
+.ios-app-img::before {
+  position: absolute;
+  content: "";
+  background: #0504a5;
+  width: 195px;
+  height: 200px;
+  border-top-left-radius: 200px;
+  top: 40px;
+  left: 20px;
+}
+
+.ios-app-img::after {
+  position: absolute;
+  content: "";
+  background: #0504a5;
+  width: 195px;
+  height: 200px;
+  border-top-left-radius: 200px;
+  bottom: 40px;
+  right: 20px;
+}
+
+/**********  IOS About Component CSS End **********/
+
+
+/**********  Android Development Page CSS Start **********/
+
+
+.android-main-banner {
+  padding: 100px 0px; 
+}
+
+
+.android-build-bg {
+  background: url(./Assets/newChildPagesAssets/androiddevelopment/android-buid-bg.webp) no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 110px 0px 110px 0px;
+}
+
+
+.android-build-bg .abouttxt-data h2, .android-build-bg .abouttxt-data p {
+    color: #fff;
+}
+
+
+.android-build-bg .abouttxt-data {
+    padding: 0px 0px 0px 50px;
+}
+
+.android-build-bg .aboutus-call a {
+    background: #fff;
+    color: #0504a5;
+    border: 1px solid #fff;
+    font-weight: 500;
+}
+
+.android-build-bg .aboutus-call a:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.android-build-bg .about-number span{
+    background: #fff;
+    color: #0504a5;
+}
+
+
+/**********  Android Development Page CSS End **********/
+
+
+
+
+/**********  beautiful App Component CSS Start **********/
+
+.beautiful-app-sec {
+  background: url(./Assets/newChildPagesAssets/IOSDevelopment/functional-app-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 60px 0px;;
+}
+
+.beautiful-app-txt h2 {
+  font-weight: 500;
+  font-size: 45px;
+  max-width: 560px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.beautiful-app-txt p {
+  color: #fff;
+}
+
+.beautifull-app-flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.beautifull-app-flex button {
+  background: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #0504a5;
+  font-size: 14px;
+  line-height: normal;
+  transition: all 0.6s ease;
+  border: 1px solid #fff;
+}
+
+.beautifull-app-flex button:focus {
+  outline: none;
+}
+
+.beautifull-app-flex button:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.beautifull-app-flex .about-number span {
+  background: #fff;
+  color: #0504a5;
+}
+
+.beautiful-app-txt {
+  padding: 50px 0px 50px 0px;
+}
+
+/**********  beautiful App Component CSS End **********/
+
+/**********  Custom About Company Component CSS Start **********/
+
+.frontend-about-company img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.frontend-about-company h2 {
+  font-weight: 500;
+  font-size: 43px;
+  max-width: 560px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #031243;
+}
+
+.frontend-about-company h6 {
+  color: #0504a5;
+}
+
+.custom-frontend-about {
+  padding: 80px 0px;
+}
+
+.frontend-about-company .aboutCompanylist {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0px;
+  padding: 0px 0px 20px 0px;
+}
+
+.frontend-about-company p {
+  margin: 20px 0px 20px 0px;
+}
+
+.frontend-about-company .aboutCompanylist li {
+  list-style: none;
+  font-size: 18px;
+}
+
+.frontend-about-company .aboutCompanylist li svg {
+  color: #0504a5;
+  margin: 0px 10px 0px 0px;
+}
+
+/**********  Custom About Company Component CSS End **********/
+
+/**********  Custom Service Component CSS Start **********/
+
+.our-custom-service {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  background: transparent linear-gradient(180deg, #f5f5f5 0%, #d4d4ff 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.our-custom-servicetxt h2 {
+  font-weight: 500;
+  font-size: 50px;
+  max-width: 560px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #031243;
+}
+
+.our-custom-servicetxt h2 span {
+  color: #0504a5;
+}
+
+.our-custom-servicetxt h6 {
+  color: #0504a5;
+}
+
+.our-custom-servicetxt p {
+  color: #031243;
+  padding: 0px 100px 0px 0px;
+  margin: 0px 0px 30px 0px;
+  font-size: 18px;
+}
+
+.our-custom-servicetxt button {
+  background: #0504a5;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  line-height: normal;
+  transition: all 0.6s ease;
+  border: 1px solid #0504a5;
+}
+
+.our-custom-servicetxt button:hover {
+  background: transparent;
+  color: #0504a5;
+}
+
+.our-custom-servicetxt button:focus {
+  outline: none;
+}
+
+.custom-service-scroll {
+  max-height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+  scroll-behavior: smooth;
+}
+
+.custom-service-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-service-scroll::-webkit-scrollbar-thumb {
+  background: #0504a5;
+  border-radius: 10px;
+}
+
+.custom-service-box {
+  width: 70%;
+  background: transparent;
+  border-radius: 16px;
+  margin: 20px 0;
+  padding: 30px 20px 10px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #0504a5;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.customservice-boxtxt {
+  width: 100%;
+}
+
+/* .service-icon {
+  font-size: 35px;
+  color: #fff;
+  background-color: #0504a5;
+  display: inline-block;
+  padding: 8px 14px 13px 14px;
+  border-radius: 100%;
+  line-height: normal;
+  margin: 0px 0px 10px 0px;
+  transition: all .6s ease;
+} */
+
+.service-icon svg {
+    width: 80px;
+    height: 80px;
+    margin: 0px 0px 20px 0px;
+    fill: #0200FF;
+}
+
+
+.customservice-boxtxt h5 {
+  color: #0504a5;
+  font-size: 18px;
+  width: 350px;
+}
+
+.customservice-boxtxt p {
+  font-size: 14px;
+  width: 350px;
+}
+
+.custom-right-img {
+  position: relative;
+  width: 0%;
+}
+
+.custom-right-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.custom-service-box:hover {
+  width: 100%;
+  background: #0504a5;
+  color: #fff;
+}
+
+
+.custom-service-box:hover .custom-right-img {
+  width: 35%;
+  right: -30px;
+  top: -10px;
+}
+
+.custom-service-box:hover .custom-right-img img {
+  visibility: visible;
+  opacity: 1;
+}
+
+.custom-service-box:hover .customservice-boxtxt {
+  width: 55%;
+}
+
+.custom-service-box:hover h5,
+.custom-service-box:hover p {
+  color: #fff;
+}
+
+.designmove-sec .abouttxt-data h2 span {
+  color: #0504a5;
+}
+
+.designmove-sec {
+  background: transparent linear-gradient(180deg, #f5f5f5 0%, #d4d4ff 100%) 0%
+    0% no-repeat padding-box;
+  position: relative;
+  padding: 70px 0px 0px 0px;
+}
+
+.designmove-sec .services__about-img img {
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  width: 52.2%;
+}
+
+.designmove-sec .abouttxt-data {
+  padding: 0px 30px 50px 0px;
+}
+
+.services__about-img video {
+  display: none;
+}
+
+/**********  Custom Service Component CSS End **********/
+
+/**********  Our Process Component CSS Start **********/
+
+.our-process-txt ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.our-process-txt ul li {
+  list-style: none;
+}
+
+.our-process-txt ul li h4 {
+  color: #0504a5;
+  margin: 0px 0px 20px 0px;
+}
+
+.our-process-txt ul li p {
+  color: #031243;
+}
+
+section.our-process-sec {
+  padding: 100px 0px;
+}
+
+.our-process-txt ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.our-process-txt ul li {
+  list-style: none;
+}
+
+.our-process-txt ul li h4 {
+  color: #0504a5;
+  margin: 0px 0px 20px 0px;
+}
+
+.our-process-txt ul li p {
+  color: #031243;
+}
+
+section.our-process-sec {
+  padding: 100px 0px;
+}
+
+.our-process-videotxt h3 {
+  font-weight: 500;
+  font-size: 35px;
+  max-width: 560px;
+  line-height: 1.1;
+  color: #031243;
+  margin: 0px;
+}
+
+.our-process-videotxt h3 span {
+  color: #0504a5;
+}
+
+.our-process-videotxt {
+  position: relative;
+}
+
+.our-process-absltimg img {
+  position: absolute;
+  top: -20px;
+  right: 0px;
+}
+
+.our-process-absltimg img {
+  width: 80%;
+}
+
+.frontend-about-company h2 span {
+  color: #0504a5;
+}
+
+section.react-about-sec {
+  background: transparent linear-gradient(180deg, #f5f5f5 0%, #d4d4ff 100%) 0%
+    0% no-repeat padding-box;
+  padding: 70px 0px;
+}
+
+.react-service-sec {
+  padding: 70px 0px;
+}
+
+/**********  Our Process Component CSS End **********/
+
+/**********  Custom Customer Card Component CSS Start **********/
+
+section.custom-customer-sec {
+  padding: 70px 0px;
+}
+
+.abouttxt-data h2 span {
+  color: #0504a5;
+}
+
+.custom-customer-card {
+  background: #0504a5;
+  padding: 35px 30px 40px 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+
+.custom-customer-card:hover {
+  transform: translate(0px, -20px);
+}
+
+.custom-customer-card span {
+  background: #fff;
+  color: #0504a5;
+  padding: 11px 19px 15px 18px;
+  border-radius: 100%;
+  font-size: 25px;
+  display: inline-block;
+  margin: 0px 0px 20px 0px;
+}
+
+.custom-customer-card h4 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.custom-customer-card p {
+  font-size: 15px;
+  margin: 0px;
+}
+
+.why-choose-react-card {
+  background: url(./Assets/newChildPagesAssets/reactdevelopment/customwhychoose.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 80px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.react-build-bg {
+  background: url(./Assets/newChildPagesAssets/reactdevelopment/build-react-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 122px 0px 152px 0px;
+}
+
+.react-build-bg .abouttxt-data {
+  padding: 0px 0px 0px 50px;
+}
+
+.react-build-bg .abouttxt-data h2,
+.react-build-bg .abouttxt-data p {
+  color: #fff;
+}
+
+.react-build-bg .aboutus-call a {
+  background: #fff;
+  color: #0504a5;
+  border: 1px solid #fff;
+  font-weight: 500;
+}
+
+.react-build-bg .aboutus-call a:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.react-build-bg .about-number span {
+  background: #fff;
+  color: #0504a5;
+}
+
+.angular-herobanner h1 {
+  font-size: 50px;
+}
+
+.angular-aboutimg img {
+  display: none;
+}
+
+.angular-aboutimg video {
+  height: 580px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.angular-aboutimg {
+  margin: 0px 50px;
+}
+
+.angular-video-hide video {
+  display: none;
+}
+
+.angular-build-sec {
+  background: url(./Assets//newChildPagesAssets/angulardevelopment/build-angular-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px;
+}
+
+.angular-choose-bg {
+  background: url(./Assets//newChildPagesAssets/angulardevelopment/angularchoose-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px;
+}
+
+.angular-choose-imghide img {
+  display: none;
+}
+
+.angular-choose-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.react-specialist-sec {
+  padding: 70px 0px 0px 0px;
+}
+
+/**********  Custom Customer Card Component CSS End **********/
+
+
+/**********  React Hero Banner Component CSS Start **********/
+
+
+.react-hero-banner-txt {
+    text-align: center;
+}
+
+section.react-hero-banner {
+    padding: 70px 0px;
+}
+
+.react-hero-banner-txt h2 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #031243;
+}
+
+.react-hero-banner-txt h2 span {
+    color: #0504a5;
+}
+
+.react-hero-banner-txt p {
+    color: #031243;
+    font-size: 18px;
+}
+
+.react-hero-banner-txt a {
+    background: #0504a5;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    line-height: normal;
+    display: inline-block;
+    transition: all 0.6s ease;
+    border: 1px solid #0504a5;
+}
+
+.react-hero-banner-txt a:hover {
+    color: #0504a5;
+    background: transparent;
+}
+
+
+.react-banner-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 50px 0px 0px 0px;
+    align-items: center;
+}
+
+.react-banner-images img {
+    width: 18%;
+}
+
+.react-banner-images img:nth-child(1) {
+    height: 265px;
+}
+
+.react-banner-images img:nth-child(2) {
+    height: 375px;
+}
+
+.react-banner-images img:nth-child(3) {
+    height: 500px;
+}
+
+.react-banner-images img:nth-child(4) {
+    height: 375px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.react-banner-images img:nth-child(5) {
+    height: 265px;
+}
+
+
+
+/**********  React Hero Banner Component CSS End **********/
+
+
+
+
+/**********  Web 3.0 Hero Banner Component CSS Start **********/
+
+
+.web3-hero-banner-txt {
+    text-align: center;
+}
+
+section.web3-hero-banner {
+    padding: 70px 0px;
+}
+
+.web3-hero-banner-txt h2 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #031243;
+}
+
+.web3-hero-banner-txt p {
+    color: #031243;
+}
+
+.web3-hero-banner-txt a {
+    background: #0504a5;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    line-height: normal;
+    transition: all 0.6s ease;
+    border: 1px solid #0504a5;
+    display: inline-block;
+}
+
+.web3-hero-banner-txt a:hover {
+    background: transparent;
+    color: #0504a5;
+}
+
+
+
+/**********  Web 3.0 Hero Banner Component CSS End **********/
+
+
+/**********  Laravel About Component CSS Start **********/
+
+.laravel-about-sec .aboutCompanylist {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 5px 0px 20px 0px;
+}
+
+.laravel-about-sec .aboutus-call .about-number {
+  display: none;
+}
+
+.laravel-about-img img {
+  display: none;
+}
+
+.laravel-about-img video {
+  display: block;
+  border-radius: 20px;
+}
+
+.about-another-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-small-img img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.about-small-img {
+  display: flex;
+  justify-content: end;
+  display: block;
+}
+
+.overall-small-about {
+  display: none;
+}
+
+/**********  Laravel About Component CSS End **********/
+
+/**********  Laravel Choose Component CSS Start **********/
+
+.laravel-choose-us {
+  background: url(./Assets/newChildPagesAssets/laraveldevelopment/laravelchoosebg.webp)
+    no-repeat top center;
+  padding: 80px 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.laravel-choose-us .abouttxt-data h6,
+.laravel-choose-us .abouttxt-data h2,
+.laravel-choose-us .abouttxt-data p,
+.laravel-choose-points li,
+.laravel-choose-points li svg {
+  color: #fff;
+}
+
+.laravel-choose-video video {
+  display: none;
+}
+
+.laravel-choose-video img {
+  width: 90%;
+}
+
+.laravel-choose-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**********  Laravel Choose Component CSS End **********/
+
+.nodejs-about-sec {
+  background: url(./Assets/newChildPagesAssets/nodejsdevelopment/node-about-banner.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0px 0px 350px 0px;
+  margin: 70px 0px 0px 0px;
+}
+
+.nodejs-about-img {
+  display: none;
+}
+
+.react-build-bg {
+  background: url(./Assets/newChildPagesAssets/nodejsdevelopment/build-node-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 122px 0px 152px 0px;
+}
+
+.smartai-hero-sec {
+  background: linear-gradient(
+    90deg,
+    rgba(3, 2, 52, 1) 0%,
+    rgba(8, 6, 102, 1) 50%,
+    rgba(1, 0, 212, 1) 100%
+  );
+}
+
+.smartai-hero-sec .servicesBanner-bgImage {
+  display: none;
+}
+
+/**********  Custom Experience Component CSS Start **********/
+
+.custom-experience-sec {
+  padding: 70px 0px 30px 0px;
+}
+
+.custom-experience-txt h2 {
+  font-size: 50px;
+  color: #031243;
+}
+
+.custom-experience-txt h2 span {
+  color: #0504a5;
+}
+
+.custom-experience-define {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.custom-experience-define h4 {
+  background: #0504a5;
+  color: #fff;
+  padding: 50px 30px;
+  border-radius: 100%;
+  font-size: 70px;
+}
+
+.custom-experience-txt h5 {
+  color: #0504a5;
+  font-size: 22px;
+}
+
+.custom-experience-txt p {
+  color: #031243;
+  font-size: 18px;
+  padding: 0px 0px 0px 0px;
+}
+
+.experience-short-txt {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-top: 1px solid #0504a5;
+  padding: 20px 0px 0px 0px;
+  margin: 30px 0px 0px 0px;
+}
+
+.experience-short-txt h6 {
+  color: #031243;
+  font-weight: 500;
+  padding: 0px 90px 0px 0px;
+}
+
+.experience-short-txt h6 span {
+  font-weight: 600;
+  color: #0504a5;
+}
+
+.experience-short-txt span {
+  color: #0504a5;
+}
+
+/**********  Custom Experience Component CSS End **********/
+
+.aipower-bg-sec {
+  background: url(./Assets/newChildPagesAssets/smartaiintegration/ai-power-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 122px 0px 152px 0px;
+}
+
+.aipower-bg-sec .abouttxt-data h2,
+.aipower-bg-sec .abouttxt-data p {
+  color: #fff;
+}
+
+.aipower-bg-sec .aboutus-call a {
+  background: #fff;
+  color: #0504a5;
+  border: 1px solid #fff;
+}
+
+.aipower-bg-sec .abouttxt-data h2 {
+  color: #fff;
+}
+
+.aipower-bg-sec .aboutus-call a:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.aipower-bg-sec .about-number span {
+  color: #0504a5;
+  background: #fff;
+}
+
+.aipower-bg-sec .abouttxt-data {
+  padding: 0px 0px 0px 60px;
+}
+
+/**********  Get In Touch Component CSS Start **********/
+
+section.custom-getintouch-sec {
+  padding: 20px 0px 80px 0px;
+}
+
+.custom-getintouch-txt h6 {
+  color: #0504a5;
+}
+
+.custom-getintouch-txt h2 {
+  font-weight: 500;
+  font-size: 48px;
+  max-width: 560px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #031243;
+}
+
+.custom-getintouch-txt h2 span {
+  color: #0504a5;
+}
+
+.custom-getintouch-txt p {
+  color: #707070;
+  font-size: 18px;
+  margin: 0px 0px 8px 0px;
+}
+
+.getintouch-follow h4 {
+  color: #0504a5;
+  font-size: 30px;
+}
+
+.getintouch-follow {
+  margin: 20px 0px 0px 0px;
+  padding: 20px 0px 0px 0px;
+  border-top: 1px solid #0504a5;
+}
+
+.getintouch-follow ul {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.getintouch-follow ul li {
+  list-style: none;
+  font-size: 30px;
+  color: #0504a5;
+  line-height: normal;
+}
+
+/**********  Get In Touch Component CSS End **********/
+
+
+
+/**********  Smart AI Integration Page CSS Start **********/
+
+.personal-information-box {
+  padding: 20px;
+  text-align: center;
+  background: #0504a5;
+  margin: 0px 0px 20px 0px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  transform: translate(0px, 0px);
+  transition: all .6s ease;
+}
+
+.personal-information-box:hover {
+    transform: translate(0px, -10px);
+    cursor: pointer;
+}
+
+.personal-information-box span svg {
+    width: 50px;
+    height: auto;
+    margin: 0px 0px 10px 0px;
+}
+
+.personal-information-box h5 {
+    margin: 0px;
+    color: #FEFEFE;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0px 10px 0px;
+}
+
+.personal-information-box p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.service-progress-bar {
+  margin-bottom: 20px;
+}
+
+.progress-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 15px;
+  background: #e6e6e6;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4241ff, #0200ff, #040295, #050440);
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+  position: relative;
+}
+
+.express-everything-txt p {
+    color: #031243;
+}
+
+.progress-top h5 {
+    color: #031243;
+}
+
+.express-everything-txt h4 {
+    font-weight: 500;
+    font-size: 50px;
+    max-width: 560px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #031243;
+}
+
+section.experess-everything-sec {
+    padding: 70px 0px 70px 0px;
+    background: transparent linear-gradient(180deg, #F5F5F5 0%, #D4D4FF 100%) 0% 0% no-repeat padding-box;
+}
+
+.progress-fill span {
+    position: absolute;
+    color: #fff;
+    font-size: 10px;
+    right: 10px;
+    top: 0px;
+}
+
+.smartai-pricing-sec {
+    background: transparent linear-gradient(180deg, #F5F5F5 0%, #D4D4FF 100%) 0% 0% no-repeat padding-box;
+    padding: 80px 0px;
+}
+
+.smartai-faqs-sec {
+  background: #fff;
+  padding: 80px 0px;
+}
+
+.python-personal-information {
+  padding: 70px 0px;
+}
+
+
+/**********  Smart AI Integration Page CSS End **********/
+
+
+/**********  Python Development Page CSS Start **********/
+
+.python-development-bg {
+  background: url(./Assets/newChildPagesAssets/pythondevelopment/python-service-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 190px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.python-development-bg .abouttxt-data h6,
+.python-development-bg .abouttxt-data h2,
+.python-development-bg .abouttxt-data p {
+    color: #fff;
+}
+
+
+section.python-development-bg .abouttxt-data h6 {
+    color: #fff;
+}
+
+.python-development-bg .aboutus-call a {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #0504a5;
+}
+
+.python-development-bg .aboutus-call a:hover {
+    background: transparent;
+    color: #fff;
+}
+
+section.python-development-bg .about-number span {
+    color: #0504a5;
+    background: #fff;
+}
+
+.python-maintaince-head {
+    text-align: center;
+}
+
+.python-maintaince-head h2 {
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #031243;
+}
+
+.python-maintaince-head h2 span {
+    color: #0504a5;
+}
+
+section.python-maintaince-sec {
+    padding: 70px 0px 50px 0px;
+}
+
+.python-maintaince-box {
+    background: #0504A5;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    height: 300px;
+    margin: 30px 0px 0px 0px;
+    transform: translate(0px, 0px);
+    transition: all .6s ease;
+    cursor: pointer;
+}
+
+.python-maintaince-box:hover {
+    transform: translate(0px, -10px);
+}
+
+.python-maintaince-box span svg {
+    width: 90px;
+    height: auto;
+    margin: 0px 0px 20px 0px;
+}
+
+.python-maintaince-box h4 {
+    color: #fff;
+}
+
+.python-maintaince-box p {
+    color: #fff;
+}
+
+/**********  Python Development Page CSS End **********/
+
+
+
+/**********  Web 3.0 Page CSS Start **********/
+
+.future-web-sec {
+  background: url(./Assets/newChildPagesAssets/web3development/future-web-bg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 190px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.future-web-sec .abouttxt-data h6,
+.future-web-sec .abouttxt-data h2,
+.future-web-sec .abouttxt-data P {
+    color: #FFF;
+}
+
+
+.web3-whychooseus {
+  background: url(./Assets/newChildPagesAssets/web3development/customwhychoose.webp) no-repeat top center;
+  background-size: cover;
+  padding: 100px 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.web-whychoose-list {
+  display: none;
+}
+
+.web3-whychooseus .web-whychoose-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.web3-whychooseus .web-whychoose-list li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px 0px 0px;
+}
+
+.web3-whychooseus .web-whychoose-list li img {
+    width: 60px;
+}
+
+.web3-whychooseus .abouttxt-data h2 {
+    max-width: 100%;
+}
+
+
+.web3-whychooseus .services__about-img img{
+    position: absolute;
+    bottom: -2px;
+    right: 0px;
+    width: 900px;
+}
+
+
+.web3images-flex {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    transform: translate(0px, -90px);
+}
+
+.web3images-flex img:nth-child(1) {
+    width: 200px;
+    height: 450px;
+}
+
+
+.web3images-flex img:nth-child(2) {
+    width: 170px;
+    height: 280px;
+}
+
+.web3images-flex img:nth-child(3) {
+    width: 140px;
+    height: 230px;
+}
+
+.web3images-flex img:nth-child(4) {
+    width: 150px;
+    height: 200px;
+}
+
+.web3images-flex img:nth-child(5) {
+    width: 150px;
+    height: 200px;
+}
+
+.web3images-flex img:nth-child(6) {
+    width: 140px;
+    height: 230px;
+}
+
+.web3images-flex img:nth-child(7) {
+    width: 170px;
+    height: 300px;
+}
+
+.web3images-flex img:nth-child(8) {
+  width: 200px;
+  height: 500px;
+}
+
+/**********  Web 3.0 Page CSS End **********/
+
+
+/**********  Blockchain Page CSS Start **********/
+
+
+section.blockchain-choose-us {
+    background: transparent linear-gradient(180deg, #F5F5F5 0%, #D4D4FF 100%) 0% 0% no-repeat padding-box;
+    padding: 70px 0px;
+    position: relative;
+}
+
+.blockchain-choose-head {
+    text-align: center;
+    margin: 0px 0px 70px 0px;
+}
+
+.blockchain-choose-head h6 {
+    color: #0504a5;
+}
+
+.blockchain-choose-head h2 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #031243;
+}
+
+.blockchain-choose-head h2 span {
+    color: #0504a5;
+}
+
+.blockchain-choose-head p {
+    color: #031243;
+}
+
+
+.blockchain-choose-allpoints {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 120px;
+    column-gap: 200px;
+}
+
+.blockchain-california-img{
+    text-align: center;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, 10px);
+}
+
+.blockchain-california-img img {
+    width: 250px;
+    border: 1px dashed #0200FF;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.blockchain-choose-point{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 80%;
+    padding: 0px 0px 0px 55px;
+}
+
+.blockchain-point-txt h4 {
+    font-size: 18px;
+    color: #031243;
+}
+
+.blockchain-point-txt p {
+    font-size: 14px;
+    color: #031243;
+}
+
+
+.blockchain-choose-point img {
+    width: 60px;
+}
+
+
+.blockchain-point-txt h4 {
+    font-size: 18px;
+    color: #031243;
+}
+
+.blockchain-point-txt p {
+    font-size: 14px;
+    color: #031243;
+}
+
+
+
+.blockchain-california-img::before {
+    position: absolute;
+    content: "";
+    border: 1px dashed #0504A5;
+    width: 468px;
+    transform: translate(-446px, 122px);
+}
+
+.blockchain-california-img::after {
+    position: absolute;
+    content: "";
+    border: 1px dashed #0504A5;
+    width: 490px;
+    transform: translate(-20px, 122px);
+}
+
+
+.react-choose-sec .abouttxt-data h2 {
+    max-width: 100%;
+}
+
+
+/**********  Blockchain Page CSS End **********/
+
+
+/**********  Mern Stack Development Page CSS Start **********/
+
+.react-choose-sec .abouttxt-data h2 {
+    width: 100%;
+}
+
+.mernstack-build-sec {
+    position: relative;
+    margin: 200px 0px 70px 0px;
+}
+
+.mern-build-img {
+    position: absolute;
+    bottom: 0px;
+    right: 70px;
+}
+
+.mern-build-img video {
+    display: none;
+}
+
+
+.mern-build-img img {
+    width: 970px;
+}
+
+.mernstack-build-sec .abouttxt-data p {
+    padding: 0px 160px 0px 0px;
+}
+
+.mernstack-build-sec .react-build-bg {
+    padding: 122px 0px 137px 0px;
+}
+
+.service-all-points {
+  display: none;
+}
+
+.mern-about-sec .service-all-points {
+  display: block;
+}
+
+
+.mern-about-sec {
+    padding: 70px 0px;
+}
+
+
+
+.mern-about-sec .service-all-points .mern-service-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.mern-about-sec .service-all-points .mern-service-point h6 {
+    background: #0504A5;
+    color: #ffff;
+    padding: 18px 19px 17px 19px;
+    border-radius: 100%;
+    font-size: 22px;
+}
+
+.service-point-txt h5 {
+    color: #0504A5;
+    font-size: 18px;
+}
+
+.service-point-txt p {
+    color: #031243;
+}
+
+/**********  Mern Stack Development Page CSS End **********/
+
+
+
 
 @media (max-width: 1399px) {
   .blog-with-sidebar .wordpressBlogCard img {
@@ -1083,7 +3188,31 @@ section.letstogether-sec {
   .blog-with-sidebar .wordpressBlogCard img {
     height: 160px;
   }
+
+  .webchoose-txt {
+    padding: 30px 40px 20px 30px;
+  }
+
+  .choose-web-container {
+    background: #25282E;
+    border-radius: 20px;
+  }
+
+  .choose-web-video .webchoosevideo {
+    border-radius: 15px;
+  }
+
+  .webapp-centermob img {
+    position: relative;
+    width: 100%;
 }
+
+.webapp-aboutend {
+    padding: 0px 0px 0px 0px;
+}
+
+}
+
 @media (max-width: 767px) {
   .wordpressBlogCard img,
   .blog-with-sidebar .wordpressBlogCard img {
@@ -1115,6 +3244,16 @@ section.letstogether-sec {
     min-width: 696px;
     min-height: 406px;
   }
+
+  .ios-about-txt {
+      padding: 60px 0px 0px 0px;
+  }
+
+  .inner-next-txt .next-inner-hero {
+      width: 100%;
+  }
+
+
 }
 @media (max-width: 767px) {
   .hero-img-right img,
@@ -1188,7 +3327,7 @@ section.letstogether-sec {
     text-align: center;
     padding: 50px 0px;
   }
- 
+
   .news-card-content p {
     text-align: center;
   }
@@ -1199,7 +3338,222 @@ section.letstogether-sec {
     flex-direction: column;
   }
 
+  .python-banner-sec .inner-services-banner-content {
+    text-align: center;
+  }
+
+  .python-maintaince-sec .python-maintaince-head h2 {
+    font-size: 40px;
+  }
+
   .abouttxt-data h2 {
     font-size: 35px;
   }
+
+  .wordpress-web-design {
+    min-height: 300px;
+}
+
+.inner-services-banner-content h1 {
+    padding: 0px 10px;
+    font-size: 36px;
+}
+
+.our-appservice-txt {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.our-appservice-txt h4 {
+    margin: 0px 0px 20px 0px;
+    font-size: 40px;
+}
+
+.app-serivcepoint-sec {
+    text-align: center;
+}
+
+.servicepoint-applight {
+    text-align: center;
+}
+
+.appservice-pointtxt h4 {
+    font-size: 40px;
+}
+
+.appservice-pointtxt ul li {
+    font-size: 16px;
+}
+
+.abouttxt-data {
+    margin: 30px 0px 0px 0px;
+}
+
+.inner-services-banner-content h1 {
+    text-align: center;
+}
+
+.webapp-abouttxt h2 {
+    font-size: 40px;
+}
+
+.webapp-abouttxt {
+  text-align: center;
+  padding: 0px 0px 40px 0px;
+}
+
+.webap-list-flex li {
+    font-size: 12px;
+}
+
+.webap-list-flex {
+    gap: 10px;
+        padding: 0px 0px 15px 0px;
+}
+
+.webap-list-flex li svg {
+    margin: 0px 5px 0px 0px;
+    width:  15px;
+}
+
+.webapp-centermob img {
+    position: relative;
+    width: 100%;
+}
+
+.webapp-btnflex {
+    gap: 10px;
+}
+
+.about-number p {
+    font-size: 14px;
+}
+
+.webapp-btnflex button {
+    padding: 12px 20px;
+    font-size: 12px;
+}
+
+
+.webapp-aboutend {
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.webapp-aboutend ul li {
+    font-size: 16px;
+}
+
+.webchoose-txt {
+    padding: 30px 10px 20px 10px;
+}
+
+.choose-web-container {
+    border-radius: 15px;
+}
+
+.choose-web-video .webchoosevideo {
+    border-radius: 15px;
+}
+
+.inner-next-txt .next-inner-hero {
+  width: 100%;
+}
+
+.ios-about-txt {
+    padding: 40px 0px 0px 0px;
+    text-align: center;
+}
+
+.ios-about-txt h2 {
+    font-size: 40px;
+}
+
+
+.ios-about-pointflex {
+    flex-direction: column;
+}
+
+.industries-iosapp-txt h4 {
+    font-size: 40px;
+}
+
+.industries-iosapp-txt {
+    text-align: center;
+}
+
+.beautiful-app-txt {
+    padding: 0px 0px 0px 0px;
+}
+
+.beautiful-app-txt h2 {
+    font-size: 40px;
+}
+
+.beautiful-app-sec {
+    text-align: center;
+}
+
+.beautifull-app-flex button {
+    padding: 12px 20px;;
+}
+
+.beautifull-app-flex {
+    gap: 10px;
+}
+
+
+.android-main-banner .services__banner-img img {
+    display: none;
+}
+
+.android-main-banner {
+    padding: 70px 0px;
+    text-align: center;
+}
+
+.frontend-about-company h2 {
+    font-size: 40px;
+}
+
+.frontend-about-company {
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.frontend-about-company .aboutCompanylist {
+    gap: 10px;
+    justify-content: center;
+}
+
+.frontend-about-company .aboutCompanylist li {
+    font-size: 12px;
+}
+
+.custom-frontend-about {
+    padding: 80px 0px 0px 0px;
+}
+
+
+.android-build-bg .abouttxt-data {
+    padding: 0px 20px;
+}
+
+.android-build-bg{
+    padding: 50px 0px 50px 0px;
+    border-radius: 20px;
+}
+
+.our-custom-service .our-custom-servicetxt h2 {
+    font-size: 40px;
+}
+
+.our-custom-servicetxt p {
+    padding: 0px 0px 0px 0px;
+}
+
+.our-custom-servicetxt {
+    text-align: center;
+}
+
 }

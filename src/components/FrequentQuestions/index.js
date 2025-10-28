@@ -91,7 +91,7 @@ const   FrequentQuestions = (props) => {
 
   return (
     <>
-      <section className="faqs-sec" id="cwc-faq">
+      <section className={props.faqsSecClass || "faqs-sec"} id="cwc-faq">
         <div className="container">
           <div className="row align-items-end mb-4">
             <div className="col-lg-6">

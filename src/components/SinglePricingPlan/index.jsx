@@ -6,7 +6,7 @@ import PricePlanCard from "../PricePlanCard";
 const SinglePricingPlan = (props) => {
     // const pricingPlanData = props.pricingPlanData || [];
   return (
-    <section className="PricingPlans singlePricingPlan">
+    <section className={props.pricingSecClass || "PricingPlans singlePricingPlan"}>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -24,8 +24,7 @@ const SinglePricingPlan = (props) => {
                 data-aos-duration="1000"
                 data-aos-offset="50"
               >
-                {props.secTitle || `That Fit All Budget Types`}
-              </h3>
+                {props.secTitle || `That Fit All Budget Types`} <span>{props.secTitleBlue}</span>  {props.secTitleEnd}</h3>
               <p
                 data-aos="fade-up"
                 data-aos-duration="1000"
@@ -38,7 +37,7 @@ const SinglePricingPlan = (props) => {
           </div>
 
           {props.pricingPlanData.map((item, index) => (
-            <div className="col-lg-4 col-md-7 mb-4 mb-lg-0" key={index}>
+            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0" key={index}>
               <PricePlanCard
                 packageInfo={item.packageInfo}
                 name={item.name}

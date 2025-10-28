@@ -1,0 +1,65 @@
+import React from "react";
+import { FaPhoneAlt } from "react-icons/fa";
+import { SiTicktick } from "react-icons/si";
+import { Link } from "react-router-dom";
+
+const CustomAboutCompany = (props) => {
+
+
+  const isReversed = props.reverse;
+
+  const rowClasses = isReversed
+    ? "row align-items-center flex-lg-row-reverse flex-column-reverse"
+    : "row align-items-center flex-lg-row flex-column-reverse";
+
+  const textAos = isReversed ? "fade-left" : "fade-right";
+  const imageAos = isReversed ? "fade-right" : "fade-left";
+
+  return (
+    <section className={props.CustomFrontendSec || "custom-frontend-about"}>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6">
+            <div className="frontend-about-company">
+              <h6>{props.miniHead}</h6>
+              <h2>{props.mainHeadStart} <span>{props.mainHeadBlue}</span> {props.mainHead} <span>{props.mainHeadLastBlue}</span>  {props.mainHeadLast}</h2>
+              <img src={props.frontendAboutImg} alt="About Company" />
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="frontend-about-company">
+              <img src={props.frontendAboutImgtwo} alt="img" />
+              <p>{props.aboutPara}</p>
+              <ul
+                className={props.listClass || ""}
+                data-aos={textAos}
+                data-aos-duration="1000"
+                data-aos-offset="50"
+              >
+                {props.listItems &&
+                  props.listItems.map((item, index) => (
+                    <li key={index}>
+                      <SiTicktick /> {item}
+                    </li>
+                  ))}
+              </ul>
+              <div className={props.learnmorebtn}>
+                <Link to="/about">{props.btntext}</Link>
+                {(props.phoneNumber || props.phoneLink) && (
+                  <div className="about-number">
+                    <span>
+                      <FaPhoneAlt />
+                    </span>
+                    <p>{props.phoneNumber || "+1 619-798-9688"}</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CustomAboutCompany;

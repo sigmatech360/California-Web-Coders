@@ -36,6 +36,8 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import ReactHelmet from "../../components/ReactHelmet";
 import Loader from "../../components/Loader";
+import SinglePricingPlan from "../../components/SinglePricingPlan";
+import { wordpressWebsitePricingPlansData } from "../../data";
 // import BlogSection from "../../components/blogPosts";
 const BlogSection = lazy(() => import("../../components/blogPosts"));
 
@@ -136,11 +138,22 @@ const MobileAppDevelopment = () => {
         btnText="Witness Digital Success"
       /> */}
 
+      
+
         <ContactForm
           secTitle="Chat With Our Professional Mobile App Developers!"
           secDescription="Schedule a free consultation with our team of mobile app developers California! Let’s lay out the plan for your next success story. "
           btnText="Let’s Chat"
         />
+
+        
+      {/* <SinglePricingPlan
+        secTitle="Flexible Plans For Growing Ideas"
+        secDescription="We offer straightforward pricing for apps of all sizes. Scalable, customizable, and built to match your vision."
+        // pricingPlanData={eCommerseWebsitePricingPlansData}
+        pricingPlanData={wordpressWebsitePricingPlansData}
+      /> */}
+
 
         <Creativitythrough
           title1="Apps That Your"

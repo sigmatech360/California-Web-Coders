@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NewsCard from "../NewsCard";
-import { FaPhoneSquareAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaPhoneSquareAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const PixelPerfectSec = (props) => {
@@ -11,6 +11,7 @@ const PixelPerfectSec = (props) => {
           <div className="row">
             <div className="col-md-12">
               <div className="pixel-perfect-head text-center mb-4">
+                <h6 className={props.miniheadClass}>{props.minihead}</h6>
                 <h2
                   data-aos="fade-up"
                   // data-aos-duration="500"
@@ -51,7 +52,7 @@ const PixelPerfectSec = (props) => {
                   {props.btnText || "Request A Quote"}
                 </Link>
                 <div className="d-flex align-items-center gap-2 packages-number">
-                  <FaPhoneSquareAlt className="callicon " />
+                  <FaPhoneAlt className="callicon " />
                   <a
                     href="tel:+16193352364"
                     className="para4 mb-0  align-items-center"

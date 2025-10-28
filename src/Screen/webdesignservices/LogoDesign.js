@@ -119,7 +119,7 @@ const LogoDesign = () => {
           // btnText="Sign Up With Our Logo Design Masters"
         />
 
-        <Ourservices
+        {/* <Ourservices
           serviceminihead="Our Services"
           serviceMainHead="Our"
           serviceEndName="Logo Design Services"
@@ -133,7 +133,7 @@ const LogoDesign = () => {
           serviceCountThird="03"
           thirdServiceName="Mascot Logo"
           thirdServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        />
+        /> */}
 
         <PixelPerfectSec
           secTitle="Check Out The Best Of Our"

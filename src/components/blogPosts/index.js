@@ -26,7 +26,7 @@ const defaultPosts = [
   },
 ];
 
-const BlogSection = ({ categorySlug = null, limit = 3 }) => {
+const BlogSection = ({ blogbgNew, categorySlug = null, limit = 3 }) => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -65,7 +65,7 @@ const BlogSection = ({ categorySlug = null, limit = 3 }) => {
   return (
     <section className="BlogSection    ">
       <div className="header-section">
-        <img src={blogbg} alt="Blog Header Image" />
+        <img src={blogbgNew || blogbg} alt="Blog Header Image" />
       </div>
 
       <div className="container">

@@ -18,6 +18,10 @@
 .pricing-plan-head h3 {
   margin-bottom: 8px;
   font-size: 36px;
+  color: #031243;
+}
+.pricing-plan-head h3 span {
+    color: #0504A5;
 }
 .pricing-plan-head p {
   color: #707070;
