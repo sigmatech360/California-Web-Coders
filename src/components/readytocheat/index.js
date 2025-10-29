@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import "./index.css";
 
 const ContactForm = (props) => {
@@ -11,7 +11,6 @@ const ContactForm = (props) => {
     data_message: "",
   });
   const apiUrl = process.env.REACT_APP_API_BASE_URL;
-  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,57 +18,61 @@ const ContactForm = (props) => {
   };
 
   const handleSubmit = async (e) => {
-      e.preventDefault();
-  
-      try {
-        const response = await fetch(`${apiUrl}/submit-query`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
+    e.preventDefault();
+
+    try {
+      const response = await fetch(`${apiUrl}/submit-query`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      // alert("Form Submitted Successfully");
+
+      if (result.status) {
+        toast.success(result.message);
+        setFormData({
+          username: "",
+          email: "",
+          phone: "",
+          company_name: "",
+          data_message: "",
         });
-  
-        const result = await response.json();
-        // alert("Form Submitted Successfully");
-  
-        if (result.status) {
-          toast.success(result.message);
-          setFormData({
-            username: "",
-            email: "",
-            phone: "",
-            company_name: "",
-            data_message: "",
+      } else {
+        const messages = result.message;
+        Object.keys(messages).forEach((field) => {
+          messages[field].forEach((msg) => {
+            toast.error(msg);
           });
-        } else {
-          const messages = result.message;
-          Object.keys(messages).forEach((field) => {
-            messages[field].forEach((msg) => {
-              toast.error(msg);
-            });
-          });
-        }
-      } catch (error) {
-        // alert("Submission failed. Please try again.");
-        //   toast.error("Submission failed. Please try again.");
-        toast.error(error.message);
+        });
       }
-    };
+    } catch (error) {
+      // alert("Submission failed. Please try again.");
+      //   toast.error("Submission failed. Please try again.");
+      toast.error(error.message);
+    }
+  };
 
   return (
     <section className="ContactForm text-white py-5">
       <div className="container">
         <div className="innercontainer">
-          <div className="text-center mb-4">
-            <h3 className="title">
-              {props.secTitle || `Ready to chat about your project?`}
-            </h3>
-            <p className="lead">
-              {props.secDescription ||
-                `Get in touch today to see how we can help your business achieve
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div className="text-center mb-4">
+                <h3 className="title">
+                  {props.secTitle || `Ready to chat about your project?`}
+                </h3>
+                <p className="lead">
+                  {props.secDescription ||
+                    `Get in touch today to see how we can help your business achieve
               its full potential online.`}
-            </p>
+                </p>
+              </div>
+            </div>
           </div>
           <form onSubmit={handleSubmit}>
             <div className="row justify-content-center">

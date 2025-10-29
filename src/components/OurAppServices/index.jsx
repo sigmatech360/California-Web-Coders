@@ -6,11 +6,12 @@ const OurAppServices = ({
   ourSecTitleBlue,
   ourSecTitle,
   miniPara,
+  secClass,
   OurServiceBtn,
   appServices = [],
 }) => {
   return (
-    <section className="our-app-services">
+    <section className={secClass || "our-app-services"}>
       <div className="container">
         {/* Section Heading */}
         <div className="row align-items-center">

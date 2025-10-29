@@ -3,7 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import nextlevelabout from "../../Assets/newChildPagesAssets/IOSDevelopment/nextlevel-about.webp";
 import { Link } from "react-router-dom";
 
-const IOSAboutCompany = () => {
+const IOSAboutCompany = (props) => {
   return (
     <section className="iosaboutcompany-sec">
       <div className="container">
@@ -45,18 +45,20 @@ const IOSAboutCompany = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Crafting Next-Level <span>IOS Applications</span> for Modern Users
+                Crafting Next-Level <span>IOS Applications</span> for Modern
+                Users
               </h2>
               <p
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-delay="300"
               >
-                At California Web Coders, we create smooth and scalable iOS applications built
-                with precision and creativity. As a leading Swift app development company in
-                California, we deliver fast and stable apps tailored to your goals. Our iOS UI/UX
-                design services in California focus on creating intuitive interfaces that make
-                navigation effortless and every interaction enjoyable.
+                At California Web Coders, we create smooth and scalable iOS
+                applications built with precision and creativity. As a leading
+                Swift app development company in California, we deliver fast and
+                stable apps tailored to your goals. Our iOS UI/UX design
+                services in California focus on creating intuitive interfaces
+                that make navigation effortless and every interaction enjoyable.
               </p>
             </div>
 
@@ -75,7 +77,10 @@ const IOSAboutCompany = () => {
                 <span>01</span>
                 <div className="iosabout-point-txt">
                   <h4>Exceptional Performance</h4>
-                  <p>We optimize every app for speed, responsiveness, and consistent reliability.</p>
+                  <p>
+                    We optimize every app for speed, responsiveness, and
+                    consistent reliability.
+                  </p>
                 </div>
               </div>
               <div
@@ -87,7 +92,10 @@ const IOSAboutCompany = () => {
                 <span>02</span>
                 <div className="iosabout-point-txt">
                   <h4>Custom Features</h4>
-                  <p>Tailored functionalities that adapt to your brand and audience expectations.</p>
+                  <p>
+                    Tailored functionalities that adapt to your brand and
+                    audience expectations.
+                  </p>
                 </div>
               </div>
             </div>
@@ -107,7 +115,10 @@ const IOSAboutCompany = () => {
                 <span>03</span>
                 <div className="iosabout-point-txt">
                   <h4>End-to-End Security</h4>
-                  <p>Secure coding and data protection are built into every stage of development.</p>
+                  <p>
+                    Secure coding and data protection are built into every stage
+                    of development.
+                  </p>
                 </div>
               </div>
               <div
@@ -119,7 +130,10 @@ const IOSAboutCompany = () => {
                 <span>04</span>
                 <div className="iosabout-point-txt">
                   <h4>Native Experience</h4>
-                  <p>Smooth performance using Apple’s best frameworks for flawless compatibility.</p>
+                  <p>
+                    Smooth performance using Apple’s best frameworks for
+                    flawless compatibility.
+                  </p>
                 </div>
               </div>
             </div>
@@ -132,15 +146,17 @@ const IOSAboutCompany = () => {
             >
               <Link to="/about">Learn More About Us</Link>
               <div
-                className="about-number"
+                className="about-number about-number-anchor"
                 data-aos="zoom-in"
                 data-aos-duration="1000"
                 data-aos-delay="500"
               >
-                <span>
-                  <FaPhoneAlt />
-                </span>
-                <p>+1 619-798-9688</p>
+                <a href={`tel:${props.phoneNumberLink || "+16197989688"}`}>
+                  <span>
+                    <FaPhoneAlt />
+                  </span>
+                  <p>+1 619-798-9688</p>
+                </a>
               </div>
             </div>
           </div>

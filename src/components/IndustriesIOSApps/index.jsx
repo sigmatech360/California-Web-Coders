@@ -4,6 +4,7 @@ import { HiOutlineArrowLongRight } from "react-icons/hi2";
 const IndustriesIOSApps = ({
   sectionTitle,
   highlightText,
+  sectionTitleEnd,
   description,
   features,
   image,
@@ -25,7 +26,7 @@ const IndustriesIOSApps = ({
                 data-aos-duration="800"
                 data-aos-delay="100"
               >
-                {sectionTitle} <span>{highlightText}</span>
+                {sectionTitle} <span>{highlightText}</span> {sectionTitleEnd} 
               </h4>
 
               <p
@@ -44,8 +45,6 @@ const IndustriesIOSApps = ({
                 {features?.map((item, index) => (
                   <li
                     key={index}
-                    data-aos="fade-up"
-                    data-aos-duration="900"
                     data-aos-delay={index * 150 + 300}
                   >
                     <span className="ios-service-icon">{item.icon}</span>

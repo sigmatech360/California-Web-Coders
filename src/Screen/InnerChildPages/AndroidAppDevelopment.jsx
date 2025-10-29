@@ -19,7 +19,7 @@ import {ReactComponent as Healthcare} from "../../Assets/newChildPagesAssets/web
 import {ReactComponent as Education} from "../../Assets/newChildPagesAssets/webapp/education.svg";
 import CustomAboutCompany from "../../components/CustomAboutCompany";
 import OurAppServices from "../../components/OurAppServices";
-import { FaApple, FaBus, FaHandHoldingHeart } from "react-icons/fa";
+import { FaApple, FaBus, FaHandHoldingHeart, FaLaptopCode } from "react-icons/fa";
 import { DiAndroid } from "react-icons/di";
 import { MdAppSettingsAlt, MdCastForEducation } from "react-icons/md";
 import PixelPerfectSec from "../../components/PixelPerfectSec";
@@ -153,13 +153,13 @@ const AndroidAppDevelopment = () => {
           "Our Android solutions focus on versatility and reach. We create responsive, feature-rich apps that perform across devices and provide consistent user experiences for growing brands.",
       },
       {
-        icon: <FaApple size={30} />,
+        icon: <NativeApps size={30} />,
         appServiceHead: "Mobile App Development",
         appServicePara:
           "Our hybrid mobile app development California team builds unified, multi-platform apps that merge performance, adaptability, and modern design for the best user experience.",
       },
       {
-        icon: <NativeApps size={30} />,
+        icon: <FaLaptopCode  size={30} />,
         appServiceHead: "Web App Development",
         appServicePara:
           "Our full-stack developers build web applications that integrate seamlessly with Android apps, combining back-end strength and front-end excellence for superior digital performance.",
@@ -183,11 +183,7 @@ const AndroidAppDevelopment = () => {
         rightCol="col-lg-6"
         btnClass="d-none"
         title="Innovating, Building, & Dominating the Android Applications Market"
-        description="The years of hands-on experience as a trusted WordPress web development company have
-        brought us to this point where we can combine strategy, innovation, and technical prowess
-        fo create websites that look good and perform well. Whether it is a startup or an enterprise-
-        level business, our WordPress web development services are designed so that you can scale,
-        engage, and succeed. Let our WordPress web development agency."
+        description="We design and develop powerful Android applications that connect brands with users in meaningful ways. Our Android app development company in California focuses on speed, performance, and scalability, creating apps that look modern, run smoothly, and grow effortlessly with your business. We make native, hybrid and cross-platform apps, bringing your mobile vision to life through clean code and human-centred design."
          image={androidHerobanner}
       />
 
@@ -208,6 +204,7 @@ const AndroidAppDevelopment = () => {
 
 
         <OurAppServices
+          secClass="our-android-appservice"
           minihead="Our Services"
           ourSecTitleBlue="Mobile Solutions"
           ourSecTitle="Built for Every Platform"
@@ -253,7 +250,7 @@ const AndroidAppDevelopment = () => {
        <ContactForm
         secTitle="Start Your Android App Project Today"
         secDescription="Let’s build your Android app with performance, precision, and creativity. Fill out the form below, and our experts will reach out to start your project."
-        btnText="Let’s Chat"
+        btnText="Send Message"
       />
 
       {/* <SinglePricingPlan

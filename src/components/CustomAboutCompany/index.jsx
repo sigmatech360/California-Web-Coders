@@ -170,15 +170,15 @@ const CustomAboutCompany = (props) => {
 
                 {(props.phoneNumber || props.phoneLink) && (
                   <div
-                    className="about-number"
+                    className="about-number about-number-anchor"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-offset="50"
                   >
-                    <span>
+                    <a href={`tel:${props.phoneNumberLink || "+16197989688"}`}><span>
                       <FaPhoneAlt />
                     </span>
-                    <p>{props.phoneNumber || "+1 619-798-9688"}</p>
+                    <p>{props.phoneNumber || "+1 619-798-9688"}</p></a>
                   </div>
                 )}
               </div>

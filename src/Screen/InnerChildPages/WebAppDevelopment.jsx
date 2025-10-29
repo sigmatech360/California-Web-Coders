@@ -170,7 +170,7 @@ const WebAppDevelopment = () => {
         leftCol="col-lg-6"
         btnClass="d-none"
         herobannervideo={bannervideo}
-        title="Powerful & Scalable Web Applications"
+        title="Innovative and Performative Web App Development Services in California"
       />
 
       <WebAppAbout />
@@ -179,7 +179,6 @@ const WebAppDevelopment = () => {
         minihead="Our Services"
         ourSectitleStart="Transforming Code into Intelligent"
         ourSecTitleBlue="Web Experiences"
-        ourSecTitle="Services for Every Platform"
         miniPara="At California Web Coders, our development projects are more than just code; our primary focus is always creating intelligent and connected web experiences. As one of the most trusted web app development agencies in California, we build flexible and engaging digital systems that perform effectively on every platform."
         OurServiceBtn="View all services"
         appServices={serviceList}
@@ -209,7 +208,7 @@ const WebAppDevelopment = () => {
        <ContactForm
         secTitle="Want Your Own Web App?"
         secDescription="Let’s turn your idea into a digital experience that your audience will love. Start your custom web app development journey with California Web Coders today."
-        btnText="Let’s Chat"
+        btnText="Send Message"
       />
 
       {/* <SinglePricingPlan

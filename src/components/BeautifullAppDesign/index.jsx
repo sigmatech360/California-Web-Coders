@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import FormModal from "../FormModal";
 
-const BeautifullAppDesign = () => {
+const BeautifullAppDesign = (props) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -25,9 +25,9 @@ const BeautifullAppDesign = () => {
                 <button onClick={() => setShowModal(true)} data-aos="zoom-in" data-aos-delay="500">
                   Get App Design Quote
                 </button>
-                <div className="about-number" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
-                  <span><FaPhoneAlt /></span>
-                  <p>+1 619-798-9688</p>
+                <div className="about-number about-number-anchor" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                  <a href={`tel:${props.phoneNumberLink || "+16197989688"}`}><span><FaPhoneAlt /></span>
+                  <p>+1 619-798-9688</p></a>
                 </div>
               </div>
             </div>

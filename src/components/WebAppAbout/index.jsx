@@ -3,7 +3,7 @@ import webappabout from "../../Assets/newChildPagesAssets/webapp/webappabout.web
 import { SiTicktick } from "react-icons/si";
 import { FaCheckCircle, FaPhoneAlt } from "react-icons/fa";
 
-const WebAppAbout = () => {
+const WebAppAbout = (props) => {
   return (
     <div className="web-app-about">
       <div className="container">
@@ -55,15 +55,12 @@ const WebAppAbout = () => {
                   Learn More About Us
                 </button>
                 <div
-                  className="about-number"
+                  className="about-number about-number-anchor"
                   data-aos="fade-left"
                   data-aos-delay="700"
                   data-aos-duration="900"
                 >
-                  <span>
-                    <FaPhoneAlt />
-                  </span>
-                  <p> +1 619-798-9688</p>
+                 <a href={`tel:${props.phoneNumberLink || "+16197989688"}`}><span><FaPhoneAlt /></span><p> +1 619-798-9688</p></a>
                 </div>
               </div>
             </div>

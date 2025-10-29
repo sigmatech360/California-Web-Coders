@@ -8,13 +8,13 @@ import pixleperfectimg3 from "../../Assets/newChildPagesAssets/IOSDevelopment/Ci
 import pixleperfectimg4 from "../../Assets/newChildPagesAssets/IOSDevelopment/LoneRockLandscaping.webp";
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/IOSDevelopment/EricCorwinSOLAR.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/IOSDevelopment/Betzy.webp";
-import {ReactComponent as Ecommerce} from "../../Assets/newChildPagesAssets/webapp/ecommerce.svg";
-import {ReactComponent as Transportation} from "../../Assets/newChildPagesAssets/webapp/transportation.svg";
-import {ReactComponent as Healthcare} from "../../Assets/newChildPagesAssets/webapp/healthcare.svg";
-import {ReactComponent as Education} from "../../Assets/newChildPagesAssets/webapp/education.svg";
-import iosappimg from "../../Assets/newChildPagesAssets/IOSDevelopment/industriesiosapp.png"
-import iosNexthero from "../../Assets/newChildPagesAssets/IOSDevelopment/ios-next-hero.webp"
-import {ReactComponent as NativeApps} from "../../Assets/newChildPagesAssets/webapp/nativeappsvg.svg";
+import { ReactComponent as Ecommerce } from "../../Assets/newChildPagesAssets/webapp/ecommerce.svg";
+import { ReactComponent as Transportation } from "../../Assets/newChildPagesAssets/webapp/transportation.svg";
+import { ReactComponent as Healthcare } from "../../Assets/newChildPagesAssets/webapp/healthcare.svg";
+import { ReactComponent as Education } from "../../Assets/newChildPagesAssets/webapp/education.svg";
+import iosappimg from "../../Assets/newChildPagesAssets/IOSDevelopment/industriesiosapp.png";
+import iosNexthero from "../../Assets/newChildPagesAssets/IOSDevelopment/ios-next-hero.webp";
+import { ReactComponent as NativeApps } from "../../Assets/newChildPagesAssets/webapp/nativeappsvg.svg";
 import IOSAboutCompany from "../../components/IOSAboutCompany";
 import Growyourbusiness from "../../components/growyourbusiness";
 import OurAppServices from "../../components/OurAppServices";
@@ -33,17 +33,18 @@ import PixelPerfectSec from "../../components/PixelPerfectSec";
 import BeautifullAppDesign from "../../components/BeautifullAppDesign";
 import { SlBasket } from "react-icons/sl";
 
-
 export const faqHomeData = [
   {
     id: 1,
-    question: "1. What is included in your iOS app development services California?",
+    question:
+      "1. What is included in your iOS app development services California?",
     answer:
       "Our iOS development includes design, development, testing, deployment, and post-launch support to deliver high-performing, reliable iOS applications.",
   },
   {
     id: 2,
-    question: "2. Why should we choose California Web Coders for iOS mobile app development California?",
+    question:
+      "2. Why should we choose California Web Coders for iOS mobile app development California?",
     answer:
       "We build elegant, user-focused iOS apps backed by strong performance, security, and long-term scalability.",
   },
@@ -99,8 +100,7 @@ export const faqHomeData = [
 ];
 
 const IOSAppDevelopment = () => {
-
-    const webDesignPortfolioData = [
+  const webDesignPortfolioData = [
     {
       id: 1,
       image: pixleperfectimg1,
@@ -126,7 +126,6 @@ const IOSAppDevelopment = () => {
       image: pixleperfectimg6,
     },
   ];
-
 
   const serviceList = [
     {
@@ -169,7 +168,6 @@ const IOSAppDevelopment = () => {
     setIsOpen(true);
   };
 
-
   const iosFeatures = [
     { icon: <Ecommerce />, text: "Performance Tracking" },
     { icon: <Transportation />, text: "Interactive UI" },
@@ -177,8 +175,6 @@ const IOSAppDevelopment = () => {
     { icon: <Education />, text: "Data Analytics and User Insights" },
   ];
 
-
- 
   return (
     <Layout>
       <ServiceBanner
@@ -210,9 +206,10 @@ const IOSAppDevelopment = () => {
         appServices={serviceList}
       />
 
-       <IndustriesIOSApps
+      <IndustriesIOSApps
         sectionTitle="Our"
         highlightText="IOS Applications"
+        sectionTitleEnd="Include"
         description="We build iOS mobile app development in California that combines innovation with usability. Every app we design delivers exceptional speed, functionality, and aesthetics for a seamless mobile experience."
         features={iosFeatures}
         image={iosappimg}
@@ -228,13 +225,13 @@ const IOSAppDevelopment = () => {
         minihead="Portfolio"
         secTitleBlue="IOS Apps"
         secTitle2="that Redefined Experiences"
-        secDescription="We’ve built iOS apps that define user experience.
-See how our designs meet real-world business goals."
+        secDescription="We’ve built iOS apps that define user experience. 
+        See how our designs meet real-world business goals."
         projectsData={webDesignPortfolioData}
         onImageClick={handleImageClick}
       />
 
-      <BeautifullAppDesign/>
+      <BeautifullAppDesign />
 
       {/* <SinglePricingPlan
         secTitle="Smart Packages for Every Business"

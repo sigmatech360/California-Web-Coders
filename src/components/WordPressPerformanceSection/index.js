@@ -130,11 +130,13 @@ const WordPressPerformanceSection = (props) => {
                     <div className={props.learnmorebtn}>
                       <Link to={props.aboutbtnlink || "/about"}>{props.btntext}</Link>
                       {(props.phoneNumber || props.phoneLink) && (
-                        <div className="about-number">
+                        <div className="about-number about-number-anchor">
+                          <a href={`tel:${props.phoneNumberLink || "+16197989688"}`}>
                           <span>
                             <FaPhoneAlt />
                           </span>
                           <p>{props.phoneNumber || "+1 619-798-9688"}</p>
+                          </a>
                         </div>
                       )}
                     </div>

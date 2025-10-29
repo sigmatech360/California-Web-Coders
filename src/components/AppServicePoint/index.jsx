@@ -120,7 +120,7 @@ const AppServicePoint = ({
                   loop
                   playsInline
                   className="w-100 webchoosevideo h-auto"
-                  data-aos="fade-up"
+                  data-aos="fade-left"
                   data-aos-delay="400"
                   data-aos-duration="1000"
                 ></video>
