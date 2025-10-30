@@ -185,21 +185,21 @@ const PythonDevelopment = () => {
     },
     {
       Icon: <Roundmail />,
-      miniHead: "Email Us",
-      miniPara: "support@yourdomain.tld </br>  hello@yourdomain.tld",
+      miniHead: "Share Your Project",
+      miniPara: "supportcaliforniawebcoderscom",
       sizeChange: "col-lg-3"
     },
     {
       Icon: <Roundphone />,
-      miniHead: "Call us",
-      miniPara: "+1 619-798-9688 </br>  +1 619-798-9688",
+      miniHead: "Get in Touch",
+      miniPara: "+1(619)335-2364",
       sizeChange: "col-lg-3"
     },
     {
       Icon: <Roundmeter />,
-      miniHead: "24/7 Premium Support",
+      miniHead: "Support You can Count on",
       miniPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+        "Reliable, responsive, and always ready to sort out any problem causing delay.",
       sizeChange: "col-lg-3"
     },
   ];
@@ -267,6 +267,14 @@ const PythonDevelopment = () => {
         secTitle1="The Smarter Choice for Python Development"
         description="As a leading Python development company in California, we have powered numerous website and application development projects. Over 300 clients consider us a trusted development company they can count on for all things Python."
         listClass="d-none"
+        landingList="landing-design-points python-development-points"
+        landingListItems={[
+          "Intuitive Frontend",
+          "High-Performing Backend",
+          "Process Automations",
+          "AI Integration",
+          "Secure & Scalable",
+        ]}
         TouchBtn="d-none"
         serviceImg="d-none"
         btntext="View All Services"

@@ -25,49 +25,100 @@ import ContactForm from "../../components/readytocheat";
 import SinglePricingPlan from "../../components/SinglePricingPlan";
 import FrequentQuestions from "../../components/FrequentQuestions";
 import { wordpressWebsitePricingPlansData } from "../../data";
-import { faqHomeData } from "../Designing";
 import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
 import BlockchainChoose from "../../components/BlockchainChoose";
+
+export const faqHomeData = [
+  {
+    id: 1,
+    question: "1. What is blockchain technology in simple terms?",
+    answer:
+      "It’s a decentralized system that records data securely and transparently across multiple nodes.",
+  },
+  {
+    id: 2,
+    question: "2. Why should my business adopt blockchain?",
+    answer:
+      "Blockchain improves security, transparency, and efficiency by removing intermediaries and central points of failure.",
+  },
+  {
+    id: 3,
+    question: "3. Do you offer blockchain development services in California?",
+    answer:
+      "Yes, we’re a trusted blockchain development company based in California, serving clients worldwide.",
+  },
+  {
+    id: 4,
+    question: "4. What industries can benefit from blockchain?",
+    answer:
+      "Finance, healthcare, logistics, supply chain, real estate, and government can all use blockchain effectively.",
+  },
+  {
+    id: 5,
+    question: "5. How secure are your blockchain solutions?",
+    answer:
+      "Nothing is more secure than blockchain technology, as each transaction is encrypted and verified across a distributed network.",
+  },
+  {
+    id: 6,
+    question: "6. Can you integrate blockchain with existing systems?",
+    answer:
+      "Absolutely. We offer seamless blockchain integration to modernize your existing digital infrastructure.",
+  },
+  {
+    id: 7,
+    question: "7. Do you develop private or public blockchain networks?",
+    answer:
+      "Depending on your use case, we build customized public or private networks. ",
+  },
+  {
+    id: 8,
+    question: "8. How much does blockchain development cost?",
+    answer:
+      "Pricing depends on complexity and scope, but we always provide transparent, scalable pricing models.",
+  },
+  {
+    id: 9,
+    question: "9. What ongoing support do you offer?",
+    answer:
+      "We provide continuous maintenance, updates, and scaling assistance for all blockchain solutions post-deployment.",
+  },
+  {
+    id: 10,
+    question:
+      "10. What is blockchain development, and how does it work?",
+    answer:
+      "Blockchain development involves creating secure, decentralized systems that record and verify data across a network, ensuring transparency, trust, and tamper-proof transactions.",
+  },
+];
 
 const BlockChainDevelopment = () => {
   const webDesignPortfolioData = [
     {
       id: 1,
       image: pixleperfectimg1,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 2,
       image: pixleperfectimg2,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 3,
       image: pixleperfectimg3,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 4,
       image: pixleperfectimg4,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 5,
       image: pixleperfectimg5,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 6,
       image: pixleperfectimg6,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
   ];
 
@@ -77,23 +128,23 @@ const BlockChainDevelopment = () => {
       icon: <BlockchainIcon />,
       serviceCardHead: "NFT Development",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "As a leading blockchain development company in California, we help brands and creators mint, secure, and establish digital ownership of their NFTs with complete transparency and trust.",
       serviceCardImg: serviceCardOne,
     },
     {
       id: 2,
       icon: <WwwIcon />,
-      serviceCardHead: "Defi Solutions",
+      serviceCardHead: "Blockchain Integration",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Data protection is the need of the hour. We offer blockchain software development in California to integrate blockchain technology into your existing systems, ensuring smooth data flow, enhanced transparency, and secure transactions.",
       serviceCardImg: serviceCardTwo,
     },
     {
       id: 3,
       icon: <BlockchainService />,
-      serviceCardHead: "Public Blockchain",
+      serviceCardHead: "Public Blockchain Development",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Our blockchain development services in California help businesses build public blockchain systems that connect users directly, remove unnecessary layers, and ensure your data stays secure and verifiable at every step.",
       serviceCardImg: serviceCardThree,
     },
   ];
@@ -117,42 +168,43 @@ const BlockChainDevelopment = () => {
         leftCol="col-lg-6"
         bgImage={blockchainbanner}
         btnClass="theme-light mt-3"
-        title="Secure & Scalable Blockchain Development Services"
-        description="California Web Coders builds decentralized, transparent, and tamper-proof blockchain solutions that power the future of digital business."
-        btnText="Get A Free React Quote"
+        title="Create a Safe Digital Future with Blockchain Development"
+        description="Build decentralized solutions, powered by blockchain development in California for better security, transparency, and business automation."
+        btnText="Protect Your Data"
       />
 
       <CustomAboutCompany
         miniHead="About Company"
-        mainHeadStart="Your Trusted Partner in"
+        mainHeadStart="Drive Digital Innovation with"
         mainHeadBlue="Blockchain"
         mainHeadLast="Solutions"
         frontendAboutImg={blockchainAbout1}
         frontendAboutImgtwo={blockchainAbout2}
-        aboutPara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        aboutPara="As an experienced blockchain development agency in California, we help businesses increase efficiency, agility, and security through custom blockchain development services. By understanding the need of the hour, where data protection has become a top priority, we create solutions that help businesses transfer and save their data in a decentralized way, making it way more secure and accessible only to authorized users."
         listItems={["Professional IT Solutions ", "Experience Team Members"]}
         listClass="aboutCompanylist"
-        btntext="Learn More About Us"
+        btntext="Talk to Us"
         learnmorebtn="aboutus-call"
         phoneNumber="+1 619-798-9688"
       />
 
       <OurCustomService
         miniHead="Our Services"
-        secMainTitle="Our"
+        secMainTitle="Custom"
         secTitleBlue="Blockchain Development"
-        secLastTitle="Services"
-        customServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
-        customServiceBtn="View All Services"
+        secLastTitle="Solutions"
+        customServicePara="We offer future-proof custom blockchain development services in California, including private, public, and hybrid blockchain solutions, smart contracts, dApps, tokenization, and more. Our team of blockchain experts designs and builds decentralized networks and applications using platforms like Ethereum, Hyperledger, and Corda, ensuring scalability, transparency, and secure digital innovation."
+        customServiceBtn="Start Your Project"
         serviceCards={serviceCards}
       />
 
       <PixelPerfectSec
         minihead="Portfolio"
-        secTitle="Recent"
+        secTitle="Latest"
         secTitleBlue="Blockchain"
         secTitle2="Projects"
-        secDescription="See how we’ve helped clients build cutting-edge, high-performance React applications."
+        secDescription="See our recent projects that have empowered businesses by helping them secure this data and business transactions."
+        btnText="Explore Services"
         projectsData={webDesignPortfolioData}
         onImageClick={handleImageClick}
       />
@@ -166,36 +218,34 @@ const BlockChainDevelopment = () => {
         reverse
         minihead="About Company"
         miniheadclass="shorttop-head"
-        secTitle1="Ready to Build Your"
-        secTitle2="Blockchain Solution?"
-        description="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
-        descriptiontwo="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
+        secTitle1="Make Data Protection Built-In with"
+        secTitle2="Blockchain"
+        description="We make blockchain the first and most secure line of defense for your business. Our blockchain solutions in California turn every transaction, record, and interaction into a self-verifying system of truth. No centralized weak points. No silent breaches. Just a network where data protects itself, transparent, traceable, and tamper-proof."
         image={blockchainbuildimg}
         listClass="d-none"
         TouchBtn="d-none"
-        btntext="Let's Talk With Us"
+        btntext="Talk to Us"
         learnmorebtn="aboutus-call"
         phoneNumber="+1 619-798-9688"
       />
 
 
       <ContactForm
-        secTitle="Ready to chat about your project?"
-        secDescription="Get in touch today to see how we can help your business achieve its full potential online."
+        secTitle="Want to Go Fast and Secure? Talk to Us!"
+        secDescription="Share your idea, and we’ll turn it into a blockchain-powered product that no one can break into!"
         btnText="Let’s Chat"
       />
 
       <SinglePricingPlan
-        secTitle="Flexible"
-        secTitleBlue="Python Development"
-        secTitleEnd="Packages"
+        secTitle="Blockchain Development Pricing"
+        secTitleEnd="for Businesses"
         secDescription="No more budget issues, get your hands on the most Affordable Website Design Services online."
         // pricingPlanData={eCommerseWebsitePricingPlansData}
         pricingPlanData={wordpressWebsitePricingPlansData}
       />
 
       <FrequentQuestions
-        secTitle="You Will Find Our Client's Frequent Questions"
+        secTitle="Answers to all Your Questions"
         FrequentQuestions="homeFrequentQuestions"
         faqData={faqHomeData}
       />

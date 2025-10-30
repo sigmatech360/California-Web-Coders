@@ -146,8 +146,8 @@ export default function UserRouter() {
           <Route path="/app-development" element={<FullStackAppDevelopment />} />
           <Route path="/webapp-development" element={<WebAppDevelopment />} />
           <Route path="/mobile-app-development" element={<MobileAppDevelopment />}/>
-          <Route path="/ios-development" element={<IOSAppDevelopment />} />
-          <Route path="/android-development" element={<AndroidAppDevelopment />} />
+          <Route path="/ios-app-development" element={<IOSAppDevelopment />} />
+          <Route path="/android-app-development" element={<AndroidAppDevelopment />} />
 
 
             {/* Branding & Inner Pages */}

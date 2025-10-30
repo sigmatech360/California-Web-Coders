@@ -14,6 +14,8 @@ const ServiceBanner = (props) => {
         height="1080"
         data-aos="fade-in"
         data-aos-duration="1000"
+        decoding="async"
+        loading="eager"
       />
 
       <div className="container">
@@ -94,6 +96,9 @@ const ServiceBanner = (props) => {
                   data-aos="zoom-in"
                   data-aos-duration="1000"
                   data-aos-delay="700"
+                  decoding="async"
+                  fetchpriority="high"
+                  loading="eager"
                 />
               )}
             </div>

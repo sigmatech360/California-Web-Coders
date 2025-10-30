@@ -1180,6 +1180,8 @@ section.our-app-services {
   transition: all 0.6s ease;
 }
 
+
+
 .our-appservice-box span {
   padding: 15px;
   background: #0504a5;
@@ -1208,6 +1210,29 @@ section.our-app-services {
 .our-appservice-box:hover h5,
 .our-appservice-box:hover p {
   color: #fff;
+}
+
+.ios-app-services {
+    padding: 70px 0px;
+    background: transparent linear-gradient(180deg, #f5f5f5 0%, #d4d4ff 100%) 0% 0% no-repeat padding-box;
+}
+
+.ios-app-services .row:nth-of-type(2) .col-lg-4:nth-child(2) .our-appservice-box span {
+    background: transparent;
+    padding: 0px;
+}
+
+.ios-app-services .row:nth-of-type(2) .col-lg-4:nth-child(2) .our-appservice-box span svg {
+    width: 60px;
+}
+
+.ios-app-services .row:nth-of-type(2) .col-lg-4:nth-child(3) .our-appservice-box span {
+    background: transparent;
+    padding: 0px;
+}
+
+.ios-app-services .row:nth-of-type(2) .col-lg-4:nth-child(2) .our-appservice-box span svg {
+    width: 60px;
 }
 
 
@@ -1577,10 +1602,17 @@ section.iundustries-ios-apps {
   color: #0504a5;
 }
 
+.ios-about-txt h1 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 1.1;
+    margin-bottom: 0px;
+    color: #031243;
+}
+
 .ios-about-txt h2 {
   font-weight: 500;
   font-size: 45px;
-  max-width: 560px;
   line-height: 1.1;
   margin-bottom: 20px;
   color: #031243;
@@ -1698,7 +1730,6 @@ section.iundustries-ios-apps {
 .ios-app-img img {
   position: relative;
   z-index: 99;
-  height: 580px;
   object-fit: contain;
 }
 
@@ -2854,7 +2885,7 @@ section.experess-everything-sec {
 .python-development-bg {
   background: url(./Assets/newChildPagesAssets/pythondevelopment/python-service-bg.webp) no-repeat top center;
   background-size: cover;
-  padding: 190px 0px;
+  padding: 130px 0px;
   width: 100%;
   height: 100%;
 }
@@ -2874,6 +2905,7 @@ section.python-development-bg .abouttxt-data h6 {
     background: #fff;
     border: 1px solid #fff;
     color: #0504a5;
+    font-weight: 600;
 }
 
 .python-development-bg .aboutus-call a:hover {
@@ -2936,6 +2968,15 @@ section.python-maintaince-sec {
     color: #fff;
 }
 
+.python-development-points li {
+    color: #fff;
+}
+
+.python-development-points li svg {
+    color: #fff;
+}
+
+
 /**********  Python Development Page CSS End **********/
 
 
@@ -2945,7 +2986,7 @@ section.python-maintaince-sec {
 .future-web-sec {
   background: url(./Assets/newChildPagesAssets/web3development/future-web-bg.webp) no-repeat top center;
   background-size: cover;
-  padding: 190px 0px;
+  padding: 130px 0px;
   width: 100%;
   height: 100%;
 }
@@ -3194,15 +3235,15 @@ section.blockchain-choose-us {
 
 
 .mern-build-img img {
-    width: 970px;
+    width: 930px;
 }
 
 .mernstack-build-sec .abouttxt-data p {
-    padding: 0px 160px 0px 0px;
+    padding: 0px 150px 0px 0px;
 }
 
 .mernstack-build-sec .react-build-bg {
-    padding: 122px 0px 137px 0px;
+    padding: 23px 0px 52px 0px;
 }
 
 .service-all-points {

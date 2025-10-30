@@ -18,13 +18,11 @@ const Web3herobanner = () => {
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="web3-hero-banner-txt">
-              <h2>Next-Gen Web 3.0 Development Services</h2>
+              <h2>Web 3.0: Internet That Thinks for Itself and You</h2>
               <p>
-                We design and develop Web3.0 solutions that leverage blockchain,
-                decentralized Applications (dApps), and smart contracts to
-                empower the future of the internet.
+                Bringing together artificial intelligence, blockchain, and decentralization to enhance communication and create smarter, more secure digital experiences.
               </p>
-              <Link to="">Get A Free React Quote</Link>
+              <Link to="">Let’s Automate Web</Link>
             </div>
           </div>
         </div>

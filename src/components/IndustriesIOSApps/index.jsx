@@ -71,7 +71,7 @@ const IndustriesIOSApps = ({
               data-aos-duration="1000"
               data-aos-delay="200"
             >
-              <img src={image} alt="App showcase" />
+              <img src={image} alt="App showcase" width="526" height="580" />
             </div>
           </div>
         </div>

@@ -5,7 +5,11 @@ import { Link } from "react-router-dom";
 
 const IOSAboutCompany = (props) => {
   return (
-    <section className="iosaboutcompany-sec">
+    <section
+      className="iosaboutcompany-sec"
+      id="ios-about-company"
+      aria-label="About iOS App Development Company in California"
+    >
       <div className="container">
         <div className="row align-items-center">
           {/* Left Image Section */}
@@ -15,14 +19,25 @@ const IOSAboutCompany = (props) => {
             data-aos-duration="1000"
             data-aos-offset="50"
           >
-            <div
+            <figure
               className="ios-about-bannerimg"
               data-aos="zoom-in"
               data-aos-duration="1000"
               data-aos-delay="200"
             >
-              <img src={nextlevelabout} alt="img" />
-            </div>
+              <img
+                src={nextlevelabout}
+                alt="Expert iOS app development company in California"
+                loading="lazy"
+                decoding="async"
+                width="600"
+                height="500"
+              />
+              <figcaption className="visually-hidden">
+                Professional iOS app development team creating scalable iPhone
+                and iPad apps in California.
+              </figcaption>
+            </figure>
           </div>
 
           {/* Right Text Section */}
@@ -32,20 +47,20 @@ const IOSAboutCompany = (props) => {
             data-aos-duration="1000"
             data-aos-offset="50"
           >
-            <div className="ios-about-txt">
+            <article className="ios-about-txt">
               <h6
                 data-aos="fade-left"
                 data-aos-duration="800"
                 data-aos-delay="100"
               >
-                About IOS Development
+                About iOS App Development
               </h6>
               <h2
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                Crafting Next-Level <span>IOS Applications</span> for Modern
+                 Crafting  Next-Level <span>iOS Applications</span> for Modern
                 Users
               </h2>
               <p
@@ -53,14 +68,16 @@ const IOSAboutCompany = (props) => {
                 data-aos-duration="1000"
                 data-aos-delay="300"
               >
-                At California Web Coders, we create smooth and scalable iOS
-                applications built with precision and creativity. As a leading
-                Swift app development company in California, we deliver fast and
-                stable apps tailored to your goals. Our iOS UI/UX design
-                services in California focus on creating intuitive interfaces
-                that make navigation effortless and every interaction enjoyable.
+                At <strong>California Web Coders</strong>, we build smooth,
+                scalable, and high-performance <strong>iOS applications</strong>{" "}
+                tailored for modern businesses. As a leading{" "}
+                <strong>Swift app development company in California</strong>, we
+                focus on speed, reliability, and elegant design. Our dedicated{" "}
+                <strong>iOS UI/UX design services</strong> ensure seamless
+                navigation, delightful experiences, and maximum engagement across
+                all Apple devices.
               </p>
-            </div>
+            </article>
 
             <div
               className="ios-about-pointflex"
@@ -76,10 +93,11 @@ const IOSAboutCompany = (props) => {
               >
                 <span>01</span>
                 <div className="iosabout-point-txt">
-                  <h4>Exceptional Performance</h4>
+                  <h3>Exceptional Performance</h3>
                   <p>
-                    We optimize every app for speed, responsiveness, and
-                    consistent reliability.
+                    Every app is optimized for <strong>speed</strong>,
+                    responsiveness, and stable performance across iPhone and
+                    iPad devices.
                   </p>
                 </div>
               </div>
@@ -91,10 +109,10 @@ const IOSAboutCompany = (props) => {
               >
                 <span>02</span>
                 <div className="iosabout-point-txt">
-                  <h4>Custom Features</h4>
+                  <h3>Custom Features</h3>
                   <p>
-                    Tailored functionalities that adapt to your brand and
-                    audience expectations.
+                    We build <strong>custom iOS app features</strong> designed to
+                    align with your brand and audience needs.
                   </p>
                 </div>
               </div>
@@ -114,10 +132,11 @@ const IOSAboutCompany = (props) => {
               >
                 <span>03</span>
                 <div className="iosabout-point-txt">
-                  <h4>End-to-End Security</h4>
+                  <h3>End-to-End Security</h3>
                   <p>
-                    Secure coding and data protection are built into every stage
-                    of development.
+                    Built-in <strong>data encryption</strong> and secure coding
+                    practices ensure complete user protection throughout the
+                    development lifecycle.
                   </p>
                 </div>
               </div>
@@ -129,10 +148,11 @@ const IOSAboutCompany = (props) => {
               >
                 <span>04</span>
                 <div className="iosabout-point-txt">
-                  <h4>Native Experience</h4>
+                  <h3>Native Experience</h3>
                   <p>
-                    Smooth performance using Apple’s best frameworks for
-                    flawless compatibility.
+                    We leverage Apple’s latest frameworks to ensure{" "}
+                    <strong>native performance</strong> and flawless compatibility
+                    across iOS versions.
                   </p>
                 </div>
               </div>
@@ -144,16 +164,25 @@ const IOSAboutCompany = (props) => {
               data-aos-duration="1000"
               data-aos-delay="400"
             >
-              <Link to="/about">Learn More About Us</Link>
+              <Link
+                to="/about"
+                aria-label="Learn more about California Web Coders iOS development team"
+              >
+                Learn More About Us
+              </Link>
+
               <div
                 className="about-number about-number-anchor"
                 data-aos="zoom-in"
                 data-aos-duration="1000"
                 data-aos-delay="500"
               >
-                <a href={`tel:${props.phoneNumberLink || "+16197989688"}`}>
+                <a
+                  href={`tel:${props.phoneNumberLink || "+16197989688"}`}
+                  aria-label="Call California Web Coders iOS App Development Company"
+                >
                   <span>
-                    <FaPhoneAlt />
+                    <FaPhoneAlt aria-hidden="true" />
                   </span>
                   <p>+1 619-798-9688</p>
                 </a>

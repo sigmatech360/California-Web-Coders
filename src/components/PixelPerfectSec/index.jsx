@@ -11,7 +11,7 @@ const PixelPerfectSec = (props) => {
           <div className="row">
             <div className="col-md-12">
               <div className="pixel-perfect-head text-center mb-4">
-                <h6 className={props.miniheadClass}>{props.minihead}</h6>
+                <h6  data-aos="fade-right" data-aos-duration="800" data-aos-delay="100" className={props.miniheadClass}>{props.minihead}</h6>
                 <h2
                   data-aos="fade-up"
                   // data-aos-duration="500"

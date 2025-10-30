@@ -12,14 +12,19 @@ import pixleperfectimg4 from "../../Assets/newChildPagesAssets/androiddevelopmen
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/androiddevelopment/pixel-5.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/androiddevelopment/pixel-6.webp";
 import androidiosimg from "../../Assets/newChildPagesAssets/androiddevelopment/android-ios-img.webp";
-import {ReactComponent as NativeApps} from "../../Assets/newChildPagesAssets/webapp/nativeappsvg.svg";
-import {ReactComponent as Ecommerce} from "../../Assets/newChildPagesAssets/webapp/ecommerce.svg";
-import {ReactComponent as Transportation} from "../../Assets/newChildPagesAssets/webapp/transportation.svg";
-import {ReactComponent as Healthcare} from "../../Assets/newChildPagesAssets/webapp/healthcare.svg";
-import {ReactComponent as Education} from "../../Assets/newChildPagesAssets/webapp/education.svg";
+import { ReactComponent as NativeApps } from "../../Assets/newChildPagesAssets/webapp/nativeappsvg.svg";
+import { ReactComponent as Ecommerce } from "../../Assets/newChildPagesAssets/webapp/ecommerce.svg";
+import { ReactComponent as Transportation } from "../../Assets/newChildPagesAssets/webapp/transportation.svg";
+import { ReactComponent as Healthcare } from "../../Assets/newChildPagesAssets/webapp/healthcare.svg";
+import { ReactComponent as Education } from "../../Assets/newChildPagesAssets/webapp/education.svg";
 import CustomAboutCompany from "../../components/CustomAboutCompany";
 import OurAppServices from "../../components/OurAppServices";
-import { FaApple, FaBus, FaHandHoldingHeart, FaLaptopCode } from "react-icons/fa";
+import {
+  FaApple,
+  FaBus,
+  FaHandHoldingHeart,
+  FaLaptopCode,
+} from "react-icons/fa";
 import { DiAndroid } from "react-icons/di";
 import { MdAppSettingsAlt, MdCastForEducation } from "react-icons/md";
 import PixelPerfectSec from "../../components/PixelPerfectSec";
@@ -33,8 +38,7 @@ import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
 import { SlBasket } from "react-icons/sl";
-
-
+import ReactHelmet from "../../components/ReactHelmet";
 
 export const faqHomeData = [
   {
@@ -45,7 +49,8 @@ export const faqHomeData = [
   },
   {
     id: 2,
-    question: "2. Why choose California Web Coders for Android app development?",
+    question:
+      "2. Why choose California Web Coders for Android app development?",
     answer:
       "As a trusted Android app development company California, we deliver apps that combine creativity, functionality, and measurable performance.",
   },
@@ -100,10 +105,7 @@ export const faqHomeData = [
   },
 ];
 
-
-
 const AndroidAppDevelopment = () => {
-
   const webDesignPortfolioData = [
     {
       id: 1,
@@ -116,7 +118,6 @@ const AndroidAppDevelopment = () => {
     {
       id: 3,
       image: pixleperfectimg3,
-   
     },
     {
       id: 4,
@@ -145,63 +146,73 @@ const AndroidAppDevelopment = () => {
     setIsOpen(true);
   };
 
-    const serviceList = [
-      {
-        icon: <DiAndroid size={30} />,
-        appServiceHead: "Android Development",
-        appServicePara:
-          "Our Android solutions focus on versatility and reach. We create responsive, feature-rich apps that perform across devices and provide consistent user experiences for growing brands.",
-      },
-      {
-        icon: <NativeApps size={30} />,
-        appServiceHead: "Mobile App Development",
-        appServicePara:
-          "Our hybrid mobile app development California team builds unified, multi-platform apps that merge performance, adaptability, and modern design for the best user experience.",
-      },
-      {
-        icon: <FaLaptopCode  size={30} />,
-        appServiceHead: "Web App Development",
-        appServicePara:
-          "Our full-stack developers build web applications that integrate seamlessly with Android apps, combining back-end strength and front-end excellence for superior digital performance.",
-      },
-    ];
+  const serviceList = [
+    {
+      icon: <DiAndroid size={30} />,
+      appServiceHead: "Android Development",
+      appServicePara:
+        "Our Android solutions focus on versatility and reach. We create responsive, feature-rich apps that perform across devices and provide consistent user experiences for growing brands.",
+    },
+    {
+      icon: <NativeApps size={30} />,
+      appServiceHead: "Mobile App Development",
+      appServicePara:
+        "Our hybrid mobile app development California team builds unified, multi-platform apps that merge performance, adaptability, and modern design for the best user experience.",
+    },
+    {
+      icon: <FaLaptopCode size={30} />,
+      appServiceHead: "Web App Development",
+      appServicePara:
+        "Our full-stack developers build web applications that integrate seamlessly with Android apps, combining back-end strength and front-end excellence for superior digital performance.",
+    },
+  ];
 
-
-    const iosFeatures = [
-        { icon: <Ecommerce />, text: "Custom UI & Material Design" },
-        { icon: <Transportation />, text: "Fast, Stable App Architecture" },
-        { icon: <Healthcare />, text: "Integrated Push Notifications" },
-        { icon: <Education />, text: "Data-Driven Insights & Analytics" },
-      ];
+  const iosFeatures = [
+    { icon: <Ecommerce />, text: "Custom UI & Material Design" },
+    { icon: <Transportation />, text: "Fast, Stable App Architecture" },
+    { icon: <Healthcare />, text: "Integrated Push Notifications" },
+    { icon: <Education />, text: "Data-Driven Insights & Analytics" },
+  ];
 
   return (
-    <Layout>
-      <ServiceBanner
-        secClass="android-main-banner"
-        leftCol="col-lg-6"
-        bgImage={androidbanner}
-        rightCol="col-lg-6"
-        btnClass="d-none"
-        title="Innovating, Building, & Dominating the Android Applications Market"
-        description="We design and develop powerful Android applications that connect brands with users in meaningful ways. Our Android app development company in California focuses on speed, performance, and scalability, creating apps that look modern, run smoothly, and grow effortlessly with your business. We make native, hybrid and cross-platform apps, bringing your mobile vision to life through clean code and human-centred design."
-         image={androidHerobanner}
+    <>
+      <ReactHelmet
+        title="Android App Development California | California Web Coders"
+        description="California Web Coders builds high-performing Android apps in California — delivering scalable, user-friendly, and innovative mobile solutions for startups and enterprises."
+        keywords="Android app development California, custom Android apps, mobile app development California, Kotlin app development, Java Android development, hybrid app development, Android UI/UX design, Play Store app publishing"
+        baseUrl="https://californiawebcoders.com/android-app-development"
       />
 
-      <CustomAboutCompany
-        miniHead="About Company"
-        mainHeadStart="Smart, Intuitive"
-        mainHeadBlue="Android Applications"
-        mainHeadLast="that Deliver Results"
-        frontendAboutImg={AboutFrontendOne}
-        frontendAboutImgtwo={AboutFrontendTwo}
-        aboutPara="We specialize in building seamless Android applications with advanced features and superior usability. Our Android app development company California focuses on speed, stability, and design excellence, ensuring every app we build stands out in the Play Store and delivers meaningful user engagement."
-        listItems={["Native Android Development ", "Cross-Platform Flexibility"]}
-        listClass="aboutCompanylist"
-        btntext="Learn More About Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
 
+      <Layout>
+        <ServiceBanner
+          secClass="android-main-banner"
+          leftCol="col-lg-6"
+          bgImage={androidbanner}
+          rightCol="col-lg-6"
+          btnClass="d-none"
+          title="Innovating, Building, & Dominating the Android Applications Market"
+          description="We design and develop powerful Android applications that connect brands with users in meaningful ways. Our Android app development company in California focuses on speed, performance, and scalability, creating apps that look modern, run smoothly, and grow effortlessly with your business. We make native, hybrid and cross-platform apps, bringing your mobile vision to life through clean code and human-centred design."
+          image={androidHerobanner}
+        />
+
+        <CustomAboutCompany
+          miniHead="About Company"
+          mainHeadStart="Smart, Intuitive"
+          mainHeadBlue="Android Applications"
+          mainHeadLast="that Deliver Results"
+          frontendAboutImg={AboutFrontendOne}
+          frontendAboutImgtwo={AboutFrontendTwo}
+          aboutPara="We specialize in building seamless Android applications with advanced features and superior usability. Our Android app development company California focuses on speed, stability, and design excellence, ensuring every app we build stands out in the Play Store and delivers meaningful user engagement."
+          listItems={[
+            "Native Android Development ",
+            "Cross-Platform Flexibility",
+          ]}
+          listClass="aboutCompanylist"
+          btntext="Learn More About Us"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 619-798-9688"
+        />
 
         <OurAppServices
           secClass="our-android-appservice"
@@ -211,8 +222,7 @@ const AndroidAppDevelopment = () => {
           miniPara="At California Web Coders, we bring precision, creativity, and innovation to every project. Our Android application development services in California are designed to help businesses build apps that perform flawlessly, look exceptional, and deliver real results."
           OurServiceBtn="View All Services"
           appServices={serviceList}
-      />
-
+        />
 
         <PixelPerfectSec
           minihead="Portfolio"
@@ -222,64 +232,62 @@ const AndroidAppDevelopment = () => {
           secDescription="We build Android apps that inspire, engage, and perform at their best. Check out how our work drives life-changing results."
           projectsData={webDesignPortfolioData}
           onImageClick={handleImageClick}
-      />
+        />
 
+        <WordPressPerformanceSection
+          afterConainerClass="android-build-bg"
+          secTitle1="Smart Interfaces with Effortless Experiences!"
+          description="Our Android applications are designed with an intuitive, user-friendly interface that enhances engagement and accessibility. Every screen, tap, and interaction is built for flow, ensuring speed, clarity, and satisfaction across devices. By combining stunning UI design with powerful backend logic, we deliver Android apps that work as beautifully as they look."
+          listClass="d-none"
+          TouchBtn="d-none"
+          serviceImg="d-none"
+          btntext="Let's Talk With Us"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 619-798-9688"
+          aboutbtnlink="/get-intouch"
+        />
 
-      <WordPressPerformanceSection
-        afterConainerClass="android-build-bg"
-        secTitle1="Smart Interfaces with Effortless Experiences!"
-        description="Our Android applications are designed with an intuitive, user-friendly interface that enhances engagement and accessibility. Every screen, tap, and interaction is built for flow, ensuring speed, clarity, and satisfaction across devices. By combining stunning UI design with powerful backend logic, we deliver Android apps that work as beautifully as they look."
-        listClass="d-none"
-        TouchBtn="d-none"
-        serviceImg="d-none"
-        btntext="Let's Talk With Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-        aboutbtnlink="/get-intouch"
-      />
+        <IndustriesIOSApps
+          sectionTitle="Our "
+          highlightText="Android Applications Include"
+          description="We develop Native Android app development California solutions and hybrid mobile app development California systems with a balance of design, functionality, and performance to match your brand vision."
+          features={iosFeatures}
+          image={androidiosimg}
+        />
 
+        <ContactForm
+          secTitle="Start Your Android App Project Today"
+          secDescription="Let’s build your Android app with performance, precision, and creativity. Fill out the form below, and our experts will reach out to start your project."
+          btnText="Send Message"
+        />
 
-      <IndustriesIOSApps  
-       sectionTitle="Our "
-        highlightText="Android Applications Include"
-        description="We develop Native Android app development California solutions and hybrid mobile app development California systems with a balance of design, functionality, and performance to match your brand vision."
-        features={iosFeatures}
-        image={androidiosimg} />
-    
-
-       <ContactForm
-        secTitle="Start Your Android App Project Today"
-        secDescription="Let’s build your Android app with performance, precision, and creativity. Fill out the form below, and our experts will reach out to start your project."
-        btnText="Send Message"
-      />
-
-      {/* <SinglePricingPlan
+        {/* <SinglePricingPlan
         secTitle="Flexible Options for Every Business"
         secDescription="We provide Android app development services California with tailored plans for businesses, offering transparent pricing that fits every budget."
         // pricingPlanData={eCommerseWebsitePricingPlansData}
         pricingPlanData={wordpressWebsitePricingPlansData}
       /> */}
 
-      <FrequentQuestions
-        secTitle="Frequently Asked Questions for Android App Development"
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqHomeData}
-      />
-
-      <Suspense fallback={<Loader />}>
-        <BlogSection categorySlug="cms-development" />
-      </Suspense>
-
-      {isOpen && images.length > 0 && (
-        <Lightbox
-          open={isOpen}
-          close={() => setIsOpen(false)}
-          slides={images}
-          index={currentIndex}
+        <FrequentQuestions
+          secTitle="Frequently Asked Questions for Android App Development"
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
         />
-      )}
 
-    </Layout>
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" />
+        </Suspense>
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

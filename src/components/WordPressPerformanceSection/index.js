@@ -177,36 +177,27 @@ const WordPressPerformanceSection = (props) => {
                 <div className="mern-service-point">
                   <h6>01</h6>
                   <div className="service-point-txt">
-                    <h5>Customized Solutions to Reflect Your Brand</h5>
+                    <h5>Designing</h5>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer.
+                      A digital product succeeds when users don’t have to think twice while finding their way navigating the web app. We build intuitive, user-first experiences that make every interaction simple and satisfying.
                     </p>
                   </div>
                 </div>
                  <div className="mern-service-point">
                   <h6>02</h6>
                   <div className="service-point-txt">
-                    <h5>Performance That Drives Growth</h5>
+                    <h5>Developing</h5>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer.
+                      Code is our way to innovate, turning complex logic into high-performing systems that think fast, respond instantly, and evolve with technology.  
                     </p>
                   </div>
                 </div>
                  <div className="mern-service-point">
                   <h6>03</h6>
                   <div className="service-point-txt">
-                    <h5>Growth, Scalability for Longevity</h5>
+                    <h5>Deploying</h5>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer.
+                      It’s not about going live, but also about being live. Once your web or app is live, we make sure it stays high-performing by constant monitoring, proactive website maintenance, and weekly backups.
                     </p>
                   </div>
                 </div>

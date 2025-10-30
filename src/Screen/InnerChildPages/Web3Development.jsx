@@ -70,25 +70,25 @@ const Web3Development = () => {
     {
       id: 1,
       icon: <BlockchainIcon />,
-      serviceCardHead: "API Development & Integration",
+      serviceCardHead: "Blockchain ",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Gone are the days when data was saved on servers that were far from secure. With our web 3.0 design and development company in California, data is decentralized, meaning every transaction, record, and interaction is transparent, traceable, and tamper-proof, giving businesses and users confidence in a world filled with cyber attacks.",
       serviceCardImg: serviceCardOne,
     },
     {
       id: 2,
       icon: <WwwIcon />,
-      serviceCardHead: "Automation & Scripting",
+      serviceCardHead: "DeFi Solutions",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Let’s reinvent finance through Web3.0 technology services in California that enable open, borderless financial ecosystems. Our DeFi platforms eliminate intermediaries, enhance transparency, and empower users to lend, trade, and invest securely, all through blockchain-powered smart automation.",
       serviceCardImg: serviceCardTwo,
     },
     {
       id: 3,
       icon: <SmartContractIcon />,
-      serviceCardHead: "Migration and Support",
+      serviceCardHead: "Smart Contracts Development",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Utilize the best of Web 3.0 solutions in California to develop smart contracts that are highly secure, upgradable, and dependable.",
       serviceCardImg: serviceCardThree,
     },
   ];
@@ -116,12 +116,16 @@ const Web3Development = () => {
       <WordPressPerformanceSection
         wordpresssecclass="future-web-sec"
         minihead="About Company"
-        secTitle1="Pioneering the Future of Web Development"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        listClass="d-none"
+        secTitle1="Transforming the Future with Web"
+        description="The internet is growing, and it’s only going to grow more. Our Web 3.0 development services make sure that it grows smarter, giving users control, security, and ownership while connecting businesses and people in ways the old web never could."
+        landingList="landing-design-points python-development-points"
+        landingListItems={[
+          "Scalable & Secure",
+          "Improved Web Connectivity",
+        ]}
         TouchBtn="d-none"
         serviceImg="d-none"
-        btntext="Learn More About Us"
+        btntext="Explore Services"
         learnmorebtn="aboutus-call"
         phoneNumber="+1 619-798-9688"
       />
@@ -130,33 +134,34 @@ const Web3Development = () => {
         reverse
         minihead="About Company"
         miniheadclass="shorttop-head"
-        secTitle1="Ready to Build Your "
-        secTitle2="Web 3.0 Platform?"
-        description="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
-        descriptiontwo="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
+        secTitle1="Achieve Your Goals with the "
+        secTitle2="Right Tech-Stack"
+        description="Every company has goals, and at California Web Coders, we help businesses achieve them with the right combination of tools, technology, and talent. As a leading Web3.0 company in California, we build ecosystems that empower innovation, security, and performance at every layer."
+        descriptiontwo="Our expert Web3.0 developers in California design tech stacks tailored to your project’s needs, ensuring seamless integration, future scalability, and long-term efficiency. Whether you’re building decentralized apps, smart contracts, or blockchain-driven platforms, we’ll help you harness the true potential of Web 3.0 to achieve results that are as smart as they are sustainable."
         image={web3AboutImage}
         listClass="d-none"
         TouchBtn="d-none"
-        btntext="Let's Talk With Us"
+        btntext="Let’s Get Started"
         learnmorebtn="aboutus-call"
         phoneNumber="+1 619-798-9688"
       />
 
       <OurCustomService
         miniHead="Our Services"
-        secMainTitle="Our"
-        secTitleBlue="Web 3.0 Development"
+        secMainTitle="Full-Spectrum"
+        secTitleBlue="Web 3.0"
         secLastTitle="Services"
-        customServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
-        customServiceBtn="View All Services"
+        customServicePara="Recognized as one of the leading Web 3.0 development companies, California Web Coders balances creative vision with advanced technical expertise to build feature-rich, business-driven custom web applications that maximize your ROI. Our team delivers Web 3.0 solutions powered by AI and blockchain, ensuring every platform we create is secure, intelligent, and designed for long-term digital growth."
+        customServiceBtn="Start Your Project"
         serviceCards={serviceCards}
       />
 
       <PixelPerfectSec
         minihead="Portfolio"
-        secTitle="Recent"
-        secTitleBlue="Python Projects"
-        secDescription="See how we’ve helped clients build cutting-edge, high-performance React applications."
+        secTitle="Glimpse at What"
+        secTitleBlue="Web 3.0"
+        secTitle2="Can Do"
+        secDescription="Explore projects that define the next era of decentralized digital innovation."
         projectsData={webDesignPortfolioData}
         onImageClick={handleImageClick}
       />
@@ -165,9 +170,10 @@ const Web3Development = () => {
         wordpresssecclass="web3-whychooseus"
         leftCol="col-lg-6"
         minihead="Why Choose Us"
-        secTitle1="Why Businesses Choose Our"
-        secTitle2="Web 3.0 Development"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        secTitle1="Lead the"
+        secTitle2="Web 3.0"
+        secTitle3="Revolution with California Web Coders"
+        description="At California Web Coders, we help users implement all the best Web 3.0 services in California, increasing user experience in a way that has never been done before by utilizing:"
         listClass="aboutCompanylist"
         image={webchooseabslt}
         TouchBtn="d-none"

@@ -12,9 +12,10 @@ import { ReactComponent as Ecommerce } from "../../Assets/newChildPagesAssets/we
 import { ReactComponent as Transportation } from "../../Assets/newChildPagesAssets/webapp/transportation.svg";
 import { ReactComponent as Healthcare } from "../../Assets/newChildPagesAssets/webapp/healthcare.svg";
 import { ReactComponent as Education } from "../../Assets/newChildPagesAssets/webapp/education.svg";
-import iosappimg from "../../Assets/newChildPagesAssets/IOSDevelopment/industriesiosapp.png";
+import iosappimg from "../../Assets/newChildPagesAssets/IOSDevelopment/industriesiosapp.webp";
 import iosNexthero from "../../Assets/newChildPagesAssets/IOSDevelopment/ios-next-hero.webp";
 import { ReactComponent as NativeApps } from "../../Assets/newChildPagesAssets/webapp/nativeappsvg.svg";
+import { ReactComponent as Uiuxicon } from "../../Assets/newChildPagesAssets/IOSDevelopment/uiux.svg";
 import IOSAboutCompany from "../../components/IOSAboutCompany";
 import Growyourbusiness from "../../components/growyourbusiness";
 import OurAppServices from "../../components/OurAppServices";
@@ -32,6 +33,7 @@ import BlogSection from "../../components/blogPosts";
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import BeautifullAppDesign from "../../components/BeautifullAppDesign";
 import { SlBasket } from "react-icons/sl";
+import ReactHelmet from "../../components/ReactHelmet";
 
 export const faqHomeData = [
   {
@@ -135,13 +137,13 @@ const IOSAppDevelopment = () => {
         "We design and develop iOS apps with speed, aesthetics, and advanced functionality, ensuring seamless performance and a consistent experience across all Apple devices.",
     },
     {
-      icon: <DiAndroid size={30} />,
+      icon: <NativeApps size={30} />,
       appServiceHead: "Mobile App Development",
       appServicePara:
         "As an established iOS mobile app development company in California, we deliver high-performing cross-platform applications that unify your business presence across iOS, Android, and web platforms.",
     },
     {
-      icon: <NativeApps size={30} />,
+      icon: <Uiuxicon size={30} />,
       appServiceHead: "UI/UX Designing",
       appServicePara:
         "Our iOS UI/UX design services in California focus on storytelling through visuals — delivering sleek, functional interfaces that improve retention, interaction, and brand recall.",
@@ -176,89 +178,99 @@ const IOSAppDevelopment = () => {
   ];
 
   return (
-    <Layout>
-      <ServiceBanner
-        secClass="ios-next-herobanner"
-        leftCol="col-lg-8"
-        bgImage={landingPageBanner}
-        rowClass="row justify-content-center text-center"
-        btnClass="d-none"
-        innerServicetxt="inner-next-txt"
-        innerheroimg={iosNexthero}
-        title="IOS Development Services in California"
-        description="We build seamless and easy-to-use iOS applications that blend creativity, functionality, and flawless design, built to engage your audience and enhance your brand’s digital presence."
+    <>
+     <ReactHelmet
+        title="iOS App Development in California | California Web Coders"
+        description="California Web Coders offers custom iOS app development in California — blending innovation, design, and performance to build sleek, high-performing iPhone and iPad apps for businesses and startups."
+        keywords="iOS app development California, iPhone app development, iPad app development, Swift app development, mobile app development California, custom iOS apps, iOS UI/UX design, Apple app developers"
+        baseUrl="https://californiawebcoders.com/ios-app-development"
       />
+  
+      <Layout>
+        <ServiceBanner
+          secClass="ios-next-herobanner"
+          leftCol="col-lg-8"
+          bgImage={landingPageBanner}
+          rowClass="row justify-content-center text-center"
+          btnClass="d-none"
+          innerServicetxt="inner-next-txt"
+          innerheroimg={iosNexthero}
+          title="IOS Development Services in California"
+          description="We build seamless and easy-to-use iOS applications that blend creativity, functionality, and flawless design, built to engage your audience and enhance your brand’s digital presence."
+        />
 
-      <IOSAboutCompany />
+        <IOSAboutCompany />
 
-      <Growyourbusiness
-        title1="Need an iOS Application for Your"
-        title2="Audience?"
-      />
+        <Growyourbusiness
+          title1="Need an iOS Application for Your"
+          title2="Audience?"
+        />
 
-      <OurAppServices
-        minihead="Our Services"
-        ourSectitleStart="Complete "
-        ourSecTitleBlue="IOS Development"
-        ourSecTitle="Expertise in California"
-        miniPara="At California Web Coders, we deliver iOS apps built to bring the best results. Each iOS app combines innovation, design, and technical excellence. As a leading iOS app development company in California, we build apps that scale with your business and evolve with user trends."
-        OurServiceBtn="View All Services"
-        appServices={serviceList}
-      />
+        <OurAppServices
+          secClass="ios-app-services"
+          minihead="Our Services"
+          ourSectitleStart="Complete "
+          ourSecTitleBlue="IOS Development"
+          ourSecTitle="Expertise in California"
+          miniPara="At California Web Coders, we deliver iOS apps built to bring the best results. Each iOS app combines innovation, design, and technical excellence. As a leading iOS app development company in California, we build apps that scale with your business and evolve with user trends."
+          OurServiceBtn="View All Services"
+          appServices={serviceList}
+        />
 
-      <IndustriesIOSApps
-        sectionTitle="Our"
-        highlightText="IOS Applications"
-        sectionTitleEnd="Include"
-        description="We build iOS mobile app development in California that combines innovation with usability. Every app we design delivers exceptional speed, functionality, and aesthetics for a seamless mobile experience."
-        features={iosFeatures}
-        image={iosappimg}
-      />
+        <IndustriesIOSApps
+          sectionTitle="Our"
+          highlightText="IOS Applications"
+          sectionTitleEnd="Include"
+          description="We build iOS mobile app development in California that combines innovation with usability. Every app we design delivers exceptional speed, functionality, and aesthetics for a seamless mobile experience."
+          features={iosFeatures}
+          image={iosappimg}
+        />
 
-      <ContactForm
-        secTitle="Start Your IOS Project Today"
-        secDescription="Let’s build your iOS app with precision and creativity. Fill out the form below and start your journey with California’s trusted iOS app development agency."
-        btnText="Let’s Build It Together"
-      />
+        <ContactForm
+          secTitle="Start Your IOS Project Today"
+          secDescription="Let’s build your iOS app with precision and creativity. Fill out the form below and start your journey with California’s trusted iOS app development agency."
+          btnText="Let’s Build It Together"
+        />
 
-      <PixelPerfectSec
-        minihead="Portfolio"
-        secTitleBlue="IOS Apps"
-        secTitle2="that Redefined Experiences"
-        secDescription="We’ve built iOS apps that define user experience. 
+        <PixelPerfectSec
+          minihead="Portfolio"
+          secTitleBlue="IOS Apps"
+          secTitle2="that Redefined Experiences"
+          secDescription="We’ve built iOS apps that define user experience. 
         See how our designs meet real-world business goals."
-        projectsData={webDesignPortfolioData}
-        onImageClick={handleImageClick}
-      />
+          projectsData={webDesignPortfolioData}
+          onImageClick={handleImageClick}
+        />
 
-      <BeautifullAppDesign />
+        <BeautifullAppDesign />
 
-      {/* <SinglePricingPlan
+        {/* <SinglePricingPlan
         secTitle="Smart Packages for Every Business"
         secDescription="Affordable, transparent, and tailored iOS app development services in California. Choose a plan that fits your project size and vision."
         // pricingPlanData={eCommerseWebsitePricingPlansData}
         pricingPlanData={wordpressWebsitePricingPlansData}
       /> */}
 
-      <FrequentQuestions
-        secTitle="Frequently Asked Questions for IOS App Development"
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqHomeData}
-      />
-
-      <Suspense fallback={<Loader />}>
-        <BlogSection categorySlug="cms-development" />
-      </Suspense>
-
-      {isOpen && images.length > 0 && (
-        <Lightbox
-          open={isOpen}
-          close={() => setIsOpen(false)}
-          slides={images}
-          index={currentIndex}
+        <FrequentQuestions
+          secTitle="Frequently Asked Questions for IOS App Development"
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
         />
-      )}
-    </Layout>
+
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" />
+        </Suspense>
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

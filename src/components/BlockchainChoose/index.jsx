@@ -14,8 +14,8 @@ const BlockchainChoose = () => {
                 <div className="col-lg-10">
                     <div className="blockchain-choose-head">
                         <h6>Why Choose Us</h6>
-                        <h2>Why Choose Web <span>California Web Coders</span></h2>
-                        <p>See how we’ve helped clients build cutting-edge, high-performance React applications.Having the right website design company in the USA is what matters. As a custom web development agency, we blend creative thinking with expert execution to build and design custom websites. At Web Design Mechanic, your brand is handled by experienced web designers and developers who are passionate about performance, precision, and impact.</p>
+                        <h2>California Web Coders, Your Trusted <span>Blockchain Development Company!</span></h2>
+                        <p>Partner with California Web Coders for blockchain solutions engineered with precision, purpose, and long-term value. We combine deep technical expertise with practical innovation to deliver systems that don’t just function, they lead. Here’s why businesses choose us:</p>
                     </div>
                 </div>
             </div>
@@ -25,29 +25,29 @@ const BlockchainChoose = () => {
                         <div className="blockchain-choose-point">
                             <img src={blockchain1} alt="img" />
                             <div className="blockchain-point-txt">
-                                <h4>24/7 Expert Customer Support</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                                <h4>Blockchain Expertise</h4>
+                                <p>Delivering complete blockchain solutions, from concept and architecture to deployment, scaling, and post-launch optimization.</p>
                             </div>
                         </div>
                            <div className="blockchain-choose-point">
                             <img src={blockchain2} alt="img" />
                             <div className="blockchain-point-txt">
-                                <h4>99.9% Uptime Guarantee</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                                <h4>End-to-End Encryption</h4>
+                                <p>Protect sensitive data with immutable ledgers and advanced cryptographic verification protocols.</p>
                             </div>
                         </div>
                            <div className="blockchain-choose-point">
                             <img src={blockchain3} alt="img" />
                             <div className="blockchain-point-txt">
-                                <h4>Easy-to-Use Control Panel</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                                <h4>Boost Operations</h4>
+                                <p>Automate workflows with smart contracts that streamline processes and eliminate intermediaries.</p>
                             </div>
                         </div>
                            <div className="blockchain-choose-point">
                             <img src={blockchain1} alt="img" />
                             <div className="blockchain-point-txt">
-                                <h4>24/7 Expert Customer Support</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                                <h4>Decentralized Data Storage</h4>
+                                <p>Transfer data using secure paths to protect it from breaches, ensuring constant accessibility.</p>
                             </div>
                         </div>
                     </div>

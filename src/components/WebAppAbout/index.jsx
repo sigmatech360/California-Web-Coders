@@ -2,6 +2,7 @@ import React from "react";
 import webappabout from "../../Assets/newChildPagesAssets/webapp/webappabout.webp";
 import { SiTicktick } from "react-icons/si";
 import { FaCheckCircle, FaPhoneAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const WebAppAbout = (props) => {
   return (
@@ -51,9 +52,9 @@ const WebAppAbout = (props) => {
                 data-aos-delay="500"
                 data-aos-duration="1000"
               >
-                <button data-aos="zoom-in" data-aos-delay="600">
+                <Link to="/about" data-aos="zoom-in" data-aos-delay="600">
                   Learn More About Us
-                </button>
+                </Link>
                 <div
                   className="about-number about-number-anchor"
                   data-aos="fade-left"
@@ -67,7 +68,7 @@ const WebAppAbout = (props) => {
           </div>
           <div className="col-lg-2"  data-aos="zoom-in" data-aos-duration="1000"  data-aos-delay="300">
             <div className="webapp-centermob">
-              <img src={webappabout} alt="img" />
+              <img src={webappabout} alt="Web application development"  fetchpriority="high" decoding="async" />
             </div>
           </div>
           <div className="col-lg-5">

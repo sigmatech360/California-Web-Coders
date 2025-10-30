@@ -44,6 +44,8 @@ function Header() {
                 src={logo}
                 alt="California Web Coders Logo"
                 className="header-icon"
+                fetchpriority="high"
+                 decoding="async"
               />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -335,10 +337,10 @@ function Header() {
                         <NavDropdown.Item as={"a"} href="/mobile-app-development" target="_blank" onClick={(e) => e.stopPropagation()}>
                           Mobile App Development
                         </NavDropdown.Item>
-                        <NavDropdown.Item as={"a"} href="/ios-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                        <NavDropdown.Item as={"a"} href="/ios-app-development" target="_blank" onClick={(e) => e.stopPropagation()}>
                           IOS Development
                         </NavDropdown.Item>
-                        <NavDropdown.Item as={"a"} href="/android-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                        <NavDropdown.Item as={"a"} href="/android-app-development" target="_blank" onClick={(e) => e.stopPropagation()}>
                           Android Development
                         </NavDropdown.Item>
                       </div>
