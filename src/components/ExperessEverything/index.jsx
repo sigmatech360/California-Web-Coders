@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import PersonalInformationBox from "../PersonalInformationBox";
-import { RiSecurePaymentFill, RiTeamFill } from "react-icons/ri";
-import { GrCertificate } from "react-icons/gr";
-import { IoIosSpeedometer } from "react-icons/io";
+import {ReactComponent as Securesystem} from "../../Assets/newChildPagesAssets/smartaiintegration/securesystem.svg"
+import {ReactComponent as Certifiedexpert} from "../../Assets/newChildPagesAssets/smartaiintegration/certifiedexpert.svg"
+import {ReactComponent as Professionalteam} from "../../Assets/newChildPagesAssets/smartaiintegration/professionalteam.svg"
+import {ReactComponent as Speedmeter} from "../../Assets/newChildPagesAssets/smartaiintegration/speedmeter.svg"
 
 
 const ProgressBar = ({ title, value }) => {
@@ -41,36 +42,37 @@ const ProgressBar = ({ title, value }) => {
 const ExperessEverything = () => {
   const infoData = [
     {
-      Icon: <RiSecurePaymentFill />,
-      miniHead: "Smart & secure system",
+      Icon: <Securesystem />,
+      miniHead: "Tailored AI Architecture",
       miniPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+        "We design scalable AI frameworks built around your goals that are adaptable, secure, and built for long-term efficiency.",
     },
     {
-      Icon: <GrCertificate />,
-      miniHead: "Certified Expert",
+      Icon: <Certifiedexpert />,
+      miniHead: "Cross-Platform Compatibility",
       miniPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+        "Our AI integrates smoothly with CRMs, ERPs, eCommerce systems, and web apps, ensuring your entire digital ecosystem works intelligently.",
     },
     {
-      Icon: <RiTeamFill />,
-      miniHead: "Professional team",
+      Icon: <Professionalteam />,
+      miniHead: "Human + Machine Synergy",
       miniPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+        "We combine strategic consulting with powerful automation, made to empower your team, not replacing it.",
     },
     {
-      Icon: <IoIosSpeedometer />,
-      miniHead: "24/7 Premium Support",
+      Icon: <Speedmeter />,
+      miniHead: "Continuous Optimization",
       miniPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.",
+        "AI evolves, and so do we. Our team monitors and updates integrations to keep your systems performing at their peak.",
     },
   ];
 
    const progressData = [
-    { title: "Design Graphics & 3D Design", value: 90 },
-    { title: "Marketing", value: 75 },
-    { title: "Animations", value: 85 },
-    { title: "Programming", value: 95 },
+    { title: "Machine Learning ", value: 90 },
+    { title: "Generative AI", value: 75 },
+    { title: "NLP", value: 85 },
+    { title: "Predictive Analytics", value: 95 },
+    { title: "Chatbot Development", value: 75 },
   ];
 
   return (
@@ -79,12 +81,9 @@ const ExperessEverything = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="express-everything-txt">
-              <h4>Express Everything And Feel Everything</h4>
+              <h4>Why Choose Our AI Integration Services</h4>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type.
+              AI isn’t just technology, for us it’s transformation. At California Web Coders, we blend technical precision with business insight to deliver measurable performance and smarter customer engagement.
               </p>
              {progressData.map((item, index) => (
                 <ProgressBar key={index} title={item.title} value={item.value} />

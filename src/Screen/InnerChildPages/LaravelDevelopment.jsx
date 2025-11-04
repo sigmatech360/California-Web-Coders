@@ -8,13 +8,19 @@ import pixleperfectimg3 from "../../Assets/newChildPagesAssets/laraveldevelopmen
 import pixleperfectimg4 from "../../Assets/newChildPagesAssets/laraveldevelopment/pixel-4.webp";
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/laraveldevelopment/pixel-5.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/laraveldevelopment/pixel-6.webp";
-import serviceCardOne from "../../Assets/newChildPagesAssets/laraveldevelopment/service-card-1.png";
-import serviceCardTwo from "../../Assets/newChildPagesAssets/laraveldevelopment/service-card-2.png";
-import serviceCardThree from "../../Assets/newChildPagesAssets/laraveldevelopment/service-card-3.png";
+import serviceCardOne from "../../Assets/newChildPagesAssets/laraveldevelopment/service-card-1.webp";
+import serviceCardTwo from "../../Assets/newChildPagesAssets/laraveldevelopment/service-card-2.webp";
+import serviceCardThree from "../../Assets/newChildPagesAssets/laraveldevelopment/service-card-3.webp";
 import ChooseSecImg from "../../Assets/newChildPagesAssets/laraveldevelopment/choose-sec-img.webp";
 import powerfulimg from "../../Assets/newChildPagesAssets/laraveldevelopment/powerfull-laravelapp-bg.webp";
 import aboutvideo from "../../Assets/newChildPagesAssets/laraveldevelopment/about-video.mp4";
 import aboutsmallimg from "../../Assets/newChildPagesAssets/laraveldevelopment/aboutshortimg.webp";
+import { ReactComponent as Speedmeter } from "../../Assets/newChildPagesAssets/reactdevelopment/speedmeter.svg";
+import { ReactComponent as Topmedal } from "../../Assets/newChildPagesAssets/reactdevelopment/toppermedal.svg";
+import { ReactComponent as Easycontrol } from "../../Assets/newChildPagesAssets/reactdevelopment/easycontrol.svg";
+import { ReactComponent as Restfulapi } from "../../Assets/newChildPagesAssets/laraveldevelopment/restfulapis.svg";
+import { ReactComponent as Ecommerce } from "../../Assets/newChildPagesAssets/laraveldevelopment/ecommerce.svg";
+import { ReactComponent as Maintaince } from "../../Assets/newChildPagesAssets/laraveldevelopment/maintaince.svg";
 import CustomCustomerCard from "../../components/CustomCustomerCard";
 import { FaMedal, FaTachometerAlt } from "react-icons/fa";
 import { IoSettingsSharp } from "react-icons/io5";
@@ -31,92 +37,143 @@ import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
 import { wordpressWebsitePricingPlansData } from "../../data";
-import { faqHomeData } from "../Designing";
+import ReactHelmet from "../../components/ReactHelmet";
+
+export const faqHomeData = [
+  {
+    id: 1,
+    question: "1. What is Laravel web development used for?",
+    answer:
+      "Laravel is used to build secure, scalable, and high-performing web applications with clean architecture, efficient APIs, and modern backend functionality.",
+  },
+  {
+    id: 2,
+    question: "2. Why choose California Web Coders for Laravel development?",
+    answer:
+      "We combine technical expertise, proven frameworks, and tailored support to create Laravel solutions that balance innovation, speed, and long-term reliability.",
+  },
+  {
+    id: 3,
+    question: "3. Is Laravel good for enterprise web applications?",
+    answer:
+      "Yes, Laravel is ideal for enterprise apps due to its scalability, built-in security, and ability to handle complex data and user management.",
+  },
+  {
+    id: 4,
+    question: "4. Do you offer custom Laravel web development?",
+    answer:
+      "Absolutely. We specialize in custom Laravel web development to meet each client’s specific goals, features, and performance needs.",
+  },
+  {
+    id: 5,
+    question: "5. How long does a Laravel project take?",
+    answer:
+      "Most Laravel project timelines vary by complexity, usually a project is completed within 4-8 weeks after the initial planning and design phase.",
+  },
+  {
+    id: 6,
+    question: "6. Can Laravel integrate with third-party APIs?",
+    answer:
+      "Yes, Laravel integrates seamlessly with CRMs, payment gateways, and analytics tools for smooth and automated business operations.",
+  },
+  {
+    id: 7,
+    question: "7. Do you provide post-launch Laravel support?",
+    answer:
+      "Yes, we offer 24/7 Laravel maintenance, updates, and performance monitoring to ensure continuous stability and reliability.",
+  },
+  {
+    id: 8,
+    question: "8. Is Laravel secure for online businesses?",
+    answer:
+      "Yes, Laravel includes built-in authentication, encryption, and data protection features that make it one of the most secure PHP frameworks available.",
+  },
+  {
+    id: 9,
+    question: "9. Do you offer Laravel migration or upgrades?",
+    answer:
+      "Yes, we handle Laravel version upgrades and migrations with zero downtime to keep your systems optimized and up-to-date.",
+  },
+  {
+    id: 10,
+    question: "10. What industries use Laravel development services?",
+    answer:
+      "We serve eCommerce, SaaS, healthcare, finance, and enterprise clients, building Laravel platforms designed for speed, security, and scalability.",
+  },
+];
 
 const LaravelDevelopment = () => {
   const webDesignPortfolioData = [
     {
       id: 1,
       image: pixleperfectimg1,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 2,
       image: pixleperfectimg2,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 3,
       image: pixleperfectimg3,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 4,
       image: pixleperfectimg4,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 5,
       image: pixleperfectimg5,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 6,
       image: pixleperfectimg6,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
   ];
 
   const cardsData = [
     {
-      icon: <FaTachometerAlt />,
-      cardTitle: "24/7 Expert Customer Support",
+      icon: <Speedmeter />,
+      cardTitle: "Lightning-Fast Performance",
       cardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
+        "We optimize Laravel applications for speed, efficiency, and stability, ensuring your platform handles growth effortlessly while keeping users engaged.",
     },
     {
-      icon: <FaMedal />,
-      cardTitle: "99.9% Uptime Guarantee",
+      icon: <Topmedal />,
+      cardTitle: "Enterprise-Grade Security",
       cardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
+        "Every Laravel build we deliver includes advanced protection measures, from encrypted routes to secure authentication, keeping your data and users safe.",
     },
     {
-      icon: <IoSettingsSharp />,
-      cardTitle: "Easy-to-Use Control Panel",
+      icon: <Easycontrol />,
+      cardTitle: "24/7 Expert Support",
       cardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
+        "Our team monitors, maintains, and updates your Laravel system around the clock so your business runs smoothly, without interruptions.",
     },
   ];
 
   const serviceCards = [
     {
       id: 1,
-      icon: <TbApi size={40} />,
-      serviceCardHead: "RESTful & API Development",
+      icon: <Restfulapi size={40} />,
+      serviceCardHead: "Node.js Development",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Other than Laravel, our Node.js development services keeps your backend lightweight, scalable, and efficient. It’s the technology behind high-speed platforms and data-heavy systems that demand performance.",
       serviceCardImg: serviceCardOne,
     },
     {
       id: 2,
-      icon: <SlBasket size={40} />,
-      serviceCardHead: "E-Commerce Solutiuons",
+      icon: <Ecommerce size={40} />,
+      serviceCardHead: "AI Integration",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "We bring intelligence to your Laravel applications through AI integration, automating workflows, predicting user behavior, and delivering personalized experiences that help your business make smarter, faster decisions.",
       serviceCardImg: serviceCardTwo,
     },
     {
       id: 3,
-      icon: <GrHostMaintenance size={40} />,
-      serviceCardHead: "Maintenance & Support",
+      icon: <Maintaince size={40} />,
+      serviceCardHead: "Blockchain Development",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "For businesses that value transparency and trust, our blockchain development services introduce secure, traceable, and verifiable systems. From smart contracts to decentralized apps, we merge innovation with reliability.",
       serviceCardImg: serviceCardThree,
     },
   ];
@@ -135,115 +192,129 @@ const LaravelDevelopment = () => {
   };
 
   return (
-    <Layout>
-      <ServiceBanner
-        leftCol="col-lg-6"
-        bgImage={landingPageBanner}
-        btnClass="theme-light mt-3"
-        title="Powerful & Scalable Laravel Development Services"
-        description="Our backend experts build powerful, reliable server-side solutions that keep your applications fast, stable, and ready to scale."
-        btnText="Get A Free React Quote"
+    <>
+      <ReactHelmet
+        title="Laravel Development Services | Robust PHP Web Applications"
+        description="Accelerate your project with our expert Laravel development services. We craft efficient, scalable, and secure PHP-based applications tailored to your business objectives."
+        keywords="laravel development, PHP frameworks, backend development, custom web apps, laravel developers, web application development"
+        baseUrl="https://californiawebcoders.com/laravel-development"
       />
-      <CustomCustomerCard cardsData={cardsData} />;
-      <WordPressPerformanceSection
-        wordpresssecclass="laravel-about-sec"
-        minihead="About Company"
-        miniheadclass="shorttop-head"
-        secTitle1="Expert"
-        secTitle2="Laravel Developers"
-        secTitle3="for Your Next Project"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        listItems={["Professional IT Solutions ", "Experience Team Members"]}
-        anotherFlexClass="about-another-flex"
-        aboutSmall="about-small-img"
-        aboutSmallImg={aboutsmallimg}
-        videoSrc={aboutvideo}
-        listClass="aboutCompanylist"
-        TouchBtn="d-none"
-        serviceImg="laravel-about-img"
-        btntext="Learn More About Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-      <OurCustomService
-        miniHead="Our Services"
-        secMainTitle="Our"
-        secTitleBlue=" Laravel Development"
-        secLastTitle="Services"
-        customServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
-        customServiceBtn="View All Services"
-        serviceCards={serviceCards}
-      />
-      <PixelPerfectSec
-        minihead="Portfolio"
-        secTitle="Recent"
-        secTitleBlue="Laravel Projects"
-        secDescription="See how we’ve helped clients build cutting-edge, high-performance React applications."
-        projectsData={webDesignPortfolioData}
-        onImageClick={handleImageClick}
-      />
-      <WordPressPerformanceSection
-        wordpresssecclass="laravel-choose-us"
-        miniheadclass="shorttop-head"
-        minihead="Why Choose Us"
-        secTitle1="Why Businesses Choose Our Laravel Development"
-        description="One of the strengths of WordPress is that it is fully customisable. This means we can build bespoke websites tailored specifically to our client’s goals."
-        designpointheadline="At California Web Coders, we focus on:"
-        landingList="landing-design-points laravel-choose-points"
-        landingListItems={[
-          "Experienced Laravel Developers",
-          "Pixel-Perfect Execution",
-          "Scalable & Secure Architecture",
-          "Reliable Support",
-        ]}
-        serviceImg="laravel-choose-video"
-        image={ChooseSecImg}
-        TouchBtn="d-none"
-        btntext="See More Benefits"
-        learnmorebtn="aboutus-call"
-      />
-      <WordPressPerformanceSection
-        reverse
-        minihead="About Company"
-        miniheadclass="shorttop-head"
-        secTitle1="Ready to Build a Powerful "
-        secTitle2="Laravel Application?"
-        description="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
-        image={powerfulimg}
-        listClass="aboutCompanylist"
-        TouchBtn="d-none"
-        btntext="Let's Talk With Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-      <ContactForm
-        secTitle="Ready to chat about your project?"
-        secDescription="Get in touch today to see how we can help your business achieve its full potential online."
-        btnText="Let’s Chat"
-      />
-      <SinglePricingPlan
-        secTitle="Affordable Website Design Packages"
-        secDescription="Choose the perfect plan that fits your needs and budget."
-        // pricingPlanData={eCommerseWebsitePricingPlansData}
-        pricingPlanData={wordpressWebsitePricingPlansData}
-      />
-      <FrequentQuestions
-        secTitle="You Will Find Our Client's Frequent Questions"
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqHomeData}
-      />
-      <Suspense fallback={<Loader />}>
-        <BlogSection categorySlug="cms-development" />
-      </Suspense>
-      {isOpen && images.length > 0 && (
-        <Lightbox
-          open={isOpen}
-          close={() => setIsOpen(false)}
-          slides={images}
-          index={currentIndex}
+
+      <Layout>
+        <ServiceBanner
+          leftCol="col-lg-6"
+          bgImage={landingPageBanner}
+          btnClass="theme-light mt-3"
+          title="The Most Trusted Laravel Development Experts in California"
+          description="Our Angular development services in California are made to deliver powerful enterprise-ready platforms such as apps and websites that are designed for results."
+          btnText="Contact us now"
         />
-      )}
-    </Layout>
+        <CustomCustomerCard cardsData={cardsData} />;
+        <WordPressPerformanceSection
+          wordpresssecclass="laravel-about-sec"
+          minihead="About us"
+          miniheadclass="shorttop-head"
+          secTitle1="Building with"
+          secTitle2="Laravel"
+          secTitle3="for Stronger Digital Foundations"
+          description="Laravel is known for speed, security, and flexibility. At California Web Coders, we use Laravel development services in California to create websites and apps that are scalable, easy to manage, and designed to grow with your business. Strong foundations mean lasting digital success."
+          listItems={[
+            "Custom web application development",
+            "API integration and development",
+          ]}
+          anotherFlexClass="about-another-flex"
+          aboutSmall="about-small-img"
+          aboutSmallImg={aboutsmallimg}
+          videoSrc={aboutvideo}
+          listClass="aboutCompanylist"
+          TouchBtn="d-none"
+          serviceImg="laravel-about-img"
+          btntext="More About Us"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+        <OurCustomService
+          miniHead="Our Services"
+          secMainTitle="Powering Modern Web Development With"
+          secTitleBlue="Laravel"
+          customServicePara="Businesses need solutions that do more than just function, they need to perform, adapt, and grow. At California Web Coders, we use Laravel to build secure, scalable, and high-performing systems designed to support businesses at every stage. Whether it’s powering a custom e-commerce platform or managing complex data workflows, our combine efforts give your business the strong foundation it needs."
+          customServiceBtn="Start Your Project"
+          serviceCards={serviceCards}
+        />
+        <PixelPerfectSec
+          minihead="Portfolio"
+          secTitle="See"
+          secTitleBlue="Laravel"
+          secTitle2="in Action"
+          secDescription="Explore our portfolio below to see how Laravel turns ideas into lasting growth."
+          projectsData={webDesignPortfolioData}
+          onImageClick={handleImageClick}
+        />
+        <WordPressPerformanceSection
+          wordpresssecclass="laravel-choose-us"
+          miniheadclass="shorttop-head"
+          minihead="Why Choose Us"
+          secTitle1="Reliable Laravel Development Across Industries"
+          description="Businesses need more than backend functionality, they need systems that perform, adapt, and scale. At California Web Coders, we build Laravel applications that combine power, flexibility, and precision."
+          designpointheadline="Our Laravel development services in California are focused on:"
+          landingList="landing-design-points laravel-choose-points"
+          landingListItems={[
+            "Experienced Laravel Developers",
+            "Pixel-Perfect Execution",
+            "Scalable & Secure Architecture",
+            "Reliable Support",
+          ]}
+          serviceImg="laravel-choose-video"
+          image={ChooseSecImg}
+          TouchBtn="d-none"
+          btntext="See More Benefits"
+          learnmorebtn="aboutus-call"
+        />
+        <WordPressPerformanceSection
+          reverse
+          minihead="About Company"
+          miniheadclass="shorttop-head"
+          secTitle1="Let’s Build Your"
+          secTitle2="Laravel Project"
+          secTitle3="Together"
+          description="Want your business to run smoothly across the web with no issues on the backend? Fill out the form below to let our Laravel development agency in California contact you for your own successful and growing website."
+          image={powerfulimg}
+          listClass="d-none"
+          TouchBtn="d-none"
+          aboutbtnlink="/get-intouch"
+          btntext="Contact Us Now"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+        <SinglePricingPlan
+          secTitle="Development Options Built Around Your Business"
+          secDescription="Our Laravel application development company in California is all about your convenience. Our pricing is transparent, flexible, and designed to deliver maximum value at every stage of growth."
+          // pricingPlanData={eCommerseWebsitePricingPlansData}
+          pricingPlanData={wordpressWebsitePricingPlansData}
+        />
+        <FrequentQuestions
+          secTitle="Laravel Web Development FAQs"
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
+        />
+        <ContactForm
+          secTitle="Ready to chat about your project?"
+          secDescription="Get in touch today to see how we can help your business achieve its full potential online."
+          btnText="Let’s Chat"
+        />
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" />
+        </Suspense>
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

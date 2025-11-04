@@ -83,7 +83,7 @@ const LandingPageDesign = () => {
         bgImage={landingPageBanner}
         btnClass="theme-light mt-3"
         title="Transform Clicks into Conversions with Stunning Landing Pages"
-        description="We design high-converting landing pages tailored to your business goals. From product launches to lead generation campaigns, our designs are built to maximize engagement and drive measurable results."
+        description="We design  high-converting landing pages tailored to your business goals. From product launches to lead generation campaigns, our designs are built to maximize engagement and drive measurable results."
         btnText="Get Your Landing Page Now"
       />
 

@@ -26,8 +26,8 @@ const BeautifullAppDesign = (props) => {
                   Get App Design Quote
                 </button>
                 <div className="about-number about-number-anchor" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
-                  <a href={`tel:${props.phoneNumberLink || "+16197989688"}`}><span><FaPhoneAlt /></span>
-                  <p>+1 619-798-9688</p></a>
+                  <a href={`tel:${props.phoneNumberLink || "+16193352364"}`}><span><FaPhoneAlt /></span>
+                  <p>+1 (619) 335-2364</p></a>
                 </div>
               </div>
             </div>

@@ -10,9 +10,9 @@ import pixleperfectimg3 from "../../Assets/newChildPagesAssets/pythondevelopment
 import pixleperfectimg4 from "../../Assets/newChildPagesAssets/pythondevelopment/pixel-4.webp";
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/pythondevelopment/pixel-5.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/pythondevelopment/pixel-6.webp";
-import serviceCardOne from "../../Assets/newChildPagesAssets/pythondevelopment/service-customapi.png";
-import serviceCardTwo from "../../Assets/newChildPagesAssets/pythondevelopment/service-card-two.png";
-import serviceCardThree from "../../Assets/newChildPagesAssets/pythondevelopment/service-card-three.png";
+import serviceCardOne from "../../Assets/newChildPagesAssets/pythondevelopment/service-customapi.webp";
+import serviceCardTwo from "../../Assets/newChildPagesAssets/pythondevelopment/service-card-two.webp";
+import serviceCardThree from "../../Assets/newChildPagesAssets/pythondevelopment/service-card-three.webp";
 import CustomAboutCompany from "../../components/CustomAboutCompany";
 import OurCustomService from "../../components/OurCustomService";
 import { RiListSettingsLine } from "react-icons/ri";
@@ -32,21 +32,21 @@ import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
 import PythonMaintaince from "../../components/PythonMaintaince";
-import {ReactComponent as Pyhthonservice1} from "../../Assets/newChildPagesAssets/pythondevelopment/python-service-1.svg"
-import {ReactComponent as Pyhthonservice2} from "../../Assets/newChildPagesAssets/pythondevelopment/python-service-2.svg"
-import {ReactComponent as Pyhthonservice3} from "../../Assets/newChildPagesAssets/pythondevelopment/python-service-3.svg"
-import blognewbg from "../../Assets/newChildPagesAssets/pythondevelopment/blog-bg.webp"
-import {ReactComponent as Roundmap} from "../../Assets/newChildPagesAssets/pythondevelopment/round-map.svg" 
-import {ReactComponent as Roundmail} from "../../Assets/newChildPagesAssets/pythondevelopment/round-email.svg" 
-import {ReactComponent as Roundphone} from "../../Assets/newChildPagesAssets/pythondevelopment/round-phone.svg" 
-import {ReactComponent as Roundmeter} from "../../Assets/newChildPagesAssets/pythondevelopment/round-meter.svg" 
-
-
+import { ReactComponent as Pyhthonservice1 } from "../../Assets/newChildPagesAssets/pythondevelopment/python-service-1.svg";
+import { ReactComponent as Pyhthonservice2 } from "../../Assets/newChildPagesAssets/pythondevelopment/python-service-2.svg";
+import { ReactComponent as Pyhthonservice3 } from "../../Assets/newChildPagesAssets/pythondevelopment/python-service-3.svg";
+import blognewbg from "../../Assets/newChildPagesAssets/pythondevelopment/blog-bg.webp";
+import { ReactComponent as Roundmap } from "../../Assets/newChildPagesAssets/pythondevelopment/round-map.svg";
+import { ReactComponent as Roundmail } from "../../Assets/newChildPagesAssets/pythondevelopment/round-email.svg";
+import { ReactComponent as Roundphone } from "../../Assets/newChildPagesAssets/pythondevelopment/round-phone.svg";
+import { ReactComponent as Roundmeter } from "../../Assets/newChildPagesAssets/pythondevelopment/round-meter.svg";
+import ReactHelmet from "../../components/ReactHelmet";
 
 export const faqHomeData = [
   {
     id: 1,
-    question: "1. Why should I choose Python for my web or app development project?",
+    question:
+      "1. Why should I choose Python for my web or app development project?",
     answer:
       "Python development offers speed and agility like no other development language. From web to apps, it loads every platform in milliseconds.",
   },
@@ -58,7 +58,8 @@ export const faqHomeData = [
   },
   {
     id: 3,
-    question: "3. Do you provide custom Python development services in California?",
+    question:
+      "3. Do you provide custom Python development services in California?",
     answer:
       "Yes, our team delivers Python solutions for businesses across California and in USA.",
   },
@@ -100,54 +101,39 @@ export const faqHomeData = [
   },
   {
     id: 10,
-    question:
-      "10. Do you offer ongoing Python app support?",
+    question: "10. Do you offer ongoing Python app support?",
     answer:
       "Yes, we provide continuous maintenance, performance monitoring, and feature updates post-launch.",
   },
 ];
 
 const PythonDevelopment = () => {
-
-    const webDesignPortfolioData = [
+  const webDesignPortfolioData = [
     {
       id: 1,
       image: pixleperfectimg1,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 2,
       image: pixleperfectimg2,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 3,
       image: pixleperfectimg3,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 4,
       image: pixleperfectimg4,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 5,
       image: pixleperfectimg5,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 6,
       image: pixleperfectimg6,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
   ];
-
 
   const serviceCards = [
     {
@@ -181,155 +167,159 @@ const PythonDevelopment = () => {
       Icon: <Roundmap />,
       miniHead: "Head Office",
       miniPara: "225 Broadway, San Diego, CA 92101, United States",
-      sizeChange: "col-lg-3"
+      sizeChange: "col-lg-3 col-md-6",
     },
     {
       Icon: <Roundmail />,
       miniHead: "Share Your Project",
       miniPara: "supportcaliforniawebcoderscom",
-      sizeChange: "col-lg-3"
+      sizeChange: "col-lg-3 col-md-6",
     },
     {
       Icon: <Roundphone />,
       miniHead: "Get in Touch",
       miniPara: "+1(619)335-2364",
-      sizeChange: "col-lg-3"
+      sizeChange: "col-lg-3 col-md-6",
     },
     {
       Icon: <Roundmeter />,
       miniHead: "Support You can Count on",
       miniPara:
         "Reliable, responsive, and always ready to sort out any problem causing delay.",
-      sizeChange: "col-lg-3"
+      sizeChange: "col-lg-3 col-md-6",
     },
   ];
 
-   const [isOpen, setIsOpen] = useState(false);
-    const [images, setImages] = useState([]);
-    const [currentIndex, setCurrentIndex] = useState(0);
-  
-    const handleImageClick = (index, imageArray) => {
-      const imageList = imageArray.map((item) => ({
-        src: item.image,
-      }));
-      setImages(imageList);
-      setCurrentIndex(index);
-      setIsOpen(true);
-    };
-  
+  const [isOpen, setIsOpen] = useState(false);
+  const [images, setImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleImageClick = (index, imageArray) => {
+    const imageList = imageArray.map((item) => ({
+      src: item.image,
+    }));
+    setImages(imageList);
+    setCurrentIndex(index);
+    setIsOpen(true);
+  };
 
   return (
-    <Layout>
-      <ServiceBanner
-        secClass="python-banner-sec"
-        leftCol="col-lg-6"
-        bgImage={landingPageBanner}
-        btnClass="theme-light mt-3"
-        title="Custom Python Development that Scales Like Crazy!"
-        description="Build secure, scalable solutions with one of the world’s most versatile technologies, offering limitless functionalities for Web & App solutions."
-        btnText="Let’s Talk Python"
+    <>
+      <ReactHelmet
+        title="Python Development Services | Data-Driven Web Solutions"
+        description="Harness the power of Python with our expert development team. We build scalable, efficient, and intelligent applications for web, automation, and AI-based systems."
+        keywords="python development, django development, flask apps, AI development, backend development, automation"
+        baseUrl="https://californiawebcoders.com/python-development"
       />
 
-      <PythonMaintaince />
-
-      <CustomAboutCompany
-        miniHead="About Company"
-        mainHeadStart="Go-To"
-        mainHeadBlue="Python Experts"
-        mainHeadLast="in California"
-        frontendAboutImg={AboutFrontendOne}
-        frontendAboutImgtwo={AboutFrontendTwo}
-        aboutPara="We leverage our Python development service in California to develop scalable systems, automate workflows, and build web apps that take you way ahead of your competition. So ahead, you won’t be able to find them in the rear-view mirror!"
-        listItems={["Smart & Scalable", "Built for Performance"]}
-        listClass="aboutCompanylist"
-        btntext="Explore Services"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-
-      <OurCustomService
-        miniHead="Our Services"
-        secMainTitle="Engineering the Backbone of"
-        secTitleBlue="Modern Business with Python!"
-        customServicePara="Develop any type of solution quickly, cost-effectively, and securely with a trusted Python software development company in California. With its open-source flexibility and framework-rich ecosystem, Python fuels the creation of intelligent, high-performing digital experiences."
-        customServiceBtn="Start Your Project"
-        serviceCards={serviceCards}
-      />
-
-      <section className="python-personal-information">
-      <PersonalInformationBox infoData={infoData} />
-      </section>
-
-
-      <WordPressPerformanceSection
-        wordpresssecclass="python-development-bg"
-        minihead="California Web Coders:"
-        secTitle1="The Smarter Choice for Python Development"
-        description="As a leading Python development company in California, we have powered numerous website and application development projects. Over 300 clients consider us a trusted development company they can count on for all things Python."
-        listClass="d-none"
-        landingList="landing-design-points python-development-points"
-        landingListItems={[
-          "Intuitive Frontend",
-          "High-Performing Backend",
-          "Process Automations",
-          "AI Integration",
-          "Secure & Scalable",
-        ]}
-        TouchBtn="d-none"
-        serviceImg="d-none"
-        btntext="View All Services"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-
-
-      <PixelPerfectSec
-        minihead="Portfolio"
-        secTitle="See "
-        secTitleBlue="Python Projects"
-        secTitle2="in Action"
-        secDescription="Take a sneak peek at our Python Projects that have made waves around the industry"
-        projectsData={webDesignPortfolioData}
-        onImageClick={handleImageClick}
-        btnText="We Can Build One for You"
-      />
-
-
-       <ContactForm
-        secTitle="Discuss Your Python Project with Us!"
-        secDescription="If you want to go unstoppable, let’s talk, and together we’ll make your brand go lightning fast!"
-        btnText="Let’s Chat"
-      />
-
-      <SinglePricingPlan
-        secTitle="Python Development"
-        secTitleEnd="Packages for Every Business"
-        secDescription="Our packages are flexible, making it easier for any business to implement Python"
-        // pricingPlanData={eCommerseWebsitePricingPlansData}
-        pricingPlanData={wordpressWebsitePricingPlansData}
-      />
-
-      <FrequentQuestions
-        secTitle="Myths, Misconceptions, and the Python Truth"
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqHomeData}
-      />
-
-      <Suspense fallback={<Loader />}>
-        <BlogSection categorySlug="cms-development" blogbgNew={blognewbg} />
-      </Suspense>
-
-      {isOpen && images.length > 0 && (
-        <Lightbox
-          open={isOpen}
-          close={() => setIsOpen(false)}
-          slides={images}
-          index={currentIndex}
+      <Layout>
+        <ServiceBanner
+          secClass="python-banner-sec"
+          leftCol="col-lg-6"
+          bgImage={landingPageBanner}
+          btnClass="theme-light mt-3"
+          title="Custom Python Development that Scales Like Crazy!"
+          description="Build secure, scalable solutions with one of the world’s most versatile technologies, offering limitless functionalities for Web & App solutions."
+          btnText="Let’s Talk Python"
         />
-      )}
 
+        <PythonMaintaince />
 
-    </Layout>
+        <CustomAboutCompany
+          miniHead="About Company"
+          mainHeadStart="Go-To"
+          mainHeadBlue="Python Experts"
+          mainHeadLast="in California"
+          frontendAboutImg={AboutFrontendOne}
+          frontendAboutImgtwo={AboutFrontendTwo}
+          aboutPara="We leverage our Python development service in California to develop scalable systems, automate workflows, and build web apps that take you way ahead of your competition. So ahead, you won’t be able to find them in the rear-view mirror!"
+          listItems={["Smart & Scalable", "Built for Performance"]}
+          listClass="aboutCompanylist"
+          btntext="Explore Services"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <OurCustomService
+          miniHead="Our Services"
+          secMainTitle="Engineering the Backbone of"
+          secTitleBlue="Modern Business with Python!"
+          customServicePara="Develop any type of solution quickly, cost-effectively, and securely with a trusted Python software development company in California. With its open-source flexibility and framework-rich ecosystem, Python fuels the creation of intelligent, high-performing digital experiences."
+          customServiceBtn="Start Your Project"
+          serviceCards={serviceCards}
+        />
+
+        <section className="python-personal-information">
+          <PersonalInformationBox infoData={infoData} />
+        </section>
+
+        <WordPressPerformanceSection
+          wordpresssecclass="python-development-bg"
+          minihead="California Web Coders:"
+          secTitle1="The Smarter Choice for Python Development"
+          description="As a leading Python development company in California, we have powered numerous website and application development projects. Over 300 clients consider us a trusted development company they can count on for all things Python."
+          listClass="d-none"
+          landingList="landing-design-points python-development-points"
+          landingListItems={[
+            "Intuitive Frontend",
+            "High-Performing Backend",
+            "Process Automations",
+            "AI Integration",
+            "Secure & Scalable",
+          ]}
+          TouchBtn="d-none"
+          serviceImg="d-none"
+          btntext="Let’s Code"
+          aboutbtnlink="/get-intouch"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <PixelPerfectSec
+          minihead="Portfolio"
+          secTitle="See "
+          secTitleBlue="Python Projects"
+          secTitle2="in Action"
+          secDescription="Take a sneak peek at our Python Projects that have made waves around the industry"
+          projectsData={webDesignPortfolioData}
+          onImageClick={handleImageClick}
+          btnText="We Can Build One for You"
+        />
+
+        <ContactForm
+          secTitle="Discuss Your Python Project with Us!"
+          secDescription="If you want to go unstoppable, let’s talk, and together we’ll make your brand go lightning fast!"
+          btnText="Let’s Chat"
+        />
+
+        <SinglePricingPlan
+          secTitle="Python Development"
+          secTitleEnd="Packages for Every Business"
+          secDescription="Our packages are flexible, making it easier for any business to implement Python"
+          // pricingPlanData={eCommerseWebsitePricingPlansData}
+          pricingPlanData={wordpressWebsitePricingPlansData}
+        />
+
+        <FrequentQuestions
+          secTitle="Myths, Misconceptions, and the Python Truth"
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
+        />
+
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" blogbgNew={blognewbg} />
+        </Suspense>
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

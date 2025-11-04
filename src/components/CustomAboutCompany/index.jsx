@@ -50,7 +50,7 @@
 //                     <span>
 //                       <FaPhoneAlt />
 //                     </span>
-//                     <p>{props.phoneNumber || "+1 619-798-9688"}</p>
+//                     <p>{props.phoneNumber || "+1 (619) 335-2364"}</p>
 //                   </div>
 //                 )}
 //               </div>
@@ -75,7 +75,7 @@ const CustomAboutCompany = (props) => {
 
   const rowClasses = isReversed
     ? "row align-items-center flex-lg-row-reverse flex-column-reverse"
-    : "row align-items-center flex-lg-row flex-column-reverse";
+    : "row align-items-center flex-lg-row";
 
   const textAos = isReversed ? "fade-left" : "fade-right";
   const imageAos = isReversed ? "fade-right" : "fade-left";
@@ -175,10 +175,10 @@ const CustomAboutCompany = (props) => {
                     data-aos-duration="1000"
                     data-aos-offset="50"
                   >
-                    <a href={`tel:${props.phoneNumberLink || "+16197989688"}`}><span>
+                    <a href={`tel:${props.phoneNumberLink || "+16193352364"}`}><span>
                       <FaPhoneAlt />
                     </span>
-                    <p>{props.phoneNumber || "+1 619-798-9688"}</p></a>
+                    <p>{props.phoneNumber || "+1 (619) 335-2364"}</p></a>
                   </div>
                 )}
               </div>

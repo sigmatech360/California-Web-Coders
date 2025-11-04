@@ -178,13 +178,13 @@ const IOSAboutCompany = (props) => {
                 data-aos-delay="500"
               >
                 <a
-                  href={`tel:${props.phoneNumberLink || "+16197989688"}`}
+                  href={`tel:${props.phoneNumberLink || "+16193352364"}`}
                   aria-label="Call California Web Coders iOS App Development Company"
                 >
                   <span>
                     <FaPhoneAlt aria-hidden="true" />
                   </span>
-                  <p>+1 619-798-9688</p>
+                  <p>+1 (619) 335-2364</p>
                 </a>
               </div>
             </div>

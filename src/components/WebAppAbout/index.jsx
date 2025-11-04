@@ -61,7 +61,7 @@ const WebAppAbout = (props) => {
                   data-aos-delay="700"
                   data-aos-duration="900"
                 >
-                 <a href={`tel:${props.phoneNumberLink || "+16197989688"}`}><span><FaPhoneAlt /></span><p> +1 619-798-9688</p></a>
+                 <a href={`tel:${props.phoneNumberLink || "+16193352364"}`}><span><FaPhoneAlt /></span><p> +1 (619) 335-2364</p></a>
                 </div>
               </div>
             </div>

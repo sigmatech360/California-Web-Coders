@@ -31,10 +31,10 @@ import { faqHomeData } from "../Designing";
 import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const BackendDevelopment = () => {
-
-    const webDesignPortfolioData = [
+  const webDesignPortfolioData = [
     {
       id: 1,
       image: pixleperfectimg1,
@@ -73,28 +73,26 @@ const BackendDevelopment = () => {
     },
   ];
 
-    const cardsData = [
-      {
-        icon: <FaTachometerAlt />,
-        cardTitle: "24/7 Expert Customer Support",
-        cardPara:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
-      },
-      {
-        icon: <FaMedal />,
-        cardTitle: "99.9% Uptime Guarantee",
-        cardPara:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
-      },
-      {
-        icon: <IoSettingsSharp />,
-        cardTitle: "Easy-to-Use Control Panel",
-        cardPara:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
-      },
-    ];
-  
-
+  const cardsData = [
+    {
+      icon: <FaTachometerAlt />,
+      cardTitle: "24/7 Expert Customer Support",
+      cardPara:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
+    },
+    {
+      icon: <FaMedal />,
+      cardTitle: "99.9% Uptime Guarantee",
+      cardPara:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
+    },
+    {
+      icon: <IoSettingsSharp />,
+      cardTitle: "Easy-to-Use Control Panel",
+      cardPara:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
+    },
+  ];
 
   const [isOpen, setIsOpen] = useState(false);
   const [images, setImages] = useState([]);
@@ -110,147 +108,148 @@ const BackendDevelopment = () => {
   };
 
   const serviceCards = [
-      {
-        id: 1,
-        icon:  <RiFileCloudFill size={40} />,
-        serviceCardHead: "Cloud & Hosting Solutions",
-        serviceCardPara:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        serviceCardImg: serviceCardOne,
-      },
-      {
-        id: 2,
-        icon: <TbDeviceDesktopCog size={40} />,
-        serviceCardHead: "Maintenance & Support",
-        serviceCardPara:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        serviceCardImg: serviceCardTwo,
-      },
-      {
-        id: 3,
-        icon: <FaServer size={40} />,
-        serviceCardHead: "Server-Side Programming",
-        serviceCardPara:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        serviceCardImg: serviceCardThree,
-      },
-    ];
+    {
+      id: 1,
+      icon: <RiFileCloudFill size={40} />,
+      serviceCardHead: "Cloud & Hosting Solutions",
+      serviceCardPara:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      serviceCardImg: serviceCardOne,
+    },
+    {
+      id: 2,
+      icon: <TbDeviceDesktopCog size={40} />,
+      serviceCardHead: "Maintenance & Support",
+      serviceCardPara:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      serviceCardImg: serviceCardTwo,
+    },
+    {
+      id: 3,
+      icon: <FaServer size={40} />,
+      serviceCardHead: "Server-Side Programming",
+      serviceCardPara:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      serviceCardImg: serviceCardThree,
+    },
+  ];
 
   return (
-    <Layout>
-      <ServiceBanner
-        leftCol="col-lg-6"
-        bgImage={landingPageBanner}
-        btnClass="theme-light mt-3"
-        title="Secure, Scalable & High-Performance Backend Development"
-        description="Our backend experts build powerful, reliable server-side solutions that keep your applications fast, stable, and ready to scale."
-        btnText="Get A Free React Quote"
+    <>
+      <ReactHelmet
+        title="Backend Development Services | Secure & Scalable Solutions"
+        description="Build a powerful digital foundation with our expert backend development services. We create robust, scalable, and secure architectures to support your web and mobile applications."
+        keywords="backend development, API integration, server-side development, database design, web architecture, node backend"
+        baseUrl="https://californiawebcoders.com/backend-development"
       />
 
+      <Layout>
+        <ServiceBanner
+          leftCol="col-lg-6"
+          bgImage={landingPageBanner}
+          btnClass="theme-light mt-3"
+          title="Secure, Scalable & High-Performance Backend Development"
+          description="Our backend experts build powerful, reliable server-side solutions that keep your applications fast, stable, and ready to scale."
+          btnText="Get A Free React Quote"
+        />
 
-       <CustomAboutCompany
-        miniHead="About Company"
-        mainHead="Building the Core That Powers "
-        mainHeadLastBlue="Your Applications"
-        frontendAboutImg={AboutFrontendTwo}
-        frontendAboutImgtwo={AboutFrontendOne}
-        aboutPara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        listItems={["Professional IT Solutions ", "Experience Team Members"]}
-        listClass="aboutCompanylist"
-        btntext="Learn More About Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
+        <CustomAboutCompany
+          miniHead="About Company"
+          mainHead="Building the Core That Powers "
+          mainHeadLastBlue="Your Applications"
+          frontendAboutImg={AboutFrontendTwo}
+          frontendAboutImgtwo={AboutFrontendOne}
+          aboutPara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          listItems={["Professional IT Solutions ", "Experience Team Members"]}
+          listClass="aboutCompanylist"
+          btntext="Learn More About Us"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
 
-       <OurCustomService
-        miniHead="Our Services"
-        secMainTitle="Our"
-        secTitleBlue="Backend Development"
-        secLastTitle="Services"
-        customServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
-        customServiceBtn="View All Services"
-        serviceCards={serviceCards}
-      />
+        <OurCustomService
+          miniHead="Our Services"
+          secMainTitle="Our"
+          secTitleBlue="Backend Development"
+          secLastTitle="Services"
+          customServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
+          customServiceBtn="View All Services"
+          serviceCards={serviceCards}
+        />
 
+        <PixelPerfectSec
+          minihead="Portfolio"
+          secTitle="Recent"
+          secTitleBlue="Backend Projects"
+          secDescription="See how we’ve helped clients build cutting-edge, high-performance React applications."
+          projectsData={webDesignPortfolioData}
+          onImageClick={handleImageClick}
+        />
 
-       <PixelPerfectSec
-        minihead="Portfolio"
-        secTitle="Recent"
-        secTitleBlue="Backend Projects"
-        secDescription="See how we’ve helped clients build cutting-edge, high-performance React applications."
-        projectsData={webDesignPortfolioData}
-        onImageClick={handleImageClick}
-      />
+        <section className="why-choose-react-card">
+          <WordPressPerformanceSection
+            wordpresssecclass="react-choose-sec"
+            miniheadclass="shorttop-head"
+            minihead="Why Choose Us"
+            secTitle1="Why Choose Our"
+            secTitle2="React Development"
+            secTitle3="Services"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            image={reactChoose}
+            listClass="d-none"
+            TouchBtn="d-none"
+            btntext="Register With Confidence"
+            learnmorebtn="aboutus-call"
+            phoneNumber="+1 (619) 335-2364"
+          />
+          <CustomCustomerCard cardsData={cardsData} />;
+        </section>
 
-  <section className="why-choose-react-card">
         <WordPressPerformanceSection
-          wordpresssecclass="react-choose-sec"
-          miniheadclass="shorttop-head"
-          minihead="Why Choose Us"
-          secTitle1="Why Choose Our"
-          secTitle2="React Development"
-          secTitle3="Services"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          image={reactChoose}
+          afterConainerClass="react-build-bg"
+          secTitle1="Ready to Build a Powerful React App?"
+          description="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
           listClass="d-none"
           TouchBtn="d-none"
-          btntext="Register With Confidence"
+          serviceImg="d-none"
+          btntext="Let's Talk With Us"
           learnmorebtn="aboutus-call"
-          phoneNumber="+1 619-798-9688"
+          phoneNumber="+1 (619) 335-2364"
         />
-        <CustomCustomerCard cardsData={cardsData} />;
-      </section>
 
-
-
-      <WordPressPerformanceSection
-        afterConainerClass="react-build-bg"
-        secTitle1="Ready to Build a Powerful React App?"
-        description="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
-        listClass="d-none"
-        TouchBtn="d-none"
-        serviceImg="d-none"
-        btntext="Let's Talk With Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-
-
-      <SinglePricingPlan
-        secTitle="Affordable Website Design Packages"
-        secDescription="Choose the perfect plan that fits your needs and budget."
-        // pricingPlanData={eCommerseWebsitePricingPlansData}
-        pricingPlanData={wordpressWebsitePricingPlansData}
-      />
-
-
-
-      <ContactForm
-        secTitle="Ready to chat about your project?"
-        secDescription="Get in touch today to see how we can help your business achieve its full potential online."
-        btnText="Let’s Chat"
-      />
-
-      <FrequentQuestions
-        secTitle="You Will Find Our Client's Frequent Questions"
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqHomeData}
-      />
-
-      <Suspense fallback={<Loader />}>
-        <BlogSection categorySlug="cms-development" />
-      </Suspense>
-
-      {isOpen && images.length > 0 && (
-        <Lightbox
-          open={isOpen}
-          close={() => setIsOpen(false)}
-          slides={images}
-          index={currentIndex}
+        <SinglePricingPlan
+          secTitle="Affordable Website Design Packages"
+          secDescription="Choose the perfect plan that fits your needs and budget."
+          // pricingPlanData={eCommerseWebsitePricingPlansData}
+          pricingPlanData={wordpressWebsitePricingPlansData}
         />
-      )}
 
-    </Layout>
+        <ContactForm
+          secTitle="Ready to chat about your project?"
+          secDescription="Get in touch today to see how we can help your business achieve its full potential online."
+          btnText="Let’s Chat"
+        />
+
+        <FrequentQuestions
+          secTitle="You Will Find Our Client's Frequent Questions"
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
+        />
+
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" />
+        </Suspense>
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

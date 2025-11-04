@@ -3,7 +3,7 @@ import performence from "../../Assets/performence.webp";
 import "./index.css";
 import { Link } from "react-router-dom";
 import { SiTicktick } from "react-icons/si";
-import { FaCheckCircle, FaPhoneAlt } from "react-icons/fa";
+import { FaCheckCircle, FaPhoneAlt, FaRegCheckCircle } from "react-icons/fa";
 import whychoose1 from "../../Assets/newChildPagesAssets/web3development/web-whychoose-1.svg";
 import whychoose2 from "../../Assets/newChildPagesAssets/web3development/web-whychoose-2.svg";
 import whychoose3 from "../../Assets/newChildPagesAssets/web3development/web-whychoose-3.svg";
@@ -56,14 +56,13 @@ const WordPressPerformanceSection = (props) => {
                 </h6>
                 <ul className="web-whychoose-list">
                   <li>
-                    <img src={whychoose1} alt="img" /> 24/7 Expert Customer
-                    Support
+                    <img src={whychoose1} alt="img" /> Decentralized Systems
                   </li>
                   <li>
-                    <img src={whychoose2} alt="img" /> 99.9% Uptime Guarantee
+                    <img src={whychoose2} alt="img" /> Smart Automation
                   </li>
                   <li>
-                    <img src={whychoose3} alt="img" /> Easy-to-Use Control Panel
+                    <img src={whychoose3} alt="img" /> Secure Transactions
                   </li>
                 </ul>
                 <div className={props.anotherFlexClass}>
@@ -91,7 +90,7 @@ const WordPressPerformanceSection = (props) => {
                         {props.landingListItems &&
                           props.landingListItems.map((item, index) => (
                             <li key={index}>
-                              <FaCheckCircle /> {item}
+                              <FaCheckCircle className="landing-circle" /><FaRegCheckCircle className="landing-check-none" /> {item}
                             </li>
                           ))}
                       </ul>
@@ -131,11 +130,11 @@ const WordPressPerformanceSection = (props) => {
                       <Link to={props.aboutbtnlink || "/about"}>{props.btntext}</Link>
                       {(props.phoneNumber || props.phoneLink) && (
                         <div className="about-number about-number-anchor">
-                          <a href={`tel:${props.phoneNumberLink || "+16197989688"}`}>
+                          <a href={`tel:${props.phoneNumberLink || "+16193352364"}`}>
                           <span>
                             <FaPhoneAlt />
                           </span>
-                          <p>{props.phoneNumber || "+1 619-798-9688"}</p>
+                          <p>{props.phoneNumber || "+1 (619) 335-2364"}</p>
                           </a>
                         </div>
                       )}

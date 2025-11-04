@@ -1,10 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import whiteCheck from "../../Assets/white-check.webp";
+import smartaivideo from "../../Assets/newChildPagesAssets/smartaiintegration/ai-integration-video.mp4"
 
 const ServiceBanner = (props) => {
   return (
     <section className={`wordpress-web-design ${props.secClass}`}>
+      <div className="smart-ai-video">
+        <video autoPlay muted loop playsInline className="background-video">
+          <source src={smartaivideo} type="video/mp4" />
+        </video>
+      </div>
       <img
         src={props.bgImage}
         className="servicesBanner-bgImage"

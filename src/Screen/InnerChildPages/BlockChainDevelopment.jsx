@@ -29,6 +29,7 @@ import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
 import BlockchainChoose from "../../components/BlockchainChoose";
+import ReactHelmet from "../../components/ReactHelmet";
 
 export const faqHomeData = [
   {
@@ -87,8 +88,7 @@ export const faqHomeData = [
   },
   {
     id: 10,
-    question:
-      "10. What is blockchain development, and how does it work?",
+    question: "10. What is blockchain development, and how does it work?",
     answer:
       "Blockchain development involves creating secure, decentralized systems that record and verify data across a network, ensuring transparency, trust, and tamper-proof transactions.",
   },
@@ -163,106 +163,112 @@ const BlockChainDevelopment = () => {
   };
 
   return (
-    <Layout>
-      <ServiceBanner
-        leftCol="col-lg-6"
-        bgImage={blockchainbanner}
-        btnClass="theme-light mt-3"
-        title="Create a Safe Digital Future with Blockchain Development"
-        description="Build decentralized solutions, powered by blockchain development in California for better security, transparency, and business automation."
-        btnText="Protect Your Data"
-      />
-
-      <CustomAboutCompany
-        miniHead="About Company"
-        mainHeadStart="Drive Digital Innovation with"
-        mainHeadBlue="Blockchain"
-        mainHeadLast="Solutions"
-        frontendAboutImg={blockchainAbout1}
-        frontendAboutImgtwo={blockchainAbout2}
-        aboutPara="As an experienced blockchain development agency in California, we help businesses increase efficiency, agility, and security through custom blockchain development services. By understanding the need of the hour, where data protection has become a top priority, we create solutions that help businesses transfer and save their data in a decentralized way, making it way more secure and accessible only to authorized users."
-        listItems={["Professional IT Solutions ", "Experience Team Members"]}
-        listClass="aboutCompanylist"
-        btntext="Talk to Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-
-      <OurCustomService
-        miniHead="Our Services"
-        secMainTitle="Custom"
-        secTitleBlue="Blockchain Development"
-        secLastTitle="Solutions"
-        customServicePara="We offer future-proof custom blockchain development services in California, including private, public, and hybrid blockchain solutions, smart contracts, dApps, tokenization, and more. Our team of blockchain experts designs and builds decentralized networks and applications using platforms like Ethereum, Hyperledger, and Corda, ensuring scalability, transparency, and secure digital innovation."
-        customServiceBtn="Start Your Project"
-        serviceCards={serviceCards}
-      />
-
-      <PixelPerfectSec
-        minihead="Portfolio"
-        secTitle="Latest"
-        secTitleBlue="Blockchain"
-        secTitle2="Projects"
-        secDescription="See our recent projects that have empowered businesses by helping them secure this data and business transactions."
-        btnText="Explore Services"
-        projectsData={webDesignPortfolioData}
-        onImageClick={handleImageClick}
-      />
+    <>
+    <ReactHelmet
+      title="Blockchain Development | Smart Contract & dApp Experts"
+      description="Unlock the potential of blockchain with our expert development team. From smart contracts to decentralized applications, we deliver secure and future-ready blockchain solutions."
+      keywords="blockchain development, smart contracts, dapp development, decentralized technology, web3 solutions, crypto development"
+      baseUrl="https://californiawebcoders.com/blockchain-development"
+    />
 
 
-    <BlockchainChoose/>
-
-
-
-      <WordPressPerformanceSection
-        reverse
-        minihead="About Company"
-        miniheadclass="shorttop-head"
-        secTitle1="Make Data Protection Built-In with"
-        secTitle2="Blockchain"
-        description="We make blockchain the first and most secure line of defense for your business. Our blockchain solutions in California turn every transaction, record, and interaction into a self-verifying system of truth. No centralized weak points. No silent breaches. Just a network where data protects itself, transparent, traceable, and tamper-proof."
-        image={blockchainbuildimg}
-        listClass="d-none"
-        TouchBtn="d-none"
-        btntext="Talk to Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-
-
-      <ContactForm
-        secTitle="Want to Go Fast and Secure? Talk to Us!"
-        secDescription="Share your idea, and we’ll turn it into a blockchain-powered product that no one can break into!"
-        btnText="Let’s Chat"
-      />
-
-      <SinglePricingPlan
-        secTitle="Blockchain Development Pricing"
-        secTitleEnd="for Businesses"
-        secDescription="No more budget issues, get your hands on the most Affordable Website Design Services online."
-        // pricingPlanData={eCommerseWebsitePricingPlansData}
-        pricingPlanData={wordpressWebsitePricingPlansData}
-      />
-
-      <FrequentQuestions
-        secTitle="Answers to all Your Questions"
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqHomeData}
-      />
-
-      <Suspense fallback={<Loader />}>
-        <BlogSection categorySlug="cms-development" />
-      </Suspense>
-
-      {isOpen && images.length > 0 && (
-        <Lightbox
-          open={isOpen}
-          close={() => setIsOpen(false)}
-          slides={images}
-          index={currentIndex}
+      <Layout>
+        <ServiceBanner
+          leftCol="col-lg-6"
+          bgImage={blockchainbanner}
+          btnClass="theme-light mt-3"
+          title="Create a Safe Digital Future with Blockchain Development"
+          description="Build decentralized solutions, powered by blockchain development in California for better security, transparency, and business automation."
+          btnText="Protect Your Data"
         />
-      )}
-    </Layout>
+
+        <CustomAboutCompany
+          miniHead="About Company"
+          mainHeadStart="Drive Digital Innovation with"
+          mainHeadBlue="Blockchain"
+          mainHeadLast="Solutions"
+          frontendAboutImg={blockchainAbout1}
+          frontendAboutImgtwo={blockchainAbout2}
+          aboutPara="As an experienced blockchain development agency in California, we help businesses increase efficiency, agility, and security through custom blockchain development services. By understanding the need of the hour, where data protection has become a top priority, we create solutions that help businesses transfer and save their data in a decentralized way, making it way more secure and accessible only to authorized users."
+          listItems={["Professional IT Solutions ", "Experience Team Members"]}
+          listClass="aboutCompanylist"
+          btntext="Talk to Us"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <OurCustomService
+          miniHead="Our Services"
+          secMainTitle="Custom"
+          secTitleBlue="Blockchain Development"
+          secLastTitle="Solutions"
+          customServicePara="We offer future-proof custom blockchain development services in California, including private, public, and hybrid blockchain solutions, smart contracts, dApps, tokenization, and more. Our team of blockchain experts designs and builds decentralized networks and applications using platforms like Ethereum, Hyperledger, and Corda, ensuring scalability, transparency, and secure digital innovation."
+          customServiceBtn="Start Your Project"
+          serviceCards={serviceCards}
+        />
+
+        <PixelPerfectSec
+          minihead="Portfolio"
+          secTitle="Latest"
+          secTitleBlue="Blockchain"
+          secTitle2="Projects"
+          secDescription="See our recent projects that have empowered businesses by helping them secure this data and business transactions."
+          btnText="Explore Services"
+          projectsData={webDesignPortfolioData}
+          onImageClick={handleImageClick}
+        />
+
+        <BlockchainChoose />
+
+        <WordPressPerformanceSection
+          reverse
+          minihead="About Company"
+          miniheadclass="shorttop-head"
+          secTitle1="Make Data Protection Built-In with"
+          secTitle2="Blockchain"
+          description="We make blockchain the first and most secure line of defense for your business. Our blockchain solutions in California turn every transaction, record, and interaction into a self-verifying system of truth. No centralized weak points. No silent breaches. Just a network where data protects itself, transparent, traceable, and tamper-proof."
+          image={blockchainbuildimg}
+          listClass="d-none"
+          TouchBtn="d-none"
+          btntext="Talk to Us"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <ContactForm
+          secTitle="Want to Go Fast and Secure? Talk to Us!"
+          secDescription="Share your idea, and we’ll turn it into a blockchain-powered product that no one can break into!"
+          btnText="Let’s Chat"
+        />
+
+        <SinglePricingPlan
+          secTitle="Blockchain Development Pricing"
+          secTitleEnd="for Businesses"
+          secDescription="No more budget issues, get your hands on the most Affordable Website Design Services online."
+          // pricingPlanData={eCommerseWebsitePricingPlansData}
+          pricingPlanData={wordpressWebsitePricingPlansData}
+        />
+
+        <FrequentQuestions
+          secTitle="Answers to all Your Questions"
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
+        />
+
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" />
+        </Suspense>
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

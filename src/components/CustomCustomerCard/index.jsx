@@ -6,7 +6,7 @@ const CustomCustomerCard = ({ cardsData }) => {
       <div className="container">
         <div className="row">
           {cardsData.map((card, index) => (
-            <div className="col-lg-4" key={index}>
+            <div className="col-lg-4 col-md-6" key={index}>
               <div className="custom-customer-card">
                 <span>{card.icon}</span>
                 <h4>{card.cardTitle}</h4>

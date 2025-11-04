@@ -5,6 +5,7 @@ const IndustriesIOSApps = ({
   sectionTitle,
   highlightText,
   sectionTitleEnd,
+  androidappicon,
   description,
   features,
   image,
@@ -47,7 +48,7 @@ const IndustriesIOSApps = ({
                     key={index}
                     data-aos-delay={index * 150 + 300}
                   >
-                    <span className="ios-service-icon">{item.icon}</span>
+                    <span className={androidappicon || "ios-service-icon"}>{item.icon}</span>
                     <span className="ios-arrow-icon">
                       <HiOutlineArrowLongRight />
                     </span>

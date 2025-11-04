@@ -10,86 +10,141 @@ import pixleperfectimg3 from "../../Assets/newChildPagesAssets/smartaiintegratio
 import pixleperfectimg4 from "../../Assets/newChildPagesAssets/smartaiintegration/pixel-4.webp";
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/smartaiintegration/pixel-5.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/smartaiintegration/pixel-6.webp";
-import serviceCardOne from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-customapi.png";
-import serviceCardTwo from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-realtime.png";
-import serviceCardThree from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-node.png";
-import { TbApi } from "react-icons/tb";
-import { FaAppStoreIos, FaNode } from "react-icons/fa";
+import { ReactComponent as Restfulapi } from "../../Assets/newChildPagesAssets/laraveldevelopment/restfulapis.svg";
+import { ReactComponent as Realtimeapp } from "../../Assets/newChildPagesAssets/nodejsdevelopment/realtimeapp.svg";
+import { ReactComponent as Nodejs } from "../../Assets/newChildPagesAssets/nodejsdevelopment/migratenodejs.svg";
+import serviceCardOne from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-customapi.webp";
+import serviceCardTwo from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-realtime.webp";
+import serviceCardThree from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-node.webp";
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
 import CustomGetInTouch from "../../components/CustomGetInTouch";
 import ExperessEverything from "../../components/ExperessEverything";
 import SinglePricingPlan from "../../components/SinglePricingPlan";
 import { wordpressWebsitePricingPlansData } from "../../data";
-import { faqHomeData } from "../Designing";
 import FrequentQuestions from "../../components/FrequentQuestions";
 import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
+import ReactHelmet from "../../components/ReactHelmet";
+
+export const faqHomeData = [
+  {
+    id: 1,
+    question: "1. What are AI integration services?",
+    answer:
+      "AI integration connects machine learning tools with existing systems to automate tasks, analyze data, and enhance business intelligence.",
+  },
+  {
+    id: 2,
+    question: "2. Why choose California Web Coders for AI integration?",
+    answer:
+      "We deliver custom AI integration services California that merge automation, analytics, and strategy for measurable business growth.",
+  },
+  {
+    id: 3,
+    question: "3. Do you offer AI chatbot integration for websites California?",
+    answer:
+      "Yes, we build AI chatbots that handle real-time queries, support customers, and boost website engagement.",
+  },
+  {
+    id: 4,
+    question: "4. What industries benefit from AI integration?",
+    answer:
+      "AI is used in eCommerce, healthcare, real estate, finance, and logistics to improve performance, insights, and user experience.",
+  },
+  {
+    id: 5,
+    question:
+      "5. Do you provide generative AI integration services California?",
+    answer:
+      "Yes, we develop generative AI solutions for content automation, predictive modeling, and intelligent data systems.",
+  },
+  {
+    id: 6,
+    question: "6. Can AI integrate with my current CRM or website?",
+    answer:
+      "Absolutely. Our AI integration agency California ensures smooth integration with your CRM, ERP, or web platform.",
+  },
+  {
+    id: 7,
+    question:
+      "7. Do you offer AI data integration services California for analytics?",
+    answer:
+      "Yes, we unify all data points across tools and platforms, creating centralized systems for better decision-making.",
+  },
+  {
+    id: 8,
+    question: "8. What’s the timeline for an AI integration project?",
+    answer:
+      "Most integrations take 4-8 weeks, depending on system complexity, data structure, and AI capabilities required.",
+  },
+  {
+    id: 9,
+    question: "9. Do you provide ongoing AI maintenance or optimization?",
+    answer:
+      "Yes, our team continuously refines AI models and systems to maintain accuracy, speed, and performance.",
+  },
+  {
+    id: 10,
+    question:
+      "10. Are your AI integration solutions affordable for small businesses?",
+    answer:
+      "Yes, our affordable AI integration services California are scalable for startups and enterprises alike, results first, costs transparent.",
+  },
+];
 
 const SmartAIIntegration = () => {
   const webDesignPortfolioData = [
     {
       id: 1,
       image: pixleperfectimg1,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 2,
       image: pixleperfectimg2,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 3,
       image: pixleperfectimg3,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 4,
       image: pixleperfectimg4,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 5,
       image: pixleperfectimg5,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 6,
       image: pixleperfectimg6,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
   ];
 
   const serviceCards = [
     {
       id: 1,
-      icon: <TbApi size={40} />,
-      serviceCardHead: "Custom API Development",
+      icon: <Restfulapi size={40} />,
+      serviceCardHead: "Web App Development",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "We develop powerful web applications designed for performance, scalability, and intelligence. Every app integrates with AI tools to enhance automation, analytics, and real-time decision-making for your business.",
       serviceCardImg: serviceCardOne,
     },
     {
       id: 2,
-      icon: <FaAppStoreIos size={40} />,
-      serviceCardHead: "Real Time Applications",
+      icon: <Realtimeapp size={40} />,
+      serviceCardHead: "Website Design",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Our website design team blends creativity and strategy to build visually stunning, conversion-focused websites that complement your AI-driven experiences while reinforcing your brand identity and user engagement.",
       serviceCardImg: serviceCardTwo,
     },
     {
       id: 3,
-      icon: <FaNode size={40} />,
-      serviceCardHead: "Migration to node",
+      icon: <Nodejs size={40} />,
+      serviceCardHead: "Search Engine Optimization",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Through smart automation and data analysis, our SEO experts use AI to identify opportunities, improve rankings, and create content strategies that deliver consistent, measurable growth for your business.",
       serviceCardImg: serviceCardThree,
     },
   ];
@@ -108,93 +163,97 @@ const SmartAIIntegration = () => {
   };
 
   return (
-    <Layout>
-      <ServiceBanner
-        secClass="smartai-hero-sec"
-        leftCol="col-lg-8"
-        rowClass="row justify-content-center text-center"
-        btnClass="theme-light mt-3"
-        title="Smart AI Integration to Transform Your Business"
-        description="California Web Coders integrates Artificial Intelligence into websites, apps and business processes—helping you automate tasks, gain insights and deliver next-level user experiences."
-        btnText="Get A Free React Quote"
+    <>
+      <ReactHelmet
+        title="AI Integration Services | Smart Business Solutions"
+        description="Transform your digital products with AI integration. We implement machine learning, automation, and data-driven insights to help your business operate smarter and faster."
+        keywords="AI integration, artificial intelligence, machine learning, automation, smart applications, AI solutions"
+        baseUrl="https://californiawebcoders.com/ai-integration"
       />
 
-      <Growyourbusiness
-        title1="Want to grow your business"
-        title2="digitally?"
-      />
-
-      <CustomExperience />
-
-      <OurCustomService
-        miniHead="Our Services"
-        secMainTitle="Our"
-        secTitleBlue="AI Integration"
-        secLastTitle="Services"
-        customServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
-        customServiceBtn="View All Services"
-        serviceCards={serviceCards}
-      />
-
-      <PixelPerfectSec
-        minihead="Portfolio"
-        secTitle="Recent"
-        secTitleBlue="AI Integration"
-        secTitle2="Projects"
-        secDescription="See how we’ve helped clients build cutting-edge, high-performance React applications."
-        projectsData={webDesignPortfolioData}
-        onImageClick={handleImageClick}
-      />
-
-      <ExperessEverything/>
-
-      <WordPressPerformanceSection
-        afterConainerClass="aipower-bg-sec"
-        secTitle1="Ready to Add AI Power to Your Business?"
-        description="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
-        listClass="d-none"
-        TouchBtn="d-none"
-        serviceImg="d-none"
-        btntext="Let's Talk With Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-
-      <CustomGetInTouch/>
-
-      <SinglePricingPlan
-        pricingSecClass="smartai-pricing-sec"
-        secTitle="Flexible"
-        secTitleBlue="AI Integration"
-        secTitleEnd="Packages"
-        secDescription="No more budget issues, get your hands on the most Affordable Website Design Services online."
-        // pricingPlanData={eCommerseWebsitePricingPlansData}
-        pricingPlanData={wordpressWebsitePricingPlansData}
-      />
-
-      <FrequentQuestions
-        faqsSecClass="smartai-faqs-sec faqs-sec"
-        secTitle="You Will Find Our Client's Frequent Questions"
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqHomeData}
-      />
-
-      <Suspense fallback={<Loader />}>
-        <BlogSection categorySlug="cms-development" />
-      </Suspense>
-
-      {isOpen && images.length > 0 && (
-        <Lightbox
-          open={isOpen}
-          close={() => setIsOpen(false)}
-          slides={images}
-          index={currentIndex}
+      <Layout>
+        <ServiceBanner
+          secClass="smartai-hero-sec"
+          leftCol="col-lg-8"
+          rowClass="row justify-content-center text-center"
+          btnClass="theme-light mt-3"
+          title="Smarter Systems Through AI Integration"
+          description="Ai is your growth partner, not your competition. Our AI integration services in California help businesses automate, analyze, and adapt faster with intelligent, data-driven solutions that enhance performance and decision-making."
+          btnText="Get A Free React Quote"
         />
-      )}
 
+        <Growyourbusiness
+          title1="Wanna Make AI Your Best Friend in"
+          title2="Productivity? "
+          btnText="Get Started!"
+        />
 
+        <CustomExperience />
 
-    </Layout>
+        <OurCustomService
+          miniHead="Our Services"
+          secTitleBlue="Smarter Integrations,"
+          secLastTitle="Stronger Results"
+          customServicePara="At California Web Coders, our AI integration agency in California connects intelligence with innovation. We combine AI, web development, and automation to build smarter ecosystems that enhance business efficiency and customer experiences."
+          customServiceBtn="Start Your Project"
+          serviceCards={serviceCards}
+        />
+
+        <PixelPerfectSec
+          minihead="Portfolio"
+          secTitle="AI Projects That Redefined Efficiency"
+          secDescription="From chatbots to predictive analytics, our projects reflect how AI turns complex systems into simple, scalable, and impactful business tools."
+          projectsData={webDesignPortfolioData}
+          onImageClick={handleImageClick}
+        />
+
+        <ExperessEverything />
+
+        <WordPressPerformanceSection
+          afterConainerClass="aipower-bg-sec"
+          secTitle1="Ready to Bring AI Into Your Business?"
+          description="AI is only powerful when it’s purposeful. Let our AI integration company in California show you how intelligence, strategy, and automation can work together for results that matter"
+          listClass="d-none"
+          TouchBtn="d-none"
+          serviceImg="d-none"
+          btntext="Let’s Integrate AI Today"
+          aboutbtnlink="/get-intouch"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <CustomGetInTouch />
+
+        <SinglePricingPlan
+          pricingSecClass="smartai-pricing-sec"
+          secTitle="Explore The"
+          secTitleBlue="Packages"
+          secDescription="We customize our AI integration services pricing for every business size and requirement ensuring flexible, scalable solutions that deliver tangible returns."
+          // pricingPlanData={eCommerseWebsitePricingPlansData}
+          pricingPlanData={wordpressWebsitePricingPlansData}
+        />
+
+        <FrequentQuestions
+          faqsSecClass="smartai-faqs-sec faqs-sec"
+          secTitle="Frequently Asked Questions For AI Integration Services."
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
+        />
+
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" />
+        </Suspense>
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

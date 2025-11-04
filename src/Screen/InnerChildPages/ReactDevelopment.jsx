@@ -3,17 +3,20 @@ import Layout from "../../components/layout";
 import CustomAboutCompany from "../../components/CustomAboutCompany";
 import AboutFrontendOne from "../../Assets/newChildPagesAssets/reactdevelopment/aboutone.webp";
 import AboutFrontendTwo from "../../Assets/newChildPagesAssets/reactdevelopment/abouttwo.webp";
-import serviceCardOne from "../../Assets/newChildPagesAssets/frontenddevelopment/serviceOne.png";
+import serviceCardOne from "../../Assets/newChildPagesAssets/reactdevelopment/reactjs-inner-service.webp";
+import serviceCardTwo from "../../Assets/newChildPagesAssets/reactdevelopment/customui-inner-service.webp";
+import serviceCardThree from "../../Assets/newChildPagesAssets/reactdevelopment/api-inner-service.webp";
 import reactChoose from "../../Assets/newChildPagesAssets/reactdevelopment/reactchoose.webp";
+import { ReactComponent as Apiintegrate } from "../../Assets/newChildPagesAssets/reactdevelopment/apiintegration.svg";
+import { ReactComponent as Customui } from "../../Assets/newChildPagesAssets/reactdevelopment/customui.svg";
+import { ReactComponent as Reactjs } from "../../Assets/newChildPagesAssets/reactdevelopment/reactjs.svg";
+import { ReactComponent as Speedmeter } from "../../Assets/newChildPagesAssets/reactdevelopment/speedmeter.svg";
+import { ReactComponent as Topmedal } from "../../Assets/newChildPagesAssets/reactdevelopment/toppermedal.svg";
+import { ReactComponent as Easycontrol } from "../../Assets/newChildPagesAssets/reactdevelopment/easycontrol.svg";
 import OurCustomService from "../../components/OurCustomService";
-import { TbApi, TbDeviceMobileCode } from "react-icons/tb";
-import { SiCreatereactapp } from "react-icons/si";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
-import { FaMedal, FaTachometerAlt } from "react-icons/fa";
-import { IoSettingsSharp } from "react-icons/io5";
 import CustomCustomerCard from "../../components/CustomCustomerCard";
 import FrequentQuestions from "../../components/FrequentQuestions";
-import { faqHomeData } from "../Designing";
 import SinglePricingPlan from "../../components/SinglePricingPlan";
 import { wordpressWebsitePricingPlansData } from "../../data";
 import ContactForm from "../../components/readytocheat";
@@ -21,171 +24,242 @@ import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
 import ReactHeroBanner from "../../components/ReactHeroBanner";
+import ReactHelmet from "../../components/ReactHelmet";
+
+export const faqHomeData = [
+  {
+    id: 1,
+    question: "1. What is React used for in web development?",
+    answer:
+      "React is used to build fast, dynamic, and interactive user interfaces that improve engagement and performance across web and mobile applications.",
+  },
+  {
+    id: 2,
+    question: "2. Why choose California Web Coders for React development?",
+    answer:
+      "We create high-performance React applications focused on scalability, design precision, and measurable business outcomes for every client.",
+  },
+  {
+    id: 3,
+    question: "3. Do you build custom React applications?",
+    answer:
+      "Yes. We specialize in custom React web applications tailored to your business goals, from startups to large-scale enterprise systems.",
+  },
+  {
+    id: 4,
+    question: "4. Is React good for SEO?",
+    answer:
+      "Yes. With tools like Next.js, React supports server-side rendering, improving SEO visibility and page load performance.",
+  },
+  {
+    id: 5,
+    question: "5. Do you integrate AI with React applications?",
+    answer:
+      "Absolutely. We enhance React apps with AI integration to enable smarter user experiences, automation, and predictive analytics.",
+  },
+  {
+    id: 6,
+    question: "6. Can React be used for eCommerce websites?",
+    answer:
+      "Yes. React is ideal for eCommerce platforms that need interactive product displays, fast navigation, and real-time data updates.",
+  },
+  {
+    id: 7,
+    question: "7. Do you offer React maintenance and support?",
+    answer:
+      "Yes. We provide ongoing maintenance, optimization, and updates to keep your React application performing at its best.",
+  },
+  {
+    id: 8,
+    question: "8. How long does a React project take?",
+    answer:
+      "Most React projects are completed within 4-8 weeks, depending on complexity, integrations, and required features.",
+  },
+  {
+    id: 9,
+    question:
+      "9. Can React integrate with backend technologies like Node.js or Laravel?",
+    answer:
+      "Yes. React connects seamlessly with Node.js, Laravel, and other backend frameworks for full-stack performance.",
+  },
+  {
+    id: 10,
+    question:
+      "10. Do you provide React development for startups and small businesses?",
+    answer:
+      "Yes. Our React development services in California are scalable and affordable for startups and small businesses across California.",
+  },
+];
 
 const ReactDevelopment = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [images, setImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-   const [isOpen, setIsOpen] = useState(false);
-    const [images, setImages] = useState([]);
-    const [currentIndex, setCurrentIndex] = useState(0);
-  
-    const handleImageClick = (index, imageArray) => {
-      const imageList = imageArray.map((item) => ({
-        src: item.image,
-      }));
-      setImages(imageList);
-      setCurrentIndex(index);
-      setIsOpen(true);
-    };
-  
+  const handleImageClick = (index, imageArray) => {
+    const imageList = imageArray.map((item) => ({
+      src: item.image,
+    }));
+    setImages(imageList);
+    setCurrentIndex(index);
+    setIsOpen(true);
+  };
 
   const serviceCards = [
     {
       id: 1,
-      icon: <TbDeviceMobileCode size={40} />,
-      serviceCardHead: "Custom React Applications",
+      icon: <Reactjs size={40} />,
+      serviceCardHead: "Reactjs Development",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "We use Reactjs to create fast, SEO-friendly React apps with superior rendering performance ideal for businesses that need scalable and search-optimized digital platforms.",
       serviceCardImg: serviceCardOne,
     },
     {
       id: 2,
-      icon: <TbApi size={40} />,
-      serviceCardHead: "API Integration",
+      icon: <Customui size={40} />,
+      serviceCardHead: "UI/UX Design",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      serviceCardImg: serviceCardOne,
+        "Our design team blends creativity with usability, ensuring every interface is intuitive, visually appealing, and optimized for conversion, built to make every user interaction feel effortless.",
+      serviceCardImg: serviceCardTwo,
     },
     {
       id: 3,
-      icon: <SiCreatereactapp size={40} />,
-      serviceCardHead: "Migration to React",
+      icon: <Apiintegrate size={40} />,
+      serviceCardHead: "AI Integration",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      serviceCardImg: serviceCardOne,
+        "We combine React interfaces with AI integration to create smart, adaptive web applications. From predictive interactions to personalized dashboards, we help your platform think and respond intelligently.",
+      serviceCardImg: serviceCardThree,
     },
   ];
 
   const cardsData = [
     {
-      icon: <FaTachometerAlt />,
-      cardTitle: "24/7 Expert Customer Support",
+      icon: <Speedmeter />,
+      cardTitle: "Scalable Interfaces",
       cardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
+        "We build React applications optimized for speed, performance, and scalability, ensuring your platform handles traffic, data, and user interactions effortlessly for a seamless experience. ",
     },
     {
-      icon: <FaMedal />,
-      cardTitle: "99.9% Uptime Guarantee",
+      icon: <Topmedal />,
+      cardTitle: "Conversion-Focused",
       cardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
+        "Every interface we design is guided by strategy and behavior. From layout to micro-interactions, we craft user journeys that engage visitors and turn them into loyal customers.",
     },
     {
-      icon: <IoSettingsSharp />,
-      cardTitle: "Easy-to-Use Control Panel",
+      icon: <Easycontrol />,
+      cardTitle: "Seamless Integration",
       cardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since .",
+        "Our React developers combine innovation with intelligence, integrating AI, APIs, and backend systems to create interactive, data-driven applications that adapt and evolve with your business needs.",
     },
   ];
 
   return (
-    <Layout>
-
-
-    
-      <ReactHeroBanner/>
-
-
-
-      <CustomAboutCompany
-        CustomFrontendSec="react-about-sec"
-        miniHead="About Company"
-        mainHeadBlue="React Specialists"
-        mainHead="You Can Trust"
-        frontendAboutImg={AboutFrontendOne}
-        frontendAboutImgtwo={AboutFrontendTwo}
-        aboutPara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        listItems={["Professional IT Solutions ", "Experience Team Members"]}
-        listClass="aboutCompanylist"
-        btntext="Learn More About Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
+    <>
+      <ReactHelmet
+        title="ReactJS Development Services | High-Performance Web Apps"
+        description="Build lightning-fast and scalable web applications with our expert ReactJS development services. From single-page apps to enterprise solutions, we deliver excellence in every line of code."
+        keywords="react development, reactjs services, frontend development, custom web apps, react developers, web application development"
+        baseUrl="https://californiawebcoders.com/react-development"
       />
 
-      <OurCustomService
-        CustomFrontendSec="react-service-sec"
-        miniHead="Our Services"
-        secMainTitle="Our"
-        secTitleBlue="Search Engine Optimization"
-        secLastTitle="Services"
-        customServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
-        customServiceBtn="View All Services"
-        serviceCards={serviceCards}
-      />
+      <Layout>
+        <ReactHeroBanner />
 
-      <section className="why-choose-react-card">
+        <CustomAboutCompany
+          CustomFrontendSec="react-about-sec"
+          miniHead="About Us"
+          mainHeadStart="Making Interactive Websites With"
+          mainHeadBlue="React’s Power"
+          frontendAboutImg={AboutFrontendOne}
+          frontendAboutImgtwo={AboutFrontendTwo}
+          aboutPara="React is widely known for powering some of the world’s most advanced websites, and we are here to bring that same power to your business. At California Web Coders, our developers create websites that look sharp, run fast, and keep users engaged across industries and business stages alike."
+          listItems={[
+            "Modern, interactive user interfaces",
+            "Optimized for performance and SEO",
+          ]}
+          listClass="aboutCompanylist"
+          btntext="More About Us"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <OurCustomService
+          CustomFrontendSec="react-service-sec"
+          miniHead="More of Our Services:"
+          secMainTitle="Building"
+          secTitleBlue="Dynamic Frontends"
+          secLastTitle="That Perform"
+          customServicePara="React powers seamless, interactive web experiences. At California Web Coders, our React development services focus on crafting lightning-fast interfaces that engage users, scale effortlessly, and deliver measurable performance across every device and screen size."
+          customServiceBtn="Start Your Project"
+          serviceCards={serviceCards}
+        />
+
+        <section className="why-choose-react-card">
+          <WordPressPerformanceSection
+            wordpresssecclass="react-choose-sec"
+            miniheadclass="shorttop-head"
+            minihead="Why Choose Us"
+            secTitle1="Why Brands Across California Choose"
+            secTitle2="React With Us"
+            description="Across California, brands partner with us to create React websites that combine speed, interactivity, and rock-solid reliability. At California Web Coders, we are a trusted React JS development company in California, delivering digital experiences that are scalable, secure, and custom made for each business’s goals. Every project undergoes attentive testing and is built using modern development practices to ensure long-lasting quality."
+            image={reactChoose}
+            listClass="d-none"
+            TouchBtn="d-none"
+            btntext="Talk to us"
+            aboutbtnlink="/get-intouch"
+            learnmorebtn="aboutus-call"
+            phoneNumber="+1 (619) 335-2364"
+          />
+          <CustomCustomerCard cardsData={cardsData} />
+        </section>
+
+        <FrequentQuestions
+          secTitle="Our Most Asked Questions About React Development"
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
+        />
+
         <WordPressPerformanceSection
-          wordpresssecclass="react-choose-sec"
-          miniheadclass="shorttop-head"
-          minihead="Why Choose Us"
-          secTitle1="Why Choose Our"
-          secTitle2="React Development"
-          secTitle3="Services"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          image={reactChoose}
+          afterConainerClass="react-build-bg"
+          secTitle1="Ready to Take Over With A Seamless Web Experience?"
+          description="Your website deserves to do more than just look good, it should perform, convert, and evolve with your business. Let California Web Coders build a high-performing web experience that turns visitors into loyal customers."
           listClass="d-none"
           TouchBtn="d-none"
-          btntext="Register With Confidence"
+          serviceImg="d-none"
+          btntext="Talk to Our Experts"
           learnmorebtn="aboutus-call"
-          phoneNumber="+1 619-798-9688"
+          phoneNumber="+1 (619) 335-2364"
         />
-        <CustomCustomerCard cardsData={cardsData} />;
-      </section>
 
-      <FrequentQuestions
-        secTitle="You Will Find Our Client's Frequent Questions"
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqHomeData}
-      />
-
-      <WordPressPerformanceSection
-        afterConainerClass="react-build-bg"
-        secTitle1="Ready to Build a Powerful React App?"
-        description="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
-        listClass="d-none"
-        TouchBtn="d-none"
-        serviceImg="d-none"
-        btntext="Let's Talk With Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-
-      <SinglePricingPlan
-        secTitle="Affordable Website Design Packages"
-        secDescription="Choose the perfect plan that fits your needs and budget."
-        // pricingPlanData={eCommerseWebsitePricingPlansData}
-        pricingPlanData={wordpressWebsitePricingPlansData}
-      />
-
-      <ContactForm
-        secTitle="Ready to chat about your project?"
-        secDescription="Get in touch today to see how we can help your business achieve its full potential online."
-        btnText="Let’s Chat"
-      />
-
-
-      <Suspense fallback={<Loader />}>
-        <BlogSection categorySlug="cms-development" />
-      </Suspense>
-
-      {isOpen && images.length > 0 && (
-        <Lightbox
-          open={isOpen}
-          close={() => setIsOpen(false)}
-          slides={images}
-          index={currentIndex}
+        <SinglePricingPlan
+          secTitle="Flexible"
+          secTitleBlue="React Development"
+          secTitleEnd="Packages"
+          secDescription="Our React Native development services in California give businesses cost-effective solutions without compromising on quality."
+          // pricingPlanData={eCommerseWebsitePricingPlansData}
+          pricingPlanData={wordpressWebsitePricingPlansData}
         />
-      )}
 
-    </Layout>
+        <ContactForm
+          secTitle="Fill The Contact Form to Get Started"
+          secDescription="Our experts are ready for a conversation with you! Fill out the form below for a consultation. "
+          btnText="Send Message"
+        />
+
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" />
+        </Suspense>
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

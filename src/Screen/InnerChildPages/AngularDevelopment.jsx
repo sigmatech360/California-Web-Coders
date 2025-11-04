@@ -4,11 +4,10 @@ import ServiceBanner from "../../components/ServiceBanner";
 import landingPageBanner from "../../Assets/newChildPagesAssets/frontenddevelopment/landingbanner.webp";
 import angularaboutvideo from "../../Assets/newChildPagesAssets/angulardevelopment/video-about.mp4";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
-import serviceCardOne from "../../Assets/newChildPagesAssets/frontenddevelopment/serviceOne.png";
+import serviceCardOne from "../../Assets/newChildPagesAssets/frontenddevelopment/serviceOne.webp";
+import serviceCardTwo from "../../Assets/newChildPagesAssets/angulardevelopment/customweb-inner-service.webp";
+import serviceCardThree from "../../Assets/newChildPagesAssets/angulardevelopment/backendintegration-inner-service.webp";
 import OurCustomService from "../../components/OurCustomService";
-import { FaMobileScreen } from "react-icons/fa6";
-import { FaLaptopCode } from "react-icons/fa";
-import { BsPcDisplay } from "react-icons/bs";
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import pixleperfectimg1 from "../../Assets/newChildPagesAssets/angulardevelopment/pixel-1.webp";
 import pixleperfectimg2 from "../../Assets/newChildPagesAssets/angulardevelopment/pixel-2.webp";
@@ -16,79 +15,133 @@ import pixleperfectimg3 from "../../Assets/newChildPagesAssets/angulardevelopmen
 import pixleperfectimg4 from "../../Assets/newChildPagesAssets/angulardevelopment/pixel-4.webp";
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/angulardevelopment/pixel-5.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/angulardevelopment/pixel-6.webp";
-import angularbuildlaptop from "../../Assets/newChildPagesAssets/angulardevelopment/360laptop.png";
+import angularbuildlaptop from "../../Assets/newChildPagesAssets/angulardevelopment/360laptop.webp";
+import { ReactComponent as Angular } from "../../Assets/newChildPagesAssets/angulardevelopment/angular.svg";
+import { ReactComponent as Backend } from "../../Assets/newChildPagesAssets/angulardevelopment/backend.svg";
+import { ReactComponent as CustomWeb } from "../../Assets/newChildPagesAssets/angulardevelopment/custom-web.svg";
 import FrequentQuestions from "../../components/FrequentQuestions";
-import { faqHomeData } from "../Designing";
 import SinglePricingPlan from "../../components/SinglePricingPlan";
 import { wordpressWebsitePricingPlansData } from "../../data";
 import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
+import ReactHelmet from "../../components/ReactHelmet";
+
+export const faqHomeData = [
+  {
+    id: 1,
+    question: "1. What is Angular used for in web development?",
+    answer:
+      "Angular is used to build dynamic, scalable, and enterprise-level applications that deliver consistency and top-tier performance.",
+  },
+  {
+    id: 2,
+    question: "2. Why choose California Web Coders for Angular development?",
+    answer:
+      "We combine technical precision and design strategy to build powerful Angular apps that grow with your business.",
+  },
+  {
+    id: 3,
+    question: "3. Do you create custom Angular web applications?",
+    answer:
+      "Yes. Our team builds custom Angular applications tailored to your industry, workflows, and target audience.",
+  },
+  {
+    id: 4,
+    question: "4. Can Angular work with Laravel backend?",
+    answer:
+      "Absolutely. We integrate Angular with Laravel for fast, secure, and full-stack web solutions.",
+  },
+  {
+    id: 5,
+    question: "5. Is Angular good for large enterprise systems?",
+    answer:
+      "Yes. Angular’s modular architecture makes it perfect for enterprise-scale apps that require stability and scalability.",
+  },
+  {
+    id: 6,
+    question: "6. Do you offer migration from older Angular versions?",
+    answer:
+      "Yes. We handle Angular migrations and upgrades seamlessly, keeping performance intact while modernizing your codebase.",
+  },
+  {
+    id: 7,
+    question: "7. Can you integrate AI with Angular apps?",
+    answer:
+      "Yes. Our team implements AI integration for automation, analytics, and real-time data experiences in Angular apps.",
+  },
+  {
+    id: 8,
+    question: "8. How long does an Angular development project take?",
+    answer:
+      "Most Angular projects take 6-10 weeks depending on the complexity, integrations, and custom functionality required.",
+  },
+  {
+    id: 9,
+    question: "9. Do you provide post-launch Angular support?",
+    answer:
+      "Yes. We offer ongoing support, updates, and performance optimization to keep your Angular apps running efficiently.",
+  },
+  {
+    id: 10,
+    question: "10. Do you work with startups and small businesses?",
+    answer:
+      "Yes. We provide Angular development services in California for startups, SMEs, and enterprises across California looking for reliability and speed.",
+  },
+];
 
 const AngularDevelopment = () => {
   const webDesignPortfolioData = [
     {
       id: 1,
       image: pixleperfectimg1,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 2,
       image: pixleperfectimg2,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 3,
       image: pixleperfectimg3,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 4,
       image: pixleperfectimg4,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 5,
       image: pixleperfectimg5,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 6,
       image: pixleperfectimg6,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
   ];
 
   const serviceCards = [
     {
       id: 1,
-      icon: <FaMobileScreen size={40} />,
-      serviceCardHead: "Custom UI Development",
+      icon: <Angular size={40} />,
+      serviceCardHead: "Laravel  Development",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Our backend experts use Laravel to power your Angular apps with secure, scalable architectures. Together, they create dynamic, full-stack systems that balance performance and flexibility.",
       serviceCardImg: serviceCardOne,
     },
     {
       id: 2,
-      icon: <FaLaptopCode size={40} />,
-      serviceCardHead: "Custom Angular Application",
+      icon: <CustomWeb size={40} />,
+      serviceCardHead: "Custom Web App Development",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      serviceCardImg: serviceCardOne,
+        "From dashboards to enterprise portals, our Angular web app solutions are designed to enhance workflow, performance, and usability while staying aligned with your business goals.",
+      serviceCardImg: serviceCardTwo,
     },
     {
       id: 3,
-      icon: <BsPcDisplay size={40} />,
-      serviceCardHead: "Progressive Web Apps (PWAs)",
+      icon: <Backend size={40} />,
+      serviceCardHead: "Backend Integration",
       serviceCardPara:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      serviceCardImg: serviceCardOne,
+        "We integrate your Angular applications with Node.js or Laravel systems to enable seamless data exchange, real-time updates, and consistent backend stability.",
+      serviceCardImg: serviceCardThree,
     },
   ];
 
@@ -106,120 +159,132 @@ const AngularDevelopment = () => {
   };
 
   return (
-    <Layout>
-      <ServiceBanner
-        secClass="angular-herobanner"
-        leftCol="col-lg-6"
-        bgImage={landingPageBanner}
-        btnClass="theme-light mt-3"
-        title="Robust Angular Development for Dynamic Web Applications"
-        description="Our Angular specialists create scalable, high-performance front-end solutions with clean code and a flawless user experience."
-        btnText="Get A Free React Quote"
+    <>
+      <ReactHelmet
+        title="Angular Development Services | Dynamic & Scalable Web Apps"
+        description="Empower your business with dynamic, enterprise-grade Angular development solutions. Our developers craft secure, scalable, and high-performing applications tailored to your goals."
+        keywords="angular development, angular web apps, javascript frameworks, single page applications, frontend development, enterprise software"
+        baseUrl="https://californiawebcoders.com/angular-development"
       />
 
-      <WordPressPerformanceSection
-        wordpresssecclass="react-specialist-sec"
-        miniheadclass="shorttop-head"
-        secTitle2="React Specialists"
-        secTitle3="You Can Trust"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        listItems={["Professional IT Solutions ", "Experience Team Members"]}
-        listClass="aboutCompanylist"
-        videoSrc={angularaboutvideo}
-        serviceImg="angular-aboutimg"
-        TouchBtn="d-none"
-        btntext="Learn More About Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-
-      <OurCustomService
-        miniHead="Our Services"
-        secMainTitle="Our"
-        secTitleBlue="Angular Development"
-        secLastTitle="Services"
-        customServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
-        customServiceBtn="View All Services"
-        serviceCards={serviceCards}
-      />
-
-      <PixelPerfectSec
-        minihead="Portfolio"
-        secTitleBlue="Recent Angular"
-        secTitle2="Projects"
-        secDescription="See how we’ve helped clients build cutting-edge, high-performance React applications."
-        projectsData={webDesignPortfolioData}
-        onImageClick={handleImageClick}
-      />
-
-      <WordPressPerformanceSection
-        wordpresssecclass="angular-build-sec"
-        miniheadclass="shorttop-head"
-        secTitle1="Ready to Build Your Next"
-        secTitle2="Angular App?"
-        description="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
-        description2="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
-        serviceImg="angular-video-hide"
-        image={angularbuildlaptop}
-        listClass="d-none"
-        TouchBtn="d-none"
-        btntext="Let's Talk With Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-
-      <FrequentQuestions
-        secTitle="You Will Find Our Client's Frequent Questions"
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqHomeData}
-      />
-
-      <WordPressPerformanceSection
-        wordpresssecclass="angular-choose-bg"
-        miniheadclass="shorttop-head"
-        minihead="Why Choose Us"
-        secTitle1="Why Businesses Choose Our "
-        secTitle2="Angular Development"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."
-        serviceImg="angular-choose-imghide"
-        image={angularbuildlaptop}
-        designpointheadline="At California Web Coders, we focus on:"
-        listFlex="angular-choose-list"
-        landingList="landing-design-points"
-        landingListItems={[
-          "Certified Angular Developers",
-          "Performance Focused",
-        ]}
-        AngularChooseListItems={[
-          "Enterprise-Ready Solutions",
-          "Comprehensive Support",
-        ]}
-        TouchBtn="d-none"
-        btntext="Let's Talk With Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-
-      <SinglePricingPlan
-        secTitle="Affordable Website Design Packages"
-        secDescription="Choose the perfect plan that fits your needs and budget."
-        // pricingPlanData={eCommerseWebsitePricingPlansData}
-        pricingPlanData={wordpressWebsitePricingPlansData}
-      />
-
-      <Suspense fallback={<Loader />}>
-        <BlogSection categorySlug="cms-development" />
-      </Suspense>
-
-      {isOpen && images.length > 0 && (
-        <Lightbox
-          open={isOpen}
-          close={() => setIsOpen(false)}
-          slides={images}
-          index={currentIndex}
+      <Layout>
+        <ServiceBanner
+          secClass="angular-herobanner"
+          leftCol="col-lg-6"
+          bgImage={landingPageBanner}
+          btnClass="theme-light mt-3"
+          title="Build Scalable Websites and Apps With Angular"
+          description="Your business deserves a website or app that doesn’t fall apart after a year. With our Angular development services in California, we build fast, reliable, and easy-to-use platforms that actually help your business grow. "
+          btnText="Talk to Our Experts"
         />
-      )}
-    </Layout>
+
+        <WordPressPerformanceSection
+          wordpresssecclass="react-specialist-sec"
+          miniheadclass="shorttop-head"
+          secTitle1="Give Your Web App a Mind of It’s Own with"
+          secTitle2="Angular"
+          description="Developed by Google to enhance efficiency and performance, Angular powers some of the fastest platforms online, including Google’s own product; this can give you an idea of how fast it really is…. Very fast!"
+          listItems={[
+            "Dynamic Web Pages",
+            "Lightning Fast Single Page Applications",
+          ]}
+          listClass="aboutCompanylist"
+          videoSrc={angularaboutvideo}
+          serviceImg="angular-aboutimg"
+          TouchBtn="d-none"
+          btntext=" Let’s Go Angular"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <OurCustomService
+          miniHead="More of Our Services: "
+          secMainTitle="Scalable"
+          secTitleBlue="Frontends"
+          secLastTitle="for Modern Businesses"
+          customServicePara="Angular helps us build structured, high-performance web applications that grow with your business. At California Web Coders, our Angular development services combine precision, flexibility, and innovation to deliver clean code, dynamic experiences, and futuristic solutions."
+          serviceCards={serviceCards}
+          customServiceBtn="Start Your Project"
+        />
+
+        <PixelPerfectSec
+          minihead="Portfolio"
+          secTitle="Explore Our"
+          secTitleBlue="Angular"
+          secTitle2="Portfolio"
+          secDescription="Our portfolio Angular website development in California shows apps, business platforms, and websites, all made with Angular and designed to deliver real results for businesses."
+          projectsData={webDesignPortfolioData}
+          onImageClick={handleImageClick}
+        />
+
+        <WordPressPerformanceSection
+          wordpresssecclass="angular-build-sec"
+          miniheadclass="shorttop-head"
+          secTitle1="Take the Next Step Today to Get Your Own"
+          secTitle2="Angular Development!"
+          description="Your next big project deserves more than standard code… it deserves precision, speed, and creativity. Partner with California Web Coders to bring your Angular vision to life with performance, scalability, and reliability that truly stand out."
+          serviceImg="angular-video-hide"
+          image={angularbuildlaptop}
+          listClass="d-none"
+          TouchBtn="d-none"
+          btntext="Sign Up and Start Today"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <FrequentQuestions
+          secTitle="Common Questions Related to Angular Development"
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
+        />
+
+        <WordPressPerformanceSection
+          wordpresssecclass="angular-choose-bg"
+          miniheadclass="shorttop-head"
+          minihead="Why Choose Us"
+          secTitle1="The Smart Choice for Reliable"
+          secTitle2="Angular Development"
+          description="Businesses today need dynamic, scalable systems that perform flawlessly. That’s where California Web Coders comes in. Our Angular development company in California focuses on creating fast and flexible applications that keep your business competitive and relevant."
+          serviceImg="angular-choose-imghide"
+          image={angularbuildlaptop}
+          designpointheadline="At California Web Coders, we focus on:"
+          listFlex="angular-choose-list"
+          landingList="landing-design-points"
+          landingListItems={[
+            "Certified Angular Developers",
+            "Enterprise-Ready Solutions",
+          ]}
+          AngularChooseListItems={[
+            "Performance Focused",
+            "Comprehensive Support",
+          ]}
+          TouchBtn="d-none"
+          btntext="Let's Talk With Us"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <SinglePricingPlan
+          secTitle="Flexible Pricing for Maximum Value"
+          secDescription="Our Angular development packages in California are designed to suit you. Our pricing is transparent, flexible, and designed to deliver maximum value at every stage of growth."
+          // pricingPlanData={eCommerseWebsitePricingPlansData}
+          pricingPlanData={wordpressWebsitePricingPlansData}
+        />
+
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" />
+        </Suspense>
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

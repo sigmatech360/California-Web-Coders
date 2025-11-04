@@ -14,6 +14,10 @@ import pixleperfectimg3 from "../../Assets/newChildPagesAssets/mernstack/pixel-3
 import pixleperfectimg4 from "../../Assets/newChildPagesAssets/mernstack/pixel-4.webp";
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/mernstack/pixel-5.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/mernstack/pixel-6.webp";
+import { ReactComponent as Speedmeter } from "../../Assets/newChildPagesAssets/mernstack/speedmeter.svg";
+import { ReactComponent as Topbadge } from "../../Assets/newChildPagesAssets/mernstack/topbadge.svg";
+import { ReactComponent as ControlPanel } from "../../Assets/newChildPagesAssets/mernstack/controlpanel.svg";
+import mernchoose from "../../Assets/newChildPagesAssets/mernstack/mernchoice.webp";
 import mernbuidimg from "../../Assets/newChildPagesAssets/mernstack/web-whychoose-abslt.webp";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
 import OurCustomService from "../../components/OurCustomService";
@@ -28,7 +32,7 @@ import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
 import FrequentQuestions from "../../components/FrequentQuestions";
-
+import ReactHelmet from "../../components/ReactHelmet";
 
 export const faqHomeData = [
   {
@@ -87,51 +91,37 @@ export const faqHomeData = [
   },
   {
     id: 10,
-    question:
-      "10. What makes your MERN developers different?",
+    question: "10. What makes your MERN developers different?",
     answer:
       "We combine deep technical skill with design sense, building apps that are powerful and user-friendly.",
   },
 ];
-
 
 const MERNStackDevelopment = () => {
   const webDesignPortfolioData = [
     {
       id: 1,
       image: pixleperfectimg1,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 2,
       image: pixleperfectimg2,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 3,
       image: pixleperfectimg3,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 4,
       image: pixleperfectimg4,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 5,
       image: pixleperfectimg5,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 6,
       image: pixleperfectimg6,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
   ];
 
@@ -164,19 +154,19 @@ const MERNStackDevelopment = () => {
 
   const cardsData = [
     {
-      icon: <FaTachometerAlt />,
+      icon: <Speedmeter />,
       cardTitle: "Round-the-Clock Support",
       cardPara:
         "24/7 technical assistance from real engineers and not chatbots. Doesn’t matter if it’s a quick fix or a complete query, our team is always up and working.",
     },
     {
-      icon: <FaMedal />,
+      icon: <Topbadge />,
       cardTitle: "99.9% Uptime",
       cardPara:
         "Our systems are built for performance and reliability. Through protective maintenance, weekly backups, and continuous monitoring, we make sure your web app is always running.",
     },
     {
-      icon: <IoSettingsSharp />,
+      icon: <ControlPanel />,
       cardTitle: "Intuitive Dashboard",
       cardPara:
         "Manage everything in one place. Our interactive dashboard gives you real-time project insights, progress tracking, and seamless communication with your development team.",
@@ -197,123 +187,127 @@ const MERNStackDevelopment = () => {
   };
 
   return (
-    <Layout>
-      <ServiceBanner
-        leftCol="col-lg-6"
-        bgImage={mernherobanner}
-        btnClass="theme-light mt-3"
-        title="Build Fast & Scale Faster with MERN Stack"
-        description="Develop intuitive and deploy powerful web and app solutions with California’s top MERN stack developers: fast, scalable, and built to outperform your competitors!"
-        btnText="Outperform Your Competition"
+    <>
+     <ReactHelmet
+        title="MERN Stack Development | Full-Stack Web Solutions"
+        description="Get end-to-end web development with our expert MERN stack services. We combine MongoDB, Express, React, and Node.js to deliver powerful and scalable full-stack applications."
+        keywords="mern stack development, full stack web development, react nodejs, express mongodb, custom web apps, javascript stack"
+        baseUrl="https://californiawebcoders.com/mern-stack-development"
       />
 
-      <WordPressPerformanceSection
-        wordpresssecclass="mern-about-sec"
-        minihead="About Company"
-        miniheadclass="shorttop-head"
-        secTitle1="Power Your Web & Apps with"
-        secTitle2="MERN"
-        description="Are you in need of experienced MERN stack developers in California for your next project? Look no further! Our team of highly skilled and talented developers can help bring your project to life with their expertise in building MERN Stack Development Solutions."
-        descriptiontwo="As a professional company, we have delivered high-quality and scalable applications using the MERN full-stack development in the past, which includes MongoDB, Express, React, and Node.js. "
-        listItems={["Intuitive Frontend", "Powerful Backend"]}
-        listClass="aboutCompanylist"
-        serviceImg="d-none"
-        TouchBtn="d-none"
-        btntext="Let’s Get Started"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
 
-      <OurCustomService
-        miniHead="Our Services"
-        secMainTitle="Our"
-        secTitleBlue="MERN Stack Development "
-        secLastTitle="Services"
-        customServicePara="With our deep knowledge and experience in MERN, we provide solutions that cater even to specific business needs and requirements. In addition to technical skills, our developers have excellent communication and collaboration abilities, ensuring a seamless and productive working relationship with you."
-        customServiceBtn="Start Your Project"
-        serviceCards={serviceCards}
-      />
+      <Layout>
+        <ServiceBanner
+          leftCol="col-lg-6"
+          bgImage={mernherobanner}
+          btnClass="theme-light mt-3"
+          title="Build Fast & Scale Faster with MERN Stack"
+          description="Develop intuitive and deploy powerful web and app solutions with California’s top MERN stack developers: fast, scalable, and built to outperform your competitors!"
+          btnText="Outperform Your Competition"
+        />
 
-      <PixelPerfectSec
-        minihead="Portfolio"
-        secTitle="Recent Projects Powered by"
-        secTitleBlue="MERN"
-        secDescription="See our fast, intuitive, and powerful MERN stack projects that are disrupting the competition!"
-        btnText="Explore Services"
-        projectsData={webDesignPortfolioData}
-        onImageClick={handleImageClick}
-      />
-
-      <section className="why-choose-react-card">
         <WordPressPerformanceSection
-          wordpresssecclass="react-choose-sec"
-          secTitle1="California Web Coders:"
-          secTitle2="The Smart Choice for MERN"
-          description="Partner with California Web Coders, the smart choice for MERN stack development in California. As a full-spectrum development agency, we balance innovation with performance to develop one-of-a-kind solutions that help businesses grow faster, scale smoothly, and lead the digital change! "
-          //image={reactChoose}
-           landingList="landing-design-points"
-            landingListItems={[
-              "MongoDB",
-              "Python",
-              "React.js",
-              "Node.js",
-            ]}
+          wordpresssecclass="mern-about-sec"
+          minihead="About Company"
+          miniheadclass="shorttop-head"
+          secTitle1="Power Your Web & Apps with"
+          secTitle2="MERN"
+          description="Are you in need of experienced MERN stack developers in California for your next project? Look no further! Our team of highly skilled and talented developers can help bring your project to life with their expertise in building MERN Stack Development Solutions."
+          descriptiontwo="As a professional company, we have delivered high-quality and scalable applications using the MERN full-stack development in the past, which includes MongoDB, Express, React, and Node.js. "
+          listItems={["Intuitive Frontend", "Powerful Backend"]}
+          listClass="aboutCompanylist"
+          serviceImg="d-none"
+          TouchBtn="d-none"
+          btntext="Let’s Get Started"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <OurCustomService
+          miniHead="Our Services"
+          secMainTitle="Our"
+          secTitleBlue="MERN Stack Development "
+          secLastTitle="Services"
+          customServicePara="With our deep knowledge and experience in MERN, we provide solutions that cater even to specific business needs and requirements. In addition to technical skills, our developers have excellent communication and collaboration abilities, ensuring a seamless and productive working relationship with you."
+          customServiceBtn="Start Your Project"
+          serviceCards={serviceCards}
+        />
+
+        <PixelPerfectSec
+          minihead="Portfolio"
+          secTitle="Recent Projects Powered by"
+          secTitleBlue="MERN"
+          secDescription="See our fast, intuitive, and powerful MERN stack projects that are disrupting the competition!"
+          btnText="Explore Services"
+          projectsData={webDesignPortfolioData}
+          onImageClick={handleImageClick}
+        />
+
+        <section className="why-choose-react-card">
+          <WordPressPerformanceSection
+            wordpresssecclass="react-choose-sec"
+            secTitle1="California Web Coders:"
+            secTitle2="The Smart Choice for MERN"
+            description="Partner with California Web Coders, the smart choice for MERN stack development in California. As a full-spectrum development agency, we balance innovation with performance to develop one-of-a-kind solutions that help businesses grow faster, scale smoothly, and lead the digital change! "
+            image={mernchoose}
+            landingList="landing-design-points"
+            landingListItems={["MongoDB", "Python", "React.js", "Node.js"]}
+            listClass="d-none"
+            TouchBtn="d-none"
+            btntext=" Let’s Engage"
+            learnmorebtn="aboutus-call"
+            phoneNumber="+1 (619) 335-2364"
+          />
+          <CustomCustomerCard cardsData={cardsData} />
+        </section>
+
+        <WordPressPerformanceSection
+          wordpresssecclass="mernstack-build-sec"
+          afterConainerClass="react-build-bg"
+          secTitle1="Technology that Disrupts the Competition!"
+          description="At California Web Coders, we treat MERN not as a stack, but as a strategy. Every line of code we write is meant to simplify what’s complex, accelerate what’s slow, and make your product ready to disrupt the competition. Need a dynamic single-page application to enterprise-grade dashboards? Or a high-performing website with AI chatbots? Whatever you need, our MERN stack developers in California develop systems that never get under pressure. That’s how fast our systems are!"
           listClass="d-none"
           TouchBtn="d-none"
-          btntext=" Let’s Engage"
+          serviceImg="mern-build-img"
+          btntext="Talk to Us"
+          aboutbtnlink="/get-intouch"
           learnmorebtn="aboutus-call"
-          phoneNumber="+1 619-798-9688"
         />
-        <CustomCustomerCard cardsData={cardsData} />;
-      </section>
 
-      <WordPressPerformanceSection
-        wordpresssecclass="mernstack-build-sec"
-        afterConainerClass="react-build-bg"
-        secTitle1="Technology that Disrupts the Competition!"
-        description="At California Web Coders, we treat MERN not as a stack, but as a strategy. Every line of code we write is meant to simplify what’s complex, accelerate what’s slow, and make your product ready to disrupt the competition. Need a dynamic single-page application to enterprise-grade dashboards? Or a high-performing website with AI chatbots? Whatever you need, our MERN stack developers in California develop systems that never get under pressure. That’s how fast our systems are!"
-        descriptiontwo="Built for reliability, scalability, and performance, it’s a system that can easily last for years to come!"
-        listClass="d-none"
-        TouchBtn="d-none"
-        image={mernbuidimg}
-        serviceImg="mern-build-img"
-        btntext="Talk to Us"
-        learnmorebtn="aboutus-call"
-      />
-
-      <ContactForm
-        secTitle="Got a MERN Project? Let’s Talk."
-        secDescription="We are the dream team you need to turn your idea into a fast, scalable product."
-        btnText="Let’s Chat"
-      />
-
-      <SinglePricingPlan
-        secTitle="MERN Packages"
-        secTitleEnd=" that Fit Your Ambitions "
-        secDescription="Our packages are designed to fit every pocket and fulfil every ambitious project for startups to enterprises."
-        // pricingPlanData={eCommerseWebsitePricingPlansData}
-        pricingPlanData={wordpressWebsitePricingPlansData}
-      />
-
-      <FrequentQuestions
-        secTitle="All Your MERN Stack Questions, Answered!"
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqHomeData}
-      />
-
-      <Suspense fallback={<Loader />}>
-        <BlogSection categorySlug="cms-development" />
-      </Suspense>
-
-      {isOpen && images.length > 0 && (
-        <Lightbox
-          open={isOpen}
-          close={() => setIsOpen(false)}
-          slides={images}
-          index={currentIndex}
+        <ContactForm
+          secTitle="Got a MERN Project? Let’s Talk."
+          secDescription="We are the dream team you need to turn your idea into a fast, scalable product."
+          btnText="Let’s Chat"
         />
-      )}
-    </Layout>
+
+        <SinglePricingPlan
+          secTitle="MERN Packages"
+          secTitleEnd=" that Fit Your Ambitions "
+          secDescription="Our packages are designed to fit every pocket and fulfil every ambitious project for startups to enterprises."
+          // pricingPlanData={eCommerseWebsitePricingPlansData}
+          pricingPlanData={wordpressWebsitePricingPlansData}
+        />
+
+        <FrequentQuestions
+          secTitle="All Your MERN Stack Questions, Answered!"
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
+        />
+
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" />
+        </Suspense>
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

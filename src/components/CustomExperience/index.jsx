@@ -10,15 +10,15 @@ const CustomExperience = () => {
             <div className="row">
                 <div className="col-lg-6">
                     <div className="custom-experience-txt">
-                        <h2>We are a creative bold digital agency based in <span>California.</span></h2>
+                        <h2>Discover <span>Generative AI Integration</span> Services​ in California</h2>
                     </div>
                 </div>
                 <div className="col-lg-6">
                     <div className="custom-experience-define">
-                        <h4>20+</h4>
+                        <h4>72%</h4>
                         <div className="custom-experience-txt">
-                            <h5>20+ Years of Experience</h5>
-                            <p>We are dedicated to providing outstanding digital and design services meet the functional and aesthetic.</p>
+                            <h5>Increase Efficiency with Generative AI</h5>
+                            <p>72% of our clients who used AI for smoother business flow increased process efficiency with AI-powered automation.</p>
                         </div>
                     </div>
                 </div>
@@ -26,19 +26,19 @@ const CustomExperience = () => {
             <div className="row">
                 <div className="col-lg-4">
                     <div className="experience-short-txt">
-                        <h6><span>350+</span> very satisfied clients around the worldwide.</h6>
+                        <h6><span>65%</span> improved customer satisfaction using AI chat integration.</h6>
                         <span><BsEmojiSmileFill /></span>
                     </div>
                 </div>
                 <div className="col-lg-4">
                     <div className="experience-short-txt">
-                        <h6><span>200+</span> good award winning digital media agency.</h6>
+                        <h6><span>68%</span> reduced operational costs through predictive data analytics.</h6>
                         <span><HiSpeakerphone /></span>
                     </div>
                 </div>
                 <div className="col-lg-4">
-                    <div className="experience-short-txt">
-                        <h6><span>750+</span> successfully project completed in one year.</h6>
+                    <div className="experience-short-txt">  
+                        <h6><span>85%</span> achieved faster decision-making with AI insights.</h6>
                         <span><IoBriefcase /></span>
                     </div>
                 </div>

@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import "./index.css"; // Add any additional styling here
+import "./index.css"; 
 import footerlogo from "../../Assets/footerlogo.webp";
 import footerlogo1 from "../../Assets/footerlogo2.webp";
 import footerlogo2 from "../../Assets/footerlogo3.webp";
+import footertrustpilot from "../../Assets/trustpilot-logo-white-icon.webp"
+import footercrunchbase from "../../Assets/crunchbase.webp"
+import footeryelp from "../../Assets/Yelp.png"
+import footerclutch from "../../Assets/clutch.webp"
+import footerbehance from "../../Assets/behance.webp"
 import footerlogo3 from "../../Assets/footerlofo3.webp";
-import { SiMinutemailer } from "react-icons/si";
+import { SiCrunchbase, SiMinutemailer } from "react-icons/si";
 import { Link } from "react-router-dom";
 import {
+  FaBehance,
+  FaBehanceSquare,
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
+  FaYelp,
   FaYoutube,
 } from "react-icons/fa";
 import { LiaPinterestP } from "react-icons/lia";
@@ -128,6 +136,22 @@ function Footer() {
               >
                 <LiaPinterestP />
               </a>
+               <a href="https://www.behance.net/californiawebcoders" target="_blank" rel="noreferrer"
+                className="behance-badge" title="California Web Coders on Trustpilot">
+                <FaBehance />
+              </a>
+              <a href="https://clutch.co/profile/california-web-coders" target="_blank" rel="noreferrer"
+                className="clutch-badge" title="California Web Coders on Trustpilot">
+                <img src={footerclutch} alt="Trustpilot Reviews" className="footer-protect-img"/>
+              </a>
+                <a href="https://www.crunchbase.com/organization/california-web-coders" target="_blank" rel="noreferrer"
+                className="crunchbase-badge" title="California Web Coders on Trustpilot">
+                <SiCrunchbase />
+              </a>
+              <a href="https://www.yelp.com/biz/california-web-coders-san-diego" target="_blank" rel="noreferrer"
+                className="yelp-badge" title="California Web Coders on Trustpilot">
+                <FaYelp />
+              </a>
             </div>
           </div>
           <div className="col-lg-8">
@@ -206,37 +230,17 @@ function Footer() {
         <div className="footer-bottom py-4">
           <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
             {/* Logos Section */}
-            <div className="d-flex align-items-center mb-3 mb-md-0 footer-dmca-images">
-              <a
-                href="https://upcity.com/profiles/california-web-coders"
-                target="_blank"
-                // rel='noopener'
-                rel="noreferrer"
-              >
-                <img
-                  src={footerlogo1}
-                  alt="WEBSITE DEVELOPMENT"
-                  className="me-3 footer-logo"
-                />
+            <div className="d-flex align-items-center gap-2 mb-3 mb-md-0 footer-dmca-images">
+              <a href="https://upcity.com/profiles/california-web-coders"  target="_blank" rel="noreferrer">
+                <img src={footerlogo1} alt="WEBSITE DEVELOPMENT" className="footer-logo"/>
               </a>
-              <a
-                href="https://www.dmca.com/r/8mj38w0"
-                title="DMCA.com Protection Status"
-                target="_blank"
-                className="dmca-badge"
-                rel="noreferrer"
-              >
-                <img
-                  src={footerlogo3}
-                  alt="DMCA Verified"
-                  className="footer-protect-img"
-                />
+              <a href="https://www.dmca.com/r/8mj38w0" title="DMCA.com Protection Status" target="_blank" className="dmca-badge"rel="noreferrer">
+                <img src={footerlogo3} alt="DMCA Verified" className="footer-protect-img"/>
               </a>
-              {/* <img
-                src={footerlogo2}
-                alt="DMCA Compliant"
-                className="me-3 footer-dmca"
-              /> */}
+               <a href="https://www.trustpilot.com/review/californiawebcoders.com" target="_blank" rel="noreferrer"
+                  className="trustpilot-badge" title="California Web Coders on Trustpilot">
+                  <img src={footertrustpilot} alt="Trustpilot Reviews" className="footer-protect-img"/>
+                </a>
             </div>
 
             {/* Newsletter Signup */}

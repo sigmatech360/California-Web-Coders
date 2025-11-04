@@ -10,9 +10,12 @@ import pixleperfectimg4 from "../../Assets/newChildPagesAssets/nodejsdevelopment
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/nodejsdevelopment/pixel-5.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/nodejsdevelopment/pixel-6.webp";
 import laptopVideo from "../../Assets/newChildPagesAssets/frontenddevelopment/process-side.mp4";
-import serviceCardOne from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-customapi.png"
-import serviceCardTwo from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-realtime.png"
-import serviceCardThree from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-node.png"
+import serviceCardOne from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-customapi.webp";
+import serviceCardTwo from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-realtime.webp";
+import serviceCardThree from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-node.webp";
+import { ReactComponent as Restfulapi } from "../../Assets/newChildPagesAssets/laraveldevelopment/restfulapis.svg";
+import { ReactComponent as Nodejs } from "../../Assets/newChildPagesAssets/nodejsdevelopment/migratenodejs.svg";
+import { ReactComponent as Realtimeapp } from "../../Assets/newChildPagesAssets/nodejsdevelopment/realtimeapp.svg";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
 import OurProcess from "../../components/OurProcess";
 import OurCustomService from "../../components/OurCustomService";
@@ -22,211 +25,273 @@ import PixelPerfectSec from "../../components/PixelPerfectSec";
 import SinglePricingPlan from "../../components/SinglePricingPlan";
 import { wordpressWebsitePricingPlansData } from "../../data";
 import FrequentQuestions from "../../components/FrequentQuestions";
-import { faqHomeData } from "../Designing";
 import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
+import ReactHelmet from "../../components/ReactHelmet";
+
+export const faqHomeData = [
+  {
+    id: 1,
+    question: "1. What is Node.js used for in web development?",
+    answer:
+      "Node.js is used to build fast, scalable, and real-time web applications that handle multiple users and heavy data efficiently.",
+  },
+  {
+    id: 2,
+    question: "2. Why choose California Web Coders for Node.js development?",
+    answer:
+      "We deliver performance-driven Node.js solutions with clean code, scalability, and reliable support to ensure your platform runs smoothly and grows with your business.",
+  },
+  {
+    id: 3,
+    question: "3. Is Node.js good for enterprise-level web applications?",
+    answer:
+      "Yes. Node.js is ideal for enterprise apps that need real-time functionality, fast data processing, and easy scalability.",
+  },
+  {
+    id: 4,
+    question: "4. Do you offer custom Node.js development services?",
+    answer:
+      "Yes. We build custom Node.js applications tailored to your business goals, from eCommerce systems to API-driven enterprise platforms.",
+  },
+  {
+    id: 5,
+    question: "5. Can Node.js handle large-scale web applications?",
+    answer:
+      "Absolutely Node.js is designed for high-performance applications that process large data sets and thousands of concurrent connections efficiently.",
+  },
+  {
+    id: 6,
+    question: "6. How long does a Node.js development project take?",
+    answer:
+      "Most Node.js projects take between 4-8 weeks, depending on complexity, integrations, and custom functionality required.",
+  },
+  {
+    id: 7,
+    question: "7. Do you provide post-launch Node.js support?",
+    answer:
+      "Yes. We offer 24/7 maintenance, updates, and performance monitoring to keep your Node.js application secure and optimized.",
+  },
+  {
+    id: 8,
+    question: "8. Can Node.js be integrated with AI or APIs?",
+    answer:
+      "Yes. We specialize in integrating Node.js applications with APIs, AI tools, and third-party services to enhance performance and automation.",
+  },
+  {
+    id: 9,
+    question: "9. What industries use Node.js development services?",
+    answer:
+      "Our Node.js web development services are trusted by eCommerce, SaaS, fintech, education, and healthcare brands across California.",
+  },
+  {
+    id: 10,
+    question: "10. Do you provide migration or upgrade services for Node.js?",
+    answer:
+      "Yes. We handle smooth Node.js version upgrades and app migrations without downtime or data loss.",
+  },
+];
 
 const NodejsDevelopment = () => {
-
-      const webDesignPortfolioData = [
+  const webDesignPortfolioData = [
     {
       id: 1,
       image: pixleperfectimg1,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 2,
       image: pixleperfectimg2,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 3,
       image: pixleperfectimg3,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 4,
       image: pixleperfectimg4,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 5,
       image: pixleperfectimg5,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 6,
       image: pixleperfectimg6,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
   ];
 
   const processStepsData = [
     {
-      title: "Starting with a Clear Roadmap",
+      title: "Discovery & Planning",
       description:
-        "With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth. With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth.",
+        "We begin by understanding your goals, audience, and technical requirements. This helps us define a roadmap that ensures your Node.js application meets both user needs and business objectives.",
     },
     {
-      title: "Design & Prototype",
+      title: "Architecture & Design",
       description:
-        "With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth. With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth.",
+        "Our developers design a robust, modular architecture optimized for performance. We focus on scalability, flexibility, and speed, ensuring every component of your backend is efficient and future-ready.",
     },
     {
-      title: "Development & Testing",
+      title: "Development & Integration",
       description:
-        "With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth. With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth.",
+        "We build your Node.js application with clean, maintainable code and integrate third-party APIs, databases, and tools, ensuring smooth performance and real-time functionality across all systems.",
     },
     {
-      title: "Launch & Continuous Improvement",
+      title: "Testing & Deployment",
       description:
-        "With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth. With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth.",
+        "Before launch, we rigorously test for speed, reliability, and security. Once deployed, our support team ensures your Node.js application performs flawlessly under real-world conditions.",
     },
   ];
 
   const serviceCards = [
-      {
-        id: 1,
-        icon:  <TbApi size={40} />,
-        serviceCardHead: "Custom API Development",
-        serviceCardPara:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        serviceCardImg: serviceCardOne,
-      },
-      {
-        id: 2,
-        icon: <FaAppStoreIos size={40} />,
-        serviceCardHead: "Real Time Applications",
-        serviceCardPara:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        serviceCardImg: serviceCardTwo,
-      },
-      {
-        id: 3,
-        icon: <FaNode size={40} />,
-        serviceCardHead: "Migration to node",
-        serviceCardPara:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        serviceCardImg: serviceCardThree,
-      },
-    ];
+    {
+      id: 1,
+      icon: <Restfulapi size={40} />,
+      serviceCardHead: "AI Integration",
+      serviceCardPara:
+        "We combine Node.js with artificial intelligence to create smarter, more adaptive systems. From predictive analytics to chatbots, AI integration helps automate workflows and enhance user engagement.",
+      serviceCardImg: serviceCardOne,
+    },
+    {
+      id: 2,
+      icon: <Realtimeapp size={40} />,
+      serviceCardHead: "E-Commerce Website Development",
+      serviceCardPara:
+        "We develop fast, secure, and scalable e-commerce platforms powered by Node.js. From product management to payment gateways, we build systems designed for growth and seamless shopping experiences.",
+      serviceCardImg: serviceCardTwo,
+    },
+    {
+      id: 3,
+      icon: <Nodejs size={40} />,
+      serviceCardHead: "Custom Web Development",
+      serviceCardPara:
+        "We build tailored Node.js web applications that align perfectly with your brand and goals. Every line of code is crafted for performance, user experience, and long-term scalability.",
+      serviceCardImg: serviceCardThree,
+    },
+  ];
 
-      const [isOpen, setIsOpen] = useState(false);
-      const [images, setImages] = useState([]);
-      const [currentIndex, setCurrentIndex] = useState(0);
-    
-      const handleImageClick = (index, imageArray) => {
-        const imageList = imageArray.map((item) => ({
-          src: item.image,
-        }));
-        setImages(imageList);
-        setCurrentIndex(index);
-        setIsOpen(true);
-      };
+  const [isOpen, setIsOpen] = useState(false);
+  const [images, setImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleImageClick = (index, imageArray) => {
+    const imageList = imageArray.map((item) => ({
+      src: item.image,
+    }));
+    setImages(imageList);
+    setCurrentIndex(index);
+    setIsOpen(true);
+  };
 
   return (
-    <Layout>
-      <ServiceBanner
-        leftCol="col-lg-10"
-        rowClass="row justify-content-center text-center"
-        bgImage={landingPageBanner}
-        btnClass="theme-light mt-3"
-        title="High-Performance Node.js Development for Scalable Back-End Solutions"
-        description="Our Node.js experts create fast, real-time, and secure back-end systems that scale effortlessly with your growing business."
-        btnText="Get A Free React Quote"
+    <>
+      <ReactHelmet
+        title="Node.js Development Services | Scalable Server-Side Apps"
+        description="Get high-performing, real-time web solutions with our Node.js development services. We specialize in building scalable APIs and backend systems for modern businesses."
+        keywords="nodejs development, backend development, real-time apps, API development, javascript backend, scalable applications"
+        baseUrl="https://californiawebcoders.com/nodejs-development"
       />
 
-      <WordPressPerformanceSection
-        wordpresssecclass="nodejs-about-sec"
-        minihead="About Company"
-        miniheadclass="shorttop-head"
-        secTitle1="Experts in Fast & Reliable"
-        secTitle2="Node.js Applications"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        listItems={["Professional IT Solutions ", "Experience Team Members"]}
-        listClass="aboutCompanylist"
-        serviceImg="nodejs-about-img"
-        TouchBtn="d-none"
-        btntext="Learn More About Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
+      <Layout>
+        <ServiceBanner
+          leftCol="col-lg-8"
+          rowClass="row justify-content-center text-center"
+          bgImage={landingPageBanner}
+          btnClass="theme-light mt-3"
+          title="Your Place for a Data-Intensive Solution with Node.js"
+          description="Our Node js development services in California create high-performance applications that manage heavy traffic with ease, deliver fast results, and keep your users engaged every step of the way."
+          btnText="Get A Free React Quote"
+        />
 
-      <OurProcess
-        sectitle="Our"
-        sectitleblue="Process"
-        absltImg={processFrontendPlug}
-        videoSrc={laptopVideo}
-        processSteps={processStepsData}
-      />
+        <WordPressPerformanceSection
+          wordpresssecclass="nodejs-about-sec"
+          minihead="About Company"
+          miniheadclass="shorttop-head"
+          secTitle2="Backends"
+          secTitle3="That Make Your Sites Unbreakable"
+          description="Node.js powers some of the world’s most popular platforms because it’s fast, reliable, and built to grow. At California Web Coders, we use Node.js to create applications that run smoothly, handle data in real time, and expand effortlessly with your business. With Node.js, we ensure that the digital future of your brand is absolutely secure."
+          listItems={[
+            "Secure and efficient coding",
+            "Perfect for modern web and mobile apps",
+          ]}
+          listClass="aboutCompanylist"
+          serviceImg="nodejs-about-img"
+          TouchBtn="d-none"
+          btntext="Sign up Now"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
 
-      <OurCustomService
-        miniHead="Our Services"
-        secMainTitle="Our"
-        secTitleBlue="Node.js Development"
-        secLastTitle="Services"
-        customServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
-        customServiceBtn="View All Services"
-        serviceCards={serviceCards}
-      />
+        <OurProcess
+          sectitle="Our "
+          sectitleblue="Node.js Development Process"
+          absltImg={processFrontendPlug}
+          videoSrc={laptopVideo}
+          processSteps={processStepsData}
+        />
+
+        <OurCustomService
+          miniHead="Our Services"
+          secMainTitle="Building the Future of "
+          secTitleBlue="Web Development"
+          secLastTitle="Services"
+          customServicePara="Node.js powers some of the world’s most popular platforms because it’s fast, reliable, and built to grow. At California Web Coders, we use Node.js, integrating it with other skills to create applications that run smoothly, handle data in real time, and expand effortlessly with your business."
+          customServiceBtn="Start Your Project"
+          serviceCards={serviceCards}
+        />
 
         <PixelPerfectSec
-        minihead="Portfolio"
-        secTitle="Recent"
-        secTitleBlue="Node.Js"
-        secTitle2="Projects"
-        secDescription="See how we’ve helped clients build cutting-edge, high-performance React applications."
-        projectsData={webDesignPortfolioData}
-        onImageClick={handleImageClick}
-      />
-
-       <WordPressPerformanceSection
-        afterConainerClass="react-build-bg"
-        secTitle1="Ready to Build a Powerful React App?"
-        description="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
-        listClass="d-none"
-        TouchBtn="d-none"
-        serviceImg="d-none"
-        btntext="Let's Talk With Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-
-
-      <SinglePricingPlan
-        secTitle="Affordable Website Design Packages"
-        secDescription="Choose the perfect plan that fits your needs and budget."
-        // pricingPlanData={eCommerseWebsitePricingPlansData}
-        pricingPlanData={wordpressWebsitePricingPlansData}
-      />
-
-      <FrequentQuestions
-        secTitle="You Will Find Our Client's Frequent Questions"
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqHomeData}
-      />
-
-      <Suspense fallback={<Loader />}>
-        <BlogSection categorySlug="cms-development" />
-      </Suspense>
-
-      {isOpen && images.length > 0 && (
-        <Lightbox
-          open={isOpen}
-          close={() => setIsOpen(false)}
-          slides={images}
-          index={currentIndex}
+          minihead="Portfolio"
+          secTitle="Our Portfolio of"
+          secTitleBlue="Node.js"
+          secTitle2="Development"
+          secDescription="Explore Node Js development services in California portfolio to see how businesses across the state are thriving with Node.js development."
+          projectsData={webDesignPortfolioData}
+          onImageClick={handleImageClick}
         />
-      )}
 
-    </Layout>
+        <WordPressPerformanceSection
+          afterConainerClass="node-build-bg"
+          secTitle1="Sign Now for Your Own Node.Js Site"
+          description="To proceed to the next step of getting a strong backend with Node js development, all you have to do is fill the form below. And we will get back to you with a comprehensive plan! "
+          listClass="d-none"
+          TouchBtn="d-none"
+          serviceImg="d-none"
+          btntext="Ready to Chat?"
+          aboutbtnlink="/get-intouch"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <SinglePricingPlan
+          secTitle="Pricing Options Built Around Your Business"
+          secDescription="Our Node.js development packages are simple, affordable, and tailored for long-term performance."
+          // pricingPlanData={eCommerseWebsitePricingPlansData}
+          pricingPlanData={wordpressWebsitePricingPlansData}
+        />
+
+        <FrequentQuestions
+          secTitle="Most Asked Questions About Node.js Web Development"
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
+        />
+
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" />
+        </Suspense>
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+      
+    </>
   );
 };
 

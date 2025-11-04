@@ -34,6 +34,10 @@ import PixelPerfectSec from "../../components/PixelPerfectSec";
 import BeautifullAppDesign from "../../components/BeautifullAppDesign";
 import { SlBasket } from "react-icons/sl";
 import ReactHelmet from "../../components/ReactHelmet";
+import { ImPower } from "react-icons/im";
+import { CgScreen } from "react-icons/cg";
+import { IoIosLock } from "react-icons/io";
+import { SiSimpleanalytics } from "react-icons/si";
 
 export const faqHomeData = [
   {
@@ -171,10 +175,10 @@ const IOSAppDevelopment = () => {
   };
 
   const iosFeatures = [
-    { icon: <Ecommerce />, text: "Performance Tracking" },
-    { icon: <Transportation />, text: "Interactive UI" },
-    { icon: <Healthcare />, text: "Payment and Security Systems" },
-    { icon: <Education />, text: "Data Analytics and User Insights" },
+    { icon: <ImPower />, text: "Performance Tracking" },
+    { icon: <CgScreen />, text: "Interactive UI" },
+    { icon: <IoIosLock />, text: "Payment and Security Systems" },
+    { icon: <SiSimpleanalytics />, text: "Data Analytics and User Insights" },
   ];
 
   return (

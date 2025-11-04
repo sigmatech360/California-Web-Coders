@@ -14,9 +14,7 @@ import pixleperfectimg6 from "../../Assets/newChildPagesAssets/androiddevelopmen
 import androidiosimg from "../../Assets/newChildPagesAssets/androiddevelopment/android-ios-img.webp";
 import { ReactComponent as NativeApps } from "../../Assets/newChildPagesAssets/webapp/nativeappsvg.svg";
 import { ReactComponent as Ecommerce } from "../../Assets/newChildPagesAssets/webapp/ecommerce.svg";
-import { ReactComponent as Transportation } from "../../Assets/newChildPagesAssets/webapp/transportation.svg";
-import { ReactComponent as Healthcare } from "../../Assets/newChildPagesAssets/webapp/healthcare.svg";
-import { ReactComponent as Education } from "../../Assets/newChildPagesAssets/webapp/education.svg";
+import { ReactComponent as Uiuxicon } from "../../Assets/newChildPagesAssets/IOSDevelopment/uiux.svg";
 import CustomAboutCompany from "../../components/CustomAboutCompany";
 import OurAppServices from "../../components/OurAppServices";
 import {
@@ -39,6 +37,9 @@ import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
 import { SlBasket } from "react-icons/sl";
 import ReactHelmet from "../../components/ReactHelmet";
+import { FaBarsProgress } from "react-icons/fa6";
+import { IoNotifications } from "react-icons/io5";
+import { TbDeviceAnalytics } from "react-icons/tb";
 
 export const faqHomeData = [
   {
@@ -168,10 +169,10 @@ const AndroidAppDevelopment = () => {
   ];
 
   const iosFeatures = [
-    { icon: <Ecommerce />, text: "Custom UI & Material Design" },
-    { icon: <Transportation />, text: "Fast, Stable App Architecture" },
-    { icon: <Healthcare />, text: "Integrated Push Notifications" },
-    { icon: <Education />, text: "Data-Driven Insights & Analytics" },
+    { icon: <Uiuxicon />, text: "Custom UI & Material Design" },
+    { icon: <FaBarsProgress />, text: "Fast, Stable App Architecture" },
+    { icon: <IoNotifications />, text: "Integrated Push Notifications" },
+    { icon: <TbDeviceAnalytics />, text: "Data-Driven Insights & Analytics" },
   ];
 
   return (
@@ -211,7 +212,7 @@ const AndroidAppDevelopment = () => {
           listClass="aboutCompanylist"
           btntext="Learn More About Us"
           learnmorebtn="aboutus-call"
-          phoneNumber="+1 619-798-9688"
+          phoneNumber="+1 (619) 335-2364"
         />
 
         <OurAppServices
@@ -243,7 +244,7 @@ const AndroidAppDevelopment = () => {
           serviceImg="d-none"
           btntext="Let's Talk With Us"
           learnmorebtn="aboutus-call"
-          phoneNumber="+1 619-798-9688"
+          phoneNumber="+1 (619) 335-2364"
           aboutbtnlink="/get-intouch"
         />
 
@@ -251,6 +252,7 @@ const AndroidAppDevelopment = () => {
           sectionTitle="Our "
           highlightText="Android Applications Include"
           description="We develop Native Android app development California solutions and hybrid mobile app development California systems with a balance of design, functionality, and performance to match your brand vision."
+          androidappicon="ios-service-icon android-service-icon"
           features={iosFeatures}
           image={androidiosimg}
         />

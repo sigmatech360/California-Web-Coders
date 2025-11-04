@@ -32,17 +32,28 @@ const OurCustomService = ({
 
           <div className="col-lg-6">
             <div className="custom-service-scroll">
-              {serviceCards.map((card) => (
-                <div className="custom-service-box" key={card.id}>
-                  <div className="customservice-boxtxt">
-                    <span className="service-icon">{card.icon}</span>
-                    <h5>{card.serviceCardHead}</h5>
-                    <p>{card.serviceCardPara}</p>
-                  </div>
-                  <div className="custom-right-img">
-                    <img src={card.serviceCardImg} alt="" />
-                  </div>
-                </div>
+              {serviceCards.map((card, index) => (
+                 <React.Fragment key={card.id}>
+                    {index === 2 && (
+                      <h4 className="related-services-heading">
+                        Related Services
+                      </h4>
+                    )}
+
+                    <div className="custom-service-box">
+                      <div className="customservice-boxtxt">
+                        <span className="service-icon">{card.icon}</span>
+                        <h5>{card.serviceCardHead}</h5>
+                        <p>{card.serviceCardPara}</p>
+                      </div>
+                      <div className="custom-right-img">
+                        <img
+                          src={card.serviceCardImg}
+                          alt={card.serviceCardHead}
+                        />
+                      </div>
+                    </div>
+                  </React.Fragment>
               ))}
             </div>
           </div>

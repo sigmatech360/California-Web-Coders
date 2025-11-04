@@ -12,11 +12,11 @@ const ReactHeroBanner = () => {
     <section className='react-hero-banner'>
         <div className="container">
             <div className="row justify-content-center">
-                <div className="col-lg-8">
+                <div className="col-lg-8 col-md-12">
                     <div className="react-hero-banner-txt">
-                        <h2>High-Performance <span>React Development</span> for Modern Web Apps</h2>
-                        <p>Our React experts build lightning-fast, interactive, and scalable front-end solutions that deliver an exceptional user experience across every device.</p>
-                        <Link to="/our-work">View Portfolio</Link>
+                        <h1>Professional  <span>React Developers</span> California Business Can Rely On</h1>
+                        <p>Your business deserves a website that feels fast, modern, and dynamic. With our React development California services, we create interactive websites and applications that load quickly, scale effortlessly, and deliver seamless user experiences.</p>
+                        <Link to="/get-intouch">Talk to us</Link>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@ import pixleperfectimg4 from "../../Assets/newChildPagesAssets/frontenddevelopme
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/frontenddevelopment/pixel-five.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/frontenddevelopment/pixel-six.webp";
 import DesignBrandMove from "../../Assets/newChildPagesAssets/frontenddevelopment/design-brand-move.webp";
-import serviceCardOne from "../../Assets/newChildPagesAssets/frontenddevelopment/serviceOne.png";
+import serviceCardOne from "../../Assets/newChildPagesAssets/frontenddevelopment/serviceOne.webp";
 import laptopVideo from "../../Assets/newChildPagesAssets/frontenddevelopment/process-side.mp4";
 import processFrontendPlug from "../../Assets/newChildPagesAssets/frontenddevelopment/frontend-plug.webp";
 import CustomAboutCompany from "../../components/CustomAboutCompany";
@@ -29,6 +29,7 @@ import { TbDeviceDesktopCog } from "react-icons/tb";
 import { TiHtml5 } from "react-icons/ti";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
 import OurProcess from "../../components/OurProcess";
+import ReactHelmet from "../../components/ReactHelmet";
 
 const FrontendDevelopment = () => {
   const webDesignPortfolioData = [
@@ -136,6 +137,15 @@ const FrontendDevelopment = () => {
 
 
   return (
+
+    <>
+    <ReactHelmet
+    title="Frontend Development Services | Modern UI & UX Solutions"
+    description="Enhance user experience with our expert frontend development services. We build fast, responsive, and visually stunning web interfaces using modern frameworks and best practices."
+    keywords="frontend development, UI development, UX design, responsive web design, HTML CSS JavaScript, React frontend"
+    baseUrl="https://californiawebcoders.com/frontend-development"
+  />
+
     <Layout>
       <ServiceBanner
         leftCol="col-lg-6"
@@ -156,7 +166,7 @@ const FrontendDevelopment = () => {
         listClass="aboutCompanylist"
         btntext="Learn More About Us"
         learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
+        phoneNumber="+1 (619) 335-2364"
       />
 
       <OurCustomService
@@ -191,7 +201,7 @@ const FrontendDevelopment = () => {
         TouchBtn="d-none"
         btntext="Let's Talk With Us"
         learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
+        phoneNumber="+1 (619) 335-2364"
       />
 
       <OurProcess
@@ -234,6 +244,8 @@ const FrontendDevelopment = () => {
         />
       )}
     </Layout>
+
+    </>
   );
 };
 

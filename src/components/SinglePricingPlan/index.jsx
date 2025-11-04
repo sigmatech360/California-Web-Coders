@@ -8,8 +8,8 @@ const SinglePricingPlan = (props) => {
   return (
     <section className={props.pricingSecClass || "PricingPlans singlePricingPlan"}>
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
+        <div className="row justify-content-center">
+             <div className="col-md-8">
             <div className="pricing-plan-head">
               <p
                 className="head-tag"
@@ -35,7 +35,8 @@ const SinglePricingPlan = (props) => {
               </p>
             </div>
           </div>
-
+        </div>
+        <div className="row">
           {props.pricingPlanData.map((item, index) => (
             <div className="col-lg-4 col-md-6 mb-4 mb-lg-0" key={index}>
               <PricePlanCard

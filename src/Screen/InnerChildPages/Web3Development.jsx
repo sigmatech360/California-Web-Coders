@@ -19,50 +19,102 @@ import OurCustomService from "../../components/OurCustomService";
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import SinglePricingPlan from "../../components/SinglePricingPlan";
 import { wordpressWebsitePricingPlansData } from "../../data";
-import { faqHomeData } from "../Designing";
 import BlogSection from "../../components/blogPosts";
 import Loader from "../../components/Loader";
 import Lightbox from "yet-another-react-lightbox";
 import FrequentQuestions from "../../components/FrequentQuestions";
 import Web3herobanner from "../../components/Web3herobanner";
+import ReactHelmet from "../../components/ReactHelmet";
+
+export const faqHomeData = [
+  {
+    id: 1,
+    question: "1. What exactly is Web 3.0?",
+    answer:
+      "Web 3.0 is the next internet era, decentralized, AI-driven, and built on blockchain technology, providing robust data security and faster communication.",
+  },
+  {
+    id: 2,
+    question:
+      "2. What services do you offer for Web 3.0 development in California?",
+    answer:
+      "At California Web Coders, we provide dApp development, smart contracts, blockchain integration, and Web 3.0 consulting.",
+  },
+  {
+    id: 3,
+    question: "3. How is Web 3.0 different from Web 2.0?",
+    answer:
+      "Web 3.0 gives users the ultimate control over data, as it is decentralized, transparent, and not owned by a single entity.",
+  },
+  {
+    id: 4,
+    question: "4. Can you help me create a decentralized app (dApp)?",
+    answer:
+      "Yes, our team of blockchain developers builds secure, scalable dApps customized to your vision and business model.",
+  },
+  {
+    id: 5,
+    question: "5. What technologies power Web 3.0?",
+    answer:
+      "Blockchain, AI, machine learning, and IoT are key technologies behind the Web 3.0 ecosystem.",
+  },
+  {
+    id: 6,
+    question: "6. Are Web 3.0 solutions secure?",
+    answer:
+      "Yes, decentralization and encryption make any digital product far less vulnerable to traditional cyberattacks and impossible to corrupt data, as the data is not saved on a single source.",
+  },
+  {
+    id: 7,
+    question: "7. Do you build NFT or DeFi platforms?",
+    answer:
+      "Yes, we design and develop NFT marketplaces and DeFi applications with blockchain integration.",
+  },
+  {
+    id: 8,
+    question: "8. Can Web 3.0 help businesses improve efficiency?",
+    answer:
+      "Definitely, it automates processes, increases transparency, and improves trust between users and organizations.",
+  },
+  {
+    id: 9,
+    question: "9. How long does it take to build a Web 3.0 project?",
+    answer:
+      "Timelines vary, but we follow agile methods to ensure rapid and reliable development.",
+  },
+  {
+    id: 10,
+    question: "What makes your Web 3.0 developers different?",
+    answer:
+      "We blend blockchain expertise with design thinking, creating experiences that are both smart and scalable.",
+  },
+];
 
 const Web3Development = () => {
   const webDesignPortfolioData = [
     {
       id: 1,
       image: pixleperfectimg1,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 2,
       image: pixleperfectimg2,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 3,
       image: pixleperfectimg3,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 4,
       image: pixleperfectimg4,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 5,
       image: pixleperfectimg5,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 6,
       image: pixleperfectimg6,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
   ];
 
@@ -107,109 +159,115 @@ const Web3Development = () => {
   };
 
   return (
-    <Layout>
-
-
-        <Web3herobanner/>
-
-
-      <WordPressPerformanceSection
-        wordpresssecclass="future-web-sec"
-        minihead="About Company"
-        secTitle1="Transforming the Future with Web"
-        description="The internet is growing, and it’s only going to grow more. Our Web 3.0 development services make sure that it grows smarter, giving users control, security, and ownership while connecting businesses and people in ways the old web never could."
-        landingList="landing-design-points python-development-points"
-        landingListItems={[
-          "Scalable & Secure",
-          "Improved Web Connectivity",
-        ]}
-        TouchBtn="d-none"
-        serviceImg="d-none"
-        btntext="Explore Services"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
+    <>
+      <ReactHelmet
+        title="Web3 & Blockchain Development | Smart Solutions California"
+        description="California Web Coders offers expert Web3 and blockchain development services. Build secure, smart, and decentralized applications that empower your business with next-gen technology."
+        keywords="web3 development, blockchain development, decentralized apps, smart contracts, secure web solutions, California web coders"
+        baseUrl="https://californiawebcoders.com/web3-development"
       />
 
-      <WordPressPerformanceSection
-        reverse
-        minihead="About Company"
-        miniheadclass="shorttop-head"
-        secTitle1="Achieve Your Goals with the "
-        secTitle2="Right Tech-Stack"
-        description="Every company has goals, and at California Web Coders, we help businesses achieve them with the right combination of tools, technology, and talent. As a leading Web3.0 company in California, we build ecosystems that empower innovation, security, and performance at every layer."
-        descriptiontwo="Our expert Web3.0 developers in California design tech stacks tailored to your project’s needs, ensuring seamless integration, future scalability, and long-term efficiency. Whether you’re building decentralized apps, smart contracts, or blockchain-driven platforms, we’ll help you harness the true potential of Web 3.0 to achieve results that are as smart as they are sustainable."
-        image={web3AboutImage}
-        listClass="d-none"
-        TouchBtn="d-none"
-        btntext="Let’s Get Started"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
 
-      <OurCustomService
-        miniHead="Our Services"
-        secMainTitle="Full-Spectrum"
-        secTitleBlue="Web 3.0"
-        secLastTitle="Services"
-        customServicePara="Recognized as one of the leading Web 3.0 development companies, California Web Coders balances creative vision with advanced technical expertise to build feature-rich, business-driven custom web applications that maximize your ROI. Our team delivers Web 3.0 solutions powered by AI and blockchain, ensuring every platform we create is secure, intelligent, and designed for long-term digital growth."
-        customServiceBtn="Start Your Project"
-        serviceCards={serviceCards}
-      />
 
-      <PixelPerfectSec
-        minihead="Portfolio"
-        secTitle="Glimpse at What"
-        secTitleBlue="Web 3.0"
-        secTitle2="Can Do"
-        secDescription="Explore projects that define the next era of decentralized digital innovation."
-        projectsData={webDesignPortfolioData}
-        onImageClick={handleImageClick}
-      />
+      <Layout>
+        <Web3herobanner />
 
-      <WordPressPerformanceSection
-        wordpresssecclass="web3-whychooseus"
-        leftCol="col-lg-6"
-        minihead="Why Choose Us"
-        secTitle1="Lead the"
-        secTitle2="Web 3.0"
-        secTitle3="Revolution with California Web Coders"
-        description="At California Web Coders, we help users implement all the best Web 3.0 services in California, increasing user experience in a way that has never been done before by utilizing:"
-        listClass="aboutCompanylist"
-        image={webchooseabslt}
-        TouchBtn="d-none"
-        btntext="Learn More About Us"
-        learnmorebtn="aboutus-call"
-        phoneNumber="+1 619-798-9688"
-      />
-
-      <SinglePricingPlan
-        secTitle="Flexible"
-        secTitleBlue="Python Development"
-        secTitleEnd="Packages"
-        secDescription="No more budget issues, get your hands on the most Affordable Website Design Services online."
-        // pricingPlanData={eCommerseWebsitePricingPlansData}
-        pricingPlanData={wordpressWebsitePricingPlansData}
-      />
-
-      <FrequentQuestions
-        secTitle="You Will Find Our Client's Frequent Questions"
-        FrequentQuestions="homeFrequentQuestions"
-        faqData={faqHomeData}
-      />
-
-      <Suspense fallback={<Loader />}>
-        <BlogSection categorySlug="cms-development" />
-      </Suspense>
-
-      {isOpen && images.length > 0 && (
-        <Lightbox
-          open={isOpen}
-          close={() => setIsOpen(false)}
-          slides={images}
-          index={currentIndex}
+        <WordPressPerformanceSection
+          wordpresssecclass="future-web-sec"
+          minihead="About Company"
+          secTitle1="Transforming the Future with Web"
+          description="The internet is growing, and it’s only going to grow more. Our Web 3.0 development services make sure that it grows smarter, giving users control, security, and ownership while connecting businesses and people in ways the old web never could."
+          landingList="landing-design-points python-development-points"
+          landingListItems={["Scalable & Secure", "Improved Web Connectivity"]}
+          TouchBtn="d-none"
+          serviceImg="d-none"
+          btntext="Explore Services"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
         />
-      )}
-    </Layout>
+
+        <WordPressPerformanceSection
+          reverse
+          minihead="About Company"
+          miniheadclass="shorttop-head"
+          secTitle1="Achieve Your Goals with the "
+          secTitle2="Right Tech-Stack"
+          description="Every company has goals, and at California Web Coders, we help businesses achieve them with the right combination of tools, technology, and talent. As a leading Web3.0 company in California, we build ecosystems that empower innovation, security, and performance at every layer."
+          descriptiontwo="Our expert Web3.0 developers in California design tech stacks tailored to your project’s needs, ensuring seamless integration, future scalability, and long-term efficiency. Whether you’re building decentralized apps, smart contracts, or blockchain-driven platforms, we’ll help you harness the true potential of Web 3.0 to achieve results that are as smart as they are sustainable."
+          image={web3AboutImage}
+          listClass="d-none"
+          TouchBtn="d-none"
+          btntext="Let’s Get Started"
+          aboutbtnlink="/get-intouch"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <OurCustomService
+          miniHead="Our Services"
+          secMainTitle="Full-Spectrum"
+          secTitleBlue="Web 3.0"
+          secLastTitle="Services"
+          customServicePara="Recognized as one of the leading Web 3.0 development companies, California Web Coders balances creative vision with advanced technical expertise to build feature-rich, business-driven custom web applications that maximize your ROI. Our team delivers Web 3.0 solutions powered by AI and blockchain, ensuring every platform we create is secure, intelligent, and designed for long-term digital growth."
+          customServiceBtn="Start Your Project"
+          serviceCards={serviceCards}
+        />
+
+        <PixelPerfectSec
+          minihead="Portfolio"
+          secTitle="Glimpse at What"
+          secTitleBlue="Web 3.0"
+          secTitle2="Can Do"
+          secDescription="Explore projects that define the next era of decentralized digital innovation."
+          projectsData={webDesignPortfolioData}
+          onImageClick={handleImageClick}
+        />
+
+        <WordPressPerformanceSection
+          wordpresssecclass="web3-whychooseus"
+          leftCol="col-lg-6"
+          minihead="Why Choose Us"
+          secTitle1="Lead the"
+          secTitle2="Web 3.0"
+          secTitle3="Revolution with California Web Coders"
+          description="At California Web Coders, we help users implement all the best Web 3.0 services in California, increasing user experience in a way that has never been done before by utilizing:"
+          listClass="aboutCompanylist"
+          image={webchooseabslt}
+          TouchBtn="d-none"
+          btntext="Let’s Get Started"
+          aboutbtnlink="/get-intouch"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+        />
+
+        <SinglePricingPlan
+          secTitle="Web 3.0"
+          secTitleEnd="is Smart. So is Our Pricing"
+          secDescription="Click the link and invest in smart, secure Web 3.0 technology built for growth."
+          // pricingPlanData={eCommerseWebsitePricingPlansData}
+          pricingPlanData={wordpressWebsitePricingPlansData}
+        />
+
+        <FrequentQuestions
+          secTitle="You Will Find Our Client's Frequent Questions"
+          FrequentQuestions="homeFrequentQuestions"
+          faqData={faqHomeData}
+        />
+
+        <Suspense fallback={<Loader />}>
+          <BlogSection categorySlug="cms-development" />
+        </Suspense>
+
+        {isOpen && images.length > 0 && (
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+            index={currentIndex}
+          />
+        )}
+      </Layout>
+    </>
   );
 };
 

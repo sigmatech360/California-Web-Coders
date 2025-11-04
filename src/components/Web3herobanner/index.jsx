@@ -18,11 +18,11 @@ const Web3herobanner = () => {
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="web3-hero-banner-txt">
-              <h2>Web 3.0: Internet That Thinks for Itself and You</h2>
+              <h1>Web 3.0: Internet That Thinks for Itself and You</h1>
               <p>
                 Bringing together artificial intelligence, blockchain, and decentralization to enhance communication and create smarter, more secure digital experiences.
               </p>
-              <Link to="">Let’s Automate Web</Link>
+              <Link to="/get-intouch">Let’s Automate Web</Link>
             </div>
           </div>
         </div>
