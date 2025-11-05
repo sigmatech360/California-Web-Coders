@@ -20,10 +20,17 @@ const WordPressPerformanceSection = (props) => {
 
   return (
     <section
-      className={props.wordpresssecclass || "WordPressPerformanceSection"}
-    >
+      className={props.wordpresssecclass || "WordPressPerformanceSection"}>
       <div className="container">
         <div className={props.afterConainerClass}>
+          <div className={props.domainRow || "d-none"}>
+            <div className="col-lg-8">
+              <div className="domain-transfer-secure">
+                <h6>{props.secureminihead}</h6>
+                <h2>{props.securebighead}</h2>
+              </div>
+            </div>
+          </div>
           <div className={rowClasses}>
             <div className={props.leftCol || "col-lg-6"}>
               <div className={props.textClassbox || "abouttxt-data"}>

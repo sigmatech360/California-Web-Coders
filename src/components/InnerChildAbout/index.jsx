@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 const InnerChildAbout = (props) => {
   return (
-    <section className="WordPressPerformanceSection">
+    <section className={props.webpointsec || "WordPressPerformanceSection"}>
       <div className="container">
         <div className="row">
           
           <div className="col-lg-6 mb-lg-0 mb-4">
-            <div className="services__about-img">
+            <div className={props.managewebimg || "services__about-img"}>
               <img
                 src={props.image}
                 alt="Service About"

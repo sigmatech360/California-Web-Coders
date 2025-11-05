@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import FormModal from "../FormModal";
 
 const DomainService = (props) => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <section className="domain-service-sec">
       <div className="container">
@@ -26,7 +29,7 @@ const DomainService = (props) => {
                   <h6>{props.shorthead}</h6>
                   <h4>{props.bighead}</h4>
                   <p>{props.servicepara}</p>
-                  <Link to="">{props.btntext}</Link>
+                  <Link  onClick={() => setShowModal(true)}><FaArrowRightLong /> {props.btntext}</Link>
                 </div>
               </div>
             </div>
@@ -42,7 +45,7 @@ const DomainService = (props) => {
                 <h6>{props.shortheadtwo}</h6>
                 <h4>{props.bigheadtwo}</h4>
                 <p>{props.serviceparatwo}</p>
-                <Link to="">{props.btntwotxt}</Link>
+                <Link  onClick={() => setShowModal(true)}><FaArrowRightLong /> {props.btntwotxt}</Link>
               </div>
             </div>
           </div>
@@ -55,12 +58,13 @@ const DomainService = (props) => {
                 <h6>{props.shortheadthree}</h6>
                 <h4>{props.bigheadthree}</h4>
                 <p>{props.serviceparathree}</p>
-                <Link to="">{props.btnthreetxt}</Link>
+                <Link  onClick={() => setShowModal(true)}><FaArrowRightLong /> {props.btnthreetxt}</Link>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <FormModal show={showModal} handleClose={() => setShowModal(false)} />
     </section>
   );
 };

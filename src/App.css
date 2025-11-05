@@ -2332,7 +2332,6 @@ section.custom-customer-sec {
   color: #0504a5;
 }
 
-
 .angular-herobanner h1 {
   font-size: 50px;
 }
@@ -3384,9 +3383,7 @@ section.blockchain-choose-us {
 
 /**********  Mern Stack Development Page CSS End **********/
 
-
 /**********  Domain Register Page CSS Start **********/
-
 
 .landing-check-none {
   display: none;
@@ -3401,7 +3398,8 @@ section.blockchain-choose-us {
 }
 
 .domain-service-sec {
-  background: url(./Assets/newChildPagesAssets/domainregistration/domain-service-bg.webp) no-repeat top center;
+  background: url(./Assets/newChildPagesAssets/domainregistration/domain-service-bg.webp)
+    no-repeat top center;
   background-size: cover;
   padding: 150px 0px 150px 0px;
   width: 100%;
@@ -3409,78 +3407,350 @@ section.blockchain-choose-us {
 }
 
 .domain-service-img img {
-    width: 100%;
+  width: 100%;
 }
 
-
 .domain-service-head {
-    text-align: center;
-    margin: 0px 0px 50px 0px;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
 }
 
 .domain-service-head h6 {
-    color: #fff;
+  color: #fff;
 }
 
-
 .domain-service-head h2 {
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 1.1;
-    color: #fff;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+  color: #fff;
 }
 
 .service-domain-img img {
-    width: 100%;
+  width: 100%;
 }
 
-
 .domain-service-one {
-    background: #001455 0% 0% no-repeat padding-box;
-    margin: 0px 0px 60px 0px;
-    border-radius: 20px;
+  background: #001455 0% 0% no-repeat padding-box;
+  margin: 0px 0px 60px 0px;
+  border-radius: 20px;
 }
 
 .domain-service-one .row .col-lg-6 {
-    padding-left: 0px;
+  padding-left: 0px;
 }
 
-
 .domain-service-txt h6 {
-    color: #fff;
-    margin: 0px;
+  color: #fff;
+  margin: 0px;
 }
 
 .domain-service-txt h4 {
-    color: #fff;
-    font-size: 35px;
-    margin: 15px 0px;
+  color: #fff;
+  font-size: 35px;
+  margin: 15px 0px;
 }
 
 .domain-service-txt p {
-    color: #fff;
+  color: #fff;
 }
 
 .domain-service-txt {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .domain-service-txt a {
-    color: #fff;
-    font-size: 15px;
+  color: #fff;
+  font-size: 15px;
 }
 
 .domain-service-box {
-    background: #001455 0% 0% no-repeat padding-box;
-    border-radius: 20px;
-    margin: 0px 0px 50px 0px;
+  background: #001455 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  margin: 0px 0px 50px 0px;
+}
+
+.select-domain-txt p {
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+}
+
+.select-domain-txt p {
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+}
+
+.domain-service-txt a svg {
+  margin: 0px 10px 0px 0px;
+}
+
+.domain-service-txt a {
+  display: flex;
+  align-items: center;
+  transition: all 0.7s ease;
+  transform: translate(0px, 0px);
+}
+
+.domain-service-txt a:hover {
+  transform: translate(10px, 0px);
+}
+
+.domain-support-txt {
+  background: #0504a5 0% 0% no-repeat padding-box;
+  mix-blend-mode: darken;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.domain-choose-head h2 {
+  max-width: 100% !important;
 }
 
 /**********  Domain Register Page CSS End **********/
+
+/**********  Domain Transfer Page CSS Start **********/
+
+.domain-cards-sec {
+  padding: 50px 0px;
+}
+
+.domain-card {
+  padding: 30px 20px;
+  border: 1px solid #0504a5;
+  border-radius: 20px;
+  transition: all 0.6s ease;
+  transform: translate(0px, 0px);
+  cursor: pointer;
+  height: 280px;
+}
+
+.domain-card:hover {
+  transform: translate(0px, -10px);
+}
+
+.domain-card h4 {
+  color: #031243;
+  font-size: 18px;
+}
+
+.domain-card p {
+  color: #031243;
+  font-size: 14px;
+}
+
+.domain-card a {
+  color: #0504a5;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.6s ease;
+}
+
+.domain-card a:hover {
+  transform: translate(10px, 0px);
+}
+
+.domain-card img {
+  margin: 0px 0px 20px 0px;
+  width: 50px;
+}
+
+section.domain-transfer-choose section.custom-customer-sec {
+  padding: 0px;
+}
+
+section.domain-transfer-choose {
+  padding: 70px 0px 70px 0px;
+}
+
+.domaintransfer-choose-head {
+  margin: 0px 0px 50px 0px;
+  text-align: center;
+}
+
+.domaintransfer-choose-head h6 {
+  color: #0504a5;
+}
+
+.domaintransfer-choose-head h4 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+  color: #031243;
+}
+
+.domaintransfer-choose-head h4 span {
+  color: #0504a5;
+}
+
+.domaintransfer-choose-head p {
+  color: #031243;
+}
+
+.domain-transfer-secure {
+  text-align: center;
+  margin: 0px 0px 40px 0px;
+}
+
+.domain-secure-sec {
+  background: url(./Assets/newChildPagesAssets/domaintransfer/domain-service-bg.webp)
+    no-repeat top;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 120px 0px 100px 0px;
+}
+
+.domain-transfer-secure h6 {
+  color: #fff;
+}
+
+.domain-transfer-secure h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.domain-secure-sec .abouttxt-data h6,
+.domain-secure-sec .abouttxt-data h2,
+.domain-secure-sec .abouttxt-data p {
+  color: #fff;
+}
+
+.domain-secure-sec .aboutus-call a {
+    background: #fff;
+    color: #071244;
+    font-weight: 500;
+    border-color: #fff;
+}
+
+.domain-secure-sec .aboutus-call a:hover {
+    color: #fff;
+    background: transparent;
+}
+
+section.domain-secure-sec .about-number span {
+    background: #fff;
+    color: #071244;
+}
+
+/**********  Domain Transfer Page CSS End **********/
+
+
+/**********  Manage Web Hosting Page CSS Start **********/
+
+
+.manage-web-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 0px 10px 0px;
+}
+
+.hosting-management-sec {
+    padding: 70px 0px 0px 0px;
+}
+
+.webhost-points-sec {
+    margin: 0px 0px 60px 0px;
+}
+
+.domain-question-sec {
+  background: url(./Assets/newChildPagesAssets/domaintransfer/domain-service-bg.webp)
+    no-repeat top;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 170px 0px 50px 0px;
+}
+
+
+.domain-question-sec .abouttxt-data h6,
+.domain-question-sec .abouttxt-data h2,
+.domain-question-sec .abouttxt-data p {
+  color: #fff;
+}
+
+
+.domain-question-sec .aboutus-call a {
+    background: #fff;
+    color: #071244;
+    font-weight: 500;
+    border-color: #fff;
+}
+
+.domain-question-sec .aboutus-call a:hover {
+    color: #fff;
+    background: transparent;
+}
+
+.domain-question-sec .about-number span {
+    background: #fff;
+    color: #071244;
+}
+
+
+.domain-choose-card {
+    padding: 20px;
+    box-shadow: 0px 3px 6px #00000029;
+    margin: 0px 0px 30px 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .6s ease;
+    transform: translate(0px, 0px);
+}
+
+.domain-choose-card:hover {
+  transform: translate(0px, -10px);
+}
+
+.domain-choose-card h5 {
+    color: #0504A5;
+    margin: 20px 0px 15px 0px;
+}
+
+.domain-choose-card p {
+    color: #031243;
+}
+
+.domain-choose-card img {
+    width: auto;
+}
+
+
+
+/**********  Manage Web Hosting Page CSS End **********/
+
+
+
+/**********  Website Migration Page CSS Start **********/
+
+
+section.web-migration-proceess {
+    padding: 80px 0px 50px 0px;
+}
+
+.web-migrate-head h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.1;
+    margin: 0px;
+    color: #031243;
+}
+
+.web-migrate-head h2 span {
+    color: #0504A5;
+}
+
+
+/**********  Website Migration Page CSS End **********/
+
 
 
 @media (max-width: 1399px) {
@@ -3693,7 +3963,7 @@ section.blockchain-choose-us {
 }
 
 @media (max-width: 767px) {
-   .wordpressBlogCard img,
+  .wordpressBlogCard img,
   .blog-with-sidebar .wordpressBlogCard img {
     height: unset;
   }
