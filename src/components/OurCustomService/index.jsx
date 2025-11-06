@@ -34,12 +34,11 @@ const OurCustomService = ({
             <div className="custom-service-scroll">
               {serviceCards.map((card, index) => (
                  <React.Fragment key={card.id}>
-                    {index === 2 && (
+                    {/* {index === 2 && (
                       <h4 className="related-services-heading">
                         Related Services
                       </h4>
-                    )}
-
+                    )} */}
                     <div className="custom-service-box">
                       <div className="customservice-boxtxt">
                         <span className="service-icon">{card.icon}</span>

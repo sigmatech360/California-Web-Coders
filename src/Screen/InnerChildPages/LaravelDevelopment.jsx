@@ -8,9 +8,9 @@ import pixleperfectimg3 from "../../Assets/newChildPagesAssets/laraveldevelopmen
 import pixleperfectimg4 from "../../Assets/newChildPagesAssets/laraveldevelopment/pixel-4.webp";
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/laraveldevelopment/pixel-5.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/laraveldevelopment/pixel-6.webp";
-import serviceCardOne from "../../Assets/newChildPagesAssets/laraveldevelopment/service-card-1.webp";
-import serviceCardTwo from "../../Assets/newChildPagesAssets/laraveldevelopment/service-card-2.webp";
-import serviceCardThree from "../../Assets/newChildPagesAssets/laraveldevelopment/service-card-3.webp";
+import serviceCardOne from "../../Assets/newChildPagesAssets/reactdevelopment/nodejs-inner-img.webp";
+import serviceCardTwo from "../../Assets/newChildPagesAssets/laraveldevelopment/ai-inner-img.webp";
+import serviceCardThree from "../../Assets/newChildPagesAssets/laraveldevelopment/blockchain-inner-img.webp";
 import ChooseSecImg from "../../Assets/newChildPagesAssets/laraveldevelopment/choose-sec-img.webp";
 import powerfulimg from "../../Assets/newChildPagesAssets/laraveldevelopment/powerfull-laravelapp-bg.webp";
 import aboutvideo from "../../Assets/newChildPagesAssets/laraveldevelopment/about-video.mp4";
@@ -18,9 +18,9 @@ import aboutsmallimg from "../../Assets/newChildPagesAssets/laraveldevelopment/a
 import { ReactComponent as Speedmeter } from "../../Assets/newChildPagesAssets/reactdevelopment/speedmeter.svg";
 import { ReactComponent as Topmedal } from "../../Assets/newChildPagesAssets/reactdevelopment/toppermedal.svg";
 import { ReactComponent as Easycontrol } from "../../Assets/newChildPagesAssets/reactdevelopment/easycontrol.svg";
-import { ReactComponent as Restfulapi } from "../../Assets/newChildPagesAssets/laraveldevelopment/restfulapis.svg";
-import { ReactComponent as Ecommerce } from "../../Assets/newChildPagesAssets/laraveldevelopment/ecommerce.svg";
-import { ReactComponent as Maintaince } from "../../Assets/newChildPagesAssets/laraveldevelopment/maintaince.svg";
+import { ReactComponent as Nodejs } from "../../Assets/newChildPagesAssets/laraveldevelopment/nodejs.svg";
+import { ReactComponent as Aiintegrate } from "../../Assets/newChildPagesAssets/laraveldevelopment/aiintegrate.svg";
+import { ReactComponent as Blockchain } from "../../Assets/newChildPagesAssets/laraveldevelopment/blockchain.svg";
 import CustomCustomerCard from "../../components/CustomCustomerCard";
 import { FaMedal, FaTachometerAlt } from "react-icons/fa";
 import { IoSettingsSharp } from "react-icons/io5";
@@ -154,7 +154,7 @@ const LaravelDevelopment = () => {
   const serviceCards = [
     {
       id: 1,
-      icon: <Restfulapi size={40} />,
+      icon: <Nodejs size={40} />,
       serviceCardHead: "Node.js Development",
       serviceCardPara:
         "Other than Laravel, our Node.js development services keeps your backend lightweight, scalable, and efficient. It’s the technology behind high-speed platforms and data-heavy systems that demand performance.",
@@ -162,7 +162,7 @@ const LaravelDevelopment = () => {
     },
     {
       id: 2,
-      icon: <Ecommerce size={40} />,
+      icon: <Aiintegrate size={40} />,
       serviceCardHead: "AI Integration",
       serviceCardPara:
         "We bring intelligence to your Laravel applications through AI integration, automating workflows, predicting user behavior, and delivering personalized experiences that help your business make smarter, faster decisions.",
@@ -170,7 +170,7 @@ const LaravelDevelopment = () => {
     },
     {
       id: 3,
-      icon: <Maintaince size={40} />,
+      icon: <Blockchain size={40} />,
       serviceCardHead: "Blockchain Development",
       serviceCardPara:
         "For businesses that value transparency and trust, our blockchain development services introduce secure, traceable, and verifiable systems. From smart contracts to decentralized apps, we merge innovation with reliability.",
@@ -202,6 +202,7 @@ const LaravelDevelopment = () => {
 
       <Layout>
         <ServiceBanner
+          secClass="laravel-herobanner"
           leftCol="col-lg-6"
           bgImage={landingPageBanner}
           btnClass="theme-light mt-3"

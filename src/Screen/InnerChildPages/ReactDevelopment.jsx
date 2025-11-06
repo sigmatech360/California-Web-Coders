@@ -3,13 +3,14 @@ import Layout from "../../components/layout";
 import CustomAboutCompany from "../../components/CustomAboutCompany";
 import AboutFrontendOne from "../../Assets/newChildPagesAssets/reactdevelopment/aboutone.webp";
 import AboutFrontendTwo from "../../Assets/newChildPagesAssets/reactdevelopment/abouttwo.webp";
-import serviceCardOne from "../../Assets/newChildPagesAssets/reactdevelopment/reactjs-inner-service.webp";
+import serviceCardOne from "../../Assets/newChildPagesAssets/reactdevelopment/nodejs-inner-img.webp";
 import serviceCardTwo from "../../Assets/newChildPagesAssets/reactdevelopment/customui-inner-service.webp";
-import serviceCardThree from "../../Assets/newChildPagesAssets/reactdevelopment/api-inner-service.webp";
+import serviceCardThree from "../../Assets/newChildPagesAssets/laraveldevelopment/ai-inner-img.webp";
 import reactChoose from "../../Assets/newChildPagesAssets/reactdevelopment/reactchoose.webp";
 import { ReactComponent as Apiintegrate } from "../../Assets/newChildPagesAssets/reactdevelopment/apiintegration.svg";
 import { ReactComponent as Customui } from "../../Assets/newChildPagesAssets/reactdevelopment/customui.svg";
-import { ReactComponent as Reactjs } from "../../Assets/newChildPagesAssets/reactdevelopment/reactjs.svg";
+import { ReactComponent as Nodejs } from "../../Assets/newChildPagesAssets/laraveldevelopment/nodejs.svg";
+import { ReactComponent as Aiintegrate } from "../../Assets/newChildPagesAssets/laraveldevelopment/aiintegrate.svg";
 import { ReactComponent as Speedmeter } from "../../Assets/newChildPagesAssets/reactdevelopment/speedmeter.svg";
 import { ReactComponent as Topmedal } from "../../Assets/newChildPagesAssets/reactdevelopment/toppermedal.svg";
 import { ReactComponent as Easycontrol } from "../../Assets/newChildPagesAssets/reactdevelopment/easycontrol.svg";
@@ -108,10 +109,10 @@ const ReactDevelopment = () => {
   const serviceCards = [
     {
       id: 1,
-      icon: <Reactjs size={40} />,
-      serviceCardHead: "Reactjs Development",
+      icon: <Nodejs size={40} />,
+      serviceCardHead: "Node.js Development",
       serviceCardPara:
-        "We use Reactjs to create fast, SEO-friendly React apps with superior rendering performance ideal for businesses that need scalable and search-optimized digital platforms.",
+        "We use Node.js to create fast, SEO-friendly React apps with superior rendering performance, ideal for businesses that need scalable and search-optimized digital platforms.",
       serviceCardImg: serviceCardOne,
     },
     {
@@ -123,8 +124,8 @@ const ReactDevelopment = () => {
       serviceCardImg: serviceCardTwo,
     },
     {
-      id: 3,
-      icon: <Apiintegrate size={40} />,
+      id: 3,  
+      icon: <Aiintegrate size={40} />,
       serviceCardHead: "AI Integration",
       serviceCardPara:
         "We combine React interfaces with AI integration to create smart, adaptive web applications. From predictive interactions to personalized dashboards, we help your platform think and respond intelligently.",

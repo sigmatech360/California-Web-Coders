@@ -10,12 +10,13 @@ import pixleperfectimg4 from "../../Assets/newChildPagesAssets/nodejsdevelopment
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/nodejsdevelopment/pixel-5.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/nodejsdevelopment/pixel-6.webp";
 import laptopVideo from "../../Assets/newChildPagesAssets/frontenddevelopment/process-side.mp4";
-import serviceCardOne from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-customapi.webp";
-import serviceCardTwo from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-realtime.webp";
-import serviceCardThree from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-node.webp";
-import { ReactComponent as Restfulapi } from "../../Assets/newChildPagesAssets/laraveldevelopment/restfulapis.svg";
-import { ReactComponent as Nodejs } from "../../Assets/newChildPagesAssets/nodejsdevelopment/migratenodejs.svg";
+import serviceCardOne from "../../Assets/newChildPagesAssets/laraveldevelopment/ai-inner-img.webp";
+import serviceCardTwo from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-realtime.webp";  
+import serviceCardThree from "../../Assets/newChildPagesAssets/nodejsdevelopment/customweb-inner-img.webp";
+import { ReactComponent as Custumweb } from "../../Assets/newChildPagesAssets/nodejsdevelopment/custom-web-icon.svg";
+import { ReactComponent as Ecommerce } from "../../Assets/newChildPagesAssets/nodejsdevelopment/ecommerce.svg";
 import { ReactComponent as Realtimeapp } from "../../Assets/newChildPagesAssets/nodejsdevelopment/realtimeapp.svg";
+import { ReactComponent as Aiintegrate } from "../../Assets/newChildPagesAssets/laraveldevelopment/aiintegrate.svg";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
 import OurProcess from "../../components/OurProcess";
 import OurCustomService from "../../components/OurCustomService";
@@ -147,7 +148,7 @@ const NodejsDevelopment = () => {
   const serviceCards = [
     {
       id: 1,
-      icon: <Restfulapi size={40} />,
+      icon: <Aiintegrate size={40} />,
       serviceCardHead: "AI Integration",
       serviceCardPara:
         "We combine Node.js with artificial intelligence to create smarter, more adaptive systems. From predictive analytics to chatbots, AI integration helps automate workflows and enhance user engagement.",
@@ -155,7 +156,7 @@ const NodejsDevelopment = () => {
     },
     {
       id: 2,
-      icon: <Realtimeapp size={40} />,
+      icon: <Ecommerce size={40} />,
       serviceCardHead: "E-Commerce Website Development",
       serviceCardPara:
         "We develop fast, secure, and scalable e-commerce platforms powered by Node.js. From product management to payment gateways, we build systems designed for growth and seamless shopping experiences.",
@@ -163,7 +164,7 @@ const NodejsDevelopment = () => {
     },
     {
       id: 3,
-      icon: <Nodejs size={40} />,
+      icon: <Custumweb size={40} />,
       serviceCardHead: "Custom Web Development",
       serviceCardPara:
         "We build tailored Node.js web applications that align perfectly with your brand and goals. Every line of code is crafted for performance, user experience, and long-term scalability.",

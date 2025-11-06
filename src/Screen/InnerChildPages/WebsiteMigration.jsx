@@ -20,6 +20,8 @@ import FrequentQuestions from "../../components/FrequentQuestions";
 import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
+import DomainSearchPrice from "../../components/DomainSearchPrice";
+import DomainPricingCards from "../../components/DomainPricingCards";
 
 export const faqHomeData = [
   {
@@ -117,6 +119,8 @@ const WebsiteMigration = () => {
           btnText="Start Your Web Migration"
         />
 
+        <DomainSearchPrice/>
+
         <WordPressPerformanceSection
           reverse
           minihead="About Us"
@@ -161,6 +165,9 @@ const WebsiteMigration = () => {
           serviceparathree="Our server management services cover configuration, monitoring, and maintenance to ensure stable uptime and performance. We handle patching, backups, and troubleshooting, giving you total confidence in your website’s infrastructure and reliability."
           btnthreetxt="Learn more"
         />
+
+
+        <DomainPricingCards/>
 
         <section className="web-migration-proceess">
           <div className="container">

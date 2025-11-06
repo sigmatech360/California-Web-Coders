@@ -1,12 +1,12 @@
 import React, { Suspense, useState } from "react";
 import Layout from "../../components/layout";
 import ServiceBanner from "../../components/ServiceBanner";
-import landingPageBanner from "../../Assets/newChildPagesAssets/frontenddevelopment/landingbanner.webp";
+import landingPageBanner from "../../Assets/newChildPagesAssets/angulardevelopment/angular-herobanner.webp";
 import angularaboutvideo from "../../Assets/newChildPagesAssets/angulardevelopment/video-about.mp4";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
-import serviceCardOne from "../../Assets/newChildPagesAssets/frontenddevelopment/serviceOne.webp";
-import serviceCardTwo from "../../Assets/newChildPagesAssets/angulardevelopment/customweb-inner-service.webp";
-import serviceCardThree from "../../Assets/newChildPagesAssets/angulardevelopment/backendintegration-inner-service.webp";
+import serviceCardOne from "../../Assets/newChildPagesAssets/angulardevelopment/laraveldev-inner-img.webp";
+import serviceCardTwo from "../../Assets/newChildPagesAssets/angulardevelopment/custom-webapp-inner-img.webp";
+import serviceCardThree from "../../Assets/newChildPagesAssets/angulardevelopment/backend-integration-inner-img.webp";
 import OurCustomService from "../../components/OurCustomService";
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import pixleperfectimg1 from "../../Assets/newChildPagesAssets/angulardevelopment/pixel-1.webp";
@@ -17,8 +17,8 @@ import pixleperfectimg5 from "../../Assets/newChildPagesAssets/angulardevelopmen
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/angulardevelopment/pixel-6.webp";
 import angularbuildlaptop from "../../Assets/newChildPagesAssets/angulardevelopment/360laptop.webp";
 import { ReactComponent as Angular } from "../../Assets/newChildPagesAssets/angulardevelopment/angular.svg";
-import { ReactComponent as Backend } from "../../Assets/newChildPagesAssets/angulardevelopment/backend.svg";
-import { ReactComponent as CustomWeb } from "../../Assets/newChildPagesAssets/angulardevelopment/custom-web.svg";
+import { ReactComponent as Backend } from "../../Assets/newChildPagesAssets/angulardevelopment/backenddatabase.svg";
+import { ReactComponent as CustomWeb } from "../../Assets/newChildPagesAssets/angulardevelopment/customwebapp.svg";
 import FrequentQuestions from "../../components/FrequentQuestions";
 import SinglePricingPlan from "../../components/SinglePricingPlan";
 import { wordpressWebsitePricingPlansData } from "../../data";
