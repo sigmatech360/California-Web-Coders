@@ -11,11 +11,11 @@ import pixleperfectimg4 from "../../Assets/newChildPagesAssets/smartaiintegratio
 import pixleperfectimg5 from "../../Assets/newChildPagesAssets/smartaiintegration/pixel-5.webp";
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/smartaiintegration/pixel-6.webp";
 import { ReactComponent as Restfulapi } from "../../Assets/newChildPagesAssets/laraveldevelopment/restfulapis.svg";
-import { ReactComponent as Realtimeapp } from "../../Assets/newChildPagesAssets/nodejsdevelopment/realtimeapp.svg";
-import { ReactComponent as Nodejs } from "../../Assets/newChildPagesAssets/nodejsdevelopment/migratenodejs.svg";
-import serviceCardOne from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-customapi.webp";
-import serviceCardTwo from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-realtime.webp";
-import serviceCardThree from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-node.webp";
+import { ReactComponent as Webdesign } from "../../Assets/newChildPagesAssets/smartaiintegration/web-design.svg";
+import { ReactComponent as Seoicon } from "../../Assets/newChildPagesAssets/smartaiintegration/seoicon.svg";
+import serviceCardOne from "../../Assets/newChildPagesAssets/smartaiintegration/webapp-inner-img.webp";
+import serviceCardTwo from "../../Assets/newChildPagesAssets/smartaiintegration/webdesign-inner-img.webp";
+import serviceCardThree from "../../Assets/newChildPagesAssets/smartaiintegration/seo-inner-img.webp";
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
 import CustomGetInTouch from "../../components/CustomGetInTouch";
@@ -133,7 +133,7 @@ const SmartAIIntegration = () => {
     },
     {
       id: 2,
-      icon: <Realtimeapp size={40} />,
+      icon: <Webdesign size={40} />,
       serviceCardHead: "Website Design",
       serviceCardPara:
         "Our website design team blends creativity and strategy to build visually stunning, conversion-focused websites that complement your AI-driven experiences while reinforcing your brand identity and user engagement.",
@@ -141,7 +141,7 @@ const SmartAIIntegration = () => {
     },
     {
       id: 3,
-      icon: <Nodejs size={40} />,
+      icon: <Seoicon size={40} />,
       serviceCardHead: "Search Engine Optimization",
       serviceCardPara:
         "Through smart automation and data analysis, our SEO experts use AI to identify opportunities, improve rankings, and create content strategies that deliver consistent, measurable growth for your business.",
@@ -224,14 +224,14 @@ const SmartAIIntegration = () => {
 
         <CustomGetInTouch />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           pricingSecClass="smartai-pricing-sec"
           secTitle="Explore The"
           secTitleBlue="Packages"
           secDescription="We customize our AI integration services pricing for every business size and requirement ensuring flexible, scalable solutions that deliver tangible returns."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <FrequentQuestions
           faqsSecClass="smartai-faqs-sec faqs-sec"

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const PixelPerfectSec = (props) => {
   return (
     <>
-      <section className="pixel-perfect-sec">
+      <section className={props.pixelSec || "pixel-perfect-sec"}>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -47,7 +47,7 @@ const PixelPerfectSec = (props) => {
               </div>
             ))}
             <div className="col-md-12">
-              <div className="justify-content-center d-flex flex-wrap gap-4">
+              <div className="justify-content-center d-flex flex-wrap gap-4 pixel-button-div">
                 <Link to={"/get-intouch"} className="viewbtn">
                   {props.btnText || "Request A Quote"}
                 </Link>

@@ -5,10 +5,10 @@ import ServiceBanner from "../../components/ServiceBanner";
 import serviceimg1 from "../../Assets/newChildPagesAssets/domainregistration/service-img-1.webp";
 import serviceimg2 from "../../Assets/newChildPagesAssets/domainregistration/service-img-2.webp";
 import serviceimg3 from "../../Assets/newChildPagesAssets/domainregistration/service-img-3.webp";
-import domaincard1 from "../../Assets/newChildPagesAssets/domaintransfer/wp-icon.webp";
-import domaincard2 from "../../Assets/newChildPagesAssets/domaintransfer/cloud-icon-1.webp";
-import domaincard3 from "../../Assets/newChildPagesAssets/domaintransfer/ecomm-icon.webp";
-import domaincard4 from "../../Assets/newChildPagesAssets/domaintransfer/vps-icon.webp";
+import domaincard1 from "../../Assets/newChildPagesAssets/vpsserver/eccomerce.webp";
+import domaincard2 from "../../Assets/newChildPagesAssets/vpsserver/saas.webp";
+import domaincard3 from "../../Assets/newChildPagesAssets/vpsserver/databusiness.webp";
+import domaincard4 from "../../Assets/newChildPagesAssets/vpsserver/hightrafficwebsites.webp";
 import aboutCompany from "../../Assets/newChildPagesAssets/vpsserver/hosting-partner.webp";
 import reliablehosting from "../../Assets/newChildPagesAssets/vpsserver/reliable-hosting.webp";
 import herobanner from "../../Assets/newChildPagesAssets/vpsserver/vps-banner.webp";
@@ -194,6 +194,7 @@ const VPSDedicatedServers = () => {
 
       <Layout>
         <ServiceBanner
+          secClass="herobanner-imghide"
           leftCol="col-lg-6"
           bgImage={herobanner}
           btnClass="theme-light mt-3"
@@ -328,13 +329,13 @@ const VPSDedicatedServers = () => {
           secDescription="Upgrade your infrastructure today with a VPS or dedicated server setup that delivers stability managed by California’s trusted web experts. Fill the form now!"
           btnText="Message Us"
         />
-
+{/* 
         <SinglePricingPlan
           secTitle="Flexible VPS & Dedicated Hosting Packages"
           secDescription="Choose from our scalable pricing plans tailored for startups, growing businesses, and enterprise websites, offering predictable costs with exceptional performance value."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <FrequentQuestions
           secTitle="Frequently Asked Questions for VPS & Dedicated Hosting"

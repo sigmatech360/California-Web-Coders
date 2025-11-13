@@ -232,14 +232,14 @@ const ReactDevelopment = () => {
           phoneNumber="+1 (619) 335-2364"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Flexible"
           secTitleBlue="React Development"
           secTitleEnd="Packages"
           secDescription="Our React Native development services in California give businesses cost-effective solutions without compromising on quality."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <ContactForm
           secTitle="Fill The Contact Form to Get Started"

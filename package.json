@@ -5,6 +5,7 @@
   "homepage": "https://californiawebcoders.com/",
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@szhsin/react-accordion": "^1.4.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -22,6 +23,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.3",
     "react-slider": "^2.0.6",
+    "react-tabs": "^6.1.0",
     "react-toastify": "^11.0.5",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.2.10",
@@ -31,7 +33,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "npx critical build/index.html --inline --width 480 --height 680 --target build/index.html && node generate-sitemap.js",
+    "postbuild": "npx critical build/index.html --inline --width 480 --height 680 --target build/index.html && node generate-sitemap.cjs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

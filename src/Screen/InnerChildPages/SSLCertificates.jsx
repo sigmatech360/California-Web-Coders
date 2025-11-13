@@ -11,6 +11,7 @@ import about2 from "../../Assets/newChildPagesAssets/sslcertificate/about-2.webp
 import setup from "../../Assets/newChildPagesAssets/sslcertificate/nosetup.svg";
 import alwayssecure from "../../Assets/newChildPagesAssets/sslcertificate/alwayssecure.svg";
 import quickacces from "../../Assets/newChildPagesAssets/sslcertificate/quickaccess.svg";
+import {ReactComponent as Quickacces} from "../../Assets/newChildPagesAssets/sslcertificate/quickaccess.svg";
 import {ReactComponent as Alwayssecure} from "../../Assets/newChildPagesAssets/sslcertificate/alwayssecure.svg";
 import {ReactComponent as Attack} from "../../Assets/newChildPagesAssets/sslcertificate/preventattack.svg";
 import {ReactComponent as Seo} from "../../Assets/newChildPagesAssets/sslcertificate/seo.svg";
@@ -27,6 +28,7 @@ import Loader from "../../components/Loader";
 import BlogSection from "../../components/blogPosts";
 import Lightbox from "yet-another-react-lightbox";
 import { wordpressWebsitePricingPlansData } from "../../data";
+import SSLBrowser from "../../components/SSLBrowser";
 
 
 
@@ -111,7 +113,7 @@ const SSLCertificates = () => {
         "Automate SSL provisioning and renewals through ACME protocols for continuous protection.",
     },
     {
-      icon: <Seo />,
+      icon: <Quickacces />,
       cardTitle: "SSL Monitoring",
       cardPara:
         "Real-time monitoring prevents expiry risks and instantly alerts you about potential security vulnerabilities.",
@@ -163,6 +165,7 @@ const SSLCertificates = () => {
 
       <Layout>
         <ServiceBanner
+          secClass="herobanner-imghide"
           leftCol="col-lg-6"
           bgImage={herobanner}
           btnClass="theme-light mt-3"
@@ -170,6 +173,8 @@ const SSLCertificates = () => {
           description="Get trusted SSL certificates for your website to ensure data encryption, visitor confidence, and full browser compatibility."
           btnText="Get Your SSL Certificate"
         />
+
+        <SSLBrowser />
 
         <DomainService
           domainserviceminihead="More of Our Services:"
@@ -269,14 +274,14 @@ const SSLCertificates = () => {
           btnText="Get SSL Protection Now"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Affordable"
           secTitleBlue="SSL Packages"
           secTitleEnd="for Every Business"
           secDescription="Choose from standard, wildcard, or EV SSL certificates, all with automatic renewals, installation assistance, and dedicated support."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <FrequentQuestions
           secTitle="Frequently Asked Questions for SSL Certificates"

@@ -264,12 +264,12 @@ const AngularDevelopment = () => {
           phoneNumber="+1 (619) 335-2364"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Flexible Pricing for Maximum Value"
           secDescription="Our Angular development packages in California are designed to suit you. Our pricing is transparent, flexible, and designed to deliver maximum value at every stage of growth."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <Suspense fallback={<Loader />}>
           <BlogSection categorySlug="cms-development" />

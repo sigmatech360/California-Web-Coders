@@ -104,13 +104,15 @@ const WebsiteMigration = () => {
     <>
       <ReactHelmet
         title="Website Migration Services | Zero Downtime Transfers"
-        description="Migrate your website safely with our expert migration services. We ensure seamless transfers with zero data loss and zero downtime for your business."
-        keywords="website migration, site transfer, migrate website, move website, data migration, hosting transfer, California Web Coders"
+        description="Migrate your website safely with our expert migration services. Enjoy seamless transfers with zero downtime, zero data loss, and complete peace of mind for your business continuity."
+        keywords="website migration, site transfer, migrate website, move website, data migration, hosting transfer, California Web Coders, migrate WordPress site, website transfer service"
         baseUrl="https://californiawebcoders.com/website-migration"
       />
 
+
       <Layout>
         <ServiceBanner
+          secClass="herobanner-imghide"
           leftCol="col-lg-6"
           bgImage={herobanner}
           btnClass="theme-light mt-3"
@@ -174,7 +176,7 @@ const WebsiteMigration = () => {
             <div className="row">
               <div className="col-lg-12">
                 <div className="web-migrate-head">
-                  <h2>Website Migration Process at <span>California Web Coders</span></h2>
+                  <h3>Website Migration Process at <span>California Web Coders</span></h3>
                 </div>
               </div>
             <div className="col-lg-12">
@@ -240,14 +242,14 @@ const WebsiteMigration = () => {
           btnText="Migrate With Confidence"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Flexible"
           secTitleBlue="Migration Options"
           secTitleEnd="for Every Business"
           secDescription="We offer transparent, scalable pricing based on your platform, data volume, and hosting needs, ensuring reliable migration solutions at fair, predictable costs."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <FrequentQuestions
           secTitle="Frequently Asked Questions for Website Migration"

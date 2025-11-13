@@ -292,13 +292,13 @@ const PythonDevelopment = () => {
           btnText="Let’s Chat"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Python Development"
           secTitleEnd="Packages for Every Business"
           secDescription="Our packages are flexible, making it easier for any business to implement Python"
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <FrequentQuestions
           secTitle="Myths, Misconceptions, and the Python Truth"

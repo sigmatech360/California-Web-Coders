@@ -5,8 +5,8 @@ import blockchainbanner from "../../Assets/newChildPagesAssets/blockchaindevelop
 import blockchainAbout1 from "../../Assets/newChildPagesAssets/blockchaindevelopment/blockchain-about-1.webp";
 import blockchainAbout2 from "../../Assets/newChildPagesAssets/blockchaindevelopment/blockchain-about-2.webp";
 import serviceCardOne from "../../Assets/newChildPagesAssets/blockchaindevelopment/blockchain-service-1.webp";
-import serviceCardTwo from "../../Assets/newChildPagesAssets/blockchaindevelopment/blockchain-service-1.webp";
-import serviceCardThree from "../../Assets/newChildPagesAssets/blockchaindevelopment/blockchain-service-1.webp";
+import serviceCardTwo from "../../Assets/newChildPagesAssets/blockchaindevelopment/blockchain-integrate-innerimg.webp";
+import serviceCardThree from "../../Assets/newChildPagesAssets/blockchaindevelopment/public-blockchain-innerimg.webp";
 import pixleperfectimg1 from "../../Assets/newChildPagesAssets/blockchaindevelopment/pixel-1.webp";
 import pixleperfectimg2 from "../../Assets/newChildPagesAssets/blockchaindevelopment/pixel-2.webp";
 import pixleperfectimg3 from "../../Assets/newChildPagesAssets/blockchaindevelopment/pixel-3.webp";
@@ -15,8 +15,8 @@ import pixleperfectimg5 from "../../Assets/newChildPagesAssets/blockchaindevelop
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/blockchaindevelopment/pixel-6.webp";
 import blockchainbuildimg from "../../Assets/newChildPagesAssets/blockchaindevelopment/build-blockchain.webp";
 import { ReactComponent as BlockchainIcon } from "../../Assets/newChildPagesAssets/blockchaindevelopment/nft.svg";
-import { ReactComponent as WwwIcon } from "../../Assets/newChildPagesAssets/web3development/www-svg.svg";
-import { ReactComponent as BlockchainService } from "../../Assets/newChildPagesAssets/blockchaindevelopment/blockchainservice-svg.svg";
+import { ReactComponent as BlockIntegrate } from "../../Assets/newChildPagesAssets/blockchaindevelopment/blockchain-integration.svg";
+import { ReactComponent as PublicBlockchain } from "../../Assets/newChildPagesAssets/blockchaindevelopment/public-blockchain.svg";
 import CustomAboutCompany from "../../components/CustomAboutCompany";
 import OurCustomService from "../../components/OurCustomService";
 import PixelPerfectSec from "../../components/PixelPerfectSec";
@@ -133,7 +133,7 @@ const BlockChainDevelopment = () => {
     },
     {
       id: 2,
-      icon: <WwwIcon />,
+      icon: <BlockIntegrate />,
       serviceCardHead: "Blockchain Integration",
       serviceCardPara:
         "Data protection is the need of the hour. We offer blockchain software development in California to integrate blockchain technology into your existing systems, ensuring smooth data flow, enhanced transparency, and secure transactions.",
@@ -141,7 +141,7 @@ const BlockChainDevelopment = () => {
     },
     {
       id: 3,
-      icon: <BlockchainService />,
+      icon: <PublicBlockchain />,
       serviceCardHead: "Public Blockchain Development",
       serviceCardPara:
         "Our blockchain development services in California help businesses build public blockchain systems that connect users directly, remove unnecessary layers, and ensure your data stays secure and verifiable at every step.",
@@ -241,13 +241,13 @@ const BlockChainDevelopment = () => {
           btnText="Let’s Chat"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Blockchain Development Pricing"
           secTitleEnd="for Businesses"
           secDescription="No more budget issues, get your hands on the most Affordable Website Design Services online."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <FrequentQuestions
           secTitle="Answers to all Your Questions"

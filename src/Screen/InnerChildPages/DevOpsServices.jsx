@@ -2,10 +2,10 @@ import React, { Suspense, useState } from "react";
 import Layout from "../../components/layout";
 import ReactHelmet from "../../components/ReactHelmet";
 import ServiceBanner from "../../components/ServiceBanner";
-import domaincard1 from "../../Assets/newChildPagesAssets/domaintransfer/wp-icon.webp";
-import domaincard2 from "../../Assets/newChildPagesAssets/domaintransfer/cloud-icon-1.webp";
-import domaincard3 from "../../Assets/newChildPagesAssets/domaintransfer/ecomm-icon.webp";
-import domaincard4 from "../../Assets/newChildPagesAssets/domaintransfer/vps-icon.webp";
+import domaincard1 from "../../Assets/newChildPagesAssets/devopservices/ci.webp";
+import domaincard2 from "../../Assets/newChildPagesAssets/devopservices/cd.webp";
+import domaincard3 from "../../Assets/newChildPagesAssets/devopservices/infrastructureautomation.webp";
+import domaincard4 from "../../Assets/newChildPagesAssets/devopservices/monitoring.webp";
 import herobanner from "../../Assets/newChildPagesAssets/devopservices/devop-service-bg.webp";
 import devopabout from "../../Assets/newChildPagesAssets/devopservices/devop-about.webp";
 import chooseimg from "../../Assets/newChildPagesAssets/devopservices/choose-img.webp";
@@ -165,7 +165,7 @@ const DevOpsServices = () => {
         "From connected car systems to supply chain portals, we build reliable DevOps pipelines that streamline production processes and improve real-time performance analytics.",
     },
     {
-      icon: <Sofwarecompany />,
+      icon: <Fintech />,
       cardTitle: "Real Estate",
       cardPara:
         "We support real estate tech platforms with scalable cloud infrastructure and deployment automation that enhance listing performance, speed, and user experience.",
@@ -180,7 +180,7 @@ const DevOpsServices = () => {
 
   const choosecarddata = [
     {
-      icon: <Speedmeter />,
+      icon: <Sofwarecompany />,
       cardTitle: "CI/CD Pipeline Automation ",
       cardPara:
         "Build, test, and deploy updates automatically to reduce manual errors and accelerate delivery.",
@@ -226,6 +226,7 @@ const DevOpsServices = () => {
 
       <Layout>
         <ServiceBanner
+          secClass="herobanner-imghide"
           leftCol="col-lg-6"
           bgImage={herobanner}
           btnClass="theme-light mt-3"
@@ -339,12 +340,12 @@ const DevOpsServices = () => {
           btnText="Get Started With DevOps"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Flexible Packages for Every Business"
           secDescription="Choose from scalable DevOps plans built for startups, growing teams, and enterprises, all focused on performance, automation, and secure operations."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <FrequentQuestions
           secTitle="Frequently Asked Questions for DevOps Services"

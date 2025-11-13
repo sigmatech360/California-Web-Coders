@@ -395,7 +395,7 @@
 
 //                     {/* Hosting & Domain Services with Submenu*/}
 //                     <div className="nav-subdropdown-wrapper">
-//                       <NavDropdown.Item as={"a"} href="#" target="_blank" onClick={(e) => e.stopPropagation()}>
+//                       <NavDropdown.Item as={"a"} target="_blank" onClick={(e) => e.stopPropagation()}>
 //                         Hosting & Domain Services {" "}
 //                         <span className="submenu-icon d-none d-lg-inline"><FaCaretRight /></span>
 //                         <span className="submenu-icon d-inline d-lg-none"><FaCaretDown /></span>
@@ -434,6 +434,40 @@
 //                   </Dropdown.Menu>
 //                 </Dropdown>
 
+//                   {/* Location Pages   */}
+//                  <Dropdown className="nav-dropdown-custom">
+//                   <Dropdown.Toggle
+//                     as="button"
+//                     className="custom-toggle nav-link"
+//                     // role="button"
+//                     aria-expanded="false"
+//                   >
+//                     Locations
+//                   </Dropdown.Toggle>
+//                   <Dropdown.Menu>
+
+//                     {/* Los Angeles with Submenu*/}
+//                     <div className="nav-subdropdown-wrapper">
+//                       <NavDropdown.Item as={"a"} target="_blank" className="nav-subdropdown-parent" onClick={(e) => e.stopPropagation()}>
+//                         Los Angeles{" "}
+//                         <span className="submenu-icon d-none d-lg-inline"><FaCaretRight /></span>
+//                         <span className="submenu-icon d-inline d-lg-none"><FaCaretDown /></span>
+//                       </NavDropdown.Item>
+
+//                       <div className="nav-subdropdown">
+//                         <NavDropdown.Item as={"a"} href="/mobile-app-development-los-angeles" target="_blank" onClick={(e) => e.stopPropagation()}>
+//                           Mobile App Development
+//                         </NavDropdown.Item>
+//                         <NavDropdown.Item as={"a"} href="/wordpress-development-los-angeles" target="_blank" onClick={(e) => e.stopPropagation()}>
+//                           Wordpress Development
+//                         </NavDropdown.Item>
+//                       </div>
+//                     </div>
+
+
+//                   </Dropdown.Menu>
+//                 </Dropdown>
+
 //                 <NavLink to="/our-work" className="nav-link-custom nav-link">
 //                   Our Work
 //                 </NavLink>
@@ -466,6 +500,11 @@
 // }
 
 // export default Header;
+
+
+
+
+
 
 
 
@@ -696,7 +735,7 @@ function Header() {
 
                     {/* Continue with other items */}
                     {/* Custom Web Development with Submenu */}
-                    <div className="nav-subdropdown-wrapper">
+                      <div className="nav-subdropdown-wrapper">
                       <NavDropdown.Item
                         as={"a"}
                         href="/custom-web-development"
@@ -745,11 +784,28 @@ function Header() {
                             <NavDropdown.Item as={"a"} href="/laravel-development" target="_blank" onClick={(e) => e.stopPropagation()}>
                               Laravel Development
                             </NavDropdown.Item>
+                            <NavDropdown.Item as={"a"} href="/nodejs-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                              Nodejs Development
+                            </NavDropdown.Item>
+                            <NavDropdown.Item as={"a"} href="/python-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                              Python Development
+                            </NavDropdown.Item>
                           </div>
                         </div>
+                        <NavDropdown.Item as={"a"} href="/ai-integration" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          AI Integration
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/web3-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Web 3.O Development
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/blockchain-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Blockchain Development
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/mern-stack-development" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          MERN Stack Development
+                        </NavDropdown.Item>
                       </div>
                     </div>
-
 
 
                     <div className="nav-subdropdown-wrapper">
@@ -774,8 +830,76 @@ function Header() {
                         </NavDropdown.Item>
                       </div>
                     </div>
+
+                      {/* Hosting & Domain Services with Submenu*/}
+                    <div className="nav-subdropdown-wrapper">
+                      <NavDropdown.Item as={"a"} target="_blank" onClick={(e) => e.stopPropagation()}>
+                        Hosting & Domain Services {" "}
+                        <span className="submenu-icon d-none d-lg-inline"><FaCaretRight /></span>
+                        <span className="submenu-icon d-inline d-lg-none"><FaCaretDown /></span>
+                      </NavDropdown.Item>
+                      <div className="nav-subdropdown">
+                        <NavDropdown.Item as={"a"} href="/domain-registration" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Domain Registration
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/domain-transfer" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Domain Transfer
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/manage-web-hosting" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Managed Web Hosting
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/website-migration" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Website Migration
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/vps-dedicated-servers" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          VPS & Dedicated Servers
+                        </NavDropdown.Item>
+                         <NavDropdown.Item as={"a"} href="/email-hosting" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Email Hosting
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/ssl-certiicates" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          SSL Certificates
+                        </NavDropdown.Item>
+                      </div>
+                    </div>
                   </Dropdown.Menu>
                 </Dropdown>
+
+
+                   {/* Location Pages   */}
+                 <Dropdown className="nav-dropdown-custom">
+                  <Dropdown.Toggle
+                    as="button"
+                    className="custom-toggle nav-link"
+                    // role="button"
+                    aria-expanded="false"
+                  >
+                    Locations
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+
+                    {/* Los Angeles with Submenu*/}
+                    <div className="nav-subdropdown-wrapper">
+                      <NavDropdown.Item as={"a"} target="_blank" className="nav-subdropdown-parent" onClick={(e) => e.stopPropagation()}>
+                        Los Angeles{" "}
+                        <span className="submenu-icon d-none d-lg-inline"><FaCaretRight /></span>
+                        <span className="submenu-icon d-inline d-lg-none"><FaCaretDown /></span>
+                      </NavDropdown.Item>
+
+                      <div className="nav-subdropdown">
+                        <NavDropdown.Item as={"a"} href="/mobile-app-development-los-angeles" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Mobile App Development
+                        </NavDropdown.Item>
+                        <NavDropdown.Item as={"a"} href="/wordpress-development-los-angeles" target="_blank" onClick={(e) => e.stopPropagation()}>
+                          Wordpress Development
+                        </NavDropdown.Item>
+                      </div>
+                    </div>
+
+
+                  </Dropdown.Menu>
+                </Dropdown>
+
 
                 <NavLink to="/our-work" className="nav-link-custom nav-link">
                   Our Work

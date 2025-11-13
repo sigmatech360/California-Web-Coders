@@ -12,7 +12,7 @@ const DomainService = (props) => {
           <div className="col-lg-12">
             <div className="domain-service-head">
               <h6>{props.domainserviceminihead}</h6>
-              <h2>{props.domainservicelargehead}</h2>
+              <h3>{props.domainservicelargehead}</h3>
             </div>
           </div>
         </div>

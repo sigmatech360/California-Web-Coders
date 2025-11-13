@@ -217,12 +217,12 @@ const BackendDevelopment = () => {
           phoneNumber="+1 (619) 335-2364"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Affordable Website Design Packages"
           secDescription="Choose the perfect plan that fits your needs and budget."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <ContactForm
           secTitle="Ready to chat about your project?"

@@ -1,7 +1,8 @@
 import React from 'react'
-import blockchain1 from "../../Assets/newChildPagesAssets/blockchaindevelopment/speedsvg.svg"
-import blockchain2 from "../../Assets/newChildPagesAssets/blockchaindevelopment/awardsvg.svg"
+import blockchain1 from "../../Assets/newChildPagesAssets/blockchaindevelopment/public-blockchain.svg"
+import blockchain2 from "../../Assets/newChildPagesAssets/blockchaindevelopment/blockchain-integration.svg"
 import blockchain3 from "../../Assets/newChildPagesAssets/blockchaindevelopment/maintaincesettingsvg.svg"
+import blockchain4 from "../../Assets/newChildPagesAssets/mernstack/migration.svg"
 import blockchaincalifornia from "../../Assets/newChildPagesAssets/blockchaindevelopment/blockchain-californa.webp"
 
 
@@ -44,7 +45,7 @@ const BlockchainChoose = () => {
                             </div>
                         </div>
                            <div className="blockchain-choose-point">
-                            <img src={blockchain1} alt="img" />
+                            <img src={blockchain4} alt="img" />
                             <div className="blockchain-point-txt">
                                 <h4>Decentralized Data Storage</h4>
                                 <p>Transfer data using secure paths to protect it from breaches, ensuring constant accessibility.</p>

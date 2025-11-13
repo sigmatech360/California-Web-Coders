@@ -218,12 +218,12 @@ const FrontendDevelopment = () => {
         btnText="Let’s Chat"
       />
 
-      <SinglePricingPlan
+      {/* <SinglePricingPlan
         secTitle="Affordable Website Design Packages"
         secDescription="Choose the perfect plan that fits your needs and budget."
         // pricingPlanData={eCommerseWebsitePricingPlansData}
         pricingPlanData={wordpressWebsitePricingPlansData}
-      />
+      /> */}
 
       <FrequentQuestions
         secTitle="You Will Find Our Client's Frequent Questions"

@@ -5,12 +5,12 @@ import herobanner from "../../Assets/newChildPagesAssets/managewebhosting/manage
 import questiondomain from "../../Assets/newChildPagesAssets/managewebhosting/question-about-domain.webp";
 import hostingabout from "../../Assets/newChildPagesAssets/managewebhosting/hosting-about.webp";
 import managehost from "../../Assets/newChildPagesAssets/managewebhosting/managed-hosting.webp";
-import choose1 from "../../Assets/newChildPagesAssets/managewebhosting/choose-1.webp";
-import choose2 from "../../Assets/newChildPagesAssets/managewebhosting/choose-2.webp";
-import choose3 from "../../Assets/newChildPagesAssets/managewebhosting/choose-3.webp";
-import choose4 from "../../Assets/newChildPagesAssets/managewebhosting/choose-4.webp";
-import choose5 from "../../Assets/newChildPagesAssets/managewebhosting/choose-5.webp";
-import choose6 from "../../Assets/newChildPagesAssets/managewebhosting/choose-6.webp";
+import choose1 from "../../Assets/newChildPagesAssets/managewebhosting/choose-1.svg";
+import choose2 from "../../Assets/newChildPagesAssets/managewebhosting/choose-2.svg";
+import choose3 from "../../Assets/newChildPagesAssets/managewebhosting/choose-3.svg";
+import choose4 from "../../Assets/newChildPagesAssets/managewebhosting/choose-4.svg";
+import choose5 from "../../Assets/newChildPagesAssets/managewebhosting/choose-5.svg";
+import choose6 from "../../Assets/newChildPagesAssets/managewebhosting/choose-6.svg";
 import serviceimg1 from "../../Assets/newChildPagesAssets/domainregistration/service-img-1.webp";
 import serviceimg2 from "../../Assets/newChildPagesAssets/domainregistration/service-img-2.webp";
 import serviceimg3 from "../../Assets/newChildPagesAssets/domainregistration/service-img-3.webp";
@@ -20,13 +20,12 @@ import innerChildAbtIcon3 from "../../Assets/newChildPagesAssets/managewebhostin
 import innerChildAbtIcon4 from "../../Assets/newChildPagesAssets/managewebhosting/optimize.svg";
 import innerChildAbtIcon5 from "../../Assets/newChildPagesAssets/managewebhosting/securitymalware.svg";
 import innerChildAbtIcon6 from "../../Assets/newChildPagesAssets/managewebhosting/technicalsupport.svg";
-import domainchoose1 from "../../Assets/newChildPagesAssets/managewebhosting/choose-1.webp";
-import domainchoose2 from "../../Assets/newChildPagesAssets/managewebhosting/choose-2.webp";
-import domainchoose3 from "../../Assets/newChildPagesAssets/managewebhosting/choose-3.webp";
-import domainchoose4 from "../../Assets/newChildPagesAssets/managewebhosting/choose-4.webp";
-import domainchoose5 from "../../Assets/newChildPagesAssets/managewebhosting/choose-5.webp";
-import domainchoose6 from "../../Assets/newChildPagesAssets/managewebhosting/choose-6.webp";
-
+import domainchoose1 from "../../Assets/newChildPagesAssets/managewebhosting/choose-1.svg";
+import domainchoose2 from "../../Assets/newChildPagesAssets/managewebhosting/choose-2.svg";
+import domainchoose3 from "../../Assets/newChildPagesAssets/managewebhosting/choose-3.svg";
+import domainchoose4 from "../../Assets/newChildPagesAssets/managewebhosting/choose-4.svg";
+import domainchoose5 from "../../Assets/newChildPagesAssets/managewebhosting/choose-5.svg";
+import domainchoose6 from "../../Assets/newChildPagesAssets/managewebhosting/choose-6.svg";
 import ServiceBanner from "../../components/ServiceBanner";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
 import DomainService from "../../components/DomainService";
@@ -209,6 +208,7 @@ const ManagedWebHosting = () => {
 
       <Layout>
         <ServiceBanner
+          secClass="herobanner-imghide"
           leftCol="col-lg-6"
           bgImage={herobanner}
           btnClass="theme-light mt-3"
@@ -330,14 +330,14 @@ const ManagedWebHosting = () => {
         btnText="Host With Confidence"
       />
 
-      <SinglePricingPlan
+      {/* <SinglePricingPlan
         secTitle="Flexible"
         secTitleBlue="Hosting Packages"
         secTitleEnd="for Every Business"
         secDescription="Choose from our transparent managed hosting plans. No matter the size of your website, we’ve got the perfect plan to keep you online and optimized."
         // pricingPlanData={eCommerseWebsitePricingPlansData}
         pricingPlanData={wordpressWebsitePricingPlansData}
-      />
+      /> */}
 
       <FrequentQuestions
         secTitle="Frequently Asked Questions for Managed Web Hosting"

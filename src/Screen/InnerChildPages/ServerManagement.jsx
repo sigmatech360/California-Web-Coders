@@ -108,6 +108,7 @@ const ServerManagement = () => {
 
       <Layout>
         <ServiceBanner
+          secClass="herobanner-imghide"
           leftCol="col-lg-6"
           bgImage={herobanner}
           btnClass="theme-light mt-3"
@@ -182,13 +183,13 @@ const ServerManagement = () => {
 
 
         <CoreCapabilities />
-
+{/* 
         <SinglePricingPlan
           secTitle="Flexible Packages for Every Infrastructure"
           secDescription="Our server management services come with customizable plans designed to fit your business scale at competitive prices."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <ContactForm
           secTitle="Get the Server Stability You Deserve"

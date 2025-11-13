@@ -69,6 +69,8 @@ import EmailHosting from "../Screen/InnerChildPages/EmailHosting";
 import SSLCertificates from "../Screen/InnerChildPages/SSLCertificates";
 import ServerManagement from "../Screen/InnerChildPages/ServerManagement";
 import DevOpsServices from "../Screen/InnerChildPages/DevOpsServices";
+import MobileAppDevelopmentLA from "../Screen/LocationPages/MobileAppDevelopmentLA";
+import WordpressDevelopmentLA from "../Screen/LocationPages/WordpressDevelopmentLA";
 
 export default function UserRouter() {
   return (
@@ -79,7 +81,6 @@ export default function UserRouter() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/services" element={<Webdesignservices />} /> */}
           <Route path="/digital-marketing" element={<DigitalMarketing />} />
           <Route path="/social-media-marketing" element={<SocialMediaMarketing />}/>
           <Route path="/search-engine-optimization" element={<SEO />} />
@@ -89,8 +90,6 @@ export default function UserRouter() {
           <Route path="/blog" element={<NewsandTrends />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/blog/category/:categorySlug"element={<CategoryPage />}/>
-          {/* <Route path="/blogs/:categorySlug/:slug" element={<BlogDetail />} /> */}
-          {/* <Route path="/posts/:categorySlug/:slug" element={<BlogDetail />} /> */}
           {/* Blogs Routes */}
           <Route path="/get-intouch" element={<Getintouch />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />}/>
@@ -100,15 +99,8 @@ export default function UserRouter() {
 
 
             {/* Designing & Inner Pages */}
-          <Route path="/designing" element={<Designing />} />
           <Route path="/logo-design" element={<LogoDesign />} />
           <Route path="/web-design" element={<WebDesign />} />
-          <Route path="/landing-page-design" element={<LandingPageDesign />} />
-          <Route path="/video-animation" element={<VideoAnimation />} />
-          <Route path="/video-editing" element={<VideoEditing />} />
-          <Route path="/product-packaging-design" element={<ProductPackagingDesign />} />
-          <Route path="/newsletter-design" element={<NewsLetterDesign />} />
-          <Route path="/creative-ads" element={<CreativeAds />} />
         
 
             {/* CMS Development & Inner Pages*/}
@@ -121,18 +113,16 @@ export default function UserRouter() {
           <Route path="/squarespace-development" element={<SquarespaceDevelopment />}/>
           <Route path="/website-maintenance" element={<WebsiteMaintenance />} />
           <Route path="/website-revamp" element={<WebsiteRevamp />} />
-          <Route path="/webflow" element={<WebFlow />} /> {/* No design */}
+          <Route path="/webflow" element={<WebFlow />} /> 
           <Route path="/*" element={<NotFound />} />
 
 
             {/* Custom Website Development Inner Pages */}
           <Route path="/custom-web-development" element={<CustomWebDevelopment />}/>
             {/* Frontend Development */}
-          <Route path="/frontend-development" element={<FrontendDevelopment />} />
           <Route path="/react-development" element={<ReactDevelopment />} />
           <Route path="/angular-development" element={<AngularDevelopment />} />
             {/* Backend Development */}
-          <Route path="/backend-development" element={<BackendDevelopment />} />
           <Route path="/laravel-development" element={<LaravelDevelopment />} />
           <Route path="/nodejs-development" element={<NodejsDevelopment />} />
           <Route path="/ai-integration" element={<SmartAIIntegration />} />
@@ -142,20 +132,13 @@ export default function UserRouter() {
           <Route path="/mern-stack-development" element={<MERNStackDevelopment />} />
 
 
+
             {/* App Development & Inner Pages */}
-          <Route path="/app-development" element={<FullStackAppDevelopment />} />
           <Route path="/webapp-development" element={<WebAppDevelopment />} />
           <Route path="/mobile-app-development" element={<MobileAppDevelopment />}/>
           <Route path="/ios-app-development" element={<IOSAppDevelopment />} />
           <Route path="/android-app-development" element={<AndroidAppDevelopment />} />
 
-
-            {/* Branding & Inner Pages */}
-          <Route path="/brand-strategy" element={<BrandStrategy />} />
-          <Route path="/brand-voice" element={<BrandVoice  />} />
-          <Route path="/brand-identity-design" element={<BrandIdentityDesign />} />
-          <Route path="/merchandising" element={<Merchandising />} />
-          <Route path="/brand-positioning" element={<BrandPositioning />} />
 
 
             {/* Hosting & Domain Services  */}
@@ -166,8 +149,11 @@ export default function UserRouter() {
           <Route path="/vps-dedicated-servers" element={<VPSDedicatedServers />} />
           <Route path="/email-hosting" element={<EmailHosting />} />
           <Route path="/ssl-certiicates" element={<SSLCertificates />} />
-          <Route path="/server-management" element={<ServerManagement />} />
-          <Route path="/devop-services" element={<DevOpsServices />} />
+
+
+            {/* Location Pages */}
+          <Route path="/mobile-app-development-los-angeles" element={<MobileAppDevelopmentLA />} />
+          <Route path="/wordpress-development-los-angeles" element={<WordpressDevelopmentLA />} />
 
 
         </Routes>

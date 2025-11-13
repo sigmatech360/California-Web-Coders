@@ -28,38 +28,26 @@ const VideoEditing = () => {
     {
       id: 1,
       image: pixleperfectimg1,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 2,
       image: pixleperfectimg2,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 3,
       image: pixleperfectimg3,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 4,
       image: pixleperfectimg4,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 5,
       image: pixleperfectimg5,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     {
       id: 6,
       image: pixleperfectimg6,
-      description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
   ];
 

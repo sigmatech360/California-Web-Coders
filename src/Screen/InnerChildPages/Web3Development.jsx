@@ -190,9 +190,9 @@ const Web3Development = () => {
           reverse
           minihead="About Company"
           miniheadclass="shorttop-head"
-          secTitle1="Achieve Your Goals with the "
-          secTitle2="Right Tech-Stack"
-          description="Every company has goals, and at California Web Coders, we help businesses achieve them with the right combination of tools, technology, and talent. As a leading Web3.0 company in California, we build ecosystems that empower innovation, security, and performance at every layer."
+          secTitle1="Achieve Your Goals with the Right"
+          secTitle2="Tech-Stack"
+          description="Every company has goals, and at California Web Coders, we help businesses achieve them with the right combination of tools, technology, and talent. As a leading Web3.0 company in California, we build ecosystems that empower innovation, security, and performance at every layer. "
           descriptiontwo="Our expert Web3.0 developers in California design tech stacks tailored to your project’s needs, ensuring seamless integration, future scalability, and long-term efficiency. Whether you’re building decentralized apps, smart contracts, or blockchain-driven platforms, we’ll help you harness the true potential of Web 3.0 to achieve results that are as smart as they are sustainable."
           image={web3AboutImage}
           listClass="d-none"
@@ -213,15 +213,15 @@ const Web3Development = () => {
           serviceCards={serviceCards}
         />
 
-        <PixelPerfectSec
-          minihead="Portfolio"
-          secTitle="Glimpse at What"
-          secTitleBlue="Web 3.0"
-          secTitle2="Can Do"
-          secDescription="Explore projects that define the next era of decentralized digital innovation."
-          projectsData={webDesignPortfolioData}
-          onImageClick={handleImageClick}
-        />
+          <PixelPerfectSec
+            minihead="Portfolio"
+            secTitle="Glimpse at What"
+            secTitleBlue="Web 3.0"
+            secTitle2="Can Do"
+            secDescription="Explore projects that define the next era of decentralized digital innovation."
+            projectsData={webDesignPortfolioData}
+            onImageClick={handleImageClick}
+          />
 
         <WordPressPerformanceSection
           wordpresssecclass="web3-whychooseus"
@@ -240,13 +240,13 @@ const Web3Development = () => {
           phoneNumber="+1 (619) 335-2364"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Web 3.0"
           secTitleEnd="is Smart. So is Our Pricing"
           secDescription="Click the link and invest in smart, secure Web 3.0 technology built for growth."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <FrequentQuestions
           secTitle="You Will Find Our Client's Frequent Questions"

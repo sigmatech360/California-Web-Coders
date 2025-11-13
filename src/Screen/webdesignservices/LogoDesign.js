@@ -90,6 +90,8 @@ const LogoDesign = () => {
         keywords="web development, custom website, react development, logo design, digital marketing, social media marketing, web design"
         baseUrl="https://californiawebcoders.com/logo-design"
       />
+
+      
       <Layout>
         <ServiceBanner
           bgImage={wordpressbg}

@@ -11,7 +11,7 @@ import pixleperfectimg5 from "../../Assets/newChildPagesAssets/nodejsdevelopment
 import pixleperfectimg6 from "../../Assets/newChildPagesAssets/nodejsdevelopment/pixel-6.webp";
 import laptopVideo from "../../Assets/newChildPagesAssets/frontenddevelopment/process-side.mp4";
 import serviceCardOne from "../../Assets/newChildPagesAssets/laraveldevelopment/ai-inner-img.webp";
-import serviceCardTwo from "../../Assets/newChildPagesAssets/nodejsdevelopment/service-realtime.webp";  
+import serviceCardTwo from "../../Assets/newChildPagesAssets/nodejsdevelopment/ecommerce-inner-img.webp";  
 import serviceCardThree from "../../Assets/newChildPagesAssets/nodejsdevelopment/customweb-inner-img.webp";
 import { ReactComponent as Custumweb } from "../../Assets/newChildPagesAssets/nodejsdevelopment/custom-web-icon.svg";
 import { ReactComponent as Ecommerce } from "../../Assets/newChildPagesAssets/nodejsdevelopment/ecommerce.svg";
@@ -265,12 +265,12 @@ const NodejsDevelopment = () => {
           phoneNumber="+1 (619) 335-2364"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Pricing Options Built Around Your Business"
           secDescription="Our Node.js development packages are simple, affordable, and tailored for long-term performance."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <FrequentQuestions
           secTitle="Most Asked Questions About Node.js Web Development"

@@ -1,12 +1,12 @@
 import React, { Suspense, useState } from "react";
 import Layout from "../../components/layout";
 import ServiceBanner from "../../components/ServiceBanner";
-import { ReactComponent as Serviceone } from "../../Assets/newChildPagesAssets/mernstack/service-card-1svg.svg";
-import { ReactComponent as Servicetwo } from "../../Assets/newChildPagesAssets/mernstack/service-card-2svg.svg";
-import { ReactComponent as Servicethree } from "../../Assets/newChildPagesAssets/mernstack/service-card-3svg.svg";
-import serviceCardOne from "../../Assets/newChildPagesAssets/mernstack/service-card-1.webp";
+import { ReactComponent as Serviceone } from "../../Assets/newChildPagesAssets/mernstack/ecommerce.svg";
+import { ReactComponent as Servicetwo } from "../../Assets/newChildPagesAssets/mernstack/realtimeapp.svg";
+import { ReactComponent as Servicethree } from "../../Assets/newChildPagesAssets/mernstack/migration.svg";
+import serviceCardOne from "../../Assets/newChildPagesAssets/nodejsdevelopment/ecommerce-inner-img.webp";
 import serviceCardTwo from "../../Assets/newChildPagesAssets/mernstack/service-card-2.webp";
-import serviceCardThree from "../../Assets/newChildPagesAssets/mernstack/service-card-3.webp";
+import serviceCardThree from "../../Assets/newChildPagesAssets/mernstack/migration-innerimg.webp";
 import mernherobanner from "../../Assets/newChildPagesAssets/mernstack/mernstack-banner.webp";
 import pixleperfectimg1 from "../../Assets/newChildPagesAssets/mernstack/pixel-1.webp";
 import pixleperfectimg2 from "../../Assets/newChildPagesAssets/mernstack/pixel-2.webp";
@@ -23,8 +23,6 @@ import WordPressPerformanceSection from "../../components/WordPressPerformanceSe
 import OurCustomService from "../../components/OurCustomService";
 import PixelPerfectSec from "../../components/PixelPerfectSec";
 import CustomCustomerCard from "../../components/CustomCustomerCard";
-import { FaMedal, FaTachometerAlt } from "react-icons/fa";
-import { IoSettingsSharp } from "react-icons/io5";
 import ContactForm from "../../components/readytocheat";
 import SinglePricingPlan from "../../components/SinglePricingPlan";
 import { wordpressWebsitePricingPlansData } from "../../data";
@@ -198,6 +196,7 @@ const MERNStackDevelopment = () => {
 
       <Layout>
         <ServiceBanner
+          secClass="mernstack-hero-banner"
           leftCol="col-lg-6"
           bgImage={mernherobanner}
           btnClass="theme-light mt-3"
@@ -251,7 +250,7 @@ const MERNStackDevelopment = () => {
             description="Partner with California Web Coders, the smart choice for MERN stack development in California. As a full-spectrum development agency, we balance innovation with performance to develop one-of-a-kind solutions that help businesses grow faster, scale smoothly, and lead the digital change! "
             image={mernchoose}
             landingList="landing-design-points"
-            landingListItems={["MongoDB", "Python", "React.js", "Node.js"]}
+            landingListItems={["MongoDB", "Express.js", "React.js", "Node.js"]}
             listClass="d-none"
             TouchBtn="d-none"
             btntext=" Let’s Engage"
@@ -280,13 +279,13 @@ const MERNStackDevelopment = () => {
           btnText="Let’s Chat"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="MERN Packages"
           secTitleEnd=" that Fit Your Ambitions "
           secDescription="Our packages are designed to fit every pocket and fulfil every ambitious project for startups to enterprises."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <FrequentQuestions
           secTitle="All Your MERN Stack Questions, Answered!"

@@ -47,6 +47,7 @@ const WordPressPerformanceSection = (props) => {
                 >
                   {props.description}
                 </p>
+                <h4 className="d-none">{props.bestvideohead}</h4>
                 <p
                   data-aos={textAos}
                   data-aos-duration="1000"

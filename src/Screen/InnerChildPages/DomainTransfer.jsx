@@ -10,10 +10,10 @@ import aboutCompany from "../../Assets/newChildPagesAssets/domaintransfer/truste
 import serviceimg1 from "../../Assets/newChildPagesAssets/domainregistration/service-img-1.webp";
 import serviceimg2 from "../../Assets/newChildPagesAssets/domainregistration/service-img-2.webp";
 import serviceimg3 from "../../Assets/newChildPagesAssets/domainregistration/service-img-3.webp";
-import domaincard1 from "../../Assets/newChildPagesAssets/domaintransfer/wp-icon.webp";
-import domaincard2 from "../../Assets/newChildPagesAssets/domaintransfer/cloud-icon-1.webp";
-import domaincard3 from "../../Assets/newChildPagesAssets/domaintransfer/ecomm-icon.webp";
-import domaincard4 from "../../Assets/newChildPagesAssets/domaintransfer/vps-icon.webp";
+import domaincard1 from "../../Assets/newChildPagesAssets/domaintransfer/com.webp";
+import domaincard2 from "../../Assets/newChildPagesAssets/domaintransfer/org.webp";
+import domaincard3 from "../../Assets/newChildPagesAssets/domaintransfer/net.webp";
+import domaincard4 from "../../Assets/newChildPagesAssets/domaintransfer/earth-red-pointers.webp";
 import secureimg from "../../Assets/newChildPagesAssets/domaintransfer/buy-domain.webp";
 import readytransfer from "../../Assets/newChildPagesAssets/domaintransfer/ready-transfer-domain.webp";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
@@ -172,6 +172,7 @@ const DomainTransfer = () => {
 
       <Layout>
         <ServiceBanner
+          secClass="herobanner-imghide"
           leftCol="col-lg-6"
           bgImage={herobanner}
           btnClass="theme-light mt-3"
@@ -291,12 +292,12 @@ const DomainTransfer = () => {
           btnText="Transfer Now With Confidence"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Flexible Options for Every Transfer"
           secDescription="We offer affordable, transparent pricing for domain transfer services with no hidden fees, designed to fit businesses of all sizes."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <FrequentQuestions
           secTitle="Frequently Asked Questions for Domain Transfer"

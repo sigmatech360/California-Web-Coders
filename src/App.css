@@ -1081,6 +1081,333 @@ section.letstogether-sec {
   color: #0504a5;
 }
 
+.design-portfolio-sec {
+  background: url(./Assets/designingpage-images/landingpage/design-portfolio-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 80px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.design-portfolio-head {
+  text-align: center;
+  color: #fff;
+  margin: 0px 0px 30px 0px;
+}
+
+.design-portfolio-head h2 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.design-portfolio-tabtxt .react-tabs__tab-list li {
+  list-style: none;
+  color: #fff;
+  margin: 25px 0px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.design-portfolio-tabtxt .react-tabs__tab-list .react-tabs__tab--selected {
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+}
+
+.design-portfolio-tabtxt
+  .react-tabs__tab-list
+  .react-tabs__tab--selected:focus {
+  outline: none;
+}
+
+.design-portfolio-tabimg .react-tabs__tab-panel img {
+  width: 100%;
+}
+
+.design-portfolio-tabimg .react-tabs__tab-panel img {
+  width: 100%;
+}
+
+.design-portfolio-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0px 0px 0px;
+}
+
+.design-portfolio-end .about-number p {
+  color: #fff;
+}
+
+.design-portfolio-end .about-number span {
+  background: #fff;
+}
+
+.design-portfolio-end .about-number span svg {
+  color: #0504a5;
+}
+
+.design-portfolio-end .portofolio-quote-btn {
+  background: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #0504a5;
+  font-size: 14px;
+  line-height: normal;
+  transition: all 0.6s ease;
+  border: 1px solid #fff;
+}
+
+.design-portfolio-end .portofolio-quote-btn:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.good-sec-img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.good-sec-img img:nth-child(1) {
+  width: 50%;
+  padding: 0px 0px 100px 0px;
+}
+
+.good-sec-img img:nth-child(2) {
+  width: 50%;
+  padding: 100px 0px 0px 0px;
+}
+
+.landing-good-sec {
+  background: url(./Assets/designingpage-images/landingpage/design-portfolio-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 80px 0px 70px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.good-sec-txt h2 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.good-sec-txt p {
+  color: #fff;
+  padding: 0px 0px 0px 50px;
+}
+
+.good-sec-txt {
+  position: relative;
+  left: -30px;
+  top: -10px;
+}
+
+section.good-card-sec {
+  padding: 50px 0px 0px 0px;
+}
+
+.good-card-box {
+  color: #fff;
+  border-left: 10px solid #fff;
+  padding: 0px 0px 0px 30px;
+}
+
+.good-card-box p {
+  font-size: 14px;
+}
+
+.good-card-box h4 {
+  margin: 0px 0px 20px 0px;
+}
+
+section.happy-client-sec {
+  padding: 80px 0px;
+}
+
+.happy-client-head {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.happy-client-head h6 {
+  color: #0504a5;
+}
+
+.happy-client-head h2 {
+  color: #031243;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.happy-client-head h2 span {
+  color: #0504a5;
+}
+
+.happy-client-head p {
+  color: #031243;
+}
+
+.happy-clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px 0px 50px 0px;
+}
+
+.happy-client-box {
+  text-align: center;
+}
+
+.happy-client-box h3 {
+  color: #0504a5;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.happy-client-box h5 {
+  color: #031243;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.happy-client-logotxt {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  row-gap: 40px;
+  width: 100%;
+  column-gap: 75px;
+}
+
+.logotxt-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logotxt-box h5 {
+  font-size: 16px;
+  color: #031243;
+  margin: 0px;
+}
+
+.logotxt-box img {
+  width: 50px;
+}
+
+.video-animation-about .services__about-img img {
+  border-radius: 20px;
+}
+
+.video-animation-services {
+  background: url(./Assets/designingpage-images/landingpage/design-portfolio-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 80px 0px 70px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.videoanimation-service-head {
+  text-align: center;
+  color: #fff;
+  margin: 0px 0px 10px 0px;
+}
+
+.videoanimation-service-head h2 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.video-animation-tabs ul.react-tabs__tab-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.video-animation-tabs ul.react-tabs__tab-list li {
+  list-style: none;
+  background: #fff;
+  border-radius: 45px;
+  padding: 8px 17px;
+  color: #031243;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.video-animation-tabs ul.react-tabs__tab-list .react-tabs__tab--selected {
+  background: #0504a5;
+  color: #fff;
+}
+
+.animation-service-txt {
+  text-align: center;
+  color: #fff;
+  margin: 30px 0px 30px 0px;
+}
+
+.animation-service-txt {
+  text-align: center;
+  color: #fff;
+  margin: 30px 0px 30px 0px;
+}
+
+.animation-service-images {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 30px;
+}
+
+.animation-service-images img {
+  width: 100%;
+}
+
+.video-animation-tabs ul.react-tabs__tab-list li:focus {
+  outline: none;
+}
+
+.best-animation-sec {
+  background: url(./Assets/designingpage-images/landingpage/design-portfolio-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 50px 0px 50px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.best-animation-sec .abouttxt-data h2,
+.best-animation-sec .abouttxt-data p {
+  color: #fff;
+}
+
+.best-animation-sec .abouttxt-data h4 {
+  display: block !important;
+  color: #fff;
+  margin: 10px 0px 20px 0px;
+}
+
+.video-animation-about .services__about-img img {
+  display: none;
+}
+
+.video-animation-about .services__about-img video {
+  display: block;
+  border-radius: 20px;
+}
+
 /********** Designing Page CSS End **********/
 
 /**********  App Service Component CSS Start **********/
@@ -3420,7 +3747,7 @@ section.blockchain-choose-us {
   color: #fff;
 }
 
-.domain-service-head h2 {
+.domain-service-head h3 {
   font-weight: 500;
   font-size: 50px;
   line-height: 1.1;
@@ -3558,7 +3885,7 @@ section.blockchain-choose-us {
 
 .domain-card img {
   margin: 0px 0px 20px 0px;
-  width: 50px;
+  width: 60px;
 }
 
 section.domain-transfer-choose section.custom-customer-sec {
@@ -3715,7 +4042,49 @@ section.domain-secure-sec .about-number span {
 }
 
 .domain-choose-card img {
-  width: auto;
+  width: 100px;
+  height: 100px;
+}
+
+section.ssl-browser-sec {
+  padding: 70px 0px;
+}
+
+.ssl-browser-txt {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.ssl-browser-txt h2 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+  color: #031243;
+}
+
+.ssl-browser-txt h2 span {
+  color: #0504a5;
+}
+
+.ssl-browser-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.ssl-browser-flex img {
+  width: 70px;
+  filter: grayscale(1);
+  transition: all 0.6s ease;
+  cursor: pointer;
+  padding: 0px 0px 20px 0px;
+  border-bottom: 2px solid transparent;
+}
+
+.ssl-browser-flex img:hover {
+  filter: none;
+  border-bottom: 2px solid #0504a5;
 }
 
 /**********  Manage Web Hosting Page CSS End **********/
@@ -3726,7 +4095,7 @@ section.web-migration-proceess {
   padding: 80px 0px 50px 0px;
 }
 
-.web-migrate-head h2 {
+.web-migrate-head h3 {
   text-align: center;
   font-weight: 500;
   font-size: 50px;
@@ -3735,7 +4104,7 @@ section.web-migration-proceess {
   color: #031243;
 }
 
-.web-migrate-head h2 span {
+.web-migrate-head h3 span {
   color: #0504a5;
 }
 
@@ -4235,6 +4604,7 @@ section.email-professional-sec {
   padding: 190px 0px 150px 0px;
   width: 100%;
   height: 100%;
+  margin: 0px 0px 70px 0px;
 }
 
 .core-capability-txt h4 {
@@ -4248,6 +4618,394 @@ section.email-professional-sec {
 }
 
 /**********  Server Management Page CSS End **********/
+
+/**********  Location Pages CSS Start **********/
+
+/**********  Mobile App Development Los Angeles CSS Start **********/
+
+.mad-la-herobanner {
+  padding: 80px 0px 230px 0px;
+}
+
+.book-consultation-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.book-consultation-box h3 {
+  color: #031243;
+  margin: 0px 0px 30px 0px;
+}
+
+.book-input-field input {
+  border: none;
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid #707070;
+}
+
+.book-input-field {
+  margin: 0px 0px 30px 0px;
+}
+
+.book-input-field input:focus {
+  outline: none;
+}
+
+.book-input-field input::placeholder {
+  color: #031243;
+}
+
+.book-input-field select {
+  border: none;
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid #707070;
+}
+
+.book-input-field select option {
+  color: #031243;
+}
+
+.book-form-btn button {
+  background: #0504a5;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  line-height: normal;
+  transition: all 0.6s ease;
+  border: 1px solid #0504a5;
+  width: 90%;
+}
+
+.book-form-btn button:focus {
+  outline: none;
+}
+
+.book-form-btn button:hover {
+  background-color: transparent;
+  color: #0504a5;
+}
+
+.book-form-btn {
+  width: 100%;
+  text-align: center;
+}
+
+section.book-consultation-sec {
+  margin: -180px 0px 50px 0px;
+  position: relative;
+  z-index: 999;
+}
+
+.asetheic-portfolio-sec {
+  background: url(./Assets/locationpages/mba-los-angeles/asethetic-portfolio-bg.webp)
+    no-repeat top center;
+  background-size: cover;
+  padding: 80px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.asetheic-portfolio-sec .pixel-perfect-head h6,
+.asetheic-portfolio-sec .pixel-perfect-head h2,
+.asetheic-portfolio-sec .pixel-perfect-head p {
+  color: #fff;
+}
+
+.asetheic-portfolio-sec .news-card-img img {
+  height: auto;
+}
+
+.asetheic-portfolio-sec .pixel-perfect-head {
+  margin: 0px 0px 70px 0px !important;
+}
+
+.asetheic-portfolio-sec .pixel-button-div {
+  display: none !important;
+}
+
+section.location-contact-sec {
+  padding: 70px 0px;
+}
+
+.location-contact-txt h6 {
+  color: #0504a5;
+}
+
+.location-contact-txt h3 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+  color: #031243;
+}
+
+.location-contact-txt p {
+  color: #707070;
+}
+
+.location-contact-form {
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #031243;
+  border-radius: 20px;
+  background: #fff;
+  padding: 30px;
+}
+
+.location-form-field input {
+  border-radius: 28px;
+  padding: 8px 15px;
+  width: 100%;
+  border: 1px solid #031243;
+  color: #031243;
+}
+
+.location-form-field {
+  margin: 0px 0px 20px 0px;
+}
+
+.location-form-field select {
+  border-radius: 28px;
+  padding: 8px 15px;
+  width: 100%;
+  border: 1px solid #031243;
+  color: #031243;
+}
+
+.location-form-field input::placeholder {
+  color: #031243;
+}
+
+.location-form-field select:focus {
+  outline: none;
+}
+
+.location-form-field input:focus {
+  outline: none;
+}
+
+.location-form-field textarea {
+  border-radius: 28px;
+  padding: 15px 15px;
+  width: 100%;
+  border: 1px solid #031243;
+  color: #031243;
+  height: 130px;
+  resize: none;
+}
+
+.location-form-field textarea::placeholder {
+  color: #031243;
+}
+
+.location-form-field textarea:focus {
+  outline: none;
+}
+
+.location-form-btn button {
+  background: #0504a5;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 14px;
+  line-height: normal;
+  transition: all 0.6s ease;
+  border: 1px solid #0504a5;
+}
+
+.location-form-btn button:focus {
+  outline: none;
+}
+
+.location-form-btn button:hover {
+  background: transparent;
+  color: #0504a5;
+}
+
+.location-contact-txt img {
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+}
+
+.location-faqs-sec {
+  background: url(./Assets/locationpages/mba-los-angeles/faqs-bg.webp) no-repeat
+    top center;
+  background-size: cover;
+  padding: 50px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.location-faqs-txt {
+  color: #fff;
+  margin: 0px 70px 0px 0px;
+}
+
+.location-faqs-txt h3 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.1;
+  margin: 0px 0px 20px 0px;
+}
+
+.location-faqs-txt h3 span {
+  font-weight: bold;
+}
+
+.location-faqs .accordion .accordion-item {
+  margin: 0px 0px 10px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 0.4000000059604645px solid #ffffff59;
+  background: #ffffff17;
+}
+
+.location-faqs .accordion {
+  background: transparent;
+  border: none;
+}
+
+.location-faqs .accordion .accordion-item .accordion-header {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  button.accordion-button.collapsed {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  background: transparent;
+  color: #fff;
+  border: none !important;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: transparent;
+}
+
+.location-faqs .accordion .accordion-item .accordion-collapse.collapse.show {
+  border: none !important;
+}
+
+.location-faqs .accordion .accordion-item .accordion-body {
+  border: none !important;
+  color: #fff;
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button::after {
+  background-image: url(./Assets/locationpages/mba-los-angeles/downarrow.svg);
+}
+
+.location-faqs
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed)::after {
+  background-image: url(./Assets/locationpages/mba-los-angeles/uparrow.svg);
+}
+
+.Toastify__toast-container {
+  z-index: 999999 !important;
+}
+
+.location-support-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.location-support-sec {
+  padding: 70px 0px;
+}
+
+.location-support-head.text-center h6 {
+  color: #0504a5;
+}
+
+.location-support-head h3 {
+  color: #031243;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+  margin: 0px 0px 20px 0px;
+}
+
+.location-support-head h3 span {
+  color: #0504a5;
+}
+
+.location-support-head p {
+  color: #707070;
+}
+
+.location-support-card {
+  text-align: center;
+}
+
+.location-support-card img {
+  margin: 0px 0px 30px 0px;
+}
+
+.location-support-card h6 {
+  color: #031243;
+  font-weight: 400;
+}
+
+.location-support-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 20px 0px 0px 0px;
+}
+
+.inner-services-banner-content ul li span svg {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.intelligent-banner .service-another-para {
+  display: block !important;
+  color: #fff;
+}
+
+.locate-wordpress-herobanner .service-another-para {
+  display: block !important;
+}
+
+/**********  Mobile App Development Los Angeles CSS End **********/
+
+
+
+
+
+
+
+
 
 @media (max-width: 1399px) {
   .blog-with-sidebar .wordpressBlogCard img {
@@ -4463,6 +5221,20 @@ section.email-professional-sec {
 
   .ssl-secure-box {
     margin: 0px 0px 30px 0px;
+  }
+
+  .mernstack-build-sec .react-build-bg {
+    padding: 245px 20px 225px 20px !important;
+    border-radius: 20px;
+    background-position: left;
+  }
+
+  .mad-la-herobanner .servicesBanner-bgImage {
+    object-position: left;
+}
+
+.location-contact-form{
+    margin: 40px 0px 0px 0px;
 }
 
 
@@ -4921,11 +5693,13 @@ section.email-professional-sec {
   .nodejs-about-sec {
     padding: 0px 0px 50px 0px;
     margin: 50px 0px 0px 0px;
+    background-position: left;
   }
 
   .node-build-bg {
     padding: 40px 0px 60px 0px;
     border-radius: 20px;
+    background-position: left;
   }
 
   .node-build-bg .abouttxt-data {
@@ -4956,6 +5730,7 @@ section.email-professional-sec {
   .aipower-bg-sec {
     padding: 70px 0px 80px 0px;
     border-radius: 20px;
+    background-position: left;
   }
 
   .aipower-bg-sec .abouttxt-data {
@@ -4975,6 +5750,19 @@ section.email-professional-sec {
 
   .gorwyourbusiness {
     text-align: center;
+  }
+
+  .custom-getintouch-txt h2 {
+    font-size: 40px;
+  }
+
+  .custom-getintouch-txt {
+    padding: 40px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .getintouch-follow .connect-sm-icons {
+    justify-content: center !important;
   }
 
   .python-development-bg {
@@ -5003,6 +5791,8 @@ section.email-professional-sec {
 
   .future-web-sec {
     padding: 50px 0px;
+    background-position: left;
+    margin: 30px 0px 0px 0px;
   }
 
   .future-web-sec .abouttxt-data {
@@ -5066,7 +5856,7 @@ section.email-professional-sec {
     text-align: center;
   }
 
-  .domain-service-head h2 {
+  .domain-service-head h3 {
     font-size: 40px;
   }
 
@@ -5129,7 +5919,7 @@ section.email-professional-sec {
     padding: 15px 20px;
   }
 
-  .web-migrate-head h2 {
+  .web-migrate-head h3 {
     font-size: 40px;
   }
 
@@ -5161,27 +5951,107 @@ section.email-professional-sec {
 
   .core-capability-sec .border-bottom {
     padding: 30px 0px;
-}
+  }
 
-.core-capability-txt {
-  text-align: center;
+  .core-capability-txt {
+    text-align: center;
     padding: 10px 0px;
-}
+  }
 
-.corepadding {
-  padding-top: 30px;
-}
+  .corepadding {
+    padding-top: 30px;
+  }
 
-.angular-herobanner .servicesBanner-bgImage {
+  .angular-herobanner .servicesBanner-bgImage {
     object-position: left;
+  }
+
+  section.angular-choose-bg {
+    background-position: left;
+  }
+
+  .laravel-herobanner .servicesBanner-bgImage {
+    object-position: left;
+  }
+
+  .laravel-choose-us .abouttxt-data h6,
+  .laravel-choose-us .abouttxt-data h2,
+  .laravel-choose-us .abouttxt-data p,
+  .laravel-choose-points li,
+  .laravel-choose-points li svg {
+    color: #0504a5;
+  }
+
+  .mernstack-hero-banner .servicesBanner-bgImage {
+    object-position: left;
+  }
+
+  .ssl-browser-txt h2 {
+    font-size: 40px;
+  }
+
+  .ssl-browser-flex {
+    gap: 10px;
+  }
+
+  .ssl-browser-flex img {
+    width: 60px;
+    cursor: pointer;
+    padding: 0px 0px 10px 0px;
+  }
+
+  .herobanner-imghide .servicesBanner-bgImage {
+    object-position: left;
+  }
+
+  .mad-la-herobanner .servicesBanner-bgImage {
+    object-position: left;
+  }
+
+  .book-consultation-box {
+    text-align: center;
+  }
+
+  .location-contact-sec {
+    text-align: center;
 }
 
-section.angular-choose-bg {
+ .location-contact-sec .connect-sm-icons {
+    justify-content: center !important;
+
+}
+
+.location-contact-form {
+    margin: 40px 0px 0px 0px;
+}
+
+.location-contact-txt h3 {
+    font-size: 40px;
+}
+
+.location-faqs-txt {
+    margin: 0px;
+    text-align: center;
+}
+
+.location-faqs-txt h2{
+    font-size: 40px;
+}
+
+.location-faqs-sec {
     background-position: left;
 }
 
-.laravel-herobanner .servicesBanner-bgImage {
-    object-position: left;
+.location-support-head h2 {
+    font-size: 40px;
+}
+
+.location-support-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.location-faqs-txt h3 {
+  font-size: 40px;
 }
 
 

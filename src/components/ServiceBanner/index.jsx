@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import whiteCheck from "../../Assets/white-check.webp";
 import smartaivideo from "../../Assets/newChildPagesAssets/smartaiintegration/ai-integration-video.mp4"
+import { CiCircleCheck } from "react-icons/ci";
 
 const ServiceBanner = (props) => {
   return (
@@ -74,7 +75,7 @@ const ServiceBanner = (props) => {
                       data-aos-duration="900"
                     >
                       <span className="d-flex align-items-center gap-2">
-                        <img src={whiteCheck} alt="check" />
+                        <CiCircleCheck />
                         <p className="para4 mb-0 align-self-baseline">
                           {item}
                         </p>
@@ -84,6 +85,7 @@ const ServiceBanner = (props) => {
                 </ul>
               )}
 
+              <p className="service-another-para d-none">{props.anotherpara}</p>
               <Link
                 to="/get-intouch"
                 className={props.btnClass || "btn-theme"}

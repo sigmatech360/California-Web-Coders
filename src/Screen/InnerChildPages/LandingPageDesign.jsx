@@ -3,6 +3,7 @@ import Layout from "../../components/layout";
 import WordPressPerformanceSection from "../../components/WordPressPerformanceSection";
 import LandingAboutImage from "../../Assets/designingpage-images/landingpage/landingabout.webp";
 import landingPageBanner from "../../Assets/designingpage-images/landingpage/landingpage-banner.webp";
+import aboutCompany from "../../Assets/designingpage-images/landingpage/letswork.webp";
 import ServiceBanner from "../../components/ServiceBanner";
 import Ourservices from "../../components/ourservices/Index";
 import pixleperfectimg1 from "../../Assets/designingpage-images/landingpage/Ronda.webp";
@@ -22,6 +23,9 @@ import BlogSection from "../../components/blogPosts";
 import Loader from "../../components/Loader";
 import { faqHomeData } from "../Designing";
 import { wordpressWebsitePricingPlansData } from "../../data";
+import DesignPortfolio from "../../components/DesignPortfolio";
+import LandingGoodSec from "../../components/LandingGoodSec";
+import HappyClient from "../../components/HappyClient";
 
 const LandingPageDesign = () => {
   const webDesignPortfolioData = [
@@ -78,8 +82,11 @@ const LandingPageDesign = () => {
 
   return (
     <Layout>
+
+
       <ServiceBanner
-        leftCol="col-lg-8"
+        secClass="landing-pg-herobanner"
+        leftCol="col-lg-6"
         bgImage={landingPageBanner}
         btnClass="theme-light mt-3"
         title="Transform Clicks into Conversions with Stunning Landing Pages"
@@ -104,7 +111,36 @@ const LandingPageDesign = () => {
         phoneNumber="+1 619-798-9688"
       />
 
-      <Ourservices
+
+        <DesignPortfolio />
+
+
+      <WordPressPerformanceSection
+          reverse
+          minihead="About"
+          miniheadclass="shorttop-head"
+          secTitle1="Let’s Work Together"
+          description="With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth. With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth. With over 3 billion active devices, Android dominates the global market. Our team builds Android apps that combine innovation, intuitive UI, and powerful functionality to maximize engagement and growth."
+          landingList="landing-design-points domain-register-list"
+          landingListItems={[
+            "No coding skills needed",
+            "Mobile-friendly website",
+            "All-in-one package",
+            "Easy step-by-step guide",
+            "Get 24 hours web design",
+          ]}
+          TouchBtn="d-none"
+          btntext="Let's Talk With Us"
+          aboutbtnlink="/get-intouch"
+          learnmorebtn="aboutus-call"
+          phoneNumber="+1 (619) 335-2364"
+          image={aboutCompany}
+        />
+
+
+        <LandingGoodSec/>
+
+      {/* <Ourservices
         serviceminihead="Our Services"
         serviceMainHead="Types of"
         serviceEndName="Landing Pages"
@@ -119,16 +155,18 @@ const LandingPageDesign = () => {
         serviceCountThird="03"
         thirdServiceName="Lead Generation"
         thirdServicePara="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-      />
+      /> */}
 
-      <PixelPerfectSec
+      <HappyClient/>
+
+      {/* <PixelPerfectSec
         secTitle="Our Work Speaks For Itself"
         secDescription="Take a look at some of the websites we’ve designed for businesses across various industries. Each project is crafted with a unique vision and attention to detail."
         projectsData={webDesignPortfolioData}
         onImageClick={handleImageClick}
-      />
+      /> */}
 
-      <WordPressPerformanceSection
+      {/* <WordPressPerformanceSection
         reverse
         wordpresssecclass="letstogether-sec"
         miniheadclass="shorttop-head"
@@ -161,7 +199,7 @@ const LandingPageDesign = () => {
         TouchBtn="d-none"
         btntext="See More Benefits"
         learnmorebtn="aboutus-call"
-      />
+      /> */}
 
       <ContactForm
         secTitle="Ready to chat about your project?"
@@ -169,12 +207,12 @@ const LandingPageDesign = () => {
         btnText="Let’s Chat"
       />
 
-      <SinglePricingPlan
+      {/* <SinglePricingPlan
         secTitle="Affordable Website Design Packages"
         secDescription="Choose the perfect plan that fits your needs and budget."
         // pricingPlanData={eCommerseWebsitePricingPlansData}
         pricingPlanData={wordpressWebsitePricingPlansData}
-      />
+      /> */}
 
       <FrequentQuestions
         secTitle="You Will Find Our Client's Frequent Questions"

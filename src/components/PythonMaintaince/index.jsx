@@ -9,13 +9,13 @@ const PythonMaintaince = () => {
      const maintainCards = [
         {
             id: 1,
-            icon: <Advantagepython1 />,
+            icon: <Advantagepython2 />,
             title: "Intelligence",
             description: "Build smarter systems powered by data and automation",
         },
         {
             id: 2,
-            icon: <Advantagepython2  />,
+            icon: <Advantagepython1  />,
             title: "Integration",
             description: "Python is open source and compatible with major frameworks such as React, Angular, and others.",
         },

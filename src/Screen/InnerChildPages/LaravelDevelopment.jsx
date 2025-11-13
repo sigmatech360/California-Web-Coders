@@ -287,12 +287,12 @@ const LaravelDevelopment = () => {
           learnmorebtn="aboutus-call"
           phoneNumber="+1 (619) 335-2364"
         />
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Development Options Built Around Your Business"
           secDescription="Our Laravel application development company in California is all about your convenience. Our pricing is transparent, flexible, and designed to deliver maximum value at every stage of growth."
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
         <FrequentQuestions
           secTitle="Laravel Web Development FAQs"
           FrequentQuestions="homeFrequentQuestions"

@@ -4,7 +4,9 @@ import ReactHelmet from "../../components/ReactHelmet";
 import ServiceBanner from "../../components/ServiceBanner";
 import { ReactComponent as Speedmeter } from "../../Assets/newChildPagesAssets/reactdevelopment/speedmeter.svg";
 import { ReactComponent as Topmedal } from "../../Assets/newChildPagesAssets/reactdevelopment/toppermedal.svg";
+import { ReactComponent as FederalGovernment } from "../../Assets/newChildPagesAssets/devopservices/setup.svg";
 import { ReactComponent as Easycontrol } from "../../Assets/newChildPagesAssets/reactdevelopment/easycontrol.svg";
+import {ReactComponent as Alwayssecure} from "../../Assets/newChildPagesAssets/sslcertificate/alwayssecure.svg";
 import herobanner from "../../Assets/newChildPagesAssets/domaintransfer/domain-transfer-herobanner.webp";
 import serviceimg1 from "../../Assets/newChildPagesAssets/domainregistration/service-img-1.webp";
 import serviceimg2 from "../../Assets/newChildPagesAssets/domainregistration/service-img-2.webp";
@@ -96,13 +98,13 @@ const EmailHosting = () => {
 
    const cardsData = [
       {
-        icon: <Speedmeter />,
+        icon: <Alwayssecure />,
         cardTitle: "Advanced Security Controls",
         cardPara:
           "We protect all hosted mailboxes with multi-layer firewalls, SSL encryption, and anti-spam tools that ensure only safe and verified communication reaches your inbox.",
       },
       {
-        icon: <Topmedal />,
+        icon: <FederalGovernment />,
         cardTitle: "Scalable Storage Options",
         cardPara:
           "Our plans adapt to your growth. From startups to enterprises, enjoy scalable cloud storage that expands with your data and collaboration needs.",
@@ -142,6 +144,7 @@ const EmailHosting = () => {
 
 
          <ServiceBanner
+          secClass="herobanner-imghide"
           leftCol="col-lg-6"
           bgImage={herobanner}
           btnClass="theme-light mt-3"
@@ -223,12 +226,12 @@ const EmailHosting = () => {
           btnText="Host My Emails Now"
         />
 
-        <SinglePricingPlan
+        {/* <SinglePricingPlan
           secTitle="Email Hosting Packages for Every Team"
           secDescription="Our plans include encrypted storage, fast delivery, and 24/7 monitoring, offering professional reliability at affordable rates"
           // pricingPlanData={eCommerseWebsitePricingPlansData}
           pricingPlanData={wordpressWebsitePricingPlansData}
-        />
+        /> */}
 
         <FrequentQuestions
           secTitle="Frequently Asked Questions for Email Hosting"

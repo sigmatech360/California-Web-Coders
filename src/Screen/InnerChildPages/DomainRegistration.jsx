@@ -116,6 +116,7 @@ const DomainRegistration = () => {
 
       <Layout>
         <ServiceBanner
+          secClass="herobanner-imghide"
           leftCol="col-lg-6"
           bgImage={herobanner}
           btnClass="theme-light mt-3"
@@ -261,12 +262,12 @@ const DomainRegistration = () => {
         btnText="Let’s Get Started"
       />
 
-      <SinglePricingPlan
+      {/* <SinglePricingPlan
         secTitle="Simple Packages for Every Business"
         secDescription="Our domain registration services come with flexible pricing options, transparent renewals, and valuable features. "
         // pricingPlanData={eCommerseWebsitePricingPlansData}
         pricingPlanData={wordpressWebsitePricingPlansData}
-      />
+      /> */}
 
       <FrequentQuestions
         secTitle="Frequently Asked Questions for Domain Registration"
