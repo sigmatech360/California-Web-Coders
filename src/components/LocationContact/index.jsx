@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import {
   FaFacebookF,
   FaInstagram,
@@ -7,13 +8,13 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { LiaPinterestP } from "react-icons/lia";
-import contactimg from "../../Assets/locationpages/mba-los-angeles/contact-follow.webp"
+import contactimg from "../../Assets/locationpages/mba-los-angeles/contact-follow.webp";
 import { toast } from "react-toastify";
 
 const LocationContact = (props) => {
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
-
-   const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     company: "",
@@ -25,67 +26,158 @@ const LocationContact = (props) => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
+  // handle form input
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prev) => ({
+      ...prev,
       [name]: value,
-    });
+    }));
   };
 
-  const handleSubmit = (e) => {
+  // handle form submit
+  const handleSubmit = async (e) => {
     e.preventDefault();
-       toast.success("Your query has been submitted successfully, we will contact you shortly")
-    console.log("Form Data:", formData);
+
+    // Simple front-end validation
+    if (!formData.firstName || !formData.email || !formData.message) {
+      toast.error("Please fill all required fields.");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const payload = {
+        first_name: formData.firstName,
+        last_name: formData.lastName,
+        company: formData.company,
+        website: formData.website,
+        email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+        about_cwc: formData.hearAbout,
+        business: formData.message,
+      };
+
+      const response = await axios.post(`${API_BASE_URL}/let-connect`, payload);
+
+      if (response.data?.status) {
+        toast.success(response.data.message || "Your query has been submitted successfully, we will contact you shortly");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          company: "",
+          website: "",
+          email: "",
+          phone: "",
+          service: "",
+          hearAbout: "",
+          message: "",
+        });
+      } else {
+        toast.error("Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast.error("Failed to submit form. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <section className="location-contact-sec">
       <div className="container">
         <div className="row">
+          {/* Left Content */}
           <div className="col-lg-6">
             <div className="location-contact-txt">
               <h6>{props.miniHead}</h6>
               <h3>{props.mainHead}</h3>
               <p>{props.secPara}</p>
-              <div className="connect-sm-icons justify-content-start" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="50">
-                <a href="https://www.facebook.com/people/California-Web-Coders/61560871757077/" className="facebook-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+
+              <div
+                className="connect-sm-icons justify-content-start"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="50"
+              >
+                <a
+                  href="https://www.facebook.com/people/California-Web-Coders/61560871757077/"
+                  className="facebook-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
                   <FaFacebookF />
                 </a>
                 <a
-                  href="https://www.instagram.com/californiawebcoders1" className="instagram-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  href="https://www.instagram.com/californiawebcoders1"
+                  className="instagram-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
                   <FaInstagram />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/california-web-coders/" className="linkedin-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+                  href="https://www.linkedin.com/company/california-web-coders/"
+                  className="linkedin-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
                 >
                   <FaLinkedinIn />
                 </a>
-                <a href="https://www.youtube.com/@CaliforniaWebCoders-e8v"className="youtube-icon" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+                <a
+                  href="https://www.youtube.com/@CaliforniaWebCoders-e8v"
+                  className="youtube-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Youtube"
+                >
                   <FaYoutube />
                 </a>
-                <a href="https://x.com/californiawebco"  className="twitter-icon" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <a
+                  href="https://x.com/californiawebco"
+                  className="twitter-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                >
                   <FaTwitter />
                 </a>
-                <a href="https://www.pinterest.com/californiawebcoders/" className="pinterest-icon" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" >
+                <a
+                  href="https://www.pinterest.com/californiawebcoders/"
+                  className="pinterest-icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Pinterest"
+                >
                   <LiaPinterestP />
                 </a>
               </div>
               <img src={contactimg} alt="img" />
             </div>
           </div>
+
+          {/* Right Form */}
           <div className="col-lg-6">
             <div className="location-contact-form">
-                 <form className="form" onSubmit={handleSubmit}>
+              <form className="form" onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="location-form-field">
                       <input
                         type="text"
                         name="firstName"
-                        placeholder="First Name"
+                        placeholder="First Name *"
                         value={formData.firstName}
                         onChange={handleChange}
+                        required
                       />
                     </div>
                   </div>
@@ -100,7 +192,6 @@ const LocationContact = (props) => {
                       />
                     </div>
                   </div>
-
                   <div className="col-lg-6">
                     <div className="location-form-field">
                       <input
@@ -112,7 +203,6 @@ const LocationContact = (props) => {
                       />
                     </div>
                   </div>
-
                   <div className="col-lg-6">
                     <div className="location-form-field">
                       <input
@@ -124,19 +214,18 @@ const LocationContact = (props) => {
                       />
                     </div>
                   </div>
-
                   <div className="col-lg-6">
                     <div className="location-form-field">
                       <input
                         type="email"
                         name="email"
-                        placeholder="Email Address"
+                        placeholder="Email Address *"
                         value={formData.email}
                         onChange={handleChange}
+                        required
                       />
                     </div>
                   </div>
-
                   <div className="col-lg-6">
                     <div className="location-form-field">
                       <input
@@ -148,7 +237,6 @@ const LocationContact = (props) => {
                       />
                     </div>
                   </div>
-
                   <div className="col-lg-12">
                     <div className="location-form-field">
                       <select
@@ -157,14 +245,16 @@ const LocationContact = (props) => {
                         onChange={handleChange}
                       >
                         <option value="">Select Your Services</option>
-                        <option value="Web Development">Web Development</option>
-                        <option value="App Development">App Development</option>
-                        <option value="UI/UX Design">UI/UX Design</option>
-                        <option value="SEO Optimization">SEO Optimization</option>
+                        <option value="logo design">Logo Design</option>
+                        <option value="website design">Web Design</option>
+                        <option value="cms development">CMS Development</option>
+                        <option value="digital marketing">Digital Marketing</option>
+                        <option value="custom web development">Custom Web Development</option>
+                        <option value="app development">App Development</option>
+                        <option value="hosting & domain">Hosting & Domain</option>
                       </select>
                     </div>
                   </div>
-
                   <div className="col-lg-12">
                     <div className="location-form-field">
                       <input
@@ -176,21 +266,22 @@ const LocationContact = (props) => {
                       />
                     </div>
                   </div>
-
                   <div className="col-lg-12">
                     <div className="location-form-field">
                       <textarea
                         name="message"
-                        placeholder="Tell Us About Your Business"
+                        placeholder="Tell Us About Your Business *"
                         value={formData.message}
                         onChange={handleChange}
+                        required
                       ></textarea>
                     </div>
                   </div>
-
                   <div className="col-lg-12">
                     <div className="location-form-btn">
-                      <button type="submit">Get In Touch</button>
+                      <button type="submit" disabled={loading}>
+                        {loading ? "Submitting..." : "Get In Touch"}
+                      </button>
                     </div>
                   </div>
                 </div>

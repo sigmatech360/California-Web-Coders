@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import { toast } from "react-toastify";
 
 const BookConsultation = () => {
@@ -12,6 +13,10 @@ const BookConsultation = () => {
     businessDetails: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -20,19 +25,66 @@ const BookConsultation = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    toast.success("Your query has been submitted successfully, we will contact you shortly")
-    console.log("Form Data:", formData);
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      service: "",
-      referral: "",
-      businessDetails: "",
-    });
+
+    if (!formData.firstName || !formData.email) {
+      toast.error("Please fill in all required fields!");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const response = await axios.post(
+        `${API_BASE_URL}/free-Consultation`,
+        {
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          about_cwc: formData.referral,
+          business: formData.businessDetails,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        }
+      );
+
+      if (response.status === 200 || response.status === 201) {
+        toast.success("Your query has been submitted successfully! We’ll contact you shortly.");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          service: "",
+          referral: "",
+          businessDetails: "",
+        });
+      } else {
+        toast.error("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+
+      if (error.response) {
+        // Backend responded with an error status (e.g., 419, 500, etc.)
+        if (error.response.status === 419) {
+          toast.error("CSRF token mismatch — please ask backend to whitelist this API route.");
+        } else {
+          toast.error(error.response.data.message || "Server error. Please try again later.");
+        }
+      } else {
+        toast.error("Network error. Please check your connection.");
+      }
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -100,10 +152,13 @@ const BookConsultation = () => {
                           onChange={handleChange}
                         >
                           <option value="">Select Your Service</option>
-                          <option value="Web Development">Web Development</option>
-                          <option value="Mobile App Development">Mobile App Development</option>
-                          <option value="UI/UX Design">UI/UX Design</option>
-                          <option value="Digital Marketing">Digital Marketing</option>
+                          <option value="logo design">Logo Design</option>
+                          <option value="website design">Web Design</option>
+                          <option value="cms development">CMS Development</option>
+                          <option value="digital marketing">Digital Marketing</option>
+                          <option value="custom web development">Custom Web Development</option>
+                          <option value="app development">App development</option>
+                          <option value="hosting & domain">Hosting & Domain</option>
                         </select>
                       </div>
                     </div>
@@ -132,7 +187,9 @@ const BookConsultation = () => {
                     </div>
                     <div className="col-lg-4">
                       <div className="book-form-btn">
-                        <button type="submit">Submit Your Request</button>
+                        <button type="submit" disabled={loading}>
+                          {loading ? "Submitting..." : "Submit Your Request"}
+                        </button>
                       </div>
                     </div>
                   </div>
