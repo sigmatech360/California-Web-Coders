@@ -1047,6 +1047,22 @@ function Header() {
                         >
                           Reactjs Development
                         </NavDropdown.Item>
+                         <NavDropdown.Item
+                          as={"a"}
+                          href="/domain-registration-los-angeles"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Domain Registeration
+                        </NavDropdown.Item>
+                         <NavDropdown.Item
+                          as={"a"}
+                          href="/eCommerce-development-los-angeles"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Ecommerce Development
+                        </NavDropdown.Item>
                       </div>
                     </div>
                   </Dropdown.Menu>

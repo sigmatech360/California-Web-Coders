@@ -72,6 +72,8 @@ import DevOpsServices from "../Screen/InnerChildPages/DevOpsServices";
 import MobileAppDevelopmentLA from "../Screen/LocationPages/MobileAppDevelopmentLA";
 import WordpressDevelopmentLA from "../Screen/LocationPages/WordpressDevelopmentLA";
 import ReactDevelopmentLA from "../Screen/LocationPages/ReactDevelopmentLA";
+import DomainRegistrationLA from "../Screen/LocationPages/DomainRegistrationLA";
+import ECommerceDevelopmentLA from "../Screen/LocationPages/ECommerceDevelopmentLA";
 
 export default function UserRouter() {
   return (
@@ -177,6 +179,8 @@ export default function UserRouter() {
           <Route path="/mobile-app-development-los-angeles" element={<MobileAppDevelopmentLA />} />
           <Route path="/wordpress-development-los-angeles" element={<WordpressDevelopmentLA />} />
           <Route path="/react-development-los-angeles" element={<ReactDevelopmentLA />} />
+          <Route path="/domain-registration-los-angeles" element={<DomainRegistrationLA />} />
+          <Route path="/eCommerce-development-los-angeles" element={<ECommerceDevelopmentLA />} />
 
 
         </Routes>
