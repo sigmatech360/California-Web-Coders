@@ -1,32 +1,33 @@
 import React from 'react'
-import WordPressPerformanceSection from '../../components/WordPressPerformanceSection'
-import BookConsultation from '../../components/BookConsultation'
-import LocationHeroBanner from '../../components/LocationHeroBanner'
-import Layout from '../../components/layout'
 import ReactHelmet from '../../components/ReactHelmet'
-import herobanner from "../../Assets/locationpages/domain-registeration-location/herobannerbg.webp";
-import chooseimg from "../../Assets/locationpages/domain-registeration-location/aboutimg.webp";
-import expertise1 from "../../Assets/locationpages/domain-registeration-location/expertise1.svg";
-import expertise2 from "../../Assets/locationpages/domain-registeration-location/expertise2.svg";
-import expertise3 from "../../Assets/locationpages/domain-registeration-location/expertise3.svg";
+import Layout from '../../components/layout'
+import LocationHeroBanner from '../../components/LocationHeroBanner'
+import BookConsultation from '../../components/BookConsultation'
+import WordPressPerformanceSection from '../../components/WordPressPerformanceSection'
 import LocationExpertise from '../../components/LocationExpertise'
-import LocalSpecialist from '../../components/LocalSpecialist'
-import { wordpressWebsitePricingPlansData } from '../../data'
 import SinglePricingPlan from '../../components/SinglePricingPlan'
-import LocationSupport from '../../components/LocationSupport/Index'
-import LocationFaqs from '../../components/LocationFaqs'
+import { wordpressWebsitePricingPlansData } from '../../data'
+import LocalSpecialist from '../../components/LocalSpecialist'
 import LocationContact from '../../components/LocationContact'
+import LocationFaqs from '../../components/LocationFaqs'
+import LocationSupport from '../../components/LocationSupport/Index'
 import support1 from "../../Assets/locationpages/mba-los-angeles/guarrantee.svg";
 import support2 from "../../Assets/locationpages/mba-los-angeles/support.svg";
 import support3 from "../../Assets/locationpages/mba-los-angeles/ownership.svg";
 import support4 from "../../Assets/locationpages/mba-los-angeles/money.svg";
 import support5 from "../../Assets/locationpages/mba-los-angeles/Pentool.svg";
+import expertise1 from "../../Assets/locationpages/domain-registeration-location/expertise1.svg";
+import expertise2 from "../../Assets/locationpages/domain-registeration-location/expertise2.svg";
+import expertise3 from "../../Assets/locationpages/domain-registeration-location/expertise3.svg";
+import herobanner from "../../Assets/locationpages/domain-registeration-location/herobannerbg.webp";
+import chooseimg from "../../Assets/locationpages/domain-transfer-location/aboutimg.webp";
 
 
 
-const DomainRegistrationLA = () => {
+const DomainTransferLA = () => {
 
-    const expertise = [
+
+  const expertise = [
     {
       img: expertise1,
       title: "Local Expert Guidance",
@@ -114,8 +115,6 @@ const DomainRegistrationLA = () => {
     { image: support5, title: "Industry Specific Experts" },
   ];
 
-
-
   return (
     <>
       <ReactHelmet
@@ -202,4 +201,4 @@ const DomainRegistrationLA = () => {
   )
 }
 
-export default DomainRegistrationLA
+export default DomainTransferLA

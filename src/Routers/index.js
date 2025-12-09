@@ -74,6 +74,8 @@ import WordpressDevelopmentLA from "../Screen/LocationPages/WordpressDevelopment
 import ReactDevelopmentLA from "../Screen/LocationPages/ReactDevelopmentLA";
 import DomainRegistrationLA from "../Screen/LocationPages/DomainRegistrationLA";
 import ECommerceDevelopmentLA from "../Screen/LocationPages/ECommerceDevelopmentLA";
+import AngularDevelopmentLA from "../Screen/LocationPages/AngularDevelopmentLA";
+import DomainTransferLA from "../Screen/LocationPages/DomainTransferLA";
 
 export default function UserRouter() {
   return (
@@ -180,7 +182,9 @@ export default function UserRouter() {
           <Route path="/wordpress-development-los-angeles" element={<WordpressDevelopmentLA />} />
           <Route path="/react-development-los-angeles" element={<ReactDevelopmentLA />} />
           <Route path="/domain-registration-los-angeles" element={<DomainRegistrationLA />} />
+          <Route path="/domain-transfer-los-angeles" element={<DomainTransferLA />} />
           <Route path="/eCommerce-development-los-angeles" element={<ECommerceDevelopmentLA />} />
+          <Route path="/angular-development-los-angeles" element={<AngularDevelopmentLA />} />
 
 
         </Routes>

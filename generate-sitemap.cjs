@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const BASE_URL = "https://californiawebcoders.com/";
+const BASE_URL = "https://californiawebcoders.com";
 const ROUTES_FILE = path.join(__dirname, "src/Routers/index.js");
 const STATIC_SITEMAP_PATH = path.join(__dirname, "build", "sitemap-static.xml");
 const MAIN_SITEMAP_PATH = path.join(__dirname, "build", "sitemap.xml");
