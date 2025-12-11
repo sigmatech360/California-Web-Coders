@@ -4999,23 +4999,19 @@ section.location-contact-sec {
 
 /**********  Mobile App Development Los Angeles CSS End **********/
 
-
 /**********  React Development Los Angeles CSS Start **********/
-
 
 .reacjs-location-herobanner .service-another-para {
   display: block !important;
 }
 
-
 /**********  React Development Los Angeles CSS End **********/
-
 
 /**********  Domain Registeration Los Angeles CSS Start **********/
 
-
 .location-expertise-sec {
-  background: url(./Assets/locationpages/domain-registeration-location/gooddesignbg.webp) no-repeat top center;
+  background: url(./Assets/locationpages/domain-registeration-location/gooddesignbg.webp)
+    no-repeat top center;
   background-size: cover;
   padding: 60px 0px;
   width: 100%;
@@ -5023,49 +5019,48 @@ section.location-contact-sec {
 }
 
 .location-expertise-head {
-    text-align: center;
-    margin: 0px 0px 50px 0px;
+  text-align: center;
+  margin: 0px 0px 50px 0px;
 }
 
 .location-expertise-head p {
-    color: #fff;
+  color: #fff;
 }
 
 .location-expertise-box {
-    background: #b3b3b329;
-    border: 1px solid #FFFFFF;
-    border-radius: 16px;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    padding: 20px;
+  background: #b3b3b329;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 20px;
 }
 
 .location-expertise-box img {
-    width: 50px;
-    margin: 0px 0px 20px 0px;
+  width: 50px;
+  margin: 0px 0px 20px 0px;
 }
 
 .location-expertise-box h4 {
-    color: #fff;
-    font-weight: normal;
-    font-size: 20px;
-    margin: 0px 0px 15px 0px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 0px 0px 15px 0px;
 }
 
 .location-expertise-box p {
-    color: #fff;
-    font-size: 15px;
+  color: #fff;
+  font-size: 15px;
 }
 
-
 .local-specialist-sec {
-  background: url(./Assets/locationpages/domain-registeration-location/gooddesignbg.webp) no-repeat top center;
+  background: url(./Assets/locationpages/domain-registeration-location/gooddesignbg.webp)
+    no-repeat top center;
   background-size: cover;
   padding: 60px 0px;
   width: 100%;
   height: 100%;
 }
-
 
 .location-expertises .accordion .accordion-item {
   margin: 0px 0px 20px 0px;
@@ -5122,20 +5117,23 @@ section.location-contact-sec {
   .accordion-header
   .accordion-button:not(.collapsed) {
   color: #fff;
-  background-color: #0504A5;
+  background-color: #0504a5;
   font-weight: 500;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.location-expertises .accordion .accordion-item .accordion-collapse.collapse.show {
+.location-expertises
+  .accordion
+  .accordion-item
+  .accordion-collapse.collapse.show {
   border: none !important;
 }
 
 .location-expertises .accordion .accordion-item .accordion-body {
   border: none !important;
   color: #fff;
-  background: #0504A5;
+  background: #0504a5;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -5166,19 +5164,27 @@ section.location-contact-sec {
   border: none !important;
 }
 
-
 .local-specialist-txt {
-    margin: 30px 0px 50px 0px;
+  margin: 30px 0px 50px 0px;
 }
 
 .local-specialist-txt p {
-    color: #fff;
+  color: #fff;
 }
 
+.local-specialist-txt h2 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.location-expertise-head h2 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1;
+}
 
 /**********  Domain Registeration Los Angeles CSS End **********/
-
-
 
 @media (max-width: 1399px) {
   .blog-with-sidebar .wordpressBlogCard img {
@@ -5404,18 +5410,15 @@ section.location-contact-sec {
 
   .mad-la-herobanner .servicesBanner-bgImage {
     object-position: left;
-}
+  }
 
-.location-contact-form{
+  .location-contact-form {
     margin: 40px 0px 0px 0px;
-}
+  }
 
-.location-expertise-box {
+  .location-expertise-box {
     margin: 0px 0px 30px 0px;
-}
-
-
-
+  }
 }
 
 @media (max-width: 991px) {
@@ -6191,45 +6194,42 @@ section.location-contact-sec {
 
   .location-contact-sec {
     text-align: center;
-}
+  }
 
- .location-contact-sec .connect-sm-icons {
+  .location-contact-sec .connect-sm-icons {
     justify-content: center !important;
+  }
 
-}
-
-.location-contact-form {
+  .location-contact-form {
     margin: 40px 0px 0px 0px;
-}
+  }
 
-.location-contact-txt h3 {
+  .location-contact-txt h3 {
     font-size: 40px;
-}
+  }
 
-.location-faqs-txt {
+  .location-faqs-txt {
     margin: 0px;
     text-align: center;
-}
+  }
 
-.location-faqs-txt h2{
+  .location-faqs-txt h2 {
     font-size: 40px;
-}
+  }
 
-.location-faqs-sec {
+  .location-faqs-sec {
     background-position: left;
-}
+  }
 
-.location-support-head h2 {
+  .location-support-head h2 {
     font-size: 40px;
-}
+  }
 
-.location-support-grid {
+  .location-support-grid {
     grid-template-columns: repeat(2, 1fr);
-}
+  }
 
-.location-faqs-txt h3 {
-  font-size: 40px;
-}
-
-
+  .location-faqs-txt h3 {
+    font-size: 40px;
+  }
 }
