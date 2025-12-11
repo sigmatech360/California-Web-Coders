@@ -48,24 +48,24 @@ const DomainTransferLA = () => {
 
     const specialData = [
       {
-        header: "Local Specialists Who Understand Your Market",
+        header: "Los Angeles Transfer Specialists Who Understand Your Needs",
         content:
-          "We offer support from local domain specialists who understand Los Angeles businesses, helping you choose a name that matches your brand, improves online visibility and supports long-term growth. This ensures your domain name registration Los Angeles, CA feels simple and stress-free.",
+          "Our experienced local team knows exactly how to coordinate transfer steps, verification, and approvals in the Los Angeles market. They help you move your domain easily, giving your business a stronger presence with a smooth domain migration in Los Angeles, CA.",
       },
       {
-        header: "Quick and Easy Domain Purchase",
+        header: "Fast and Simple Domain Transfer Steps",
         content:
-          "Our platform makes it easy to buy the domain name Los Angeles with clear steps and no confusion. You receive instant confirmation and simple control settings, helping you move forward quickly without delays. ",
+          "We make it easy to transfer a website domain in Los Angeles through a guided process designed for speed and clarity. From unlocking your domain to confirming ownership, we ensure your transfer is completed accurately while keeping your website accessible throughout the transition.",
       },
       {
-        header: "Reliable and Secure Domain Ownership",
+        header: "Stable, Protected, and Fully Owned Domain Control",
         content:
-          "We are one of the trusted domain providers in Los Angeles, giving you stable, secure and reliable service. Your domain stays protected and always accessible. This helps your business maintain a strong presence and avoids issues that may affect your online performance.",
+          "As one of the trusted domain providers in Los Angeles, we offer secure transfer handling, complete ownership rights, and consistent uptime. Your domain remains protected at every stage, giving you long-term stability and full confidence in your online identity.",
       },
       {
-        header: "Clear Pricing and Full Value",
+        header: "Honest Pricing and Lasting Value",
         content:
-          "We keep pricing clear and honest, so you know exactly what you are paying for. Whether you need basic or advanced options, you get full value and a domain that supports your goals. It makes managing your domain simple and worry-free.",
+          "Our pricing stays simple and transparent, whether you’re completing a standard transfer or an ICANN domain transfer in Los Angeles. You receive full value, no hidden fees, and reliable service built to support your business for years to come.",
       },
     ];
 
@@ -167,9 +167,8 @@ const DomainTransferLA = () => {
         /> */}
 
        <LocalSpecialist
-        shortHeading="Register with Us"
-          mainHeading="The Advantage of Securing Your Domain in Los Angeles with Us"
-          description="When you register a domain in Los Angeles, you want a partner who understands your local market. We offer guidance, support and fast processing so you can get your domain and start building your online presence with confidence and convenience."
+          mainHeading="Smooth and Secure Domain Transfer in Los Angeles, CA"
+          description="When you begin a domain transfer in Los Angeles, CA, you deserve a process that feels simple, safe, and fully supported. At California Web Coders, we handle every detail carefully so your domain transfer is completed without downtime, confusion, or risk."
           expertise={specialData}
         />
 
