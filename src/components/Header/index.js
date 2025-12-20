@@ -1083,6 +1083,30 @@ function Header() {
                         >
                           Angular Development
                         </NavDropdown.Item>
+                        <NavDropdown.Item
+                          as={"a"}
+                          href="/webapp-development-los-angeles"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Web App Development
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          as={"a"}
+                          href="/shopify-development-los-angeles"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Shopify Development
+                        </NavDropdown.Item>
+                        <NavDropdown.Item
+                          as={"a"}
+                          href="/laravel-development-los-angeles"
+                          target="_blank"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Laravel Development
+                        </NavDropdown.Item>
                       </div>
                     </div>
                   </Dropdown.Menu>

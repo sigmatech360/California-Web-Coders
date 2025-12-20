@@ -76,6 +76,9 @@ import DomainRegistrationLA from "../Screen/LocationPages/DomainRegistrationLA";
 import ECommerceDevelopmentLA from "../Screen/LocationPages/ECommerceDevelopmentLA";
 import AngularDevelopmentLA from "../Screen/LocationPages/AngularDevelopmentLA";
 import DomainTransferLA from "../Screen/LocationPages/DomainTransferLA";
+import WebAppDevelopmentLA from "../Screen/LocationPages/WebAppDevelopmentLA";
+import ShopifydevelopmentLA from "../Screen/LocationPages/ShopifydevelopmentLA";
+import LaravelDevelopmentLA from "../Screen/LocationPages/LaravelDevelopmentLA";
 
 export default function UserRouter() {
   return (
@@ -185,6 +188,9 @@ export default function UserRouter() {
           <Route path="/domain-transfer-los-angeles" element={<DomainTransferLA />} />
           <Route path="/eCommerce-development-los-angeles" element={<ECommerceDevelopmentLA />} />
           <Route path="/angular-development-los-angeles" element={<AngularDevelopmentLA />} />
+          <Route path="/webapp-development-los-angeles" element={<WebAppDevelopmentLA />} />
+          <Route path="/shopify-development-los-angeles" element={<ShopifydevelopmentLA />} />
+          <Route path="/laravel-development-los-angeles" element={<LaravelDevelopmentLA />} />
 
 
         </Routes>

@@ -87,7 +87,7 @@ const ServiceBanner = (props) => {
 
               <p className="service-another-para d-none">{props.anotherpara}</p>
               <Link
-                to="/get-intouch"
+                to={props.btnLink || "/get-intouch"}
                 className={props.btnClass || "btn-theme"}
                 data-aos="fade-up"
                 data-aos-duration="1000"
